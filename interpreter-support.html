@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Cup 2026 | Global Language Access Hub</title>
+<meta name="description" content="On-demand translation and interpretation services for FIFA World Cup 2026 fans, medical teams, stadiums, and businesses across USA, Canada, and Mexico.">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --black: #080A0E;
+    --dark: #0D1117;
+    --card-bg: #111620;
+    --border: rgba(255,255,255,0.07);
+    --gold: #C9A84C;
+    --gold-light: #E8C87A;
+    --gold-dim: rgba(201,168,76,0.15);
+    --red: #E84040;
+    --red-dim: rgba(232,64,64,0.12);
+    --blue: #3A8FD6;
+    --blue-dim: rgba(58,143,214,0.12);
+    --amber: #F07820;
+    --amber-dim: rgba(240,120,32,0.12);
+    --green: #3AC98A;
+    --green-dim: rgba(58,201,138,0.12);
+    --text: #E8EAF0;
+    --muted: #7A8096;
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body: 'Outfit', sans-serif;
+    --font-mono: 'Space Mono', monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ─── NAV ─────────────────────────────────────────────── */
+  nav {
+    position: fixed; top: 0; width: 100%; z-index: 100;
+    background: rgba(8,10,14,0.92);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 20px;
+    height: 58px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-logo {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    color: var(--gold);
+  }
+  .nav-logo span { color: var(--text); }
+  .nav-links {
+    display: flex; gap: 6px;
+    overflow-x: auto; scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 5px 9px;
+    border-radius: 4px;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .nav-links a:hover { color: var(--gold); background: var(--gold-dim); }
+
+  /* ─── HERO ────────────────────────────────────────────── */
+  .hero {
+    padding: 100px 20px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(201,168,76,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--gold-dim);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 24px;
+  }
+  .hero-badge::before { content: '⚽'; font-size: 0.85rem; }
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.8rem, 10vw, 5.5rem);
+    letter-spacing: 3px;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  .hero h1 .accent { color: var(--gold); }
+  .hero p {
+    color: var(--muted);
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    max-width: 560px;
+    margin: 0 auto 32px;
+  }
+  .hero-flags {
+    display: flex; justify-content: center; gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+    font-size: 1.8rem;
+  }
+  .hero-stats {
+    display: flex; justify-content: center; gap: 32px;
+    flex-wrap: wrap;
+  }
+  .stat {
+    text-align: center;
+  }
+  .stat-num {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    color: var(--gold);
+    letter-spacing: 2px;
+  }
+  .stat-label {
+    font-size: 0.7rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* ─── SECTION WRAPPERS ────────────────────────────────── */
+  section { padding: 60px 20px; }
+  .container { max-width: 1100px; margin: 0 auto; }
+  .section-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--gold);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  .section-sub {
+    color: var(--muted);
+    font-size: 0.92rem;
+    max-width: 560px;
+    margin-bottom: 40px;
+  }
+
+  /* ─── ZONE CARDS ──────────────────────────────────────── */
+  .zones-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  @media(min-width:640px) { .zones-grid { grid-template-columns: 1fr 1fr; } }
+  @media(min-width:900px) { .zones-grid { grid-template-columns: repeat(4,1fr); } }
+
+  .zone-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+  .zone-card:hover { transform: translateY(-4px); }
+  .zone-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 3px;
+  }
+  .zone-a::before { background: var(--red); }
+  .zone-b::before { background: var(--blue); }
+  .zone-c::before { background: var(--amber); }
+  .zone-d::before { background: var(--green); }
+  .zone-a:hover { border-color: rgba(232,64,64,0.4); }
+  .zone-b:hover { border-color: rgba(58,143,214,0.4); }
+  .zone-c:hover { border-color: rgba(240,120,32,0.4); }
+  .zone-d:hover { border-color: rgba(58,201,138,0.4); }
+
+  .zone-tag {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+  }
+  .zone-a .zone-tag { background: var(--red-dim); color: var(--red); }
+  .zone-b .zone-tag { background: var(--blue-dim); color: var(--blue); }
+  .zone-c .zone-tag { background: var(--amber-dim); color: var(--amber); }
+  .zone-d .zone-tag { background: var(--green-dim); color: var(--green); }
+
+  .zone-icon { font-size: 2rem; margin-bottom: 12px; display: block; }
+  .zone-title {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 6px;
+  }
+  .zone-agency {
+    font-size: 0.72rem;
+    color: var(--muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+  .zone-service {
+    font-size: 0.86rem;
+    color: var(--text);
+    margin-bottom: 14px;
+    line-height: 1.5;
+  }
+  .zone-feature {
+    display: flex; align-items: flex-start; gap: 8px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .zone-feature::before { content: '⚡'; flex-shrink: 0; }
+
+  .cta-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 11px 16px;
+    border-radius: 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+  }
+  .zone-a .cta-btn { background: var(--red); color: #fff; }
+  .zone-b .cta-btn { background: var(--blue); color: #fff; }
+  .zone-c .cta-btn { background: var(--amber); color: #fff; }
+  .zone-d .cta-btn { background: var(--green); color: #000; }
+  .cta-btn:hover { opacity: 0.85; transform: scale(1.02); }
+
+  /* ─── DIVIDER ─────────────────────────────────────────── */
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 0 20px;
+  }
+
+  /* ─── COMPARISON TABLE ────────────────────────────────── */
+  .table-wrap {
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 620px;
+    font-size: 0.85rem;
+  }
+  thead tr {
+    background: var(--dark);
+    border-bottom: 2px solid var(--gold);
+  }
+  thead th {
+    padding: 14px 16px;
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    white-space: nowrap;
+  }
+  tbody tr {
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s;
+  }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: rgba(255,255,255,0.025); }
+  tbody td {
+    padding: 13px 16px;
+    color: var(--text);
+    vertical-align: middle;
+  }
+  .agency-name { font-weight: 600; }
+  .zone-pill {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: 8px;
+    vertical-align: middle;
+    letter-spacing: 1px;
+  }
+  .pill-a { background: var(--red-dim); color: var(--red); }
+  .pill-b { background: var(--blue-dim); color: var(--blue); }
+  .pill-c { background: var(--amber-dim); color: var(--amber); }
+  .pill-d { background: var(--green-dim); color: var(--green); }
+
+  .speed-bar {
+    display: flex; align-items: center; gap: 8px;
+  }
+  .bar-track {
+    flex: 1; height: 4px; background: rgba(255,255,255,0.08); border-radius: 2px;
+    max-width: 80px;
+  }
+  .bar-fill { height: 100%; border-radius: 2px; background: var(--gold); }
+  .speed-label { font-size: 0.75rem; color: var(--muted); white-space: nowrap; }
+
+  .ref-slot {
+    background: rgba(201,168,76,0.07);
+    border: 1px dashed rgba(201,168,76,0.3);
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    color: var(--gold);
+    font-family: var(--font-mono);
+    white-space: nowrap;
+  }
+
+  /* ─── REGIONAL CARDS ──────────────────────────────────── */
+  .regions-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  @media(min-width:640px) { .regions-grid { grid-template-columns: repeat(3,1fr); } }
+
+  .region-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px 20px;
+    transition: transform 0.2s;
+  }
+  .region-card:hover { transform: translateY(-3px); }
+  .region-flag { font-size: 2.4rem; margin-bottom: 12px; }
+  .region-name {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+  .region-sub { font-size: 0.78rem; color: var(--muted); margin-bottom: 16px; }
+  .region-agencies { list-style: none; }
+  .region-agencies li {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.84rem;
+  }
+  .region-agencies li:last-child { border-bottom: none; }
+  .agency-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    flex-shrink: 0; margin-top: 6px;
+  }
+  .agency-info { flex: 1; }
+  .agency-info strong { display: block; font-weight: 600; margin-bottom: 2px; }
+  .agency-info span { color: var(--muted); font-size: 0.76rem; }
+
+  /* ─── LANGUAGE SEARCH ─────────────────────────────────── */
+  .search-bar {
+    display: flex; gap: 10px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+  .search-input {
+    flex: 1;
+    min-width: 200px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .search-input:focus { border-color: var(--gold); }
+  .search-input::placeholder { color: var(--muted); }
+  .filter-select {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .lang-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+  .lang-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    display: flex; align-items: center; gap: 14px;
+    transition: border-color 0.2s;
+  }
+  .lang-card:hover { border-color: var(--gold); }
+  .lang-flag { font-size: 1.6rem; flex-shrink: 0; }
+  .lang-info { flex: 1; min-width: 0; }
+  .lang-country { font-weight: 600; font-size: 0.88rem; }
+  .lang-language { font-size: 0.73rem; color: var(--muted); }
+  .lang-zones { display: flex; gap: 4px; margin-top: 6px; flex-wrap: wrap; }
+  .lang-zone-pill {
+    font-size: 0.58rem;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 3px;
+    letter-spacing: 0.8px;
+  }
+  .hidden { display: none !important; }
+
+  /* ─── URGENCY BANNER ──────────────────────────────────── */
+  .urgency-banner {
+    background: linear-gradient(135deg, rgba(232,64,64,0.15), rgba(201,168,76,0.1));
+    border: 1px solid rgba(232,64,64,0.3);
+    border-radius: 14px;
+    padding: 28px 24px;
+    display: flex; align-items: center; gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .urgency-icon { font-size: 2.4rem; flex-shrink: 0; }
+  .urgency-text { flex: 1; }
+  .urgency-text strong {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    color: var(--red);
+    margin-bottom: 4px;
+  }
+  .urgency-text p { font-size: 0.86rem; color: var(--muted); }
+  .urgency-cta {
+    background: var(--red);
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: opacity 0.2s;
+  }
+  .urgency-cta:hover { opacity: 0.85; }
+
+  /* ─── FOOTER ──────────────────────────────────────────── */
+  footer {
+    background: var(--dark);
+    border-top: 1px solid var(--border);
+    padding: 40px 20px;
+    text-align: center;
+  }
+  footer .footer-logo {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  footer p {
+    font-size: 0.75rem;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+  footer a { color: var(--gold); text-decoration: none; }
+
+  /* ─── ANIMATIONS ──────────────────────────────────────── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .fade-in { animation: fadeUp 0.6s ease both; }
+  .delay-1 { animation-delay: 0.1s; }
+  .delay-2 { animation-delay: 0.2s; }
+  .delay-3 { animation-delay: 0.3s; }
+  .delay-4 { animation-delay: 0.4s; }
+</style>
+</head>
+<body>
+
+<!-- ─── NAV ─────────────────────────────────────────────── -->
+<nav>
+  <div class="nav-logo">GO2CUP <span>LANGUAGE HUB</span></div>
+  <div class="nav-links">
+    <a href="#zones">Zones</a>
+    <a href="#compare">Compare</a>
+    <a href="#regional">Regional</a>
+    <a href="#languages">Languages</a>
+  </div>
+</nav>
+
+<!-- ─── HERO ─────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-badge">FIFA World Cup 2026 · Official Fan Resource</div>
+  <h1 class="fade-in">GLOBAL <span class="accent">LANGUAGE</span><br>ACCESS HUB</h1>
+  <p class="fade-in delay-1">On-demand translation & interpretation services for fans, medical teams, stadiums, and businesses across the 2026 World Cup host nations.</p>
+  <div class="hero-flags fade-in delay-2">🇺🇸🇨🇦🇲🇽</div>
+  <div class="hero-stats fade-in delay-3">
+    <div class="stat">
+      <div class="stat-num">200+</div>
+      <div class="stat-label">Languages Covered</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">16</div>
+      <div class="stat-label">Host Cities</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">&lt;20s</div>
+      <div class="stat-label">Emergency Connect</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">48</div>
+      <div class="stat-label">Nations Playing</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ─── ZONES ─────────────────────────────────────────────── -->
+<section id="zones">
+  <div class="container">
+    <div class="section-label">// Service Architecture</div>
+    <h2 class="section-title">THE FOUR ACCESS ZONES</h2>
+    <p class="section-sub">Every fan need covered. From stadium emergencies to enterprise logistics — find your zone in seconds.</p>
+
+    <div class="zones-grid">
+
+      <!-- ZONE A -->
+      <div class="zone-card zone-a fade-in">
+        <div class="zone-tag">ZONE A</div>
+        <span class="zone-icon">🚨</span>
+        <div class="zone-title">THE EMERGENCY BUTTON</div>
+        <div class="zone-agency">Primary: LanguageLine Solutions</div>
+        <div class="zone-service">Instant Over-the-Phone Interpretation (OPI) for fans in legal or medical disputes — 24/7, any stadium, any city.</div>
+        <div class="zone-feature">Connect in under 20 seconds. Available in 240+ languages around the clock.</div>
+        <a href="#" class="cta-btn">[GET YOUR EMERGENCY ACCESS CODE]</a>
+      </div>
+
+      <!-- ZONE B -->
+      <div class="zone-card zone-b fade-in delay-1">
+        <div class="zone-tag">ZONE B</div>
+        <span class="zone-icon">🏥</span>
+        <div class="zone-title">HOSPITAL & WELLNESS WING</div>
+        <div class="zone-agency">AMN Healthcare · Propio · Voyce</div>
+        <div class="zone-service">Video Remote Interpreting (VRI) for Emergency Rooms and clinics near stadiums. Specialized medical terminology for international fans.</div>
+        <div class="zone-feature">Real-time VRI with certified medical interpreters in all host-city hospital networks.</div>
+        <a href="#" class="cta-btn">[HOSPITAL PARTNERSHIP INQUIRY]</a>
+      </div>
+
+      <!-- ZONE C -->
+      <div class="zone-card zone-c fade-in delay-2">
+        <div class="zone-tag">ZONE C</div>
+        <span class="zone-icon">🏟️</span>
+        <div class="zone-title">LOGISTICS & STADIUM HUB</div>
+        <div class="zone-agency">AHPLA Institute · Acutrans · Boostlingo</div>
+        <div class="zone-service">White-label apps for stadium staff, event hostesses, and transport logistics. Mexico-US cross-border expertise built in.</div>
+        <div class="zone-feature">Custom enterprise deployments for organizations managing 1,000+ multilingual interactions per event day.</div>
+        <a href="#" class="cta-btn">[REQUEST ENTERPRISE LOGISTICS QUOTE]</a>
+      </div>
+
+      <!-- ZONE D -->
+      <div class="zone-card zone-d fade-in delay-3">
+        <div class="zone-tag">ZONE D</div>
+        <span class="zone-icon">📄</span>
+        <div class="zone-title">DIGITAL & DOCUMENT SERVICES</div>
+        <div class="zone-agency">Primary: Day Translations</div>
+        <div class="zone-service">Fast website localization and document translation for visiting businesses. Affordable, professional-grade turnaround for event-season deadlines.</div>
+        <div class="zone-feature">72-hour turnaround on certified document translation for visa, business, and compliance needs.</div>
+        <a href="#" class="cta-btn">[UPLOAD DOCUMENT FOR 20% DISCOUNT]</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ─── COMPARE TABLE ──────────────────────────────────────── -->
+<section id="compare">
+  <div class="container">
+    <div class="section-label">// Capterra-Style Comparison</div>
+    <h2 class="section-title">AGENCY COMPARISON</h2>
+    <p class="section-sub">Call capacity, payout style, and connection speed — everything you need to choose or recommend the right partner.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Agency</th>
+            <th>Zone</th>
+            <th>Service Type</th>
+            <th>Call Capacity</th>
+            <th>Payout / Model</th>
+            <th>Connect Speed</th>
+            <th>Your Partner Code</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="agency-name">LanguageLine Solutions</span></td>
+            <td><span class="zone-pill pill-a">A</span></td>
+            <td>OPI · 24/7</td>
+            <td>10M+ calls/yr</td>
+            <td>Per-minute billing</td>
+            <td>
+              <div class="speed-bar">
+                <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+                <span class="speed-label">&lt;20 sec</span>
+              </div>
+            </td>
+            <td><span class="ref-slot">[YOUR CODE HERE]</span></td>
+          </tr>
+          <tr>
+            <td><span class="agency-name">AMN Healthcare</span></td>
+            <td><span class="zone-pill pill-b">B</span></td>
+            <td>VRI · Medical</td>
+            <td>Hospital-grade</td>
+            <td>Contract / SLA</td>
+            <td>
+              <div class="speed-bar">
+                <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
+                <span class="speed-label">~30 sec</span>
+              </div>
+            </td>
+            <td><span class="ref-slot">[YOUR CODE HERE]</span></td>
+          </tr>
+          <tr>
+            <td><span class="agency-name">Propio</span></td>
+            <td><span class="zone-pill pill-b">B</span></td>
+            <td>OPI · VRI · Medical</td>
+            <td>High volume</td>
+            <td>Per-minute / subscription</td>
+            <td>
+              <div class="speed-bar">
+                <div class="bar-track"><div class="bar-fill" style="width:80%"></div></div>
+                <span class="speed-label">~35 sec</span>
+              </div>
+            </td>
+            <td><span class="ref-slot">[YOUR CODE HERE]</span></td>
+          </tr>
+          <tr>
+            <td><span class="agency-name">Voyce</span></td>
+            <td><span class="zone-pill pill-b">B</span></td>
+            <td>VRI · Tablet-based</td>
+            <td>Health system scale</td>
+            <td>Per-encounter</td>
+            <td>
+              <div class="speed-bar">
+                <div class="bar-track"><div class="bar-fill" style="width:78%"></div></div>
+                <span class="speed-label">~40 sec</span>
+              </div>
+            </td>
+            <td><span class="ref-slot">[YOUR CODE HERE]</span></td>
+          </tr>
+          <tr>
+            <td><span class="agency-name">AHPLA Institute</span></td>
+            <td><span class="zone-pill pill-c">C</span></td>
+            <td>White-label · Cross-border</td>
+            <td>Event-scale</td>
+            <td>Revenue share 10–15%</td>
+            <td>
+              <div class="speed-bar">
+                <div class="bar-track"><div class="bar-fill" style="width:70%"></div></div>
+                <span class="speed-label">Scheduled</span>
+              </div>
+            </td>
+            <td><span class="ref-slot">[YOUR CODE HERE]</span></td>
+          </tr>
+          <tr>
+            <td><span class="agency-name">Acutrans</span></td>
+            <td><span class="zone-pill pill-c">C</span></td>
+            <td>Stadium · Logistics</td>
+            <td>Multi-venue</td>
+            <td>Revenue share / project</td>
+            <td>
+              <div class="speed-bar">
+                <div class="bar-track"><div class="bar-fill" style="width:72%"></div></div>
+                <span class="speed-label">On-demand</span>
+              </div>
+            </td>
+            <td><span class="ref-slot">[YOUR CODE HERE]</span></td>
+          </tr>
+          <tr>
+            <td><span class="agency-name">Boostlingo</span></td>
+            <td><span class="zone-pill pill-c">C</span></td>
+            <td>Platform · API · White-label</td>
+            <td>Enterprise SaaS</td>
+            <td>SaaS subscription</td>
+            <td>
+              <div class="speed-bar">
+                <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
+                <span class="speed-label">&lt;30 sec</span>
+              </div>
+            </td>
+            <td><span class="ref-slot">[YOUR CODE HERE]</span></td>
+          </tr>
+          <tr>
+            <td><span class="agency-name">Day Translations</span></td>
+            <td><span class="zone-pill pill-d">D</span></td>
+            <td>Document · Localization</td>
+            <td>High throughput</td>
+            <td>Per-word / project</td>
+            <td>
+              <div class="speed-bar">
+                <div class="bar-track"><div class="bar-fill" style="width:60%"></div></div>
+                <span class="speed-label">72hr turnaround</span>
+              </div>
+            </td>
+            <td><span class="ref-slot">[YOUR CODE HERE]</span></td>
+          </tr>
+          <tr>
+            <td><span class="agency-name">MCIS Language Solutions</span></td>
+            <td><span class="zone-pill pill-c">C</span></td>
+            <td>Govt · Inclusivity · Canada</td>
+            <td>Gov-certified scale</td>
+            <td>Government contract</td>
+            <td>
+              <div class="speed-bar">
+                <div class="bar-track"><div class="bar-fill" style="width:68%"></div></div>
+                <span class="speed-label">Scheduled/on-demand</span>
+              </div>
+            </td>
+            <td><span class="ref-slot">[YOUR CODE HERE]</span></td>
+          </tr>
+          <tr>
+            <td><span class="agency-name">Tlatolli Ollin</span></td>
+            <td><span class="zone-pill pill-c">C</span></td>
+            <td>Indigenous · Regional Dialects</td>
+            <td>Boutique / specialized</td>
+            <td>Project-based</td>
+            <td>
+              <div class="speed-bar">
+                <div class="bar-track"><div class="bar-fill" style="width:55%"></div></div>
+                <span class="speed-label">Appointment</span>
+              </div>
+            </td>
+            <td><span class="ref-slot">[YOUR CODE HERE]</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ─── REGIONAL SECTIONS ──────────────────────────────────── -->
+<section id="regional">
+  <div class="container">
+    <div class="section-label">// Country Focus</div>
+    <h2 class="section-title">REGIONAL EXPERTISE</h2>
+    <p class="section-sub">Host nation-specific agencies with deep cultural and linguistic expertise across all 16 World Cup cities.</p>
+
+    <div class="regions-grid">
+
+      <!-- MEXICO -->
+      <div class="region-card">
+        <div class="region-flag">🇲🇽</div>
+        <div class="region-name">MEXICO</div>
+        <div class="region-sub">6 Host Cities · Monterrey, Guadalajara, Mexico City + more</div>
+        <ul class="region-agencies">
+          <li>
+            <div class="agency-dot" style="background:var(--amber)"></div>
+            <div class="agency-info">
+              <strong>AHPLA Institute</strong>
+              <span>Cross-border Mexico-US logistics. Stadium staff communication platforms. Zone C specialist.</span>
+            </div>
+          </li>
+          <li>
+            <div class="agency-dot" style="background:var(--green)"></div>
+            <div class="agency-info">
+              <strong>Tlatolli Ollin</strong>
+              <span>Regional dialects &amp; indigenous languages (Nahuatl, Mixtec, Zapotec). Cultural interpretation.</span>
+            </div>
+          </li>
+          <li>
+            <div class="agency-dot" style="background:var(--red)"></div>
+            <div class="agency-info">
+              <strong>LanguageLine Solutions</strong>
+              <span>Emergency OPI available at all Mexican venues. Spanish + 100 regional languages.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- CANADA -->
+      <div class="region-card">
+        <div class="region-flag">🇨🇦</div>
+        <div class="region-name">CANADA</div>
+        <div class="region-sub">2 Host Cities · Toronto, Vancouver</div>
+        <ul class="region-agencies">
+          <li>
+            <div class="agency-dot" style="background:var(--amber)"></div>
+            <div class="agency-info">
+              <strong>MCIS Language Solutions</strong>
+              <span>Inclusivity-first. Government-certified standards. French/English + 300+ community languages. Toronto-based.</span>
+            </div>
+          </li>
+          <li>
+            <div class="agency-dot" style="background:var(--blue)"></div>
+            <div class="agency-info">
+              <strong>Voyce</strong>
+              <span>Tablet-based VRI for Canadian hospitals. Covers Vancouver General and Toronto General networks.</span>
+            </div>
+          </li>
+          <li>
+            <div class="agency-dot" style="background:var(--red)"></div>
+            <div class="agency-info">
+              <strong>LanguageLine Solutions</strong>
+              <span>24/7 OPI coverage across all Canadian fan zones and transit hubs.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- USA -->
+      <div class="region-card">
+        <div class="region-flag">🇺🇸</div>
+        <div class="region-name">USA</div>
+        <div class="region-sub">11 Host Cities · NY/NJ, Dallas, Houston, LA + more</div>
+        <ul class="region-agencies">
+          <li>
+            <div class="agency-dot" style="background:var(--amber)"></div>
+            <div class="agency-info">
+              <strong>Acutrans</strong>
+              <span>Specific expertise in Dallas (AT&T Stadium) and Houston (NRG Stadium) metro areas. Stadium &amp; transport focus.</span>
+            </div>
+          </li>
+          <li>
+            <div class="agency-dot" style="background:var(--blue)"></div>
+            <div class="agency-info">
+              <strong>AMN Healthcare</strong>
+              <span>Medical VRI in all major US host-city hospital systems. Emergency backup for stadium medical tents.</span>
+            </div>
+          </li>
+          <li>
+            <div class="agency-dot" style="background:var(--green)"></div>
+            <div class="agency-info">
+              <strong>Boostlingo</strong>
+              <span>White-label platform deployable across all 11 US venues. Scalable API for event management teams.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ─── LANGUAGE GUIDE ─────────────────────────────────────── -->
+<section id="languages">
+  <div class="container">
+    <div class="section-label">// Visual Language Guide</div>
+    <h2 class="section-title">FIND YOUR LANGUAGE ZONE</h2>
+    <p class="section-sub">Search your country and instantly see which access zones are recommended for your fan group.</p>
+
+    <div class="urgency-banner">
+      <div class="urgency-icon">🚨</div>
+      <div class="urgency-text">
+        <strong>EMERGENCY: ZONE A IS ALWAYS YOUR FIRST CALL</strong>
+        <p>If you or another fan needs immediate help — legal, medical, or safety — connect with LanguageLine Solutions in under 20 seconds. Available at every host-city venue, 24/7.</p>
+      </div>
+      <a href="#" class="urgency-cta">[GET ACCESS CODE]</a>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" class="search-input" id="langSearch" placeholder="🔍  Search country or language (e.g. Argentina, Arabic, Brazil...)" oninput="filterLangs()">
+      <select class="filter-select" id="zoneFilter" onchange="filterLangs()">
+        <option value="">All Zones</option>
+        <option value="A">Zone A — Emergency</option>
+        <option value="B">Zone B — Medical</option>
+        <option value="C">Zone C — Stadium</option>
+        <option value="D">Zone D — Document</option>
+      </select>
+    </div>
+
+    <div class="lang-grid" id="langGrid"></div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-logo">GO2CUP · LANGUAGE HUB</div>
+  <p>
+    A <a href="#">Mainentry.net</a> production · World Cup 2026 Fan Resources<br>
+    Affiliate partner links included. Referral commissions support this free resource.<br>
+    <a href="#">Privacy Policy</a> · <a href="#">Partner With Us</a> · hello@mainentry.net
+  </p>
+</footer>
+
+<script>
+  // ─── Language/Country Data ─────────────────────────────────
+  const countries = [
+    { flag:"🏴󠁧󠁢󠁥󠁮󠁧󠁿", country:"England", lang:"English", zones:["C","D"] },
+    { flag:"🇦🇷", country:"Argentina", lang:"Spanish", zones:["A","C"] },
+    { flag:"🇧🇷", country:"Brazil", lang:"Portuguese", zones:["A","B","C"] },
+    { flag:"🇫🇷", country:"France", lang:"French", zones:["B","C"] },
+    { flag:"🇩🇪", country:"Germany", lang:"German", zones:["C","D"] },
+    { flag:"🇪🇸", country:"Spain", lang:"Spanish", zones:["C","D"] },
+    { flag:"🇵🇹", country:"Portugal", lang:"Portuguese", zones:["C","D"] },
+    { flag:"🇮🇹", country:"Italy", lang:"Italian", zones:["B","D"] },
+    { flag:"🇳🇱", country:"Netherlands", lang:"Dutch", zones:["C","D"] },
+    { flag:"🇧🇪", country:"Belgium", lang:"French/Dutch/German", zones:["C","D"] },
+    { flag:"🇨🇭", country:"Switzerland", lang:"4 National Languages", zones:["D"] },
+    { flag:"🇦🇹", country:"Austria", lang:"German", zones:["D"] },
+    { flag:"🇵🇱", country:"Poland", lang:"Polish", zones:["A","C"] },
+    { flag:"🇨🇿", country:"Czech Republic", lang:"Czech", zones:["A","D"] },
+    { flag:"🇸🇰", country:"Slovakia", lang:"Slovak", zones:["A","D"] },
+    { flag:"🇭🇺", country:"Hungary", lang:"Hungarian", zones:["A","B"] },
+    { flag:"🇷🇴", country:"Romania", lang:"Romanian", zones:["A","B"] },
+    { flag:"🇷🇸", country:"Serbia", lang:"Serbian", zones:["A","B"] },
+    { flag:"🇨🇷", country:"Croatia", lang:"Croatian", zones:["A","B"] },
+    { flag:"🇸🇮", country:"Slovenia", lang:"Slovenian", zones:["A","D"] },
+    { flag:"🇺🇦", country:"Ukraine", lang:"Ukrainian", zones:["A","B"] },
+    { flag:"🇬🇷", country:"Greece", lang:"Greek", zones:["A","B"] },
+    { flag:"🇹🇷", country:"Turkey", lang:"Turkish", zones:["A","B","C"] },
+    { flag:"🇸🇦", country:"Saudi Arabia", lang:"Arabic", zones:["A","B","C"] },
+    { flag:"🇮🇷", country:"Iran", lang:"Farsi/Persian", zones:["A","B"] },
+    { flag:"🇮🇶", country:"Iraq", lang:"Arabic/Kurdish", zones:["A","B"] },
+    { flag:"🇯🇵", country:"Japan", lang:"Japanese", zones:["A","B","C"] },
+    { flag:"🇰🇷", country:"South Korea", lang:"Korean", zones:["A","B","C"] },
+    { flag:"🇨🇳", country:"China", lang:"Mandarin", zones:["A","B","C","D"] },
+    { flag:"🇮🇳", country:"India", lang:"Hindi/Regional", zones:["A","B","C"] },
+    { flag:"🇵🇰", country:"Pakistan", lang:"Urdu", zones:["A","B"] },
+    { flag:"🇧🇩", country:"Bangladesh", lang:"Bengali", zones:["A","B"] },
+    { flag:"🇳🇬", country:"Nigeria", lang:"English/Yoruba/Igbo", zones:["A","B","C"] },
+    { flag:"🇬🇭", country:"Ghana", lang:"English/Twi", zones:["A","C"] },
+    { flag:"🇸🇳", country:"Senegal", lang:"French/Wolof", zones:["A","B"] },
+    { flag:"🇲🇦", country:"Morocco", lang:"Arabic/Darija/French", zones:["A","B","C"] },
+    { flag:"🇿🇦", country:"South Africa", lang:"11 Official Languages", zones:["A","B","C"] },
+    { flag:"🇪🇬", country:"Egypt", lang:"Arabic", zones:["A","B"] },
+    { flag:"🇨🇲", country:"Cameroon", lang:"French/English", zones:["A","B"] },
+    { flag:"🇨🇩", country:"D.R. Congo", lang:"French/Lingala", zones:["A","B"] },
+    { flag:"🇦🇴", country:"Angola", lang:"Portuguese", zones:["A","B"] },
+    { flag:"🇲🇽", country:"Mexico", lang:"Spanish/Indigenous", zones:["A","B","C","D"] },
+    { flag:"🇨🇦", country:"Canada", lang:"English/French", zones:["C","D"] },
+    { flag:"🇺🇸", country:"USA", lang:"English/Spanish", zones:["C","D"] },
+    { flag:"🇨🇴", country:"Colombia", lang:"Spanish", zones:["A","C"] },
+    { flag:"🇻🇪", country:"Venezuela", lang:"Spanish", zones:["A","B"] },
+    { flag:"🇵🇪", country:"Peru", lang:"Spanish/Quechua", zones:["A","B"] },
+    { flag:"🇨🇱", country:"Chile", lang:"Spanish", zones:["A","C"] },
+    { flag:"🇵🇾", country:"Paraguay", lang:"Spanish/Guaraní", zones:["A","B"] },
+    { flag:"🇧🇴", country:"Bolivia", lang:"Spanish/Quechua/Aymara", zones:["A","B"] },
+    { flag:"🇪🇨", country:"Ecuador", lang:"Spanish/Kichwa", zones:["A","B"] },
+    { flag:"🇺🇾", country:"Uruguay", lang:"Spanish", zones:["A","C"] },
+    { flag:"🇯🇲", country:"Jamaica", lang:"English/Patois", zones:["A","C"] },
+    { flag:"🇨🇺", country:"Cuba", lang:"Spanish", zones:["A","B"] },
+    { flag:"🇭🇹", country:"Haiti", lang:"French/Haitian Creole", zones:["A","B"] },
+    { flag:"🇭🇳", country:"Honduras", lang:"Spanish", zones:["A","B"] },
+    { flag:"🇬🇹", country:"Guatemala", lang:"Spanish/Mayan languages", zones:["A","B"] },
+    { flag:"🇦🇺", country:"Australia", lang:"English", zones:["C","D"] },
+    { flag:"🇳🇿", country:"New Zealand", lang:"English/Māori", zones:["C","D"] },
+    { flag:"🇵🇭", country:"Philippines", lang:"Filipino/English", zones:["A","C"] },
+    { flag:"🇹🇭", country:"Thailand", lang:"Thai", zones:["A","B"] },
+    { flag:"🇻🇳", country:"Vietnam", lang:"Vietnamese", zones:["A","B"] },
+    { flag:"🇮🇩", country:"Indonesia", lang:"Indonesian/Bahasa", zones:["A","B"] },
+    { flag:"🇲🇾", country:"Malaysia", lang:"Malay/English", zones:["A","C"] },
+    { flag:"🇷🇺", country:"Russia", lang:"Russian", zones:["A","B","C"] },
+  ];
+
+  const zoneColors = { A:"pill-a", B:"pill-b", C:"pill-c", D:"pill-d" };
+  const zoneLabels = { A:"Zone A · Emergency", B:"Zone B · Medical", C:"Zone C · Stadium", D:"Zone D · Document" };
+
+  function renderLangs(list) {
+    const grid = document.getElementById('langGrid');
+    if (list.length === 0) {
+      grid.innerHTML = '<p style="color:var(--muted);font-size:0.85rem;grid-column:1/-1;padding:20px 0;">No results found. Try a different search term.</p>';
+      return;
+    }
+    grid.innerHTML = list.map(c => `
+      <div class="lang-card">
+        <div class="lang-flag">${c.flag}</div>
+        <div class="lang-info">
+          <div class="lang-country">${c.country}</div>
+          <div class="lang-language">${c.lang}</div>
+          <div class="lang-zones">
+            ${c.zones.map(z => `<span class="lang-zone-pill ${zoneColors[z]}">${zoneLabels[z]}</span>`).join('')}
+          </div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function filterLangs() {
+    const q = document.getElementById('langSearch').value.toLowerCase().trim();
+    const zone = document.getElementById('zoneFilter').value;
+    const filtered = countries.filter(c => {
+      const matchText = !q || c.country.toLowerCase().includes(q) || c.lang.toLowerCase().includes(q);
+      const matchZone = !zone || c.zones.includes(zone);
+      return matchText && matchZone;
+    });
+    renderLangs(filtered);
+  }
+
+  renderLangs(countries);
+</script>
+
+</body>
+</html>
