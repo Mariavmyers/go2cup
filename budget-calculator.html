@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Go2Cup – World Cup 2026 Trip Budget Calculator</title>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green-dark:  #0E5C30;
+    --green-mid:   #1A7A42;
+    --green-soft:  #EAF7EF;
+    --gold:        #F0B429;
+    --gold-light:  #FEF3C7;
+    --cream:       #FAFAF8;
+    --white:       #FFFFFF;
+    --gray-1:      #F4F4F2;
+    --gray-2:      #E8E8E4;
+    --text-dark:   #1A1A18;
+    --text-soft:   #6B6B68;
+    --radius-md:   14px;
+    --radius-xl:   32px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+    padding: 24px 16px 80px;
+    margin: 0;
+  }
+  .hero { text-align: center; margin-bottom: 32px; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 7px;
+    background: var(--green-dark); color: #fff;
+    font-family: 'Unbounded', sans-serif; font-size: 10px; font-weight: 700;
+    padding: 6px 14px; border-radius: 100px; margin-bottom: 14px;
+  }
+  .hero h1 {
+    font-family: 'Unbounded', sans-serif;
+    font-size: clamp(24px, 5vw, 36px); font-weight: 900;
+    color: var(--green-dark); margin: 0; line-height: 1.15;
+  }
+  .hero p {
+    max-width: 620px; margin: 14px auto 0;
+    color: var(--text-soft); font-size: 15px; line-height: 1.55;
+  }
+  .card {
+    background: var(--white); border-radius: var(--radius-xl);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 860px; margin: 0 auto 40px; overflow: hidden;
+  }
+  .tabs { display: flex; background: var(--gray-1); }
+  .tab-btn {
+    flex: 1; padding: 18px; font-weight: 700; color: var(--text-soft);
+    background: none; border: none; cursor: pointer;
+    border-bottom: 4px solid transparent;
+    font-family: inherit; font-size: 15px;
+  }
+  .tab-btn.active {
+    color: var(--green-dark); border-bottom-color: var(--green-mid);
+    background: var(--white);
+  }
+  .tab-panel { display: none; padding: 24px; }
+  .tab-panel.active { display: block; }
+  .section-label {
+    font-family: 'Unbounded', sans-serif; font-size: 10px; font-weight: 700;
+    color: var(--text-soft); margin-bottom: 12px; text-transform: uppercase;
+    letter-spacing: 1px; display: block;
+  }
+  .traveler-grid, .tier-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 10px; margin-bottom: 24px;
+  }
+  .traveler-btn, .tier-btn {
+    padding: 14px; border: 2px solid var(--gray-2);
+    border-radius: var(--radius-md); background: #fff;
+    cursor: pointer; font-weight: 600; font-family: inherit;
+  }
+  .traveler-btn.active, .tier-btn.active {
+    border-color: var(--green-mid); background: var(--green-soft); color: var(--green-dark);
+  }
+  .tier-btn.active { border-color: var(--gold); background: var(--gold-light); }
+  .select-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+  select {
+    width: 100%; padding: 14px; border: 2px solid var(--gray-2);
+    border-radius: 10px; font-size: 15px; font-family: inherit; background: #fff;
+  }
+  .cities-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .city-pill {
+    padding: 10px 18px; border: 2px solid var(--gray-2);
+    border-radius: 100px; background: #fff; cursor: pointer;
+    font-size: 14px; font-family: inherit;
+  }
+  .city-pill.selected {
+    background: var(--green-dark); color: #fff;
+    border-color: var(--green-dark); font-weight: 600;
+  }
+  .results-panel {
+    background: var(--green-dark); padding: 30px; color: #fff;
+    border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+  }
+  .results-top { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; }
+  .amount {
+    font-family: 'Unbounded', sans-serif;
+    font-size: clamp(24px, 5vw, 34px); font-weight: 900; line-height: 1.2;
+  }
+  .small-label { opacity: 0.7; font-size: 11px; letter-spacing: 0.5px; }
+  .cta-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 25px; }
+  .btn-ui {
+    display: block; width: 100%; padding: 16px; text-align: center;
+    border-radius: 12px; font-weight: 700; text-decoration: none;
+    cursor: pointer; font-family: inherit; font-size: 14px; transition: 0.2s;
+  }
+  .btn-white { background: #fff; color: var(--green-dark); border: none; }
+  .btn-outline {
+    background: rgba(255,255,255,0.15); color: #fff;
+    border: 1px solid rgba(255,255,255,0.4);
+  }
+  .btn-ui:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+  .notice {
+    max-width: 860px; margin: 0 auto 30px;
+    background: var(--gold-light); border-left: 5px solid var(--gold);
+    padding: 18px 20px; border-radius: 14px; color: #5c4300;
+    font-size: 13px; line-height: 1.55;
+  }
+  #signup-section {
+    margin: 60px auto; max-width: 560px; text-align: center;
+    padding: 40px 24px; border: 2px solid var(--green-dark);
+    border-radius: var(--radius-xl); background: #fff;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  }
+  #signup-section h3 {
+    font-family: 'Unbounded', sans-serif; font-size: 18px;
+    color: var(--green-dark); margin: 0 0 12px;
+  }
+  #signup-section p { margin-bottom: 20px; color: #555; font-size: 14px; line-height: 1.55; }
+  .gr-form input[type=text], .gr-form input[type=email] {
+    width: 100%; padding: 14px 16px; margin-bottom: 14px;
+    border: 2px solid var(--gray-2); border-radius: 10px;
+    font-size: 15px; font-family: inherit; outline: none;
+  }
+  .gr-form input[type=text]:focus, .gr-form input[type=email]:focus {
+    border-color: var(--green-mid);
+  }
+  .gr-form button[type=submit] {
+    width: 100%; padding: 16px; background: var(--green-dark);
+    color: #fff; border: none; border-radius: 10px;
+    font-size: 16px; font-weight: 700; cursor: pointer;
+    font-family: inherit; transition: 0.2s;
+  }
+  .gr-form button[type=submit]:hover { background: var(--green-mid); }
+  .privacy-note { font-size: 11px !important; color: #777 !important; margin-top: 16px !important; margin-bottom: 0 !important; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { text-align: left; color: #777; padding: 12px; border-bottom: 2px solid #eee; }
+  td { padding: 12px; border-bottom: 1px solid #eee; }
+  .comparison-note { font-size: 12px; color: #777; margin-top: 16px; line-height: 1.5; }
+  @media (max-width: 640px) {
+    body { padding: 18px 10px 60px; }
+    .select-row { grid-template-columns: 1fr; }
+    .results-top { flex-direction: column; align-items: flex-start; }
+    .results-top > div:last-child { text-align: left !important; }
+    .cta-row { grid-template-columns: 1fr; }
+    .tab-panel { padding: 18px; }
+    .results-panel { padding: 24px 18px; }
+    .city-pill { font-size: 13px; padding: 9px 14px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">⚽ FIFA World Cup 2026</div>
+  <h1>Trip Budget Calculator</h1>
+  <p>Compare estimated World Cup 2026 trip costs across host cities, traveler types, nights, and budget tiers.</p>
+</div>
+
+<div class="notice">
+  This calculator gives planning estimates only. Prices can change based on match demand, hotel availability, flights, location, timing, taxes, and booking platform rules. Always verify prices before booking.
+</div>
+
+<div class="card">
+  <div class="tabs">
+    <button class="tab-btn active" id="tab-est-btn" onclick="switchTab('estimator')">Estimator</button>
+    <button class="tab-btn" id="tab-comp-btn" onclick="switchTab('comparison')">Comparison</button>
+  </div>
+
+  <div class="tab-panel active" id="tab-estimator">
+    <span class="section-label">Traveler Type</span>
+    <div class="traveler-grid">
+      <button class="traveler-btn active" onclick="setTraveler(this,1)">🧑 Solo</button>
+      <button class="traveler-btn" onclick="setTraveler(this,2)">💑 Couple</button>
+      <button class="traveler-btn" onclick="setTraveler(this,3)">👨‍👩‍👧 Family</button>
+    </div>
+
+    <div class="select-row">
+      <div>
+        <span class="section-label">People</span>
+        <select id="numPeople" onchange="recalc()">
+          <option value="1">1</option><option value="2">2</option>
+          <option value="3">3</option><option value="4">4</option>
+          <option value="5">5</option><option value="6">6</option>
+        </select>
+      </div>
+      <div>
+        <span class="section-label">Nights Per City</span>
+        <select id="nightsPerCity" onchange="recalc()">
+          <option value="1">1</option><option value="2">2</option>
+          <option value="3" selected>3</option><option value="4">4</option>
+          <option value="5">5</option><option value="7">7</option>
+        </select>
+      </div>
+    </div>
+
+    <span class="section-label">Budget Tier</span>
+    <div class="tier-grid">
+      <button class="tier-btn" id="tier-budget" onclick="setTier('budget')">Budget</button>
+      <button class="tier-btn active" id="tier-midrange" onclick="setTier('midrange')">Midrange</button>
+      <button class="tier-btn" id="tier-luxury" onclick="setTier('luxury')">Luxury</button>
+    </div>
+
+    <span class="section-label">Select Host Cities</span>
+    <div class="cities-grid" id="citiesGrid"></div>
+  </div>
+
+  <div class="tab-panel" id="tab-comparison">
+    <div id="comparison-content"><p style="text-align:center;padding:20px;">Select cities first.</p></div>
+  </div>
+
+  <div class="results-panel">
+    <div class="results-top">
+      <div>
+        <div class="small-label">PER PERSON</div>
+        <div class="amount" id="perPersonAmt">$0</div>
+      </div>
+      <div style="text-align:right">
+        <div class="small-label">GROUP TOTAL</div>
+        <div class="amount" id="groupAmt">$0</div>
+      </div>
+    </div>
+    <div class="cta-row">
+      <button class="btn-ui btn-outline" onclick="switchTab('comparison')">&#128202; Compare Tiers</button>
+      <button class="btn-ui btn-white" onclick="goToSignup()">&#128506;&#65039; Build Itinerary</button>
+    </div>
+  </div>
+</div>
+
+<!-- GetResponse Signup Section -->
+<div id="signup-section">
+  <h3>🗺️ Build Your World Cup Trip Itinerary</h3>
+  <p>Enter your name and email to join the GO2CUP list and get trip-planning updates, booking links, host-city tips, and World Cup travel alerts.</p>
+
+  <form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post" class="gr-form">
+    <input type="text" name="first_name" placeholder="Your First Name" required />
+    <input type="email" name="email" placeholder="Your Email Address" required />
+    <input type="hidden" name="campaign_token" value="CvQUE" />
+    <input type="hidden" name="start_day" value="0" />
+    <button type="submit">🗺️ Build My Itinerary &rarr;</button>
+  </form>
+
+  <p class="privacy-note">By subscribing, you agree to receive GO2CUP updates. You can unsubscribe anytime.</p>
+</div>
+
+<script>
+const CITIES = [
+  "Atlanta","Boston","Dallas","Guadalajara","Houston","Kansas City",
+  "Los Angeles","Mexico City","Miami","Monterrey","New York/NJ",
+  "Philadelphia","San Francisco Bay Area","Seattle","Toronto","Vancouver"
+];
+const CITY_MULT = {
+  "Atlanta":1.15,"Boston":1.35,"Dallas":1.10,"Guadalajara":0.75,
+  "Houston":1.00,"Kansas City":0.95,"Los Angeles":1.40,"Mexico City":0.80,
+  "Miami":1.35,"Monterrey":0.85,"New York/NJ":1.55,"Philadelphia":1.20,
+  "San Francisco Bay Area":1.50,"Seattle":1.30,"Toronto":1.15,"Vancouver":1.25
+};
+const TIER_BASE = { budget:125, midrange:300, luxury:800 };
+let state = { people:1, nights:3, tier:"midrange", cities:new Set() };
+
+function init() {
+  const grid = document.getElementById("citiesGrid");
+  grid.innerHTML = "";
+  CITIES.forEach(city => {
+    const btn = document.createElement("button");
+    btn.className = "city-pill";
+    btn.textContent = city;
+    btn.onclick = () => {
+      if (state.cities.has(city)) { state.cities.delete(city); btn.classList.remove("selected"); }
+      else { state.cities.add(city); btn.classList.add("selected"); }
+      recalc();
+    };
+    grid.appendChild(btn);
+  });
+  recalc();
+}
+
+function setTraveler(btn, count) {
+  document.querySelectorAll(".traveler-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  document.getElementById("numPeople").value = count;
+  recalc();
+}
+
+function setTier(t) {
+  state.tier = t;
+  document.querySelectorAll(".tier-btn").forEach(b => b.classList.remove("active"));
+  document.getElementById("tier-" + t).classList.add("active");
+  recalc();
+}
+
+function recalc() {
+  state.people = parseInt(document.getElementById("numPeople").value) || 1;
+  state.nights = parseInt(document.getElementById("nightsPerCity").value) || 1;
+  let totalPP = 0;
+  state.cities.forEach(city => {
+    totalPP += TIER_BASE[state.tier] * (CITY_MULT[city] || 1) * state.nights;
+  });
+  document.getElementById("perPersonAmt").textContent = "$" + Math.round(totalPP).toLocaleString();
+  document.getElementById("groupAmt").textContent = "$" + Math.round(totalPP * state.people).toLocaleString();
+}
+
+function switchTab(t) {
+  document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+  document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+  document.getElementById("tab-" + t).classList.add("active");
+  document.getElementById("tab-" + (t === "estimator" ? "est-btn" : "comp-btn")).classList.add("active");
+  if (t === "comparison") { buildComparisonTable(); }
+}
+
+function buildComparisonTable() {
+  let rows = "";
+  state.people = parseInt(document.getElementById("numPeople").value) || 1;
+  state.nights = parseInt(document.getElementById("nightsPerCity").value) || 1;
+  state.cities.forEach(city => {
+    const m = CITY_MULT[city] || 1;
+    const b = Math.round(TIER_BASE.budget * m * state.nights * state.people);
+    const mid = Math.round(TIER_BASE.midrange * m * state.nights * state.people);
+    const lux = Math.round(TIER_BASE.luxury * m * state.nights * state.people);
+    rows += `<tr><td>${city}</td><td>$${b.toLocaleString()}</td><td>$${mid.toLocaleString()}</td><td>$${lux.toLocaleString()}</td></tr>`;
+  });
+  document.getElementById("comparison-content").innerHTML = state.cities.size > 0
+    ? `<table><thead><tr><th>City</th><th>Budget</th><th>Midrange</th><th>Luxury</th></tr></thead><tbody>${rows}</tbody></table><p class="comparison-note">Estimates are planning ranges only. Prices can change by match date, hotel demand, flights, location, and booking timing.</p>`
+    : '<p style="text-align:center;padding:20px;">Select cities first.</p>';
+}
+
+function goToSignup() {
+  const section = document.getElementById("signup-section");
+  if (section) { section.scrollIntoView({ behavior: "smooth" }); }
+}
+
+init();
+</script>
+</body>
+</html>
