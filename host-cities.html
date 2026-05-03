@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GO2CUP | Nation Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;700&family=Barlow:wght@300;400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+:root {
+  --gold: #C9A84C;
+  --navy-deep: #020617;
+  --red: #C8102E;
+}
+body {
+  background-color: var(--navy-deep);
+  color: white;
+  font-family: 'Barlow', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+.bebas { font-family: 'Bebas Neue', cursive; }
+.condensed { font-family: 'Barlow Condensed', sans-serif; }
+.text-gold { color: var(--gold); }
+.bg-gold { background: var(--gold); }
+
+/* ── TICKER ── */
+.ticker-wrap {
+  background: var(--gold);
+  overflow: hidden;
+  padding: 10px 0;
+  border-bottom: 2px solid var(--red);
+}
+@keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.ticker-track { display: flex; width: max-content; animation: scroll 30s linear infinite; }
+.ticker-item {
+  color: black;
+  font-weight: 900;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ticker-item .dot { color: var(--red); font-size: 18px; }
+
+/* ── HERO BANNER ── */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  opacity: 0.75;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(2,6,23,0.3) 0%, rgba(2,6,23,0.85) 100%);
+}
+.hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* ── CARDS ── */
+.hub-card {
+  background: #070d1f;
+  border-radius: 40px;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.4s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.flag-banner { height: 260px; position: relative; }
+.flag-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  opacity: 0.9;
+}
+.flag-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 0%, #070d1f 95%);
+}
+.btn-gold {
+  background: var(--gold);
+  color: black;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+}
+.btn-gold:hover { background: white; transform: scale(1.02); }
+.match-badge {
+  background: rgba(201, 168, 76, 0.1);
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 10px;
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+
+/* ── CITY LIST POP-OUT ── */
+.city-list-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+}
+.hub-card.active .city-list-container {
+  max-height: 600px;
+  opacity: 1;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  overflow-y: auto;
+}
+.city-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  text-decoration: none !important;
+  transition: 0.3s;
+}
+.city-link:hover {
+  background: rgba(201, 168, 76, 0.1);
+  padding-left: 15px;
+  border-radius: 10px;
+}
+
+/* ── CUSTOM SCROLLBAR ── */
+.custom-scrollbar::-webkit-scrollbar { width: 4px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 10px; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 10px; }
+.custom-scrollbar::-webkit-scrollbar-thumb:hover { background: white; }
+
+/* ── OPT-IN FORM ── */
+.g2c-optin-input {
+  width: 100%;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(201,168,76,0.3);
+  border-radius: 10px;
+  color: #fff;
+  font-family: 'Barlow', sans-serif;
+  font-size: 13px;
+  padding: 10px 14px;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+.g2c-optin-input::placeholder { color: rgba(255,255,255,0.35); }
+.g2c-optin-input:focus { border-color: var(--gold); }
+.g2c-optin-btn {
+  width: 100%;
+  background: var(--gold);
+  color: #020617;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 11px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 4px;
+}
+.g2c-optin-btn:hover { background: #fff; }
+.g2c-optin-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+@keyframes g2c-spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+
+<!-- ── TICKER ── -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="dot">●</span> JUNE 11: MEXICO CITY OPENER</span>
+    <span class="ticker-item"><span class="dot">●</span> JULY 19: NEW YORK FINAL</span>
+    <span class="ticker-item"><span class="dot">●</span> MARCH 2026: FIFA PASS ENFORCED</span>
+    <span class="ticker-item"><span class="dot">●</span> JUNE 11: MEXICO CITY OPENER</span>
+    <span class="ticker-item"><span class="dot">●</span> JULY 19: NEW YORK FINAL</span>
+    <span class="ticker-item"><span class="dot">●</span> MARCH 2026: FIFA PASS ENFORCED</span>
+  </div>
+</div>
+
+<!-- ── HERO BANNER ── -->
+<div class="hero-banner">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/2026_FIFA_World_Cup_logo.svg/800px-2026_FIFA_World_Cup_logo.svg.png" alt="World Cup 2026" style="object-fit:contain;background:#020617;padding:40px;">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="bebas text-5xl md:text-9xl tracking-tighter italic leading-none mb-4">
+      2026 FAN <span style="color:var(--gold)">GUIDE</span>
+    </h1>
+    <p class="condensed text-white/50 tracking-[0.4em] uppercase text-xs">Stadiums · Cities · Kickoffs</p>
+  </div>
+</div>
+
+<main class="max-w-[1700px] mx-auto px-6 py-12">
+
+  <!-- ── 3 NATION CARDS ── -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-stretch mb-24">
+
+    <!-- ═══ USA CARD ═══ -->
+    <div class="hub-card cursor-pointer" onclick="this.classList.toggle('active')">
+      <div class="flag-banner">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png" alt="United States — World Cup 2026">
+        <div class="flag-gradient"></div>
+        <div class="absolute bottom-6 left-10"><h2 class="bebas text-6xl">UNITED STATES</h2></div>
+      </div>
+      <div class="p-10 flex flex-col flex-grow">
+        <div class="flex justify-between mb-2 items-center">
+          <span class="condensed text-white/40 font-bold text-xs uppercase">11 Host Cities</span>
+          <span class="match-badge">78 Matches</span>
+        </div>
+        <p class="condensed text-gold text-[10px] tracking-widest uppercase mb-4 animate-pulse">Click Card to Expand Cities ↓</p>
+        <div class="city-list-container space-y-1 text-sm condensed text-white/80 custom-scrollbar pr-2">
+          <a href="https://my-web-1774227442937.estage.site/host-city-new-york-new-jersey" class="city-link">
+            <span class="text-white">New York / New Jersey</span><span class="text-gold font-bold text-[10px]">THE FINAL</span>
+          </a>
+          <a href="https://my-web-1774227442937.estage.site/host-city-los-angeles" class="city-link">
+            <span class="text-white">Los Angeles</span><span class="text-white/40 text-[10px] uppercase">SoFi Stadium</span>
+          </a>
+          <a href="https://my-web-1774227442937.estage.site/host-city-dallas" class="city-link">
+            <span class="text-white">Dallas</span><span class="text-white/40 text-[10px] uppercase">AT&T Stadium</span>
+          </a>
+          <a href="https://my-web-1774227442937.estage.site/host-city-kansas-city" class="city-link">
+            <span class="text-white">Kansas City</span><span class="text-white/40 text-[10px] uppercase">Arrowhead Stadium</span>
+          </a>
+          <a href="https://my-web-1774227442937.estage.site/host-city-houston" class="city-link">
+            <span class="text-white">Houston</span><span class="text-white/40 text-[10px] uppercase">NRG Stadium</span>
+          </a>
+          <a href="https://my-web-1774227442937.estage.site/host-city-atlanta" class="city-link">
+            <span class="text-white">Atlanta</span><span class="text-white/40 text-[10px] uppercase">Mercedes-Benz</span>
+          </a>
+          <a href="https://my-web-1774227442937.estage.site/host-city-miami" class="city-link">
+            <span class="text-white">Miami</span><span class="text-white/40 text-[10px] uppercase">Hard Rock Stadium</span>
+          </a>
+          <a href="https://my-web-1774227442937.estage.site/host-city-philadelphia" class="city-link">
+            <span class="text-white">Philadelphia</span><span class="text-white/40 text-[10px] uppercase">Lincoln Financial</span>
+          </a>
+          <a href="https://my-web-1774227442937.estage.site/host-city-seattle" class="city-link">
+            <span class="text-white">Seattle</span><span class="text-white/40 text-[10px] uppercase">Lumen Field</span>
+          </a>
+          <a href="https://my-web-1774227442937.estage.site/host-city-san-francisco-bay-area" class="city-link">
+            <span class="text-white">San Francisco Bay Area</span><span class="text-white/40 text-[10px] uppercase">Levi's Stadium</span>
+          </a>
+          <a href="https://my-web-1774227442937.estage.site/host-city-boston-foxborough" class="city-link">
+            <span class="text-white">Boston</span><span class="text-white/40 text-[10px] uppercase">Gillette Stadium</span>
+          </a>
+        </div>
+        <button class="btn-gold w-full py-5 rounded-2xl text-center text-sm tracking-widest mt-auto">Explore Host Cities</button>
+      </div>
+    </div>
+
+    <!-- ═══ MEXICO CARD ═══ -->
+    <div class="hub-card cursor-pointer" onclick="this.classList.toggle('active')">
+      <div class="flag-banner">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1280px-Flag_of_Mexico.svg.png" alt="Mexico — World Cup 2026">
+        <div class="flag-gradient"></div>
+        <div class="absolute bottom-6 left-10"><h2 class="bebas text-6xl">MEXICO</h2></div>
+      </div>
+      <div class="p-10 flex flex-col flex-grow">
+        <div class="flex justify-between mb-8 items-center">
+          <span class="condensed text-white/40 font-bold text-xs uppercase">3 Host Cities</span>
+          <span class="match-badge">13 Matches</span>
+        </div>
+        <p class="condensed text-gold text-[10px] tracking-widest uppercase mb-4 animate-pulse">Click Card to Choose City ↓</p>
+        <div class="city-list-container space-y-4 text-sm condensed text-white/80">
+          <a href="https://my-web-1774227442937.estage.site/host-city-mexico-city" class="city-link">
+            <span class="text-white">Mexico City</span><span class="text-gold font-bold text-[10px]">OPENER</span>
+          </a>
+          <a href="https://my-web-1774227442937.estage.site/host-city-guadalajara" class="city-link">
+            <span class="text-white">Guadalajara</span><span class="text-white/40 text-[10px] uppercase">Estadio Akron</span>
+          </a>
+          <a href="https://my-web-1774227442937.estage.site/host-city-monterrey" class="city-link">
+            <span class="text-white">Monterrey</span><span class="text-white/40 text-[10px] uppercase">Estadio BBVA</span>
+          </a>
+        </div>
+        <button class="btn-gold w-full py-5 rounded-2xl text-center text-sm tracking-widest mt-auto">Explore Mexico Cities</button>
+      </div>
+    </div>
+
+    <!-- ═══ CANADA CARD ═══ -->
+    <div class="hub-card cursor-pointer" onclick="this.classList.toggle('active')">
+      <div class="flag-banner">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1280px-Flag_of_Canada_%28Pantone%29.svg.png" alt="Canada — World Cup 2026">
+        <div class="flag-gradient"></div>
+        <div class="absolute bottom-6 left-10"><h2 class="bebas text-6xl">CANADA</h2></div>
+      </div>
+      <div class="p-10 flex flex-col flex-grow">
+        <div class="flex justify-between mb-8 items-center">
+          <span class="condensed text-white/40 font-bold text-xs uppercase">2 Host Cities</span>
+          <span class="match-badge">13 Matches</span>
+        </div>
+        <p class="condensed text-gold text-[10px] tracking-widest uppercase mb-4 animate-pulse">Click Card to Choose City ↓</p>
+        <div class="city-list-container space-y-4 text-sm condensed text-white/80">
+          <a href="https://my-web-1774227442937.estage.site/host-city-toronto" class="city-link">
+            <span class="text-white">Toronto</span><span class="text-white/40 text-[10px] uppercase">BMO Field</span>
+          </a>
+          <a href="https://my-web-1774227442937.estage.site/host-city-vancouver" class="city-link">
+            <span class="text-white">Vancouver</span><span class="text-white/40 text-[10px] uppercase">BC Place</span>
+          </a>
+        </div>
+        <button class="btn-gold w-full py-5 rounded-2xl text-center text-sm tracking-widest mt-auto">Access Canada Cities</button>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer class="w-full py-16 text-center border-t border-white/5 opacity-30">
+  <p class="text-[10px] uppercase tracking-[1em] font-black italic">Independent Fan Hub • © 2026</p>
+</footer>
+
+<!-- ── AFFILIATE / INFO FOOTER SECTION ── -->
+<section class="max-w-[1600px] mx-auto px-8 py-12">
+  <div class="rounded-[30px] border border-white/5 bg-[#070d1f]/50 p-10 backdrop-blur-md">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+      <div class="space-y-4">
+        <div class="text-gold text-2xl">💸</div>
+        <h4 class="bebas text-2xl tracking-wide uppercase text-white">Transparent Affiliate Model</h4>
+        <p class="condensed text-sm text-white/60 leading-relaxed">
+          This portal is built for fans, by fans. We provide direct booking links for your convenience. Please note that we earn a small commission at no extra cost to you when you secure your stay through our partners.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <div class="text-gold text-2xl">🛡</div>
+        <h4 class="bebas text-2xl tracking-wide uppercase text-white">Non-FIFA Affiliation</h4>
+        <p class="condensed text-sm text-white/60 leading-relaxed">
+          GO2CUP is an independent resource. We are not affiliated with, authorized, or endorsed by FIFA. This ensures our guidance remains unbiased and focused solely on the traveler's experience.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <div class="text-gold text-2xl">🤝</div>
+        <h4 class="bebas text-2xl tracking-wide uppercase text-white">Sponsors & Marketing</h4>
+        <div class="flex flex-col gap-2">
+          <a href="/marketing" class="text-gold font-bold text-xs uppercase tracking-widest hover:text-white transition-all">Marketing Kits →</a>
+          <a href="/sponsor" class="text-gold font-bold text-xs uppercase tracking-widest hover:text-white transition-all">Sponsor This Region →</a>
+        </div>
+      </div>
+
+      <!-- ═══ OPT-IN COLUMN ═══ -->
+      <div class="space-y-4">
+        <div class="text-gold text-2xl">📩</div>
+        <h4 class="bebas text-2xl tracking-wide uppercase text-white">Get Sports News First</h4>
+        <p class="condensed text-[10px] text-white/40 uppercase tracking-widest">Match alerts · Fan deals · City guides</p>
+
+        <form id="g2c-footer-form" onsubmit="handleFooterSubscribe(event)" class="space-y-2" style="margin-top:12px;">
+          <input
+            type="text"
+            id="g2c-footer-name"
+            placeholder="First Name"
+            class="g2c-optin-input"
+            required
+            autocomplete="given-name"
+          />
+          <input
+            type="email"
+            id="g2c-footer-email"
+            placeholder="Email Address"
+            class="g2c-optin-input"
+            required
+            autocomplete="email"
+          />
+          <button type="submit" class="g2c-optin-btn" id="g2c-footer-btn">
+            <span id="g2c-footer-btn-text">JOIN THE FAN LIST</span>
+            <svg id="g2c-footer-spinner" width="14" height="14" viewBox="0 0 14 14" fill="none" style="display:none;animation:g2c-spin 0.8s linear infinite;">
+              <circle cx="7" cy="7" r="5.5" stroke="currentColor" stroke-width="2" stroke-dasharray="17 9"/>
+            </svg>
+          </button>
+          <p style="font-size:10px;color:rgba(255,255,255,0.28);margin:6px 0 0;font-family:'Barlow Condensed',sans-serif;letter-spacing:0.04em;">No spam. Unsubscribe anytime.</p>
+        </form>
+
+        <div id="g2c-footer-success" style="display:none;padding:12px 0;">
+          <p style="font-family:'Bebas Neue',cursive;font-size:18px;color:#4ade80;letter-spacing:1px;margin:0;">🏆 You're in! Check your inbox.</p>
+        </div>
+
+        <div id="g2c-footer-error" style="display:none;margin-top:8px;">
+          <p id="g2c-footer-error-msg" style="font-family:'Barlow',sans-serif;font-size:12px;color:#f87171;margin:0;"></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+async function handleFooterSubscribe(e) {
+  e.preventDefault();
+  var name    = document.getElementById('g2c-footer-name').value.trim();
+  var email   = document.getElementById('g2c-footer-email').value.trim();
+  var btn     = document.getElementById('g2c-footer-btn');
+  var btnText = document.getElementById('g2c-footer-btn-text');
+  var spinner = document.getElementById('g2c-footer-spinner');
+  var errDiv  = document.getElementById('g2c-footer-error');
+  var errMsg  = document.getElementById('g2c-footer-error-msg');
+
+  btn.disabled = true;
+  btnText.style.display = 'none';
+  spinner.style.display = 'inline-block';
+  errDiv.style.display  = 'none';
+
+  try {
+    await fetch('https://hooks.zapier.com/hooks/catch/13426346/u73fhxh/', {
+      method: 'POST',
+      mode: 'no-cors',
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        list: 'The Travel Ledger'
+      })
+    });
+
+    document.getElementById('g2c-footer-form').style.display = 'none';
+    document.getElementById('g2c-footer-success').style.display = 'block';
+
+  } catch (err) {
+    errMsg.textContent = 'Connection error. Please try again.';
+    errDiv.style.display = 'block';
+    btn.disabled = false;
+    btnText.style.display = 'inline';
+    spinner.style.display = 'none';
+  }
+}
+</script>
+
+</body>
+</html>
