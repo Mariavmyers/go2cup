@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Where to Stay for World Cup 2026 | GO2CUP Hotel Planning Hub</title>
+  <meta name="description" content="Plan where to stay for World Cup 2026 across the USA, Mexico, and Canada. GO2CUP helps fans compare host cities, hotel zones, airport access, stadium areas, and travel planning resources." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mainentry.net/where-to-stay.html" />
+
+  <style>
+    :root {
+      --navy: #0A1F44;
+      --red: #B22234;
+      --green: #006847;
+      --gold: #F5B700;
+      --light: #f7f9fc;
+      --text: #172033;
+      --muted: #5f6b7a;
+      --border: #d9e1ec;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--light);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--navy), #123b7a);
+      color: var(--white);
+      padding: 56px 20px;
+      text-align: center;
+    }
+
+    header .eyebrow {
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.82rem;
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      margin: 0 auto 18px;
+      max-width: 920px;
+      font-size: clamp(2rem, 4vw, 4rem);
+      line-height: 1.05;
+    }
+
+    header p {
+      max-width: 780px;
+      margin: 0 auto 26px;
+      font-size: 1.1rem;
+      color: #e6edf7;
+    }
+
+    .top-nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 20px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .top-nav a {
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 34px 20px;
+    }
+
+    .notice {
+      background: #fff8e6;
+      border: 1px solid #f0d58c;
+      color: #4c3900;
+      border-radius: 16px;
+      padding: 18px 20px;
+      margin-bottom: 28px;
+    }
+
+    .section-title {
+      color: var(--navy);
+      font-size: 2rem;
+      margin: 0 0 10px;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      margin-top: 0;
+      max-width: 820px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 8px 24px rgba(10, 31, 68, 0.06);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-size: 1.1rem;
+    }
+
+    .card p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: #eaf1fb;
+      color: var(--navy);
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .cta-panel {
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 24px;
+      padding: 28px;
+      margin: 34px 0;
+      display: grid;
+      gap: 14px;
+    }
+
+    .cta-panel h2 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .cta-panel p {
+      margin: 0;
+      color: #dce7f7;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 999px;
+      padding: 12px 18px;
+      font-weight: 800;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: #1b1600;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.65);
+    }
+
+    .city-list {
+      columns: 2;
+      column-gap: 28px;
+      padding-left: 20px;
+    }
+
+    .city-list li {
+      break-inside: avoid;
+      margin-bottom: 8px;
+    }
+
+    .disclosure {
+      background: var(--white);
+      border-top: 4px solid var(--red);
+      border-radius: 18px;
+      padding: 22px;
+      margin-top: 30px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: #08172f;
+      color: #dce7f7;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #ffffff;
+      margin: 0 8px;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      .city-list {
+        columns: 1;
+      }
+
+      header {
+        padding: 42px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="top-nav">
+    <a href="index.html">Home</a>
+    <a href="host-cities.html">Host Cities</a>
+    <a href="emergency.html">Emergency</a>
+    <a href="budget-calculator.html">Budget Calculator</a>
+    <a href="partner-resources.html">Partner Resources</a>
+    <a href="https://mainentry.net/go2cup-fan-survival-guide">Free Planning Guide</a>
+  </nav>
+
+  <header>
+    <div class="eyebrow">World Cup 2026 Hotel Planning</div>
+    <h1>Where to Stay for World Cup 2026</h1>
+    <p>
+      A fan-first hotel planning hub for the 2026 World Cup across the USA, Mexico, and Canada.
+      Use this page to understand host-city lodging zones, airport access, stadium proximity,
+      and smarter booking decisions before prices rise.
+    </p>
+    <div class="button-row" style="justify-content:center;">
+      <a class="btn btn-primary" href="https://mainentry.net/go2cup-fan-survival-guide">Get the Free Planning Guide</a>
+      <a class="btn btn-secondary" href="host-cities.html">Explore Host Cities</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="notice">
+      <strong>Independent fan-built resource:</strong> GO2CUP is not affiliated with, endorsed by,
+      or officially connected to FIFA, host cities, stadiums, teams, government agencies, or official World Cup partners
+      unless clearly stated.
+    </div>
+
+    <section>
+      <h2 class="section-title">How to Think About Hotels for World Cup 2026</h2>
+      <p class="section-intro">
+        The best hotel is not always the closest hotel to the stadium. For World Cup travel, fans should compare
+        stadium access, airport access, transit reliability, neighborhood safety, food options, match-day crowd flow,
+        and the cost of moving between cities.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <span class="badge">Match-day access</span>
+          <h3>Stay near transit, not just the stadium</h3>
+          <p>
+            A hotel near a reliable train, metro, shuttle, or rideshare zone may be better than a hotel close to a stadium
+            but hard to reach on match day.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="badge">Airport logic</span>
+          <h3>Know your arrival airport</h3>
+          <p>
+            Some host cities have major airports far from the stadium area. Check transfer time before booking a hotel
+            that looks cheap but creates expensive rides.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="badge">Budget control</span>
+          <h3>Book with cancellation flexibility</h3>
+          <p>
+            Prices and availability can change fast around match dates. Flexible cancellation can protect you while your
+            match schedule, flights, and city route are still forming.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="badge">Multi-city fans</span>
+          <h3>Plan the route before the room</h3>
+          <p>
+            If you are following a team or attending multiple matches, choose hotels based on the full trip route,
+            not only one match city.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-panel">
+      <h2>Get the World Cup 2026 Fan Planning Guide</h2>
+      <p>
+        Before you book hotels, build your basic plan: host cities, likely match dates, airport routes,
+        emergency basics, budget range, and common booking mistakes to avoid.
+      </p>
+      <div class="button-row">
+        <a class="btn btn-primary" href="https://mainentry.net/go2cup-fan-survival-guide">Get Free Planning Guide</a>
+        <a class="btn btn-secondary" href="budget-calculator.html">Open Budget Calculator</a>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Host Cities to Watch for Hotel Demand</h2>
+      <p class="section-intro">
+        GO2CUP will build city-by-city hotel planning pages for each World Cup 2026 host city. These pages will help
+        fans compare stay zones, airport routes, stadium access, and booking considerations.
+      </p>
+
+      <ul class="city-list">
+        <li>Atlanta</li>
+        <li>Boston / Foxborough</li>
+        <li>Dallas</li>
+        <li>Guadalajara</li>
+        <li>Houston</li>
+        <li>Kansas City</li>
+        <li>Los Angeles</li>
+        <li>Mexico City</li>
+        <li>Miami</li>
+        <li>Monterrey</li>
+        <li>New York / New Jersey</li>
+        <li>Philadelphia</li>
+        <li>San Francisco Bay Area</li>
+        <li>Seattle</li>
+        <li>Toronto</li>
+        <li>Vancouver</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">Booking Platforms and Travel Tools</h2>
+      <p class="section-intro">
+        GO2CUP is preparing hotel, transportation, tour, and travel-tool resources for World Cup 2026 fans.
+        Affiliate and partner links may be added after review and approval. Recommendations will be selected for
+        usefulness, availability, fan planning value, and clear disclosure.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Hotels and stays</h3>
+          <p>
+            Future resources may include hotel platforms, apartment-style stays, flexible booking tools,
+            and city-specific stay-zone guidance.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Airport transfers</h3>
+          <p>
+            Future resources may include airport transfer tools, private transport options, rideshare guidance,
+            and city-to-stadium movement tips.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Tours and experiences</h3>
+          <p>
+            Future resources may include local tours, food experiences, city passes, and match-week activity planning.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Language support</h3>
+          <p>
+            GO2CUP is also building language-access resources for fans, groups, agencies, and event-adjacent businesses.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="disclosure">
+      <h2>Affiliate and Travel Disclosure</h2>
+      <p>
+        GO2CUP may use affiliate links on some pages. If you click a partner link and make a purchase,
+        GO2CUP may earn a commission at no extra cost to you. This helps support the work of building independent
+        fan travel resources.
+      </p>
+      <p>
+        Prices, availability, cancellation terms, hotel policies, schedules, ticketing, safety information,
+        transport details, and entry requirements can change. Always verify details with official sources,
+        booking platforms, transport providers, stadiums, airlines, and government agencies before booking or traveling.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      GO2CUP — Independent fan-built World Cup 2026 hub | Built by Maria Myers | Powered by MainEntry
+    </p>
+    <p>
+      <a href="index.html">Home</a>
+      <a href="host-cities.html">Host Cities</a>
+      <a href="partner-resources.html">Partner Resources</a>
+      <a href="emergency.html">Emergency</a>
+      <a href="https://mainentry.net/go2cup-fan-survival-guide">Planning Guide</a>
+    </p>
+    <p>
+      Not affiliated with FIFA. Verify official travel, ticketing, entry, safety, and booking information before making decisions.
+    </p>
+  </footer>
+</body>
+</html>
