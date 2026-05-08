@@ -1,0 +1,549 @@
+<!-- START OF PAGE: NEW YORK / NEW JERSEY -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>New York / New Jersey World Cup 2026 — Hotels Near MetLife Stadium & The Final</title>
+<meta name="description" content="Complete fan travel guide for New York / New Jersey World Cup 2026. Find hotels near MetLife Stadium, host of the FIFA World Cup Final, and plan your stay for the biggest match in football." />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#0a0a0a" />
+<link rel="canonical" href="https://mainentry.net/go2cup/new-york-new-jersey/" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="New York / New Jersey 2026 — Hotels Near MetLife Stadium · The Final" />
+<meta property="og:description" content="Hotels near MetLife Stadium, host of the FIFA World Cup 2026 Final. Best areas to stay, fan travel guide, and everything you need for the biggest match in football." />
+<meta property="og:url" content="https://mainentry.net/go2cup/new-york-new-jersey/" />
+
+<style>
+/* ===== RESET & ROOT ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+:root {
+  --bg:        #0a0a0a;
+  --panel:     #111111;
+  --gold:      #FFD700;
+  --gold-2:    #FFEA70;
+  --green:     #2DC653;
+  --green-dk:  #25b048;
+  --red:       #E8271A;
+  --blue:      #0D2B5E;
+  --blue-lt:   #4a7cd4;
+  --text:      #ffffff;
+  --muted:     rgba(255,255,255,0.65);
+  --muted-2:   rgba(255,255,255,0.45);
+  --muted-3:   rgba(255,255,255,0.28);
+  --radius:    10px;
+  --shadow:    0 24px 64px rgba(0,0,0,0.7);
+  --max:       1140px;
+  /* NY/NJ accent — deep World Cup gold / trophy */
+  --nyc:       #D4AF37;
+  --nyc-dk:    #b8961e;
+  --nyc-2:     #FFD700;
+}
+body {
+  background: var(--bg);
+  min-height: 100vh;
+  font-family: 'Oswald', sans-serif;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+/* ===== TOPNAV ===== */
+.topnav { width:100%; background:#080808; border-bottom:3px solid var(--red); position:sticky; top:0; z-index:1000; overflow-x:auto; scrollbar-width:none; }
+.topnav::-webkit-scrollbar { display:none; }
+.topnav-inner { display:flex; align-items:stretch; width:100%; max-width:var(--max); margin:0 auto; min-height:52px; padding:0 16px; }
+.nav-logo { display:flex; align-items:center; gap:10px; padding:0 20px 0 0; font-family:'Bebas Neue',sans-serif; font-size:20px; letter-spacing:2px; white-space:nowrap; flex-shrink:0; border-right:1px solid rgba(255,255,255,0.08); margin-right:6px; }
+.nav-logo .logo-name { color:var(--red); line-height:1; }
+.nav-logo .logo-sub { color:var(--gold); font-size:9px; letter-spacing:3px; font-family:'Oswald',sans-serif; display:block; margin-top:-2px; }
+.nav-logo-stack { display:flex; flex-direction:column; }
+.nav-tab { display:flex; align-items:center; padding:0 13px; font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--muted-2); white-space:nowrap; flex-shrink:0; border-bottom:3px solid transparent; transition:color 0.2s, border-color 0.2s; }
+.nav-tab:hover { color:#fff; border-bottom-color:var(--gold); }
+.nav-tab.active { color:#fff; border-bottom-color:var(--nyc); }
+.nav-tab-cta { display:flex; align-items:center; padding:0 18px; font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#0a0a0a; background:var(--gold); white-space:nowrap; flex-shrink:0; margin-left:auto; transition:background 0.2s; }
+.nav-tab-cta:hover { background:var(--gold-2); }
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb { width:100%; max-width:var(--max); padding:12px 20px 0; display:flex; align-items:center; gap:8px; font-size:10px; letter-spacing:2px; text-transform:uppercase; color:var(--muted-3); }
+.breadcrumb a { color:var(--muted-2); transition:color 0.2s; }
+.breadcrumb a:hover { color:#fff; }
+.breadcrumb span { color:var(--nyc); }
+
+/* ===== PAGE WRAP ===== */
+.page-wrap { width:100%; max-width:var(--max); padding:0 20px 80px; }
+
+/* ===== HERO ===== */
+.city-hero {
+  margin-top:14px;
+  border-radius:var(--radius);
+  overflow:hidden;
+  position:relative;
+  min-height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  border-top:5px solid var(--nyc);
+  border-bottom:5px solid var(--red);
+  box-shadow:var(--shadow);
+}
+.city-hero-bg {
+  position:absolute; inset:0; z-index:0;
+  background: linear-gradient(135deg, #080808 0%, #0e0e18 30%, #14141f 60%, #080808 100%);
+}
+.city-hero-bg::after {
+  content:'';
+  position:absolute; inset:0;
+  background:
+    radial-gradient(ellipse 65% 80% at 80% 15%, rgba(212,175,55,0.20) 0%, transparent 55%),
+    radial-gradient(ellipse 45% 55% at 15% 80%, rgba(232,39,26,0.12) 0%, transparent 50%),
+    radial-gradient(ellipse 40% 40% at 50% 50%, rgba(255,215,0,0.04) 0%, transparent 60%),
+    linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.75) 100%);
+}
+.city-hero-grid { position:absolute; inset:0; background:repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(255,255,255,0.02) 40px, rgba(255,255,255,0.02) 41px); z-index:1; pointer-events:none; }
+.city-hero-content { position:relative; z-index:2; padding:48px 52px 52px; }
+.city-badge-row { display:flex; align-items:center; gap:12px; margin-bottom:16px; flex-wrap:wrap; }
+.badge-city { background:var(--nyc); color:#0a0a0a; font-size:9px; font-weight:700; letter-spacing:3px; padding:5px 14px; border-radius:2px; text-transform:uppercase; }
+.badge-final { background:var(--red); color:#fff; font-size:9px; font-weight:700; letter-spacing:3px; padding:5px 14px; border-radius:2px; text-transform:uppercase; }
+.badge-stadium { font-size:11px; color:var(--muted-2); letter-spacing:2px; }
+.city-hero-title { font-family:'Playfair Display',serif; font-size:clamp(36px,5vw,68px); font-weight:700; line-height:1.02; margin-bottom:14px; text-shadow:0 4px 24px rgba(0,0,0,0.6); }
+.city-hero-title em { font-style:italic; color:var(--nyc); }
+.city-hero-title .hl { color:var(--gold); }
+.city-hero-sub { font-size:clamp(13px,1.6vw,17px); color:var(--muted); max-width:620px; line-height:1.65; margin-bottom:24px; }
+.hero-stats { display:flex; gap:28px; flex-wrap:wrap; margin-bottom:28px; }
+.hstat { display:flex; flex-direction:column; gap:3px; }
+.hstat-num { font-family:'Bebas Neue',sans-serif; font-size:28px; color:var(--gold); letter-spacing:1px; line-height:1; }
+.hstat-lbl { font-size:9px; letter-spacing:2.5px; text-transform:uppercase; color:var(--muted-2); }
+.hero-cta-row { display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+.btn-primary { display:inline-flex; align-items:center; gap:8px; background:var(--green); color:#fff; padding:14px 28px; font-weight:700; font-size:12px; letter-spacing:2.5px; text-transform:uppercase; border-radius:3px; transition:background 0.2s, transform 0.15s; cursor:pointer; border:none; font-family:'Oswald',sans-serif; }
+.btn-primary:hover { background:var(--green-dk); transform:translateY(-2px); }
+.btn-gold { display:inline-flex; align-items:center; gap:8px; background:var(--gold); color:#0a0a0a; padding:14px 28px; font-weight:700; font-size:12px; letter-spacing:2.5px; text-transform:uppercase; border-radius:3px; transition:background 0.2s, transform 0.15s; }
+.btn-gold:hover { background:var(--gold-2); transform:translateY(-2px); }
+.btn-nyc { display:inline-flex; align-items:center; gap:8px; background:var(--nyc); color:#0a0a0a; padding:14px 28px; font-weight:700; font-size:12px; letter-spacing:2.5px; text-transform:uppercase; border-radius:3px; transition:background 0.2s, transform 0.15s; }
+.btn-nyc:hover { background:var(--nyc-dk); color:#fff; transform:translateY(-2px); }
+.btn-outline { display:inline-flex; align-items:center; gap:8px; background:transparent; color:var(--muted); padding:13px 24px; font-weight:700; font-size:11px; letter-spacing:2px; text-transform:uppercase; border-radius:3px; border:1px solid rgba(255,255,255,0.2); transition:border-color 0.2s, color 0.2s; }
+.btn-outline:hover { border-color:rgba(255,255,255,0.5); color:#fff; }
+
+/* ===== QUICK JUMP ===== */
+.quick-jump { margin-top:16px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); border-radius:var(--radius); padding:18px 24px; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.qj-label { font-size:9px; letter-spacing:3px; text-transform:uppercase; color:var(--muted-3); font-weight:700; margin-right:4px; white-space:nowrap; }
+.qj-btn { font-size:10px; letter-spacing:1.5px; text-transform:uppercase; padding:7px 14px; border-radius:999px; border:1px solid rgba(255,255,255,0.1); background:rgba(255,255,255,0.04); color:rgba(255,255,255,0.7); transition:all 0.2s; white-space:nowrap; }
+.qj-btn:hover { background:rgba(255,255,255,0.09); border-color:rgba(255,255,255,0.22); color:#fff; }
+
+/* ===== SECTION BASE ===== */
+.section { margin-top:24px; border-radius:var(--radius); padding:36px 40px; }
+.eyebrow { font-size:9px; font-weight:700; letter-spacing:4px; text-transform:uppercase; display:block; margin-bottom:10px; }
+.sec-title { font-family:'Playfair Display',serif; font-size:clamp(22px,3vw,36px); color:#fff; margin-bottom:10px; line-height:1.1; }
+.sec-copy { color:var(--muted-2); font-size:13px; letter-spacing:0.4px; line-height:1.8; max-width:760px; }
+
+/* Section color variants */
+.sec-hotels { background:linear-gradient(135deg,#0a1a08 0%,#071510 100%); border:1px solid rgba(45,198,83,0.3); border-left:4px solid var(--green); }
+.sec-hotels .eyebrow { color:var(--green); }
+.sec-areas { background:linear-gradient(135deg,#03122e 0%,#071828 100%); border:1px solid rgba(74,124,212,0.3); border-left:4px solid var(--blue-lt); }
+.sec-areas .eyebrow { color:var(--blue-lt); }
+
+/* ===== AREAS GRID ===== */
+.areas-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:22px; }
+.area-card { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:8px; padding:20px 18px; transition:border-color 0.2s, background 0.2s; }
+.area-card:hover { background:rgba(255,255,255,0.06); border-color:rgba(74,124,212,0.3); }
+.area-icon { font-size:26px; margin-bottom:10px; }
+.area-name { font-size:14px; font-weight:700; color:#fff; letter-spacing:0.5px; margin-bottom:6px; }
+.area-dist { font-size:11px; color:var(--nyc); letter-spacing:1px; margin-bottom:8px; }
+.area-desc { font-size:12px; color:var(--muted-2); line-height:1.65; }
+.area-tag { display:inline-block; font-size:9px; letter-spacing:1.5px; text-transform:uppercase; padding:3px 9px; border-radius:3px; margin-top:8px; background:rgba(74,124,212,0.12); color:var(--blue-lt); border:1px solid rgba(74,124,212,0.25); }
+
+/* ===== HOTEL CARDS ===== */
+.hotels-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; margin-top:28px; }
+.hotel-card {
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:10px;
+  overflow:hidden;
+  transition:border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  display:flex;
+  flex-direction:column;
+}
+.hotel-card:hover {
+  border-color:rgba(45,198,83,0.35);
+  transform:translateY(-3px);
+  box-shadow:0 16px 40px rgba(0,0,0,0.4);
+}
+.hotel-img-placeholder { width:100%; height:200px; background:linear-gradient(135deg,#0e0e18 0%,#080808 100%); display:flex; align-items:center; justify-content:center; flex-direction:column; gap:8px; }
+.hotel-img-placeholder span { font-size:36px; }
+.hotel-img-placeholder em { font-style:normal; font-size:9px; letter-spacing:3px; color:var(--muted-3); text-transform:uppercase; }
+.hotel-content { padding:20px 18px 18px; flex:1; display:flex; flex-direction:column; gap:10px; }
+.hotel-name { font-size:15px; font-weight:700; color:#fff; letter-spacing:0.4px; line-height:1.2; }
+.hotel-location { font-size:11px; color:var(--muted-2); display:flex; align-items:center; gap:5px; }
+.hotel-tags { display:flex; gap:6px; flex-wrap:wrap; }
+.htag { font-size:9px; letter-spacing:1.5px; text-transform:uppercase; padding:3px 9px; border-radius:3px; font-weight:700; }
+.htag-green { background:rgba(45,198,83,0.12); color:var(--green); border:1px solid rgba(45,198,83,0.25); }
+.htag-gold { background:rgba(212,175,55,0.14); color:var(--nyc); border:1px solid rgba(212,175,55,0.30); }
+.htag-nyc { background:rgba(255,215,0,0.1); color:var(--gold); border:1px solid rgba(255,215,0,0.25); }
+.htag-red { background:rgba(232,39,26,0.12); color:#ff6b6b; border:1px solid rgba(232,39,26,0.25); }
+.hotel-desc { font-size:12px; color:var(--muted-2); line-height:1.65; flex:1; }
+.hotel-price { font-family:'Bebas Neue',sans-serif; font-size:22px; color:var(--gold); letter-spacing:1px; }
+.hotel-price span { font-family:'Oswald',sans-serif; font-size:11px; color:var(--muted-2); font-weight:400; letter-spacing:1px; margin-left:4px; }
+.hotel-cta {
+  display:block;
+  background:var(--green);
+  color:#fff;
+  text-align:center;
+  padding:12px 18px;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  border-radius:4px;
+  margin-top:4px;
+  transition:background 0.2s;
+  font-family:'Oswald',sans-serif;
+}
+.hotel-cta:hover { background:var(--green-dk); }
+.hotel-cta-gold { background:var(--nyc); color:#0a0a0a; }
+.hotel-cta-gold:hover { background:var(--nyc-dk); color:#fff; }
+.hotel-cta-nyc { background:var(--gold); color:#0a0a0a; }
+.hotel-cta-nyc:hover { background:var(--gold-2); }
+
+/* Hotels — section headers */
+.hotel-section-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:6px; flex-wrap:wrap; gap:10px; }
+.hotel-section-head h3 { font-family:'Playfair Display',serif; font-size:20px; color:#fff; }
+.hotel-section-head a { font-size:10px; letter-spacing:2px; text-transform:uppercase; color:var(--green); border-bottom:1px solid rgba(45,198,83,0.3); }
+
+/* ===== FILTER BAR ===== */
+.filter-bar { display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:20px; margin-bottom:4px; }
+.filter-label { font-size:9px; letter-spacing:3px; color:var(--muted-3); text-transform:uppercase; font-weight:700; }
+.filter-btn { font-size:10px; letter-spacing:1.5px; text-transform:uppercase; padding:7px 16px; border-radius:999px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.04); color:var(--muted-2); cursor:pointer; transition:all 0.2s; }
+.filter-btn:hover, .filter-btn.active { background:rgba(45,198,83,0.12); border-color:rgba(45,198,83,0.35); color:var(--green); }
+
+/* ===== DISCLAIMER / FOOTER ===== */
+.disclaimer { width:100%; max-width:var(--max); padding:28px 20px 8px; font-size:11px; color:var(--muted-3); line-height:1.7; border-top:1px solid rgba(255,255,255,0.06); margin-top:20px; }
+.footer-meta { width:100%; max-width:var(--max); padding:12px 20px 32px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; font-size:10px; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted-3); }
+.footer-meta a { color:var(--muted-2); transition:color 0.2s; }
+.footer-meta a:hover { color:#fff; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .city-hero-content { padding:32px 24px 36px; }
+  .areas-grid { grid-template-columns:1fr; }
+  .hotels-grid { grid-template-columns:1fr; }
+  .section { padding:28px 20px; }
+  .hero-stats { gap:18px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== TOPNAV ===== -->
+<nav class="topnav" aria-label="Site navigation">
+  <div class="topnav-inner">
+    <a href="/go-2-cup/" class="nav-logo">
+      <div class="nav-logo-stack">
+        <span class="logo-name">GO2CUP</span>
+        <span class="logo-sub">World Cup 2026</span>
+      </div>
+    </a>
+    <a href="#areas" class="nav-tab">Areas</a>
+    <a href="#hotels" class="nav-tab active">Hotels</a>
+    <a href="/go-2-cup/host-cities/" class="nav-tab">All Cities</a>
+    <a href="https://www.booking.com/searchresults.html?ss=east+rutherford+new+jersey&aid=BOOKING_AFFILIATE_ID" target="_blank" rel="noopener" class="nav-tab-cta">Book Hotels →</a>
+  </div>
+</nav>
+
+<!-- ===== BREADCRUMB ===== -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/go-2-cup/">Go2Cup</a>
+  <span>›</span>
+  <a href="/go-2-cup/host-cities/">Host Cities</a>
+  <span>›</span>
+  <span>New York / New Jersey</span>
+</nav>
+
+<div class="page-wrap">
+
+<!-- HERO -->
+<section class="city-hero" id="hero">
+  <div class="city-hero-bg"></div>
+  <div class="city-hero-grid"></div>
+  <div class="city-hero-content">
+    <div class="city-badge-row">
+      <span class="badge-city">New York / New Jersey</span>
+      <span class="badge-final">🏆 FIFA World Cup Final</span>
+      <span class="badge-stadium">🏟 MetLife Stadium · East Rutherford, NJ</span>
+    </div>
+    <h1 class="city-hero-title">
+      <em>New York / New Jersey 2026</em> —<br>
+      Hotels Near <span class="hl">MetLife Stadium</span>
+    </h1>
+    <p class="city-hero-sub">
+      MetLife Stadium in <strong>East Rutherford, New Jersey</strong> hosts the <strong>FIFA World Cup 2026 Final</strong> — the most watched sporting event on earth. The trophy lift, awards ceremony, and closing celebration all happen here. Demand for accommodation across the entire metro area during Final week will be unlike anything the region has ever seen. MetLife sits about <strong>8 miles from Midtown Manhattan</strong>, reachable by NJ Transit in under 30 minutes — but <strong>choosing the right area to stay shapes your price, transit access, and the energy of your entire Final week</strong>. Book as early as you possibly can.
+    </p>
+    <div class="hero-stats">
+      <div class="hstat">
+        <span class="hstat-num">82,500</span>
+        <span class="hstat-lbl">Stadium Capacity</span>
+      </div>
+      <div class="hstat">
+        <span class="hstat-num">The Final</span>
+        <span class="hstat-lbl">Match Designation</span>
+      </div>
+      <div class="hstat">
+        <span class="hstat-num">8 Miles</span>
+        <span class="hstat-lbl">to Midtown NYC</span>
+      </div>
+      <div class="hstat">
+        <span class="hstat-num">🏆 Trophy</span>
+        <span class="hstat-lbl">Lift & Ceremony Here</span>
+      </div>
+    </div>
+    <div class="hero-cta-row">
+      <a href="https://www.booking.com/searchresults.html?ss=east+rutherford+new+jersey&aid=BOOKING_AFFILIATE_ID" target="_blank" rel="noopener" class="btn-primary">Find Hotels Near MetLife →</a>
+      <a href="#areas" class="btn-outline">Best Areas to Stay ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- Quick Jump -->
+<div class="quick-jump">
+  <span class="qj-label">Jump to:</span>
+  <a href="#areas" class="qj-btn">📍 Best Areas</a>
+  <a href="#hotels" class="qj-btn">🏨 Hotel Picks</a>
+  <a href="https://www.booking.com/searchresults.html?ss=new+york+new+jersey+metlife&aid=BOOKING_AFFILIATE_ID" target="_blank" rel="noopener" class="qj-btn">📅 Check Final Dates</a>
+</div>
+
+<!-- AREAS -->
+<section class="section sec-areas" id="areas">
+  <span class="eyebrow">📍 Where to Stay — New York / New Jersey World Cup Final 2026</span>
+  <h2 class="sec-title">Best Areas to Stay for MetLife Stadium & The Final</h2>
+  <p class="sec-copy">The New York / New Jersey metro area gives you options that no other host city can — from stadium-adjacent New Jersey hotels to Midtown Manhattan towers and the waterfront neighbourhoods of Jersey City and Hoboken. Each has distinct advantages. For Final week specifically, every zone will be stretched to capacity and prices will reflect it.</p>
+
+  <div class="areas-grid">
+
+    <div class="area-card">
+      <div class="area-icon">🏟</div>
+      <div class="area-name">Near MetLife Stadium / Secaucus / East Rutherford</div>
+      <div class="area-dist">0–5 miles from stadium · Drive, shuttle, or NJ Transit</div>
+      <div class="area-desc">The most practical base for match-day fans. The Meadowlands / Secaucus corridor has a concentrated hotel cluster well-suited to event-goers — no NYC prices, no cross-river logistics, and a direct NJ Transit rail link to the stadium on match days. Secaucus Junction is the key transit hub connecting this zone to Manhattan and Newark. For the Final specifically, staying here puts you in full control of your day. Inventory is limited — it disappears first.</div>
+      <span class="area-tag">Best Match-Day Convenience</span>
+    </div>
+
+    <div class="area-card">
+      <div class="area-icon">🗽</div>
+      <div class="area-name">Midtown Manhattan</div>
+      <div class="area-dist">~8 miles from stadium · 25–35 min NJ Transit from Penn Station</div>
+      <div class="area-desc">The New York City experience in full — Times Square, Central Park, world-class dining on every block, and the electric energy of the world's most famous skyline during a World Cup Final week. NJ Transit runs direct to MetLife Stadium from Penn Station, making match-day travel manageable. The most expensive zone by a wide margin, but for the Final, many fans will pay the premium to say they stayed in Manhattan. Book 12+ months out for any chance of reasonable rates.</div>
+      <span class="area-tag">Best NYC Experience</span>
+    </div>
+
+    <div class="area-card">
+      <div class="area-icon">🌊</div>
+      <div class="area-name">Jersey City / Hoboken</div>
+      <div class="area-dist">~10 miles from stadium · 30–40 min via NJ Transit or PATH</div>
+      <div class="area-desc">The smart middle ground — waterfront hotels with Manhattan skyline views, significantly lower nightly rates than Midtown, and excellent transit in every direction. The PATH train connects Jersey City and Hoboken directly into lower Manhattan and midtown in minutes, while NJ Transit runs west toward the Meadowlands. Hoboken's Washington Street bar scene is one of the best in the metro area. For Final week, this zone offers the best value-to-experience ratio in the entire region.</div>
+      <span class="area-tag">Best Value with Skyline Views</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- HOTELS -->
+<section class="section sec-hotels" id="hotels">
+  <span class="eyebrow">🏨 Hotels Near MetLife Stadium — New York / New Jersey World Cup Final 2026</span>
+  <h2 class="sec-title">Best Hotels for MetLife Stadium & The World Cup Final</h2>
+  <p class="sec-copy">From stadium-side New Jersey to Midtown Manhattan landmarks and Jersey City waterfront — these are the top hotels for fans attending matches and the Final in the New York metro area. Final week demand will exceed any previous event at MetLife. There is no such thing as booking too early for this one.</p>
+
+  <div class="filter-bar">
+    <span class="filter-label">Filter:</span>
+    <button class="filter-btn active" onclick="filterHotels('all',this)">All</button>
+    <button class="filter-btn" onclick="filterHotels('walk',this)">🚶 Walkable</button>
+    <button class="filter-btn" onclick="filterHotels('budget',this)">💰 Budget</button>
+    <button class="filter-btn" onclick="filterHotels('premium',this)">⭐ Premium</button>
+    <button class="filter-btn" onclick="filterHotels('transit',this)">🚆 Transit</button>
+  </div>
+
+  <!-- Stadium Zone — Meadowlands / Secaucus -->
+  <div style="margin-top:28px;">
+    <div class="hotel-section-head">
+      <h3>📍 Stadium Zone — Meadowlands / Secaucus / East Rutherford</h3>
+      <a href="https://www.booking.com/searchresults.html?ss=secaucus+east+rutherford+new+jersey&aid=BOOKING_AFFILIATE_ID" target="_blank" rel="noopener">See all on Booking.com →</a>
+    </div>
+    <div class="hotels-grid">
+
+      <!-- HOTEL CARD 1 -->
+      <div class="hotel-card" data-tags="walk premium transit">
+        <div class="hotel-img-placeholder"><span>🏟</span><em>Meadowlands · Stadium Zone</em></div>
+        <div class="hotel-content">
+          <div class="hotel-name">Marriott Glenpointe Teaneck</div>
+          <div class="hotel-location">📍 Teaneck, NJ · ~5 miles to MetLife Stadium</div>
+          <div class="hotel-tags">
+            <span class="htag htag-gold">Full Service</span>
+            <span class="htag htag-green">Stadium Zone</span>
+            <span class="htag htag-nyc">Fan Favourite</span>
+          </div>
+          <div class="hotel-desc">One of the strongest full-service options in the MetLife zone — established, well-reviewed, and built to handle major event demand. Full amenities including pool, multiple restaurants, and reliable shuttle options to the stadium complex. Consistently used by sports and event travellers for Meadowlands fixtures. For the World Cup Final, this is one of the most practical addresses in New Jersey. Will sell out at any price point — act immediately.</div>
+          <div class="hotel-price">From $289 <span>/ night</span></div>
+          <!-- AFFILIATE LINK PLACEHOLDER: Replace BOOKING_AFFILIATE_ID -->
+          <a href="https://www.booking.com/hotel/us/marriott-glenpointe.html?aid=BOOKING_AFFILIATE_ID" target="_blank" rel="noopener" class="hotel-cta">Check Availability →</a>
+        </div>
+      </div>
+
+      <!-- HOTEL CARD 2 -->
+      <div class="hotel-card" data-tags="budget transit">
+        <div class="hotel-img-placeholder"><span>🚆</span><em>Secaucus Junction · Transit Hub</em></div>
+        <div class="hotel-content">
+          <div class="hotel-name">Hilton Hasbrouck Heights / Meadowlands</div>
+          <div class="hotel-location">📍 Hasbrouck Heights, NJ · ~4 miles to MetLife Stadium</div>
+          <div class="hotel-tags">
+            <span class="htag htag-green">Good Value</span>
+            <span class="htag htag-gold">Free Parking</span>
+            <span class="htag htag-nyc">Near Stadium</span>
+          </div>
+          <div class="hotel-desc">Reliable Hilton in the Meadowlands cluster — free parking, solid standard, and one of the better value-per-night options in the stadium zone. A short drive or rideshare to MetLife on match days, with good highway access in every direction. For fans driving in from elsewhere in the northeast, this combination of parking, location, and price is hard to beat. Book early — the entire NJ hotel supply around the stadium will be wiped out for Final week.</div>
+          <div class="hotel-price">From $220 <span>/ night</span></div>
+          <!-- AFFILIATE LINK PLACEHOLDER: Replace HOTELS_AFFILIATE_ID -->
+          <a href="https://www.hotels.com/search.do?destination=hasbrouck+heights+new+jersey&HOTELS_AFFILIATE_ID" target="_blank" rel="noopener" class="hotel-cta hotel-cta-gold">View Live Prices →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Midtown Manhattan -->
+  <div style="margin-top:36px;">
+    <div class="hotel-section-head">
+      <h3>🗽 Midtown Manhattan — The New York Experience</h3>
+      <a href="https://www.booking.com/searchresults.html?ss=midtown+manhattan+new+york&aid=BOOKING_AFFILIATE_ID" target="_blank" rel="noopener">See all on Booking.com →</a>
+    </div>
+    <div class="hotels-grid">
+
+      <!-- HOTEL CARD 3 -->
+      <div class="hotel-card" data-tags="premium transit">
+        <div class="hotel-img-placeholder"><span>🗽</span><em>Midtown · Iconic NYC</em></div>
+        <div class="hotel-content">
+          <div class="hotel-name">New York Marriott Marquis — Times Square</div>
+          <div class="hotel-location">📍 Times Square, NYC · NJ Transit from Penn Station (~30 min to MetLife)</div>
+          <div class="hotel-tags">
+            <span class="htag htag-gold">Times Square</span>
+            <span class="htag htag-red">High Demand</span>
+            <span class="htag htag-nyc">Iconic Address</span>
+          </div>
+          <div class="hotel-desc">The centrepiece of Times Square — 49 floors of Marriott in the heart of the world's most electric neighbourhood during Final week. NJ Transit from Penn Station (10-minute walk) connects directly to MetLife Stadium in 30 minutes. The experience of being in Manhattan during the World Cup Final is unlike anything else. Rates during Final week will be extraordinary. This is the address fans remember for the rest of their lives — if budget allows, it's worth it.</div>
+          <div class="hotel-price">From $620 <span>/ night</span></div>
+          <!-- AFFILIATE LINK PLACEHOLDER: Replace EXPEDIA_AFFILIATE_ID -->
+          <a href="https://www.expedia.com/New-York-Hotels.d178293.Travel-Guide-Hotels?EXPEDIA_AFFILIATE_ID" target="_blank" rel="noopener" class="hotel-cta hotel-cta-gold">See Rooms & Rates →</a>
+        </div>
+      </div>
+
+      <!-- HOTEL CARD 4 -->
+      <div class="hotel-card" data-tags="budget transit">
+        <div class="hotel-img-placeholder"><span>🏙</span><em>Midtown · Best Value NYC</em></div>
+        <div class="hotel-content">
+          <div class="hotel-name">citizenM New York Times Square</div>
+          <div class="hotel-location">📍 Times Square, NYC · NJ Transit from Penn Station (~30 min to MetLife)</div>
+          <div class="hotel-tags">
+            <span class="htag htag-green">Best Value Midtown</span>
+            <span class="htag htag-gold">Design Hotel</span>
+            <span class="htag htag-nyc">Penn Station Area</span>
+          </div>
+          <div class="hotel-desc">The smartest budget play in Manhattan — citizenM's compact, brilliantly designed rooms deliver a premium feel at rates well below traditional Midtown hotels. Located steps from Penn Station and the NJ Transit connection to MetLife. Lobby bar and rooftop lounge become serious fan hubs during major match weeks. For fans who want to be in Manhattan for the Final without paying flagship hotel rates, nothing in this neighbourhood competes on value.</div>
+          <div class="hotel-price">From $349 <span>/ night</span></div>
+          <!-- AFFILIATE LINK PLACEHOLDER: Replace BOOKING_AFFILIATE_ID -->
+          <a href="https://www.booking.com/hotel/us/citizenm-new-york-times-square.html?aid=BOOKING_AFFILIATE_ID" target="_blank" rel="noopener" class="hotel-cta">Check Availability →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Jersey City / Hoboken -->
+  <div style="margin-top:36px;">
+    <div class="hotel-section-head">
+      <h3>🌊 Jersey City / Hoboken — Waterfront Value</h3>
+      <a href="https://www.booking.com/searchresults.html?ss=jersey+city+hoboken+new+jersey&aid=BOOKING_AFFILIATE_ID" target="_blank" rel="noopener">See all on Booking.com →</a>
+    </div>
+    <div class="hotels-grid">
+
+      <!-- HOTEL CARD 5 -->
+      <div class="hotel-card" data-tags="premium transit">
+        <div class="hotel-img-placeholder"><span>🌃</span><em>Jersey City · Skyline Views</em></div>
+        <div class="hotel-content">
+          <div class="hotel-name">Hyatt Regency Jersey City on the Hudson</div>
+          <div class="hotel-location">📍 Jersey City Waterfront · ~10 miles to MetLife Stadium</div>
+          <div class="hotel-tags">
+            <span class="htag htag-gold">Manhattan Views</span>
+            <span class="htag htag-nyc">Waterfront</span>
+            <span class="htag htag-green">PATH Direct to NYC</span>
+          </div>
+          <div class="hotel-desc">One of the most spectacular hotel positions in the entire metro area — floor-to-ceiling Manhattan skyline views from a waterfront Hyatt at a fraction of Midtown rates. PATH train from Exchange Place connects directly into lower Manhattan and midtown, while NJ Transit to MetLife is straightforward via Secaucus. For Final week, this is the pick for fans who want the NYC skyline experience without the Times Square price tag. Exceptional value for the views alone.</div>
+          <div class="hotel-price">From $310 <span>/ night</span></div>
+          <!-- AFFILIATE LINK PLACEHOLDER: Replace AGODA_AFFILIATE_ID -->
+          <a href="https://www.agoda.com/search?city=jersey-city-new-jersey&AGODA_AFFILIATE_ID" target="_blank" rel="noopener" class="hotel-cta hotel-cta-gold">See Rooms & Rates →</a>
+        </div>
+      </div>
+
+      <!-- HOTEL CARD 6 -->
+      <div class="hotel-card" data-tags="budget transit">
+        <div class="hotel-img-placeholder"><span>🍺</span><em>Hoboken · Budget Pick</em></div>
+        <div class="hotel-content">
+          <div class="hotel-name">W Hoboken</div>
+          <div class="hotel-location">📍 Hoboken, NJ · ~9 miles to MetLife Stadium</div>
+          <div class="hotel-tags">
+            <span class="htag htag-green">Hoboken Nightlife</span>
+            <span class="htag htag-gold">Boutique</span>
+            <span class="htag htag-nyc">PATH Access</span>
+          </div>
+          <div class="hotel-desc">A sharp boutique W Hotel in the heart of Hoboken — right on Washington Street, steps from the town's legendary bar mile and the NJ Transit Hoboken Terminal. PATH to downtown Manhattan runs around the clock; NJ Transit runs west toward the Meadowlands. For fans who want a genuine neighbourhood feel, excellent post-match drinking options, and a more human-scale base than Midtown, Hoboken delivers. Strong value for the product compared to equivalent NYC properties.</div>
+          <div class="hotel-price">From $265 <span>/ night</span></div>
+          <!-- AFFILIATE LINK PLACEHOLDER: Replace BOOKING_AFFILIATE_ID -->
+          <a href="https://www.booking.com/hotel/us/w-hoboken.html?aid=BOOKING_AFFILIATE_ID" target="_blank" rel="noopener" class="hotel-cta">Check Availability →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+</div><!-- /page-wrap -->
+
+<!-- ===== DISCLAIMER / FOOTER ===== -->
+<div class="disclaimer">
+  <strong>Affiliate Disclosure:</strong> Go2Cup earns commissions when you book through our partner links (Booking.com, Hotels.com, Expedia, Agoda, and others) at no extra cost to you. We are independent and not affiliated with FIFA or any official World Cup partner. All hotel names, prices and availability shown are estimates — verify directly with the booking platform. Match schedules subject to official FIFA confirmation. <a href="/go-2-cup/disclosure/" style="color:var(--muted-2);">Full affiliate disclosure →</a>
+</div>
+<div class="footer-meta">
+  <div>
+    <a href="/go-2-cup/">← Go2Cup Hub</a> ·
+    <a href="/go-2-cup/host-cities/">All Host Cities</a> ·
+    <a href="/go-2-cup/border-visa/">Visa Guide</a>
+  </div>
+  <div>
+    <a href="/go-2-cup/disclosure/">Affiliate Disclosure</a> ·
+    <a href="/go-2-cup/privacy-policy/">Privacy</a> ·
+    <a href="/go-2-cup/terms/">Terms</a>
+  </div>
+</div>
+
+<script>
+/* ===== HOTEL FILTER ===== */
+function filterHotels(tag, btn) {
+  document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('.hotel-card').forEach(function(card) {
+    if (tag === 'all') {
+      card.style.display = 'flex';
+    } else {
+      var tags = card.getAttribute('data-tags') || '';
+      card.style.display = tags.includes(tag) ? 'flex' : 'none';
+    }
+  });
+}
+</script>
+
+</body>
+</html>
+<!-- END OF PAGE: NEW YORK / NEW JERSEY -->
+
