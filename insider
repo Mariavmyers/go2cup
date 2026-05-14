@@ -1,0 +1,2046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GO2CUP | The World Cup 2026 Fan Intelligence Hub</title>
+<meta name="description" content="Your ultimate guide to FIFA World Cup 2026. Host cities, fan guides, local business directory, travel intel, and real-time match information across USA, Mexico &amp; Canada.">
+<meta name="keywords" content="World Cup 2026, FIFA 2026, host cities, fan guide, Mexico City, New York, travel, luxury, tickets, local business">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+--pitch: #00a651;
+--pitch-dark: #007a3d;
+--pitch-light: #4dc97a;
+--fire: #f5333f;
+--fire-dark: #c0232e;
+--sky: #0057b8;
+--sky-light: #3a8ce8;
+--sun: #ffd700;
+--sun-warm: #ffb300;
+--chalk: #ffffff;
+--off-white: #f8f9f4;
+--cream: #fef9f0;
+--grass-bg: #f0faf4;
+--dark-pitch: #0d1f0e;
+--text-dark: #111418;
+--text-mid: #4a5568;
+--text-light: #8899aa;
+--border: #e2e8f0;
+--border-green: rgba(0,166,81,0.2);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+font-family: 'Barlow', sans-serif;
+background: var(--off-white);
+color: var(--text-dark);
+overflow-x: hidden;
+}
+/* ── COUNTDOWN BANNER ── */
+.countdown-banner {
+background: var(--fire);
+color: white;
+text-align: center;
+padding: 10px 1rem;
+font-family: 'Space Mono', monospace;
+font-size: 12px;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+position: relative;
+overflow: hidden;
+}
+.countdown-banner::before {
+content: '';
+position: absolute;
+top: 0; left: -100%;
+width: 60%;
+height: 100%;
+background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+animation: shimmer 3s infinite;
+}
+@keyframes shimmer { to { left: 200%; } }
+.countdown-inner {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+flex-wrap: wrap;
+}
+.cd-unit { text-align: center; }
+.cd-num {
+font-family: 'Anton', sans-serif;
+font-size: 28px;
+line-height: 1;
+letter-spacing: 0.05em;
+color: var(--sun);
+}
+.cd-label { font-size: 9px; opacity: 0.8; letter-spacing: 0.2em; }
+.cd-separator { font-size: 22px; color: rgba(255,255,255,0.4); align-self: flex-start; margin-top: 4px; }
+.cd-event-label {
+font-size: 11px;
+letter-spacing: 0.2em;
+border-left: 2px solid rgba(255,255,255,0.3);
+padding-left: 1.5rem;
+text-align: left;
+}
+.cd-event-label strong { display: block; font-size: 13px; color: var(--sun); }
+/* ── TICKER ── */
+.ticker-wrap {
+background: var(--dark-pitch);
+padding: 7px 0;
+overflow: hidden;
+}
+.ticker-track {
+display: inline-flex;
+white-space: nowrap;
+animation: ticker 35s linear infinite;
+}
+.ticker-track span {
+font-family: 'Space Mono', monospace;
+font-size: 10px;
+font-weight: 700;
+color: var(--pitch-light);
+letter-spacing: 0.15em;
+text-transform: uppercase;
+padding: 0 40px;
+}
+.ticker-track span.fire { color: var(--sun); }
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+/* ── NAV ── */
+nav {
+background: white;
+border-bottom: 3px solid var(--pitch);
+padding: 0 clamp(1rem, 4vw, 3rem);
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 64px;
+position: sticky;
+top: 0;
+z-index: 100;
+box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+}
+.nav-logo {
+display: flex;
+align-items: center;
+gap: 12px;
+text-decoration: none;
+}
+.nav-logo-img {
+height: 44px;
+width: auto;
+}
+.nav-logo-text {
+font-family: 'Anton', sans-serif;
+font-size: 26px;
+letter-spacing: 0.08em;
+line-height: 1;
+}
+.nav-logo-sub {
+font-family: 'Space Mono', monospace;
+font-size: 8px;
+color: var(--fire);
+letter-spacing: 0.2em;
+text-transform: uppercase;
+display: block;
+margin-top: 2px;
+}
+.nav-links {
+display: flex;
+gap: 0;
+list-style: none;
+}
+.nav-links a {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--text-mid);
+text-decoration: none;
+padding: 0 0.7rem;
+transition: color 0.2s;
+display: flex;
+align-items: center;
+height: 64px;
+border-bottom: 3px solid transparent;
+margin-bottom: -3px;
+white-space: nowrap;
+}
+.nav-links a:hover { color: var(--pitch-dark); border-bottom-color: var(--pitch); }
+.nav-links li:nth-child(5) a { color: var(--fire-dark); }
+.nav-links li:nth-child(5) a:hover { color: var(--fire); border-bottom-color: var(--fire); }
+.nav-links li:nth-child(6) a { color: var(--sky); }
+.nav-links li:nth-child(6) a:hover { border-bottom-color: var(--sky); }
+.nav-cta {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 13px;
+font-weight: 800;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+background: var(--fire);
+color: white;
+padding: 10px 22px;
+border: none;
+cursor: pointer;
+text-decoration: none;
+transition: all 0.2s;
+}
+.nav-cta:hover { background: var(--fire-dark); }
+@media (max-width: 768px) { .nav-links { display: none; } }
+/* ── HERO ── */
+.hero {
+background: var(--dark-pitch);
+position: relative;
+overflow: hidden;
+min-height: 88vh;
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: stretch;
+}
+@media (max-width: 900px) { .hero { grid-template-columns: 1fr; } }
+.hero-pitch-lines {
+position: absolute;
+inset: 0;
+background-image:
+linear-gradient(rgba(0,166,81,0.07) 1px, transparent 1px),
+linear-gradient(90deg, rgba(0,166,81,0.07) 1px, transparent 1px);
+background-size: 50px 50px;
+pointer-events: none;
+}
+.hero-left {
+position: relative;
+z-index: 2;
+padding: clamp(3rem, 6vw, 6rem) clamp(2rem, 5vw, 5rem);
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.hero-eyebrow {
+display: inline-flex;
+align-items: center;
+gap: 10px;
+font-family: 'Space Mono', monospace;
+font-size: 10px;
+font-weight: 700;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(--pitch-light);
+margin-bottom: 1.5rem;
+}
+.hero-eyebrow::before {
+content: '';
+width: 28px;
+height: 2px;
+background: var(--pitch-light);
+}
+.hero h1 {
+font-family: 'Anton', sans-serif;
+font-size: clamp(3.5rem, 9vw, 8rem);
+line-height: 0.92;
+letter-spacing: 0.02em;
+color: white;
+margin-bottom: 0.5rem;
+}
+.hero h1 .accent { color: var(--pitch-light); }
+.hero h1 .fire-accent { color: var(--sun); }
+.hero-tagline {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+font-weight: 600;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: rgba(255,255,255,0.6);
+margin-bottom: 2rem;
+}
+.hero-opener-card {
+background: rgba(0,166,81,0.15);
+border: 1px solid rgba(0,166,81,0.3);
+border-left: 4px solid var(--pitch-light);
+padding: 1.5rem 2rem;
+margin-bottom: 2.5rem;
+max-width: 520px;
+}
+.opener-label {
+font-family: 'Space Mono', monospace;
+font-size: 9px;
+letter-spacing: 0.2em;
+color: var(--pitch-light);
+text-transform: uppercase;
+margin-bottom: 0.75rem;
+}
+.opener-match {
+font-family: 'Anton', sans-serif;
+font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+letter-spacing: 0.05em;
+color: white;
+line-height: 1;
+margin-bottom: 0.5rem;
+}
+.opener-flag { font-size: 1.4em; }
+.opener-details {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 14px;
+font-weight: 600;
+letter-spacing: 0.08em;
+color: rgba(255,255,255,0.7);
+text-transform: uppercase;
+}
+.opener-details span { color: var(--sun); }
+.hero-actions {
+display: flex;
+gap: 1rem;
+flex-wrap: wrap;
+}
+.btn-green {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 15px;
+font-weight: 800;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+background: var(--pitch);
+color: white;
+padding: 14px 32px;
+border: none;
+cursor: pointer;
+text-decoration: none;
+transition: all 0.2s;
+display: inline-flex;
+align-items: center;
+gap: 8px;
+}
+.btn-green:hover { background: var(--pitch-dark); transform: translateY(-2px); }
+.btn-white-outline {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 15px;
+font-weight: 800;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+background: transparent;
+color: white;
+padding: 14px 32px;
+border: 2px solid rgba(255,255,255,0.3);
+cursor: pointer;
+text-decoration: none;
+transition: all 0.2s;
+display: inline-block;
+}
+.btn-white-outline:hover { border-color: white; background: rgba(255,255,255,0.05); }
+.hero-right {
+position: relative;
+z-index: 2;
+display: flex;
+align-items: stretch;
+justify-content: center;
+overflow: hidden;
+}
+.hero-img-wrap {
+width: 100%;
+height: 100%;
+min-height: 500px;
+position: relative;
+}
+.hero-img-wrap img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center 30%;
+opacity: 0.85;
+}
+.hero-img-overlay {
+position: absolute;
+inset: 0;
+background: linear-gradient(90deg, var(--dark-pitch) 0%, transparent 30%),
+linear-gradient(0deg, var(--dark-pitch) 0%, transparent 40%);
+}
+.hero-img-badge {
+position: absolute;
+bottom: 2rem;
+right: 2rem;
+background: var(--fire);
+color: white;
+padding: 12px 20px;
+text-align: center;
+}
+.badge-num {
+font-family: 'Anton', sans-serif;
+font-size: 3rem;
+line-height: 1;
+color: var(--sun);
+}
+.badge-label {
+font-family: 'Space Mono', monospace;
+font-size: 9px;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+}
+/* ── STATS ROW ── */
+.stats-row {
+background: var(--pitch);
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+border-bottom: 4px solid var(--pitch-dark);
+}
+@media (max-width: 600px) { .stats-row { grid-template-columns: repeat(2, 1fr); } }
+.stat-item {
+padding: 1.5rem 2rem;
+text-align: center;
+border-right: 1px solid rgba(255,255,255,0.15);
+}
+.stat-item:last-child { border-right: none; }
+.stat-num {
+font-family: 'Anton', sans-serif;
+font-size: 2.5rem;
+color: var(--sun);
+line-height: 1;
+}
+.stat-label {
+font-family: 'Space Mono', monospace;
+font-size: 9px;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+color: rgba(255,255,255,0.7);
+margin-top: 4px;
+}
+/* ── OPENING CEREMONY FEATURE ── */
+.ceremony-section {
+background: white;
+padding: clamp(4rem, 7vw, 7rem) clamp(1.5rem, 5vw, 5rem);
+position: relative;
+overflow: hidden;
+}
+.ceremony-bg-num {
+position: absolute;
+font-family: 'Anton', sans-serif;
+font-size: 30vw;
+color: rgba(0,166,81,0.04);
+top: 50%;
+right: -2vw;
+transform: translateY(-50%);
+pointer-events: none;
+user-select: none;
+line-height: 1;
+}
+.ceremony-grid {
+display: grid;
+grid-template-columns: 1.3fr 1fr;
+gap: 4rem;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+}
+@media (max-width: 900px) { .ceremony-grid { grid-template-columns: 1fr; } }
+.section-label {
+font-family: 'Space Mono', monospace;
+font-size: 10px;
+font-weight: 700;
+letter-spacing: 0.25em;
+text-transform: uppercase;
+color: var(--pitch);
+margin-bottom: 1rem;
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.section-label::after {
+content: '';
+flex: 1;
+height: 2px;
+background: var(--pitch);
+max-width: 60px;
+opacity: 0.3;
+}
+.ceremony-title {
+font-family: 'Anton', sans-serif;
+font-size: clamp(2.5rem, 5vw, 4.5rem);
+line-height: 0.95;
+letter-spacing: 0.02em;
+color: var(--text-dark);
+margin-bottom: 1rem;
+}
+.ceremony-title .highlight { color: var(--pitch-dark); }
+.ceremony-body {
+font-size: 15px;
+color: var(--text-mid);
+line-height: 1.8;
+margin-bottom: 1.5rem;
+font-weight: 400;
+}
+.ceremony-body strong { color: var(--text-dark); font-weight: 600; }
+.ceremony-quote {
+border-left: 4px solid var(--pitch);
+padding: 1rem 1.5rem;
+background: var(--grass-bg);
+margin: 1.5rem 0;
+font-size: 14px;
+color: var(--text-mid);
+line-height: 1.7;
+font-style: italic;
+}
+.ceremony-facts {
+display: flex;
+flex-direction: column;
+gap: 0;
+}
+.fact-card {
+display: flex;
+gap: 1rem;
+align-items: flex-start;
+padding: 1.2rem 0;
+border-bottom: 1px solid var(--border);
+}
+.fact-card:first-child { border-top: 1px solid var(--border); }
+.fact-icon {
+width: 48px;
+height: 48px;
+background: var(--pitch);
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.4rem;
+flex-shrink: 0;
+}
+.fact-content {}
+.fact-title {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 15px;
+font-weight: 800;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: var(--text-dark);
+margin-bottom: 4px;
+}
+.fact-desc {
+font-size: 13px;
+color: var(--text-mid);
+line-height: 1.5;
+font-weight: 300;
+}
+/* ── CATEGORY GRID ── */
+.categories-section {
+background: var(--cream);
+padding: clamp(4rem, 7vw, 7rem) clamp(1.5rem, 5vw, 5rem);
+border-top: 4px solid var(--pitch);
+}
+.categories-section .section-label { color: var(--fire); }
+.categories-section .section-label::after { background: var(--fire); }
+.cat-section-title {
+font-family: 'Anton', sans-serif;
+font-size: clamp(2.5rem, 5vw, 4rem);
+line-height: 1;
+letter-spacing: 0.02em;
+color: var(--text-dark);
+margin-bottom: 0.5rem;
+}
+.cat-section-desc {
+font-size: 15px;
+color: var(--text-mid);
+max-width: 600px;
+margin-bottom: 3rem;
+font-weight: 400;
+line-height: 1.6;
+}
+.categories-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+gap: 2px;
+background: var(--border);
+border: 2px solid var(--border);
+margin-bottom: 2rem;
+}
+.cat-card {
+background: white;
+padding: 2rem 1.75rem;
+cursor: pointer;
+transition: all 0.25s;
+position: relative;
+overflow: hidden;
+text-decoration: none;
+display: block;
+color: inherit;
+}
+.cat-card::before {
+content: '';
+position: absolute;
+top: 0; left: 0;
+width: 100%; height: 4px;
+transform: scaleX(0);
+transform-origin: left;
+transition: transform 0.3s;
+}
+.cat-card:hover { background: var(--grass-bg); transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+.cat-card:hover::before { transform: scaleX(1); }
+.cat-card.green::before { background: var(--pitch); }
+.cat-card.red::before { background: var(--fire); }
+.cat-card.blue::before { background: var(--sky); }
+.cat-card.gold::before { background: var(--sun-warm); }
+.cat-icon {
+font-size: 2.2rem;
+margin-bottom: 1rem;
+display: block;
+}
+.cat-title {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 1.3rem;
+font-weight: 800;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--text-dark);
+margin-bottom: 0.5rem;
+}
+.cat-desc {
+font-size: 13px;
+color: var(--text-mid);
+line-height: 1.6;
+font-weight: 400;
+margin-bottom: 1rem;
+}
+.cat-tags {
+display: flex;
+flex-wrap: wrap;
+gap: 6px;
+}
+.cat-tag {
+font-family: 'Space Mono', monospace;
+font-size: 9px;
+letter-spacing: 0.1em;
+padding: 3px 8px;
+background: var(--off-white);
+color: var(--text-light);
+text-transform: uppercase;
+border: 1px solid var(--border);
+}
+.cat-arrow {
+position: absolute;
+top: 1.5rem;
+right: 1.5rem;
+font-size: 1.1rem;
+color: var(--border);
+transition: all 0.25s;
+}
+.cat-card:hover .cat-arrow { color: var(--pitch); transform: translate(3px, -3px); }
+.cat-card.featured {
+grid-column: span 2;
+background: var(--dark-pitch);
+color: white;
+}
+@media (max-width: 600px) { .cat-card.featured { grid-column: span 1; } }
+.cat-card.featured .cat-title { color: white; }
+.cat-card.featured .cat-desc { color: rgba(255,255,255,0.6); }
+.cat-card.featured .cat-tag { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.4); border-color: rgba(255,255,255,0.1); }
+.cat-card.featured .cat-arrow { color: rgba(255,255,255,0.2); }
+.cat-card.featured:hover { background: #1a3a1e; }
+.cat-card.featured:hover .cat-arrow { color: var(--pitch-light); }
+.cat-card.featured::before { background: var(--pitch-light); }
+.cat-coming-soon {
+position: absolute;
+top: 1rem;
+right: 1rem;
+font-family: 'Space Mono', monospace;
+font-size: 8px;
+letter-spacing: 0.1em;
+padding: 3px 8px;
+background: var(--sun);
+color: #000;
+text-transform: uppercase;
+font-weight: 700;
+}
+/* ── MAIN GUIDE CTA ── */
+.guide-section {
+background: var(--pitch);
+padding: clamp(4rem, 7vw, 7rem) clamp(1.5rem, 5vw, 5rem);
+position: relative;
+overflow: hidden;
+}
+.guide-bg {
+position: absolute;
+inset: 0;
+background-image:
+linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+background-size: 40px 40px;
+}
+.guide-inner {
+position: relative;
+z-index: 2;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 4rem;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+}
+@media (max-width: 900px) { .guide-inner { grid-template-columns: 1fr; } }
+.guide-text {}
+.guide-label {
+font-family: 'Space Mono', monospace;
+font-size: 10px;
+letter-spacing: 0.2em;
+color: rgba(255,255,255,0.6);
+text-transform: uppercase;
+margin-bottom: 1rem;
+}
+.guide-title {
+font-family: 'Anton', sans-serif;
+font-size: clamp(3rem, 6vw, 5.5rem);
+line-height: 0.92;
+letter-spacing: 0.02em;
+color: white;
+margin-bottom: 1.5rem;
+}
+.guide-title span { color: var(--sun); }
+.guide-body {
+font-size: 15px;
+color: rgba(255,255,255,0.75);
+line-height: 1.8;
+margin-bottom: 2rem;
+font-weight: 300;
+max-width: 480px;
+}
+.guide-chapters {
+display: flex;
+flex-direction: column;
+gap: 2px;
+}
+.chapter-link {
+background: rgba(255,255,255,0.08);
+border: 1px solid rgba(255,255,255,0.12);
+border-left: 4px solid rgba(255,255,255,0.2);
+padding: 1rem 1.5rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 1rem;
+cursor: pointer;
+transition: all 0.2s;
+text-decoration: none;
+color: white;
+}
+.chapter-link:hover {
+background: rgba(255,255,255,0.15);
+border-left-color: var(--sun);
+transform: translateX(4px);
+}
+.chapter-link-left { display: flex; align-items: center; gap: 1rem; }
+.chapter-num {
+font-family: 'Space Mono', monospace;
+font-size: 10px;
+color: rgba(255,255,255,0.4);
+min-width: 30px;
+}
+.chapter-title {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 15px;
+font-weight: 700;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+.chapter-status {
+font-family: 'Space Mono', monospace;
+font-size: 8px;
+letter-spacing: 0.1em;
+padding: 3px 8px;
+text-transform: uppercase;
+flex-shrink: 0;
+}
+.cs-live { background: rgba(0,255,135,0.15); color: #00ff87; border: 1px solid rgba(0,255,135,0.3); }
+.cs-coming { background: rgba(255,215,0,0.15); color: var(--sun); border: 1px solid rgba(255,215,0,0.3); }
+.cs-draft { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.4); border: 1px solid rgba(255,255,255,0.1); }
+/* ── HOST CITIES GRID ── */
+.cities-section {
+background: var(--off-white);
+padding: clamp(4rem, 7vw, 7rem) clamp(1.5rem, 5vw, 5rem);
+}
+.cities-header {
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+margin-bottom: 2rem;
+flex-wrap: wrap;
+gap: 1rem;
+}
+.cities-title {
+font-family: 'Anton', sans-serif;
+font-size: clamp(2.5rem, 5vw, 4rem);
+line-height: 1;
+letter-spacing: 0.02em;
+}
+.cities-filter {
+display: flex;
+gap: 4px;
+flex-wrap: wrap;
+}
+.filter-btn {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+padding: 8px 16px;
+border: 2px solid var(--border);
+background: white;
+cursor: pointer;
+color: var(--text-mid);
+transition: all 0.2s;
+}
+.filter-btn.active, .filter-btn:hover { background: var(--pitch); color: white; border-color: var(--pitch); }
+.cities-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+gap: 1.5rem;
+}
+.city-card {
+background: white;
+border: 2px solid var(--border);
+overflow: hidden;
+cursor: pointer;
+text-decoration: none;
+color: inherit;
+display: block;
+transition: all 0.25s;
+}
+.city-card:hover { border-color: var(--pitch); transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); }
+.city-card-header {
+padding: 1.25rem 1.5rem;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+}
+.city-flag { font-size: 2rem; }
+.city-matches-badge {
+font-family: 'Space Mono', monospace;
+font-size: 9px;
+letter-spacing: 0.1em;
+padding: 4px 10px;
+text-transform: uppercase;
+font-weight: 700;
+}
+.badge-opener { background: var(--fire); color: white; }
+.badge-final { background: var(--sun-warm); color: #000; }
+.badge-group { background: var(--sky); color: white; }
+.city-body { padding: 0 1.5rem 1.5rem; }
+.city-name {
+font-family: 'Anton', sans-serif;
+font-size: 1.6rem;
+letter-spacing: 0.04em;
+color: var(--text-dark);
+line-height: 1;
+margin-bottom: 4px;
+}
+.city-country {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 11px;
+font-weight: 700;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+color: var(--text-light);
+margin-bottom: 0.75rem;
+}
+.city-stadium {
+font-size: 12px;
+color: var(--text-mid);
+margin-bottom: 0.75rem;
+}
+.city-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.city-chip {
+font-family: 'Space Mono', monospace;
+font-size: 8px;
+letter-spacing: 0.1em;
+padding: 3px 8px;
+text-transform: uppercase;
+border: 1px solid var(--border);
+color: var(--text-light);
+}
+.city-card-footer {
+background: var(--grass-bg);
+border-top: 1px solid var(--border-green);
+padding: 0.75rem 1.5rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.city-guide-link {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(--pitch-dark);
+}
+.city-stay-link {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 11px;
+font-weight: 700;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: var(--sky);
+text-decoration: none;
+}
+.city-stay-link:hover { color: var(--pitch-dark); }
+.city-guide-arrow { color: var(--pitch-dark); font-size: 0.9rem; }
+/* ── BUSINESS DIRECTORY PROMO ── */
+.biz-section {
+background: var(--sky);
+padding: clamp(4rem, 7vw, 7rem) clamp(1.5rem, 5vw, 5rem);
+position: relative;
+overflow: hidden;
+}
+.biz-bg-word {
+position: absolute;
+font-family: 'Anton', sans-serif;
+font-size: 25vw;
+color: rgba(255,255,255,0.04);
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+white-space: nowrap;
+pointer-events: none;
+user-select: none;
+}
+.biz-inner {
+position: relative;
+z-index: 2;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 4rem;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+}
+@media (max-width: 900px) { .biz-inner { grid-template-columns: 1fr; } }
+.biz-label {
+font-family: 'Space Mono', monospace;
+font-size: 10px;
+letter-spacing: 0.2em;
+color: rgba(255,255,255,0.6);
+text-transform: uppercase;
+margin-bottom: 1rem;
+}
+.biz-title {
+font-family: 'Anton', sans-serif;
+font-size: clamp(2.5rem, 5vw, 4.5rem);
+line-height: 0.95;
+letter-spacing: 0.02em;
+color: white;
+margin-bottom: 1.5rem;
+}
+.biz-title span { color: var(--sun); }
+.biz-body {
+font-size: 15px;
+color: rgba(255,255,255,0.75);
+line-height: 1.8;
+font-weight: 300;
+margin-bottom: 2rem;
+max-width: 480px;
+}
+.biz-categories {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2px;
+background: rgba(255,255,255,0.1);
+}
+.biz-cat {
+background: rgba(255,255,255,0.08);
+padding: 1.25rem 1.5rem;
+cursor: pointer;
+transition: all 0.2s;
+text-decoration: none;
+color: white;
+display: block;
+}
+.biz-cat:hover { background: rgba(255,255,255,0.18); }
+.biz-cat-icon { font-size: 1.5rem; margin-bottom: 0.5rem; display: block; }
+.biz-cat-title {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 13px;
+font-weight: 700;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+margin-bottom: 4px;
+}
+.biz-cat-desc {
+font-size: 11px;
+color: rgba(255,255,255,0.55);
+line-height: 1.4;
+}
+.biz-cta-wrap {
+display: flex;
+gap: 1rem;
+flex-wrap: wrap;
+}
+.btn-white {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 15px;
+font-weight: 800;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+background: white;
+color: var(--sky);
+padding: 14px 32px;
+border: none;
+cursor: pointer;
+text-decoration: none;
+transition: all 0.2s;
+display: inline-block;
+}
+.btn-white:hover { background: var(--sun); color: #000; }
+.btn-outline-white {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 15px;
+font-weight: 800;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+background: transparent;
+color: white;
+padding: 14px 32px;
+border: 2px solid rgba(255,255,255,0.4);
+cursor: pointer;
+text-decoration: none;
+transition: all 0.2s;
+display: inline-block;
+}
+.btn-outline-white:hover { border-color: white; }
+/* ── FOMO STRIP ── */
+.fomo-strip {
+background: var(--fire);
+padding: 3rem clamp(1.5rem, 5vw, 5rem);
+text-align: center;
+}
+.fomo-title {
+font-family: 'Anton', sans-serif;
+font-size: clamp(2rem, 5vw, 4rem);
+letter-spacing: 0.05em;
+color: white;
+margin-bottom: 0.5rem;
+}
+.fomo-title span { color: var(--sun); }
+.fomo-body {
+font-size: 15px;
+color: rgba(255,255,255,0.8);
+margin-bottom: 2rem;
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+line-height: 1.6;
+font-weight: 300;
+}
+.fomo-micro {
+font-family: 'Space Mono', monospace;
+font-size: 10px;
+color: rgba(255,255,255,0.5);
+letter-spacing: 0.08em;
+margin-top: 1rem;
+}
+/* ── LATEST INTEL ── */
+.intel-section {
+background: white;
+padding: clamp(4rem, 7vw, 7rem) clamp(1.5rem, 5vw, 5rem);
+}
+.intel-header {
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+margin-bottom: 2rem;
+flex-wrap: wrap;
+gap: 1rem;
+}
+.intel-title {
+font-family: 'Anton', sans-serif;
+font-size: clamp(2rem, 4vw, 3.5rem);
+letter-spacing: 0.02em;
+line-height: 1;
+}
+.see-all-link {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 13px;
+font-weight: 700;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+color: var(--pitch-dark);
+text-decoration: none;
+display: flex;
+align-items: center;
+gap: 6px;
+border-bottom: 2px solid var(--pitch);
+padding-bottom: 2px;
+transition: color 0.2s;
+}
+.see-all-link:hover { color: var(--fire); border-color: var(--fire); }
+.intel-grid {
+display: grid;
+grid-template-columns: 1.8fr 1fr 1fr;
+gap: 2px;
+background: var(--border);
+}
+@media (max-width: 900px) { .intel-grid { grid-template-columns: 1fr; } }
+.intel-card {
+background: white;
+padding: 2rem;
+cursor: pointer;
+text-decoration: none;
+color: inherit;
+display: block;
+transition: background 0.2s;
+}
+.intel-card:hover { background: var(--grass-bg); }
+.intel-card.featured { background: var(--dark-pitch); }
+.intel-card.featured:hover { background: #1a3a1e; }
+.intel-tag {
+display: inline-block;
+font-family: 'Space Mono', monospace;
+font-size: 8px;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+font-weight: 700;
+padding: 4px 10px;
+margin-bottom: 1rem;
+}
+.tag-green { background: var(--pitch); color: white; }
+.tag-red { background: var(--fire); color: white; }
+.tag-blue { background: var(--sky); color: white; }
+.tag-gold { background: var(--sun-warm); color: #000; }
+.intel-card-title {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 1.2rem;
+font-weight: 800;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+line-height: 1.2;
+margin-bottom: 0.75rem;
+color: var(--text-dark);
+}
+.intel-card.featured .intel-card-title { color: white; font-size: 1.6rem; }
+.intel-card-excerpt {
+font-size: 13px;
+color: var(--text-mid);
+line-height: 1.6;
+font-weight: 300;
+margin-bottom: 1.5rem;
+}
+.intel-card.featured .intel-card-excerpt { color: rgba(255,255,255,0.6); }
+.intel-card-meta {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.intel-card-date {
+font-family: 'Space Mono', monospace;
+font-size: 9px;
+color: var(--text-light);
+letter-spacing: 0.08em;
+}
+.intel-card.featured .intel-card-date { color: rgba(255,255,255,0.3); }
+.intel-read-more {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(--pitch-dark);
+}
+.intel-card.featured .intel-read-more { color: var(--pitch-light); }
+/* ── FOOTER ── */
+footer {
+background: var(--dark-pitch);
+padding: 4rem clamp(1.5rem, 5vw, 5rem) 2rem;
+}
+.footer-grid {
+display: grid;
+grid-template-columns: 2.5fr 1fr 1fr 1fr;
+gap: 3rem;
+margin-bottom: 3rem;
+padding-bottom: 3rem;
+border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+@media (max-width: 900px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+.footer-logo-text {
+font-family: 'Anton', sans-serif;
+font-size: 2.5rem;
+letter-spacing: 0.08em;
+display: block;
+margin-bottom: 0.75rem;
+}
+.footer-tagline {
+font-family: 'Space Mono', monospace;
+font-size: 9px;
+letter-spacing: 0.2em;
+color: var(--fire);
+text-transform: uppercase;
+margin-bottom: 1rem;
+}
+.footer-desc {
+font-size: 13px;
+color: rgba(255,255,255,0.35);
+font-weight: 300;
+line-height: 1.7;
+max-width: 320px;
+}
+.footer-col-title {
+font-family: 'Space Mono', monospace;
+font-size: 9px;
+font-weight: 700;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: rgba(255,255,255,0.4);
+margin-bottom: 1.5rem;
+}
+.footer-links {
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 0.7rem;
+}
+.footer-links a {
+font-size: 13px;
+color: rgba(255,255,255,0.4);
+text-decoration: none;
+font-weight: 300;
+transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--pitch-light); }
+.footer-bottom {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 1rem;
+}
+.footer-copy {
+font-family: 'Space Mono', monospace;
+font-size: 10px;
+color: rgba(255,255,255,0.2);
+letter-spacing: 0.08em;
+}
+.footer-flags { font-size: 1.5rem; letter-spacing: 4px; }
+/* ── ANIMATIONS ── */
+.fade-in {
+opacity: 0;
+transform: translateY(24px);
+transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+/* ═══════════════════════════════════════════════════
+── BLOG CATEGORY NAV — MOBILE FIXED ──
+═══════════════════════════════════════════════════ */
+.go2cup-blog-nav {
+background: var(--dark-pitch);
+border-bottom: 3px solid var(--pitch);
+padding: 0;
+display: flex;
+align-items: stretch;
+justify-content: center;
+flex-wrap: nowrap;
+overflow-x: auto;
+-webkit-overflow-scrolling: touch;
+scrollbar-width: none;
+-ms-overflow-style: none;
+}
+.go2cup-blog-nav::-webkit-scrollbar { display: none; }
+.go2cup-blog-nav a {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 13px;
+font-weight: 800;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: rgba(255,255,255,0.65);
+text-decoration: none;
+padding: 14px 16px;
+white-space: nowrap;
+border-bottom: 3px solid transparent;
+margin-bottom: -3px;
+transition: color 0.2s, border-color 0.2s;
+display: flex;
+align-items: center;
+gap: 5px;
+flex-shrink: 0;
+}
+.go2cup-blog-nav a:hover {
+color: white;
+border-bottom-color: var(--pitch-light);
+}
+.go2cup-blog-nav a.nav-red:hover { border-bottom-color: var(--fire); }
+.go2cup-blog-nav a.nav-blue:hover { border-bottom-color: var(--sky-light); }
+.go2cup-blog-nav a.nav-gold:hover { border-bottom-color: var(--sun); }
+/* FBO coin link — special style */
+.go2cup-blog-nav a.nav-fbo {
+color: var(--sun);
+border-bottom-color: transparent;
+font-size: 14px;
+}
+.go2cup-blog-nav a.nav-fbo:hover {
+color: white;
+border-bottom-color: var(--sun);
+}
+/* MEL pill button */
+.go2cup-blog-nav a.nav-mel {
+background: var(--pitch);
+color: white;
+margin: 8px 8px 8px 4px;
+padding: 8px 16px;
+border-bottom: none;
+border-radius: 2px;
+}
+.go2cup-blog-nav a.nav-mel:hover {
+background: var(--pitch-dark);
+border-bottom-color: transparent;
+}
+/* ── MOBILE: stack into 2-row scrollable strip ── */
+@media (max-width: 600px) {
+.go2cup-blog-nav {
+justify-content: flex-start;
+padding: 0 0.5rem;
+}
+.go2cup-blog-nav a {
+font-size: 11px;
+padding: 11px 10px;
+letter-spacing: 0.04em;
+gap: 4px;
+}
+.go2cup-blog-nav a.nav-mel {
+font-size: 11px;
+padding: 7px 12px;
+margin: 6px 4px;
+}
+}
+/* ── FOOTER DISCLAIMER & NEW LINKS ── */
+.go2cup-footer-disclaimer {
+font-size: 11px;
+color: rgba(255,255,255,0.22);
+font-weight: 300;
+line-height: 1.8;
+max-width: 720px;
+margin: 0 auto 1.5rem;
+text-align: center;
+font-style: italic;
+border-top: 1px solid rgba(255,255,255,0.07);
+padding-top: 1.75rem;
+}
+.go2cup-footer-links {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 0.5rem 2rem;
+margin-bottom: 1.5rem;
+}
+.go2cup-footer-links a {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: rgba(255,255,255,0.35);
+text-decoration: none;
+transition: color 0.2s;
+}
+.go2cup-footer-links a:hover { color: var(--pitch-light); }
+.go2cup-footer-links .link-sep {
+color: rgba(255,255,255,0.1);
+font-size: 10px;
+}
+@media (max-width: 600px) {
+.go2cup-footer-links { flex-direction: column; align-items: center; gap: 0.75rem; }
+.go2cup-footer-links .link-sep { display: none; }
+}
+/* ── GLOBAL MOBILE PADDING FIX ── */
+@media (max-width: 480px) {
+.countdown-inner { gap: 0.75rem; }
+.cd-event-label { display: none; }
+.hero-left { padding: 2rem 1.25rem; }
+.hero-opener-card { padding: 1rem 1.25rem; }
+.hero-actions { gap: 0.75rem; }
+.hero-actions .btn-green,
+.hero-actions .btn-white-outline { font-size: 13px; padding: 12px 20px; }
+.stat-item { padding: 1rem; }
+.stat-num { font-size: 2rem; }
+.ceremony-section,
+.categories-section,
+.guide-section,
+.cities-section,
+.biz-section,
+.intel-section { padding-left: 1rem; padding-right: 1rem; }
+.cities-header { flex-direction: column; align-items: flex-start; }
+.cities-filter { width: 100%; }
+.filter-btn { flex: 1; text-align: center; padding: 8px 10px; font-size: 11px; }
+.biz-categories { grid-template-columns: 1fr; }
+.footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+.chapter-link { padding: 0.85rem 1rem; }
+.chapter-title { font-size: 13px; }
+}
+</style>
+</head>
+<body>
+
+<!-- COUNTDOWN BANNER -->
+<div class="countdown-banner">
+  <div class="countdown-inner">
+    <div class="cd-unit">
+      <div class="cd-num" id="cd-days">55</div>
+      <div class="cd-label">Days</div>
+    </div>
+    <div class="cd-separator">:</div>
+    <div class="cd-unit">
+      <div class="cd-num" id="cd-hours">08</div>
+      <div class="cd-label">Hours</div>
+    </div>
+    <div class="cd-separator">:</div>
+    <div class="cd-unit">
+      <div class="cd-num" id="cd-mins">32</div>
+      <div class="cd-label">Mins</div>
+    </div>
+    <div class="cd-separator">:</div>
+    <div class="cd-unit">
+      <div class="cd-num" id="cd-secs">14</div>
+      <div class="cd-label">Secs</div>
+    </div>
+    <div class="cd-event-label">
+      <strong>⚽ KICK-OFF</strong>
+      Mexico vs South Africa · June 11, 2026 · 3:00 PM ET
+    </div>
+  </div>
+</div>
+
+<!-- TICKER -->
+<div class="ticker-wrap" aria-label="Live updates">
+  <div class="ticker-track">
+    <span class="fire">⚽ JUNE 11, 2026 — OPENING CEREMONY · ESTADIO AZTECA · MEXICO CITY</span>
+    <span>&#x1F1F2;&#x1F1FD; MEXICO VS SOUTH AFRICA &#x1F1FF;&#x1F1E6; · 3:00 PM ET · GROUP A OPENER</span>
+    <span class="fire">🏆 JULY 19, 2026 — THE FINAL · METLIFE STADIUM · NEW YORK</span>
+    <span>🌎 48 NATIONS · 16 HOST CITIES · 3 COUNTRIES · 104 MATCHES</span>
+    <span class="fire">🎵 ROBBIE WILLIAMS &amp; NICOLE SCHERZINGER PERFORM AT OPENING CEREMONY</span>
+    <span>✈ FBO SLOTS FILLING FAST — LOCAL BUSINESSES: REGISTER YOUR GUIDE NOW</span>
+    <span class="fire">⚽ JUNE 11, 2026 — OPENING CEREMONY · ESTADIO AZTECA · MEXICO CITY</span>
+    <span>&#x1F1F2;&#x1F1FD; MEXICO VS SOUTH AFRICA &#x1F1FF;&#x1F1E6; · 3:00 PM ET · GROUP A OPENER</span>
+    <span class="fire">🏆 JULY 19, 2026 — THE FINAL · METLIFE STADIUM · NEW YORK</span>
+    <span>🌎 48 NATIONS · 16 HOST CITIES · 3 COUNTRIES · 104 MATCHES</span>
+    <span class="fire">🎵 ROBBIE WILLIAMS &amp; NICOLE SCHERZINGER PERFORM AT OPENING CEREMONY</span>
+    <span>✈ FBO SLOTS FILLING FAST — LOCAL BUSINESSES: REGISTER YOUR GUIDE NOW</span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="/mnt/user-data/uploads/new_one_go2cup.png" class="nav-logo-img" alt="GO2CUP" onerror="this.style.display='none'">
+    <div>
+      <span class="nav-logo-text">
+        <span style="color:#0057b8">GO</span><span style="color:#007a3d">2</span><span style="color:#f5333f">CUP</span>
+      </span>
+      <span class="nav-logo-sub">World Cup 2026 Hub</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#guide">🌎 Plan Your Trip</a></li>
+    <li><a href="#cities">🏆 Host Cities</a></li>
+    <li><a href="#match">⚽ Match Today</a></li>
+    <li><a href="#travel-safety">✈️ Travel Safety</a></li>
+    <li><a href="#emergency">🚨 911 &amp; Emergency</a></li>
+    <li><a href="#vip">🪙 VIP</a></li>
+  </ul>
+  <a href="https://mainentry.net/go2cup-trip-planning-guide" class="nav-cta" target="_blank" rel="noopener">Get Free Planning Guide →</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-pitch-lines"></div>
+  <div class="hero-left fade-in">
+    <div class="hero-eyebrow">Independent World Cup 2026 Travel Hub</div>
+    <h1>PLAN YOUR<br><span class="accent">WORLD CUP</span><br><span class="fire-accent">JOURNEY.</span></h1>
+    <div class="hero-tagline">USA · México · Canadá · Host Cities · Hotels · Fan Intel</div>
+    <div class="hero-opener-card">
+      <div class="opener-label">⚡ Opening Match — It's Almost Here</div>
+      <div class="opener-match">
+        <span class="opener-flag">&#x1F1F2;&#x1F1FD;</span> Mexico
+        <span style="color:rgba(255,255,255,0.3); font-size:1.5rem; margin: 0 0.5rem;">vs</span>
+        <span class="opener-flag">&#x1F1FF;&#x1F1E6;</span> South Africa
+      </div>
+      <div class="opener-details">
+        <span>June 11, 2026</span> · 3:00 PM ET · 7:00 PM Local<br>
+        Estadio Azteca, Mexico City · <span>87,000 fans</span>
+      </div>
+    </div>
+    <div class="hero-actions">
+      <a href="#guide" class="btn-green">🗺 Start Planning →</a>
+      <a href="#featured-articles" class="btn-white-outline">Featured Articles</a>
+      <a href="#cities" class="btn-white-outline">Host Cities</a>
+      <a href="https://mainentry.net/go2cup-trip-planning-guide" class="btn-white-outline" target="_blank" rel="noopener">🎁 Get Free Planning Guide →</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-wrap">
+      <img src="/mnt/user-data/uploads/usa_nw_statues.jpg" alt="World Cup 2026 travel planning hub">
+      <div class="hero-img-overlay"></div>
+      <div class="hero-img-badge">
+        <div class="badge-num">55</div>
+        <div class="badge-label">Days to Kick-Off</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS ROW -->
+<div class="stats-row fade-in">
+  <div class="stat-item">
+    <div class="stat-num">48</div>
+    <div class="stat-label">Nations Competing</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">16</div>
+    <div class="stat-label">Host Cities</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">104</div>
+    <div class="stat-label">Total Matches</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">5B+</div>
+    <div class="stat-label">Global TV Viewers</div>
+  </div>
+</div>
+
+<!-- PLANNING KIT CALLOUT -->
+<section style="background:var(--dark-pitch); padding: clamp(3rem,6vw,5rem) clamp(1.5rem,5vw,5rem); position:relative; overflow:hidden; width:100%;">
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(0,166,81,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,166,81,0.06) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;"></div>
+  <div style="position:absolute;top:0;left:0;width:100%;height:4px;background:linear-gradient(90deg,var(--pitch),var(--sky),var(--fire));"></div>
+  <div style="position:relative;z-index:2;max-width:900px;margin:0 auto;text-align:center;" class="fade-in">
+    <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.25em;color:var(--pitch-light);text-transform:uppercase;margin-bottom:1rem;">🎁 Free Download · GO2CUP World Cup 2026 Planning Kit</div>
+    <h2 style="font-family:'Anton',sans-serif;font-size:clamp(2rem,5vw,3.8rem);line-height:1;letter-spacing:0.03em;color:white;margin-bottom:1.25rem;">
+      FREE GO2CUP<br><span style="color:var(--sun);">TRIP PLANNING GUIDE</span>
+    </h2>
+    <p style="font-family:'Barlow',sans-serif;font-size:15px;color:rgba(255,255,255,0.75);line-height:1.8;max-width:660px;margin:0 auto 0.75rem;font-weight:300;">
+      Get the <strong style="color:white;font-weight:600;">"Fan Emergency &amp; Safety Booklet"</strong> — a quick safety resource with emergency numbers, embassy contacts, hospital references, airport routes, and stadium access notes for World Cup 2026 travelers.
+    </p>
+    <p style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.15em;color:rgba(255,255,255,0.35);text-transform:uppercase;margin-bottom:2rem;">
+      Built for late-stage planning across USA, Mexico, and Canada.
+    </p>
+    <a href="https://mainentry.net/go2cup-trip-planning-guide"
+       target="_blank" rel="noopener"
+       style="font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;background:var(--fire);color:white;padding:16px 40px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:all 0.2s;"
+       onmouseover="this.style.background='var(--fire-dark)';this.style.transform='translateY(-2px)'"
+       onmouseout="this.style.background='var(--fire)';this.style.transform='translateY(0)'">
+      🎁 Free GO2CUP Trip Planning Guide →
+    </a>
+    <div style="font-family:'Space Mono',monospace;font-size:9px;color:rgba(255,255,255,0.25);letter-spacing:0.12em;text-transform:uppercase;margin-top:1.25rem;">No spam. Real GO2CUP intel only. Instant access.</div>
+  </div>
+</section>
+
+<!-- OPENING CEREMONY FEATURE -->
+<section class="ceremony-section">
+  <div class="ceremony-bg-num">26</div>
+  <div class="ceremony-grid fade-in">
+    <div>
+      <div class="section-label">Opening Ceremony · June 11, 2026</div>
+      <h2 class="ceremony-title">THE NIGHT SOCCER<br><span class="highlight">REWRITES HISTORY</span></h2>
+      <p class="ceremony-body">
+        On <strong>June 11, 2026, at precisely 3:00 PM Eastern Time</strong>, Estadio Azteca in Mexico City will fall silent for one extraordinary moment — and then erupt. The FIFA World Cup 2026 Opening Ceremony will begin in a stadium that has witnessed more soccer history than any other venue on Earth, before an audience of <strong>five billion people</strong> watching across the planet.
+      </p>
+      <p class="ceremony-body">
+        This is not just another opening ceremony. This is the <strong>first World Cup to feature 48 nations</strong>. The first hosted across three countries simultaneously. The first in which a new generation of nations — <strong>Cape Verde, Curaçao, Jordan and Uzbekistan</strong> — make their World Cup debuts.
+      </p>
+      <div class="ceremony-quote">
+        "Estadio Azteca is the only stadium in history to host two separate World Cup finals — 1970 and 1986. In 2026, it becomes the first to host the opening of three different World Cups. No other building in soccer carries this weight of history."
+      </div>
+      <p class="ceremony-body">
+        <strong>Robbie Williams and Nicole Scherzinger</strong> are expected to perform "Desire" — the official FIFA World Cup 2026 song — before a crowd of 87,000. The three tournament mascots — Maple the Moose (Canada), Zayu the Jaguar (Mexico) and Clutch the Bald Eagle (USA) — will join a ceremony that celebrates the continent hosting the world.
+      </p>
+      <a href="https://mainentry.net/go2cup-trip-planning-guide" class="btn-green" style="margin-top:0.5rem;" target="_blank" rel="noopener">🎁 Get The Free Planning Guide →</a>
+    </div>
+    <div class="ceremony-facts fade-in">
+      <div style="font-family:'Space Mono',monospace; font-size:9px; letter-spacing:0.2em; color:var(--text-light); text-transform:uppercase; margin-bottom:1rem;">Essential Facts</div>
+      <div class="fact-card">
+        <div class="fact-icon">🏟</div>
+        <div class="fact-content">
+          <div class="fact-title">Estadio Azteca</div>
+          <div class="fact-desc">The only stadium in history to host two World Cup finals (1970 &amp; 1986) and three World Cup opening matches. Built in 1966 at 2,240m above sea level. Capacity: 87,000.</div>
+        </div>
+      </div>
+      <div class="fact-card">
+        <div class="fact-icon">&#x1F1F2;&#x1F1FD;</div>
+        <div class="fact-content">
+          <div class="fact-title">Mexico vs South Africa</div>
+          <div class="fact-desc">The host nation opens the tournament against South Africa in Group A. Kickoff: 3:00 PM ET on Thursday, June 11, 2026. Mexico plays all three group stage matches on home soil.</div>
+        </div>
+      </div>
+      <div class="fact-card">
+        <div class="fact-icon">🎵</div>
+        <div class="fact-content">
+          <div class="fact-title">The Ceremony</div>
+          <div class="fact-desc">Robbie Williams &amp; Nicole Scherzinger perform the official anthem "Desire" live. Three mascots debut: Maple &#x1F1E8;&#x1F1E6;, Zayu &#x1F1F2;&#x1F1FD;, Clutch 🦅. Global broadcast in 200+ countries.</div>
+        </div>
+      </div>
+      <div class="fact-card">
+        <div class="fact-icon">🌍</div>
+        <div class="fact-content">
+          <div class="fact-title">Historic Firsts</div>
+          <div class="fact-desc">First 48-team World Cup. First tri-nation host. Cape Verde, Curaçao, Jordan, and Uzbekistan make their World Cup debuts. The biggest World Cup in history starts right here.</div>
+        </div>
+      </div>
+      <div class="fact-card">
+        <div class="fact-icon">🏆</div>
+        <div class="fact-content">
+          <div class="fact-title">The Final: July 19</div>
+          <div class="fact-desc">MetLife Stadium, New York/New Jersey. Capacity: 87,000 expanded. The most watched sporting event on the planet closes the curtain 38 days after Mexico City ignites it.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories-section" id="categories">
+  <div class="fade-in">
+    <div class="section-label" style="color:var(--fire);">Navigate The Hub</div>
+    <h2 class="cat-section-title">YOUR WORLD CUP.<br>YOUR GUIDE.</h2>
+    <p class="cat-section-desc">Everything a fan, traveler, or local business needs — organized into one intelligent hub. Click any category to explore. New guides added weekly.</p>
+  </div>
+  <div class="categories-grid fade-in">
+    <a href="https://mainentry.net/go2cup-trip-planning-guide" class="cat-card green featured" target="_blank" rel="noopener">
+      <div class="cat-icon">📖</div>
+      <div class="cat-title" style="font-size:1.8rem;">The Complete Fan's Master Guide</div>
+      <p class="cat-desc" style="font-size:14px; max-width:600px;">The single most comprehensive World Cup 2026 resource on the internet. Everything you need to know — from planning your first trip to navigating 16 host cities like a local. Chapters updated live as the tournament approaches.</p>
+      <div class="cat-tags">
+        <span class="cat-tag">All 16 Cities</span>
+        <span class="cat-tag">Step by Step</span>
+        <span class="cat-tag">Updated Live</span>
+        <span class="cat-tag">Free Access</span>
+      </div>
+      <div class="cat-arrow">→</div>
+    </a>
+    <a href="https://mainentry.net/go2cup-host-cities-usa-mx-ca" class="cat-card green">
+      <div class="cat-icon">🌆</div>
+      <div class="cat-title">Host City Guides</div>
+      <p class="cat-desc">Deep dives on all 16 host cities — where to stay, eat, party, and watch. Local tips, transport maps, stadium access, and neighborhood breakdowns.</p>
+      <div class="cat-tags">
+        <span class="cat-tag">16 Cities</span>
+        <span class="cat-tag">Local Intel</span>
+        <span class="cat-tag">USA · MX · CA</span>
+      </div>
+      <div class="cat-arrow">↗</div>
+    </a>
+    <a href="#" class="cat-card red">
+      <div class="cat-icon">🎟</div>
+      <div class="cat-title">Tickets &amp; Access</div>
+      <p class="cat-desc">How to get tickets, official resale, hospitality packages, VIP suites, and everything in between. Don't get scammed — read this first.</p>
+      <div class="cat-tags">
+        <span class="cat-tag">Official FIFA</span>
+        <span class="cat-tag">VIP Packages</span>
+        <span class="cat-tag">Resale Guide</span>
+      </div>
+      <div class="cat-arrow">↗</div>
+      <span class="cat-coming-soon">Hot</span>
+    </a>
+    <a href="#" class="cat-card blue">
+      <div class="cat-icon">✈️</div>
+      <div class="cat-title">Travel &amp; Flights</div>
+      <p class="cat-desc">Best flight routes between cities, multi-city itinerary planning, airport logistics, customs intel for all three host nations, and transit maps.</p>
+      <div class="cat-tags">
+        <span class="cat-tag">Multi-City</span>
+        <span class="cat-tag">Border Crossing</span>
+        <span class="cat-tag">Visa Info</span>
+      </div>
+      <div class="cat-arrow">↗</div>
+    </a>
+    <a href="#" class="cat-card gold">
+      <div class="cat-icon">🏨</div>
+      <div class="cat-title">Hotels &amp; Stays</div>
+      <p class="cat-desc">Curated stays at every price point near every stadium. Budget hostels to 5-star suites — with real availability intel and booking strategy guides.</p>
+      <div class="cat-tags">
+        <span class="cat-tag">Budget to Luxury</span>
+        <span class="cat-tag">Near Stadium</span>
+        <span class="cat-tag">Booking Tips</span>
+      </div>
+      <div class="cat-arrow">↗</div>
+    </a>
+    <a href="#" class="cat-card green">
+      <div class="cat-icon">🍽</div>
+      <div class="cat-title">Food &amp; Nightlife</div>
+      <p class="cat-desc">Fan zones, local restaurants, sports bars, street food markets, and the best spots to experience the culture of each host city before and after the match.</p>
+      <div class="cat-tags">
+        <span class="cat-tag">Fan Zones</span>
+        <span class="cat-tag">Local Eats</span>
+        <span class="cat-tag">Bars &amp; Clubs</span>
+      </div>
+      <div class="cat-arrow">↗</div>
+    </a>
+    <a href="#" class="cat-card blue">
+      <div class="cat-icon">🛡</div>
+      <div class="cat-title">Safety &amp; Emergency</div>
+      <p class="cat-desc">Stay safe across USA, Mexico, and Canada. Emergency contacts, embassy directories, secure zones, medical facility maps, and real-time OSINT alerts by city.</p>
+      <div class="cat-tags">
+        <span class="cat-tag">Embassy Network</span>
+        <span class="cat-tag">Medical Maps</span>
+        <span class="cat-tag">OSINT Alerts</span>
+      </div>
+      <div class="cat-arrow">↗</div>
+    </a>
+    <a href="#" class="cat-card red">
+      <div class="cat-icon">⚽</div>
+      <div class="cat-title">Match Schedule &amp; Groups</div>
+      <p class="cat-desc">Complete match calendar, group stage draw, knockout bracket, and real-time match intel. Search by team, city, or date. AEO-structured for instant AI answers.</p>
+      <div class="cat-tags">
+        <span class="cat-tag">Live Updates</span>
+        <span class="cat-tag">All 104 Matches</span>
+        <span class="cat-tag">Group Tables</span>
+      </div>
+      <div class="cat-arrow">↗</div>
+    </a>
+    <a href="#" class="cat-card gold">
+      <div class="cat-icon">💼</div>
+      <div class="cat-title">For Local Business</div>
+      <p class="cat-desc">How businesses near host cities can attract World Cup visitors, advertise to international fans, register in the GO2CUP directory, and capitalize on the biggest event in sports.</p>
+      <div class="cat-tags">
+        <span class="cat-tag">Directory Listing</span>
+        <span class="cat-tag">Tourism Strategy</span>
+        <span class="cat-tag">Advertising</span>
+      </div>
+      <div class="cat-arrow">↗</div>
+      <span class="cat-coming-soon">New</span>
+    </a>
+    <a href="#" class="cat-card green">
+      <div class="cat-icon">🌐</div>
+      <div class="cat-title">Cultural Guide</div>
+      <p class="cat-desc">Language tips, cultural etiquette, currency, local customs, and everything international fans need to feel at home in Mexico City, New York, Toronto, or Dallas.</p>
+      <div class="cat-tags">
+        <span class="cat-tag">Spanish Basics</span>
+        <span class="cat-tag">Cultural Tips</span>
+        <span class="cat-tag">Currency Guide</span>
+      </div>
+      <div class="cat-arrow">↗</div>
+    </a>
+    <a href="#" class="cat-card red">
+      <div class="cat-icon">💎</div>
+      <div class="cat-title">Luxury &amp; VIP Access</div>
+      <p class="cat-desc">Private aviation, chartered yachts, five-star hospitality packages, concierge services, and the elite intelligence layer for high-net-worth attendees.</p>
+      <div class="cat-tags">
+        <span class="cat-tag">Private Jets</span>
+        <span class="cat-tag">VIP Suites</span>
+        <span class="cat-tag">Black Tier</span>
+      </div>
+      <div class="cat-arrow">↗</div>
+    </a>
+  </div>
+</section>
+
+<!-- MAIN GUIDE CTA -->
+<section class="guide-section" id="guide">
+  <div class="guide-bg"></div>
+  <div class="guide-inner">
+    <div class="guide-text fade-in">
+      <div class="guide-label">🗺 World Cup 2026 Trip Planner — Start Here</div>
+      <h2 class="guide-title">EVERYTHING.<br><span>ONE PLACE.</span><br>FREE.</h2>
+      <p class="guide-body">
+        The GO2CUP Main Guide is the most complete, fan-first resource for the 2026 FIFA World Cup. Organized into chapters, updated live, and built for every type of fan — from first-timers to seasoned World Cup veterans. Chapters are being added now. Bookmark it. Share it. Live it.
+      </p>
+      <a href="https://mainentry.net/go2cup-trip-planning-guide" class="btn-green" style="display:inline-flex; align-items:center; gap:8px;" target="_blank" rel="noopener">
+        🔓 Start Planning →
+      </a>
+    </div>
+    <div class="guide-chapters fade-in">
+      <a href="https://mainentry.net/go2cup-opening-ceremony-first-match" class="chapter-link" target="_blank" rel="noopener">
+        <div class="chapter-link-left">
+          <span class="chapter-num">01</span>
+          <span class="chapter-title">The Opening Ceremony — What to Expect</span>
+        </div>
+        <span class="chapter-status cs-live">Live</span>
+      </a>
+      <a href="#" class="chapter-link">
+        <div class="chapter-link-left">
+          <span class="chapter-num">02</span>
+          <span class="chapter-title">How the 48-Team Format Works</span>
+        </div>
+        <span class="chapter-status cs-live">Live</span>
+      </a>
+      <a href="https://mainentry.net/go2cup-host-cities-usa-mx-ca" class="chapter-link" target="_blank" rel="noopener">
+        <div class="chapter-link-left">
+          <span class="chapter-num">03</span>
+          <span class="chapter-title">Complete Host City Breakdown</span>
+        </div>
+        <span class="chapter-status cs-live">Live</span>
+      </a>
+      <a href="https://mainentry.net/go2cup-trip-planning-guide" class="chapter-link" target="_blank" rel="noopener">
+        <div class="chapter-link-left">
+          <span class="chapter-num">04</span>
+          <span class="chapter-title">Planning Your Multi-City Fan Trip</span>
+        </div>
+        <span class="chapter-status cs-coming">Coming</span>
+      </a>
+      <a href="#" class="chapter-link">
+        <div class="chapter-link-left">
+          <span class="chapter-num">05</span>
+          <span class="chapter-title">Tickets — How to Get Them Legitimately</span>
+        </div>
+        <span class="chapter-status cs-coming">Coming</span>
+      </a>
+      <a href="#" class="chapter-link">
+        <div class="chapter-link-left">
+          <span class="chapter-num">06</span>
+          <span class="chapter-title">Safety Guide for All 3 Host Nations</span>
+        </div>
+        <span class="chapter-status cs-draft">Draft</span>
+      </a>
+      <a href="#" class="chapter-link">
+        <div class="chapter-link-left">
+          <span class="chapter-num">07</span>
+          <span class="chapter-title">Local Business Opportunity Map</span>
+        </div>
+        <span class="chapter-status cs-draft">Draft</span>
+      </a>
+      <a href="https://mainentry.net/go2cup-last-match-new-york-new-jersey" class="chapter-link" target="_blank" rel="noopener">
+        <div class="chapter-link-left">
+          <span class="chapter-num">08</span>
+          <span class="chapter-title">The Complete Match Calendar</span>
+        </div>
+        <span class="chapter-status cs-draft">Draft</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- BUSINESS DIRECTORY -->
+<section class="biz-section" id="business">
+  <div class="biz-bg-word">BUSINESS</div>
+  <div class="biz-inner fade-in">
+    <div>
+      <div class="biz-label">For Local Business &amp; Entrepreneurs</div>
+      <h2 class="biz-title">THE WORLD IS<br>COMING TO<br><span>YOUR CITY.</span></h2>
+      <p class="biz-body">
+        Millions of international visitors. Billions in tourist spending. Whether you run a restaurant two blocks from Estadio Azteca or a hotel near MetLife Stadium — the 2026 World Cup is a once-in-a-generation business opportunity. GO2CUP connects you directly to the fans who need you.
+      </p>
+      <div class="biz-cta-wrap">
+        <a href="#" class="btn-white">List Your Business Free →</a>
+        <a href="#" class="btn-outline-white">Read the Business Guide</a>
+      </div>
+    </div>
+    <div>
+      <p style="font-family:'Space Mono',monospace; font-size:9px; letter-spacing:0.2em; color:rgba(255,255,255,0.4); text-transform:uppercase; margin-bottom:1rem;">Business Categories — Join The Directory</p>
+      <div class="biz-categories">
+        <a href="#" class="biz-cat">
+          <span class="biz-cat-icon">🍴</span>
+          <div class="biz-cat-title">Restaurants &amp; Bars</div>
+          <div class="biz-cat-desc">Get found by fans looking for authentic local food near stadiums.</div>
+        </a>
+        <a href="#" class="biz-cat">
+          <span class="biz-cat-icon">🏨</span>
+          <div class="biz-cat-title">Hotels &amp; Rentals</div>
+          <div class="biz-cat-desc">List your rooms directly in front of 5 billion eyeballs.</div>
+        </a>
+        <a href="#" class="biz-cat">
+          <span class="biz-cat-icon">🚌</span>
+          <div class="biz-cat-title">Transport &amp; Tours</div>
+          <div class="biz-cat-desc">Shuttles, tours, drivers — fans need you more than ever.</div>
+        </a>
+        <a href="#" class="biz-cat">
+          <span class="biz-cat-icon">🛍</span>
+          <div class="biz-cat-title">Retail &amp; Services</div>
+          <div class="biz-cat-desc">From souvenirs to medical clinics — be found, be booked.</div>
+        </a>
+        <a href="#" class="biz-cat">
+          <span class="biz-cat-icon">🎭</span>
+          <div class="biz-cat-title">Entertainment &amp; Events</div>
+          <div class="biz-cat-desc">Fan zones, viewing parties, concerts — the biggest stage ever.</div>
+        </a>
+        <a href="#" class="biz-cat">
+          <span class="biz-cat-icon">💼</span>
+          <div class="biz-cat-title">Corporate &amp; Sponsors</div>
+          <div class="biz-cat-desc">Hospitality packages, B2B, official FIFA commercial framework.</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOMO NEWSLETTER -->
+<section class="fomo-strip" id="newsletter">
+  <div class="fomo-title">
+    GET THE FREE<br>
+    WORLD CUP 2026 <span>PLANNING GUIDE.</span>
+  </div>
+  <p class="fomo-body">
+    Hotels, host cities, airport strategy, transport tips, safety basics, scam alerts, booking windows, and match-week planning across USA, México, and Canadá.
+  </p>
+  <div style="margin-top:2rem;">
+    <a href="https://mainentry.net/go2cup-trip-planning-guide" class="btn-white" target="_blank" rel="noopener">
+      🎁 Get The Free Planning Guide →
+    </a>
+  </div>
+  <div class="fomo-micro">Free GO2CUP Planning Guide. No spam. Real intel only.</div>
+</section>
+
+<!-- ANCHOR TARGETS FOR NAV -->
+<span id="match" style="display:block; height:0; visibility:hidden;"></span>
+<span id="travel-safety" style="display:block; height:0; visibility:hidden;"></span>
+<span id="emergency" style="display:block; height:0; visibility:hidden;"></span>
+<span id="vip" style="display:block; height:0; visibility:hidden;"></span>
+
+<!-- ══════════════════════════════════════════════════
+BLOG CATEGORY NAV — UPDATED WITH REAL URLs + FBO
+══════════════════════════════════════════════════ -->
+<nav class="go2cup-blog-nav" aria-label="GO2CUP Blog Categories">
+  <a href="https://my-web-1771028499943.estage.site/ESTAGE_CATEGORY_SPORT_HUB_URL">🌎 Sports Hub</a>
+  <a href="https://my-web-1771028499943.estage.site/ESTAGE_CATEGORY_HOST_CITY_URL" class="nav-gold">🏆 Host City</a>
+  <a href="https://my-web-1771028499943.estage.site/ESTAGE_CATEGORY_SAFETY_URL" class="nav-blue">✈️ Safety</a>
+  <a href="https://my-web-1771028499943.estage.site/ESTAGE_CATEGORY_US_MX_CA_EMERGENCY_URL" class="nav-red">🆘 US • MX • CA</a>
+  <a href="https://my-web-1771028499943.estage.site/ESTAGE_CATEGORY_INTERPRETER_URL" class="nav-gold">📞 Interpreter?</a>
+  <a href="https://my-web-1771028499943.estage.site/ESTAGE_CATEGORY_ASK_MEL_URL" class="nav-mel">🤖 Ask MEL</a>
+  <a href="https://mainentry.net/go2cup-fbo" class="nav-fbo" target="_blank" rel="noopener">🪙 FBO</a>
+</nav>
+
+<!-- LATEST INTEL -->
+<section class="intel-section" id="featured-articles">
+  <div class="intel-header fade-in">
+    <div>
+      <div class="section-label">Latest From The Hub</div>
+      <h2 class="intel-title">FRESH INTEL</h2>
+    </div>
+    <a href="#" class="see-all-link">View All Articles →</a>
+  </div>
+  <div class="intel-grid fade-in">
+    <a href="https://mainentry.net/go2cup-opening-ceremony-first-match" class="intel-card featured" target="_blank" rel="noopener">
+      <span class="intel-tag tag-green">Opening Ceremony</span>
+      <div class="intel-card-title">Everything You Need to Know About June 11 — The Night Soccer Rewrites History</div>
+      <p class="intel-card-excerpt">On June 11, 2026, at 3:00 PM ET, Estadio Azteca erupts. Robbie Williams performs. Five billion people watch. 48 nations take the field for the first time. This is our complete guide to the opening night — what to watch, where to be, and how to not miss a second of it.</p>
+      <div class="intel-card-meta">
+        <span class="intel-card-date">Published: April 2026</span>
+        <span class="intel-read-more">Read Full Report →</span>
+      </div>
+    </a>
+    <a href="https://mainentry.net/go2cup-host-city-mexico-city-mx" class="intel-card" target="_blank" rel="noopener">
+      <span class="intel-tag tag-red">Cities</span>
+      <div class="intel-card-title">Mexico City Fan Guide 2026: The Ultimate Local's Playbook</div>
+      <p class="intel-card-excerpt">Where to stay, eat, and watch near Estadio Azteca. From Condesa cantinas to Polanco rooftops — your complete local guide to the city that starts the party.</p>
+      <div class="intel-card-meta">
+        <span class="intel-card-date">April 2026</span>
+        <span class="intel-read-more">Read →</span>
+      </div>
+    </a>
+    <a href="#" class="intel-card">
+      <span class="intel-tag tag-blue">Business</span>
+      <div class="intel-card-title">How Local Businesses Near Host Stadiums Can 10× Their Summer Revenue</div>
+      <p class="intel-card-excerpt">The World Cup is the world's biggest marketing event — and most local businesses near host cities have no plan. Here's the exact playbook to capture fan spend.</p>
+      <div class="intel-card-meta">
+        <span class="intel-card-date">April 2026</span>
+        <span class="intel-read-more">Read →</span>
+      </div>
+    </a>
+    <a href="#" class="intel-card">
+      <span class="intel-tag tag-gold">Travel</span>
+      <div class="intel-card-title">The First-Timer's Guide to Attending Your First World Cup Match</div>
+      <p class="intel-card-excerpt">Arrive at the right gate. Know when to eat. Understand the fan zones. Here's what nobody tells first-timers — until now.</p>
+      <div class="intel-card-meta">
+        <span class="intel-card-date">April 2026</span>
+        <span class="intel-read-more">Read →</span>
+      </div>
+    </a>
+    <a href="#" class="intel-card">
+      <span class="intel-tag tag-green">Guide</span>
+      <div class="intel-card-title">48 Teams, 3 Countries, 16 Cities: How the 2026 Format Actually Works</div>
+      <p class="intel-card-excerpt">The biggest World Cup in history has a format most fans haven't studied yet. We break down every stage — from the group phase to the final — in plain language.</p>
+      <div class="intel-card-meta">
+        <span class="intel-card-date">March 2026</span>
+        <span class="intel-read-more">Read →</span>
+      </div>
+    </a>
+    <a href="#" class="intel-card">
+      <span class="intel-tag tag-red">Safety</span>
+      <div class="intel-card-title">Safety Guide for International Fans Traveling to All 3 Host Nations</div>
+      <p class="intel-card-excerpt">Embassy numbers. Secure neighborhoods. Medical facilities near every stadium. What international visitors need to know before they land in the USA, Mexico, or Canada.</p>
+      <div class="intel-card-meta">
+        <span class="intel-card-date">March 2026</span>
+        <span class="intel-read-more">Read →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <span class="footer-logo-text">
+        <span style="color:#0057b8">GO</span><span style="color:#007a3d">2</span><span style="color:#f5333f">CUP</span>
+      </span>
+      <div class="footer-tagline">World Cup 2026 Fan Intelligence Hub</div>
+      <p class="footer-desc">
+        Independent fan-built World Cup 2026 travel and planning hub for USA, México, and Canadá.
+      </p>
+    </div>
+    <div>
+      <div class="footer-col-title">Plan Your Trip</div>
+      <ul class="footer-links">
+        <li><a href="https://mainentry.net/go2cup-trip-planning-guide" target="_blank" rel="noopener">🎁 Free Planning Guide</a></li>
+        <li><a href="#guide">Trip Planner</a></li>
+        <li><a href="#cities">Host Cities</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Planning</div>
+      <ul class="footer-links">
+        <li><a href="#newsletter">Travel Tips</a></li>
+        <li><a href="#categories">Safety</a></li>
+        <li><a href="#categories">Hotels</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">About</div>
+      <ul class="footer-links">
+        <li><a href="https://mainentry.net/go2cup-trip-planning-guide" target="_blank" rel="noopener">Get Free Planning Guide</a></li>
+        <li><a href="https://mainentry.net/go2cup-fbo" target="_blank" rel="noopener">🪙 FBO Access</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="go2cup-footer-disclaimer">
+    Built by a soccer fan for other fans. GO2CUP is an independent World Cup 2026 planning hub and is not affiliated with, endorsed by, or sponsored by FIFA.
+    Travel, ticketing, visa, safety, schedule, and event details can change.
+    Always verify official sources before booking or attending.
+  </div>
+  <div class="go2cup-footer-links">
+    <a href="ESTAGE_BLOG_MAIN_URL">View All GO2CUP Articles →</a>
+    <span class="link-sep">|</span>
+    <a href="ESTAGE_ABOUT_GO2CUP_URL">About GO2CUP</a>
+    <span class="link-sep">|</span>
+    <a href="ESTAGE_MARKETING_PARTNERSHIP_URL">Marketing &amp; Partnership</a>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">GO2CUP · Independent fan guide for World Cup 2026</div>
+    <div class="footer-flags">&#x1F1FA;&#x1F1F8; &#x1F1F2;&#x1F1FD; &#x1F1E8;&#x1F1E6;</div>
+  </div>
+</footer>
+
+<script>
+function updateCountdown() {
+  const target = new Date('2026-06-11T19:00:00Z');
+  const now = new Date();
+  const diff = target - now;
+  if (diff <= 0) {
+    ['cd-days','cd-hours','cd-mins','cd-secs'].forEach(id => {
+      document.getElementById(id).textContent = '00';
+    });
+    return;
+  }
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const secs = Math.floor((diff % (1000 * 60)) / 1000);
+  document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+  document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+  document.getElementById('cd-mins').textContent = String(mins).padStart(2, '0');
+  document.getElementById('cd-secs').textContent = String(secs).padStart(2, '0');
+  const heroBadge = document.querySelector('.badge-num');
+  if (heroBadge) heroBadge.textContent = days;
+}
+setInterval(updateCountdown, 1000);
+updateCountdown();
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+/* REMOVED: filterCities(country, btn) function */
+</script>
+</body>
+</html>
