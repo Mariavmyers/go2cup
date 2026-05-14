@@ -1,0 +1,1527 @@
+
+},
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": 19.3029,
+"longitude": -99.1505
+}
+},
+"organizer": {
+"@type": "Organization",
+"name": "FIFA",
+"url": "https://www.fifa.com"
+},
+"performer": [
+{
+"@type": "MusicGroup",
+"name": "Robbie Williams"
+},
+{
+"@type": "Person",
+"name": "Nicole Scherzinger"
+}
+],
+"offers": {
+"@type": "Offer",
+"url": "https://www.fifa.com/tickets",
+"priceCurrency": "USD",
+"price": "200",
+"availability": "https://schema.org/InStock"
+}
+},
+{
+"@type": "FAQPage",
+"mainEntity": [
+{
+"@type": "Question",
+"name": "When is the FIFA World Cup 2026 Opening Ceremony?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "The FIFA World Cup 2026 Opening Ceremony takes place on Thursday, June 11, 2026, before the opening match at 3:00 PM Eastern Time (2:00 PM Central Time / 1:00 PM Mountain Time) at Estadio Azteca in Mexico City, Mexico."
+}
+},
+{
+"@type": "Question",
+"name": "Where is the FIFA World Cup 2026 Opening Ceremony?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "The Opening Ceremony is at Estadio Azteca in Mexico City — the only stadium in history to host three FIFA World Cup tournaments (1970, 1986 and 2026). The stadium has a capacity of approximately 87,000 fans."
+}
+},
+{
+"@type": "Question",
+"name": "Who is playing in the FIFA World Cup 2026 Opening Match?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Mexico plays South Africa in the FIFA World Cup 2026 Opening Match on June 11, 2026 at Estadio Azteca in Mexico City. Kickoff is at 3:00 PM Eastern Time."
+}
+},
+{
+"@type": "Question",
+"name": "Who is performing at the FIFA World Cup 2026 Opening Ceremony?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Robbie Williams and Nicole Scherzinger are expected to perform the official FIFA World Cup 2026 song 'Desire' at the Opening Ceremony at Estadio Azteca. The three tournament mascots — Maple the Moose (Canada), Zayu the Jaguar (Mexico) and Clutch the Bald Eagle (USA) — will also appear."
+}
+},
+{
+"@type": "Question",
+"name": "How much are FIFA World Cup 2026 Opening Ceremony tickets?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "FIFA World Cup 2026 Opening Ceremony tickets start at approximately $200 USD for upper level seats, with premium lower bowl seats reaching $2,000 or more. Tickets are sold exclusively through FIFA.com using a lottery system."
+}
+},
+{
+"@type": "Question",
+"name": "What time does the FIFA World Cup 2026 start?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "The FIFA World Cup 2026 starts on June 11, 2026. The Opening Ceremony begins before the 3:00 PM ET kickoff of the opening match — Mexico vs South Africa at Estadio Azteca in Mexico City. The tournament runs through July 19, 2026, when the Final takes place at MetLife Stadium in East Rutherford, New Jersey."
+}
+}
+]
+},
+{
+"@type": "WebPage",
+"name": "FIFA World Cup 2026 Opening Ceremony Guide — Go2Cup",
+"description": "Complete guide to the FIFA World Cup 2026 Opening Ceremony on June 11, 2026 at Estadio Azteca, Mexico City. Includes performers, timings, tickets, travel tips and subscription for exclusive World Cup updates.",
+"url": "https://mainentry.net/go2cup/opening-ceremony",
+"publisher": {
+"@type": "Organization",
+"name": "Go2Cup",
+"url": "https://mainentry.net/go2cup"
+}
+}
+]
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root {
+--void: #020204;
+--obsidian: #07060C;
+--aztec-dark: #0E0808;
+--deep: #120A05;
+--aztec-gold: #D4900A;
+--gold-bright: #F0B020;
+--gold-light: #FFD060;
+--fire-red: #CC2010;
+--fire-orange: #E85A10;
+--mexico-green: #006847;
+--mexico-red: #CE1126;
+--jade: #1A6040;
+--cream: #F8F2E8;
+--cream-dim: #B0A090;
+--smoke: #706050;
+--turquoise-aztec: #0A9080;
+--caas-teal: #0A8070;
+--caas-teal-bright: #12B09A;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+background: var(--void);
+color: var(--cream);
+font-family: 'Barlow', sans-serif;
+font-weight: 300;
+line-height: 1.8;
+overflow-x: hidden;
+}
+
+/* ============ COMMUNITY BANNER (TOP) ============ */
+.community-banner {
+background: linear-gradient(90deg, var(--caas-teal) 0%, #0d6b5a 50%, var(--caas-teal) 100%);
+padding: 0.7rem 2rem;
+text-align: center;
+position: relative;
+z-index: 100;
+border-bottom: 2px solid var(--caas-teal-bright);
+}
+.community-banner-inner {
+max-width: 1100px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+flex-wrap: wrap;
+}
+.community-banner-text {
+font-size: 0.82rem;
+letter-spacing: 0.08em;
+color: #e0f7f4;
+font-weight: 500;
+}
+.community-banner-text strong {
+color: #fff;
+font-weight: 700;
+}
+.community-banner-cta {
+display: inline-block;
+background: #fff;
+color: var(--caas-teal);
+font-family: 'Barlow', sans-serif;
+font-size: 0.72rem;
+font-weight: 700;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+padding: 0.35rem 1.2rem;
+border-radius: 2px;
+text-decoration: none;
+transition: all 0.2s;
+white-space: nowrap;
+}
+.community-banner-cta:hover {
+background: var(--gold-bright);
+color: var(--void);
+}
+
+/* ============ HERO ============ */
+.hero {
+position: relative;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 6rem 6vw 4rem;
+overflow: hidden;
+}
+.hero-pattern {
+position: absolute; inset: 0;
+background-image: repeating-conic-gradient(from 0deg at 50% 50%, rgba(212,144,10,0.02) 0deg 5deg, transparent 5deg 10deg);
+pointer-events: none;
+animation: slowSpin 120s linear infinite;
+}
+@keyframes slowSpin { to { transform: rotate(360deg); } }
+.hero-glow-1 {
+position: absolute; inset: 0;
+background:
+radial-gradient(ellipse 70% 40% at 50% 0%, rgba(204,32,16,0.25) 0%, transparent 60%),
+radial-gradient(ellipse 50% 50% at 50% 100%, rgba(212,144,10,0.15) 0%, transparent 55%);
+pointer-events: none;
+}
+.hero-glow-2 {
+position: absolute; inset: 0;
+background:
+radial-gradient(ellipse 40% 30% at 15% 30%, rgba(0,104,71,0.12) 0%, transparent 55%),
+radial-gradient(ellipse 40% 30% at 85% 30%, rgba(206,17,38,0.1) 0%, transparent 55%);
+pointer-events: none;
+animation: breathe 6s ease-in-out infinite;
+}
+@keyframes breathe { 0%, 100% { opacity: 0.8; } 50% { opacity: 1.2; } }
+.hero-particles {
+position: absolute; inset: 0;
+background-image:
+radial-gradient(1px 1px at 10% 15%, rgba(240,176,32,0.8) 0%, transparent 100%),
+radial-gradient(1px 1px at 25% 8%, rgba(240,176,32,0.5) 0%, transparent 100%),
+radial-gradient(2px 2px at 42% 20%, rgba(255,255,255,0.6) 0%, transparent 100%),
+radial-gradient(1px 1px at 60% 5%, rgba(240,176,32,0.4) 0%, transparent 100%),
+radial-gradient(1px 1px at 78% 18%, rgba(240,176,32,0.7) 0%, transparent 100%),
+radial-gradient(1px 1px at 90% 10%, rgba(240,176,32,0.5) 0%, transparent 100%),
+radial-gradient(1px 1px at 35% 35%, rgba(240,176,32,0.3) 0%, transparent 100%),
+radial-gradient(2px 2px at 65% 28%, rgba(255,255,255,0.5) 0%, transparent 100%),
+radial-gradient(1px 1px at 85% 40%, rgba(240,176,32,0.4) 0%, transparent 100%);
+pointer-events: none;
+}
+.hero-flag {
+position: absolute; top: 0; left: 0; right: 0; height: 5px;
+background: linear-gradient(90deg, var(--mexico-green) 33.3%, #fff 33.3%, #fff 66.6%, var(--mexico-red) 66.6%);
+}
+.pre-header {
+position: absolute;
+top: 12px; left: 0; right: 0;
+display: flex;
+justify-content: center;
+z-index: 10;
+}
+.pre-header-text {
+font-size: 0.65rem;
+letter-spacing: 0.35em;
+text-transform: uppercase;
+color: var(--gold-bright);
+padding: 0.35rem 1.5rem;
+border: 1px solid rgba(240,176,32,0.25);
+background: rgba(7,6,12,0.8);
+border-radius: 2px;
+}
+.hero-eyebrow {
+font-size: 0.72rem;
+letter-spacing: 0.45em;
+text-transform: uppercase;
+color: var(--gold-bright);
+margin-bottom: 2rem;
+position: relative; z-index: 2;
+display: flex; align-items: center; gap: 1.2rem;
+justify-content: center;
+animation: fadeUp 0.6s ease both 0.2s;
+}
+.hero-eyebrow::before, .hero-eyebrow::after {
+content: '';
+width: 50px; height: 1px;
+background: linear-gradient(90deg, transparent, var(--gold-bright));
+}
+.hero-eyebrow::after { background: linear-gradient(90deg, var(--gold-bright), transparent); }
+.hero-date-badge {
+display: inline-block;
+background: linear-gradient(135deg, var(--fire-red), var(--fire-orange));
+color: white;
+font-family: 'Bebas Neue', sans-serif;
+font-size: 1rem;
+letter-spacing: 0.15em;
+padding: 0.5rem 1.8rem;
+border-radius: 2px;
+margin-bottom: 1.5rem;
+position: relative; z-index: 2;
+animation: fadeUp 0.6s ease both 0.3s;
+}
+.hero-title {
+font-family: 'Bebas Neue', sans-serif;
+font-size: clamp(3.5rem, 12vw, 10rem);
+line-height: 0.88;
+color: var(--cream);
+position: relative; z-index: 2;
+letter-spacing: 0.02em;
+margin-bottom: 1rem;
+animation: fadeUp 0.7s ease both 0.4s;
+}
+.hero-title .line-gold { color: var(--gold-bright); display: block; }
+.hero-title .line-fire {
+color: transparent;
+-webkit-text-stroke: 2px var(--fire-orange);
+display: block;
+font-size: 0.55em;
+letter-spacing: 0.1em;
+}
+.hero-subtitle {
+font-family: 'Playfair Display', serif;
+font-style: italic;
+font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+color: var(--cream-dim);
+margin-bottom: 3rem;
+max-width: 700px;
+position: relative; z-index: 2;
+animation: fadeUp 0.7s ease both 0.55s;
+line-height: 1.6;
+}
+.match-badge {
+display: inline-flex;
+align-items: center;
+gap: 1.5rem;
+background: rgba(212,144,10,0.08);
+border: 1px solid rgba(212,144,10,0.25);
+padding: 1.2rem 2.5rem;
+border-radius: 3px;
+margin-bottom: 3rem;
+position: relative; z-index: 2;
+animation: fadeUp 0.7s ease both 0.65s;
+}
+.match-team {
+font-family: 'Bebas Neue', sans-serif;
+font-size: clamp(1.5rem, 4vw, 2.5rem);
+letter-spacing: 0.08em;
+color: var(--cream);
+}
+.match-vs {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 1rem;
+color: var(--gold-bright);
+letter-spacing: 0.2em;
+padding: 0 0.5rem;
+border-left: 1px solid rgba(240,176,32,0.2);
+border-right: 1px solid rgba(240,176,32,0.2);
+}
+.match-flag { font-size: 2rem; }
+
+/* COUNTDOWN */
+.countdown-section {
+position: relative; z-index: 2;
+margin-bottom: 3.5rem;
+animation: fadeUp 0.7s ease both 0.75s;
+}
+.countdown-label {
+font-size: 0.65rem;
+letter-spacing: 0.4em;
+text-transform: uppercase;
+color: var(--smoke);
+margin-bottom: 1rem;
+}
+.countdown-grid {
+display: flex;
+gap: 1.5rem;
+justify-content: center;
+flex-wrap: wrap;
+}
+.countdown-unit { text-align: center; min-width: 80px; }
+.countdown-num {
+font-family: 'Bebas Neue', sans-serif;
+font-size: clamp(3rem, 7vw, 5.5rem);
+color: var(--gold-bright);
+line-height: 1;
+display: block;
+text-shadow: 0 0 30px rgba(240,176,32,0.4);
+}
+.countdown-unit-label {
+font-size: 0.6rem;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+color: var(--smoke);
+margin-top: 0.3rem;
+}
+.countdown-sep {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 3rem;
+color: rgba(240,176,32,0.3);
+line-height: 1;
+align-self: flex-start;
+padding-top: 0.15rem;
+}
+
+/* ============ HERO OPTIN — CaaS Community ============ */
+.subscribe-section {
+position: relative; z-index: 2;
+width: 100%;
+max-width: 640px;
+margin: 0 auto;
+animation: fadeUp 0.7s ease both 0.85s;
+}
+.subscribe-headline {
+font-family: 'Bebas Neue', sans-serif;
+font-size: clamp(1.5rem, 4vw, 2.5rem);
+color: var(--cream);
+margin-bottom: 0.5rem;
+letter-spacing: 0.05em;
+}
+.subscribe-sub {
+font-size: 0.88rem;
+color: var(--cream-dim);
+margin-bottom: 1.5rem;
+line-height: 1.6;
+}
+
+/* ============ CaaS COMMUNITY CARD ============ */
+.caas-card {
+background: linear-gradient(135deg, rgba(10,128,112,0.18) 0%, rgba(18,176,154,0.08) 100%);
+border: 1px solid rgba(18,176,154,0.35);
+border-top: 3px solid var(--caas-teal-bright);
+border-radius: 4px;
+padding: 2rem 2rem 1.5rem;
+margin-bottom: 1rem;
+text-align: center;
+}
+.caas-badge {
+display: inline-block;
+background: var(--caas-teal-bright);
+color: var(--void);
+font-family: 'Bebas Neue', sans-serif;
+font-size: 0.75rem;
+letter-spacing: 0.25em;
+padding: 0.3rem 1rem;
+border-radius: 2px;
+margin-bottom: 1rem;
+text-transform: uppercase;
+}
+.caas-card-title {
+font-family: 'Bebas Neue', sans-serif;
+font-size: clamp(1.4rem, 3.5vw, 2rem);
+color: var(--cream);
+letter-spacing: 0.05em;
+margin-bottom: 0.6rem;
+line-height: 1.1;
+}
+.caas-card-title span { color: var(--caas-teal-bright); }
+.caas-card-desc {
+font-size: 0.9rem;
+color: var(--cream-dim);
+line-height: 1.7;
+margin-bottom: 1.5rem;
+max-width: 520px;
+margin-left: auto;
+margin-right: auto;
+}
+.caas-lang-row {
+display: flex;
+justify-content: center;
+gap: 0.6rem;
+flex-wrap: wrap;
+margin-bottom: 1.5rem;
+}
+.caas-lang-pill {
+background: rgba(18,176,154,0.15);
+border: 1px solid rgba(18,176,154,0.3);
+border-radius: 20px;
+padding: 0.25rem 0.9rem;
+font-size: 0.72rem;
+letter-spacing: 0.12em;
+color: var(--caas-teal-bright);
+text-transform: uppercase;
+}
+.caas-join-btn {
+display: inline-block;
+background: linear-gradient(135deg, var(--caas-teal), var(--caas-teal-bright));
+color: #fff;
+font-family: 'Barlow', sans-serif;
+font-size: 0.85rem;
+font-weight: 700;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+padding: 1rem 2.5rem;
+border-radius: 3px;
+text-decoration: none;
+transition: all 0.25s;
+display: block;
+width: 100%;
+text-align: center;
+border: none;
+cursor: pointer;
+}
+.caas-join-btn:hover {
+transform: translateY(-2px);
+box-shadow: 0 10px 30px rgba(18,176,154,0.35);
+}
+.caas-links-row {
+display: flex;
+justify-content: center;
+gap: 1.2rem;
+flex-wrap: wrap;
+margin-top: 1rem;
+}
+.caas-link {
+font-size: 0.72rem;
+color: var(--caas-teal-bright);
+text-decoration: none;
+letter-spacing: 0.08em;
+opacity: 0.8;
+transition: opacity 0.2s;
+}
+.caas-link:hover { opacity: 1; }
+.form-promise {
+font-size: 0.72rem;
+color: var(--smoke);
+text-align: center;
+margin-top: 0.8rem;
+letter-spacing: 0.05em;
+}
+.form-promise i { color: var(--caas-teal-bright); margin-right: 0.4rem; }
+
+/* ============ DIVIDER ============ */
+.section-divider {
+width: 100%;
+height: 1px;
+background: linear-gradient(90deg, transparent, rgba(212,144,10,0.3), transparent);
+margin: 0;
+}
+
+/* ============ INFO STRIP ============ */
+.info-strip {
+background: var(--aztec-dark);
+padding: 3rem 6vw;
+display: flex;
+justify-content: center;
+gap: 0;
+flex-wrap: wrap;
+}
+.info-item {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding: 1.5rem 3vw;
+border-right: 1px solid rgba(212,144,10,0.1);
+min-width: 160px;
+}
+.info-item:last-child { border-right: none; }
+.info-icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.info-value {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 1.6rem;
+color: var(--gold-bright);
+line-height: 1;
+}
+.info-label {
+font-size: 0.62rem;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(--smoke);
+margin-top: 0.3rem;
+}
+
+/* ============ STORY SECTION ============ */
+.story-section {
+padding: 6rem 6vw;
+max-width: 1100px;
+margin: 0 auto;
+}
+.section-label-oc {
+font-size: 0.68rem;
+letter-spacing: 0.4em;
+text-transform: uppercase;
+color: var(--gold-bright);
+margin-bottom: 0.8rem;
+display: flex; align-items: center; gap: 0.8rem;
+}
+.section-label-oc::before {
+content: '';
+width: 28px; height: 1px;
+background: var(--gold-bright); display: block;
+}
+.story-h2 {
+font-family: 'Bebas Neue', sans-serif;
+font-size: clamp(2.2rem, 5vw, 4rem);
+line-height: 1.05;
+color: var(--cream);
+margin-bottom: 2rem;
+letter-spacing: 0.03em;
+}
+.story-p {
+font-size: 1.1rem;
+color: var(--cream-dim);
+margin-bottom: 1.6rem;
+max-width: 820px;
+line-height: 1.9;
+}
+.pull-quote-oc {
+border-left: 3px solid var(--fire-orange);
+padding: 1.5rem 2.5rem;
+margin: 3rem 0;
+background: rgba(232,90,16,0.05);
+}
+.pull-quote-oc p {
+font-family: 'Playfair Display', serif;
+font-style: italic;
+font-size: 1.4rem;
+color: var(--cream);
+max-width: 100%;
+margin: 0;
+line-height: 1.6;
+}
+
+/* ============ FACTS GRID ============ */
+.facts-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+gap: 1.5rem;
+margin: 3rem 0;
+}
+.fact-card {
+background: var(--aztec-dark);
+border: 1px solid rgba(212,144,10,0.12);
+border-top: 3px solid var(--aztec-gold);
+padding: 2rem;
+border-radius: 2px;
+transition: border-top-color 0.3s, transform 0.3s;
+}
+.fact-card:hover {
+border-top-color: var(--gold-bright);
+transform: translateY(-4px);
+}
+.fact-icon { font-size: 2rem; margin-bottom: 0.8rem; display: block; }
+.fact-title {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 1.2rem;
+color: var(--gold-bright);
+letter-spacing: 0.08em;
+margin-bottom: 0.5rem;
+}
+.fact-text {
+font-size: 0.9rem;
+color: var(--cream-dim);
+line-height: 1.7;
+margin: 0;
+}
+
+/* ============ INLINE CaaS COMMUNITY BLOCK ============ */
+.caas-inline {
+background: linear-gradient(135deg, rgba(10,128,112,0.12) 0%, rgba(7,6,12,0.95) 100%);
+border: 1px solid rgba(18,176,154,0.25);
+border-left: 4px solid var(--caas-teal-bright);
+border-radius: 3px;
+padding: 2.5rem;
+margin: 4rem 0;
+display: flex;
+gap: 2rem;
+align-items: flex-start;
+flex-wrap: wrap;
+}
+.caas-inline-icon {
+font-size: 3rem;
+flex-shrink: 0;
+}
+.caas-inline-body { flex: 1; min-width: 220px; }
+.caas-inline-label {
+font-size: 0.65rem;
+letter-spacing: 0.35em;
+text-transform: uppercase;
+color: var(--caas-teal-bright);
+margin-bottom: 0.5rem;
+}
+.caas-inline-title {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 1.8rem;
+color: var(--cream);
+letter-spacing: 0.05em;
+margin-bottom: 0.6rem;
+line-height: 1.1;
+}
+.caas-inline-title span { color: var(--caas-teal-bright); }
+.caas-inline-text {
+font-size: 0.9rem;
+color: var(--cream-dim);
+line-height: 1.75;
+margin-bottom: 1.2rem;
+}
+.caas-inline-btns {
+display: flex;
+gap: 0.8rem;
+flex-wrap: wrap;
+}
+.caas-btn-primary {
+display: inline-block;
+background: var(--caas-teal-bright);
+color: var(--void);
+font-family: 'Barlow', sans-serif;
+font-size: 0.78rem;
+font-weight: 700;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+padding: 0.7rem 1.6rem;
+border-radius: 2px;
+text-decoration: none;
+transition: all 0.2s;
+}
+.caas-btn-primary:hover {
+background: var(--gold-bright);
+transform: translateY(-2px);
+}
+.caas-btn-secondary {
+display: inline-block;
+background: transparent;
+border: 1px solid rgba(18,176,154,0.4);
+color: var(--caas-teal-bright);
+font-family: 'Barlow', sans-serif;
+font-size: 0.78rem;
+font-weight: 600;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+padding: 0.7rem 1.6rem;
+border-radius: 2px;
+text-decoration: none;
+transition: all 0.2s;
+}
+.caas-btn-secondary:hover {
+background: rgba(18,176,154,0.12);
+border-color: var(--caas-teal-bright);
+}
+
+/* ============ TIMELINE ============ */
+.timeline-section {
+padding: 0 6vw 6rem;
+max-width: 1100px;
+margin: 0 auto;
+}
+.timeline {
+position: relative;
+padding-left: 3rem;
+}
+.timeline::before {
+content: '';
+position: absolute;
+left: 0.8rem;
+top: 0; bottom: 0;
+width: 1px;
+background: linear-gradient(180deg, var(--aztec-gold), transparent);
+}
+.timeline-item {
+position: relative;
+margin-bottom: 2.5rem;
+padding-bottom: 2.5rem;
+border-bottom: 1px solid rgba(212,144,10,0.08);
+}
+.timeline-item:last-child { border-bottom: none; margin-bottom: 0; }
+.timeline-dot {
+position: absolute;
+left: -2.4rem;
+top: 0.3rem;
+width: 12px; height: 12px;
+background: var(--aztec-gold);
+border-radius: 50%;
+border: 2px solid var(--void);
+box-shadow: 0 0 12px rgba(212,144,10,0.5);
+}
+.timeline-date {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 0.85rem;
+letter-spacing: 0.2em;
+color: var(--gold-bright);
+margin-bottom: 0.3rem;
+}
+.timeline-title {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 1.5rem;
+color: var(--cream);
+letter-spacing: 0.05em;
+margin-bottom: 0.5rem;
+}
+.timeline-text {
+font-size: 0.95rem;
+color: var(--cream-dim);
+line-height: 1.75;
+max-width: 750px;
+margin: 0;
+}
+
+/* ============ PERFORMERS ============ */
+.performers-section {
+background: var(--aztec-dark);
+padding: 5rem 6vw;
+border-top: 1px solid rgba(212,144,10,0.15);
+border-bottom: 1px solid rgba(212,144,10,0.15);
+}
+.performers-inner { max-width: 1100px; margin: 0 auto; }
+.performer-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 1.5rem;
+margin-top: 2rem;
+}
+.performer-card {
+background: rgba(212,144,10,0.06);
+border: 1px solid rgba(212,144,10,0.15);
+border-radius: 3px;
+padding: 2rem;
+text-align: center;
+transition: all 0.25s;
+}
+.performer-card:hover {
+background: rgba(212,144,10,0.12);
+border-color: rgba(212,144,10,0.35);
+transform: translateY(-3px);
+}
+.performer-emoji { font-size: 3rem; display: block; margin-bottom: 1rem; }
+.performer-name {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 1.3rem;
+color: var(--gold-bright);
+letter-spacing: 0.08em;
+margin-bottom: 0.3rem;
+}
+.performer-role { font-size: 0.8rem; color: var(--cream-dim); letter-spacing: 0.1em; }
+
+/* ============ SECOND CTA — CaaS Community ============ */
+.cta-section {
+padding: 7rem 6vw;
+text-align: center;
+position: relative;
+overflow: hidden;
+}
+.cta-glow {
+position: absolute; inset: 0;
+background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(10,128,112,0.10) 0%, rgba(212,144,10,0.05) 60%, transparent 80%);
+pointer-events: none;
+}
+.cta-h2 {
+font-family: 'Bebas Neue', sans-serif;
+font-size: clamp(2.5rem, 7vw, 6rem);
+color: var(--cream);
+margin-bottom: 1rem;
+letter-spacing: 0.03em;
+position: relative; z-index: 2;
+}
+.cta-h2 span { color: var(--caas-teal-bright); }
+.cta-sub {
+font-family: 'Playfair Display', serif;
+font-style: italic;
+font-size: clamp(1rem, 2.5vw, 1.4rem);
+color: var(--cream-dim);
+margin-bottom: 3rem;
+max-width: 680px;
+margin-left: auto;
+margin-right: auto;
+position: relative; z-index: 2;
+}
+.cta-caas-wrapper {
+max-width: 640px;
+margin: 0 auto;
+position: relative; z-index: 2;
+}
+.cta-caas-inner {
+background: linear-gradient(135deg, rgba(10,128,112,0.15) 0%, rgba(7,6,12,0.98) 100%);
+border: 1px solid rgba(18,176,154,0.3);
+border-top: 3px solid var(--caas-teal-bright);
+border-radius: 4px;
+padding: 2.5rem 2rem;
+}
+.cta-caas-tagline {
+font-size: 0.7rem;
+letter-spacing: 0.35em;
+text-transform: uppercase;
+color: var(--caas-teal-bright);
+margin-bottom: 1rem;
+}
+.cta-caas-headline {
+font-family: 'Bebas Neue', sans-serif;
+font-size: clamp(1.6rem, 4vw, 2.4rem);
+color: var(--cream);
+letter-spacing: 0.05em;
+margin-bottom: 0.8rem;
+}
+.cta-caas-text {
+font-size: 0.88rem;
+color: var(--cream-dim);
+line-height: 1.7;
+margin-bottom: 1.8rem;
+}
+.cta-caas-btn {
+display: block;
+width: 100%;
+background: linear-gradient(135deg, var(--caas-teal), var(--caas-teal-bright));
+border: none;
+border-radius: 3px;
+padding: 1.1rem;
+color: white;
+font-family: 'Barlow', sans-serif;
+font-size: 0.88rem;
+font-weight: 700;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+cursor: pointer;
+transition: all 0.25s;
+text-decoration: none;
+text-align: center;
+margin-bottom: 0.8rem;
+}
+.cta-caas-btn:hover {
+transform: translateY(-2px);
+box-shadow: 0 10px 30px rgba(18,176,154,0.4);
+}
+.cta-caas-btn-alt {
+display: block;
+width: 100%;
+background: transparent;
+border: 1px solid rgba(18,176,154,0.35);
+border-radius: 3px;
+padding: 0.9rem;
+color: var(--caas-teal-bright);
+font-family: 'Barlow', sans-serif;
+font-size: 0.78rem;
+font-weight: 600;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+cursor: pointer;
+transition: all 0.2s;
+text-decoration: none;
+text-align: center;
+}
+.cta-caas-btn-alt:hover {
+background: rgba(18,176,154,0.1);
+border-color: var(--caas-teal-bright);
+}
+.cta-hub-note {
+font-size: 0.72rem;
+color: var(--smoke);
+text-align: center;
+margin-top: 1rem;
+}
+.cta-hub-note a {
+color: var(--gold-bright);
+text-decoration: none;
+}
+.cta-hub-note a:hover { text-decoration: underline; }
+
+/* ============ CITY GUIDE NAV ============ */
+.city-nav-section {
+background: var(--aztec-dark);
+padding: 4rem 6vw;
+border-top: 1px solid rgba(212,144,10,0.12);
+}
+.city-nav-title {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 1.8rem;
+color: var(--cream);
+margin-bottom: 1.5rem;
+letter-spacing: 0.05em;
+max-width: 1100px;
+margin-left: auto;
+margin-right: auto;
+}
+.city-nav-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+gap: 0.6rem;
+max-width: 1100px;
+margin: 0 auto;
+}
+.city-link {
+display: flex; align-items: center; gap: 0.6rem;
+padding: 0.75rem 1rem;
+background: rgba(255,255,255,0.03);
+border: 1px solid rgba(255,255,255,0.06);
+border-radius: 2px;
+text-decoration: none;
+color: var(--cream-dim);
+font-size: 0.82rem;
+transition: all 0.2s;
+}
+.city-link:hover, .city-link.active {
+background: rgba(212,144,10,0.1);
+border-color: rgba(212,144,10,0.3);
+color: var(--gold-bright);
+}
+
+/* ============ FOOTER ============ */
+.footer {
+background: var(--void);
+padding: 3rem 6vw 1.5rem;
+border-top: 1px solid rgba(212,144,10,0.1);
+text-align: center;
+}
+.footer-logo {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 2rem;
+color: var(--gold-bright);
+letter-spacing: 0.1em;
+margin-bottom: 0.5rem;
+}
+.footer-tagline {
+font-size: 0.8rem;
+color: var(--smoke);
+letter-spacing: 0.2em;
+text-transform: uppercase;
+margin-bottom: 1.5rem;
+}
+.footer-links {
+display: flex;
+justify-content: center;
+gap: 2rem;
+flex-wrap: wrap;
+margin-bottom: 1.5rem;
+}
+.footer-link {
+font-size: 0.78rem;
+color: var(--cream-dim);
+text-decoration: none;
+letter-spacing: 0.1em;
+transition: color 0.2s;
+}
+.footer-link:hover { color: var(--gold-bright); }
+.social-row {
+display: flex;
+justify-content: center;
+gap: 0.8rem;
+margin-bottom: 2rem;
+}
+.social-btn {
+display: inline-flex;
+align-items: center; justify-content: center;
+width: 38px; height: 38px;
+border-radius: 4px;
+color: white; font-size: 0.9rem;
+text-decoration: none;
+transition: opacity 0.2s, transform 0.2s;
+}
+.social-btn:hover { opacity: 0.85; transform: translateY(-2px); }
+.s-x { background: #000; border: 1px solid #333; }
+.s-fb { background: #1877F2; }
+.s-email { background: var(--aztec-gold); color: #000 !important; }
+.footer-copy {
+font-size: 0.7rem;
+color: var(--smoke);
+letter-spacing: 0.1em;
+margin-bottom: 1.5rem;
+}
+
+/* ============ LEGAL FOOTER ============ */
+.footer-legal {
+border-top: 1px solid rgba(212,144,10,0.08);
+padding-top: 1.5rem;
+margin-top: 1rem;
+}
+.footer-legal-links {
+display: flex;
+justify-content: center;
+gap: 1.2rem;
+flex-wrap: wrap;
+margin-bottom: 0.8rem;
+}
+.footer-legal-link {
+font-size: 0.65rem;
+color: var(--smoke);
+text-decoration: none;
+letter-spacing: 0.06em;
+transition: color 0.2s;
+}
+.footer-legal-link:hover { color: var(--cream-dim); }
+.footer-legal-sep {
+color: rgba(112,96,80,0.4);
+font-size: 0.65rem;
+}
+.footer-legal-copy {
+font-size: 0.62rem;
+color: rgba(112,96,80,0.6);
+letter-spacing: 0.08em;
+}
+
+/* ============ ANIMATIONS ============ */
+@keyframes fadeUp {
+from { opacity: 0; transform: translateY(25px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+.hero { padding: 5rem 5vw 3rem; }
+.info-strip { flex-direction: row; justify-content: center; }
+.info-item { border-right: none; border-bottom: 1px solid rgba(212,144,10,0.1); width: 50%; }
+.info-item:nth-child(even) { border-right: none; }
+.story-section, .timeline-section { padding: 3.5rem 5vw; }
+.performers-section, .city-nav-section { padding: 3rem 5vw; }
+.cta-section { padding: 4rem 5vw; }
+.countdown-sep { display: none; }
+.match-badge { flex-direction: column; gap: 0.5rem; }
+.match-vs { border: none; padding: 0; }
+.caas-inline { flex-direction: column; gap: 1rem; }
+.community-banner-inner { flex-direction: column; gap: 0.5rem; }
+}
+@media (max-width: 480px) {
+.city-nav-grid { grid-template-columns: repeat(2, 1fr); }
+.facts-grid { grid-template-columns: 1fr; }
+.info-item { width: 50%; }
+.countdown-grid { gap: 0.8rem; }
+.footer-legal-links { gap: 0.8rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- COMMUNITY BANNER -->
+<div class="community-banner">
+  <div class="community-banner-inner">
+    <span class="community-banner-text">🌎 <strong>CaaS — Community as a Service:</strong> A fan helping fans navigate 3 countries, in multiple languages. Free. Always. &nbsp;·&nbsp; ¡Gratis para todos los fans! &nbsp;·&nbsp; Gratuit pour tous!</span>
+    <a href="https://mainentry.net/go2cup-mainentry-caas" class="community-banner-cta">Join the Community →</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-flag"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+  <div class="hero-particles"></div>
+  <div class="pre-header">
+    <span class="pre-header-text">⚽ 48 Teams · 3 Nations · 1 Continent · The World Comes Together</span>
+  </div>
+  <div class="hero-eyebrow">Go2Cup · FIFA World Cup 2026</div>
+  <div class="hero-date-badge">🔥 June 11, 2026 · 3:00 PM ET · Mexico City</div>
+  <h1 class="hero-title">
+    Opening<br>
+    <span class="line-gold">Ceremony</span>
+    <span class="line-fire">Estadio Azteca · Mexico City</span>
+  </h1>
+  <p class="hero-subtitle">The most legendary stadium in soccer history opens the most ambitious World Cup ever staged. For the third time, Estadio Azteca lights up for the world.</p>
+
+  <!-- FIRST MATCH INFO -->
+  <div style="position:relative;z-index:2;margin-bottom:1.5rem;animation:fadeUp 0.7s ease both 0.6s;">
+    <div style="font-size:0.65rem;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold-bright);margin-bottom:0.8rem;">⚽ First Match</div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem;background:rgba(212,144,10,0.06);border:1px solid rgba(212,144,10,0.2);border-radius:3px;padding:1.2rem 2rem;font-size:0.82rem;letter-spacing:0.08em;color:var(--cream-dim);">
+      <span><strong style="color:var(--cream)">Teams:</strong> 🇲🇽 Mexico vs South Africa 🇿🇦</span>
+      <span><strong style="color:var(--cream)">Date:</strong> June 11, 2026</span>
+      <span><strong style="color:var(--cream)">Time:</strong> 19:00 Local · 3:00 PM ET</span>
+      <span><strong style="color:var(--cream)">Venue:</strong> Estadio Azteca · Mexico City</span>
+    </div>
+  </div>
+
+  <!-- MATCH BADGE -->
+  <div class="match-badge">
+    <span class="match-flag">🇲🇽</span>
+    <span class="match-team">Mexico</span>
+    <span class="match-vs">vs</span>
+    <span class="match-team">South Africa</span>
+    <span class="match-flag">🇿🇦</span>
+  </div>
+
+  <!-- LIVE COUNTDOWN -->
+  <div class="countdown-section">
+    <div class="countdown-label">Time Until Kickoff</div>
+    <div class="countdown-grid">
+      <div class="countdown-unit">
+        <span class="countdown-num" id="cd-days">--</span>
+        <span class="countdown-unit-label">Days</span>
+      </div>
+      <span class="countdown-sep">:</span>
+      <div class="countdown-unit">
+        <span class="countdown-num" id="cd-hours">--</span>
+        <span class="countdown-unit-label">Hours</span>
+      </div>
+      <span class="countdown-sep">:</span>
+      <div class="countdown-unit">
+        <span class="countdown-num" id="cd-mins">--</span>
+        <span class="countdown-unit-label">Minutes</span>
+      </div>
+      <span class="countdown-sep">:</span>
+      <div class="countdown-unit">
+        <span class="countdown-num" id="cd-secs">--</span>
+        <span class="countdown-unit-label">Seconds</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO OPT-IN — CaaS Community -->
+  <div class="subscribe-section">
+    <div class="subscribe-headline">Fans Helping Fans — Join CaaS</div>
+    <p class="subscribe-sub">A trilingual independent fan community built to help you navigate Mexico, Canada & the USA with confidence. Tips, safety, belonging — all free, fan to fan.</p>
+
+    <div class="caas-card">
+      <div class="caas-badge">🤝 CaaS · Community as a Service</div>
+      <div class="caas-card-title">You Belong Here.<br><span>We've Got Your Back.</span></div>
+      <p class="caas-card-desc">
+        Whether you need help finding your way around Mexico City, feel lost, disrespected, or just want to connect with fellow fans across 3 countries — this community is for you. Free from a fan, for fans. In your language.
+      </p>
+      <div class="caas-lang-row">
+        <span class="caas-lang-pill">🇺🇸 English</span>
+        <span class="caas-lang-pill">🇲🇽 Español</span>
+        <span class="caas-lang-pill">🇫🇷 Français</span>
+      </div>
+      <a href="https://mainentry.net/go2cup-mainentry-caas" class="caas-join-btn">
+        <i class="fas fa-users"></i> &nbsp; Join the CaaS Fan Community — Free
+      </a>
+      <div class="caas-links-row">
+        <a href="https://go2cup.mainentry.net/" class="caas-link">🌐 go2cup.mainentry.net</a>
+        <a href="https://mainentry.net/go2cup-insider" class="caas-link">📋 Go2Cup Insider Hub</a>
+      </div>
+    </div>
+    <p class="form-promise">
+      <i class="fas fa-shield-check"></i>
+      Fan-run. Zero spam. Free always. Your info stays safe with us.
+    </p>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- INFO STRIP -->
+<div class="info-strip">
+  <div class="info-item">
+    <span class="info-icon">📅</span>
+    <span class="info-value">June 11</span>
+    <span class="info-label">Opening Day 2026</span>
+  </div>
+  <div class="info-item">
+    <span class="info-icon">⏰</span>
+    <span class="info-value">3:00 PM ET</span>
+    <span class="info-label">Kickoff Time</span>
+  </div>
+  <div class="info-item">
+    <span class="info-icon">🏟</span>
+    <span class="info-value">87,000</span>
+    <span class="info-label">Seats · Estadio Azteca</span>
+  </div>
+  <div class="info-item">
+    <span class="info-icon">🌍</span>
+    <span class="info-value">48 Teams</span>
+    <span class="info-label">First Ever Expanded WC</span>
+  </div>
+  <div class="info-item">
+    <span class="info-icon">🏆</span>
+    <span class="info-value">3rd Time</span>
+    <span class="info-label">Azteca Hosts World Cup</span>
+  </div>
+  <div class="info-item">
+    <span class="info-icon">📺</span>
+    <span class="info-value">5 Billion</span>
+    <span class="info-label">Estimated Viewers</span>
+  </div>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- THE STORY -->
+<section>
+  <div class="story-section">
+    <div class="section-label-oc">The Opening Ceremony</div>
+
+    <!-- FIRST MATCH INFO BLOCK -->
+    <div style="background:rgba(212,144,10,0.07);border:1px solid rgba(212,144,10,0.25);border-left:4px solid var(--gold-bright);border-radius:3px;padding:1.8rem 2rem;margin-bottom:2.5rem;max-width:820px;">
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:0.75rem;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold-bright);margin-bottom:0.8rem;">⚽ First Match</div>
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--cream);letter-spacing:0.05em;margin-bottom:0.8rem;">🇲🇽 Mexico vs South Africa 🇿🇦</div>
+      <div style="display:flex;flex-wrap:wrap;gap:1.5rem;">
+        <div style="font-size:0.88rem;color:var(--cream-dim);"><span style="color:var(--gold-bright);font-weight:600;">Date:</span> June 11, 2026</div>
+        <div style="font-size:0.88rem;color:var(--cream-dim);"><span style="color:var(--gold-bright);font-weight:600;">Time:</span> 19:00 Local · 3:00 PM ET</div>
+        <div style="font-size:0.88rem;color:var(--cream-dim);"><span style="color:var(--gold-bright);font-weight:600;">Venue:</span> Estadio Azteca · Mexico City</div>
+      </div>
+    </div>
+
+    <h2 class="story-h2">The Night Soccer Rewrites History</h2>
+    <p class="story-p">On June 11, 2026, at precisely 3:00 PM Eastern Time, Estadio Azteca in Mexico City will fall silent for one extraordinary moment — and then erupt. The FIFA World Cup 2026 Opening Ceremony will begin in a stadium that has witnessed more soccer history than any other venue on Earth, before an audience of five billion people watching across the planet.</p>
+    <p class="story-p">This is not just another opening ceremony. This is the first World Cup to feature 48 nations. The first hosted across three countries simultaneously. The first in which a new generation of soccering nations — Cape Verde, Curaçao, Jordan and Uzbekistan making their World Cup debuts — will take the field for the first time. And it all begins here, at Estadio Azteca, on June 11, 2026.</p>
+
+    <div class="pull-quote-oc">
+      <p>"Estadio Azteca is the only stadium in history to host two separate World Cup finals — 1970 and 1986. In 2026, it becomes the first to host the opening of three different World Cups. No other building in soccer carries this weight of history."</p>
+    </div>
+
+    <p class="story-p">Robbie Williams and Nicole Scherzinger are expected to perform "Desire" — the official FIFA World Cup 2026 song — before a crowd of 87,000 and a global television audience measured in billions. The three tournament mascots — Maple the Moose (Canada), Zayu the Jaguar (Mexico) and Clutch the Bald Eagle (USA) — will join the ceremony that celebrates the continent that is hosting the world.</p>
+
+    <div class="facts-grid">
+      <div class="fact-card">
+        <span class="fact-icon">🏟</span>
+        <div class="fact-title">Estadio Azteca</div>
+        <p class="fact-text">The only stadium in history to host two World Cup finals (1970 & 1986) and three World Cup opening matches. Built in 1966 at 2,240 metres above sea level. Capacity: 87,000.</p>
+      </div>
+      <div class="fact-card">
+        <span class="fact-icon">🇲🇽</span>
+        <div class="fact-title">Mexico vs South Africa</div>
+        <p class="fact-text">The host nation opens the tournament against South Africa in Group A. Kickoff: 3:00 PM ET on Thursday, June 11, 2026. Mexico plays all three group stage matches on home soil.</p>
+      </div>
+      <div class="fact-card">
+        <span class="fact-icon">🎵</span>
+        <div class="fact-title">The Official Song</div>
+        <p class="fact-text">Robbie Williams and Nicole Scherzinger perform "Desire" — the official FIFA World Cup 2026 anthem. Mexico City's version features a remix by the Mexican Institute of Sound.</p>
+      </div>
+      <div class="fact-card">
+        <span class="fact-icon">🐆</span>
+        <div class="fact-title">The Mascots</div>
+        <p class="fact-text">Maple the Moose (🇨🇦 Canada), Zayu the Jaguar (🇲🇽 Mexico) and Clutch the Bald Eagle (🇺🇸 USA) — three mascots representing three nations hosting the world.</p>
+      </div>
+      <div class="fact-card">
+        <span class="fact-icon">⚽</span>
+        <div class="fact-title">The Official Ball</div>
+        <p class="fact-text">The Trionda — FIFA's official match ball for World Cup 2026 — was unveiled at Estadio Azteca in October 2025. Its design honours the three host nations and North American soccer heritage.</p>
+      </div>
+      <div class="fact-card">
+        <span class="fact-icon">🎫</span>
+        <div class="fact-title">Tickets</div>
+        <p class="fact-text">Opening match tickets start at ~$200 USD for upper level seats, with premium lower bowl seats reaching $2,000+. Purchase exclusively through FIFA.com — never buy from unofficial resellers.</p>
+      </div>
+    </div>
+
+    <!-- INLINE CaaS COMMUNITY BLOCK -->
+    <div class="caas-inline">
+      <div class="caas-inline-icon">🤝</div>
+      <div class="caas-inline-body">
+        <div class="caas-inline-label">CaaS · Community as a Service · Fan to Fan</div>
+        <div class="caas-inline-title">Navigating Mexico City?<br><span>We'll Help You Every Step.</span></div>
+        <p class="caas-inline-text">
+          First time in Mexico City? Feeling overwhelmed, lost, or disrespected? Our trilingual fan community — English, Español, Français — is here for you 24/7 during the tournament. Tips on transport, safety, food, culture, and how to get help if you need it. Fan to fan. Always free.
+        </p>
+        <div class="caas-inline-btns">
+          <a href="https://mainentry.net/go2cup-mainentry-caas" class="caas-btn-primary"><i class="fas fa-users"></i> Join CaaS Community</a>
+          <a href="https://mainentry.net/go2cup-insider" class="caas-btn-secondary">📋 Go2Cup Insider Hub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- TOURNAMENT TIMELINE -->
+<section>
+  <div class="timeline-section">
+    <div class="section-label-oc">Tournament Calendar</div>
+    <h2 class="story-h2">The Road from June 11 to July 19</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">June 11, 2026 · 3:00 PM ET</div>
+        <div class="timeline-title">Opening Ceremony &amp; Opening Match</div>
+        <p class="timeline-text">Estadio Azteca, Mexico City. Mexico vs South Africa. The first whistle of the most expansive World Cup in history — 48 teams, three nations, one continent. The 2026 FIFA World Cup begins.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">June 12, 2026</div>
+        <div class="timeline-title">Canada's Historic First Home Match</div>
+        <p class="timeline-text">BMO Field, Toronto. Canada plays their first-ever men's World Cup match on home soil. A historic day for Canadian soccer — a nation discovering its voice on the world's biggest stage.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">June 12, 2026 · 9:00 PM ET</div>
+        <div class="timeline-title">USA Opening Match</div>
+        <p class="timeline-text">SoFi Stadium, Los Angeles. USA vs Paraguay. The co-hosts open their campaign in the world's most expensive stadium before 70,000 passionate American fans.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">June 11–27, 2026</div>
+        <div class="timeline-title">Group Stage</div>
+        <p class="timeline-text">All 48 teams play across 16 host cities in 12 groups. The top two from each group advance to the Round of 32 — a new format exclusive to this expanded tournament.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Early–Mid July, 2026</div>
+        <div class="timeline-title">Quarter-Finals &amp; Semi-Finals</div>
+        <p class="timeline-text">The knockout rounds play across America's premier venues — AT&amp;T Stadium (Dallas), SoFi Stadium (Los Angeles), Hard Rock Stadium (Miami) and others. Every match eliminates a nation from the dream.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">July 19, 2026 · 3:00 PM ET</div>
+        <div class="timeline-title">🏆 The World Cup Final</div>
+        <p class="timeline-text">MetLife Stadium, East Rutherford, New Jersey. The FIFA World Cup Final — the greatest match in soccer — on the day America celebrates its Sestercentennial. The champion of the world is crowned before 82,500 witnesses and a billion viewers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- PERFORMERS -->
+<div class="performers-section">
+  <div class="performers-inner">
+    <div class="section-label-oc">The Show</div>
+    <h2 class="story-h2">Opening Ceremony Highlights</h2>
+    <p class="story-p">The 2026 Opening Ceremony at Estadio Azteca will be one of the most watched live events in television history. Here is what fans can expect on June 11 before the opening whistle.</p>
+    <div class="performer-grid">
+      <div class="performer-card">
+        <span class="performer-emoji">🎤</span>
+        <div class="performer-name">Robbie Williams</div>
+        <p class="performer-role">Expected Performer · Official Song "Desire"</p>
+      </div>
+      <div class="performer-card">
+        <span class="performer-emoji">🎵</span>
+        <div class="performer-name">Nicole Scherzinger</div>
+        <p class="performer-role">Expected Performer · Official Song "Desire"</p>
+      </div>
+      <div class="performer-card">
+        <span class="performer-emoji">🐆</span>
+        <div class="performer-name">Zayu the Jaguar</div>
+        <p class="performer-role">Mexico's Official Tournament Mascot</p>
+      </div>
+      <div class="performer-card">
+        <span class="performer-emoji">🦅</span>
+        <div class="performer-name">Clutch the Eagle</div>
+        <p class="performer-role">USA's Official Tournament Mascot</p>
+      </div>
+      <div class="performer-card">
+        <span class="performer-emoji">🫎</span>
+        <div class="performer-name">Maple the Moose</div>
+        <p class="performer-role">Canada's Official Tournament Mascot</p>
+      </div>
+      <div class="performer-card">
+        <span class="performer-emoji">⚽</span>
+        <div class="performer-name">The Trionda</div>
+        <p class="performer-role">Official FIFA World Cup 2026 Match Ball</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- SECOND CTA — CaaS Community -->
+<section class="cta-section">
+  <div class="cta-glow"></div>
+  <h2 class="cta-h2">A Community <span>Just for You</span></h2>
+  <p class="cta-sub">From the Opening Ceremony in Mexico City to the Final in New Jersey — a trilingual fan community built to help, guide and include every fan across 3 nations. Free, forever.</p>
+
+  <div class="cta-caas-wrapper">
+    <div class="cta-caas-inner">
+      <div class="cta-caas-tagline">🤝 CaaS · Community as a Service · Fan to Fan · Free</div>
+      <div class="cta-caas-headline">Be Part of the Community That Has Your Back</div>
+      <p class="cta-caas-text">
+        Tips, news, help, safety, belonging — in English, Español & Français. Whether you're roaming Mexico, Canada or the USA for the first time, you'll never feel alone. Join thousands of fans who are helping each other make the most of the greatest World Cup ever.
+      </p>
+      <a href="https://mainentry.net/go2cup-mainentry-caas" class="cta-caas-btn">
+        <i class="fas fa-users"></i> &nbsp; Join CaaS — Your Free Fan Community
+      </a>
+      <a href="https://go2cup.mainentry.net/" class="cta-caas-btn-alt">
+        🌐 Visit go2cup.mainentry.net
+      </a>
+    </div>
+    <p class="cta-hub-note">
+      Looking for the full travel guide? Visit the <a href="https://mainentry.net/go2cup-insider">Go2Cup Insider Hub →</a>
+    </p>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CITY GUIDES NAV -->
+<div class="city-nav-section">
+  <div class="city-nav-title" style="margin-bottom:1.5rem;">🌎 Explore All 16 Host City Guides</div>
+  <div class="city-nav-grid">
+    <a href="https://mainentry.net/go-2-cup/mexico-city" class="city-link active"><span>🇲🇽</span> Mexico City</a>
+    <a href="https://mainentry.net/go-2-cup/guadalajara" class="city-link"><span>🇲🇽</span> Guadalajara</a>
+    <a href="https://mainentry.net/go-2-cup/monterrey" class="city-link"><span>🇲🇽</span> Monterrey</a>
+    <a href="https://mainentry.net/go-2-cup/toronto" class="city-link"><span>🇨🇦</span> Toronto</a>
+    <a href="https://mainentry.net/go-2-cup/vancouver" class="city-link"><span>🇨🇦</span> Vancouver</a>
+    <a href="https://mainentry.net/go-2-cup/dallas" class="city-link"><span>🇺🇸</span> Dallas</a>
+    <a href="https://mainentry.net/go-2-cup/los-angeles" class="city-link"><span>🇺🇸</span> Los Angeles</a>
+    <a href="https://mainentry.net/go-2-cup/new-york-new-jersey" class="city-link"><span>🇺🇸</span> New York / NJ</a>
+    <a href="https://mainentry.net/go-2-cup/miami" class="city-link"><span>🇺🇸</span> Miami</a>
+    <a href="https://mainentry.net/go-2-cup/san-francisco-bay-area" class="city-link"><span>🇺🇸</span> San Francisco</a>
+    <a href="https://mainentry.net/go-2-cup/seattle" class="city-link"><span>🇺🇸</span> Seattle</a>
+    <a href="https://mainentry.net/go-2-cup/boston" class="city-link"><span>🇺🇸</span> Boston</a>
+    <a href="https://mainentry.net/go-2-cup/philadelphia" class="city-link"><span>🇺🇸</span> Philadelphia</a>
+    <a href="https://mainentry.net/go-2-cup/kansas-city" class="city-link"><span>🇺🇸</span> Kansas City</a>
+    <a href="https://mainentry.net/go-2-cup/houston" class="city-link"><span>🇺🇸</span> Houston</a>
+    <a href="https://mainentry.net/go-2-cup/atlanta" class="city-link"><span>🇺🇸</span> Atlanta</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">Go2Cup</div>
+  <p class="footer-tagline">Your Complete FIFA World Cup 2026 Fan Travel Hub</p>
+  <div class="footer-links">
+    <a href="https://mainentry.net/go2cup" class="footer-link">Home</a>
+    <a href="https://mainentry.net/go-2-cup/mexico-city" class="footer-link">Mexico City</a>
+    <a href="https://mainentry.net/go-2-cup/new-york-new-jersey" class="footer-link">World Cup Final</a>
+    <a href="https://mainentry.net/go2cup-mainentry-caas" class="footer-link">CaaS Community</a>
+    <a href="https://mainentry.net/go2cup-insider" class="footer-link">Insider Hub</a>
+    <a href="mailto:hello@mainentry.net" class="footer-link">Contact</a>
+  </div>
+  <div class="social-row">
+    <a href="https://x.com/mariavmyers" class="social-btn s-x" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://www.facebook.com/MainEntryGo2Cup" class="social-btn s-fb" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="mailto:hello@mainentry.net" class="social-btn s-email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+  </div>
+  <p class="footer-copy">&copy; 2026 Go2Cup &middot; mainentry.net &middot; hello@mainentry.net &middot; Built with ❤️ for soccer fans everywhere</p>
+
+  <!-- LEGAL FOOTER -->
+  <div class="footer-legal">
+    <div class="footer-legal-links">
+      <a href="https://mainentry.net/go2cup-affiliate-disclosure" class="footer-legal-link">Affiliate Disclosure</a>
+      <span class="footer-legal-sep">·</span>
+      <a href="https://mainentry.net/go2cup-privacy-disclaimer" class="footer-legal-link">Privacy Policy</a>
+      <span class="footer-legal-sep">·</span>
+      <a href="https://mainentry.net/go2cup-terms-conditions" class="footer-legal-link">Terms &amp; Conditions</a>
+      <span class="footer-legal-sep">·</span>
+      <a href="https://mainentry.net/go2cup-advertising-sponsored-content-disclaimer" class="footer-legal-link">Advertising &amp; Sponsored Content</a>
+      <span class="footer-legal-sep">·</span>
+      <a href="https://mainentry.net/go2cup-legal-hub" class="footer-legal-link">GO2CUP Legal Hub</a>
+    </div>
+    <p class="footer-legal-copy">
+      This page may contain affiliate links. See our <a href="https://mainentry.net/go2cup-affiliate-disclosure" style="color:var(--smoke);text-decoration:underline;">Affiliate Disclosure</a> for details. CaaS community is an independent fan initiative, not affiliated with FIFA.
+    </p>
+  </div>
+</footer>
+
+<!-- COUNTDOWN SCRIPT -->
+<script>
+function updateCountdown() {
+  var target = new Date('2026-06-11T19:00:00Z');
+  var now = new Date();
+  var diff = target - now;
+  if (diff <= 0) {
+    document.getElementById('cd-days').textContent = '00';
+    document.getElementById('cd-hours').textContent = '00';
+    document.getElementById('cd-mins').textContent = '00';
+    document.getElementById('cd-secs').textContent = '00';
+    return;
+  }
+  var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  var secs = Math.floor((diff % (1000 * 60)) / 1000);
+  document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+  document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+  document.getElementById('cd-mins').textContent = String(mins).padStart(2, '0');
+  document.getElementById('cd-secs').textContent = String(secs).padStart(2, '0');
+}
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+</body>
+</html>
