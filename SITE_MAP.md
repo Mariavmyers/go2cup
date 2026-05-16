@@ -8,11 +8,11 @@
 
 All “Get Free Fan Guide” buttons should link to:
 
-https://mainentry.net/go2cup-fan-survival-guide
+[Verify existing URL]
 
 All “World Cup 2026 News,” “Join the Fan List,” “Get Sports News First,” and newsletter buttons should link to:
 
-https://mainentry.net/world-cup-2026-news
+[Verify existing URL]
 
 ## Current pages
 
@@ -33,8 +33,8 @@ Use this navigation order where possible:
 - Interpreter Support → interpreter-support.html
 - Emergency Help → emergency.html
 - Partner Resources → partner-resources.html
-- Free Fan Guide → https://mainentry.net/go2cup-fan-survival-guide
-- World Cup News → https://mainentry.net/world-cup-2026-news
+- Free Fan Guide → [Verify existing URL]
+- World Cup News → [Verify existing URL]
 
 ## Bridge page rules
 
