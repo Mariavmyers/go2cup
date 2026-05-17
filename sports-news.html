@@ -1,0 +1,752 @@
+<!--
+  ============================================================
+  GO2HUB DAILY SPORTS NEWS — Public Page
+  Go2Cup.com
+  STATIC HTML/CSS/JS — safe to paste into Estage or any
+  static page builder. No React. No API. No external calls.
+  No keys. No forms. No CTAs.
+  HOW TO ADD NEWS ITEMS:
+  1. Scroll down to the sportsNewsData array in the <script>.
+  2. Copy one of the existing objects as a template.
+  3. Paste it at the TOP of the array (newest first).
+  4. Fill in your curated fields.
+  5. Save and publish.
+  FIELDS THAT ARE SAFE TO LEAVE BLANK OR AS TODO:
+  - imageUrl      → shows a premium sport-color fallback block
+  - go2cupAngle   → block is hidden if empty
+  - fanTravelImpact → block is hidden if empty
+  - tags          → tag row is hidden if empty array
+  - sourceUrl     → shows "Source link pending" if TODO_SOURCE_URL
+  ============================================================
+-->
+<!-- ── FONTS ── -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,400&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<!-- ── STYLES ── -->
+<style>
+/* ── Reset (scoped to this widget) ── */
+.g2pub * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* ── Tokens ── */
+.g2pub {
+  --bg:           #f0efe9;
+  --surface:      #ffffff;
+  --surface2:     #f6f5f1;
+  --text:         #111111;
+  --text-mid:     #3d3d3d;
+  --text-muted:   #787870;
+  --border:       #e2e1da;
+  /* Sport accents */
+  --wc:           #1b6244;
+  --wc-pale:      #edf5f0;
+  --nfl:          #8c1c1c;
+  --nfl-pale:     #fdf0f0;
+  --f1:           #1c213d;
+  --f1-pale:      #f0f1f8;
+  /* Angle highlight */
+  --angle-bg:     #fffceb;
+  --angle-bar:    #d4a017;
+  --angle-label:  #7a5c00;
+  --angle-text:   #4a3800;
+  --font-head: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'IBM Plex Sans', 'Helvetica Neue', sans-serif;
+  font-family: var(--font-body);
+  background:  var(--bg);
+  color:       var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+/* ── Masthead ── */
+.g2pub__mast {
+  background: #0c0c0c;
+  padding: 0 28px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  border-bottom: 3px solid var(--wc);
+}
+.g2pub__mast-left,
+.g2pub__mast-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 18px 0;
+}
+.g2pub__mast-right { align-items: flex-end; gap: 4px; }
+.g2pub__wordmark {
+  font-family: var(--font-head);
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  letter-spacing: -0.4px;
+}
+.g2pub__wordmark em {
+  font-style: normal;
+  color: #d4a017;
+}
+.g2pub__section-name {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #555;
+  margin-top: 5px;
+}
+.g2pub__mast-date   { font-size: 12px; color: #888; }
+.g2pub__mast-domain { font-size: 10px; color: #444; letter-spacing: 1px; }
+/* ── Sub-nav ── */
+.g2pub__subnav {
+  background: #161616;
+  padding: 0 28px;
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.g2pub__subnav::-webkit-scrollbar { display: none; }
+.g2pub__subnav a {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #555;
+  padding: 12px 20px;
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.15s, border-color 0.15s;
+  display: block;
+}
+.g2pub__subnav a.nav-wc:hover  { color: #4ecf95; border-color: var(--wc); }
+.g2pub__subnav a.nav-nfl:hover { color: #e87070; border-color: var(--nfl); }
+.g2pub__subnav a.nav-f1:hover  { color: #7a8fff; border-color: var(--f1); }
+/* ── Main + grid ── */
+.g2pub__main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 36px 24px 56px;
+}
+.g2pub__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+/* ── Column ── */
+.g2pub__col {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.g2pub__col-header {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding-bottom: 13px;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 2px;
+}
+.col-wc  .g2pub__col-header { border-color: var(--wc); }
+.col-nfl .g2pub__col-header { border-color: var(--nfl); }
+.col-f1  .g2pub__col-header { border-color: var(--f1); }
+.g2pub__col-emoji { font-size: 18px; line-height: 1; }
+.g2pub__col-title {
+  font-family: var(--font-head);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+.g2pub__col-count {
+  margin-left: auto;
+  font-size: 10px;
+  color: var(--text-muted);
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  padding: 2px 9px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+/* ── Card ── */
+.g2pub__card {
+  background: var(--surface);
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 14px rgba(0,0,0,0.04);
+  transition: box-shadow 0.22s ease, transform 0.22s ease;
+  animation: g2fadein 0.4s ease both;
+}
+@keyframes g2fadein {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.g2pub__card:hover {
+  box-shadow: 0 4px 18px rgba(0,0,0,0.11), 0 12px 32px rgba(0,0,0,0.07);
+  transform: translateY(-2px);
+}
+/* Image area */
+.g2pub__card-img {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.g2pub__card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.g2pub__card:hover .g2pub__card-img img { transform: scale(1.04); }
+/* Fallback image block */
+.g2pub__card-imgfb {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.col-wc  .g2pub__card-imgfb { background: linear-gradient(135deg,#1b6244,#2fa874); }
+.col-nfl .g2pub__card-imgfb { background: linear-gradient(135deg,#8c1c1c,#c0392b); }
+.col-f1  .g2pub__card-imgfb { background: linear-gradient(135deg,#1c213d,#2d3563); }
+/* Card body */
+.g2pub__card-body { padding: 16px 18px 20px; }
+/* Meta row */
+.g2pub__card-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 10px;
+}
+.g2pub__badge {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 3px;
+  color: #fff;
+  line-height: 1.4;
+}
+.col-wc  .g2pub__badge { background: var(--wc); }
+.col-nfl .g2pub__badge { background: var(--nfl); }
+.col-f1  .g2pub__badge { background: var(--f1); }
+.g2pub__cat  { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); font-weight: 500; }
+.g2pub__date { font-size: 11px; color: var(--text-muted); margin-left: auto; font-weight: 300; white-space: nowrap; }
+/* Headline */
+.g2pub__title {
+  font-family: var(--font-head);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.32;
+  color: var(--text);
+  letter-spacing: -0.1px;
+  margin-bottom: 10px;
+}
+/* Summary */
+.g2pub__summary {
+  font-size: 13px;
+  line-height: 1.72;
+  color: var(--text-mid);
+  font-weight: 300;
+  margin-bottom: 13px;
+}
+/* GO2CUP Angle */
+.g2pub__angle {
+  background: var(--angle-bg);
+  border-left: 3px solid var(--angle-bar);
+  border-radius: 0 4px 4px 0;
+  padding: 10px 13px;
+  margin-bottom: 11px;
+}
+.g2pub__angle-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--angle-label);
+  margin-bottom: 5px;
+}
+.g2pub__angle-text {
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: var(--angle-text);
+}
+/* Fan Travel Impact */
+.g2pub__impact {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--text-mid);
+  margin-bottom: 12px;
+}
+.g2pub__impact-lbl { font-weight: 600; white-space: nowrap; color: var(--text); }
+/* Source row */
+.g2pub__source {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.g2pub__source-via { font-size: 11px; color: var(--text-muted); }
+.g2pub__source-via strong { font-weight: 600; color: #555; }
+.g2pub__source-pending { font-size: 11px; color: #bbb; font-style: italic; }
+.g2pub__read-link {
+  font-size: 11px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  transition: gap 0.15s ease;
+  white-space: nowrap;
+}
+.g2pub__read-link:hover { gap: 6px; }
+.col-wc  .g2pub__read-link { color: var(--wc); }
+.col-nfl .g2pub__read-link { color: var(--nfl); }
+.col-f1  .g2pub__read-link { color: var(--f1); }
+/* Tags */
+.g2pub__tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
+.g2pub__tag {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+/* Empty column state */
+.g2pub__empty {
+  background: var(--surface);
+  border: 2px dashed var(--border);
+  border-radius: 7px;
+  padding: 36px 20px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+/* ── Trust note ── */
+.g2pub__trust {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px 44px;
+}
+.g2pub__trust-inner {
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.g2pub__trust-icon { font-size: 15px; flex-shrink: 0; margin-top: 2px; opacity: 0.6; }
+.g2pub__trust-text { font-size: 11.5px; color: var(--text-muted); line-height: 1.75; font-weight: 300; }
+.g2pub__trust-text strong { font-weight: 600; color: #666; }
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .g2pub__grid { grid-template-columns: 1fr 1fr; gap: 22px; }
+  .col-f1 { grid-column: 1 / -1; max-width: 460px; }
+}
+@media (max-width: 600px) {
+  .g2pub__mast { padding: 0 16px; flex-direction: column; align-items: flex-start; }
+  .g2pub__mast-left  { padding: 16px 0 8px; }
+  .g2pub__mast-right { align-items: flex-start; padding: 0 0 16px; }
+  .g2pub__subnav     { padding: 0 16px; }
+  .g2pub__grid       { grid-template-columns: 1fr; gap: 28px; }
+  .col-f1            { grid-column: auto; max-width: none; }
+  .g2pub__main       { padding: 24px 16px 44px; }
+  .g2pub__trust      { padding: 0 16px 36px; }
+}
+</style>
+<!-- ── HTML ── -->
+<div class="g2pub">
+  <header class="g2pub__mast">
+    <div class="g2pub__mast-left">
+      <div class="g2pub__wordmark">Go2<em>Hub</em></div>
+      <div class="g2pub__section-name">Daily Sports News</div>
+    </div>
+    <div class="g2pub__mast-right">
+      <div class="g2pub__mast-date" id="g2pub-date"></div>
+      <div class="g2pub__mast-domain">Go2Cup.com</div>
+    </div>
+  </header>
+  <nav class="g2pub__subnav" aria-label="Sport sections">
+    <a class="nav-wc"  href="#g2pub-col-wc">&#9917; World Cup</a>
+    <a class="nav-nfl" href="#g2pub-col-nfl">&#127944; NFL</a>
+    <a class="nav-f1"  href="#g2pub-col-f1">&#127950; Formula One</a>
+  </nav>
+  <main class="g2pub__main">
+    <div class="g2pub__grid" id="g2pub-grid">
+      <!-- Cards are rendered here by JavaScript -->
+    </div>
+  </main>
+  <footer class="g2pub__trust">
+    <div class="g2pub__trust-inner">
+      <span class="g2pub__trust-icon">&#8505;&#65039;</span>
+      <p class="g2pub__trust-text">
+        <strong>Editorial Note:</strong>
+        GO2CUP curates and summarizes sports headlines for fan travel awareness.
+        Always verify final schedules, ticketing, travel rules, and official event
+        information with primary sources. GO2CUP is an independent fan travel
+        resource and is not affiliated with FIFA, the NFL, Formula One Group, or
+        any official sports federation, team, or sponsor.
+      </p>
+    </div>
+  </footer>
+</div>
+<!-- ── SCRIPT ── -->
+<script>
+(function () {
+  /* =============================================================
+     COLUMN DEFINITIONS
+     Do not edit unless you are adding a new sport section.
+  ============================================================= */
+  var COLS = [
+    { key: 'worldcup', id: 'g2pub-col-wc',  css: 'col-wc',  emoji: '&#9917;',  badge: 'World Cup',   name: 'World Cup &amp; Soccer' },
+    { key: 'nfl',      id: 'g2pub-col-nfl', css: 'col-nfl', emoji: '&#127944;', badge: 'NFL',         name: 'NFL' },
+    { key: 'f1',       id: 'g2pub-col-f1',  css: 'col-f1',  emoji: '&#127950;', badge: 'Formula One', name: 'Formula One' }
+  ];
+  var MAX_AGE_DAYS = 4;
+  /* =============================================================
+     NEWS DATA
+     ─────────────────────────────────────────────────────────────
+     ADD NEW ITEMS AT THE TOP OF THIS ARRAY (newest first).
+     Copy any object below as a template and fill it in.
+     FIELD NOTES:
+     - sport        : "worldcup" | "nfl" | "f1"
+     - sourceUrl    : use "TODO_SOURCE_URL" if link not ready
+     - imageUrl     : leave "" for auto fallback block
+     - go2cupAngle  : leave "" to hide the block
+     - fanTravelImpact: leave "" to hide the block
+     - tags         : leave [] to hide tag row
+  ============================================================= */
+  var sportsNewsData = [
+    /* ── PASTE NEW ITEMS ABOVE THIS LINE ───────────────────────
+       ─────────────────────────────────────────────────────────
+       SAMPLE DATA BELOW — replace with real curated items
+       ─────────────────────────────────────────────────────────
+    */
+    /* ── WORLD CUP / SOCCER ─────────────────────────────────── */
+    {
+      id:               "wc-sample-001",
+      sport:            "worldcup",
+      category:         "Group Stage",
+      publishedDate:    "2026-05-16",
+      title:            "[SAMPLE] 2026 World Cup Group Stage Draw Finalised — Key City Matchups Now Set",
+      originalHeadline: "[SAMPLE ONLY — not a real headline]",
+      summary:          "The 2026 FIFA World Cup group stage draw has been completed. The 48-team field is now split across 16 host cities in the United States, Canada, and Mexico, with several high-profile group clashes expected to drive concentrated fan movement between cities.",
+      go2cupAngle:      "Group assignments directly determine which host cities will carry the heaviest fan footprint. Dallas, Miami, and New York/New Jersey groups are already generating the strongest early travel inquiry from international fans.",
+      fanTravelImpact:  "High — group city assignments are confirmed. Fans with multi-match tickets should begin mapping itineraries now. Accommodation near top-group stadiums is already showing pricing pressure.",
+      sourceName:       "TODO_SOURCE_NAME",
+      sourceUrl:        "TODO_SOURCE_URL",
+      imageUrl:         "",
+      imageAlt:         "",
+      tags:             ["group stage", "draw", "host cities", "fan travel"]
+    },
+    {
+      id:               "wc-sample-002",
+      sport:            "worldcup",
+      category:         "Travel & Logistics",
+      publishedDate:    "2026-05-14",
+      title:            "[SAMPLE] Cross-Border Fan Travel: What the USA-Canada-Mexico Format Means for Your Trip",
+      originalHeadline: "[SAMPLE ONLY — not a real headline]",
+      summary:          "With matches spread across three countries, fans attending games in more than one host nation must navigate multiple visa regimes, border crossings, and transport corridors. Air connectivity between host cities varies significantly.",
+      go2cupAngle:      "Cross-border multi-city itineraries are core Go2Cup territory. Routing from Dallas to Toronto, or Mexico City to Los Angeles, requires planning most fans have not yet begun.",
+      fanTravelImpact:  "Critical — fans holding tickets in more than one host country must verify visa requirements for every leg of their journey well in advance of departure.",
+      sourceName:       "TODO_SOURCE_NAME",
+      sourceUrl:        "TODO_SOURCE_URL",
+      imageUrl:         "",
+      imageAlt:         "",
+      tags:             ["cross-border", "visa", "multi-city", "logistics"]
+    },
+    {
+      id:               "wc-sample-003",
+      sport:            "worldcup",
+      category:         "Venue & Experience",
+      publishedDate:    "2026-05-11",
+      title:            "[SAMPLE] MetLife Stadium Confirmed as World Cup Final Venue — New York Area Fans Prepare",
+      originalHeadline: "[SAMPLE ONLY — not a real headline]",
+      summary:          "MetLife Stadium in East Rutherford, New Jersey has been confirmed as the venue for the 2026 World Cup Final. The stadium holds over 82,000 spectators and is the largest of the 16 host venues.",
+      go2cupAngle:      "New York/New Jersey is Go2Cup's highest-demand destination. The MetLife city guide should be updated with matchday transit routes, fan zone locations, and accommodation zones across the tri-state area.",
+      fanTravelImpact:  "Very High — Final tickets are the most sought-after of the tournament. Fans without confirmed accommodation in the tri-state area should book immediately.",
+      sourceName:       "TODO_SOURCE_NAME",
+      sourceUrl:        "TODO_SOURCE_URL",
+      imageUrl:         "",
+      imageAlt:         "",
+      tags:             ["MetLife", "World Cup Final", "New York", "venue"]
+    },
+    /* ── NFL ─────────────────────────────────────────────────── */
+    {
+      id:               "nfl-sample-001",
+      sport:            "nfl",
+      category:         "Season Preview",
+      publishedDate:    "2026-05-16",
+      title:            "[SAMPLE] 2026 NFL Schedule Released — Road Trip Windows and International Game Dates Confirmed",
+      originalHeadline: "[SAMPLE ONLY — not a real headline]",
+      summary:          "The NFL has published the full 2026 regular season schedule. Several marquee matchups fall on holiday weekends, and international games in London and S\u00e3o Paulo add cross-border travel interest to the calendar.",
+      go2cupAngle:      "The schedule release is the starting signal for road-trip planning. International games — especially S\u00e3o Paulo, which overlaps Brazil's World Cup 2026 momentum — are directly relevant to Go2Cup's multilingual audience.",
+      fanTravelImpact:  "Moderate — fans targeting international game weekends should act early. London and S\u00e3o Paulo hotel availability compresses within days of the schedule announcement.",
+      sourceName:       "TODO_SOURCE_NAME",
+      sourceUrl:        "TODO_SOURCE_URL",
+      imageUrl:         "",
+      imageAlt:         "",
+      tags:             ["NFL schedule", "road trips", "London", "S\u00e3o Paulo"]
+    },
+    {
+      id:               "nfl-sample-002",
+      sport:            "nfl",
+      category:         "Offseason",
+      publishedDate:    "2026-05-10",
+      title:            "[SAMPLE] NFC Power Balance Shifts After a Busy Offseason of Trades and Free Agency",
+      originalHeadline: "[SAMPLE ONLY — not a real headline]",
+      summary:          "A significant volume of trades and free-agent signings has altered the competitive landscape in the NFC heading into 2026. Several teams that missed the playoffs last year have made moves that analysts believe will push them into contention.",
+      go2cupAngle:      "Playoff host cities generate concentrated short-notice travel demand. Monitoring roster shifts now lets Go2Cup prepare city guide content for markets most likely to host late-season games.",
+      fanTravelImpact:  "Low to Moderate currently — track how the competitive shifts translate into playoff seeding projections as training camp opens.",
+      sourceName:       "TODO_SOURCE_NAME",
+      sourceUrl:        "TODO_SOURCE_URL",
+      imageUrl:         "",
+      imageAlt:         "",
+      tags:             ["offseason", "free agency", "NFC", "playoffs"]
+    },
+    {
+      id:               "nfl-sample-003",
+      sport:            "nfl",
+      category:         "Draft & Roster",
+      publishedDate:    "2026-05-04",
+      title:            "[SAMPLE] 2026 NFL Draft Wrap: Which Fan Markets Got an Attendance Boost From Their Picks?",
+      originalHeadline: "[SAMPLE ONLY — not a real headline]",
+      summary:          "The 2026 NFL Draft concluded with several headline selections. Teams in mid-tier markets that secured high-profile skill-position players historically see an immediate uptick in single-game ticket interest and away-fan travel demand for home openers.",
+      go2cupAngle:      "",
+      fanTravelImpact:  "Low currently — draft impact on road-trip travel is felt most in the season-opener window. Revisit when week-one matchups are confirmed.",
+      sourceName:       "TODO_SOURCE_NAME",
+      sourceUrl:        "TODO_SOURCE_URL",
+      imageUrl:         "",
+      imageAlt:         "",
+      tags:             ["NFL draft", "2026", "attendance", "home opener"]
+    },
+    /* ── FORMULA ONE ─────────────────────────────────────────── */
+    {
+      id:               "f1-sample-001",
+      sport:            "f1",
+      category:         "Race Weekend Guide",
+      publishedDate:    "2026-05-16",
+      title:            "[SAMPLE] Monaco Grand Prix: Fan Experience Breakdown, Grandstand Zones, and Getting There",
+      originalHeadline: "[SAMPLE ONLY — not a real headline]",
+      summary:          "The Monaco Grand Prix is the most prestigious race on the F1 calendar and among the most logistically complex fan experiences in sport. Accommodation in the principality books out months in advance, with Nice, Cannes, and Menton serving as the primary fallback bases.",
+      go2cupAngle:      "Monaco is a high-value, high-intent fan travel destination. A city guide covering grandstand selection, Nice Airport transfers, coastal accommodation tiers, and ferry access would serve a premium planning audience.",
+      fanTravelImpact:  "Very High — Monaco accommodation typically books out 3-6 months before race weekend. Fans without lodging in the C\u00f4te d'Azur corridor should search immediately.",
+      sourceName:       "TODO_SOURCE_NAME",
+      sourceUrl:        "TODO_SOURCE_URL",
+      imageUrl:         "",
+      imageAlt:         "",
+      tags:             ["Monaco", "Grand Prix", "grandstand", "Nice", "fan experience"]
+    },
+    {
+      id:               "f1-sample-002",
+      sport:            "f1",
+      category:         "Championship",
+      publishedDate:    "2026-05-14",
+      title:            "[SAMPLE] 2026 F1 Drivers' Title Race: Three Drivers Separated by 18 Points at Midpoint",
+      originalHeadline: "[SAMPLE ONLY — not a real headline]",
+      summary:          "Through the first seven rounds, the 2026 Drivers' Championship is unusually tight. Three drivers sit within 18 points of the lead, meaning every remaining race carries genuine title implications.",
+      go2cupAngle:      "A close championship significantly raises travel demand for decisive late-season races. Las Vegas, S\u00e3o Paulo, and Abu Dhabi — all in the final quarter — are the highest-value watch points for fan travel intent.",
+      fanTravelImpact:  "Moderate now, escalating — if the title remains open through October, Las Vegas and Abu Dhabi will see sharp accommodation and ticket price movement.",
+      sourceName:       "TODO_SOURCE_NAME",
+      sourceUrl:        "TODO_SOURCE_URL",
+      imageUrl:         "",
+      imageAlt:         "",
+      tags:             ["championship", "title race", "standings", "Las Vegas GP"]
+    },
+    {
+      id:               "f1-sample-003",
+      sport:            "f1",
+      category:         "Technical & Teams",
+      publishedDate:    "2026-05-09",
+      title:            "[SAMPLE] 2026 Technical Reset: What a More Competitive Field Means for US Race Attendance",
+      originalHeadline: "[SAMPLE ONLY — not a real headline]",
+      summary:          "The 2026 Formula One season introduced significant aerodynamic and power unit regulation changes. Early rounds suggest a more competitive field, which historically correlates with increased casual fan interest at non-marquee venues.",
+      go2cupAngle:      "",
+      fanTravelImpact:  "Moderate — broader competitive interest raises overall attendance intent. US venues in Austin, Miami, and Las Vegas are positioned to see stronger fan travel numbers under the new era.",
+      sourceName:       "TODO_SOURCE_NAME",
+      sourceUrl:        "TODO_SOURCE_URL",
+      imageUrl:         "",
+      imageAlt:         "",
+      tags:             ["2026 regulations", "US Grand Prix", "Miami GP", "Las Vegas GP"]
+    }
+    /* ── END OF SAMPLE DATA ─────────────────────────────────────
+       Add real curated items ABOVE this block.
+    ─────────────────────────────────────────────────────────── */
+  ]; /* ← end sportsNewsData */
+  /* =============================================================
+     UTILITIES
+     Do not edit below this line unless you are modifying layout.
+  ============================================================= */
+  function esc(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/&/g,  '&amp;')
+      .replace(/</g,  '&lt;')
+      .replace(/>/g,  '&gt;')
+      .replace(/"/g,  '&quot;')
+      .replace(/'/g,  '&#39;');
+  }
+  function fmtDate(dateStr) {
+    if (!dateStr) return '';
+    try {
+      var d = new Date(dateStr + 'T12:00:00Z');
+      return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+    } catch(e) { return dateStr; }
+  }
+  function parseLocalDate(dateStr) {
+    if (!dateStr) return null;
+    var match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dateStr);
+    if (!match) return null;
+    return new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
+  }
+  function isWithinMaxAge(dateStr) {
+    var published = parseLocalDate(dateStr);
+    if (!published) return false;
+    var now = new Date();
+    var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    var ageDays = Math.floor((today - published) / 86400000);
+    return ageDays >= 0 && ageDays <= MAX_AGE_DAYS;
+  }
+  function isTodo(val) {
+    return !val || val.trim() === '' || val === 'TODO_SOURCE_URL' || val === 'TODO_SOURCE_NAME' || val === 'TODO_IMAGE_URL';
+  }
+  function buildCard(item, col) {
+    var parts = [];
+    /* Image or fallback */
+    if (!isTodo(item.imageUrl)) {
+      parts.push(
+        '<div class="g2pub__card-img">' +
+          '<img src="' + esc(item.imageUrl) + '" alt="' + esc(item.imageAlt) + '" loading="lazy">' +
+        '</div>'
+      );
+    } else {
+      parts.push('<div class="g2pub__card-imgfb">' + col.emoji + '</div>');
+    }
+    /* Body open */
+    parts.push('<div class="g2pub__card-body">');
+    /* Meta row */
+    parts.push(
+      '<div class="g2pub__card-meta">' +
+        '<span class="g2pub__badge">' + esc(col.badge) + '</span>' +
+        (item.category ? '<span class="g2pub__cat">' + esc(item.category) + '</span>' : '') +
+        (item.publishedDate ? '<span class="g2pub__date">' + fmtDate(item.publishedDate) + '</span>' : '') +
+      '</div>'
+    );
+    /* Title */
+    if (item.title) {
+      parts.push('<h2 class="g2pub__title">' + esc(item.title) + '</h2>');
+    }
+    /* Summary */
+    if (item.summary) {
+      parts.push('<p class="g2pub__summary">' + esc(item.summary) + '</p>');
+    }
+    /* GO2CUP Angle — hidden if blank */
+    if (item.go2cupAngle && item.go2cupAngle.trim() !== '') {
+      parts.push(
+        '<div class="g2pub__angle">' +
+          '<div class="g2pub__angle-label">&#9889; GO2CUP Angle</div>' +
+          '<div class="g2pub__angle-text">' + esc(item.go2cupAngle) + '</div>' +
+        '</div>'
+      );
+    }
+    /* Fan Travel Impact — hidden if blank */
+    if (item.fanTravelImpact && item.fanTravelImpact.trim() !== '') {
+      parts.push(
+        '<div class="g2pub__impact">' +
+          '<span class="g2pub__impact-lbl">&#129523; Fan Travel:</span>' +
+          '<span>' + esc(item.fanTravelImpact) + '</span>' +
+        '</div>'
+      );
+    }
+    /* Source row */
+    var hasSource = !isTodo(item.sourceName);
+    var hasUrl    = !isTodo(item.sourceUrl);
+    parts.push('<div class="g2pub__source">');
+    if (hasSource) {
+      parts.push('<span class="g2pub__source-via">Via <strong>' + esc(item.sourceName) + '</strong></span>');
+    } else {
+      parts.push('<span class="g2pub__source-via"></span>');
+    }
+    if (hasUrl) {
+      parts.push(
+        '<a class="g2pub__read-link" href="' + esc(item.sourceUrl) +
+        '" target="_blank" rel="noopener noreferrer">Read original &#8594;</a>'
+      );
+    } else {
+      parts.push('<span class="g2pub__source-pending">Source link pending</span>');
+    }
+    parts.push('</div>');
+    /* Tags — hidden if empty */
+    if (item.tags && item.tags.length > 0) {
+      parts.push('<div class="g2pub__tags">');
+      for (var t = 0; t < item.tags.length; t++) {
+        parts.push('<span class="g2pub__tag">' + esc(item.tags[t]) + '</span>');
+      }
+      parts.push('</div>');
+    }
+    /* Body close */
+    parts.push('</div>');
+    return parts.join('');
+  }
+  function buildColumn(col) {
+    var items = sportsNewsData.filter(function (item) {
+      return item.sport === col.key && isWithinMaxAge(item.publishedDate);
+    });
+    var html = '<section class="g2pub__col ' + col.css + '" id="' + col.id + '">';
+    /* Column header */
+    html +=
+      '<div class="g2pub__col-header">' +
+        '<span class="g2pub__col-emoji">' + col.emoji + '</span>' +
+        '<h2 class="g2pub__col-title">' + col.name + '</h2>' +
+        '<span class="g2pub__col-count">' + items.length + (items.length === 1 ? ' story' : ' stories') + '</span>' +
+      '</div>';
+    if (items.length === 0) {
+      html += '<div class="g2pub__empty">No stories from the last ' + MAX_AGE_DAYS + ' days for this sport.<br>Add recent items with <code>sport: "' + col.key + '"</code> to sportsNewsData.</div>';
+    } else {
+      for (var i = 0; i < items.length; i++) {
+        var delay = (0.05 + i * 0.08).toFixed(2);
+        html += '<article class="g2pub__card" style="animation-delay:' + delay + 's">' + buildCard(items[i], col) + '</article>';
+      }
+    }
+    html += '</section>';
+    return html;
+  }
+  function setDate() {
+    var el = document.getElementById('g2pub-date');
+    if (!el) return;
+    el.textContent = new Date().toLocaleDateString('en-US', {
+      weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'
+    });
+  }
+  function render() {
+    setDate();
+    var grid = document.getElementById('g2pub-grid');
+    if (!grid) return;
+    var html = '';
+    for (var c = 0; c < COLS.length; c++) {
+      html += buildColumn(COLS[c]);
+    }
+    grid.innerHTML = html;
+  }
+  /* Run after DOM is ready */
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', render);
+  } else {
+    render();
+  }
+}());
+</script>
