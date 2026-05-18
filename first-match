@@ -1,4 +1,43 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIFA World Cup 2026 Opening Ceremony — June 11 · Estadio Azteca · Mexico City | Go2Cup</title>
+<meta name="description" content="FIFA World Cup 2026 Opening Ceremony — June 11, 2026, 3:00 PM ET. Estadio Azteca, Mexico City. Mexico vs South Africa. The most anticipated soccer event in history. Get exclusive updates, travel tips and insider guides delivered to your inbox.">
+<meta name="keywords" content="FIFA World Cup 2026 Opening Ceremony, World Cup 2026 Mexico City, Estadio Azteca June 11 2026, Mexico vs South Africa World Cup, World Cup 2026 opening match, Robbie Williams World Cup 2026, World Cup 2026 tickets, Go2Cup World Cup guide">
+<meta name="author" content="Maria Myers — Go2Cup">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mainentry.net/go2cup/opening-ceremony">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FIFA World Cup 2026 Opening Ceremony — June 11 · Estadio Azteca">
+<meta property="og:description" content="June 11, 2026. 3:00 PM ET. Estadio Azteca, Mexico City. Mexico vs South Africa. The tournament begins. Are you ready?">
+<meta property="og:url" content="https://mainentry.net/go2cup/opening-ceremony">
+<meta property="og:site_name" content="Go2Cup">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FIFA World Cup 2026 Opening Ceremony — June 11 · Mexico City">
+<meta name="twitter:description" content="The most anticipated soccer event in history begins June 11, 2026 at Estadio Azteca. Subscribe for exclusive World Cup 2026 travel guides and updates.">
+<meta name="twitter:site" content="@mariavmyers">
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@graph": [
+{
+"@type": "Event",
+"name": "FIFA World Cup 2026 Opening Ceremony",
+"description": "The FIFA World Cup 2026 Opening Ceremony takes place on June 11, 2026 at Estadio Azteca in Mexico City, before the opening match between Mexico and South Africa. The ceremony marks the beginning of the 23rd FIFA World Cup — the first to feature 48 teams across three nations.",
+"startDate": "2026-06-11T15:00:00-05:00",
+"endDate": "2026-06-11T17:00:00-05:00",
+"eventStatus": "https://schema.org/EventScheduled",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"location": {
+"@type": "StadiumOrArena",
+"name": "Estadio Azteca",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "Calzada de Tlalpan 3465",
+"addressLocality": "Mexico City",
+"addressCountry": "MX"
 },
 "geo": {
 "@type": "GeoCoordinates",
@@ -128,54 +167,6 @@ font-family: 'Barlow', sans-serif;
 font-weight: 300;
 line-height: 1.8;
 overflow-x: hidden;
-}
-
-/* ============ COMMUNITY BANNER (TOP) ============ */
-.community-banner {
-background: linear-gradient(90deg, var(--caas-teal) 0%, #0d6b5a 50%, var(--caas-teal) 100%);
-padding: 0.7rem 2rem;
-text-align: center;
-position: relative;
-z-index: 100;
-border-bottom: 2px solid var(--caas-teal-bright);
-}
-.community-banner-inner {
-max-width: 1100px;
-margin: 0 auto;
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 1rem;
-flex-wrap: wrap;
-}
-.community-banner-text {
-font-size: 0.82rem;
-letter-spacing: 0.08em;
-color: #e0f7f4;
-font-weight: 500;
-}
-.community-banner-text strong {
-color: #fff;
-font-weight: 700;
-}
-.community-banner-cta {
-display: inline-block;
-background: #fff;
-color: var(--caas-teal);
-font-family: 'Barlow', sans-serif;
-font-size: 0.72rem;
-font-weight: 700;
-letter-spacing: 0.15em;
-text-transform: uppercase;
-padding: 0.35rem 1.2rem;
-border-radius: 2px;
-text-decoration: none;
-transition: all 0.2s;
-white-space: nowrap;
-}
-.community-banner-cta:hover {
-background: var(--gold-bright);
-color: var(--void);
 }
 
 /* ============ HERO ============ */
@@ -1083,7 +1074,6 @@ to { opacity: 1; transform: translateY(0); }
 .match-badge { flex-direction: column; gap: 0.5rem; }
 .match-vs { border: none; padding: 0; }
 .caas-inline { flex-direction: column; gap: 1rem; }
-.community-banner-inner { flex-direction: column; gap: 0.5rem; }
 }
 @media (max-width: 480px) {
 .city-nav-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1095,14 +1085,6 @@ to { opacity: 1; transform: translateY(0); }
 </style>
 </head>
 <body>
-
-<!-- COMMUNITY BANNER -->
-<div class="community-banner">
-  <div class="community-banner-inner">
-    <span class="community-banner-text">🌎 <strong>CaaS — Community as a Service:</strong> A fan helping fans navigate 3 countries, in multiple languages. Free. Always. &nbsp;·&nbsp; ¡Gratis para todos los fans! &nbsp;·&nbsp; Gratuit pour tous!</span>
-    <a href="https://mainentry.net/go2cup-mainentry-caas" class="community-banner-cta">Join the Community →</a>
-  </div>
-</div>
 
 <!-- HERO -->
 <section class="hero">
