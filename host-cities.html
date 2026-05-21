@@ -362,7 +362,14 @@ body {
 </main>
 
 <p class="max-w-[1600px] mx-auto px-8 py-6 condensed text-sm text-white/50 leading-relaxed" style="font-family:'Barlow',sans-serif;">
-  GO2CUP is an independent fan-built World Cup 2026 travel intelligence hub. We are not affiliated with FIFA, host cities, stadiums, teams, governments, hotels, airlines, or official sponsors. Information is provided for planning purposes only. Always verify schedules, entry rules, transportation, prices, availability, and safety information with official sources before booking or traveling.
+  GO2CUP is an independent, fan-built World Cup 2026 travel intelligence hub. GO2CUP is not affiliated with FIFA, host cities, teams, stadiums, governments, official sponsors, travel providers, or ticketing entities. We may earn commissions from qualifying purchases made through partner or affiliate links. Fans should verify schedules, prices, entry rules, availability, transportation details, and travel requirements with official sources and providers before booking.
+</p>
+<p class="max-w-[1600px] mx-auto px-8 pb-4 condensed text-xs text-white/40 leading-relaxed text-center" style="font-family:'Barlow Condensed',sans-serif;">
+  <a href="affiliate-disclosure.html" class="text-gold font-bold uppercase tracking-widest hover:text-white">Affiliate Disclosure</a>
+  <span class="mx-3">·</span>
+  <a href="privacy.html" class="text-gold font-bold uppercase tracking-widest hover:text-white">Privacy Policy</a>
+  <span class="mx-3">·</span>
+  <a href="partner-resources.html" class="text-gold font-bold uppercase tracking-widest hover:text-white">Partner Resources</a>
 </p>
 
 <footer class="w-full py-16 text-center border-t border-white/5 opacity-30">
@@ -399,67 +406,19 @@ body {
         </div>
       </div>
 
-      <!-- ═══ OPT-IN COLUMN ═══ -->
+      <!-- ═══ FAN UPDATES COLUMN ═══ -->
       <div class="space-y-4">
         <div class="text-gold text-2xl">📩</div>
         <h4 class="bebas text-2xl tracking-wide uppercase text-white">Get Sports News First</h4>
-        <p class="condensed text-[10px] text-white/40 uppercase tracking-widest">Match alerts · Fan deals · City guides</p>
-
-        <!-- PENDING GetResponse connection: replace TODO_GETRESPONSE_OPTIN_URL with your GetResponse form action URL. Zapier hook removed. -->
-        <form id="g2c-footer-form" action="TODO_GETRESPONSE_OPTIN_URL" method="post" onsubmit="return handleFooterSubscribe(event)" class="space-y-2" style="margin-top:12px;">
-          <input
-            type="text"
-            id="g2c-footer-name"
-            placeholder="First Name"
-            class="g2c-optin-input"
-            required
-            autocomplete="given-name"
-          />
-          <input
-            type="email"
-            id="g2c-footer-email"
-            placeholder="Email Address"
-            class="g2c-optin-input"
-            required
-            autocomplete="email"
-          />
-          <button type="submit" class="g2c-optin-btn" id="g2c-footer-btn">
-            <span id="g2c-footer-btn-text">JOIN THE FAN LIST</span>
-            <svg id="g2c-footer-spinner" width="14" height="14" viewBox="0 0 14 14" fill="none" style="display:none;animation:g2c-spin 0.8s linear infinite;">
-              <circle cx="7" cy="7" r="5.5" stroke="currentColor" stroke-width="2" stroke-dasharray="17 9"/>
-            </svg>
-          </button>
-          <p style="font-size:10px;color:rgba(255,255,255,0.28);margin:6px 0 0;font-family:'Barlow Condensed',sans-serif;letter-spacing:0.04em;">No spam. Unsubscribe anytime.</p>
-          <p style="font-size:10px;color:rgba(255,255,255,0.35);margin:8px 0 0;font-family:'Barlow Condensed',sans-serif;letter-spacing:0.04em;">Fan list signup pending GetResponse connection.</p>
-        </form>
-
-        <div id="g2c-footer-error" style="display:none;margin-top:8px;">
-          <p id="g2c-footer-error-msg" style="font-family:'Barlow',sans-serif;font-size:12px;color:#f87171;margin:0;"></p>
-        </div>
+        <p class="condensed text-sm text-white/60 leading-relaxed">
+          Match alerts, fan deals, and city guides are published on the GO2CUP Daily Sports News page during the pre-launch rollout.
+        </p>
+        <a href="sports-news.html" class="g2c-optin-btn" style="text-decoration:none;margin-top:8px;">Open Daily Sports News →</a>
       </div>
 
     </div>
   </div>
 </section>
-
-<script>
-/* PENDING GetResponse connection — Zapier removed. Set form action to your GetResponse URL when ready. */
-function handleFooterSubscribe(e) {
-  var form = document.getElementById('g2c-footer-form');
-  var action = (form.getAttribute('action') || '').trim();
-  var errDiv = document.getElementById('g2c-footer-error');
-  var errMsg = document.getElementById('g2c-footer-error-msg');
-
-  if (action === 'TODO_GETRESPONSE_OPTIN_URL' || action.indexOf('http') !== 0) {
-    e.preventDefault();
-    errMsg.textContent = 'Fan list signup is pending GetResponse connection.';
-    errDiv.style.display = 'block';
-    return false;
-  }
-
-  return true;
-}
-</script>
 
 </body>
 </html>
