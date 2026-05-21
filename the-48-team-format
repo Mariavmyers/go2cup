@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Complete guide to the 2026 FIFA World Cup 48-team format — 12 groups, 104 matches, Round of 32, and what it means for fans traveling across the U.S., Mexico, and Canada.">
+<title>2026 FIFA World Cup: The 48-Team Format Explained | GO2CUP</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap');
+
+  :root {
+    --navy: #0A1628;
+    --navy-mid: #0F1F3D;
+    --navy-card: #111D35;
+    --navy-border: #1A2D50;
+    --teal: #00D4AA;
+    --teal-dim: rgba(0,212,170,0.12);
+    --teal-glow: rgba(0,212,170,0.25);
+    --gold: #F4C95D;
+    --gold-dim: rgba(244,201,93,0.12);
+    --white: #F0F4FF;
+    --muted: #7A8FAD;
+    --danger: #FF5E5E;
+    --danger-dim: rgba(255,94,94,0.1);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: var(--navy);
+    color: var(--white);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+
+  /* ── BACKGROUND TEXTURE ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 10% 0%, rgba(0,212,170,0.06) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 40% at 90% 100%, rgba(244,201,93,0.05) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+  .container--narrow { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+
+  /* ── NAVIGATION ── */
+  nav {
+    background: rgba(10,22,40,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--navy-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+
+  .logo {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .logo span { color: var(--teal); }
+
+  .nav-links {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: color 0.2s, background 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--white); background: var(--navy-border); }
+
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: 1px solid var(--navy-border);
+    color: var(--white);
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    padding: 80px 0 72px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::after {
+    content: '48';
+    position: absolute;
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 22rem;
+    color: rgba(0,212,170,0.04);
+    pointer-events: none;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--teal-dim);
+    border: 1px solid rgba(0,212,170,0.3);
+    color: var(--teal);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 100px;
+    margin-bottom: 24px;
+  }
+
+  .badge::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--teal);
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.7); }
+  }
+
+  h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.2rem, 6vw, 4.2rem);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin-bottom: 20px;
+    max-width: 700px;
+  }
+
+  h1 .accent { color: var(--teal); }
+
+  .hero-sub {
+    font-size: clamp(1rem, 2.5vw, 1.15rem);
+    color: rgba(240,244,255,0.72);
+    max-width: 580px;
+    margin-bottom: 36px;
+    font-weight: 300;
+    line-height: 1.65;
+  }
+
+  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: none;
+  }
+
+  .btn-primary {
+    background: var(--teal);
+    color: var(--navy);
+  }
+  .btn-primary:hover { background: #00EDBC; transform: translateY(-1px); box-shadow: 0 8px 24px var(--teal-glow); }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--white);
+    border: 1.5px solid var(--navy-border);
+  }
+  .btn-secondary:hover { border-color: var(--teal); color: var(--teal); transform: translateY(-1px); }
+
+  .btn-gold {
+    background: var(--gold);
+    color: var(--navy);
+  }
+  .btn-gold:hover { background: #FFD96B; transform: translateY(-1px); box-shadow: 0 8px 24px rgba(244,201,93,0.3); }
+
+  /* ── SECTION STRUCTURE ── */
+  section { padding: 64px 0; }
+  section + section { border-top: 1px solid var(--navy-border); }
+
+  .section-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 12px;
+  }
+
+  h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.7rem, 4vw, 2.6rem);
+    line-height: 1.1;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    letter-spacing: 0.01em;
+  }
+
+  p { margin-bottom: 14px; color: rgba(240,244,255,0.85); }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    list-style: none;
+    margin-bottom: 14px;
+  }
+
+  ul li {
+    color: rgba(240,244,255,0.85);
+    padding: 5px 0 5px 22px;
+    position: relative;
+  }
+
+  ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 8px;
+    height: 2px;
+    background: var(--teal);
+    border-radius: 2px;
+  }
+
+  strong { color: var(--white); font-weight: 600; }
+
+  /* ── STAT GRID ── */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    margin-top: 36px;
+  }
+
+  .stat-card {
+    background: var(--navy-card);
+    border: 1px solid var(--navy-border);
+    border-radius: 12px;
+    padding: 24px 20px;
+    text-align: center;
+    transition: border-color 0.2s, transform 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stat-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--teal);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: left;
+  }
+
+  .stat-card:hover { border-color: var(--teal); transform: translateY(-3px); }
+  .stat-card:hover::before { transform: scaleX(1); }
+
+  .stat-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    color: var(--teal);
+    line-height: 1;
+    margin-bottom: 6px;
+    letter-spacing: -0.02em;
+  }
+
+  .stat-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* ── CARDS ── */
+  .card {
+    background: var(--navy-card);
+    border: 1px solid var(--navy-border);
+    border-radius: 12px;
+    padding: 28px;
+    transition: border-color 0.2s;
+  }
+
+  .card:hover { border-color: var(--navy-border); }
+
+  .card-teal { border-left: 3px solid var(--teal); }
+  .card-gold { border-left: 3px solid var(--gold); }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 32px;
+  }
+
+  /* ── GROUP EXAMPLE TABLE ── */
+  .group-example {
+    background: var(--navy-card);
+    border: 1px solid var(--navy-border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 28px;
+  }
+
+  .group-header {
+    background: var(--teal-dim);
+    border-bottom: 1px solid rgba(0,212,170,0.2);
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .group-tag {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    color: var(--teal);
+  }
+
+  .group-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--navy-border);
+    transition: background 0.15s;
+  }
+
+  .group-row:last-child { border-bottom: none; }
+  .group-row:hover { background: rgba(255,255,255,0.03); }
+
+  .team-flag {
+    width: 28px;
+    height: 20px;
+    background: var(--navy-border);
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 12px;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .team-name { font-weight: 500; font-size: 0.95rem; }
+  .team-note { font-size: 0.75rem; color: var(--muted); font-weight: 500; }
+
+  /* ── FORMULA BOX ── */
+  .formula-box {
+    background: var(--navy-card);
+    border: 1px solid var(--navy-border);
+    border-radius: 12px;
+    padding: 32px;
+    margin-top: 28px;
+    text-align: center;
+  }
+
+  .formula {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+
+  .formula-item {
+    background: var(--teal-dim);
+    border: 1px solid rgba(0,212,170,0.25);
+    border-radius: 8px;
+    padding: 12px 18px;
+    text-align: center;
+  }
+
+  .formula-num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color: var(--teal);
+    line-height: 1;
+  }
+
+  .formula-desc {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  .formula-op {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--muted);
+  }
+
+  .formula-result {
+    border-top: 1px solid var(--navy-border);
+    padding-top: 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: var(--gold);
+  }
+
+  /* ── CAUTION BOX ── */
+  .caution-box {
+    background: var(--danger-dim);
+    border: 1px solid rgba(255,94,94,0.25);
+    border-left: 3px solid var(--danger);
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .caution-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 1px; }
+  .caution-box p { color: rgba(240,244,255,0.8); font-size: 0.9rem; margin: 0; }
+
+  /* ── KNOCKOUT PATH ── */
+  .path-diagram {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    overflow-x: auto;
+    padding: 28px 0;
+    margin-top: 8px;
+  }
+
+  .path-stage {
+    flex-shrink: 0;
+    text-align: center;
+    position: relative;
+  }
+
+  .path-bubble {
+    background: var(--navy-card);
+    border: 1px solid var(--navy-border);
+    border-radius: 10px;
+    padding: 14px 18px;
+    min-width: 110px;
+    transition: all 0.2s;
+  }
+
+  .path-stage:first-child .path-bubble { border-color: var(--teal); }
+  .path-stage:last-child .path-bubble { border-color: var(--gold); background: var(--gold-dim); }
+
+  .path-stage:hover .path-bubble { border-color: var(--teal); transform: translateY(-2px); }
+
+  .path-round {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    color: var(--teal);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .path-teams {
+    font-size: 0.75rem;
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  .path-arrow {
+    flex-shrink: 0;
+    color: var(--navy-border);
+    font-size: 1.2rem;
+    padding: 0 8px;
+  }
+
+  /* ── QUAL DIAGRAM ── */
+  .qual-diagram {
+    background: var(--navy-card);
+    border: 1px solid var(--navy-border);
+    border-radius: 12px;
+    padding: 32px;
+    margin-top: 28px;
+  }
+
+  .qual-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+
+  .qual-source {
+    background: var(--navy);
+    border: 1px solid var(--navy-border);
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    min-width: 200px;
+    text-align: center;
+  }
+
+  .qual-arrow-r { color: var(--teal); font-size: 1.2rem; font-weight: 700; flex-shrink: 0; }
+
+  .qual-result {
+    background: var(--teal-dim);
+    border: 1px solid rgba(0,212,170,0.3);
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--teal);
+    min-width: 140px;
+    text-align: center;
+  }
+
+  .qual-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 8px 0 16px;
+  }
+
+  .qual-line { flex: 1; height: 1px; background: var(--navy-border); }
+  .qual-plus { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.2rem; color: var(--muted); }
+
+  .qual-final {
+    background: var(--gold-dim);
+    border: 1px solid rgba(244,201,93,0.3);
+    border-radius: 8px;
+    padding: 14px 24px;
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--gold);
+    letter-spacing: 0.04em;
+    margin-top: 8px;
+  }
+
+  /* ── FAQ ── */
+  .faq-list { margin-top: 28px; }
+
+  .faq-item {
+    background: var(--navy-card);
+    border: 1px solid var(--navy-border);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+  .faq-q {
+    width: 100%;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: left;
+    padding: 18px 22px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    transition: background 0.15s;
+  }
+
+  .faq-q:hover { background: rgba(255,255,255,0.03); }
+
+  .faq-icon {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--teal-dim);
+    border: 1px solid rgba(0,212,170,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: var(--teal);
+    transition: transform 0.2s;
+    font-style: normal;
+  }
+
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+  .faq-a {
+    display: none;
+    padding: 0 22px 18px;
+    color: rgba(240,244,255,0.78);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    border-top: 1px solid var(--navy-border);
+    padding-top: 16px;
+  }
+
+  .faq-item.open .faq-a { display: block; }
+
+  /* ── TRAVEL INTEL ── */
+  .travel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin-top: 28px;
+  }
+
+  .travel-card {
+    background: var(--navy-card);
+    border: 1px solid var(--navy-border);
+    border-radius: 12px;
+    padding: 22px;
+    transition: all 0.2s;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .travel-card:hover { border-color: var(--teal); transform: translateY(-3px); }
+
+  .travel-icon {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .travel-card h3 { font-size: 1rem; margin-bottom: 8px; }
+  .travel-card p { font-size: 0.85rem; color: var(--muted); margin: 0; }
+
+  .travel-card .link-arrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--teal);
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 12px;
+    letter-spacing: 0.03em;
+  }
+
+  /* ── CTA SECTION ── */
+  .cta-section {
+    background: var(--navy-card);
+    border: 1px solid var(--navy-border);
+    border-radius: 16px;
+    padding: 48px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--teal), transparent);
+  }
+
+  .cta-section h2 { margin-bottom: 14px; }
+  .cta-section p { max-width: 540px; margin: 0 auto 32px; font-size: 1rem; }
+
+  .cta-btn-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  /* ── OFFICIAL NOTE ── */
+  .official-note {
+    background: var(--navy-mid);
+    border: 1px solid var(--navy-border);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-top: 40px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .official-note strong { color: rgba(240,244,255,0.7); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy-mid);
+    border-top: 1px solid var(--navy-border);
+    padding: 48px 0 32px;
+    margin-top: 80px;
+  }
+
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--navy-border);
+  }
+
+  .footer-logo {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: 0.04em;
+    color: var(--white);
+  }
+
+  .footer-logo span { color: var(--teal); }
+
+  .footer-tagline {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    list-style: none;
+  }
+
+  .footer-links a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover { color: var(--teal); }
+
+  .footer-disclaimer {
+    font-size: 0.78rem;
+    color: rgba(122,143,173,0.7);
+    line-height: 1.65;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .nav-links { display: none; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: rgba(10,22,40,0.98); border-bottom: 1px solid var(--navy-border); padding: 16px; gap: 4px; }
+    .nav-links.open { display: flex; }
+    .nav-toggle { display: block; }
+    .nav-inner { position: relative; }
+    .hero { padding: 52px 0 56px; }
+    .hero::after { font-size: 12rem; right: -20px; opacity: 0.6; }
+    .stat-grid { grid-template-columns: repeat(3, 1fr); }
+    .path-diagram { gap: 0; }
+    .path-bubble { min-width: 90px; padding: 10px 12px; }
+    .path-arrow { padding: 0 4px; font-size: 1rem; }
+    .cta-section { padding: 36px 24px; }
+    .qual-row { flex-direction: column; align-items: flex-start; }
+    .footer-top { flex-direction: column; gap: 24px; }
+  }
+
+  @media (max-width: 480px) {
+    .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    .formula { gap: 10px; }
+    .formula-item { padding: 10px 14px; }
+    .formula-num { font-size: 1.6rem; }
+  }
+
+  /* ── SCROLL REVEAL ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════ NAVIGATION ═══════════ -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">GO2<span>CUP</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="host-cities.html">Host Cities</a></li>
+      <li><a href="where-to-stay.html">Where to Stay</a></li>
+      <li><a href="insider.html">Insider</a></li>
+      <li><a href="sports-news.html">Sports News</a></li>
+      <li><a href="partner-resources.html">Partners</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Toggle navigation">☰</button>
+  </div>
+</nav>
+
+<!-- ═══════════ HERO ═══════════ -->
+<div class="hero">
+  <div class="container">
+    <div class="badge">Updated May 2026 · World Cup 2026 Planning Guide</div>
+    <h1>The New <span class="accent">48-Team</span><br>Format Explained</h1>
+    <p class="hero-sub">Everything fans need to know about the biggest World Cup in history — and why travel planning matters more in 2026 than any tournament before it.</p>
+    <div class="cta-row">
+      <a href="host-cities.html" class="btn btn-primary">Explore Host City Guides →</a>
+      <a href="insider.html" class="btn btn-secondary">Get GO2CUP Updates</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ SECTION 1: QUICK SUMMARY ═══════════ -->
+<section>
+  <div class="container">
+    <div class="section-label">Quick Summary</div>
+    <h2>The Numbers at a Glance</h2>
+    <p>The 2026 World Cup is the largest in history. Here's what the expansion looks like in raw numbers.</p>
+
+    <div class="stat-grid reveal">
+      <div class="stat-card">
+        <div class="stat-number">48</div>
+        <div class="stat-label">Teams</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">12</div>
+        <div class="stat-label">Groups</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">4</div>
+        <div class="stat-label">Teams Per Group</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">104</div>
+        <div class="stat-label">Total Matches</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">32</div>
+        <div class="stat-label">Round of 32</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">8</div>
+        <div class="stat-label">Wins to Lift the Trophy</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SECTION 2: WHAT CHANGED ═══════════ -->
+<section>
+  <div class="container--narrow">
+    <div class="section-label">What Changed in 2026</div>
+    <h2>From 32 Teams to 48 — What That Actually Means</h2>
+    <p>For most of its history, the World Cup featured <strong>32 national teams</strong>. In 2026, that number jumps to <strong>48</strong> — the single biggest expansion in the tournament's history.</p>
+
+    <div class="card-grid reveal">
+      <div class="card card-teal">
+        <h3>More Teams</h3>
+        <p>16 additional nations earn a place at the table. More regions, more fan bases, more stories. The world stage just got bigger.</p>
+      </div>
+      <div class="card card-teal">
+        <h3>More Groups</h3>
+        <p>Instead of 8 groups of 4, there are now <strong>12 groups of 4 teams</strong> each. The group stage is wider, not deeper.</p>
+      </div>
+      <div class="card card-gold">
+        <h3>More Matches</h3>
+        <p>104 total matches — up from 64. That means more days of football spread across more host cities and more venues.</p>
+      </div>
+      <div class="card card-gold">
+        <h3>More Uncertainty</h3>
+        <p>Third-place finishers can still advance. Fans following their teams may not know the next city until <strong>very late in the group stage</strong>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SECTION 3: GROUP STAGE ═══════════ -->
+<section>
+  <div class="container--narrow">
+    <div class="section-label">Group Stage</div>
+    <h2>12 Groups, 4 Teams, 3 Matches Each</h2>
+    <p>The group stage is where the tournament begins. Every team is placed into one of <strong>12 groups</strong>. Inside each group, every team plays the other three once — giving each team exactly <strong>3 group-stage matches</strong>.</p>
+
+    <p>The group stage is where fans are most engaged. Your team's first three matches happen in assigned host cities. Travel planning here is <em>very</em> predictable — which makes this the best time to book.</p>
+
+    <div class="group-example reveal">
+      <div class="group-header">
+        <span class="group-tag">GROUP EXAMPLE</span>
+        <span style="color:var(--muted);font-size:0.8rem;">Illustrative only — not official draw data</span>
+      </div>
+      <div class="group-row">
+        <div><span class="team-flag"></span><span class="team-name">Team 1</span></div>
+        <span class="team-note">Seed 1</span>
+      </div>
+      <div class="group-row">
+        <div><span class="team-flag"></span><span class="team-name">Team 2</span></div>
+        <span class="team-note">Seed 2</span>
+      </div>
+      <div class="group-row">
+        <div><span class="team-flag"></span><span class="team-name">Team 3</span></div>
+        <span class="team-note">Seed 3</span>
+      </div>
+      <div class="group-row">
+        <div><span class="team-flag"></span><span class="team-name">Team 4</span></div>
+        <span class="team-note">Seed 4</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SECTION 4: HOW TEAMS ADVANCE ═══════════ -->
+<section>
+  <div class="container--narrow">
+    <div class="section-label">Advancement</div>
+    <h2>How Teams Move to the Knockout Stage</h2>
+    <p>This is the part most fans haven't fully worked out yet. The 48-team format creates a <strong>three-tier qualification system</strong> for the knockout stage.</p>
+
+    <ul>
+      <li>The <strong>top 2 finishers</strong> from each of the 12 groups advance automatically.</li>
+      <li>That creates <strong>24 automatic qualifiers</strong> (12 group winners + 12 runners-up).</li>
+      <li>The <strong>8 best third-place teams</strong> across all 12 groups also advance.</li>
+      <li>These 32 teams together form the <strong>Round of 32</strong> — the new first knockout round.</li>
+    </ul>
+
+    <div class="formula-box reveal">
+      <div class="formula">
+        <div class="formula-item">
+          <div class="formula-num">12</div>
+          <div class="formula-desc">Group Winners</div>
+        </div>
+        <div class="formula-op">+</div>
+        <div class="formula-item">
+          <div class="formula-num">12</div>
+          <div class="formula-desc">Runners-Up</div>
+        </div>
+        <div class="formula-op">+</div>
+        <div class="formula-item">
+          <div class="formula-num">8</div>
+          <div class="formula-desc">Best 3rd Place</div>
+        </div>
+      </div>
+      <div class="formula-result">= 32 Teams Enter the Knockout Stage</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SECTION 5: THIRD PLACE RANKING ═══════════ -->
+<section>
+  <div class="container--narrow">
+    <div class="section-label">Third-Place Ranking</div>
+    <h2>How the Best Third-Place Teams Are Selected</h2>
+    <p>Of the 12 third-place teams across all groups, only <strong>8 advance</strong>. This is where the format gets complex for travel-planning purposes — and where fans need to understand the ranking criteria.</p>
+
+    <p>Third-place teams are ranked in this order:</p>
+
+    <ul>
+      <li><strong>Points</strong> — same as any group table (3 for a win, 1 for a draw, 0 for a loss).</li>
+      <li><strong>Goal difference</strong> — goals scored minus goals conceded across all group matches.</li>
+      <li><strong>Goals scored</strong> — total goals scored in the group stage.</li>
+      <li><strong>Fair play record</strong> — disciplinary points based on yellow and red cards.</li>
+      <li><strong>Official tournament regulations</strong> — applied if teams remain tied after all of the above.</li>
+    </ul>
+
+    <div class="caution-box">
+      <span class="caution-icon">⚠️</span>
+      <p><strong>Important:</strong> Official tournament regulations control all tie-breaking procedures. Fans should verify exact criteria with <strong>FIFA and official tournament sources</strong>. GO2CUP is not an official tournament source.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SECTION 6: KNOCKOUT STAGE ═══════════ -->
+<section>
+  <div class="container">
+    <div class="section-label">Knockout Stage</div>
+    <h2>The Road from Round of 32 to the Final</h2>
+    <p style="max-width:640px;">The 2026 knockout stage adds one full round compared to 2022. A champion must now win <strong>8 total matches</strong> — 3 group stage games plus 5 knockout rounds. Every match is elimination. No second chances.</p>
+
+    <!-- Path Diagram -->
+    <div class="path-diagram reveal">
+      <div class="path-stage">
+        <div class="path-bubble">
+          <div class="path-round">Group Stage</div>
+          <div class="path-teams">48 teams / 12 groups</div>
+        </div>
+      </div>
+      <div class="path-arrow">→</div>
+      <div class="path-stage">
+        <div class="path-bubble">
+          <div class="path-round">Round of 32</div>
+          <div class="path-teams">32 teams</div>
+        </div>
+      </div>
+      <div class="path-arrow">→</div>
+      <div class="path-stage">
+        <div class="path-bubble">
+          <div class="path-round">Round of 16</div>
+          <div class="path-teams">16 teams</div>
+        </div>
+      </div>
+      <div class="path-arrow">→</div>
+      <div class="path-stage">
+        <div class="path-bubble">
+          <div class="path-round">Quarterfinals</div>
+          <div class="path-teams">8 teams</div>
+        </div>
+      </div>
+      <div class="path-arrow">→</div>
+      <div class="path-stage">
+        <div class="path-bubble">
+          <div class="path-round">Semifinals</div>
+          <div class="path-teams">4 teams</div>
+        </div>
+      </div>
+      <div class="path-arrow">→</div>
+      <div class="path-stage">
+        <div class="path-bubble">
+          <div class="path-round">The Final</div>
+          <div class="path-teams">2 teams · 1 champion</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SECTION 7: TRAVEL INTEL ═══════════ -->
+<section>
+  <div class="container">
+    <div class="section-label">Fan Travel Intelligence</div>
+    <h2>Why the 48-Team Format Changes How Fans Travel</h2>
+    <p style="max-width:640px;">The new format doesn't just add teams. It adds complexity. Fans following their countries across the tournament face a different planning environment than any previous World Cup.</p>
+
+    <div class="travel-grid reveal">
+      <a href="host-cities.html" class="travel-card">
+        <span class="travel-icon">🏙️</span>
+        <h3>More Fan Bases, More Pressure</h3>
+        <p>48 nations means a much larger global footprint descending on 16 host cities. Hotel availability and prices will behave differently than 2022.</p>
+        <span class="link-arrow">Explore Host City Guides →</span>
+      </a>
+
+      <a href="where-to-stay.html" class="travel-card">
+        <span class="travel-icon">🏨</span>
+        <h3>Third-Place Uncertainty</h3>
+        <p>If your team finishes third, you won't know if they advance until late. That makes booking non-refundable accommodation around knockout matches risky.</p>
+        <span class="link-arrow">Compare Where to Stay →</span>
+      </a>
+
+      <a href="fan-country-hopper.html" class="travel-card">
+        <span class="travel-icon">✈️</span>
+        <h3>Cross-Border Planning</h3>
+        <p>The U.S., Mexico, and Canada are all host nations. A deep-running team can cross borders between matches. Entry requirements, border logistics, and travel timing matter.</p>
+        <span class="link-arrow">Fan Country Hopper →</span>
+      </a>
+
+      <a href="emergency.html" class="travel-card">
+        <span class="travel-icon">🛡️</span>
+        <h3>Safety and City Access</h3>
+        <p>More matches spread across more cities means more fans in unfamiliar places. Knowing hotel zones, airport access, and local safety resources matters more in 2026.</p>
+        <span class="link-arrow">Safety Guide →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SECTION 8: VISUAL DIAGRAMS ═══════════ -->
+<section>
+  <div class="container">
+    <div class="section-label">Visual Diagrams</div>
+    <h2>How Qualification Works — Visualized</h2>
+
+    <!-- Diagram 1 -->
+    <h3 style="margin-top:28px;margin-bottom:6px;color:var(--muted);font-size:0.9rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;">Diagram 1 — Group Stage to Knockout Qualification</h3>
+
+    <div class="qual-diagram reveal">
+      <div class="qual-row">
+        <div class="qual-source">12 Groups<br><small style="color:var(--muted)">Top 2 from each group</small></div>
+        <div class="qual-arrow-r">→</div>
+        <div class="qual-result">24 Automatic Qualifiers</div>
+      </div>
+      <div class="qual-divider">
+        <div class="qual-line"></div>
+        <div class="qual-plus">+</div>
+        <div class="qual-line"></div>
+      </div>
+      <div class="qual-row">
+        <div class="qual-source">12 Groups<br><small style="color:var(--muted)">Best 8 third-place teams</small></div>
+        <div class="qual-arrow-r">→</div>
+        <div class="qual-result">8 Best Third-Place</div>
+      </div>
+      <div class="qual-final">24 + 8 = 32 Teams → Round of 32</div>
+    </div>
+
+    <!-- Diagram 2 -->
+    <h3 style="margin-top:40px;margin-bottom:6px;color:var(--muted);font-size:0.9rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;">Diagram 2 — Path to the Final</h3>
+
+    <div class="path-diagram reveal">
+      <div class="path-stage">
+        <div class="path-bubble">
+          <div class="path-round">Group Stage</div>
+          <div class="path-teams">3 matches</div>
+        </div>
+      </div>
+      <div class="path-arrow">→</div>
+      <div class="path-stage">
+        <div class="path-bubble">
+          <div class="path-round">R32</div>
+          <div class="path-teams">Match 4</div>
+        </div>
+      </div>
+      <div class="path-arrow">→</div>
+      <div class="path-stage">
+        <div class="path-bubble">
+          <div class="path-round">R16</div>
+          <div class="path-teams">Match 5</div>
+        </div>
+      </div>
+      <div class="path-arrow">→</div>
+      <div class="path-stage">
+        <div class="path-bubble">
+          <div class="path-round">QF</div>
+          <div class="path-teams">Match 6</div>
+        </div>
+      </div>
+      <div class="path-arrow">→</div>
+      <div class="path-stage">
+        <div class="path-bubble">
+          <div class="path-round">SF</div>
+          <div class="path-teams">Match 7</div>
+        </div>
+      </div>
+      <div class="path-arrow">→</div>
+      <div class="path-stage">
+        <div class="path-bubble">
+          <div class="path-round">Final</div>
+          <div class="path-teams">Match 8</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SECTION 9: FAQ ═══════════ -->
+<section>
+  <div class="container--narrow">
+    <div class="section-label">Frequently Asked Questions</div>
+    <h2>Questions Fans Are Asking</h2>
+
+    <div class="faq-list reveal">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">
+          Can a team finish third and still advance?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          Yes. The 8 best third-place teams across all 12 groups advance to the Round of 32. Finishing third is not automatic elimination — but it is uncertain. Your team must outperform other third-place finishers to make it through.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">
+          How many teams reach the knockout stage?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          32 teams advance to the knockout stage — 24 automatic qualifiers (top 2 from each group) plus the 8 best third-place teams. This creates the new Round of 32, which replaces the old Round of 16 as the first knockout round.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">
+          How many matches are there in total?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          104 total matches. The group stage alone accounts for 72 matches (6 per group × 12 groups). The remaining 32 matches take place across the knockout rounds, ending with the Final.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">
+          Why is there a Round of 32 now?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          The expansion from 32 to 48 teams required an additional knockout round. With 32 teams reaching the knockout phase (instead of the previous 16), a full extra round — the Round of 32 — was added before the Round of 16.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">
+          Does the new format create more upsets?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          More matches and more participants generally means more opportunity for surprises. Third-place advancement also creates scenarios where closely-matched teams compete to squeeze through on marginal differences — which adds unpredictability at the group stage exit point.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">
+          Why does the format matter for travel planning?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          The format directly affects which cities, how many matches, and how long you need to book for. If your team finishes third, you may not know if they advance until the final group matches are played — making early non-refundable bookings risky. More matches also mean more pressure on hotels, flights, and transportation in host cities.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">
+          Should fans wait until the knockout bracket is final before booking hotels?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          That's a genuine trade-off. Waiting until the bracket finalizes gives you certainty, but the best accommodation options in host cities may already be taken. Many fans book refundable options early for likely knockout cities, then confirm or cancel once results are known. GO2CUP's city and accommodation guides can help you identify which options typically allow flexibility.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">
+          Is GO2CUP an official tournament source?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          No. GO2CUP is an independent, fan-built travel intelligence hub. Official tournament information — including schedules, ticketing, regulations, and results — is controlled by FIFA and official tournament sources. GO2CUP helps fans organize travel planning around that official information.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SECTION 10: CTA ═══════════ -->
+<section>
+  <div class="container">
+    <div class="cta-section reveal">
+      <div class="section-label" style="justify-content:center;display:flex;">Plan Smarter</div>
+      <h2>Planning to follow World Cup 2026 across cities?</h2>
+      <p>Use GO2CUP to compare host cities, hotel zones, safety resources, airport access, and fan travel routes across the U.S., Mexico, and Canada — all in one place.</p>
+
+      <div class="cta-btn-grid">
+        <a href="host-cities.html" class="btn btn-primary">Explore Host City Guides →</a>
+        <a href="where-to-stay.html" class="btn btn-secondary">Compare Where to Stay</a>
+        <a href="insider.html" class="btn btn-secondary">Read Insider Updates</a>
+        <a href="fan-country-hopper.html" class="btn btn-secondary">Build My Fan Route</a>
+        <a href="partner-resources.html" class="btn btn-secondary">Partner With GO2CUP</a>
+      </div>
+
+      <div style="margin-top:28px;padding-top:28px;border-top:1px solid var(--navy-border);">
+        <p style="font-size:0.88rem;color:var(--muted);margin-bottom:14px;">Stay ahead with GO2CUP travel intelligence — host city alerts, accommodation guides, safety updates, and more.</p>
+        <a href="insider.html" class="btn btn-gold">Get GO2CUP Updates</a>
+      </div>
+    </div>
+
+    <div class="official-note">
+      <strong>Official Source Note:</strong> Official match, ticketing, tournament, and regulation information is controlled by FIFA and official tournament sources. GO2CUP helps fans organize travel, lodging, host-city, safety, and planning decisions around that official information. Always verify schedules, rules, and requirements directly with FIFA and official sources before making plans.
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">GO2<span>CUP</span></div>
+        <div class="footer-tagline">Independent Fan Travel Intelligence · World Cup 2026</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="partner-resources.html">Partner Resources</a></li>
+        <li><a href="host-cities.html">Host Cities</a></li>
+        <li><a href="where-to-stay.html">Where to Stay</a></li>
+        <li><a href="insider.html">Insider</a></li>
+      </ul>
+    </div>
+    <p class="footer-disclaimer">GO2CUP is an independent, fan-built World Cup 2026 travel intelligence hub. GO2CUP is not affiliated with FIFA, host cities, teams, stadiums, governments, official sponsors, travel providers, or ticketing entities. We may earn commissions from qualifying purchases made through partner or affiliate links. Fans should verify schedules, prices, entry rules, availability, transportation details, and travel requirements with official sources and providers before booking.</p>
+  </div>
+</footer>
+
+<script>
+  // FAQ toggle
+  function toggleFAQ(btn) {
+    const item = btn.closest('.faq-item');
+    item.classList.toggle('open');
+  }
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  reveals.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
