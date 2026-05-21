@@ -45,6 +45,27 @@ body {
 }
 .ticker-item .dot { color: var(--red); font-size: 18px; }
 
+/* ── LAUNCH NAV ── */
+.launch-nav {
+  background: #0a1020;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  justify-content: center;
+}
+.launch-nav a {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+}
+.launch-nav a:hover { color: var(--gold); }
+
 /* ── HERO BANNER ── */
 .hero-banner {
   position: relative;
@@ -195,6 +216,13 @@ body {
 </head>
 <body>
 
+<nav class="launch-nav" aria-label="Launch navigation">
+  <a href="index.html">Home / Hub</a>
+  <a href="insider.html">Insider / Blog</a>
+  <a href="sports-news.html">Daily Sports News</a>
+  <a href="partner-resources.html">Partner Resources</a>
+</nav>
+
 <!-- ── TICKER ── -->
 <div class="ticker-wrap">
   <div class="ticker-track">
@@ -238,37 +266,37 @@ body {
         </div>
         <p class="condensed text-gold text-[10px] tracking-widest uppercase mb-4 animate-pulse">Click Card to Expand Cities ↓</p>
         <div class="city-list-container space-y-1 text-sm condensed text-white/80 custom-scrollbar pr-2">
-          <a href="https://my-web-1774227442937.estage.site/host-city-new-york-new-jersey" class="city-link">
+          <a href="https://mainentry.net/go2cup-host-city-new-york-new-jersey" class="city-link">
             <span class="text-white">New York / New Jersey</span><span class="text-gold font-bold text-[10px]">THE FINAL</span>
           </a>
-          <a href="https://my-web-1774227442937.estage.site/host-city-los-angeles" class="city-link">
+          <a href="https://mainentry.net/go2cup-host-city-los-angeles" class="city-link">
             <span class="text-white">Los Angeles</span><span class="text-white/40 text-[10px] uppercase">SoFi Stadium</span>
           </a>
-          <a href="https://my-web-1774227442937.estage.site/host-city-dallas" class="city-link">
+          <a href="https://mainentry.net/go2cup-host-city-dallas-usa" class="city-link">
             <span class="text-white">Dallas</span><span class="text-white/40 text-[10px] uppercase">AT&T Stadium</span>
           </a>
-          <a href="https://my-web-1774227442937.estage.site/host-city-kansas-city" class="city-link">
+          <a href="https://mainentry.net/go2cup-host-city-kansas-city" class="city-link">
             <span class="text-white">Kansas City</span><span class="text-white/40 text-[10px] uppercase">Arrowhead Stadium</span>
           </a>
-          <a href="https://my-web-1774227442937.estage.site/host-city-houston" class="city-link">
+          <a href="https://mainentry.net/go2cup-host-city-houston" class="city-link">
             <span class="text-white">Houston</span><span class="text-white/40 text-[10px] uppercase">NRG Stadium</span>
           </a>
-          <a href="https://my-web-1774227442937.estage.site/host-city-atlanta" class="city-link">
+          <a href="https://mainentry.net/go2cup-host-city-atlanta" class="city-link">
             <span class="text-white">Atlanta</span><span class="text-white/40 text-[10px] uppercase">Mercedes-Benz</span>
           </a>
-          <a href="https://my-web-1774227442937.estage.site/host-city-miami" class="city-link">
+          <a href="https://mainentry.net/go2cup-host-city-miami" class="city-link">
             <span class="text-white">Miami</span><span class="text-white/40 text-[10px] uppercase">Hard Rock Stadium</span>
           </a>
-          <a href="https://my-web-1774227442937.estage.site/host-city-philadelphia" class="city-link">
+          <a href="https://mainentry.net/go2cup-host-city-philadelphia" class="city-link">
             <span class="text-white">Philadelphia</span><span class="text-white/40 text-[10px] uppercase">Lincoln Financial</span>
           </a>
-          <a href="https://my-web-1774227442937.estage.site/host-city-seattle" class="city-link">
+          <a href="https://mainentry.net/go2cup-host-city-seattle" class="city-link">
             <span class="text-white">Seattle</span><span class="text-white/40 text-[10px] uppercase">Lumen Field</span>
           </a>
-          <a href="https://my-web-1774227442937.estage.site/host-city-san-francisco-bay-area" class="city-link">
+          <a href="https://mainentry.net/go2cup-host-city-san-francisco" class="city-link">
             <span class="text-white">San Francisco Bay Area</span><span class="text-white/40 text-[10px] uppercase">Levi's Stadium</span>
           </a>
-          <a href="https://my-web-1774227442937.estage.site/host-city-boston-foxborough" class="city-link">
+          <a href="https://mainentry.net/go2cup-host-city-boston" class="city-link">
             <span class="text-white">Boston</span><span class="text-white/40 text-[10px] uppercase">Gillette Stadium</span>
           </a>
         </div>
@@ -290,13 +318,13 @@ body {
         </div>
         <p class="condensed text-gold text-[10px] tracking-widest uppercase mb-4 animate-pulse">Click Card to Choose City ↓</p>
         <div class="city-list-container space-y-4 text-sm condensed text-white/80">
-          <a href="https://my-web-1774227442937.estage.site/host-city-mexico-city" class="city-link">
+          <a href="https://mainentry.net/go2cup-host-city-mexico-city-mx" class="city-link">
             <span class="text-white">Mexico City</span><span class="text-gold font-bold text-[10px]">OPENER</span>
           </a>
-          <a href="https://my-web-1774227442937.estage.site/host-city-guadalajara" class="city-link">
+          <a href="https://mainentry.net/go2cup-host-city-guadalajara-mx" class="city-link">
             <span class="text-white">Guadalajara</span><span class="text-white/40 text-[10px] uppercase">Estadio Akron</span>
           </a>
-          <a href="https://my-web-1774227442937.estage.site/host-city-monterrey" class="city-link">
+          <a href="https://mainentry.net/go2cup-host-city-monterrey-mx" class="city-link">
             <span class="text-white">Monterrey</span><span class="text-white/40 text-[10px] uppercase">Estadio BBVA</span>
           </a>
         </div>
@@ -318,10 +346,10 @@ body {
         </div>
         <p class="condensed text-gold text-[10px] tracking-widest uppercase mb-4 animate-pulse">Click Card to Choose City ↓</p>
         <div class="city-list-container space-y-4 text-sm condensed text-white/80">
-          <a href="https://my-web-1774227442937.estage.site/host-city-toronto" class="city-link">
+          <a href="https://mainentry.net/go2cup-host-city-toronto-ca" class="city-link">
             <span class="text-white">Toronto</span><span class="text-white/40 text-[10px] uppercase">BMO Field</span>
           </a>
-          <a href="https://my-web-1774227442937.estage.site/host-city-vancouver" class="city-link">
+          <a href="https://mainentry.net/go2cup-host-city-vancouver-ca" class="city-link">
             <span class="text-white">Vancouver</span><span class="text-white/40 text-[10px] uppercase">BC Place</span>
           </a>
         </div>
@@ -332,6 +360,10 @@ body {
   </div>
 
 </main>
+
+<p class="max-w-[1600px] mx-auto px-8 py-6 condensed text-sm text-white/50 leading-relaxed" style="font-family:'Barlow',sans-serif;">
+  GO2CUP is an independent fan-built World Cup 2026 travel intelligence hub. We are not affiliated with FIFA, host cities, stadiums, teams, governments, hotels, airlines, or official sponsors. Information is provided for planning purposes only. Always verify schedules, entry rules, transportation, prices, availability, and safety information with official sources before booking or traveling.
+</p>
 
 <footer class="w-full py-16 text-center border-t border-white/5 opacity-30">
   <p class="text-[10px] uppercase tracking-[1em] font-black italic">Independent Fan Hub • © 2026</p>
@@ -362,8 +394,8 @@ body {
         <div class="text-gold text-2xl">🤝</div>
         <h4 class="bebas text-2xl tracking-wide uppercase text-white">Sponsors & Marketing</h4>
         <div class="flex flex-col gap-2">
-          <a href="/marketing" class="text-gold font-bold text-xs uppercase tracking-widest hover:text-white transition-all">Marketing Kits →</a>
-          <a href="/sponsor" class="text-gold font-bold text-xs uppercase tracking-widest hover:text-white transition-all">Sponsor This Region →</a>
+          <a href="https://mainentry.net/world-cup-2026-news" class="text-gold font-bold text-xs uppercase tracking-widest hover:text-white transition-all">World Cup 2026 News →</a>
+          <a href="https://mainentry.net/go2cup-embassy-directory" class="text-gold font-bold text-xs uppercase tracking-widest hover:text-white transition-all">Embassy Directory →</a>
         </div>
       </div>
 
@@ -373,7 +405,8 @@ body {
         <h4 class="bebas text-2xl tracking-wide uppercase text-white">Get Sports News First</h4>
         <p class="condensed text-[10px] text-white/40 uppercase tracking-widest">Match alerts · Fan deals · City guides</p>
 
-        <form id="g2c-footer-form" onsubmit="handleFooterSubscribe(event)" class="space-y-2" style="margin-top:12px;">
+        <!-- PENDING GetResponse connection: replace TODO_GETRESPONSE_OPTIN_URL with your GetResponse form action URL. Zapier hook removed. -->
+        <form id="g2c-footer-form" action="TODO_GETRESPONSE_OPTIN_URL" method="post" onsubmit="return handleFooterSubscribe(event)" class="space-y-2" style="margin-top:12px;">
           <input
             type="text"
             id="g2c-footer-name"
@@ -397,11 +430,8 @@ body {
             </svg>
           </button>
           <p style="font-size:10px;color:rgba(255,255,255,0.28);margin:6px 0 0;font-family:'Barlow Condensed',sans-serif;letter-spacing:0.04em;">No spam. Unsubscribe anytime.</p>
+          <p style="font-size:10px;color:rgba(255,255,255,0.35);margin:8px 0 0;font-family:'Barlow Condensed',sans-serif;letter-spacing:0.04em;">Fan list signup pending GetResponse connection.</p>
         </form>
-
-        <div id="g2c-footer-success" style="display:none;padding:12px 0;">
-          <p style="font-family:'Bebas Neue',cursive;font-size:18px;color:#4ade80;letter-spacing:1px;margin:0;">🏆 You're in! Check your inbox.</p>
-        </div>
 
         <div id="g2c-footer-error" style="display:none;margin-top:8px;">
           <p id="g2c-footer-error-msg" style="font-family:'Barlow',sans-serif;font-size:12px;color:#f87171;margin:0;"></p>
@@ -413,42 +443,21 @@ body {
 </section>
 
 <script>
-async function handleFooterSubscribe(e) {
-  e.preventDefault();
-  var name    = document.getElementById('g2c-footer-name').value.trim();
-  var email   = document.getElementById('g2c-footer-email').value.trim();
-  var btn     = document.getElementById('g2c-footer-btn');
-  var btnText = document.getElementById('g2c-footer-btn-text');
-  var spinner = document.getElementById('g2c-footer-spinner');
-  var errDiv  = document.getElementById('g2c-footer-error');
-  var errMsg  = document.getElementById('g2c-footer-error-msg');
+/* PENDING GetResponse connection — Zapier removed. Set form action to your GetResponse URL when ready. */
+function handleFooterSubscribe(e) {
+  var form = document.getElementById('g2c-footer-form');
+  var action = (form.getAttribute('action') || '').trim();
+  var errDiv = document.getElementById('g2c-footer-error');
+  var errMsg = document.getElementById('g2c-footer-error-msg');
 
-  btn.disabled = true;
-  btnText.style.display = 'none';
-  spinner.style.display = 'inline-block';
-  errDiv.style.display  = 'none';
-
-  try {
-    await fetch('https://hooks.zapier.com/hooks/catch/13426346/u73fhxh/', {
-      method: 'POST',
-      mode: 'no-cors',
-      body: JSON.stringify({
-        name: name,
-        email: email,
-        list: 'The Travel Ledger'
-      })
-    });
-
-    document.getElementById('g2c-footer-form').style.display = 'none';
-    document.getElementById('g2c-footer-success').style.display = 'block';
-
-  } catch (err) {
-    errMsg.textContent = 'Connection error. Please try again.';
+  if (action === 'TODO_GETRESPONSE_OPTIN_URL' || action.indexOf('http') !== 0) {
+    e.preventDefault();
+    errMsg.textContent = 'Fan list signup is pending GetResponse connection.';
     errDiv.style.display = 'block';
-    btn.disabled = false;
-    btnText.style.display = 'inline';
-    spinner.style.display = 'none';
+    return false;
   }
+
+  return true;
 }
 </script>
 

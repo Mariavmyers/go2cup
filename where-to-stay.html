@@ -82,6 +82,50 @@
       font-size: 0.95rem;
     }
 
+    .brand-bar {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 20px;
+      text-align: center;
+    }
+
+    .brand-bar a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .brand-bar .brand-name {
+      display: block;
+      font-weight: 800;
+      font-size: 1.35rem;
+      color: var(--navy);
+      letter-spacing: 0.04em;
+    }
+
+    .brand-bar .brand-tagline {
+      display: block;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .hub-back {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--navy);
+      text-decoration: none;
+    }
+
+    .go2cup-standard-footer {
+      max-width: 820px;
+      margin: 0 auto 18px;
+      line-height: 1.7;
+      font-size: 0.88rem;
+      color: #c5d4ea;
+    }
+
     .container {
       max-width: 1120px;
       margin: 0 auto;
@@ -240,6 +284,13 @@
 </head>
 
 <body>
+  <div class="brand-bar">
+    <a href="index.html">
+      <span class="brand-name">GO2CUP</span>
+      <span class="brand-tagline">The World Cup 2026 Fan Intelligence Hub</span>
+    </a>
+    <a class="hub-back" href="index.html">← Back to GO2CUP Hub</a>
+  </div>
   <nav class="top-nav">
     <a href="index.html">Home</a>
     <a href="host-cities.html">Host Cities</a>
@@ -269,6 +320,19 @@
       or officially connected to FIFA, host cities, stadiums, teams, government agencies, or official World Cup partners
       unless clearly stated.
     </div>
+
+    <section class="cta-panel">
+      <h2>Compare stays before match demand rises</h2>
+      <p>
+        Use this guide to compare neighborhoods, stadium access, airport routes, and hotel timing before prices move.
+      </p>
+      <div class="button-row">
+        <a class="btn btn-primary" href="https://klook.tp.st/bn2BkqtI">Compare Hotels</a>
+      </div>
+      <p>
+        Pricing and availability can change. Check current availability and verify routes before travel.
+      </p>
+    </section>
 
     <section>
       <h2 class="section-title">How to Think About Hotels for World Cup 2026</h2>
@@ -340,13 +404,13 @@
         <li>Atlanta</li>
         <li>Boston / Foxborough</li>
         <li>Dallas</li>
-        <li>Guadalajara</li>
+        <li><a href="where-to-stay/guadalajara.html">Guadalajara</a></li>
         <li>Houston</li>
         <li>Kansas City</li>
         <li>Los Angeles</li>
-        <li>Mexico City</li>
-        <li>Miami</li>
-        <li>Monterrey</li>
+        <li><a href="where-to-stay/mexico-city.html">Mexico City</a></li>
+        <li><a href="where-to-stay/miami-city.html">Miami</a></li>
+        <li><a href="where-to-stay/monterrey.html">Monterrey</a></li>
         <li>New York / New Jersey</li>
         <li>Philadelphia</li>
         <li>San Francisco Bay Area</li>
@@ -413,6 +477,9 @@
   </main>
 
   <footer>
+    <p class="go2cup-standard-footer">
+      GO2CUP is an independent fan-built travel planning guide. We are not affiliated with FIFA, host cities, stadiums, hotels, airlines, governments, teams, or official sponsors. Some links may be affiliate links. We may earn a commission if you book through them, at no extra cost to you. Always verify schedules, entry rules, hotel availability, prices, transport routes, and safety information with official sources before booking or traveling.
+    </p>
     <p>
       GO2CUP — Independent fan-built World Cup 2026 hub | Built by Maria Myers | Powered by MainEntry
     </p>
@@ -422,9 +489,6 @@
       <a href="partner-resources.html">Partner Resources</a>
       <a href="emergency.html">Emergency</a>
       <a href="https://mainentry.net/go2cup-fan-survival-guide">Planning Guide</a>
-    </p>
-    <p>
-      Not affiliated with FIFA. Verify official travel, ticketing, entry, safety, and booking information before making decisions.
     </p>
   </footer>
 </body>
