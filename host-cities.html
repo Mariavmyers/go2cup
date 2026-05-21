@@ -45,6 +45,27 @@ body {
 }
 .ticker-item .dot { color: var(--red); font-size: 18px; }
 
+/* ── LAUNCH NAV ── */
+.launch-nav {
+  background: #0a1020;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  justify-content: center;
+}
+.launch-nav a {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+}
+.launch-nav a:hover { color: var(--gold); }
+
 /* ── HERO BANNER ── */
 .hero-banner {
   position: relative;
@@ -195,6 +216,13 @@ body {
 </head>
 <body>
 
+<nav class="launch-nav" aria-label="Launch navigation">
+  <a href="index.html">Home / Hub</a>
+  <a href="insider.html">Insider / Blog</a>
+  <a href="sports-news.html">Daily Sports News</a>
+  <a href="partner-resources.html">Partner Resources</a>
+</nav>
+
 <!-- ── TICKER ── -->
 <div class="ticker-wrap">
   <div class="ticker-track">
@@ -332,6 +360,10 @@ body {
   </div>
 
 </main>
+
+<p class="max-w-[1600px] mx-auto px-8 py-6 condensed text-sm text-white/50 leading-relaxed" style="font-family:'Barlow',sans-serif;">
+  GO2CUP is an independent fan-built World Cup 2026 travel intelligence hub. We are not affiliated with FIFA, host cities, stadiums, teams, governments, hotels, airlines, or official sponsors. Information is provided for planning purposes only. Always verify schedules, entry rules, transportation, prices, availability, and safety information with official sources before booking or traveling.
+</p>
 
 <footer class="w-full py-16 text-center border-t border-white/5 opacity-30">
   <p class="text-[10px] uppercase tracking-[1em] font-black italic">Independent Fan Hub • © 2026</p>
