@@ -411,9 +411,100 @@ p { font-size: 1.05rem; color: var(--cream-dim); margin-bottom: 1.4rem; max-widt
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .booking-btn.vip { flex-direction: column; }
 }
+
+/* GO2CUP return tab + launch footer */
+.go2cup-return-top-wrap {
+  position: fixed;
+  top: 1rem;
+  right: max(1rem, 2vw);
+  z-index: 9999;
+}
+.go2cup-bottom-return-wrap {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 6vw;
+  margin-top: 0.5rem;
+}
+.go2cup-return-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  padding: 0.6rem 0.85rem;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid rgba(10, 31, 68, 0.15);
+  box-shadow: 0 8px 22px rgba(10, 31, 68, 0.12);
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.go2cup-return-tab:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(10, 31, 68, 0.18);
+}
+.go2cup-go { color: #0A1F44; }
+.go2cup-2 { color: #006847; }
+.go2cup-cup { color: #CE1126; }
+.go2cup-page-footer {
+  padding: 2rem 6vw 3.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.82rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.72);
+  max-width: 100%;
+}
+.go2cup-disclaimer {
+  margin: 0 0 1.25rem;
+  max-width: 72ch;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.58);
+}
+.go2cup-legal-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+.go2cup-legal-nav a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.go2cup-legal-nav a:hover { text-decoration: underline; }
+.go2cup-about-maria {
+  margin: 0;
+  font-size: 0.85rem;
+}
+.go2cup-about-maria a {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  text-decoration: none;
+}
+.go2cup-about-maria a:hover { text-decoration: underline; }
+.city-nav-current {
+  opacity: 0.85;
+  cursor: default;
+  pointer-events: none;
+}
+.city-nav-current em {
+  font-style: normal;
+  font-size: 0.7em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
 </style>
 </head>
 <body>
+<div class="go2cup-return-top-wrap"><a class="go2cup-return-tab" href="https://mainentry.net/go2cup-insider" aria-label="Return to GO2CUP Insider"><span class="go2cup-go">GO</span><span class="go2cup-2">2</span><span class="go2cup-cup">CUP</span></a></div>
+
 
 <!-- HERO -->
 <section class="hero">
@@ -535,28 +626,32 @@ p { font-size: 1.05rem; color: var(--cream-dim); margin-bottom: 1.4rem; max-widt
   <div class="booking-hub-title">Everything You Need — One Place</div>
   <p class="booking-hub-sub">All booking links open in a new tab so you never lose your place in this guide. Every link supports Go2Cup at no extra cost to you.</p>
   <div class="booking-grid">
-    <a href="https://www.klook.com/en-US/city/dallas-things-to-do/?aid=703929" target="_blank" rel="noopener" class="booking-btn">
+    <a href="https://klook.tp.st/bn2BkqtI" target="_blank" rel="noopener" class="booking-btn">
       <i class="fas fa-ticket-alt"></i>Tours &amp; Activities
     </a>
-    <a href="https://tiqets.com/en/dallas/?partner=703929" target="_blank" rel="noopener" class="booking-btn">
+    <a href="https://tiqets.tp.st/QLgjBEpB" target="_blank" rel="noopener" class="booking-btn">
       <i class="fas fa-star"></i>Attractions &amp; Tickets
     </a>
-    <a href="https://www.kiwi.com/en/search/results/dallas-texas-united-states/anywhere/?affiliate=703929" target="_blank" rel="noopener" class="booking-btn">
+    <a href="https://kiwi.tp.st/p4JYHJO9" target="_blank" rel="noopener" class="booking-btn">
       <i class="fas fa-plane"></i>Find Flights
     </a>
-    <a href="https://www.kiwitaxi.com/en/?marker=703929" target="_blank" rel="noopener" class="booking-btn">
+    <a href="https://gettransfer.tp.st/drwAeHXI" target="_blank" rel="noopener" class="booking-btn">
       <i class="fas fa-taxi"></i>Airport Transfers
     </a>
-    <a href="https://www.gettransfer.com/?ref=703929" target="_blank" rel="noopener" class="booking-btn">
+    <a href="https://gettransfer.tp.st/drwAeHXI" target="_blank" rel="noopener" class="booking-btn">
       <i class="fas fa-car"></i>Private Transfers
     </a>
-    <a href="https://www.airhelp.com/en/?referral=703929" target="_blank" rel="noopener" class="booking-btn">
+    <a href="https://airhelp.tp.st/yFHjlZJm" target="_blank" rel="noopener" class="booking-btn">
       <i class="fas fa-shield-alt"></i>Flight Compensation
     </a>
-    <div class="booking-placeholder">🏨 Hotels via Booking.com — Coming Soon</div>
-    <div class="booking-placeholder">✈️ Expedia Packages — Coming Soon</div>
-    <a href="../partner-resources.html" class="booking-btn vip">
-      <i class="fas fa-briefcase"></i>Premium Travel Support
+    <a href="https://mainentry.net/go2cup-fbos" target="_blank" rel="noopener" class="booking-btn vip">
+      <i class="fas fa-plane-arrival"></i>FBO / VIP
+    </a>
+    <a href="https://searadar.tp.st/OsyDiOF3" target="_blank" rel="noopener" class="booking-btn">
+      <i class="fas fa-ship"></i>Yacht / Premium Water Transfer
+    </a>
+<a href="https://mainentry.net/go2cup-insider" target="_blank" rel="noopener" class="booking-btn vip">
+      <i class="fas fa-compass"></i>GO2CUP Hub
     </a>
   </div>
 </div>
@@ -611,26 +706,26 @@ p { font-size: 1.05rem; color: var(--cream-dim); margin-bottom: 1.4rem; max-widt
 
 <div class="divider"></div>
 
-<!-- ALL 16 CITIES NAV -->
+<!-- ALL 16 HOST CITY GUIDES -->
 <div class="city-nav">
-  <div class="city-nav-title">🌎 Explore All 16 Host Cities</div>
+  <div class="city-nav-title">Explore All 16 Host City Guides</div>
   <div class="city-nav-grid">
-    <a href="https://mainentry.net/go-2-cup/mexico-city" class="city-nav-link"><span>🇲🇽</span> Mexico City</a>
-    <a href="https://mainentry.net/go-2-cup/guadalajara" class="city-nav-link"><span>🇲🇽</span> Guadalajara</a>
-    <a href="https://mainentry.net/go-2-cup/monterrey" class="city-nav-link"><span>🇲🇽</span> Monterrey</a>
-    <a href="https://mainentry.net/go-2-cup/toronto" class="city-nav-link"><span>🇨🇦</span> Toronto</a>
-    <a href="https://mainentry.net/go-2-cup/vancouver" class="city-nav-link"><span>🇨🇦</span> Vancouver</a>
-    <a href="https://mainentry.net/go-2-cup/dallas" class="city-nav-link active"><span>🇺🇸</span> Dallas</a>
-    <a href="https://mainentry.net/go-2-cup/los-angeles" class="city-nav-link"><span>🇺🇸</span> Los Angeles</a>
-    <a href="https://mainentry.net/go-2-cup/new-york-new-jersey" class="city-nav-link"><span>🇺🇸</span> New York / NJ</a>
-    <a href="https://mainentry.net/go-2-cup/miami" class="city-nav-link"><span>🇺🇸</span> Miami</a>
-    <a href="https://mainentry.net/go-2-cup/san-francisco-bay-area" class="city-nav-link"><span>🇺🇸</span> San Francisco</a>
-    <a href="https://mainentry.net/go-2-cup/seattle" class="city-nav-link"><span>🇺🇸</span> Seattle</a>
-    <a href="https://mainentry.net/go-2-cup/boston" class="city-nav-link"><span>🇺🇸</span> Boston</a>
-    <a href="https://mainentry.net/go-2-cup/philadelphia" class="city-nav-link"><span>🇺🇸</span> Philadelphia</a>
-    <a href="https://mainentry.net/go-2-cup/kansas-city" class="city-nav-link"><span>🇺🇸</span> Kansas City</a>
-    <a href="https://mainentry.net/go-2-cup/houston" class="city-nav-link"><span>🇺🇸</span> Houston</a>
-    <a href="https://mainentry.net/go-2-cup/atlanta" class="city-nav-link"><span>🇺🇸</span> Atlanta</a>
+    <a href="https://mainentry.net/go2cup-host-city-mexico-city-mx" class="city-nav-link"><span>🇲🇽</span> Mexico City</a>
+    <a href="https://mainentry.net/go2cup-host-city-guadalajara-mx" class="city-nav-link"><span>🇲🇽</span> Guadalajara</a>
+    <a href="https://mainentry.net/go2cup-host-city-monterrey-mx" class="city-nav-link"><span>🇲🇽</span> Monterrey</a>
+    <a href="https://mainentry.net/go2cup-host-city-toronto-ca" class="city-nav-link"><span>🇨🇦</span> Toronto</a>
+    <a href="https://mainentry.net/go2cup-host-city-vancouver-ca" class="city-nav-link"><span>🇨🇦</span> Vancouver</a>
+    <a href="https://mainentry.net/go2cup-host-city-new-york-new-jersey" class="city-nav-link"><span>🇺🇸</span> New York / New Jersey</a>
+    <a href="https://mainentry.net/go2cup-host-city-los-angeles" class="city-nav-link"><span>🇺🇸</span> Los Angeles</a>
+    <span class="city-nav-link city-nav-current" aria-current="page"><span>🇺🇸</span> Dallas <em>(Current City)</em></span>
+    <a href="https://mainentry.net/go2cup-host-city-kansas-city" class="city-nav-link"><span>🇺🇸</span> Kansas City</a>
+    <a href="https://mainentry.net/go2cup-host-city-houston" class="city-nav-link"><span>🇺🇸</span> Houston</a>
+    <a href="https://mainentry.net/go2cup-host-city-atlanta" class="city-nav-link"><span>🇺🇸</span> Atlanta</a>
+    <a href="https://mainentry.net/go2cup-host-city-miami" class="city-nav-link"><span>🇺🇸</span> Miami</a>
+    <a href="https://mainentry.net/go2cup-host-city-philadelphia" class="city-nav-link"><span>🇺🇸</span> Philadelphia</a>
+    <a href="https://mainentry.net/go2cup-host-city-seattle" class="city-nav-link"><span>🇺🇸</span> Seattle</a>
+    <a href="https://mainentry.net/go2cup-host-city-san-francisco-bay-area" class="city-nav-link"><span>🇺🇸</span> San Francisco Bay Area</a>
+    <a href="https://mainentry.net/go2cup-host-city-boston-foxborough" class="city-nav-link"><span>🇺🇸</span> Boston / Foxborough</a>
   </div>
 </div>
 
@@ -638,7 +733,7 @@ p { font-size: 1.05rem; color: var(--cream-dim); margin-bottom: 1.4rem; max-widt
 <section style="padding: 3rem 6vw;">
   <div class="container">
     <div class="author-bio">
-      <h4>About the Author: Maria Myers</h4>
+      <h4>About the Author: <a href="https://mainentry.net/maria-myers">Maria Myers</a></h4>
       <p>Born and raised in Brazil, the proud home of the only five-time World Cup champions, Maria brings a lifelong passion for the "beautiful game" to every guide she writes. She specializes in bridging the gap between global fans and North American destinations, using her expertise in world languages and travel to ensure supporters from every corner of the globe feel at home during the 2026 FIFA World Cup.</p>
       <div class="social-icons">
         <a href="https://x.com/mariavmyers" class="social-icon-x" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a>
@@ -648,6 +743,20 @@ p { font-size: 1.05rem; color: var(--cream-dim); margin-bottom: 1.4rem; max-widt
     </div>
   </div>
 </section>
+
+
+<div class="go2cup-bottom-return-wrap"><a class="go2cup-return-tab" href="https://mainentry.net/go2cup-insider" aria-label="Return to GO2CUP Insider"><span class="go2cup-go">GO</span><span class="go2cup-2">2</span><span class="go2cup-cup">CUP</span></a></div>
+<footer class="go2cup-page-footer">
+  <p class="go2cup-disclaimer">GO2CUP is an independent, fan-built World Cup 2026 travel intelligence hub. It is not affiliated with FIFA, host cities, teams, stadiums, governments, airports, hotels, transportation providers, or official sponsors. Some links may be affiliate or sponsored links, and GO2CUP may earn a commission if users book or purchase through those links. Always verify match schedules, entry rules, visa requirements, safety conditions, transportation options, prices, and availability with official sources before making travel decisions.</p>
+  <nav class="go2cup-legal-nav" aria-label="Legal and disclosures">
+    <a href="https://mainentry.net/go2cup-legal-hub">Legal Hub</a>
+    <a href="https://mainentry.net/go2cup-advertising-sponsored-content-disclaimer">Sponsored Content Disclaimer</a>
+    <a href="https://mainentry.net/go2cup-terms-conditions">Terms</a>
+    <a href="https://mainentry.net/go2cup-privacy-disclaimer">Privacy</a>
+    <a href="https://mainentry.net/go2cup-affiliate-disclosure">Affiliate Disclosure</a>
+  </nav>
+  <p class="go2cup-about-maria"><a href="https://mainentry.net/maria-myers">About Maria Myers</a></p>
+</footer>
 
 </body>
 </html>
