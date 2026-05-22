@@ -306,7 +306,36 @@
   var MAX_AGE_DAYS = 4;
 
   /* Paste real curated news item objects inside this array, newest first. */
-  var sportsNewsData = [];
+  var sportsNewsData = [
+  {
+    sport: "worldcup",
+    category: "Tickets / Fan Access",
+    publishedDate: "2026-05-22",
+    title: "New York City opens a $50 World Cup ticket path for local fans",
+    summary: "New York City announced a limited discounted ticket program for residents, offering 1,000 World Cup tickets at $50 each through a lottery. The program includes free round-trip bus transportation to MetLife Stadium and is aimed at making selected matches more accessible to local fans.",
+    go2cupAngle: "This is the kind of host-city access model fans should watch closely. If more cities create local-ticket or transportation bundles, World Cup planning will not only be about match tickets — it will also be about city-level programs, eligibility rules, transit pickup points, and timing.",
+    fanTravelImpact: "Fans in the New York/New Jersey region should track lottery deadlines, pickup logistics, non-transferability rules, and bus transportation details before making separate travel plans.",
+    sourceName: "Reuters",
+    sourceUrl: "https://www.reuters.com/sports/soccer/new-york-city-offering-50-world-cup-tickets-residents-2026-05-21/",
+    imageUrl: "TODO_IMAGE_URL",
+    imageAlt: "World Cup fans near a stadium",
+    tags: ["World Cup 2026", "Tickets", "New York New Jersey", "Fan Access"]
+  },
+  {
+    sport: "worldcup",
+    category: "Opening Ceremony",
+    publishedDate: "2026-05-22",
+    title: "World Cup 2026 opening ceremonies turn into a three-country entertainment rollout",
+    summary: "FIFA has published opening-ceremony details across the host nations, including major artist lineups for the United States, Mexico, and Canada. The entertainment rollout adds another layer to fan planning beyond the matches themselves.",
+    go2cupAngle: "Opening ceremonies are not just entertainment. They affect arrival timing, crowd movement, hotel demand, local transportation, security patterns, and fan-zone activity in host cities.",
+    fanTravelImpact: "Fans attending early tournament events should plan for longer arrival windows, heavier event traffic, and city-center activity around ceremony days.",
+    sourceName: "FIFA",
+    sourceUrl: "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/opening-ceremony-usa",
+    imageUrl: "TODO_IMAGE_URL",
+    imageAlt: "World Cup opening ceremony stage lights",
+    tags: ["World Cup 2026", "Opening Ceremony", "Fan Planning", "Host Cities"]
+  }
+];
 
   function esc(str) {
     if (!str) return '';
