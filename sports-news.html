@@ -157,10 +157,73 @@
 .g2pub__empty { background:var(--surface); border:2px dashed var(--border); border-radius:7px; padding:36px 20px; text-align:center; color:var(--text-muted); font-size:13px; line-height:1.7; }
 
 .g2pub__trust { max-width:1180px; margin:0 auto; padding:0 24px 44px; }
-.g2pub__trust-inner { border-top:1px solid var(--border); padding-top:20px; display:flex; align-items:flex-start; gap:12px; }
+.g2pub__trust-inner {
+  border-top:1px solid var(--border);
+  padding-top:20px;
+  display:block;
+}
 .g2pub__trust-icon { font-size:15px; flex-shrink:0; margin-top:2px; opacity:0.6; }
-.g2pub__trust-text { font-size:11.5px; color:var(--text-muted); line-height:1.75; font-weight:300; }
+.g2pub__trust-text {
+  font-size:11.5px;
+  color:var(--text-muted);
+  line-height:1.75;
+  font-weight:300;
+  max-width:920px;
+}
 .g2pub__trust-text strong { font-weight:600; color:#666; }
+.g2pub__cta {
+  max-width:1180px;
+  margin:28px auto 0;
+  padding:26px 24px;
+  background:#ffffff;
+  border:1px solid #e2e1da;
+  border-left:5px solid #1b6244;
+  border-radius:10px;
+}
+.g2pub__cta h2 {
+  font-family:Georgia, 'Times New Roman', serif;
+  font-size:24px;
+  line-height:1.2;
+  margin-bottom:8px;
+  color:#111111;
+}
+.g2pub__cta p {
+  font-size:14px;
+  line-height:1.7;
+  color:#3d3d3d;
+  max-width:760px;
+  margin-bottom:16px;
+}
+.g2pub__cta-btn {
+  display:inline-block;
+  background:#1b6244;
+  color:#ffffff;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  padding:12px 18px;
+  border-radius:6px;
+}
+.g2pub__cta-btn:hover {
+  background:#154d36;
+}
+.g2pub__trust-links {
+  margin-top:14px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 18px;
+}
+.g2pub__trust-links a {
+  color:var(--wc);
+  font-weight:600;
+  text-decoration:none;
+  font-size:12px;
+}
+.g2pub__trust-links a:hover {
+  text-decoration:underline;
+}
 
 @media (max-width:960px) {
   .g2pub__grid { grid-template-columns:1fr 1fr; gap:22px; }
@@ -205,6 +268,12 @@
     <a class="nav-f1" href="#g2pub-col-f1">&#127950; Formula One</a>
   </nav>
 
+  <section class="g2pub__cta">
+    <h2>Following World Cup 2026 across cities?</h2>
+    <p>Get the free GO2CUP Fan Country Hopper Starter Guide and join the Fan Intelligence Community for host-city notes, route planning, safety reminders, and travel updates.</p>
+    <a href="https://mainentry.net/go2cup-mainentry-caas" class="g2pub__cta-btn">Get the Free Fan Country Hopper Guide →</a>
+  </section>
+
   <main class="g2pub__main">
     <div class="g2pub__grid" id="g2pub-grid"></div>
   </main>
@@ -216,12 +285,12 @@
         <strong>Editorial Note:</strong>
         GO2CUP is an independent, fan-built World Cup 2026 travel intelligence hub. GO2CUP is not affiliated with FIFA, host cities, teams, stadiums, governments, official sponsors, travel providers, or ticketing entities. We may earn commissions from qualifying purchases made through partner or affiliate links. Fans should verify schedules, prices, entry rules, availability, transportation details, and travel requirements with official sources and providers before booking. Curated sports headlines are for fan travel awareness only; confirm schedules and official event information with primary sources.
       </p>
-      <p class="g2pub__trust-text" style="margin-top:12px;">
-        <a href="index.html" style="color:var(--wc);font-weight:600;">Home</a> ·
-        <a href="partner-resources.html" style="color:var(--wc);font-weight:600;">Partner Resources</a> ·
-        <a href="affiliate-disclosure.html" style="color:var(--wc);font-weight:600;">Affiliate Disclosure</a> ·
-        <a href="privacy.html" style="color:var(--wc);font-weight:600;">Privacy Policy</a>
-      </p>
+      <div class="g2pub__trust-links">
+        <a href="https://mainentry.net/Go2Cup">Home</a>
+        <a href="https://mainentry.net/partner-resources">Partner Resources</a>
+        <a href="https://mainentry.net/affiliate-disclosure">Affiliate Disclosure</a>
+        <a href="https://mainentry.net/privacy">Privacy Policy</a>
+      </div>
     </div>
   </footer>
 </div>
