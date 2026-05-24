@@ -35,6 +35,8 @@
   background: var(--bg);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .g2pub__mast {
@@ -107,7 +109,7 @@
 }
 .g2pub__launch-nav a:hover { color:#fff; }
 
-.g2pub__main { max-width:1180px; margin:0 auto; padding:36px 24px 56px; }
+.g2pub__main { width:100%; max-width:1240px; margin:0 auto; padding:36px 40px 56px; }
 .g2pub__grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:28px; align-items:start; }
 .g2pub__col { display:flex; flex-direction:column; gap:18px; }
 .g2pub__col-header { display:flex; align-items:center; gap:9px; padding-bottom:13px; border-bottom:2px solid var(--border); margin-bottom:2px; }
@@ -156,7 +158,7 @@
 .g2pub__tag { font-size:10px; padding:2px 8px; border-radius:10px; background:var(--bg); color:var(--text-muted); border:1px solid var(--border); }
 .g2pub__empty { background:var(--surface); border:2px dashed var(--border); border-radius:7px; padding:36px 20px; text-align:center; color:var(--text-muted); font-size:13px; line-height:1.7; }
 
-.g2pub__trust { max-width:1180px; margin:0 auto; padding:0 24px 44px; }
+.g2pub__trust { width:100%; max-width:1240px; margin:0 auto; padding:0 40px 44px; }
 .g2pub__trust-inner {
   border-top:1px solid var(--border);
   padding-top:20px;
@@ -172,9 +174,10 @@
 }
 .g2pub__trust-text strong { font-weight:600; color:#666; }
 .g2pub__cta {
-  max-width:1180px;
+  width:100%;
+  max-width:1240px;
   margin:28px auto 0;
-  padding:26px 24px;
+  padding:26px 40px;
   background:#ffffff;
   border:1px solid #e2e1da;
   border-left:5px solid #1b6244;
@@ -209,6 +212,13 @@
 .g2pub__cta-btn:hover {
   background:#154d36;
 }
+.g2pub__cta-disclaimer {
+  font-size:11px;
+  line-height:1.6;
+  color:var(--text-muted);
+  margin-top:14px;
+  max-width:760px;
+}
 .g2pub__trust-links {
   margin-top:14px;
   display:flex;
@@ -230,24 +240,25 @@
   .col-f1 { grid-column:1 / -1; max-width:460px; }
 }
 @media (max-width:600px) {
-  .g2pub__mast { padding:0 16px; flex-direction:column; align-items:flex-start; }
+  .g2pub__mast { padding:0 20px; flex-direction:column; align-items:flex-start; }
   .g2pub__mast-left { padding:16px 0 8px; }
   .g2pub__mast-right { align-items:flex-start; padding:0 0 16px; }
   .site-logo { width:135px; }
-  .g2pub__subnav { padding:0 16px; }
+  .g2pub__subnav { padding:0 20px; }
+  .g2pub__launch-nav { padding:10px 20px; }
   .g2pub__grid { grid-template-columns:1fr; gap:28px; }
   .col-f1 { grid-column:auto; max-width:none; }
-  .g2pub__main { padding:24px 16px 44px; }
-  .g2pub__trust { padding:0 16px 36px; }
+  .g2pub__main { padding:24px 20px 44px; }
+  .g2pub__trust { padding:0 20px 36px; }
+  .g2pub__cta { padding:22px 20px; margin-top:20px; }
 }
 </style>
 
 <div class="g2pub">
   <nav class="g2pub__launch-nav" aria-label="Launch navigation">
-    <a href="index.html">Home / Hub</a>
-    <a href="insider.html">Insider / Blog</a>
-    <a href="host-cities.html">Host Cities</a>
-    <a href="partner-resources.html">Partner Resources</a>
+    <a href="https://mainentry.net/go2cup-insider">HUB</a>
+    <a href="https://mainentry.net/go2cup-host-cities-usa-mx-ca">HOST CITIES</a>
+    <a href="https://mainentry.net/partner-resources">PARTNER RESOURCES</a>
   </nav>
   <header class="g2pub__mast">
     <div class="g2pub__mast-left">
@@ -269,9 +280,10 @@
   </nav>
 
   <section class="g2pub__cta">
-    <h2>Following World Cup 2026 across cities?</h2>
-    <p>Get the free GO2CUP Fan Country Hopper Starter Guide and join the Fan Intelligence Community for host-city notes, route planning, safety reminders, and travel updates.</p>
-    <a href="https://mainentry.net/go2cup-mainentry-caas" class="g2pub__cta-btn">Get the Free Fan Country Hopper Guide →</a>
+    <h2>Get the GO2CUP Sports News Briefing</h2>
+    <p>Follow soccer, World Cup 2026, NFL, and Formula One through the GO2CUP angle: major events, teams, athletes, fan culture, media narratives, business signals, controversies, partnerships, and emerging opportunities in global sports.</p>
+    <a href="https://mainentry.net/worldwide-sports-news" class="g2pub__cta-btn">Send Me the Sports News Briefing</a>
+    <p class="g2pub__cta-disclaimer">GO2CUP is independent. It is not affiliated with FIFA, NFL, Formula One, teams, leagues, drivers, athletes, event organizers, broadcasters, or official sponsors.</p>
   </section>
 
   <main class="g2pub__main">
