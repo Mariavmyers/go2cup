@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GO2CUP Legal Hub | Disclaimers · Privacy · Terms</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --go-blue:    #0057b8;
+    --two-green:  #007a3d;
+    --cup-red:    #f5333f;
+    --obsidian:   #0a0c0f;
+    --dark-card:  #111318;
+    --border:     #1e2330;
+    --gold:       #c9a84c;
+    --cream:      #f0ece3;
+    --muted:      #8a90a0;
+    --white:      #ffffff;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--obsidian);
+    color: var(--cream);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    line-height: 1.75;
+    font-size: 15px;
+  }
+
+  /* ── HEADER ── */
+  header {
+    position: relative;
+    text-align: center;
+    padding: 80px 24px 60px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border);
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 50% -20%, rgba(0,87,184,.18) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 10% 110%,  rgba(0,122,61,.12) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 60% at 90% 110%,  rgba(245,51,63,.10) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .logo-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 36px;
+  }
+
+  .logo-bar img {
+    height: 44px;
+    width: auto;
+  }
+
+  .brand-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: .12em;
+    color: var(--white);
+  }
+
+  .page-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3rem, 9vw, 6.5rem);
+    letter-spacing: .06em;
+    line-height: 1;
+    margin-bottom: 18px;
+  }
+
+  .page-title .go  { color: var(--go-blue);   }
+  .page-title .two { color: var(--two-green);  }
+  .page-title .cup { color: var(--cup-red);    }
+  .page-title .hub { color: var(--white);       }
+
+  .page-subtitle {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.25rem;
+    color: var(--muted);
+    letter-spacing: .04em;
+  }
+
+  .page-subtitle span { color: var(--gold); }
+
+  .intro-band {
+    max-width: 680px;
+    margin: 32px auto 0;
+    background: rgba(255,255,255,.03);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px 24px;
+    font-size: .9rem;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  .intro-band strong { color: var(--cream); }
+  .g2c { font-weight: 700; }
+  .g2c .go  { color: var(--go-blue);  }
+  .g2c .two { color: var(--two-green);}
+  .g2c .cup { color: var(--cup-red);  }
+
+  /* ── NAV PILLS ── */
+  .toc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 32px 24px;
+    border-bottom: 1px solid var(--border);
+    background: rgba(255,255,255,.01);
+  }
+
+  .toc a {
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: .95rem;
+    letter-spacing: .1em;
+    padding: 7px 18px;
+    border-radius: 3px;
+    transition: all .2s;
+  }
+
+  .toc a.blue  { color: var(--go-blue);  border: 1px solid var(--go-blue);  }
+  .toc a.green { color: var(--two-green);border: 1px solid var(--two-green);}
+  .toc a.red   { color: var(--cup-red);  border: 1px solid var(--cup-red);  }
+  .toc a.gold  { color: var(--gold);     border: 1px solid var(--gold);     }
+
+  .toc a:hover { background: rgba(255,255,255,.06); transform: translateY(-1px); }
+
+  /* ── MAIN LAYOUT ── */
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+
+  /* ── SECTION ── */
+  .legal-section {
+    margin-bottom: 64px;
+    padding-bottom: 64px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .legal-section:last-child { border-bottom: none; }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+
+  .section-accent {
+    width: 4px;
+    height: 44px;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+  .accent-blue  { background: var(--go-blue);  }
+  .accent-green { background: var(--two-green);}
+  .accent-red   { background: var(--cup-red);  }
+  .accent-gold  { background: var(--gold);     }
+
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    letter-spacing: .08em;
+    color: var(--white);
+  }
+
+  .last-updated {
+    font-size: .78rem;
+    color: var(--muted);
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    margin-left: 20px;
+  }
+
+  /* ── ITEM CARDS ── */
+  .item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .item {
+    background: var(--dark-card);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 16px 20px;
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 12px;
+    align-items: baseline;
+    transition: border-color .2s, background .2s;
+  }
+
+  .item:hover {
+    border-color: rgba(201,168,76,.25);
+    background: rgba(201,168,76,.03);
+  }
+
+  .item-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    color: var(--gold);
+    text-align: right;
+  }
+
+  .item-body strong {
+    color: var(--white);
+    font-weight: 600;
+    font-size: .95rem;
+  }
+
+  .item-body p {
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: .88rem;
+  }
+
+  /* ── PROSE ── */
+  .prose { color: var(--cream); line-height: 1.8; }
+  .prose p { margin-bottom: 14px; }
+  .prose strong { color: var(--white); font-weight: 600; }
+
+  .prose ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 16px;
+  }
+
+  .prose ul li {
+    padding: 6px 0 6px 22px;
+    position: relative;
+    color: var(--muted);
+    font-size: .9rem;
+    border-bottom: 1px solid rgba(255,255,255,.04);
+  }
+
+  .prose ul li::before {
+    content: '›';
+    position: absolute;
+    left: 6px;
+    color: var(--gold);
+    font-size: 1rem;
+  }
+
+  .prose h4 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--white);
+    margin: 24px 0 8px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .tag-box {
+    background: rgba(0,87,184,.08);
+    border-left: 3px solid var(--go-blue);
+    border-radius: 0 4px 4px 0;
+    padding: 14px 18px;
+    margin: 20px 0;
+    color: var(--cream);
+    font-size: .9rem;
+  }
+
+  .tag-box.green { background: rgba(0,122,61,.08); border-color: var(--two-green); }
+  .tag-box.red   { background: rgba(245,51,63,.08); border-color: var(--cup-red); }
+  .tag-box.gold  { background: rgba(201,168,76,.08); border-color: var(--gold); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--dark-card);
+    border-top: 1px solid var(--border);
+    padding: 48px 24px 36px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.4rem;
+    letter-spacing: .06em;
+    margin-bottom: 6px;
+  }
+
+  .footer-tagline {
+    font-family: 'Crimson Pro', serif;
+    font-style: italic;
+    color: var(--muted);
+    font-size: .95rem;
+    margin-bottom: 28px;
+  }
+
+  .footer-contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    background: linear-gradient(135deg, var(--go-blue), var(--two-green));
+    color: var(--white);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: .1em;
+    padding: 14px 32px;
+    border-radius: 4px;
+    transition: opacity .2s, transform .2s;
+    margin-bottom: 28px;
+  }
+
+  .footer-contact:hover { opacity: .85; transform: translateY(-2px); }
+
+  .footer-meta {
+    font-size: .78rem;
+    color: var(--muted);
+    letter-spacing: .04em;
+    line-height: 2;
+  }
+
+  .footer-meta a {
+    color: var(--gold);
+    text-decoration: none;
+  }
+
+  .footer-meta a:hover { text-decoration: underline; }
+
+  .divider {
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--go-blue), var(--cup-red));
+    margin: 20px auto;
+    border-radius: 1px;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media(max-width:600px){
+    .item { grid-template-columns: 22px 1fr; }
+    .section-title { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ HEADER ═══════════════════════════════ -->
+<header>
+  <div class="logo-bar">
+    <img src="https://estage-test.b-cdn.net/public-media/user-2606/41e8580a7c5dfe59fc241bfdaeb2bb29.png"
+         alt="Go2Cup Logo" onerror="this.style.display='none'">
+    <span class="brand-name">MAINENTRY LLC</span>
+  </div>
+
+  <h1 class="page-title">
+    <span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span>&nbsp;<span class="hub">LEGAL HUB</span>
+  </h1>
+
+  <p class="page-subtitle">
+    <span>Disclaimers</span> &nbsp;·&nbsp; <span>Privacy</span> &nbsp;·&nbsp; <span>Terms &amp; Conditions</span>
+  </p>
+
+  <div class="intro-band">
+    <strong><span class="g2c"><span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span></span></strong>
+    is operated by <strong>MainEntry LLC</strong>.
+    This page contains all our legal policies in one place.
+    By using <strong><span class="g2c"><span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span></span></strong>,
+    you agree to all sections below.
+  </div>
+</header>
+
+<!-- ═══════════════════════════════ NAV ═══════════════════════════════ -->
+<nav class="toc" aria-label="Jump to section">
+  <a href="#disclaimers" class="blue">Disclaimers</a>
+  <a href="#privacy"     class="green">Privacy Policy</a>
+  <a href="#terms"       class="red">Terms &amp; Conditions</a>
+  <a href="#additional"  class="gold">Additional Policies</a>
+</nav>
+
+<!-- ═══════════════════════════════ MAIN ═══════════════════════════════ -->
+<main>
+
+  <!-- ── 1. DISCLAIMERS ── -->
+  <section class="legal-section" id="disclaimers">
+    <div class="section-header">
+      <div class="section-accent accent-blue"></div>
+      <h2 class="section-title"><span class="g2c"><span style="color:var(--go-blue)">GO</span><span style="color:var(--two-green)">2</span><span style="color:var(--cup-red)">CUP</span></span> DISCLAIMERS</h2>
+    </div>
+    <p class="last-updated">Last Updated: May 10, 2026</p>
+
+    <div class="item-list">
+      <div class="item">
+        <span class="item-num">01</span>
+        <div class="item-body">
+          <strong>FIFA, World Cup, Host City, and Trademark Non-Affiliation</strong>
+          <p><span class="g2c"><span style="color:var(--go-blue)">GO</span><span style="color:var(--two-green)">2</span><span style="color:var(--cup-red)">CUP</span></span> is <strong>not affiliated</strong> with FIFA, the World Cup, any host city, stadium, or official organizer.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="item-num">02</span>
+        <div class="item-body">
+          <strong>General Travel Information Disclaimer</strong>
+          <p>All travel, lodging, transportation, safety, and event information is for <strong>general planning purposes only</strong>. Always verify with official sources.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="item-num">03</span>
+        <div class="item-body">
+          <strong>Affiliate Disclosure</strong>
+          <p>Some links are affiliate links. <span class="g2c"><span style="color:var(--go-blue)">GO</span><span style="color:var(--two-green)">2</span><span style="color:var(--cup-red)">CUP</span></span> may earn a commission at <strong>no extra cost to you</strong>.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="item-num">04</span>
+        <div class="item-body">
+          <strong>Third-Party Provider Disclaimer</strong>
+          <p>We are not responsible for third-party hotels, booking sites, transportation, or services.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="item-num">05</span>
+        <div class="item-body">
+          <strong>Hotel, Lodging, Distance, and Location Disclaimer</strong>
+          <p>Distances, safety, and availability are estimates only.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="item-num">06</span>
+        <div class="item-body">
+          <strong>Transportation Disclaimer</strong>
+          <p>We do not operate or guarantee any transportation services.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="item-num">07</span>
+        <div class="item-body">
+          <strong>Safety, Emergency, Medical, Legal, and Immigration Disclaimer</strong>
+          <p>We do not provide professional, medical, or legal advice.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="item-num">08</span>
+        <div class="item-body">
+          <strong>AI-Assisted Content and MEL Disclaimer</strong>
+          <p>AI content (including MEL) may contain errors. Always verify.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="item-num">09</span>
+        <div class="item-body">
+          <strong>Blog, Insider, News, and Opinion Content Disclaimer</strong>
+          <p>Opinion and editorial content represents the views of the author, not official guidance.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="item-num">10</span>
+        <div class="item-body">
+          <strong>No Guarantee of Accuracy or Availability</strong>
+          <p>Information may change without notice. We do not guarantee completeness or accuracy.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="item-num">11</span>
+        <div class="item-body">
+          <strong>No Guarantee of Results</strong>
+          <p>Outcomes from using site information may vary. We make no performance warranties.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="item-num">12</span>
+        <div class="item-body">
+          <strong>User Responsibility</strong>
+          <p>Users are solely responsible for decisions made based on information found on this site.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="item-num">13</span>
+        <div class="item-body">
+          <strong>User Submissions and Community Content</strong>
+          <p>User-submitted content does not reflect our views. We reserve the right to remove any submission.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="item-num">14</span>
+        <div class="item-body">
+          <strong>Sponsored Content and Partner Placements</strong>
+          <p>Sponsored placements are disclosed when present. Compensation does not affect editorial integrity.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="item-num">15</span>
+        <div class="item-body">
+          <strong>Accessibility Disclaimer</strong>
+          <p>We strive for accessibility compliance but cannot guarantee full WCAG coverage at all times.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="item-num">16</span>
+        <div class="item-body">
+          <strong>External Links Disclaimer</strong>
+          <p>We are not responsible for the content, accuracy, or privacy practices of any external site.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="item-num">17</span>
+        <div class="item-body">
+          <strong>Copyright and Content Use</strong>
+          <p>All original content is © 2026 MainEntry LLC. Reproduction without permission is prohibited.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="item-num">18</span>
+        <div class="item-body">
+          <strong>Limitation of Liability</strong>
+          <p>MainEntry LLC is not liable for any direct, indirect, or consequential damages arising from site use.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="item-num">19</span>
+        <div class="item-body">
+          <strong>Changes to These Disclaimers</strong>
+          <p>We may update these disclaimers at any time. Continued use constitutes acceptance.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="item-num">20</span>
+        <div class="item-body">
+          <strong>Contact</strong>
+          <p><a href="mailto:hello@mainentry.net" style="color:var(--gold)">hello@mainentry.net</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 2. PRIVACY ── -->
+  <section class="legal-section" id="privacy">
+    <div class="section-header">
+      <div class="section-accent accent-green"></div>
+      <h2 class="section-title">PRIVACY DISCLAIMER</h2>
+    </div>
+    <p class="last-updated">Last Updated: May 10, 2026</p>
+
+    <div class="prose">
+      <div class="tag-box green">
+        <span class="g2c"><span style="color:var(--go-blue)">GO</span><span style="color:var(--two-green)">2</span><span style="color:var(--cup-red)">CUP</span></span> is a fan-built informational site and does <strong>not</strong> require accounts for most content.
+      </div>
+
+      <h4>We may collect</h4>
+      <ul>
+        <li>Technical/usage data (IP address, browser, pages visited)</li>
+        <li>Contact information if you email us or use forms</li>
+        <li>Cookies for functionality and analytics</li>
+        <li>AI chat interaction data (anonymized where possible)</li>
+      </ul>
+
+      <p><strong>We do NOT sell your personal data.</strong></p>
+      <p><strong>We use data</strong> only to operate and improve the site and respond to you.</p>
+      <p><strong>Third-party links</strong> (affiliates, booking sites, etc.) are governed by their own privacy policies.</p>
+      <p>You can request access, correction, or deletion of your data by emailing <a href="mailto:hello@mainentry.net" style="color:var(--gold)">hello@mainentry.net</a>.</p>
+      <p><strong>Children's Privacy:</strong> We do not knowingly collect data from children under 13.</p>
+    </div>
+  </section>
+
+  <!-- ── 3. TERMS ── -->
+  <section class="legal-section" id="terms">
+    <div class="section-header">
+      <div class="section-accent accent-red"></div>
+      <h2 class="section-title">TERMS AND CONDITIONS</h2>
+    </div>
+    <p class="last-updated">Last Updated: May 10, 2026</p>
+
+    <div class="prose">
+      <h4>1. Overview and Purpose</h4>
+      <div class="tag-box red">
+        <span class="g2c"><span style="color:var(--go-blue)">GO</span><span style="color:var(--two-green)">2</span><span style="color:var(--cup-red)">CUP</span></span> is an <strong>independent fan-built</strong> travel planning resource for World Cup 2026. It is <strong>not official</strong> and is not affiliated with FIFA or any event organizer.
+      </div>
+
+      <h4>2. Acceptance of Terms</h4>
+      <p>By accessing or using this site, you agree to be bound by these Terms and Conditions, our Privacy Policy, and all applicable disclaimers. If you do not agree, please discontinue use immediately.</p>
+
+      <h4>3. Eligibility</h4>
+      <p>Use of this site is intended for users 18 years of age or older. By using the site, you confirm you meet this requirement.</p>
+
+      <h4>4. License to Use</h4>
+      <p>We grant you a limited, non-exclusive, non-transferable license to access and use this site for personal, non-commercial purposes only.</p>
+
+      <h4>5. Prohibited Activities</h4>
+      <ul>
+        <li>Scraping, crawling, or data mining without written permission</li>
+        <li>Republishing or redistributing our content for commercial gain</li>
+        <li>Impersonating MainEntry LLC or any staff member</li>
+        <li>Attempting to breach site security or disrupt service</li>
+        <li>Using the site for unlawful purposes</li>
+      </ul>
+
+      <h4>6. Intellectual Property</h4>
+      <p>All content — text, graphics, logos, and code — is the property of MainEntry LLC unless otherwise noted. Unauthorized reproduction is prohibited.</p>
+
+      <h4>7. User-Generated Content</h4>
+      <p>Any content you submit grants MainEntry LLC a royalty-free license to use, display, and distribute that content in connection with this site.</p>
+
+      <h4>8. Affiliate Links &amp; Third-Party Services</h4>
+      <p>This site contains affiliate links. We may receive compensation when you click or purchase through these links at no additional cost to you.</p>
+
+      <h4>9. Disclaimers and No Warranties</h4>
+      <p>This site is provided "as is" without warranties of any kind, express or implied, including accuracy, fitness for a particular purpose, or non-infringement.</p>
+
+      <h4>10. Limitation of Liability</h4>
+      <p>MainEntry LLC shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of this site.</p>
+
+      <h4>11. Indemnification</h4>
+      <p>You agree to indemnify and hold harmless MainEntry LLC from any claims arising out of your use of this site or violation of these terms.</p>
+
+      <h4>12. Changes to Terms</h4>
+      <p>We reserve the right to modify these Terms at any time. Continued use after changes constitutes your acceptance of the revised Terms.</p>
+
+      <h4>13. Governing Law</h4>
+      <p>These Terms are governed by the laws of the <strong>United States and the State of Missouri</strong>, without regard to conflict of law principles. Any disputes shall be resolved exclusively in the courts located in <strong>Ray County or Clay County</strong>, Missouri.</p>
+
+      <h4>14. Severability &amp; Entire Agreement</h4>
+      <p>These policies (Disclaimers, Privacy, Terms) constitute the entire agreement between you and MainEntry LLC. If any provision is found invalid, the remainder continues in full force.</p>
+
+      <h4>15. Contact</h4>
+      <p><strong>MainEntry LLC</strong><br>
+        <a href="mailto:hello@mainentry.net" style="color:var(--gold)">hello@mainentry.net</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ── 4. ADDITIONAL POLICIES ── -->
+  <section class="legal-section" id="additional">
+    <div class="section-header">
+      <div class="section-accent accent-gold"></div>
+      <h2 class="section-title">ADDITIONAL POLICIES</h2>
+    </div>
+    <p class="last-updated">Last Updated: May 10, 2026</p>
+
+    <div class="prose">
+      <h4>Advertising and Sponsored Content Disclaimer</h4>
+      <p><span class="g2c"><span style="color:var(--go-blue)">GO</span><span style="color:var(--two-green)">2</span><span style="color:var(--cup-red)">CUP</span></span> may show advertisements, sponsored placements, and affiliate links. These are labeled when possible. Sponsored content does <strong>not</strong> imply endorsement or guarantee. We may earn compensation from ads and affiliates.</p>
+
+      <h4>Marketing Communications and Electronic Messaging</h4>
+      <p>By contacting us or signing up for updates, you may receive emails, newsletters, or alerts.</p>
+      <ul>
+        <li>You can unsubscribe at any time</li>
+        <li>We do <strong>not</strong> send unsolicited SMS unless you opt in</li>
+        <li>Message and data rates may apply</li>
+      </ul>
+
+      <h4>Cookies and Tracking Technologies</h4>
+      <p>We use cookies for site functionality, analytics, and affiliate tracking. You can manage cookies in your browser settings.</p>
+
+      <h4>Force Majeure</h4>
+      <p>We are not liable for events beyond our control (natural disasters, pandemics, strikes, etc.).</p>
+
+      <h4>No Professional Advice</h4>
+      <p>Nothing on this site is financial, legal, medical, or immigration advice. Consult qualified professionals.</p>
+
+      <h4>International Users</h4>
+      <p>Users outside the U.S. access the site at their own risk and must comply with local laws.</p>
+
+      <div class="tag-box gold" style="margin-top:36px; font-family:'Crimson Pro',serif; font-size:1rem; line-height:1.7;">
+        <strong>By using <span class="g2c"><span style="color:var(--go-blue)">GO</span><span style="color:var(--two-green)">2</span><span style="color:var(--cup-red)">CUP</span></span>, you confirm that you have read, understood, and agree to all sections above.</strong><br>
+        <span style="color:var(--muted); font-size:.88rem;">This Legal Hub is provided for general informational purposes and is not legal advice. For specific legal questions, consult an attorney in your jurisdiction.</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+<footer>
+  <div class="footer-logo">
+    <span style="color:var(--go-blue)">GO</span><span style="color:var(--two-green)">2</span><span style="color:var(--cup-red)">CUP</span>
+  </div>
+  <p class="footer-tagline">Fan-Built. Fan-Powered. World Cup 2026.</p>
+
+  <div>
+    <a class="footer-contact" href="https://mainentry.net/maria-myers" target="_blank" rel="noopener">
+      ✦ &nbsp; CONTACT &amp; ABOUT MARIA &nbsp; ✦
+    </a>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="footer-meta">
+    <strong>Business Name:</strong> MainEntry LLC &nbsp;|&nbsp;
+    <strong>Business Email:</strong> <a href="mailto:hello@mainentry.net">hello@mainentry.net</a><br>
+    <strong>Last Updated:</strong> May 10, 2026 &nbsp;|&nbsp;
+    <a href="https://mainentry.net/maria-myers" target="_blank" rel="noopener">mainentry.net/maria-myers</a><br><br>
+    © 2026 <strong>MainEntry LLC</strong>. All Rights Reserved.<br>
+    <span style="font-size:.72rem; opacity:.6;">GO2CUP is not affiliated with FIFA, the World Cup, or any official organizer.</span>
+  </div>
+</footer>
+
+</body>
+</html>
