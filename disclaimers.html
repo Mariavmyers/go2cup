@@ -3,594 +3,247 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GO2CUP Legal Hub | Disclaimers · Privacy · Terms</title>
+<title>GO2CUP Legal Hub | MainEntry LLC</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --go-blue:    #0057b8;
-    --two-green:  #007a3d;
-    --cup-red:    #f5333f;
-    --obsidian:   #0a0c0f;
-    --dark-card:  #111318;
-    --border:     #1e2330;
-    --gold:       #c9a84c;
-    --cream:      #f0ece3;
-    --muted:      #8a90a0;
-    --white:      #ffffff;
-  }
+:root {
+  --go-blue:   #0057b8;
+  --two-green: #007a3d;
+  --cup-red:   #f5333f;
+  --obsidian:  #0a0c0f;
+  --card:      #111318;
+  --card2:     #161a22;
+  --border:    #1e2330;
+  --gold:      #c9a84c;
+  --cream:     #f0ece3;
+  --muted:     #7a8090;
+  --white:     #ffffff;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--obsidian);color:var(--cream);font-family:'Barlow',sans-serif;font-weight:300;line-height:1.8;font-size:15px}
 
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+/* HEADER */
+header{position:relative;text-align:center;padding:64px 24px 48px;border-bottom:1px solid var(--border);overflow:hidden}
+header::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 50% -10%,rgba(0,87,184,.16) 0%,transparent 70%),radial-gradient(ellipse 35% 50% at 5% 110%,rgba(0,122,61,.10) 0%,transparent 60%),radial-gradient(ellipse 35% 50% at 95% 110%,rgba(245,51,63,.09) 0%,transparent 60%);pointer-events:none}
+.logo-bar{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:28px}
+.logo-bar img{height:40px;width:auto}
+.brand-name{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.12em;color:var(--white)}
+.page-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.8rem,8vw,6rem);letter-spacing:.06em;line-height:1;margin-bottom:14px}
+.go{color:var(--go-blue)}.two{color:var(--two-green)}.cup{color:var(--cup-red)}.hub{color:var(--white)}
+.sub{font-family:'Crimson Pro',serif;font-size:1.1rem;color:var(--muted);letter-spacing:.04em;margin-bottom:24px}
 
-  html { scroll-behavior: smooth; }
+/* INDEPENDENT NOTICE */
+.notice-band{max-width:820px;margin:0 auto 0;background:rgba(201,168,76,.07);border:1px solid rgba(201,168,76,.3);border-radius:6px;padding:18px 24px;font-size:.85rem;color:var(--cream);line-height:1.7}
+.notice-band strong{color:var(--gold)}
 
-  body {
-    background: var(--obsidian);
-    color: var(--cream);
-    font-family: 'Barlow', sans-serif;
-    font-weight: 300;
-    line-height: 1.75;
-    font-size: 15px;
-  }
+/* TAB NAV */
+.tab-nav{display:flex;flex-wrap:wrap;gap:6px;padding:24px 20px;background:rgba(255,255,255,.015);border-bottom:1px solid var(--border);justify-content:center}
+.tab-btn{font-family:'Bebas Neue',sans-serif;font-size:.85rem;letter-spacing:.08em;padding:7px 14px;border-radius:3px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .18s;white-space:nowrap}
+.tab-btn:hover{color:var(--white);border-color:rgba(255,255,255,.2);background:rgba(255,255,255,.04)}
+.tab-btn.active{background:var(--card2);color:var(--white);border-color:var(--gold)}
 
-  /* ── HEADER ── */
-  header {
-    position: relative;
-    text-align: center;
-    padding: 80px 24px 60px;
-    overflow: hidden;
-    border-bottom: 1px solid var(--border);
-  }
+/* PANELS */
+.panels{max-width:860px;margin:0 auto;padding:48px 24px 80px}
+.panel{display:none}
+.panel.active{display:block}
 
-  header::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-      radial-gradient(ellipse 60% 80% at 50% -20%, rgba(0,87,184,.18) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 60% at 10% 110%,  rgba(0,122,61,.12) 0%, transparent 60%),
-      radial-gradient(ellipse 40% 60% at 90% 110%,  rgba(245,51,63,.10) 0%, transparent 60%);
-    pointer-events: none;
-  }
+/* SECTION HEADER */
+.sec-head{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+.acc{width:4px;border-radius:2px;height:44px;flex-shrink:0}
+.acc-blue{background:var(--go-blue)}.acc-green{background:var(--two-green)}.acc-red{background:var(--cup-red)}.acc-gold{background:var(--gold)}.acc-teal{background:#00a8b5}.acc-purple{background:#7c5cbf}.acc-orange{background:#e07b39}.acc-pink{background:#c94f7c}
+.sec-title{font-family:'Bebas Neue',sans-serif;font-size:1.9rem;letter-spacing:.08em;color:var(--white)}
+.updated{font-size:.75rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin:0 0 24px 18px}
 
-  .logo-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    margin-bottom: 36px;
-  }
+/* PROSE */
+.prose{color:var(--cream);line-height:1.85}
+.prose p{margin-bottom:14px;font-size:.92rem}
+.prose strong{color:var(--white);font-weight:600}
+.prose h4{font-family:'Barlow',sans-serif;font-weight:700;font-size:.88rem;color:var(--white);margin:24px 0 8px;text-transform:uppercase;letter-spacing:.07em;padding-bottom:5px;border-bottom:1px solid var(--border)}
+.prose ul{list-style:none;padding:0;margin-bottom:16px}
+.prose ul li{padding:6px 0 6px 20px;position:relative;color:var(--muted);font-size:.88rem;border-bottom:1px solid rgba(255,255,255,.03)}
+.prose ul li::before{content:'›';position:absolute;left:5px;color:var(--gold)}
+.prose a{color:var(--gold);text-decoration:none}.prose a:hover{text-decoration:underline}
 
-  .logo-bar img {
-    height: 44px;
-    width: auto;
-  }
+/* CALLOUT BOXES */
+.box{border-radius:4px;padding:14px 18px;margin:16px 0;font-size:.88rem;line-height:1.7}
+.box-blue{background:rgba(0,87,184,.08);border-left:3px solid var(--go-blue)}
+.box-green{background:rgba(0,122,61,.08);border-left:3px solid var(--two-green)}
+.box-red{background:rgba(245,51,63,.08);border-left:3px solid var(--cup-red)}
+.box-gold{background:rgba(201,168,76,.08);border-left:3px solid var(--gold)}
+.box-teal{background:rgba(0,168,181,.08);border-left:3px solid #00a8b5}
+.box strong{color:var(--white)}
 
-  .brand-name {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.5rem;
-    letter-spacing: .12em;
-    color: var(--white);
-  }
+/* ITEM CARDS */
+.cards{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:5px;padding:14px 18px;display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:baseline;transition:border-color .2s,background .2s}
+.card:hover{border-color:rgba(201,168,76,.22);background:rgba(201,168,76,.025)}
+.card-num{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:var(--gold);text-align:right}
+.card-body strong{color:var(--white);font-weight:600;font-size:.92rem}
+.card-body p{margin-top:3px;color:var(--muted);font-size:.85rem}
 
-  .page-title {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(3rem, 9vw, 6.5rem);
-    letter-spacing: .06em;
-    line-height: 1;
-    margin-bottom: 18px;
-  }
+/* G2C INLINE */
+.g2c .go{color:var(--go-blue)}.g2c .two{color:var(--two-green)}.g2c .cup{color:var(--cup-red)}
 
-  .page-title .go  { color: var(--go-blue);   }
-  .page-title .two { color: var(--two-green);  }
-  .page-title .cup { color: var(--cup-red);    }
-  .page-title .hub { color: var(--white);       }
+/* FOOTER */
+footer{background:var(--card);border-top:1px solid var(--border);padding:44px 24px 32px;text-align:center}
+.f-logo{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;letter-spacing:.06em;margin-bottom:4px}
+.f-tag{font-family:'Crimson Pro',serif;font-style:italic;color:var(--muted);font-size:.9rem;margin-bottom:22px}
+.f-btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;background:linear-gradient(135deg,var(--go-blue),var(--two-green));color:var(--white);font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:.1em;padding:12px 28px;border-radius:4px;transition:opacity .2s,transform .2s;margin-bottom:22px}
+.f-btn:hover{opacity:.85;transform:translateY(-2px)}
+.divider{width:36px;height:2px;background:linear-gradient(90deg,var(--go-blue),var(--cup-red));margin:16px auto;border-radius:1px}
+.f-meta{font-size:.75rem;color:var(--muted);letter-spacing:.03em;line-height:2}
+.f-meta a{color:var(--gold);text-decoration:none}.f-meta a:hover{text-decoration:underline}
+.f-disclaimer{font-size:.7rem;opacity:.55;margin-top:10px;line-height:1.6;max-width:760px;margin-left:auto;margin-right:auto}
 
-  .page-subtitle {
-    font-family: 'Crimson Pro', serif;
-    font-size: 1.25rem;
-    color: var(--muted);
-    letter-spacing: .04em;
-  }
-
-  .page-subtitle span { color: var(--gold); }
-
-  .intro-band {
-    max-width: 680px;
-    margin: 32px auto 0;
-    background: rgba(255,255,255,.03);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 16px 24px;
-    font-size: .9rem;
-    color: var(--muted);
-    text-align: center;
-  }
-
-  .intro-band strong { color: var(--cream); }
-  .g2c { font-weight: 700; }
-  .g2c .go  { color: var(--go-blue);  }
-  .g2c .two { color: var(--two-green);}
-  .g2c .cup { color: var(--cup-red);  }
-
-  /* ── NAV PILLS ── */
-  .toc {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 32px 24px;
-    border-bottom: 1px solid var(--border);
-    background: rgba(255,255,255,.01);
-  }
-
-  .toc a {
-    text-decoration: none;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: .95rem;
-    letter-spacing: .1em;
-    padding: 7px 18px;
-    border-radius: 3px;
-    transition: all .2s;
-  }
-
-  .toc a.blue  { color: var(--go-blue);  border: 1px solid var(--go-blue);  }
-  .toc a.green { color: var(--two-green);border: 1px solid var(--two-green);}
-  .toc a.red   { color: var(--cup-red);  border: 1px solid var(--cup-red);  }
-  .toc a.gold  { color: var(--gold);     border: 1px solid var(--gold);     }
-
-  .toc a:hover { background: rgba(255,255,255,.06); transform: translateY(-1px); }
-
-  /* ── MAIN LAYOUT ── */
-  main {
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 56px 24px 80px;
-  }
-
-  /* ── SECTION ── */
-  .legal-section {
-    margin-bottom: 64px;
-    padding-bottom: 64px;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .legal-section:last-child { border-bottom: none; }
-
-  .section-header {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 8px;
-  }
-
-  .section-accent {
-    width: 4px;
-    height: 44px;
-    border-radius: 2px;
-    flex-shrink: 0;
-  }
-  .accent-blue  { background: var(--go-blue);  }
-  .accent-green { background: var(--two-green);}
-  .accent-red   { background: var(--cup-red);  }
-  .accent-gold  { background: var(--gold);     }
-
-  .section-title {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2rem;
-    letter-spacing: .08em;
-    color: var(--white);
-  }
-
-  .last-updated {
-    font-size: .78rem;
-    color: var(--muted);
-    letter-spacing: .06em;
-    text-transform: uppercase;
-    margin-bottom: 28px;
-    margin-left: 20px;
-  }
-
-  /* ── ITEM CARDS ── */
-  .item-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .item {
-    background: var(--dark-card);
-    border: 1px solid var(--border);
-    border-radius: 5px;
-    padding: 16px 20px;
-    display: grid;
-    grid-template-columns: 28px 1fr;
-    gap: 12px;
-    align-items: baseline;
-    transition: border-color .2s, background .2s;
-  }
-
-  .item:hover {
-    border-color: rgba(201,168,76,.25);
-    background: rgba(201,168,76,.03);
-  }
-
-  .item-num {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.1rem;
-    color: var(--gold);
-    text-align: right;
-  }
-
-  .item-body strong {
-    color: var(--white);
-    font-weight: 600;
-    font-size: .95rem;
-  }
-
-  .item-body p {
-    margin-top: 4px;
-    color: var(--muted);
-    font-size: .88rem;
-  }
-
-  /* ── PROSE ── */
-  .prose { color: var(--cream); line-height: 1.8; }
-  .prose p { margin-bottom: 14px; }
-  .prose strong { color: var(--white); font-weight: 600; }
-
-  .prose ul {
-    padding-left: 0;
-    list-style: none;
-    margin-bottom: 16px;
-  }
-
-  .prose ul li {
-    padding: 6px 0 6px 22px;
-    position: relative;
-    color: var(--muted);
-    font-size: .9rem;
-    border-bottom: 1px solid rgba(255,255,255,.04);
-  }
-
-  .prose ul li::before {
-    content: '›';
-    position: absolute;
-    left: 6px;
-    color: var(--gold);
-    font-size: 1rem;
-  }
-
-  .prose h4 {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    color: var(--white);
-    margin: 24px 0 8px;
-    text-transform: uppercase;
-    letter-spacing: .06em;
-    padding-bottom: 6px;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .tag-box {
-    background: rgba(0,87,184,.08);
-    border-left: 3px solid var(--go-blue);
-    border-radius: 0 4px 4px 0;
-    padding: 14px 18px;
-    margin: 20px 0;
-    color: var(--cream);
-    font-size: .9rem;
-  }
-
-  .tag-box.green { background: rgba(0,122,61,.08); border-color: var(--two-green); }
-  .tag-box.red   { background: rgba(245,51,63,.08); border-color: var(--cup-red); }
-  .tag-box.gold  { background: rgba(201,168,76,.08); border-color: var(--gold); }
-
-  /* ── FOOTER ── */
-  footer {
-    background: var(--dark-card);
-    border-top: 1px solid var(--border);
-    padding: 48px 24px 36px;
-    text-align: center;
-  }
-
-  .footer-logo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.4rem;
-    letter-spacing: .06em;
-    margin-bottom: 6px;
-  }
-
-  .footer-tagline {
-    font-family: 'Crimson Pro', serif;
-    font-style: italic;
-    color: var(--muted);
-    font-size: .95rem;
-    margin-bottom: 28px;
-  }
-
-  .footer-contact {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    background: linear-gradient(135deg, var(--go-blue), var(--two-green));
-    color: var(--white);
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.1rem;
-    letter-spacing: .1em;
-    padding: 14px 32px;
-    border-radius: 4px;
-    transition: opacity .2s, transform .2s;
-    margin-bottom: 28px;
-  }
-
-  .footer-contact:hover { opacity: .85; transform: translateY(-2px); }
-
-  .footer-meta {
-    font-size: .78rem;
-    color: var(--muted);
-    letter-spacing: .04em;
-    line-height: 2;
-  }
-
-  .footer-meta a {
-    color: var(--gold);
-    text-decoration: none;
-  }
-
-  .footer-meta a:hover { text-decoration: underline; }
-
-  .divider {
-    width: 40px;
-    height: 2px;
-    background: linear-gradient(90deg, var(--go-blue), var(--cup-red));
-    margin: 20px auto;
-    border-radius: 1px;
-  }
-
-  /* ── RESPONSIVE ── */
-  @media(max-width:600px){
-    .item { grid-template-columns: 22px 1fr; }
-    .section-title { font-size: 1.5rem; }
-  }
+@media(max-width:600px){.tab-nav{gap:4px}.tab-btn{font-size:.75rem;padding:6px 10px}.sec-title{font-size:1.4rem}.card{grid-template-columns:20px 1fr}}
 </style>
 </head>
 <body>
 
-<!-- ═══════════════════════════════ HEADER ═══════════════════════════════ -->
+<!-- HEADER -->
 <header>
   <div class="logo-bar">
-    <img src="https://estage-test.b-cdn.net/public-media/user-2606/41e8580a7c5dfe59fc241bfdaeb2bb29.png"
-         alt="Go2Cup Logo" onerror="this.style.display='none'">
+    <img src="https://estage-test.b-cdn.net/public-media/user-2606/41e8580a7c5dfe59fc241bfdaeb2bb29.png" alt="Go2Cup" onerror="this.style.display='none'">
     <span class="brand-name">MAINENTRY LLC</span>
   </div>
+  <h1 class="page-title"><span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span> <span class="hub">LEGAL HUB</span></h1>
+  <p class="sub">Policies · Disclosures · Notices · Community Rules</p>
 
-  <h1 class="page-title">
-    <span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span>&nbsp;<span class="hub">LEGAL HUB</span>
-  </h1>
-
-  <p class="page-subtitle">
-    <span>Disclaimers</span> &nbsp;·&nbsp; <span>Privacy</span> &nbsp;·&nbsp; <span>Terms &amp; Conditions</span>
-  </p>
-
-  <div class="intro-band">
-    <strong><span class="g2c"><span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span></span></strong>
-    is operated by <strong>MainEntry LLC</strong>.
-    This page contains all our legal policies in one place.
-    By using <strong><span class="g2c"><span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span></span></strong>,
-    you agree to all sections below.
+  <div class="notice-band">
+    <strong>⚠ Independent Site Notice — Please Read:</strong><br>
+    <span class="g2c"><span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span></span> is operated by <strong>MainEntry LLC</strong>.
+    GO2CUP is independent and is <strong>not affiliated with, sponsored by, endorsed by, licensed by, approved by, partnered with, or officially connected to</strong>
+    FIFA, FIFA World Cup 2026, NFL, NBA, UFC, Formula One, the Olympics, host cities, host countries, venues, stadiums, teams, leagues, governments, sponsors, ticketing providers, hotels, airlines, transportation providers, or official organizing bodies.
+    GO2CUP does not sell official tickets and does not guarantee ticket availability, hotel availability, prices, schedules, travel results, safety, refunds, visa decisions, border entry, or third-party services.
+    <strong>Always verify important details with official sources before making decisions.</strong><br><br>
+    This Legal Hub provides summaries and links for GO2CUP and MainEntry LLC policies, disclosures, disclaimers, privacy notices, affiliate notices, advertising notices, copyright information, and user-content rules.
+    By using GO2CUP, you are responsible for reviewing the applicable policies and terms.
   </div>
 </header>
 
-<!-- ═══════════════════════════════ NAV ═══════════════════════════════ -->
-<nav class="toc" aria-label="Jump to section">
-  <a href="#disclaimers" class="blue">Disclaimers</a>
-  <a href="#privacy"     class="green">Privacy Policy</a>
-  <a href="#terms"       class="red">Terms &amp; Conditions</a>
-  <a href="#additional"  class="gold">Additional Policies</a>
+<!-- TAB NAV -->
+<nav class="tab-nav" role="tablist">
+  <button class="tab-btn active" onclick="showTab('disclaimers',this)">Disclaimers</button>
+  <button class="tab-btn" onclick="showTab('privacy',this)">Privacy Policy</button>
+  <button class="tab-btn" onclick="showTab('terms',this)">Terms &amp; Conditions</button>
+  <button class="tab-btn" onclick="showTab('cookies',this)">Cookie Policy</button>
+  <button class="tab-btn" onclick="showTab('affiliate',this)">Affiliate Disclosure</button>
+  <button class="tab-btn" onclick="showTab('sponsored',this)">Sponsored Content</button>
+  <button class="tab-btn" onclick="showTab('dmca',this)">DMCA</button>
+  <button class="tab-btn" onclick="showTab('community',this)">Community Rules</button>
+  <button class="tab-btn" onclick="showTab('usercontent',this)">User Content</button>
+  <button class="tab-btn" onclick="showTab('accessibility',this)">Accessibility</button>
+  <button class="tab-btn" onclick="showTab('contact',this)">Contact Policy</button>
 </nav>
 
-<!-- ═══════════════════════════════ MAIN ═══════════════════════════════ -->
-<main>
+<main class="panels">
 
-  <!-- ── 1. DISCLAIMERS ── -->
-  <section class="legal-section" id="disclaimers">
-    <div class="section-header">
-      <div class="section-accent accent-blue"></div>
-      <h2 class="section-title"><span class="g2c"><span style="color:var(--go-blue)">GO</span><span style="color:var(--two-green)">2</span><span style="color:var(--cup-red)">CUP</span></span> DISCLAIMERS</h2>
-    </div>
-    <p class="last-updated">Last Updated: May 10, 2026</p>
-
-    <div class="item-list">
-      <div class="item">
-        <span class="item-num">01</span>
-        <div class="item-body">
-          <strong>FIFA, World Cup, Host City, and Trademark Non-Affiliation</strong>
-          <p><span class="g2c"><span style="color:var(--go-blue)">GO</span><span style="color:var(--two-green)">2</span><span style="color:var(--cup-red)">CUP</span></span> is <strong>not affiliated</strong> with FIFA, the World Cup, any host city, stadium, or official organizer.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">02</span>
-        <div class="item-body">
-          <strong>General Travel Information Disclaimer</strong>
-          <p>All travel, lodging, transportation, safety, and event information is for <strong>general planning purposes only</strong>. Always verify with official sources.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">03</span>
-        <div class="item-body">
-          <strong>Affiliate Disclosure</strong>
-          <p>Some links are affiliate links. <span class="g2c"><span style="color:var(--go-blue)">GO</span><span style="color:var(--two-green)">2</span><span style="color:var(--cup-red)">CUP</span></span> may earn a commission at <strong>no extra cost to you</strong>.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">04</span>
-        <div class="item-body">
-          <strong>Third-Party Provider Disclaimer</strong>
-          <p>We are not responsible for third-party hotels, booking sites, transportation, or services.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">05</span>
-        <div class="item-body">
-          <strong>Hotel, Lodging, Distance, and Location Disclaimer</strong>
-          <p>Distances, safety, and availability are estimates only.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">06</span>
-        <div class="item-body">
-          <strong>Transportation Disclaimer</strong>
-          <p>We do not operate or guarantee any transportation services.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">07</span>
-        <div class="item-body">
-          <strong>Safety, Emergency, Medical, Legal, and Immigration Disclaimer</strong>
-          <p>We do not provide professional, medical, or legal advice.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">08</span>
-        <div class="item-body">
-          <strong>AI-Assisted Content and MEL Disclaimer</strong>
-          <p>AI content (including MEL) may contain errors. Always verify.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">09</span>
-        <div class="item-body">
-          <strong>Blog, Insider, News, and Opinion Content Disclaimer</strong>
-          <p>Opinion and editorial content represents the views of the author, not official guidance.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">10</span>
-        <div class="item-body">
-          <strong>No Guarantee of Accuracy or Availability</strong>
-          <p>Information may change without notice. We do not guarantee completeness or accuracy.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">11</span>
-        <div class="item-body">
-          <strong>No Guarantee of Results</strong>
-          <p>Outcomes from using site information may vary. We make no performance warranties.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">12</span>
-        <div class="item-body">
-          <strong>User Responsibility</strong>
-          <p>Users are solely responsible for decisions made based on information found on this site.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">13</span>
-        <div class="item-body">
-          <strong>User Submissions and Community Content</strong>
-          <p>User-submitted content does not reflect our views. We reserve the right to remove any submission.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">14</span>
-        <div class="item-body">
-          <strong>Sponsored Content and Partner Placements</strong>
-          <p>Sponsored placements are disclosed when present. Compensation does not affect editorial integrity.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">15</span>
-        <div class="item-body">
-          <strong>Accessibility Disclaimer</strong>
-          <p>We strive for accessibility compliance but cannot guarantee full WCAG coverage at all times.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">16</span>
-        <div class="item-body">
-          <strong>External Links Disclaimer</strong>
-          <p>We are not responsible for the content, accuracy, or privacy practices of any external site.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">17</span>
-        <div class="item-body">
-          <strong>Copyright and Content Use</strong>
-          <p>All original content is © 2026 MainEntry LLC. Reproduction without permission is prohibited.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">18</span>
-        <div class="item-body">
-          <strong>Limitation of Liability</strong>
-          <p>MainEntry LLC is not liable for any direct, indirect, or consequential damages arising from site use.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">19</span>
-        <div class="item-body">
-          <strong>Changes to These Disclaimers</strong>
-          <p>We may update these disclaimers at any time. Continued use constitutes acceptance.</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">20</span>
-        <div class="item-body">
-          <strong>Contact</strong>
-          <p><a href="mailto:hello@mainentry.net" style="color:var(--gold)">hello@mainentry.net</a></p>
-        </div>
-      </div>
+  <!-- ════ 1. DISCLAIMERS ════ -->
+  <section class="panel active" id="disclaimers">
+    <div class="sec-head"><div class="acc acc-blue"></div><h2 class="sec-title"><span class="g2c"><span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span></span> DISCLAIMERS</h2></div>
+    <p class="updated">Last Updated: May 10, 2026</p>
+    <div class="cards">
+      <div class="card"><span class="card-num">01</span><div class="card-body"><strong>FIFA, World Cup &amp; Trademark Non-Affiliation</strong><p>GO2CUP is independent and is not affiliated with, sponsored by, endorsed by, licensed by, approved by, or officially connected to FIFA, FIFA World Cup 2026, NFL, NBA, UFC, Formula One, the Olympics, host cities, host countries, venues, stadiums, teams, leagues, governments, sponsors, ticketing providers, hotels, airlines, transportation providers, or official organizing bodies.</p></div></div>
+      <div class="card"><span class="card-num">02</span><div class="card-body"><strong>General Travel Information Disclaimer</strong><p>All travel, lodging, transportation, safety, and event information is for <strong>general planning purposes only</strong>. Always verify with official sources before making decisions.</p></div></div>
+      <div class="card"><span class="card-num">03</span><div class="card-body"><strong>Affiliate Disclosure</strong><p>Some links are affiliate links. GO2CUP may earn a commission at <strong>no extra cost to you</strong>. Affiliate disclosures appear near monetized links when practical, not only in this Legal Hub or footer.</p></div></div>
+      <div class="card"><span class="card-num">04</span><div class="card-body"><strong>Third-Party Provider Disclaimer</strong><p>We are not responsible for third-party hotels, booking sites, transportation, or services. Third-party tools may process information according to their own policies.</p></div></div>
+      <div class="card"><span class="card-num">05</span><div class="card-body"><strong>Hotel, Lodging, Distance &amp; Location Disclaimer</strong><p>Distances, safety ratings, and availability shown are estimates only.</p></div></div>
+      <div class="card"><span class="card-num">06</span><div class="card-body"><strong>Transportation Disclaimer</strong><p>We do not operate or guarantee any transportation services.</p></div></div>
+      <div class="card"><span class="card-num">07</span><div class="card-body"><strong>Safety, Emergency, Medical, Legal &amp; Immigration Disclaimer</strong><p>We do not provide professional, medical, legal, or immigration advice. Consult qualified professionals.</p></div></div>
+      <div class="card"><span class="card-num">08</span><div class="card-body"><strong>AI-Assisted Content &amp; MEL Disclaimer</strong><p>AI content (including MEL) may contain errors. AI tools are used for drafting, summaries, formatting, and research. AI does not imply guaranteed accuracy, official status, or professional advice. Always verify.</p></div></div>
+      <div class="card"><span class="card-num">09</span><div class="card-body"><strong>Blog, Insider, News &amp; Opinion Content Disclaimer</strong><p>Opinion and editorial content represents the views of the author, not official guidance.</p></div></div>
+      <div class="card"><span class="card-num">10</span><div class="card-body"><strong>No Guarantee of Accuracy or Availability</strong><p>Information may change without notice. We do not guarantee completeness or accuracy.</p></div></div>
+      <div class="card"><span class="card-num">11</span><div class="card-body"><strong>No Guarantee of Results</strong><p>Outcomes from using site information may vary. We make no performance warranties.</p></div></div>
+      <div class="card"><span class="card-num">12</span><div class="card-body"><strong>User Responsibility</strong><p>Users are solely responsible for decisions made based on information found on this site.</p></div></div>
+      <div class="card"><span class="card-num">13</span><div class="card-body"><strong>User Submissions &amp; Community Content</strong><p>User-submitted content does not reflect our views. We reserve the right to remove any submission.</p></div></div>
+      <div class="card"><span class="card-num">14</span><div class="card-body"><strong>Sponsored Content &amp; Partner Placements</strong><p>Sponsored placements are disclosed when present. Compensation does not affect editorial integrity.</p></div></div>
+      <div class="card"><span class="card-num">15</span><div class="card-body"><strong>Accessibility Disclaimer</strong><p>We strive for accessibility compliance but cannot guarantee full WCAG coverage at all times.</p></div></div>
+      <div class="card"><span class="card-num">16</span><div class="card-body"><strong>External Links Disclaimer</strong><p>We are not responsible for the content, accuracy, or privacy practices of any external site.</p></div></div>
+      <div class="card"><span class="card-num">17</span><div class="card-body"><strong>Copyright &amp; Content Use</strong><p>All original content is © 2026 MainEntry LLC. Reproduction without permission is prohibited.</p></div></div>
+      <div class="card"><span class="card-num">18</span><div class="card-body"><strong>Limitation of Liability</strong><p>MainEntry LLC is not liable for any direct, indirect, incidental, or consequential damages arising from site use.</p></div></div>
+      <div class="card"><span class="card-num">19</span><div class="card-body"><strong>Changes to These Disclaimers</strong><p>We may update these disclaimers at any time. Continued use constitutes acceptance.</p></div></div>
+      <div class="card"><span class="card-num">20</span><div class="card-body"><strong>Contact</strong><p><a href="mailto:hello@mainentry.net">hello@mainentry.net</a></p></div></div>
     </div>
   </section>
 
-  <!-- ── 2. PRIVACY ── -->
-  <section class="legal-section" id="privacy">
-    <div class="section-header">
-      <div class="section-accent accent-green"></div>
-      <h2 class="section-title">PRIVACY DISCLAIMER</h2>
-    </div>
-    <p class="last-updated">Last Updated: May 10, 2026</p>
-
+  <!-- ════ 2. PRIVACY ════ -->
+  <section class="panel" id="privacy">
+    <div class="sec-head"><div class="acc acc-green"></div><h2 class="sec-title">PRIVACY POLICY</h2></div>
+    <p class="updated">Last Updated: May 10, 2026</p>
     <div class="prose">
-      <div class="tag-box green">
-        <span class="g2c"><span style="color:var(--go-blue)">GO</span><span style="color:var(--two-green)">2</span><span style="color:var(--cup-red)">CUP</span></span> is a fan-built informational site and does <strong>not</strong> require accounts for most content.
-      </div>
+      <div class="box box-green"><span class="g2c"><span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span></span> is operated by <strong>MainEntry LLC</strong>. This Privacy Policy explains how we handle any personal information in connection with your use of the GO2CUP website, tools, AI assistants (including MEL), contact forms, comments, or other features. GO2CUP is a fan-built informational site and does <strong>not</strong> require accounts for most content.</div>
 
-      <h4>We may collect</h4>
+      <h4>1. Information We May Collect</h4>
+      <p>We may collect:</p>
       <ul>
-        <li>Technical/usage data (IP address, browser, pages visited)</li>
-        <li>Contact information if you email us or use forms</li>
-        <li>Cookies for functionality and analytics</li>
-        <li>AI chat interaction data (anonymized where possible)</li>
+        <li><strong>Usage and technical data</strong> — IP address, browser type, device information, pages visited, referral sources, and timestamps through standard web analytics tools</li>
+        <li><strong>Contact or submission data</strong> — if you voluntarily send emails to hello@mainentry.net, use contact forms, submit comments, reviews, tips, questions, or other user-generated content</li>
+        <li><strong>Cookies and similar technologies</strong> — for basic site functionality, analytics, and to support affiliate links or third-party services</li>
+        <li><strong>AI interaction data</strong> — when you use any GO2CUP AI-assisted tools or chatbots (conversations may be logged for improvement purposes, but are not stored with personal identifiers where possible)</li>
+      </ul>
+      <p>If you submit a form, contact us, sign up for updates, or communicate with MainEntry LLC, we may also collect your <strong>name, email address, phone number if provided, company or brand name, message content, language preference, inquiry topic, IP address, browser information, device information, referral source, and related usage data</strong>. We may use this information to respond to inquiries, operate the website, manage affiliate and advertising relationships, send updates where permitted, improve content, prevent abuse, and maintain business records.</p>
+      <p>We do <strong>not</strong> collect sensitive personal data such as financial information, health data, passport/visa details, or government ID information through the site itself.</p>
+
+      <h4>2. How We Use Information</h4>
+      <ul>
+        <li>Operating, maintaining, and improving the GO2CUP website and services</li>
+        <li>Responding to your messages or support requests</li>
+        <li>Understanding general site usage and audience trends</li>
+        <li>Fulfilling affiliate, advertising, or analytics obligations</li>
+        <li>Complying with legal obligations</li>
+      </ul>
+      <p><strong>We do NOT sell your personal data.</strong></p>
+
+      <h4>3. Sharing of Information</h4>
+      <ul>
+        <li><strong>Third-party service providers</strong> — We may share anonymized or limited data with hosting, analytics, affiliate platforms, email tools, forms, or AI tool providers to operate the site. These parties are contractually obligated to protect data.</li>
+        <li><strong>Legal requirements</strong> — We may disclose information if required by law, court order, or government request.</li>
+        <li><strong>Business transfers</strong> — In the event of a merger, acquisition, or sale of assets, user data may be transferred as part of the transaction.</li>
       </ul>
 
-      <p><strong>We do NOT sell your personal data.</strong></p>
-      <p><strong>We use data</strong> only to operate and improve the site and respond to you.</p>
-      <p><strong>Third-party links</strong> (affiliates, booking sites, etc.) are governed by their own privacy policies.</p>
-      <p>You can request access, correction, or deletion of your data by emailing <a href="mailto:hello@mainentry.net" style="color:var(--gold)">hello@mainentry.net</a>.</p>
-      <p><strong>Children's Privacy:</strong> We do not knowingly collect data from children under 13.</p>
+      <h4>4. Third-Party Services &amp; Tools</h4>
+      <p>GO2CUP may use third-party tools for hosting, analytics, email, forms, affiliate tracking, advertising, embedded content, security, and website performance. Third-party tools may process information according to their own privacy policies. When you click affiliate links or interact with third-party providers, any information you provide is governed by <strong>their</strong> privacy policies, not GO2CUP's.</p>
+
+      <h4>5. User-Generated Content</h4>
+      <p>Comments, reviews, submissions, or community content you post publicly may be visible to other users. Do not include confidential, sensitive, private, medical, legal, immigration, financial, or emergency information in public posts or forms.</p>
+
+      <h4>6. Data Security &amp; Retention</h4>
+      <p>We take reasonable technical and organizational measures to protect collected data. However, no website or electronic transmission is 100% secure. We retain data only as long as necessary for the purposes described or as required by law.</p>
+
+      <h4>7. Your Choices &amp; Rights</h4>
+      <ul>
+        <li>You may disable cookies through your browser settings (note: some site features may not function properly)</li>
+        <li>You may contact us to request access to, correction of, or deletion of any personal information we hold about you</li>
+        <li>You may opt out of non-essential analytics or marketing communications</li>
+      </ul>
+
+      <h4>8. International Users</h4>
+      <p><span class="g2c"><span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span></span> is hosted in the United States. By using the site, you acknowledge that your data may be transferred to and processed in the U.S. or other countries where data protection laws may differ from your jurisdiction.</p>
+
+      <h4>9. Children's Privacy</h4>
+      <p>GO2CUP is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us personal data, contact us at <a href="mailto:hello@mainentry.net">hello@mainentry.net</a>.</p>
+
+      <h4>10. Changes to This Privacy Policy</h4>
+      <p>We may update this Privacy Policy at any time. Continued use of GO2CUP after changes are posted constitutes your acceptance of the revised terms. The "Last Updated" date at the top will be revised accordingly.</p>
+
+      <h4>11. Contact for Privacy Questions</h4>
+      <p><strong>MainEntry LLC</strong><br>Email: <a href="mailto:hello@mainentry.net">hello@mainentry.net</a></p>
     </div>
   </section>
 
-  <!-- ── 3. TERMS ── -->
-  <section class="legal-section" id="terms">
-    <div class="section-header">
-      <div class="section-accent accent-red"></div>
-      <h2 class="section-title">TERMS AND CONDITIONS</h2>
-    </div>
-    <p class="last-updated">Last Updated: May 10, 2026</p>
-
+  <!-- ════ 3. TERMS ════ -->
+  <section class="panel" id="terms">
+    <div class="sec-head"><div class="acc acc-red"></div><h2 class="sec-title">TERMS &amp; CONDITIONS</h2></div>
+    <p class="updated">Last Updated: May 10, 2026</p>
     <div class="prose">
+      <div class="box box-red"><span class="g2c"><span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span></span> is an <strong>independent fan-built</strong> travel planning resource for World Cup 2026. It is <strong>not official</strong> and is not affiliated with FIFA or any event organizer.</div>
+
       <h4>1. Overview and Purpose</h4>
-      <div class="tag-box red">
-        <span class="g2c"><span style="color:var(--go-blue)">GO</span><span style="color:var(--two-green)">2</span><span style="color:var(--cup-red)">CUP</span></span> is an <strong>independent fan-built</strong> travel planning resource for World Cup 2026. It is <strong>not official</strong> and is not affiliated with FIFA or any event organizer.
-      </div>
+      <p>By accessing or using this site, you agree to be bound by these Terms and Conditions, our Privacy Policy, and all applicable disclaimers. If you do not agree, please discontinue use immediately.</p>
 
       <h4>2. Acceptance of Terms</h4>
-      <p>By accessing or using this site, you agree to be bound by these Terms and Conditions, our Privacy Policy, and all applicable disclaimers. If you do not agree, please discontinue use immediately.</p>
+      <p><strong>By using GO2CUP, you confirm that you have read, understood, and agree to all policies, disclaimers, notices, and terms contained in this Legal Hub.</strong> You are responsible for reviewing applicable policies before use.</p>
 
       <h4>3. Eligibility</h4>
       <p>Use of this site is intended for users 18 years of age or older. By using the site, you confirm you meet this requirement.</p>
@@ -605,6 +258,7 @@
         <li>Impersonating MainEntry LLC or any staff member</li>
         <li>Attempting to breach site security or disrupt service</li>
         <li>Using the site for unlawful purposes</li>
+        <li>Violating any applicable local, state, national, or international laws</li>
       </ul>
 
       <h4>6. Intellectual Property</h4>
@@ -616,7 +270,7 @@
       <h4>8. Affiliate Links &amp; Third-Party Services</h4>
       <p>This site contains affiliate links. We may receive compensation when you click or purchase through these links at no additional cost to you.</p>
 
-      <h4>9. Disclaimers and No Warranties</h4>
+      <h4>9. Disclaimers &amp; No Warranties</h4>
       <p>This site is provided "as is" without warranties of any kind, express or implied, including accuracy, fitness for a particular purpose, or non-infringement.</p>
 
       <h4>10. Limitation of Liability</h4>
@@ -629,83 +283,363 @@
       <p>We reserve the right to modify these Terms at any time. Continued use after changes constitutes your acceptance of the revised Terms.</p>
 
       <h4>13. Governing Law</h4>
-      <p>These Terms are governed by the laws of the <strong>United States and the State of Missouri</strong>, without regard to conflict of law principles. Any disputes shall be resolved exclusively in the courts located in <strong>Ray County or Clay County</strong>, Missouri.</p>
+      <p>These Terms are governed by the laws of the <strong>United States and the State of Missouri</strong>, without regard to conflict of law principles. Any disputes shall be resolved exclusively in the courts located in <strong>Ray County or Clay County, Missouri</strong>.</p>
 
       <h4>14. Severability &amp; Entire Agreement</h4>
       <p>These policies (Disclaimers, Privacy, Terms) constitute the entire agreement between you and MainEntry LLC. If any provision is found invalid, the remainder continues in full force.</p>
 
       <h4>15. Contact</h4>
-      <p><strong>MainEntry LLC</strong><br>
-        <a href="mailto:hello@mainentry.net" style="color:var(--gold)">hello@mainentry.net</a>
-      </p>
+      <p><strong>MainEntry LLC</strong> · <a href="mailto:hello@mainentry.net">hello@mainentry.net</a></p>
     </div>
   </section>
 
-  <!-- ── 4. ADDITIONAL POLICIES ── -->
-  <section class="legal-section" id="additional">
-    <div class="section-header">
-      <div class="section-accent accent-gold"></div>
-      <h2 class="section-title">ADDITIONAL POLICIES</h2>
-    </div>
-    <p class="last-updated">Last Updated: May 10, 2026</p>
-
+  <!-- ════ 4. COOKIE POLICY ════ -->
+  <section class="panel" id="cookies">
+    <div class="sec-head"><div class="acc acc-gold"></div><h2 class="sec-title">COOKIE POLICY</h2></div>
+    <p class="updated">Last Updated: May 10, 2026</p>
     <div class="prose">
-      <h4>Advertising and Sponsored Content Disclaimer</h4>
-      <p><span class="g2c"><span style="color:var(--go-blue)">GO</span><span style="color:var(--two-green)">2</span><span style="color:var(--cup-red)">CUP</span></span> may show advertisements, sponsored placements, and affiliate links. These are labeled when possible. Sponsored content does <strong>not</strong> imply endorsement or guarantee. We may earn compensation from ads and affiliates.</p>
+      <div class="box box-gold">GO2CUP uses cookies and similar technologies to operate the site, support affiliate tracking, and understand how visitors use our content.</div>
 
-      <h4>Marketing Communications and Electronic Messaging</h4>
-      <p>By contacting us or signing up for updates, you may receive emails, newsletters, or alerts.</p>
+      <h4>What Are Cookies?</h4>
+      <p>Cookies are small text files placed on your device when you visit a website. They allow the site to remember your actions and preferences over time.</p>
+
+      <h4>Types of Cookies We Use</h4>
       <ul>
-        <li>You can unsubscribe at any time</li>
-        <li>We do <strong>not</strong> send unsolicited SMS unless you opt in</li>
-        <li>Message and data rates may apply</li>
+        <li><strong>Strictly Necessary Cookies</strong> — Required for the site to function properly. These cannot be disabled.</li>
+        <li><strong>Analytics Cookies</strong> — Help us understand how visitors interact with the site (e.g., Google Analytics, similar tools). Used to improve content and user experience.</li>
+        <li><strong>Affiliate &amp; Tracking Cookies</strong> — Used to track referrals through affiliate links (e.g., Travelpayouts, Klook, Kiwi, GetTransfer, AirHelp, Tiqets). These allow us to earn commission when you book or purchase through our links.</li>
+        <li><strong>Advertising &amp; Retargeting Pixels</strong> — May include third-party advertising pixels (e.g., Meta Pixel, Google tags) for audience insights and retargeting. These are disclosed where applicable.</li>
+        <li><strong>Functional Cookies</strong> — Remember preferences like language or region.</li>
       </ul>
 
-      <h4>Cookies and Tracking Technologies</h4>
-      <p>We use cookies for site functionality, analytics, and affiliate tracking. You can manage cookies in your browser settings.</p>
+      <h4>Consent &amp; International Users</h4>
+      <div class="box box-teal">Where required by applicable law (GDPR, ePrivacy, UK PECR, CCPA, or similar), <strong>non-essential cookies, analytics tools, advertising pixels, affiliate tracking scripts, retargeting tools, embedded third-party tools, local storage, and similar technologies should not run until valid consent is obtained.</strong> If you refuse or withdraw consent, that choice will be respected where required by law.</div>
 
-      <h4>Force Majeure</h4>
-      <p>We are not liable for events beyond our control (natural disasters, pandemics, strikes, etc.).</p>
+      <h4>How to Manage Cookies</h4>
+      <ul>
+        <li>You can manage or disable cookies through your browser settings at any time</li>
+        <li>Disabling cookies may affect site functionality</li>
+        <li>For opt-out of specific analytics tracking, visit the Google Analytics opt-out page or the tool's official opt-out mechanism</li>
+        <li>For California residents: you have the right to opt out of the sale or sharing of personal information under CCPA</li>
+      </ul>
 
-      <h4>No Professional Advice</h4>
-      <p>Nothing on this site is financial, legal, medical, or immigration advice. Consult qualified professionals.</p>
+      <h4>Third-Party Cookies</h4>
+      <p>Third-party services embedded in the site (affiliate networks, analytics providers, embedded content, advertising platforms) may also set their own cookies. We do not control these cookies. Please review the privacy policies of those third parties.</p>
 
-      <h4>International Users</h4>
-      <p>Users outside the U.S. access the site at their own risk and must comply with local laws.</p>
+      <h4>Changes to This Cookie Policy</h4>
+      <p>We may update this Cookie Policy at any time. Check the "Last Updated" date for the most current version.</p>
 
-      <div class="tag-box gold" style="margin-top:36px; font-family:'Crimson Pro',serif; font-size:1rem; line-height:1.7;">
-        <strong>By using <span class="g2c"><span style="color:var(--go-blue)">GO</span><span style="color:var(--two-green)">2</span><span style="color:var(--cup-red)">CUP</span></span>, you confirm that you have read, understood, and agree to all sections above.</strong><br>
-        <span style="color:var(--muted); font-size:.88rem;">This Legal Hub is provided for general informational purposes and is not legal advice. For specific legal questions, consult an attorney in your jurisdiction.</span>
+      <h4>Contact</h4>
+      <p><strong>MainEntry LLC</strong> · <a href="mailto:hello@mainentry.net">hello@mainentry.net</a></p>
+    </div>
+  </section>
+
+  <!-- ════ 5. AFFILIATE DISCLOSURE ════ -->
+  <section class="panel" id="affiliate">
+    <div class="sec-head"><div class="acc acc-teal"></div><h2 class="sec-title">AFFILIATE DISCLOSURE</h2></div>
+    <p class="updated">Last Updated: May 10, 2026</p>
+    <div class="prose">
+      <div class="box box-teal">In accordance with the <strong>FTC Endorsement Guides (16 C.F.R. Part 255)</strong>, GO2CUP discloses all material connections between GO2CUP and any product, service, booking provider, or brand recommended or linked on this site.</div>
+
+      <h4>What Is an Affiliate Link?</h4>
+      <p>An affiliate link is a tracked URL that allows GO2CUP to earn a small commission when you click a link and complete a qualifying purchase or booking — at <strong>no extra cost to you</strong>. The price you pay is the same whether or not you use our link.</p>
+
+      <h4>Our Affiliate Partners</h4>
+      <ul>
+        <li>Klook — experiences, tours, and activities</li>
+        <li>Tiqets — tickets and experiences</li>
+        <li>Kiwi.com — flights and travel</li>
+        <li>GetTransfer — private transfers and transportation</li>
+        <li>AirHelp — flight compensation assistance</li>
+        <li>Villiers Jets &amp; similar — private aviation</li>
+        <li>Booking.com and Expedia — hotels and lodging (pending full launch)</li>
+        <li>Other travel, services, and product partners as added</li>
+      </ul>
+
+      <h4>Disclosure Placement</h4>
+      <p>Affiliate disclosures appear <strong>near monetized links</strong> when practical — not only in this Legal Hub or in the footer. This follows FTC guidance that disclosures be clear, conspicuous, and placed close to the content they relate to.</p>
+
+      <h4>Editorial Independence</h4>
+      <p>Affiliate relationships do not influence our editorial content or recommendations. We recommend products and services we believe are useful to World Cup 2026 fans and travelers.</p>
+
+      <h4>No Guaranteed Outcomes</h4>
+      <p>Commission-earning links do not imply endorsement, sponsorship, or guarantee of the third-party product or service. GO2CUP is not responsible for the performance, quality, pricing, availability, refund policies, or actions of any affiliate partner.</p>
+
+      <h4>Contact for Affiliate Questions</h4>
+      <p><strong>MainEntry LLC</strong> · <a href="mailto:hello@mainentry.net">hello@mainentry.net</a></p>
+    </div>
+  </section>
+
+  <!-- ════ 6. SPONSORED CONTENT ════ -->
+  <section class="panel" id="sponsored">
+    <div class="sec-head"><div class="acc acc-purple"></div><h2 class="sec-title">SPONSORED CONTENT DISCLOSURE</h2></div>
+    <p class="updated">Last Updated: May 10, 2026</p>
+    <div class="prose">
+      <div class="box box-gold">GO2CUP may publish sponsored content, paid placements, and advertising. All such content is disclosed in accordance with FTC guidelines.</div>
+
+      <h4>What Is Sponsored Content?</h4>
+      <p>Sponsored content is any content — articles, posts, banners, recommendations, reviews, or placements — for which MainEntry LLC receives compensation from a brand, advertiser, or partner.</p>
+
+      <h4>How We Label Sponsored Content</h4>
+      <ul>
+        <li>Sponsored content is labeled with terms such as "Sponsored," "Advertisement," "Partner," "Paid Partnership," or similar clear language</li>
+        <li>Labels are placed at or near the beginning of the content — not buried in a footer or legal page</li>
+        <li>Sponsored content does not imply endorsement, guarantee, or official affiliation with any brand or event</li>
+      </ul>
+
+      <h4>Advertising Placements</h4>
+      <p><span class="g2c"><span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span></span> may show advertisements, sponsored placements, and affiliate links. These are labeled when possible. Sponsored content does <strong>not</strong> imply endorsement or guarantee. We may earn compensation from ads and affiliates.</p>
+
+      <h4>Editorial Independence</h4>
+      <p>Paid relationships do not dictate editorial coverage. GO2CUP retains the right to publish independent content alongside or separately from any sponsorship arrangement.</p>
+
+      <h4>Third-Party Advertising</h4>
+      <p>Third-party advertising networks may serve ads on GO2CUP pages. GO2CUP does not control the content of third-party ads. Third-party advertisers may use cookies, pixels, and tracking technologies governed by their own privacy policies.</p>
+
+      <h4>Contact for Sponsorship Inquiries</h4>
+      <p><strong>MainEntry LLC</strong> · <a href="mailto:hello@mainentry.net">hello@mainentry.net</a></p>
+    </div>
+  </section>
+
+  <!-- ════ 7. DMCA ════ -->
+  <section class="panel" id="dmca">
+    <div class="sec-head"><div class="acc acc-orange"></div><h2 class="sec-title">DMCA &amp; COPYRIGHT POLICY</h2></div>
+    <p class="updated">Last Updated: May 10, 2026</p>
+    <div class="prose">
+      <div class="box box-gold">MainEntry LLC respects intellectual property rights and complies with the <strong>Digital Millennium Copyright Act (17 U.S.C. § 512)</strong>. If you believe content on GO2CUP infringes your copyright, please follow the process below.</div>
+
+      <h4>Original Content Ownership</h4>
+      <p>All original content published on GO2CUP — including articles, city guides, text, graphics, images, code, and AI-assisted content created under the direction of MainEntry LLC — is © 2026 MainEntry LLC. All Rights Reserved.</p>
+
+      <h4>Third-Party Content &amp; Fair Use</h4>
+      <p>Where GO2CUP references third-party content (news, media, statistics, schedules, images), we apply commentary, criticism, or analysis consistent with fair use principles under 17 U.S.C. § 107. We use source names, short factual summaries, links to originals, and original commentary. We do not reproduce full third-party articles.</p>
+
+      <h4>DMCA Takedown — How to Submit a Notice</h4>
+      <p>If you are a copyright owner or authorized representative and believe content on GO2CUP infringes your work, send a written notice to:</p>
+      <div class="box box-blue">
+        <strong>DMCA Agent — MainEntry LLC</strong><br>
+        Email: <a href="mailto:hello@mainentry.net">hello@mainentry.net</a><br>
+        Subject line: DMCA Takedown Notice<br><br>
+        Your notice must include:<br>
+        (1) Your name, address, telephone, and email address<br>
+        (2) Identification of the copyrighted work claimed to be infringed<br>
+        (3) Identification of the material claimed to be infringing, with URL(s)<br>
+        (4) A statement of good faith belief that the use is not authorized<br>
+        (5) A statement under penalty of perjury that the information is accurate and you are authorized to act<br>
+        (6) Your physical or electronic signature
       </div>
+
+      <h4>Counter-Notice</h4>
+      <p>If you believe content was removed in error, you may submit a counter-notice to the same contact above. Counter-notices must meet the requirements of 17 U.S.C. § 512(g)(3).</p>
+
+      <h4>Repeat Infringers</h4>
+      <p>MainEntry LLC will terminate the accounts or access of repeat copyright infringers in appropriate circumstances.</p>
+
+      <h4>Trademark Notice</h4>
+      <p>FIFA, World Cup, NFL, Formula One, Olympics, and related marks are the property of their respective owners. GO2CUP does not claim any ownership of or affiliation with these marks. Use of such names on this site is for descriptive and informational purposes only.</p>
+    </div>
+  </section>
+
+  <!-- ════ 8. COMMUNITY RULES ════ -->
+  <section class="panel" id="community">
+    <div class="sec-head"><div class="acc acc-green"></div><h2 class="sec-title">COMMUNITY RULES</h2></div>
+    <p class="updated">Last Updated: May 10, 2026</p>
+    <div class="prose">
+      <div class="box box-green">GO2CUP's CaaS community — fans helping fans across three host countries — is built on respect, inclusion, and shared love of the beautiful game. These rules apply to all community interactions, forms, comments, and submissions.</div>
+
+      <h4>Be Respectful</h4>
+      <ul>
+        <li>Treat all members with respect regardless of nationality, language, culture, or team loyalty</li>
+        <li>No hate speech, discrimination, harassment, or bullying of any kind</li>
+        <li>Constructive debate is welcome — personal attacks are not</li>
+      </ul>
+
+      <h4>Stay On Topic</h4>
+      <ul>
+        <li>Posts and comments should relate to World Cup 2026, travel, soccer, sports, or topics relevant to the community</li>
+        <li>Off-topic spam or repeated irrelevant posts will be removed</li>
+      </ul>
+
+      <h4>No Spam or Self-Promotion Without Permission</h4>
+      <ul>
+        <li>Do not post unsolicited affiliate links, commercial promotions, or advertising</li>
+        <li>Contact hello@mainentry.net if you are interested in partnership or sponsorship opportunities</li>
+      </ul>
+
+      <h4>Privacy &amp; Personal Information</h4>
+      <ul>
+        <li>Do not share personal information (yours or others') such as home addresses, phone numbers, passport details, or financial information in public community spaces</li>
+        <li>Do not post content that violates others' privacy</li>
+      </ul>
+
+      <h4>Legal &amp; Safe Content Only</h4>
+      <ul>
+        <li>No illegal content, ticket scalping schemes, scam promotions, or fraudulent offers</li>
+        <li>No content that violates copyright, trademark, or intellectual property rights</li>
+        <li>No misinformation about safety, health, emergency services, or official event logistics</li>
+      </ul>
+
+      <h4>Enforcement</h4>
+      <p>MainEntry LLC reserves the right to remove any content, suspend access, or ban users who violate these Community Rules at any time without notice.</p>
+
+      <h4>Contact</h4>
+      <p>Report violations or concerns to <a href="mailto:hello@mainentry.net">hello@mainentry.net</a>.</p>
+    </div>
+  </section>
+
+  <!-- ════ 9. USER CONTENT POLICY ════ -->
+  <section class="panel" id="usercontent">
+    <div class="sec-head"><div class="acc acc-pink"></div><h2 class="sec-title">USER CONTENT POLICY</h2></div>
+    <p class="updated">Last Updated: May 10, 2026</p>
+    <div class="prose">
+      <div class="box box-gold">This policy governs any content you submit to GO2CUP — including comments, reviews, tips, questions, form submissions, messages, photos, videos, or other user-generated material.</div>
+
+      <h4>License You Grant Us</h4>
+      <p>By submitting content to GO2CUP, you grant MainEntry LLC a <strong>worldwide, royalty-free, non-exclusive, perpetual license</strong> to use, display, reproduce, modify, distribute, and create derivative works from your content in connection with operating and promoting GO2CUP.</p>
+
+      <h4>Your Representations</h4>
+      <p>By submitting content, you represent that:</p>
+      <ul>
+        <li>You own or have the right to submit the content</li>
+        <li>The content does not infringe the intellectual property, privacy, or other rights of any third party</li>
+        <li>The content is accurate and not misleading</li>
+        <li>The content complies with all applicable laws</li>
+      </ul>
+
+      <h4>Prohibited Content</h4>
+      <ul>
+        <li>Defamatory, harassing, threatening, or abusive content</li>
+        <li>Sexually explicit or adult content</li>
+        <li>Content promoting illegal activity</li>
+        <li>Personal information of others without their consent</li>
+        <li>Commercial spam or unauthorized advertising</li>
+        <li>Content impersonating MainEntry LLC, GO2CUP, or any person</li>
+        <li>Confidential, sensitive, private, medical, legal, immigration, financial, or emergency information in public posts</li>
+      </ul>
+
+      <h4>Moderation &amp; Removal</h4>
+      <p>MainEntry LLC reserves the right — but not the obligation — to review, moderate, edit, or remove any user-submitted content at any time for any reason, including violation of this policy, Community Rules, or applicable law.</p>
+
+      <h4>No Compensation</h4>
+      <p>You are not entitled to compensation for content you submit to GO2CUP unless a separate written agreement exists.</p>
+
+      <h4>Contact</h4>
+      <p>Questions or reports: <a href="mailto:hello@mainentry.net">hello@mainentry.net</a></p>
+    </div>
+  </section>
+
+  <!-- ════ 10. ACCESSIBILITY ════ -->
+  <section class="panel" id="accessibility">
+    <div class="sec-head"><div class="acc acc-teal"></div><h2 class="sec-title">ACCESSIBILITY STATEMENT</h2></div>
+    <p class="updated">Last Updated: May 10, 2026</p>
+    <div class="prose">
+      <div class="box box-teal">MainEntry LLC is committed to making GO2CUP accessible to as many people as possible, including those with disabilities. We strive to meet or exceed applicable accessibility standards.</div>
+
+      <h4>Our Commitment</h4>
+      <p>We aim to follow the <strong>Web Content Accessibility Guidelines (WCAG) 2.1</strong> published by the W3C Web Accessibility Initiative (WAI) at Level AA. These guidelines help make web content more accessible to people with disabilities, including visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities.</p>
+
+      <h4>What We're Doing</h4>
+      <ul>
+        <li>Using semantic HTML structure for screen reader compatibility</li>
+        <li>Providing meaningful alt text for images where applicable</li>
+        <li>Maintaining sufficient color contrast across page elements</li>
+        <li>Designing pages to be navigable via keyboard</li>
+        <li>Using legible, appropriately sized typography</li>
+        <li>Avoiding flashing content that may trigger seizures</li>
+      </ul>
+
+      <h4>Known Limitations</h4>
+      <p>While we strive for full WCAG 2.1 AA compliance, some third-party content, embedded tools, or legacy pages may not yet meet all standards. We are working to improve accessibility across all GO2CUP pages on an ongoing basis.</p>
+
+      <h4>Accessibility for World Cup Fans</h4>
+      <p>We recognize that World Cup fans include people of all abilities. We are committed to providing accessible travel, venue, and event information for fans with disabilities where possible.</p>
+
+      <h4>Feedback &amp; Contact</h4>
+      <p>If you experience accessibility barriers on GO2CUP, please contact us. We take all accessibility feedback seriously and will work to address issues.</p>
+      <p><strong>MainEntry LLC</strong> · <a href="mailto:hello@mainentry.net">hello@mainentry.net</a></p>
+
+      <h4>Reference Standards</h4>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener">W3C WCAG 2.1 Overview</a></li>
+        <li><a href="https://www.ada.gov/resources/web-guidance/" target="_blank" rel="noopener">ADA.gov Web Guidance</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ════ 11. CONTACT POLICY ════ -->
+  <section class="panel" id="contact">
+    <div class="sec-head"><div class="acc acc-blue"></div><h2 class="sec-title">CONTACT &amp; USER CONTACT POLICY</h2></div>
+    <p class="updated">Last Updated: May 10, 2026</p>
+    <div class="prose">
+      <div class="box box-blue">This policy explains how you may contact MainEntry LLC / GO2CUP, how we handle your contact information, and what you can expect when you reach out to us.</div>
+
+      <h4>How to Contact Us</h4>
+      <div class="box box-gold" style="margin-bottom:16px">
+        <strong>MainEntry LLC</strong><br>
+        Email: <a href="mailto:hello@mainentry.net">hello@mainentry.net</a><br>
+        Contact &amp; About: <a href="https://mainentry.net/maria-myers" target="_blank" rel="noopener">mainentry.net/maria-myers</a>
+      </div>
+
+      <h4>What Happens When You Contact Us</h4>
+      <p>When you email us or submit a contact form, we may collect your name, email address, phone number if provided, company or brand name, message content, language preference, inquiry topic, IP address, and related usage data. We use this information only to respond to your inquiry and operate our business.</p>
+
+      <h4>Response Times</h4>
+      <p>We aim to respond to all inquiries within 3–5 business days. Response times may vary during peak periods around World Cup 2026 events.</p>
+
+      <h4>Email Marketing &amp; Updates</h4>
+      <p>By contacting us or signing up for updates, you may receive emails, newsletters, or alerts from GO2CUP / MainEntry LLC.</p>
+      <ul>
+        <li>You can unsubscribe at any time by clicking the unsubscribe link in any email</li>
+        <li>We do <strong>not</strong> send unsolicited SMS unless you opt in</li>
+        <li>Message and data rates may apply for SMS</li>
+        <li>We comply with the <strong>CAN-SPAM Act</strong> and applicable email marketing regulations</li>
+      </ul>
+
+      <h4>No Emergency Communications</h4>
+      <p>GO2CUP is not an emergency service. Do not use GO2CUP contact channels for safety, medical, legal, or emergency situations. Contact official emergency services directly.</p>
+
+      <h4>Privacy of Your Contact Information</h4>
+      <p>Contact information you provide is handled per our Privacy Policy. We do <strong>not</strong> sell your contact information to third parties.</p>
+
+      <h4>Accessibility of Contact</h4>
+      <p>We strive to be reachable in English, Spanish, and Portuguese. Please indicate your preferred language when contacting us and we will do our best to respond accordingly.</p>
+
+      <h4>Sponsorship, Partnership &amp; Press</h4>
+      <p>For sponsorship inquiries, partnership opportunities, affiliate partnerships, media requests, or press inquiries, contact <a href="mailto:hello@mainentry.net">hello@mainentry.net</a> with the subject line indicating your inquiry type.</p>
+
+      <p style="margin-top:28px;font-size:.8rem;color:var(--muted)">
+        <strong style="color:var(--white)">Business Name:</strong> MainEntry LLC &nbsp;|&nbsp;
+        <strong style="color:var(--white)">Business Email:</strong> hello@mainentry.net &nbsp;|&nbsp;
+        <strong style="color:var(--white)">Last Updated:</strong> May 10, 2026
+      </p>
     </div>
   </section>
 
 </main>
 
-<!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+<!-- FOOTER -->
 <footer>
-  <div class="footer-logo">
-    <span style="color:var(--go-blue)">GO</span><span style="color:var(--two-green)">2</span><span style="color:var(--cup-red)">CUP</span>
-  </div>
-  <p class="footer-tagline">Fan-Built. Fan-Powered. World Cup 2026.</p>
-
-  <div>
-    <a class="footer-contact" href="https://mainentry.net/maria-myers" target="_blank" rel="noopener">
-      ✦ &nbsp; CONTACT &amp; ABOUT MARIA &nbsp; ✦
-    </a>
-  </div>
-
+  <div class="f-logo"><span style="color:var(--go-blue)">GO</span><span style="color:var(--two-green)">2</span><span style="color:var(--cup-red)">CUP</span></div>
+  <p class="f-tag">Fan-Built · Fan-Powered · World Cup 2026</p>
+  <div><a class="f-btn" href="https://mainentry.net/maria-myers" target="_blank" rel="noopener">✦ &nbsp; CONTACT &amp; ABOUT MARIA &nbsp; ✦</a></div>
   <div class="divider"></div>
-
-  <div class="footer-meta">
-    <strong>Business Name:</strong> MainEntry LLC &nbsp;|&nbsp;
-    <strong>Business Email:</strong> <a href="mailto:hello@mainentry.net">hello@mainentry.net</a><br>
-    <strong>Last Updated:</strong> May 10, 2026 &nbsp;|&nbsp;
-    <a href="https://mainentry.net/maria-myers" target="_blank" rel="noopener">mainentry.net/maria-myers</a><br><br>
-    © 2026 <strong>MainEntry LLC</strong>. All Rights Reserved.<br>
-    <span style="font-size:.72rem; opacity:.6;">GO2CUP is not affiliated with FIFA, the World Cup, or any official organizer.</span>
+  <div class="f-meta">
+    <strong>MainEntry LLC</strong> &nbsp;·&nbsp; <a href="mailto:hello@mainentry.net">hello@mainentry.net</a> &nbsp;·&nbsp; <a href="https://mainentry.net/maria-myers" target="_blank" rel="noopener">mainentry.net/maria-myers</a><br>
+    Last Updated: May 10, 2026 &nbsp;·&nbsp; © 2026 <strong>MainEntry LLC</strong>. All Rights Reserved.
   </div>
+  <p class="f-disclaimer">
+    GO2CUP is operated by MainEntry LLC. GO2CUP is independent and is not affiliated with, sponsored by, endorsed by, licensed by, approved by, partnered with, or officially connected to FIFA, FIFA World Cup 2026, NFL, NBA, UFC, Formula One, the Olympics, host cities, host countries, venues, stadiums, teams, leagues, governments, sponsors, ticketing providers, hotels, airlines, transportation providers, or official organizing bodies. Some links may be affiliate links. Always verify important details with official sources.
+  </p>
 </footer>
 
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({top: document.querySelector('.panels').offsetTop - 20, behavior:'smooth'});
+}
+</script>
 </body>
 </html>
