@@ -667,48 +667,20 @@ footer {
   </div>
 </section>
 
-<!-- FORM SECTION -->
+<!-- CTA SECTION -->
 <section class="form-section" id="get-guide">
   <div class="form-inner">
-    <div class="form-eyebrow">🎁 Free · Instant Download · No Spam</div>
+    <div class="form-eyebrow">🎁 Free · Instant Access · No Spam</div>
     <h2 class="form-title">GET YOUR FREE<br><span class="gold">HOPPER GUIDE</span><br>NOW.</h2>
-    <p class="form-body">Drop your name and email below and get immediate access to the GO2CUP Fan Country Hopper Guide — free, instant, and built for World Cup 2026 travelers.</p>
-
-    <div class="form-card" id="form-card">
-      <form id="hopper-form" novalidate>
-        <div class="form-group">
-          <label for="fan-name">Your Name</label>
-          <input type="text" id="fan-name" name="name" placeholder="First name or full name" autocomplete="given-name" required>
-        </div>
-        <div class="form-group">
-          <label for="fan-email">Your Email Address</label>
-          <input type="email" id="fan-email" name="email" placeholder="you@example.com" autocomplete="email" required>
-        </div>
-        <button type="submit" class="btn-submit" id="submit-btn">
-          <span id="btn-text">GET MY FREE GUIDE →</span>
-        </button>
-        <div class="form-error" id="form-error"></div>
-      </form>
-      <p class="form-micro">No spam. No sales pitches. Just GO2CUP World Cup 2026 fan intel.<br>Unsubscribe anytime. Your info stays private.</p>
-    </div>
-  </div>
-</section>
-
-<!-- SUCCESS SECTION -->
-<section class="success-section" id="success-section">
-  <div class="success-inner">
-    <div class="success-check">✓</div>
-    <h2 class="success-title">YOU'RE IN.<br><span class="gold">DOWNLOAD BELOW.</span></h2>
-    <p class="success-body">
-      Your GO2CUP Fan Country Hopper Guide is ready. Click the button below to download your PDF instantly. Check your inbox too — we'll send you the link there as well.
-    </p>
-    <a href="GO2CUP%20Fan%20Country%20Hopper%20Guide.pdf" class="btn-download" download="GO2CUP Fan Country Hopper Guide.pdf">
-      ⬇ Download Your Free Guide
+    <p class="form-body">Click below to get immediate access to the GO2CUP Fan Country Hopper Guide — free, instant, and built for World Cup 2026 travelers.</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJIRLo6dBkPh57cKbVFnU1lz7dgutqzAHO2WsXiT2DDOp43g/viewform"
+       class="btn-submit"
+       target="_blank"
+       rel="noopener"
+       style="text-decoration:none; display:inline-flex; margin: 0 auto;">
+      GET MY FREE GUIDE →
     </a>
-    <p class="success-note">
-      PDF · Instant download · Free<br>
-      GO2CUP Fan Country Hopper Guide · World Cup 2026
-    </p>
+    <p class="form-micro" style="margin-top:1.5rem;">No spam. No sales pitches. Just GO2CUP World Cup 2026 fan intel.</p>
   </div>
 </section>
 
@@ -727,69 +699,5 @@ footer {
   <div class="footer-copy">GO2CUP · Independent World Cup 2026 Fan Hub</div>
 </footer>
 
-<script>
-(function () {
-  const API_KEY = 'kj3g6jzyw6kqxstaspm8mhbjgr7ukzgd';
-  const LIST_ID = '485866601';
-
-  const form       = document.getElementById('hopper-form');
-  const submitBtn  = document.getElementById('submit-btn');
-  const btnText    = document.getElementById('btn-text');
-  const errorBox   = document.getElementById('form-error');
-  const formSection   = document.getElementById('get-guide');
-  const successSection = document.getElementById('success-section');
-
-  function showError(msg) {
-    errorBox.textContent = msg;
-    errorBox.style.display = 'block';
-    submitBtn.disabled = false;
-    btnText.textContent = 'GET MY FREE GUIDE →';
-  }
-
-  form.addEventListener('submit', async function (e) {
-    e.preventDefault();
-    errorBox.style.display = 'none';
-
-    const name  = document.getElementById('fan-name').value.trim();
-    const email = document.getElementById('fan-email').value.trim();
-
-    if (!name) { showError('Please enter your name.'); return; }
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      showError('Please enter a valid email address.');
-      return;
-    }
-
-    submitBtn.disabled = true;
-    btnText.textContent = 'SENDING…';
-
-    try {
-      const res = await fetch('https://api.getresponse.com/v3/contacts', {
-        method: 'POST',
-        headers: {
-          'X-Auth-Token': 'api-key ' + API_KEY,
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          name: name,
-          email: email,
-          campaign: { campaignId: LIST_ID }
-        })
-      });
-
-      if (res.ok || res.status === 202 || res.status === 409) {
-        formSection.style.display = 'none';
-        successSection.style.display = 'block';
-        successSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      } else {
-        const data = await res.json().catch(() => ({}));
-        const msg = (data && data.message) ? data.message : 'Something went wrong. Please try again.';
-        showError(msg);
-      }
-    } catch (err) {
-      showError('Network error — please check your connection and try again.');
-    }
-  });
-})();
-</script>
 </body>
 </html>
