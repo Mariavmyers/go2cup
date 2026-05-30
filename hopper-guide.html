@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Your Country Hopper Guide | GO2CUP World Cup 2026</title>
+<meta name="description" content="Free World Cup 2026 fan travel guide — host cities, cross-border routes, stadium zones, safety intel, and more. Download instantly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --dark:    #0a3d2e;
+  --darker:  #071f18;
+  --pitch:   #00a651;
+  --pitch-dark: #007a3d;
+  --gold:    #ffd700;
+  --gold-warm: #ffb300;
+  --fire:    #f5333f;
+  --white:   #ffffff;
+  --off-white: #f0faf4;
+  --muted:   rgba(255,255,255,0.55);
+  --border:  rgba(255,255,255,0.12);
+  --card-bg: rgba(255,255,255,0.05);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Barlow', sans-serif;
+  background: var(--dark);
+  color: var(--white);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* ── TOP BAR ── */
+.topbar {
+  background: var(--darker);
+  border-bottom: 2px solid var(--pitch);
+  padding: 0 clamp(1rem, 5vw, 4rem);
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-text {
+  font-family: 'Anton', sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+.topbar-tag {
+  font-family: 'Space Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--pitch);
+  border: 1px solid var(--pitch);
+  padding: 4px 10px;
+}
+
+/* ── HERO ── */
+.hero {
+  background: var(--darker);
+  position: relative;
+  overflow: hidden;
+  padding: clamp(4rem, 9vw, 8rem) clamp(1.5rem, 6vw, 5rem) clamp(3rem, 6vw, 5rem);
+  text-align: center;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,166,81,0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,166,81,0.07) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+}
+.hero-accent-bar {
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--pitch), var(--gold), var(--fire));
+  position: absolute;
+  top: 0; left: 0;
+}
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 820px;
+  margin: 0 auto;
+}
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--pitch);
+  margin-bottom: 1.5rem;
+}
+.eyebrow::before, .eyebrow::after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--pitch);
+}
+.hero h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(2.8rem, 9vw, 7rem);
+  line-height: 0.92;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  margin-bottom: 0.6rem;
+}
+.hero h1 .gold { color: var(--gold); }
+.hero h1 .green { color: var(--pitch); }
+.subheadline {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(1.1rem, 3vw, 1.6rem);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+.hero-copy {
+  font-size: 16px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.8;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+}
+.hero-badges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 2.5rem;
+}
+.badge {
+  font-family: 'Space Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border: 1px solid rgba(255,215,0,0.4);
+  color: var(--gold);
+  background: rgba(255,215,0,0.08);
+}
+.scroll-cta {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+/* ── WHAT'S INSIDE ── */
+.inside-section {
+  padding: clamp(4rem, 7vw, 7rem) clamp(1.5rem, 6vw, 5rem);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.section-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--pitch);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background: var(--pitch);
+  opacity: 0.3;
+  max-width: 80px;
+}
+.inside-title {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+.inside-title .gold { color: var(--gold); }
+.inside-subtitle {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 580px;
+  margin-bottom: 3rem;
+  font-weight: 300;
+}
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+}
+.item-card {
+  background: var(--card-bg);
+  padding: 1.75rem 2rem;
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  transition: background 0.2s;
+}
+.item-card:hover { background: rgba(0,166,81,0.1); }
+.item-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--pitch-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  border: 1px solid rgba(0,166,81,0.3);
+}
+.item-content {}
+.item-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 5px;
+}
+.item-desc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* ── SOCIAL PROOF STRIP ── */
+.proof-strip {
+  background: var(--pitch-dark);
+  border-top: 1px solid rgba(0,166,81,0.3);
+  border-bottom: 1px solid rgba(0,166,81,0.3);
+  padding: 1.5rem clamp(1.5rem, 6vw, 5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  flex-wrap: wrap;
+}
+.proof-item {
+  text-align: center;
+}
+.proof-num {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  color: var(--gold);
+  line-height: 1;
+}
+.proof-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 8px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  margin-top: 4px;
+}
+
+/* ── FORM SECTION ── */
+.form-section {
+  padding: clamp(4rem, 7vw, 7rem) clamp(1.5rem, 6vw, 5rem);
+  background: var(--darker);
+  position: relative;
+  overflow: hidden;
+}
+.form-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,166,81,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,166,81,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+.form-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
+}
+.form-eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+.form-title {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  line-height: 0.95;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+.form-title .gold { color: var(--gold); }
+.form-body {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+.form-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--gold);
+  padding: 2.5rem 2rem;
+}
+.form-group {
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+.form-group label {
+  display: block;
+  font-family: 'Space Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 0.5rem;
+}
+.form-group input {
+  width: 100%;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: var(--white);
+  font-family: 'Barlow', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 14px 16px;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+.form-group input::placeholder { color: rgba(255,255,255,0.25); }
+.form-group input:focus {
+  border-color: var(--gold);
+  background: rgba(255,215,0,0.05);
+}
+.btn-submit {
+  width: 100%;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: var(--gold);
+  color: #000;
+  padding: 18px 32px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.btn-submit:hover { background: var(--gold-warm); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255,215,0,0.25); }
+.btn-submit:active { transform: translateY(0); }
+.btn-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; box-shadow: none; }
+.form-micro {
+  font-family: 'Space Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.25);
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+.form-error {
+  background: rgba(245,51,63,0.12);
+  border: 1px solid rgba(245,51,63,0.4);
+  color: #ff8087;
+  font-size: 13px;
+  padding: 10px 14px;
+  margin-top: 1rem;
+  display: none;
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* ── SUCCESS SECTION ── */
+.success-section {
+  display: none;
+  padding: clamp(4rem, 7vw, 7rem) clamp(1.5rem, 6vw, 5rem);
+  background: var(--darker);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.success-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,166,81,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,166,81,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+.success-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 560px;
+  margin: 0 auto;
+}
+.success-check {
+  width: 72px;
+  height: 72px;
+  background: var(--pitch);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto 1.5rem;
+}
+.success-title {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  line-height: 0.95;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+.success-title .gold { color: var(--gold); }
+.success-body {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: var(--gold);
+  color: #000;
+  padding: 20px 40px;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: none;
+}
+.btn-download:hover { background: var(--gold-warm); transform: translateY(-3px); box-shadow: 0 10px 30px rgba(255,215,0,0.3); }
+.success-note {
+  font-family: 'Space Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.25);
+  margin-top: 1.5rem;
+  line-height: 1.7;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: #040f0b;
+  border-top: 3px solid var(--pitch-dark);
+  padding: 2rem clamp(1.5rem, 6vw, 5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-logo {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+.footer-copy {
+  font-family: 'Space Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.2);
+  text-transform: uppercase;
+}
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.footer-links a {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--pitch); }
+
+/* ── MOBILE ── */
+@media (max-width: 600px) {
+  .items-grid { grid-template-columns: 1fr; }
+  .proof-strip { gap: 1.5rem; }
+  .form-card { padding: 2rem 1.25rem; }
+  .topbar-tag { display: none; }
+  footer { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 480px) {
+  .hero h1 { font-size: 2.6rem; }
+  .btn-download { font-size: 15px; padding: 16px 24px; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <a href="index.html" class="footer-logo">
+    <span style="color:#0057b8">GO</span><span style="color:#00a651">2</span><span style="color:#f5333f">CUP</span>
+  </a>
+  <div class="topbar-tag">⚽ World Cup 2026 Fan Hub</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-accent-bar"></div>
+  <div class="hero-inner">
+    <div class="eyebrow">Free Download · Limited Time</div>
+    <h1>GET YOUR<br><span class="gold">COUNTRY</span><br><span class="green">HOPPER GUIDE</span></h1>
+    <div class="subheadline">World Cup 2026 · USA · México · Canadá · 16 Host Cities</div>
+    <p class="hero-copy">
+      The essential travel intelligence guide for fans crossing borders, chasing matches, and making the most of the biggest World Cup in history. Built for real fans. No fluff. Instant access.
+    </p>
+    <div class="hero-badges">
+      <span class="badge">16 Host Cities</span>
+      <span class="badge">3 Countries</span>
+      <span class="badge">104 Matches</span>
+      <span class="badge">Free Download</span>
+      <span class="badge">PDF · Instant Access</span>
+    </div>
+    <div class="scroll-cta">Scroll down to get your free guide ↓</div>
+  </div>
+</section>
+
+<!-- PROOF STRIP -->
+<div class="proof-strip">
+  <div class="proof-item">
+    <div class="proof-num">48</div>
+    <div class="proof-label">Nations Competing</div>
+  </div>
+  <div class="proof-item">
+    <div class="proof-num">16</div>
+    <div class="proof-label">Host Cities Covered</div>
+  </div>
+  <div class="proof-item">
+    <div class="proof-num">3</div>
+    <div class="proof-label">Countries · One Guide</div>
+  </div>
+  <div class="proof-item">
+    <div class="proof-num">Free</div>
+    <div class="proof-label">Zero Cost · PDF</div>
+  </div>
+</div>
+
+<!-- WHAT'S INSIDE -->
+<section class="inside-section">
+  <div class="section-label">What's Inside The Guide</div>
+  <h2 class="inside-title">EVERYTHING A FAN<br>NEEDS TO <span class="gold">MOVE SMART.</span></h2>
+  <p class="inside-subtitle">Packed with city-by-city intelligence, cross-border travel strategy, safety essentials, and match-week planning tools for every type of fan.</p>
+  <div class="items-grid">
+    <div class="item-card">
+      <div class="item-icon">🌆</div>
+      <div class="item-content">
+        <div class="item-title">All 16 Host City Snapshots</div>
+        <div class="item-desc">Quick-reference planning notes for every host city — stadiums, neighborhoods, transport, and what to know before you land.</div>
+      </div>
+    </div>
+    <div class="item-card">
+      <div class="item-icon">✈️</div>
+      <div class="item-content">
+        <div class="item-title">Cross-Border Route Thinking</div>
+        <div class="item-desc">Smart routing between USA, Mexico, and Canada. How to move between host cities without losing time, money, or matches.</div>
+      </div>
+    </div>
+    <div class="item-card">
+      <div class="item-icon">🏨</div>
+      <div class="item-content">
+        <div class="item-title">Hotel Zone Prompts</div>
+        <div class="item-desc">Where to book near each stadium. Key zones, distance guides, and booking strategy to avoid getting priced out.</div>
+      </div>
+    </div>
+    <div class="item-card">
+      <div class="item-icon">🛡</div>
+      <div class="item-content">
+        <div class="item-title">Safety Reminders & Emergency Contacts</div>
+        <div class="item-desc">Embassy contacts, emergency lines, and stadium-access safety reminders for international fans in all three host nations.</div>
+      </div>
+    </div>
+    <div class="item-card">
+      <div class="item-icon">⚽</div>
+      <div class="item-content">
+        <div class="item-title">Match-Week Planning Tools</div>
+        <div class="item-desc">Day-by-day planning logic for group stage travel, knockout bracket scenarios, and multi-match fan trips.</div>
+      </div>
+    </div>
+    <div class="item-card">
+      <div class="item-icon">🗺</div>
+      <div class="item-content">
+        <div class="item-title">Airport & Stadium Access Notes</div>
+        <div class="item-desc">Transit routes, airport proximity, and stadium access notes for every venue — so you're never caught scrambling on match day.</div>
+      </div>
+    </div>
+    <div class="item-card">
+      <div class="item-icon">💱</div>
+      <div class="item-content">
+        <div class="item-title">Currency & Spend Intel</div>
+        <div class="item-desc">USD, MXN, and CAD navigation. What to expect on spend, where cash still matters, and how to avoid tourist traps.</div>
+      </div>
+    </div>
+    <div class="item-card">
+      <div class="item-icon">🎯</div>
+      <div class="item-content">
+        <div class="item-title">First-Timer Essentials</div>
+        <div class="item-desc">Everything first-time World Cup travelers need to know — from stadium etiquette to fan zone timing to what to pack.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM SECTION -->
+<section class="form-section" id="get-guide">
+  <div class="form-inner">
+    <div class="form-eyebrow">🎁 Free · Instant Download · No Spam</div>
+    <h2 class="form-title">GET YOUR FREE<br><span class="gold">HOPPER GUIDE</span><br>NOW.</h2>
+    <p class="form-body">Drop your name and email below and get immediate access to the GO2CUP Fan Country Hopper Guide — free, instant, and built for World Cup 2026 travelers.</p>
+
+    <div class="form-card" id="form-card">
+      <form id="hopper-form" novalidate>
+        <div class="form-group">
+          <label for="fan-name">Your Name</label>
+          <input type="text" id="fan-name" name="name" placeholder="First name or full name" autocomplete="given-name" required>
+        </div>
+        <div class="form-group">
+          <label for="fan-email">Your Email Address</label>
+          <input type="email" id="fan-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+        </div>
+        <button type="submit" class="btn-submit" id="submit-btn">
+          <span id="btn-text">GET MY FREE GUIDE →</span>
+        </button>
+        <div class="form-error" id="form-error"></div>
+      </form>
+      <p class="form-micro">No spam. No sales pitches. Just GO2CUP World Cup 2026 fan intel.<br>Unsubscribe anytime. Your info stays private.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SUCCESS SECTION -->
+<section class="success-section" id="success-section">
+  <div class="success-inner">
+    <div class="success-check">✓</div>
+    <h2 class="success-title">YOU'RE IN.<br><span class="gold">DOWNLOAD BELOW.</span></h2>
+    <p class="success-body">
+      Your GO2CUP Fan Country Hopper Guide is ready. Click the button below to download your PDF instantly. Check your inbox too — we'll send you the link there as well.
+    </p>
+    <a href="GO2CUP%20Fan%20Country%20Hopper%20Guide.pdf" class="btn-download" download="GO2CUP Fan Country Hopper Guide.pdf">
+      ⬇ Download Your Free Guide
+    </a>
+    <p class="success-note">
+      PDF · Instant download · Free<br>
+      GO2CUP Fan Country Hopper Guide · World Cup 2026
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="index.html" class="footer-logo">
+    <span style="color:#0057b8">GO</span><span style="color:#00a651">2</span><span style="color:#f5333f">CUP</span>
+  </a>
+  <div class="footer-links">
+    <a href="host-cities.html">Host Cities</a>
+    <a href="where-to-stay.html">Where to Stay</a>
+    <a href="emergency.html">Safety</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="affiliate-disclosure.html">Disclosure</a>
+  </div>
+  <div class="footer-copy">GO2CUP · Independent World Cup 2026 Fan Hub</div>
+</footer>
+
+<script>
+(function () {
+  const API_KEY = 'kj3g6jzyw6kqxstaspm8mhbjgr7ukzgd';
+  const LIST_ID = '485866601';
+
+  const form       = document.getElementById('hopper-form');
+  const submitBtn  = document.getElementById('submit-btn');
+  const btnText    = document.getElementById('btn-text');
+  const errorBox   = document.getElementById('form-error');
+  const formSection   = document.getElementById('get-guide');
+  const successSection = document.getElementById('success-section');
+
+  function showError(msg) {
+    errorBox.textContent = msg;
+    errorBox.style.display = 'block';
+    submitBtn.disabled = false;
+    btnText.textContent = 'GET MY FREE GUIDE →';
+  }
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    errorBox.style.display = 'none';
+
+    const name  = document.getElementById('fan-name').value.trim();
+    const email = document.getElementById('fan-email').value.trim();
+
+    if (!name) { showError('Please enter your name.'); return; }
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      showError('Please enter a valid email address.');
+      return;
+    }
+
+    submitBtn.disabled = true;
+    btnText.textContent = 'SENDING…';
+
+    try {
+      const res = await fetch('https://api.getresponse.com/v3/contacts', {
+        method: 'POST',
+        headers: {
+          'X-Auth-Token': 'api-key ' + API_KEY,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          campaign: { campaignId: LIST_ID }
+        })
+      });
+
+      if (res.ok || res.status === 202 || res.status === 409) {
+        formSection.style.display = 'none';
+        successSection.style.display = 'block';
+        successSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        const data = await res.json().catch(() => ({}));
+        const msg = (data && data.message) ? data.message : 'Something went wrong. Please try again.';
+        showError(msg);
+      }
+    } catch (err) {
+      showError('Network error — please check your connection and try again.');
+    }
+  });
+})();
+</script>
+</body>
+</html>
