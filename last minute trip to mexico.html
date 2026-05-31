@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cup 2026 Mexico City Trip Guide</title>
+    <style>
+        :root {
+            --primary: #006847; /* Mexico National Team Green */
+            --secondary: #CE1126; /* Mexican Flag Red */
+            --dark: #1A1A1A;
+            --light: #F4F6F4;
+            --accent: #D4A373; /* Warm gold/terracotta for pyramids */
+            --text: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #FAFAFA;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Style */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, #00442E 100%);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 0 0 20px 0;
+            opacity: 0.9;
+        }
+
+        .badge-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .badge.alert {
+            background-color: var(--secondary);
+            animation: pulse 2s infinite;
+        }
+
+        /* Section Layouts */
+        h2 {
+            color: var(--primary);
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 8px;
+            margin-top: 40px;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--primary);
+        }
+
+        .card h4 {
+            margin: 0 0 10px 0;
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+
+        /* Match Schedule Styling */
+        .match-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .match-card {
+            display: flex;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid #EFEFEF;
+        }
+
+        .match-date {
+            background-color: var(--primary);
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-weight: bold;
+            min-width: 60px;
+        }
+
+        .match-date .day {
+            font-size: 1.8rem;
+            line-height: 1;
+        }
+
+        .match-date .month {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .match-details {
+            padding: 15px 20px;
+            flex-grow: 1;
+        }
+
+        .match-teams {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .match-info {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Steps & Itinerary Layout */
+        .steps, .itinerary {
+            list-style: none;
+            padding: 0;
+        }
+
+        .steps li, .itinerary li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .steps li::before, .itinerary li::before {
+            content: "➔";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        .important-note {
+            background-color: #FFF3CD;
+            border-left: 4px solid #FFC107;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+            font-weight: 500;
+        }
+
+        /* Action Buttons */
+        .btn-group {
+            display: flex;
+            gap: 15px;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #00442E;
+        }
+
+        .btn-secondary {
+            background-color: #E0E0E0;
+            color: var(--dark);
+        }
+
+        .btn-secondary:hover {
+            background-color: #D5D5D5;
+        }
+
+        /* Lead Generation Form */
+        .lead-form-container {
+            background: linear-gradient(135deg, #F4F6F4 0%, #E8EFE8 100%);
+            border: 2px solid var(--primary);
+            padding: 35px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .lead-form-container h3 {
+            margin: 0 0 10px 0;
+            color: var(--primary);
+            font-size: 1.6rem;
+        }
+
+        .lead-form-container p {
+            margin: 0 0 25px 0;
+            color: #555;
+        }
+
+        .form-group {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+            gap: 10px;
+        }
+
+        .form-input {
+            flex-grow: 1;
+            padding: 12px 15px;
+            border: 1px solid #CCC;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .form-submit {
+            background-color: var(--secondary);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+
+        .form-submit:hover {
+            background-color: #A50D1E;
+        }
+
+        .form-footer {
+            font-size: 0.8rem;
+            color: #777;
+            margin-top: 15px;
+        }
+
+        /* Checklist grid */
+        .checklist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .checklist-item::before {
+            content: "✓";
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+
+        @media (max-width: 600px) {
+            .form-group {
+                flex-direction: column;
+            }
+            .match-card {
+                flex-direction: column;
+            }
+            .match-date {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <div style="font-size: 0.9rem; font-weight: bold; letter-spacing: 2px; margin-bottom: 5px;">YOUR TRAVEL CO.</div>
+        <h1>Your Last-Minute Mexico City World Cup Adventure</h1>
+        <p>Everything a Kansas City fan needs to catch El Tri's opening match — flights, transit, pyramids, and safety.</p>
+        <div class="badge-container">
+            <span class="badge">Free Travel Guide</span>
+            <span class="badge">MCI → MEX</span>
+            <span class="badge">June 2026</span>
+            <span class="badge alert">Act Today — Tickets & Flights Selling Fast</span>
+        </div>
+    </header>
+
+    <p>The opening match at Estadio Azteca is Mexico's official home opener. Don't wait until the last second to secure your spot in history.</p>
+
+    <h2>El Tri Match Schedule</h2>
+    <div class="match-list">
+        <div class="match-card">
+            <div class="match-date">
+                <span class="day">11</span>
+                <span class="month">Jun</span>
+            </div>
+            <div class="match-details">
+                <div class="match-teams">Mexico vs. South Africa</div>
+                <div class="match-info">Estadio Azteca, Mexico City · ~2:00 PM CT (Opening / Home Match)</div>
+            </div>
+        </div>
+        <div class="match-card">
+            <div class="match-date" style="background-color: var(--secondary);">
+                <span class="day">18</span>
+                <span class="month">Jun</span>
+            </div>
+            <div class="match-details">
+                <div class="match-teams">Mexico vs. South Korea</div>
+                <div class="match-info">Estadio Akron, Guadalajara (Away Day Trip)</div>
+            </div>
+        </div>
+        <div class="match-card">
+            <div class="match-date">
+                <span class="day">24</span>
+                <span class="month">Jun</span>
+            </div>
+            <div class="match-details">
+                <div class="match-teams">Czechia vs. Mexico</div>
+                <div class="match-info">Estadio Azteca, Mexico City · Final Group Stage Match (Home)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="btn-group">
+        <a href="https://seatgeek.com/fifa-world-cup-tickets" class="btn btn-primary" target="_blank">Buy World Cup Tickets on SeatGeek ↗</a>
+        <a href="https://seatgeek.com/sports-tickets" class="btn btn-secondary" target="_blank">Browse General Sports on SeatGeek ↗</a>
+        <a href="https://www.stubhub.com" class="btn btn-secondary" target="_blank" rel="nofollow">Check Tickets on StubHub ↗</a>
+        <a href="https://www.google.com/flights" class="btn btn-primary" style="background-color: #1A73E8;" target="_blank">Find Flights MCI → MEX on Google Flights ↗</a>
+    </div>
+
+    <h2>Where to Stay</h2>
+    <div class="card-grid">
+        <div class="card">
+            <h4>Roma Norte</h4>
+            <p>Trendy, walkable, packed with incredible restaurants and nightlife. Excellent metro access to the rest of the city.</p>
+        </div>
+        <div class="card">
+            <h4>Condesa</h4>
+            <p>Beautiful tree-lined streets, very safe, peaceful bohemian vibe. Located right next door to Reforma.</p>
+        </div>
+        <div class="card">
+            <h4>Polanco</h4>
+            <p>Upscale, elite security, located right near Chapultepec Park. The absolute best option for luxury stays.</p>
+        </div>
+    </div>
+    
+    <div class="important-note" style="background-color: #E8F0FE; border-left-color: #1A73E8;">
+        <strong>🏨 Ready to lock in your room?</strong> Use <strong>Booking.com</strong> or <strong>HotelTonight</strong> immediately to secure remaining last-minute availabilities across these neighborhoods.
+    </div>
+
+    <h2>Getting to Estadio Azteca</h2>
+    <ol class="steps">
+        <li><strong>Step 1 · Metro Line 2 (Blue):</strong> Board at your nearest central station and ride south all the way to the terminal station, <strong>Tasqueña</strong>.</li>
+        <li><strong>Step 2 · Tren Ligero Transfer:</strong> Follow the signs at Tasqueña to connect directly to the Tren Ligero (Light Rail) and ride it down to the dedicated <strong>Estadio Azteca</strong> stop.</li>
+        <li><strong>Total Travel Time:</strong> Plan for 45–75 minutes from central CDMX.</li>
+    </ol>
+    <div class="important-note">
+        <strong>Match Day Pro-Tips:</strong> Buy an Integrated Mobility Card at any metro station ahead of time. On match days, leave 3–4 hours early. Extra FIFA shuttles will run throughout the city. If you get stuck, ride-sharing apps like Uber or DiDi are always your best premium backups.
+    </div>
+
+    <h2>Full Trip Itinerary</h2>
+    <ul class="itinerary">
+        <li><strong>June 9–10:</strong> Arrive in Mexico City · Rest up, check into your hotel, explore Roma/Condesa, and eat authentic street tacos.</li>
+        <li><strong>June 11 · MATCH DAY (Mexico vs. South Africa):</strong> Leave early for the stadium · Soak up the massive Estadio Azteca Fan Zone atmosphere before kickoff.</li>
+        <li><strong>June 12–16:</strong> Embark on a Teotihuacan day trip (sunrise hot air balloon!) · Visit the Zócalo Fan Festival · Take in the historic city sights.</li>
+        <li><strong>June 17–19:</strong> Head to Guadalajara for Mexico vs. South Korea · Take a quick 1-hour domestic flight or a comfortable ~5 hour express bus.</li>
+        <li><strong>June 23–25 · Final Group Match:</strong> Return to CDMX for Czechia vs. Mexico at Azteca · Celebrate at the final Fan Festivals · Fly home to Kansas City.</li>
+    </ul>
+
+    <h2>Teotihuacan Day Trip</h2>
+    <div class="card" style="border-left-color: var(--accent); background-color: #FFFDF9; margin-bottom: 20px;">
+        <h3 style="color: var(--accent); margin-top:0;">🎈 Bucket List Moment: Hot Air Balloon at Sunrise</h3>
+        <p>Pickup is usually around 4:00–5:00 AM. Experience a breathtaking flight over the ancient pyramids at dawn, followed by an optional walking visit to the archaeological site. Costs average $150–$270 including transportation and breakfast. <strong>Book now on Viator or GetYourGuide</strong>—spots fill up weeks out!</p>
+    </div>
+    
+    <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        <div class="card" style="border-left-color: var(--accent);">
+            <h4>Hours & Entry</h4>
+            <p>Open 9 AM – 5 PM. Entry is roughly ~$4–5 USD. Arrive precisely at opening to completely beat the massive tour groups.</p>
+        </div>
+        <div class="card" style="border-left-color: var(--accent);">
+            <h4>Best Way to Go</h4>
+            <p>Book a fully guided tour with hotel pickup ($50–$120) or catch a highly affordable public bus directly from Autobuses del Norte station.</p>
+        </div>
+        <div class="card" style="border-left-color: var(--accent);">
+            <h4>Pyramid Climbing Note</h4>
+            <p>Full summits of the Pyramid of the Sun are restricted. However, lower platforms and base steps remain open for incredible perspective photos.</p>
+        </div>
+        <div class="card" style="border-left-color: var(--accent);">
+            <h4>What to Pack</h4>
+            <p>Sturdy walking shoes, high-SPF sunscreen, 2 Liters of water, and a light rain jacket (June marks the start of the local rainy season).</p>
+        </div>
+    </div>
+
+    <h2>Staying Safe in Mexico City</h2>
+    <div class="checklist-grid" style="margin-top: 20px;">
+        <div class="checklist-item">Stick to tourist safe zones: Roma, Condesa, Polanco, Reforma, Zócalo.</div>
+        <div class="checklist-item">Use Uber or DiDi apps only — never hail unmarked street taxis.</div>
+        <div class="checklist-item">Lock your physical passport in the hotel safe; keep main valuables hidden while walking.</div>
+        <div class="checklist-item">Travel in groups or pairs, especially around packed match days.</div>
+        <div class="checklist-item">CDMX is high altitude — hydrate constantly and pace your alcohol intake.</div>
+        <div class="checklist-item">Emergency contact number is 911. Register your trip with the US STEP program.</div>
+        <div class="checklist-item">Download the official CDMX safety app and save Google Maps offline.</div>
+        <div class="checklist-item">World Cup local security presence will be exceptionally high — great for handling crowds.</div>
+    </div>
+
+    <h2>Packing Checklist</h2>
+    <div class="checklist-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); margin-top: 20px;">
+        <div class="checklist-item">Passport + Match Tickets</div>
+        <div class="checklist-item">Integrated Mobility Card</div>
+        <div class="checklist-item">Comfortable Walking Shoes</div>
+        <div class="checklist-item">Sunscreen + Rain Jacket</div>
+        <div class="checklist-item">Premium Travel Insurance</div>
+        <div class="checklist-item">Cash (Pesos) + Credit Card</div>
+        <div class="checklist-item">Portable Phone Charger</div>
+        <div class="checklist-item">Offline Maps Downloaded</div>
+    </div>
+
+    <div class="lead-form-container">
+        <h3>Want your own personalized trip guide?</h3>
+        <p>Drop your email below and we'll send you a custom itinerary beautifully tailored to your departure city, personal budget, and the exact match tickets you want to catch.</p>
+        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Form submitted simulation!');">
+            <div class="form-group">
+                <input type="email" class="form-input" placeholder="Enter your best email address..." required>
+                <button type="submit" class="form-submit">Send My Guide ➔</button>
+            </div>
+        </form>
+        <div class="form-footer">
+            🔒 No spam. Unsubscribe at any time. Your personal information stays 100% private.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
