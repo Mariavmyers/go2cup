@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Farol — Welcome Post · Go2Cup</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --gold: #f5c518;
+    --gold-dim: #c49a10;
+    --gold-glow: rgba(245,197,24,0.15);
+    --dark: #080808;
+    --dark-2: #111111;
+    --dark-3: #1a1a1a;
+    --dark-4: #242424;
+    --text: #f0ece0;
+    --text-muted: #8a8478;
+    --text-dim: #4a4640;
+    --red: #e03c3c;
+    --green: #2db87a;
+    --blue: #3b82f6;
+  }
+
+  body {
+    background: var(--dark);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    text-align: center;
+    padding: 4rem 0 3rem;
+    border-bottom: 1px solid var(--dark-4);
+    margin-bottom: 2.5rem;
+    position: relative;
+  }
+
+  .beacon {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1.5rem;
+    animation: pulse 3s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(0.96); }
+  }
+
+  .hero-eyebrow {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+
+  .hero-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(52px, 10vw, 88px);
+    line-height: 0.92;
+    color: var(--text);
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-title span {
+    color: var(--gold);
+  }
+
+  .hero-subtitle {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-size: clamp(17px, 3vw, 22px);
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    line-height: 1.4;
+  }
+
+  .lang-strip {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .lang-pill {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    padding: 4px 12px;
+    border: 1px solid var(--dark-4);
+    border-radius: 20px;
+    color: var(--text-muted);
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  .lang-pill.active {
+    border-color: var(--gold);
+    color: var(--gold);
+    background: rgba(245,197,24,0.06);
+  }
+
+  .countdown-bar {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--dark-3);
+    border: 1px solid var(--dark-4);
+    border-radius: 8px;
+    padding: 12px 20px;
+  }
+
+  .countdown-unit { text-align: center; }
+  .countdown-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    color: var(--gold);
+    line-height: 1;
+    display: block;
+  }
+  .countdown-label {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: var(--text-dim);
+    display: block;
+    margin-top: 2px;
+  }
+  .countdown-sep {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    color: var(--dark-4);
+    padding-bottom: 4px;
+  }
+
+  /* ── SECTIONS ── */
+  .section { margin-bottom: 2.5rem; }
+
+  .section-eyebrow {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+  }
+
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(24px, 4vw, 32px);
+    line-height: 1.2;
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+
+  .section-title em {
+    color: var(--gold);
+    font-style: italic;
+  }
+
+  p {
+    font-size: 16px;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    line-height: 1.8;
+  }
+
+  p strong {
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  /* ── PULL QUOTE ── */
+  .pull-quote {
+    border-left: 3px solid var(--gold);
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+    background: var(--gold-glow);
+    border-radius: 0 8px 8px 0;
+  }
+
+  .pull-quote p {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--text);
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* ── CITY GRID ── */
+  .city-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 8px;
+    margin: 1.5rem 0;
+  }
+
+  .city-card {
+    background: var(--dark-2);
+    border: 1px solid var(--dark-4);
+    border-radius: 8px;
+    padding: 12px 14px;
+    text-decoration: none;
+    display: block;
+    transition: border-color 0.2s, background 0.2s;
+    cursor: pointer;
+  }
+
+  .city-card:hover {
+    border-color: var(--gold);
+    background: var(--gold-glow);
+  }
+
+  .city-flag {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: var(--text-dim);
+    margin-bottom: 4px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  .city-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+  }
+
+  .city-card.featured {
+    border-color: var(--gold);
+    background: rgba(245,197,24,0.05);
+  }
+
+  .city-card.featured .city-name {
+    color: var(--gold);
+  }
+
+  /* ── WHAT YOU GET ── */
+  .get-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 1.5rem 0;
+  }
+
+  @media (max-width: 500px) {
+    .get-grid { grid-template-columns: 1fr; }
+  }
+
+  .get-card {
+    background: var(--dark-2);
+    border: 1px solid var(--dark-4);
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+
+  .get-icon {
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .get-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .get-body {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* ── WHO IS THIS FOR ── */
+  .nation-row {
+    display: flex;
+    gap: 10px;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+  }
+
+  .nation-chip {
+    background: var(--dark-3);
+    border: 1px solid var(--dark-4);
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  /* ── EMAIL CAPTURE ── */
+  .capture-block {
+    background: var(--dark-2);
+    border: 1px solid var(--dark-4);
+    border-radius: 12px;
+    padding: 2rem 1.75rem;
+    margin: 2.5rem 0;
+    text-align: center;
+  }
+
+  .capture-block .section-title {
+    margin-bottom: 0.5rem;
+  }
+
+  .capture-sub {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    font-style: italic;
+  }
+
+  .capture-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .capture-form input {
+    background: var(--dark-3);
+    border: 1px solid var(--dark-4);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .capture-form input::placeholder { color: var(--text-dim); }
+  .capture-form input:focus { border-color: var(--gold); }
+
+  .btn-primary {
+    background: var(--gold);
+    color: #0a0a0a;
+    border: none;
+    border-radius: 8px;
+    padding: 13px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+  }
+
+  .btn-primary:hover { background: #e6b800; }
+  .btn-primary:active { transform: scale(0.98); }
+
+  .capture-note {
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-top: 8px;
+    font-style: italic;
+  }
+
+  /* ── CEREMONIES ── */
+  .ceremony-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 1.5rem 0;
+  }
+
+  @media (max-width: 500px) {
+    .ceremony-row { grid-template-columns: 1fr; }
+    .countdown-bar { gap: 10px; padding: 10px 14px; }
+    .countdown-num { font-size: 22px; }
+  }
+
+  .ceremony-card {
+    border-radius: 10px;
+    padding: 16px;
+    border: 1px solid;
+  }
+
+  .ceremony-card.opening {
+    background: rgba(43, 184, 122, 0.07);
+    border-color: rgba(43, 184, 122, 0.3);
+  }
+
+  .ceremony-card.final {
+    background: rgba(224, 60, 60, 0.07);
+    border-color: rgba(224, 60, 60, 0.3);
+  }
+
+  .ceremony-badge {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+
+  .opening .ceremony-badge { background: rgba(43,184,122,0.15); color: var(--green); }
+  .final .ceremony-badge { background: rgba(224,60,60,0.15); color: var(--red); }
+
+  .ceremony-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .ceremony-detail {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin: 0 0 10px;
+  }
+
+  .ceremony-link {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .opening .ceremony-link { color: var(--green); }
+  .final .ceremony-link { color: var(--red); }
+
+  /* ── DIVIDER ── */
+  .divider {
+    border: none;
+    border-top: 1px solid var(--dark-4);
+    margin: 2.5rem 0;
+  }
+
+  /* ── FOOTER LINE ── */
+  .footer-line {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--dark-4);
+  }
+
+  .footer-brand {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: var(--gold);
+    margin-bottom: 4px;
+  }
+
+  .footer-sub {
+    font-size: 12px;
+    color: var(--text-dim);
+  }
+
+  /* ── TAG ROW ── */
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 1rem 0;
+  }
+
+  .tag {
+    background: var(--dark-3);
+    border: 1px solid var(--dark-4);
+    border-radius: 4px;
+    padding: 3px 8px;
+    font-size: 11px;
+    color: var(--text-dim);
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+<section class="hero">
+
+  <svg class="beacon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M32 8 L32 2" stroke="#f5c518" stroke-width="2" stroke-linecap="round"/>
+    <path d="M32 2 L28 10 L36 10 Z" fill="#f5c518"/>
+    <rect x="27" y="10" width="10" height="18" fill="#1a1a1a" stroke="#f5c518" stroke-width="1"/>
+    <path d="M24 28 L40 28 L36 48 L28 48 Z" fill="#242424" stroke="#f5c518" stroke-width="1"/>
+    <rect x="20" y="48" width="24" height="6" rx="2" fill="#f5c518"/>
+    <path d="M32 8 L18 18" stroke="#f5c518" stroke-width="1" stroke-dasharray="2 3" opacity="0.5"/>
+    <path d="M32 8 L46 18" stroke="#f5c518" stroke-width="1" stroke-dasharray="2 3" opacity="0.5"/>
+    <path d="M32 8 L12 10" stroke="#f5c518" stroke-width="1" stroke-dasharray="2 3" opacity="0.3"/>
+    <path d="M32 8 L52 10" stroke="#f5c518" stroke-width="1" stroke-dasharray="2 3" opacity="0.3"/>
+  </svg>
+
+  <div class="hero-eyebrow">Go2Cup · The Farol · World Cup 2026</div>
+
+  <h1 class="hero-title">
+    THE<br>
+    <span>FAROL</span><br>
+    IS LIT
+  </h1>
+
+  <p class="hero-subtitle">
+    Your lighthouse through the maze of<br>
+    3 nations · 16 cities · 104 matches
+  </p>
+
+  <div class="lang-strip">
+    <span class="lang-pill active">EN · English</span>
+    <span class="lang-pill active">ES · Español</span>
+    <span class="lang-pill active">PT · Português</span>
+    <span class="lang-pill active">FR · Français</span>
+  </div>
+
+  <div class="countdown-bar" id="countdown">
+    <div class="countdown-unit">
+      <span class="countdown-num" id="cd-days">62</span>
+      <span class="countdown-label">DAYS</span>
+    </div>
+    <span class="countdown-sep">:</span>
+    <div class="countdown-unit">
+      <span class="countdown-num" id="cd-hours">00</span>
+      <span class="countdown-label">HRS</span>
+    </div>
+    <span class="countdown-sep">:</span>
+    <div class="countdown-unit">
+      <span class="countdown-num" id="cd-mins">00</span>
+      <span class="countdown-label">MIN</span>
+    </div>
+    <span class="countdown-sep">:</span>
+    <div class="countdown-unit">
+      <span class="countdown-num" id="cd-secs">00</span>
+      <span class="countdown-label">SEC</span>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     WELCOME BODY
+════════════════════════════════════════ -->
+<section class="section">
+  <div class="section-eyebrow">Pinned · Welcome Post</div>
+  <h2 class="section-title">You found the light.<br><em>Welcome to The Farol.</em></h2>
+
+  <p>
+    The FIFA World Cup 2026 is the largest sporting event ever staged on this planet — 48 nations, 104 matches, 3 host countries, 16 cities, and millions of fans converging on a continent they may have never navigated before. Flights. Visas. Stadiums scattered across the United States, Mexico, and Canada. Time zones. Languages. Hotel prices that double overnight. Match schedules that change.
+  </p>
+
+  <p>
+    That's a lot of darkness to walk into alone.
+  </p>
+
+  <div class="pull-quote">
+    <p>"A farol — a lighthouse — doesn't move the ocean. It just makes sure you can see where you're going. That's what this community exists to do."</p>
+  </div>
+
+  <p>
+    <strong>The Farol is your beacon.</strong> Built by Go2Cup, powered by MainEntry's AI intelligence engine, and filled with real fans, real travelers, and real city-by-city knowledge — this is the community where you ask the questions, find the answers, and never navigate the 2026 World Cup alone.
+  </p>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     WHO IS THIS FOR
+════════════════════════════════════════ -->
+<section class="section">
+  <div class="section-eyebrow">This community is for you if...</div>
+  <h2 class="section-title">Every fan. <em>Every language.</em><br>Every corner of the world.</h2>
+
+  <p>Whether you're a <strong>Brazilian torcedor</strong> flying into Miami for the group stage, an <strong>Argentine hincha</strong> road-tripping between Dallas and Kansas City, a <strong>Senegalese supporter</strong> landing in New York for the Final, a <strong>French fan</strong> connecting through Toronto, or an <strong>American soccer family</strong> trying to figure out which host city fits your budget — The Farol was built for you.</p>
+
+  <div class="nation-row">
+    <span class="nation-chip">Brazil</span>
+    <span class="nation-chip">Argentina</span>
+    <span class="nation-chip">Mexico</span>
+    <span class="nation-chip">France</span>
+    <span class="nation-chip">Senegal</span>
+    <span class="nation-chip">Morocco</span>
+    <span class="nation-chip">Colombia</span>
+    <span class="nation-chip">Spain</span>
+    <span class="nation-chip">England</span>
+    <span class="nation-chip">USA</span>
+    <span class="nation-chip">Portugal</span>
+    <span class="nation-chip">Côte d'Ivoire</span>
+    <span class="nation-chip">Canada</span>
+    <span class="nation-chip">+ 35 more nations</span>
+  </div>
+
+  <p>This is not an American sports site. This is not a travel blog. This is a <strong>multilingual, global community</strong> — available in English, Spanish, Portuguese, and French — where every fan is welcome and every question gets an answer.</p>
+</section>
+
+
+<hr class="divider">
+
+
+<!-- ═══════════════════════════════════════
+     WHAT YOU GET
+════════════════════════════════════════ -->
+<section class="section">
+  <div class="section-eyebrow">What The Farol gives you</div>
+  <h2 class="section-title">The light covers <em>everything.</em></h2>
+
+  <div class="get-grid">
+    <div class="get-card">
+      <span class="get-icon">🗺</span>
+      <div class="get-title">16 Host City Guides</div>
+      <p class="get-body">Complete fan travel guides for every host city — hotels by budget, stadium transport, match day logistics, things to do between games.</p>
+    </div>
+    <div class="get-card">
+      <span class="get-icon">✈</span>
+      <div class="get-title">Cheapest Flights</div>
+      <p class="get-body">Route-by-route flight comparisons for every host city. Domestic US, international, and cross-border routes — updated as prices move.</p>
+    </div>
+    <div class="get-card">
+      <span class="get-icon">🏨</span>
+      <div class="get-title">Hotels Near Every Stadium</div>
+      <p class="get-body">Curated picks from budget to luxury — with real distance-to-stadium data, price ranges, and booking links via Booking.com, Expedia, Agoda.</p>
+    </div>
+    <div class="get-card">
+      <span class="get-icon">🛂</span>
+      <div class="get-title">Visa & Entry Intel</div>
+      <p class="get-body">Who needs what. ESTA, eTA, Mexican visa — broken down by nationality. Don't get stranded at the border because nobody told you.</p>
+    </div>
+    <div class="get-card">
+      <span class="get-icon">✈</span>
+      <div class="get-title">Private Aviation & FBO</div>
+      <p class="get-body">Charter flights between host cities. FBO terminal access. Villiers Jets, Jets & Partners, Jettly — for those who travel differently.</p>
+    </div>
+    <div class="get-card">
+      <span class="get-icon">🎯</span>
+      <div class="get-title">Insider Experiences</div>
+      <p class="get-body">Match day tours, cultural experiences, local restaurants, nightlife, fan zones — curated for every host city via Klook, Viator, GetYourGuide.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     16 CITIES
+════════════════════════════════════════ -->
+<section class="section">
+  <div class="section-eyebrow">The Farol covers all 16 host cities</div>
+  <h2 class="section-title">Your city is <em>already lit.</em></h2>
+  <p>Go2Cup has a complete fan travel guide for every single official host city — published, live, and waiting for you. Click your city and let the light guide you in.</p>
+
+  <div class="city-grid">
+    <a class="city-card featured" href="https://mainentry.net/mexico-city" target="_blank">
+      <div class="city-flag">MX · Opening Ceremony</div>
+      <div class="city-name">Mexico City</div>
+    </a>
+    <a class="city-card" href="https://mainentry.net/guadalajara" target="_blank">
+      <div class="city-flag">MX</div>
+      <div class="city-name">Guadalajara</div>
+    </a>
+    <a class="city-card" href="https://mainentry.net/monterrey" target="_blank">
+      <div class="city-flag">MX</div>
+      <div class="city-name">Monterrey</div>
+    </a>
+    <a class="city-card" href="https://mainentry.net/toronto" target="_blank">
+      <div class="city-flag">CA</div>
+      <div class="city-name">Toronto</div>
+    </a>
+    <a class="city-card" href="https://mainentry.net/vancouver" target="_blank">
+      <div class="city-flag">CA</div>
+      <div class="city-name">Vancouver</div>
+    </a>
+    <a class="city-card" href="https://mainentry.net/dallas" target="_blank">
+      <div class="city-flag">US</div>
+      <div class="city-name">Dallas</div>
+    </a>
+    <a class="city-card" href="https://mainentry.net/los-angeles" target="_blank">
+      <div class="city-flag">US</div>
+      <div class="city-name">Los Angeles</div>
+    </a>
+    <a class="city-card featured" href="https://mainentry.net/new-york" target="_blank">
+      <div class="city-flag">US · The Final</div>
+      <div class="city-name">New York / NJ</div>
+    </a>
+    <a class="city-card" href="https://mainentry.net/miami" target="_blank">
+      <div class="city-flag">US</div>
+      <div class="city-name">Miami</div>
+    </a>
+    <a class="city-card" href="https://mainentry.net/san-francisco" target="_blank">
+      <div class="city-flag">US</div>
+      <div class="city-name">San Francisco</div>
+    </a>
+    <a class="city-card" href="https://mainentry.net/seattle" target="_blank">
+      <div class="city-flag">US</div>
+      <div class="city-name">Seattle</div>
+    </a>
+    <a class="city-card" href="https://mainentry.net/boston" target="_blank">
+      <div class="city-flag">US</div>
+      <div class="city-name">Boston</div>
+    </a>
+    <a class="city-card" href="https://mainentry.net/philadelphia" target="_blank">
+      <div class="city-flag">US</div>
+      <div class="city-name">Philadelphia</div>
+    </a>
+    <a class="city-card" href="https://mainentry.net/kansas-city" target="_blank">
+      <div class="city-flag">US</div>
+      <div class="city-name">Kansas City</div>
+    </a>
+    <a class="city-card" href="https://mainentry.net/houston" target="_blank">
+      <div class="city-flag">US</div>
+      <div class="city-name">Houston</div>
+    </a>
+    <a class="city-card" href="https://mainentry.net/atlanta" target="_blank">
+      <div class="city-flag">US</div>
+      <div class="city-name">Atlanta</div>
+    </a>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     CEREMONIES
+════════════════════════════════════════ -->
+<section class="section">
+  <div class="section-eyebrow">Mark these dates in fire</div>
+  <h2 class="section-title">The Opening. <em>The Final.</em><br>The two moments that define everything.</h2>
+
+  <div class="ceremony-row">
+    <div class="ceremony-card opening">
+      <span class="ceremony-badge">Opening Ceremony</span>
+      <div class="ceremony-title">Estadio Azteca · Mexico City</div>
+      <p class="ceremony-detail">June 11, 2026 · The first whistle of the greatest World Cup ever staged. The Farol lights up from this exact moment.</p>
+      <a href="https://mainentry.net/opening-ceremony" target="_blank" class="ceremony-link">Opening Guide →</a>
+    </div>
+    <div class="ceremony-card final">
+      <span class="ceremony-badge">World Cup Final</span>
+      <div class="ceremony-title">MetLife Stadium · New York / NJ</div>
+      <p class="ceremony-detail">July 19, 2026 · 3:00 PM ET. The closing of 39 days of history. First-ever halftime show in World Cup history.</p>
+      <a href="https://mainentry.net/world-cup-final" target="_blank" class="ceremony-link">Final Guide →</a>
+    </div>
+  </div>
+</section>
+
+
+<hr class="divider">
+
+
+<!-- ═══════════════════════════════════════
+     EMAIL CAPTURE CTA
+════════════════════════════════════════ -->
+<div class="capture-block">
+  <div class="section-eyebrow" style="text-align:center;">Don't navigate in the dark</div>
+  <h2 class="section-title" style="text-align:center;">The light reaches your inbox.<br><em>Free. Forever.</em></h2>
+  <p class="capture-sub">Get your complete Go2Cup World Cup 2026 Fan Travel Guide — plus city updates, insider picks, and tournament alerts — delivered free the moment you subscribe. No ads. No noise. Just the light.</p>
+
+  <div class="capture-form">
+    <input type="text" placeholder="First name" autocomplete="off">
+    <input type="email" placeholder="Your email address" autocomplete="off">
+    <button class="btn-primary">GET MY FREE WORLD CUP GUIDE</button>
+    <p class="capture-note">Join thousands of fans getting exclusive World Cup 2026 guides. Free forever. Unsubscribe anytime.</p>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════
+     COMMUNITY RULES
+════════════════════════════════════════ -->
+<section class="section">
+  <div class="section-eyebrow">The Farol code</div>
+  <h2 class="section-title">One community. <em>One standard.</em></h2>
+
+  <p>The Farol is a place for fans of all nations. We have one rule: <strong>if a lighthouse guided every ship equally, regardless of where it came from — so does this community.</strong> No tribalism. No gatekeeping. No "your team doesn't deserve to be here." Every fan navigating to the 2026 World Cup deserves the same light.</p>
+
+  <p>Ask anything. Share what you know. Help someone find their city. That's how a community becomes a beacon — one good answer at a time.</p>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     TAGS / SEO SIGNAL
+════════════════════════════════════════ -->
+<div class="tag-row">
+  <span class="tag">#WorldCup2026</span>
+  <span class="tag">#TheFarol</span>
+  <span class="tag">#Go2Cup</span>
+  <span class="tag">#FanTravel</span>
+  <span class="tag">#FIFA2026</span>
+  <span class="tag">#USAMexicoCanada</span>
+  <span class="tag">#FarolMundial</span>
+  <span class="tag">#WorldCupTravel</span>
+  <span class="tag">#Soccer2026</span>
+  <span class="tag">#MetLifeStadium</span>
+  <span class="tag">#EstadioAzteca</span>
+  <span class="tag">#HostCity</span>
+</div>
+
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<div class="footer-line">
+  <div class="footer-brand">THE FAROL · GO2CUP</div>
+  <p class="footer-sub">Powered by MainEntry · mainentry.net · hello@mainentry.net<br>
+  The light is on. The World Cup is coming. You are not lost.</p>
+</div>
+
+
+<script>
+  // Live countdown to June 11, 2026 Opening Ceremony
+  function updateCountdown() {
+    const target = new Date('2026-06-11T20:00:00Z');
+    const now = new Date();
+    const diff = target - now;
+    if (diff <= 0) {
+      document.getElementById('countdown').innerHTML = '<span style="font-family:Bebas Neue,sans-serif;font-size:18px;letter-spacing:2px;color:#f5c518;">THE WORLD CUP HAS BEGUN</span>';
+      return;
+    }
+    const days = Math.floor(diff / 86400000);
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    const mins = Math.floor((diff % 3600000) / 60000);
+    const secs = Math.floor((diff % 60000) / 1000);
+    document.getElementById('cd-days').textContent = String(days).padStart(2,'0');
+    document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
+    document.getElementById('cd-mins').textContent = String(mins).padStart(2,'0');
+    document.getElementById('cd-secs').textContent = String(secs).padStart(2,'0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+
+</body>
+</html>
+
