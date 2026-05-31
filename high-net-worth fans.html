@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO2CUP | World Cup Intelligence Hub 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --neon: #00ff87;
+            --neon-dim: #00c96a;
+            --gold: #d4a843;
+            --gold-dim: #a07a20;
+            --bg-void: #040709;
+            --bg-deep: #080d12;
+            --bg-surface: #0e1620;
+            --bg-raised: #141e2c;
+            --bg-card: #1a2535;
+            --border-dim: rgba(0,255,135,0.08);
+            --border-mid: rgba(0,255,135,0.18);
+            --border-hot: rgba(0,255,135,0.4);
+            --text-primary: #f0f4f8;
+            --text-secondary: #8899aa;
+            --text-muted: #4a5a6a;
+            --red-alert: #ff3b5c;
+            --blue-intel: #00aaff;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--bg-void);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* ── TICKER ── */
+        .ticker-wrap {
+            width: 100%;
+            background: var(--neon);
+            padding: 8px 0;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .ticker-track {
+            display: inline-flex;
+            white-space: nowrap;
+            animation: ticker 30s linear infinite;
+        }
+        .ticker-track span {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            color: #000;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            padding: 0 40px;
+        }
+        @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+        /* ── NAV ── */
+        nav {
+            position: sticky;
+            top: 33px;
+            z-index: 99;
+            background: rgba(4,7,9,0.92);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-dim);
+            padding: 0 clamp(1rem, 4vw, 3rem);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+        }
+        .nav-logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 28px;
+            letter-spacing: 0.1em;
+            color: var(--neon);
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: var(--neon); }
+        .nav-cta {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            background: var(--neon);
+            color: #000;
+            padding: 8px 20px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .nav-cta:hover { background: #fff; }
+
+        /* ── HERO ── */
+        .hero {
+            position: relative;
+            min-height: 92vh;
+            display: flex;
+            align-items: flex-end;
+            padding: clamp(2rem, 6vw, 6rem) clamp(1.5rem, 5vw, 5rem);
+            overflow: hidden;
+        }
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 60% 70% at 80% 30%, rgba(0,255,135,0.06) 0%, transparent 70%),
+                radial-gradient(ellipse 40% 50% at 20% 80%, rgba(0,170,255,0.04) 0%, transparent 60%),
+                linear-gradient(180deg, #040709 0%, #060d10 100%);
+        }
+        .hero-grid-lines {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(0,255,135,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0,255,135,0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+        }
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--neon);
+            margin-bottom: 2rem;
+        }
+        .hero-eyebrow::before {
+            content: '';
+            display: block;
+            width: 32px;
+            height: 1px;
+            background: var(--neon);
+        }
+        .hero h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(5rem, 14vw, 13rem);
+            line-height: 0.88;
+            letter-spacing: 0.02em;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+        }
+        .hero h1 em {
+            font-style: normal;
+            color: var(--neon);
+            display: block;
+        }
+        .hero-sub {
+            font-size: clamp(1rem, 1.8vw, 1.25rem);
+            color: var(--text-secondary);
+            max-width: 560px;
+            margin-bottom: 3rem;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .btn-primary {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            letter-spacing: 0.1em;
+            background: var(--neon);
+            color: #000;
+            padding: 16px 40px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.25s;
+        }
+        .btn-primary:hover { background: #fff; transform: translateY(-2px); }
+        .btn-outline {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            letter-spacing: 0.1em;
+            background: transparent;
+            color: var(--neon);
+            padding: 16px 40px;
+            border: 1px solid var(--border-hot);
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.25s;
+        }
+        .btn-outline:hover { background: rgba(0,255,135,0.05); }
+
+        .hero-stats {
+            position: absolute;
+            right: clamp(1.5rem, 5vw, 5rem);
+            bottom: clamp(2rem, 5vw, 5rem);
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            z-index: 2;
+        }
+        .hero-stat {
+            text-align: right;
+        }
+        .hero-stat-num {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+            color: var(--neon);
+            line-height: 1;
+        }
+        .hero-stat-label {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        /* ── SECTIONS ── */
+        section { padding: clamp(4rem, 8vw, 8rem) clamp(1.5rem, 5vw, 5rem); }
+        .section-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--neon);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .section-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-dim);
+            max-width: 100px;
+        }
+        .section-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            line-height: 1;
+            letter-spacing: 0.02em;
+            margin-bottom: 1rem;
+        }
+        .section-desc {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            max-width: 520px;
+            margin-bottom: 3rem;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        /* ── PILLAR GRID ── */
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1px;
+            background: var(--border-dim);
+            border: 1px solid var(--border-dim);
+        }
+        .pillar-card {
+            background: var(--bg-deep);
+            padding: 2.5rem 2rem;
+            position: relative;
+            overflow: hidden;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
+        .pillar-card:hover { background: var(--bg-surface); }
+        .pillar-card:hover .pillar-accent { opacity: 1; }
+        .pillar-card:hover .pillar-arrow { transform: translate(4px, -4px); }
+        .pillar-accent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .pillar-num {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+        .pillar-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .pillar-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.6rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+        }
+        .pillar-desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+        .pillar-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .pillar-tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border: 1px solid var(--border-dim);
+            color: var(--text-muted);
+        }
+        .pillar-arrow {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            transition: transform 0.25s;
+        }
+
+        /* ── AEO SECTION ── */
+        .aeo-section { background: var(--bg-deep); }
+        .aeo-intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+            margin-bottom: 4rem;
+        }
+        @media (max-width: 768px) { .aeo-intro { grid-template-columns: 1fr; } }
+
+        .schema-box {
+            background: var(--bg-void);
+            border: 1px solid var(--border-dim);
+            border-left: 3px solid var(--neon);
+            padding: 2rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            overflow-x: auto;
+        }
+        .schema-box .key { color: #00aaff; }
+        .schema-box .val { color: var(--neon); }
+        .schema-box .str { color: var(--gold); }
+        .schema-box .comment { color: var(--text-muted); font-style: italic; }
+
+        .aeo-snippets {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            background: var(--border-dim);
+        }
+        .aeo-snippet {
+            background: var(--bg-surface);
+            padding: 1.5rem 2rem;
+            border-left: 3px solid transparent;
+            transition: all 0.2s;
+        }
+        .aeo-snippet:hover { background: var(--bg-raised); border-left-color: var(--neon); }
+        .aeo-query {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: var(--blue-intel);
+            letter-spacing: 0.05em;
+            margin-bottom: 0.6rem;
+        }
+        .aeo-query::before { content: '> '; color: var(--text-muted); }
+        .aeo-answer {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-weight: 300;
+        }
+        .aeo-answer strong { color: var(--text-primary); font-weight: 500; }
+        .aeo-source {
+            margin-top: 0.5rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            color: var(--text-muted);
+        }
+
+        /* ── HOST CITY TEMPLATE ── */
+        .template-section { background: var(--bg-void); }
+        .template-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        @media (max-width: 900px) { .template-grid { grid-template-columns: 1fr; } }
+        .template-vars {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+        .var-row {
+            display: flex;
+            align-items: stretch;
+            border-bottom: 1px solid var(--border-dim);
+        }
+        .var-row:first-child { border-top: 1px solid var(--border-dim); }
+        .var-key {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: var(--neon);
+            padding: 14px 16px;
+            background: var(--bg-surface);
+            width: 170px;
+            flex-shrink: 0;
+            letter-spacing: 0.05em;
+            display: flex;
+            align-items: center;
+        }
+        .var-val {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 14px 16px;
+            flex: 1;
+            line-height: 1.5;
+            display: flex;
+            align-items: center;
+        }
+        .playbook-preview {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-mid);
+            padding: 2.5rem;
+        }
+        .playbook-city-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-dim);
+        }
+        .playbook-city-name {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+            letter-spacing: 0.05em;
+            color: var(--text-primary);
+        }
+        .playbook-badge {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 6px 14px;
+            background: rgba(0,255,135,0.1);
+            border: 1px solid var(--border-hot);
+            color: var(--neon);
+        }
+        .playbook-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: var(--border-dim);
+            margin-bottom: 2rem;
+        }
+        .playbook-stat {
+            background: var(--bg-raised);
+            padding: 1.2rem 1rem;
+            text-align: center;
+        }
+        .playbook-stat-num {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+        .playbook-stat-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+        .playbook-sections {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .playbook-row {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+        .playbook-row-icon {
+            font-size: 1rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .playbook-row-content {}
+        .playbook-row-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            letter-spacing: 0.12em;
+            color: var(--neon);
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+        .playbook-row-text {
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-weight: 300;
+            line-height: 1.5;
+        }
+
+        /* ── LIVE MATCH ── */
+        .match-section { background: var(--bg-deep); }
+        .match-pipeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1px;
+            background: var(--border-dim);
+            border: 1px solid var(--border-dim);
+            margin-bottom: 3rem;
+        }
+        .pipeline-step {
+            background: var(--bg-surface);
+            padding: 2rem 1.5rem;
+            position: relative;
+        }
+        .pipeline-step-num {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 4rem;
+            color: var(--bg-raised);
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            line-height: 1;
+        }
+        .pipeline-step-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: 0.05em;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+        .pipeline-step-desc {
+            font-size: 12px;
+            color: var(--text-secondary);
+            font-weight: 300;
+            line-height: 1.6;
+        }
+        .pipeline-step-tech {
+            margin-top: 1rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            color: var(--neon);
+            letter-spacing: 0.05em;
+        }
+
+        .match-widget-demo {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-mid);
+            padding: 2rem;
+        }
+        .match-widget-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        .live-badge {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: var(--red-alert);
+            text-transform: uppercase;
+        }
+        .live-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--red-alert);
+            animation: pulse 1.2s ease-in-out infinite;
+        }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+        .match-card-demo {
+            background: var(--bg-raised);
+            border: 1px solid var(--border-dim);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .match-card-teams {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+        .match-team {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem;
+            letter-spacing: 0.05em;
+            flex: 1;
+        }
+        .match-team.right { text-align: right; }
+        .match-score {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3.5rem;
+            letter-spacing: 0.1em;
+            color: var(--neon);
+            min-width: 120px;
+            text-align: center;
+        }
+        .match-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .match-meta-item {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+        .match-aeo-summary {
+            background: var(--bg-void);
+            border-left: 2px solid var(--neon);
+            padding: 1rem 1.5rem;
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-weight: 300;
+            line-height: 1.7;
+        }
+        .match-aeo-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9px;
+            letter-spacing: 0.15em;
+            color: var(--neon);
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        /* ── VIP CTA ── */
+        .vip-section {
+            background: var(--bg-void);
+            position: relative;
+            overflow: hidden;
+        }
+        .vip-bg-text {
+            position: absolute;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 20vw;
+            color: rgba(0,255,135,0.02);
+            letter-spacing: -0.02em;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+            pointer-events: none;
+            user-select: none;
+        }
+        .vip-inner {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .vip-scarcity {
+            display: inline-block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            padding: 8px 20px;
+            border: 1px solid var(--red-alert);
+            color: var(--red-alert);
+            margin-bottom: 3rem;
+            animation: border-pulse 2s ease-in-out infinite;
+        }
+        @keyframes border-pulse {
+            0%, 100% { border-color: var(--red-alert); box-shadow: 0 0 0 0 rgba(255,59,92,0); }
+            50% { border-color: rgba(255,59,92,0.5); box-shadow: 0 0 20px 0 rgba(255,59,92,0.15); }
+        }
+        .vip-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(3rem, 8vw, 7rem);
+            line-height: 0.9;
+            letter-spacing: 0.02em;
+            margin-bottom: 2rem;
+        }
+        .vip-title em {
+            font-style: normal;
+            color: var(--neon);
+        }
+        .vip-urgency {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 560px;
+            margin: 0 auto 3rem;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+        .vip-urgency strong { color: var(--gold); font-weight: 500; }
+        .vip-proof {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        .proof-item {
+            text-align: center;
+        }
+        .proof-num {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.5rem;
+            color: var(--neon);
+            line-height: 1;
+        }
+        .proof-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+        .vip-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+        .vip-form input {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-mid);
+            color: var(--text-primary);
+            padding: 16px 20px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .vip-form input::placeholder { color: var(--text-muted); }
+        .vip-form input:focus { border-color: var(--neon); }
+        .vip-form-row {
+            display: flex;
+            gap: 1rem;
+        }
+        .vip-form-row input { flex: 1; }
+        .vip-submit {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.3rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            background: var(--neon);
+            color: #000;
+            border: none;
+            padding: 18px 24px;
+            cursor: pointer;
+            transition: all 0.25s;
+            width: 100%;
+        }
+        .vip-submit:hover { background: #fff; }
+        .vip-micro {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            color: var(--text-muted);
+            letter-spacing: 0.08em;
+            margin-top: 1rem;
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            background: var(--bg-void);
+            border-top: 1px solid var(--border-dim);
+            padding: 4rem clamp(1.5rem, 5vw, 5rem);
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+        @media (max-width: 900px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+        .footer-brand {}
+        .footer-logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.5rem;
+            letter-spacing: 0.1em;
+            color: var(--neon);
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .footer-brand-desc {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-weight: 300;
+            line-height: 1.7;
+            max-width: 300px;
+        }
+        .footer-col-title {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+        .footer-links a {
+            font-size: 13px;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 300;
+            transition: color 0.2s;
+        }
+        .footer-links a:hover { color: var(--neon); }
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-dim);
+        }
+        .footer-copy {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            color: var(--text-muted);
+            letter-spacing: 0.05em;
+        }
+
+        /* ── HOST CITIES TABLE ── */
+        .cities-section { background: var(--bg-surface); }
+        .cities-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            border: 1px solid var(--border-dim);
+        }
+        .cities-table thead th {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding: 12px 16px;
+            text-align: left;
+            background: var(--bg-deep);
+            border-bottom: 1px solid var(--border-mid);
+        }
+        .cities-table tbody td {
+            padding: 14px 16px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-dim);
+            font-weight: 300;
+        }
+        .cities-table tbody tr:hover td { background: var(--bg-raised); }
+        .cities-table tbody td:first-child {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.05em;
+            color: var(--text-primary);
+        }
+        .city-status {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            padding: 4px 10px;
+            text-transform: uppercase;
+        }
+        .status-live {
+            background: rgba(0,255,135,0.08);
+            color: var(--neon);
+            border: 1px solid var(--border-hot);
+        }
+        .status-planned {
+            background: rgba(212,168,67,0.08);
+            color: var(--gold);
+            border: 1px solid rgba(212,168,67,0.3);
+        }
+
+        /* Scroll fade in */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 600px) {
+            .hero-stats { display: none; }
+            .vip-form-row { flex-direction: column; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TICKER -->
+    <div class="ticker-wrap" role="marquee" aria-label="Live updates">
+        <div class="ticker-track">
+            <span>• JUNE 11 2026: MEXICO CITY OPENER — ESTADIO AZTECA</span>
+            <span>• JULY 19 2026: THE FINAL — METLIFE STADIUM NY</span>
+            <span>• 48 NATIONS · 16 HOST CITIES · 3 COUNTRIES</span>
+            <span>• PRIVATE FBO SLOTS: WAITLIST ONLY</span>
+            <span>• VIP INTELLIGENCE HUB NOW LIVE</span>
+            <span>• JUNE 11 2026: MEXICO CITY OPENER — ESTADIO AZTECA</span>
+            <span>• JULY 19 2026: THE FINAL — METLIFE STADIUM NY</span>
+            <span>• 48 NATIONS · 16 HOST CITIES · 3 COUNTRIES</span>
+            <span>• PRIVATE FBO SLOTS: WAITLIST ONLY</span>
+            <span>• VIP INTELLIGENCE HUB NOW LIVE</span>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <nav>
+        <a href="#" class="nav-logo">GO2CUP</a>
+        <ul class="nav-links">
+            <li><a href="#pillars">Playbooks</a></li>
+            <li><a href="#aeo">AEO Schema</a></li>
+            <li><a href="#template">City Guide</a></li>
+            <li><a href="#live">Live Feed</a></li>
+        </ul>
+        <button class="nav-cta" onclick="document.getElementById('vip').scrollIntoView({behavior:'smooth'})">Secure Access →</button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-grid-lines"></div>
+        <div class="hero-content fade-in">
+            <div class="hero-eyebrow">World Cup Intelligence Hub · 2026</div>
+            <h1>THE <em>ELITE</em> NAVIGATOR</h1>
+            <p class="hero-sub">
+                Private aviation logistics, VIP stadium access, and real-time match intelligence — built for high-net-worth fans who don't leave anything to chance.
+            </p>
+            <div class="hero-actions">
+                <a href="#pillars" class="btn-primary">Enter The Hub →</a>
+                <a href="#vip" class="btn-outline">Secure VIP Access</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="hero-stat-num">16</div>
+                <div class="hero-stat-label">Host Cities</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">48</div>
+                <div class="hero-stat-label">Nations</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">104</div>
+                <div class="hero-stat-label">Matches</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PILLAR GRID -->
+    <section id="pillars" style="background: var(--bg-void); padding-top: 6rem; padding-bottom: 6rem; padding-left: clamp(1.5rem, 5vw, 5rem); padding-right: clamp(1.5rem, 5vw, 5rem);">
+        <div class="fade-in">
+            <div class="section-label">Intelligence Pillars</div>
+            <h2 class="section-title">SIX LAYERS OF<br>UNFAIR ADVANTAGE</h2>
+            <p class="section-desc">Each pillar is a live, data-driven module. Not a blog. A command center.</p>
+        </div>
+        <div class="pillars-grid fade-in">
+
+            <div class="pillar-card">
+                <div class="pillar-accent" style="background: var(--neon);"></div>
+                <div class="pillar-num">01</div>
+                <span class="pillar-icon">🌍</span>
+                <div class="pillar-title">HOST CITY PLAYBOOK</div>
+                <p class="pillar-desc">SEO-fused, AEO-structured intel for all 16 host cities. Stadiums, FBOs, hotel tiers, transport grids, and emergency contacts — structured for instant AI retrieval.</p>
+                <div class="pillar-tags">
+                    <span class="pillar-tag">AEO Schema</span>
+                    <span class="pillar-tag">Dynamic Variables</span>
+                    <span class="pillar-tag">Auto-Scaling</span>
+                </div>
+                <div class="pillar-arrow">↗</div>
+            </div>
+
+            <div class="pillar-card">
+                <div class="pillar-accent" style="background: var(--gold);"></div>
+                <div class="pillar-num">02</div>
+                <span class="pillar-icon">🛩️</span>
+                <div class="pillar-title">ELITE LOGISTICS & FBO</div>
+                <p class="pillar-desc">Private aviation protocols, slot availability intel, ground handler directories, and customs-fast-track procedures. Structured for Perplexity-ready retrieval.</p>
+                <div class="pillar-tags">
+                    <span class="pillar-tag">FBO Directory</span>
+                    <span class="pillar-tag">Slot Intel</span>
+                    <span class="pillar-tag">HNW Transport</span>
+                </div>
+                <div class="pillar-arrow">↗</div>
+            </div>
+
+            <div class="pillar-card">
+                <div class="pillar-accent" style="background: var(--blue-intel);"></div>
+                <div class="pillar-num">03</div>
+                <span class="pillar-icon">🛡️</span>
+                <div class="pillar-title">TRAVEL SAFETY HUB</div>
+                <p class="pillar-desc">Emergency response protocols across US, MX, and CA. Verified embassy contacts, medical facility maps, secure zone designations, and real-time OSINT alerts.</p>
+                <div class="pillar-tags">
+                    <span class="pillar-tag">Live OSINT</span>
+                    <span class="pillar-tag">Embassy Network</span>
+                    <span class="pillar-tag">Med Facilities</span>
+                </div>
+                <div class="pillar-arrow">↗</div>
+            </div>
+
+            <div class="pillar-card">
+                <div class="pillar-accent" style="background: var(--red-alert);"></div>
+                <div class="pillar-num">04</div>
+                <span class="pillar-icon">⚽</span>
+                <div class="pillar-title">MATCH INTEL FEED</div>
+                <p class="pillar-desc">Live scores, AEO-formatted match summaries, xG data, and formation breakdowns — auto-generated, structured for SGE, and delivered in real time via API hook.</p>
+                <div class="pillar-tags">
+                    <span class="pillar-tag">Live API</span>
+                    <span class="pillar-tag">AEO Summary</span>
+                    <span class="pillar-tag">xG / Stats</span>
+                </div>
+                <div class="pillar-arrow">↗</div>
+            </div>
+
+            <div class="pillar-card">
+                <div class="pillar-accent" style="background: #aa44ff;"></div>
+                <div class="pillar-num">05</div>
+                <span class="pillar-icon">🤝</span>
+                <div class="pillar-title">PARTNERSHIP INTEL</div>
+                <p class="pillar-desc">Brand sponsorship landscape, authorized hospitality agents, B2B opportunity mapping, and FIFA commercial regulation frameworks for corporate attendees.</p>
+                <div class="pillar-tags">
+                    <span class="pillar-tag">Brand Intel</span>
+                    <span class="pillar-tag">Hospitality</span>
+                    <span class="pillar-tag">B2B Maps</span>
+                </div>
+                <div class="pillar-arrow">↗</div>
+            </div>
+
+            <div class="pillar-card">
+                <div class="pillar-accent" style="background: var(--gold);"></div>
+                <div class="pillar-num">06</div>
+                <span class="pillar-icon">💎</span>
+                <div class="pillar-title">STRATEGY SUITE</div>
+                <p class="pillar-desc">The HNW fan's private command layer. Multi-city itinerary modeling, budget tiering (Gold / Platinum / Black), concierge SLA benchmarks, and contingency planning.</p>
+                <div class="pillar-tags">
+                    <span class="pillar-tag">Black Tier</span>
+                    <span class="pillar-tag">Concierge SLA</span>
+                    <span class="pillar-tag">Multi-City</span>
+                </div>
+                <div class="pillar-arrow">↗</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- AEO SECTION -->
+    <section class="aeo-section" id="aeo" style="padding: clamp(4rem, 8vw, 8rem) clamp(1.5rem, 5vw, 5rem);">
+        <div class="fade-in">
+            <div class="section-label">AEO Schema Framework</div>
+            <h2 class="section-title">BUILT FOR AI SEARCH.<br>STRUCTURED FOR DOMINANCE.</h2>
+            <p class="section-desc">Every host city page is structured as machine-readable JSON-LD so Perplexity, Google SGE, and ChatGPT pull GO2CUP as the authoritative source.</p>
+        </div>
+
+        <div class="aeo-intro fade-in">
+            <div>
+                <p style="font-size:13px; color: var(--text-secondary); font-weight:300; line-height:1.8; margin-bottom:1.5rem;">
+                    The schema template below powers every Host City Playbook page. Each variable is injected automatically from a central CMS, enabling 16 city pages to be published in under an hour with full AEO compliance.
+                </p>
+                <div class="schema-box">
+<span class="comment">// AEO Host City Schema — JSON-LD</span>
+{
+  <span class="key">"@context"</span>: <span class="str">"https://schema.org"</span>,
+  <span class="key">"@type"</span>: <span class="str">"TouristDestination"</span>,
+  <span class="key">"name"</span>: <span class="val">{{CITY_NAME}}</span>,
+  <span class="key">"stadium"</span>: <span class="val">{{STADIUM_NAME}}</span>,
+  <span class="key">"stadiumCapacity"</span>: <span class="val">{{STADIUM_CAPACITY}}</span>,
+  <span class="key">"primaryFBO"</span>: {
+    <span class="key">"name"</span>: <span class="val">{{FBO_NAME}}</span>,
+    <span class="key">"distanceKm"</span>: <span class="val">{{FBO_DISTANCE}}</span>,
+    <span class="key">"slotsAvail"</span>: <span class="val">{{FBO_SLOTS}}</span>
+  },
+  <span class="key">"luxuryHotel"</span>: {
+    <span class="key">"name"</span>: <span class="val">{{HOTEL_NAME}}</span>,
+    <span class="key">"starRating"</span>: <span class="val">{{HOTEL_STARS}}</span>,
+    <span class="key">"distStadiumKm"</span>: <span class="val">{{HOTEL_DIST}}</span>
+  },
+  <span class="key">"emergencyLine"</span>: <span class="val">{{EMERGENCY_NUM}}</span>,
+  <span class="key">"visaReq"</span>: <span class="val">{{VISA_INFO}}</span>,
+  <span class="key">"matchDates"</span>: [<span class="val">{{MATCH_DATES}}</span>]
+}
+                </div>
+            </div>
+
+            <div>
+                <p style="font-size: 11px; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.1em; color: var(--text-muted); text-transform: uppercase; margin-bottom: 1rem;">Live AEO Snippet Samples</p>
+                <div class="aeo-snippets">
+                    <div class="aeo-snippet">
+                        <div class="aeo-query">Private jet parking AIFA Mexico City World Cup 2026</div>
+                        <div class="aeo-answer">
+                            <strong>AIFA (Felipe Ángeles International Airport)</strong> is the recommended FBO base for Mexico City matches, located 43km from Estadio Azteca. Primary FBO operator is <strong>Landmark Aviation MX</strong>, with 38 dedicated GA slots. Tarmac-to-stadium transfer via armored SUV: approx. 55–70 min. Customs fast-track available for pre-cleared tail numbers.
+                        </div>
+                        <div class="aeo-source">Source: go2cup.com/playbook/mexico-city · Updated: Live</div>
+                    </div>
+                    <div class="aeo-snippet">
+                        <div class="aeo-query">Best VIP transport NYC World Cup Final MetLife 2026</div>
+                        <div class="aeo-answer">
+                            For the <strong>July 19 Final at MetLife Stadium</strong>, recommended VIP transport options are: (1) Helicopter from West 30th St Heliport — 12 min flight, $4,200–$8,500 round trip; (2) Armored black-car convoy via NJ Turnpike with police escort package; (3) Chartered yacht to Weehawken with shuttle. <strong>Book 90+ days in advance</strong> — demand is category-maximum.
+                        </div>
+                        <div class="aeo-source">Source: go2cup.com/playbook/new-york · Updated: Live</div>
+                    </div>
+                    <div class="aeo-snippet">
+                        <div class="aeo-query">5-star hotels near Levi's Stadium San Francisco World Cup</div>
+                        <div class="aeo-answer">
+                            Closest 5-star options to Levi's Stadium (Santa Clara): <strong>Rosewood Sand Hill</strong> (Menlo Park, 22km, from $1,850/night), <strong>The Fairmont San Jose</strong> (18km, from $1,200/night), and <strong>Four Seasons Silicon Valley</strong> (20km, from $1,550/night). All offer private F&B concierge and stadium shuttle packages via GO2CUP Black tier.
+                        </div>
+                        <div class="aeo-source">Source: go2cup.com/playbook/san-francisco · Updated: Live</div>
+                    </div>
+                    <div class="aeo-snippet">
+                        <div class="aeo-query">Emergency contacts US citizen soccer fan Canada 2026</div>
+                        <div class="aeo-answer">
+                            US citizens in Canada during World Cup 2026: US Embassy Ottawa: <strong>+1-613-688-5335</strong>. Emergency SMS line: <strong>text USEMERGENCY to 78900</strong>. Canadian emergency: <strong>911</strong>. Travel insurance escalation via GO2CUP Safety Hub provides 24/7 bilingual response across all 3 host nations.
+                        </div>
+                        <div class="aeo-source">Source: go2cup.com/safety-hub · Updated: Live</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOST CITY TEMPLATE -->
+    <section class="template-section" id="template" style="padding: clamp(4rem, 8vw, 8rem) clamp(1.5rem, 5vw, 5rem);">
+        <div class="fade-in">
+            <div class="section-label">Content Automation</div>
+            <h2 class="section-title">THE PLAYBOOK<br>TEMPLATE ENGINE</h2>
+            <p class="section-desc">One template. 16 cities. 104 matches. All variables injected from your CMS via API — zero manual writing required per city.</p>
+        </div>
+
+        <div class="template-grid fade-in">
+            <div>
+                <p style="font-size: 11px; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.1em; color: var(--text-muted); text-transform: uppercase; margin-bottom: 1.5rem;">Dynamic Variable Schema</p>
+                <div class="template-vars">
+                    <div class="var-row"><div class="var-key">{{CITY_NAME}}</div><div class="var-val">New York / New Jersey</div></div>
+                    <div class="var-row"><div class="var-key">{{STADIUM}}</div><div class="var-val">MetLife Stadium, East Rutherford</div></div>
+                    <div class="var-row"><div class="var-key">{{CAPACITY}}</div><div class="var-val">82,500 (expanded to 87,000)</div></div>
+                    <div class="var-row"><div class="var-key">{{FBO_NAME}}</div><div class="var-val">Signature Aviation — TEB</div></div>
+                    <div class="var-row"><div class="var-key">{{FBO_DIST}}</div><div class="var-val">14km from MetLife / 28 min</div></div>
+                    <div class="var-row"><div class="var-key">{{TOP_HOTEL}}</div><div class="var-val">The Ritz-Carlton NYC Central Park</div></div>
+                    <div class="var-row"><div class="var-key">{{HOTEL_TIER}}</div><div class="var-val">Black ($4,800+/night during Finals)</div></div>
+                    <div class="var-row"><div class="var-key">{{MATCH_DATES}}</div><div class="var-val">June 22, July 2, July 19 (Final)</div></div>
+                    <div class="var-row"><div class="var-key">{{TRANSPORT_OPT}}</div><div class="var-val">Helicopter · Armored SUV · Yacht</div></div>
+                    <div class="var-row"><div class="var-key">{{VISA_REQ}}</div><div class="var-val">ESTA (waiver) / Visa B-1/B-2</div></div>
+                    <div class="var-row"><div class="var-key">{{EMERGENCY_EN}}</div><div class="var-val">911</div></div>
+                    <div class="var-row"><div class="var-key">{{EMBASSY_REF}}</div><div class="var-val">Varies by nationality — auto-linked</div></div>
+                </div>
+                <div style="margin-top:2rem; padding:1.5rem; border:1px solid var(--border-dim); background: var(--bg-surface);">
+                    <div style="font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--neon); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.75rem;">Automation Stack</div>
+                    <div style="font-size:13px; color:var(--text-secondary); font-weight:300; line-height:1.8;">
+                        CMS (Sanity/Contentful) → Variable API → Next.js SSR → JSON-LD injection → Sitemap ping → Search Console push
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p style="font-size: 11px; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.1em; color: var(--text-muted); text-transform: uppercase; margin-bottom: 1.5rem;">Live Preview — NYC Playbook</p>
+                <div class="playbook-preview">
+                    <div class="playbook-city-bar">
+                        <div class="playbook-city-name">NEW YORK</div>
+                        <div class="playbook-badge">Final Host City</div>
+                    </div>
+                    <div class="playbook-stats">
+                        <div class="playbook-stat">
+                            <div class="playbook-stat-num">87K</div>
+                            <div class="playbook-stat-label">Capacity</div>
+                        </div>
+                        <div class="playbook-stat">
+                            <div class="playbook-stat-num">3</div>
+                            <div class="playbook-stat-label">Matches</div>
+                        </div>
+                        <div class="playbook-stat">
+                            <div class="playbook-stat-num">14km</div>
+                            <div class="playbook-stat-label">To FBO</div>
+                        </div>
+                    </div>
+                    <div class="playbook-sections">
+                        <div class="playbook-row">
+                            <div class="playbook-row-icon">✈</div>
+                            <div class="playbook-row-content">
+                                <div class="playbook-row-label">Private Aviation</div>
+                                <div class="playbook-row-text">Signature Aviation TEB — 38 reserved GA slots. Pre-clearance via CBP GOES required 72hr ahead. Ground fleet: armored Cadillac Escalade ESV. Stadium ETA: 28 min. Helicopter alternative via NYC Heli available for Final day.</div>
+                            </div>
+                        </div>
+                        <div class="playbook-row">
+                            <div class="playbook-row-icon">🏨</div>
+                            <div class="playbook-row-content">
+                                <div class="playbook-row-label">Black Tier Accommodation</div>
+                                <div class="playbook-row-text">Ritz-Carlton Central Park · Aman New York · The Carlyle. GO2CUP Black members receive pre-blocked inventory at 2024 rates. Final week surcharge: 3.8×. Secure now.</div>
+                            </div>
+                        </div>
+                        <div class="playbook-row">
+                            <div class="playbook-row-icon">🛡</div>
+                            <div class="playbook-row-content">
+                                <div class="playbook-row-label">Security & Emergency</div>
+                                <div class="playbook-row-text">NYPD dedicated event zone active June 18–July 19. Nearest trauma center: NYC Health + Hospitals/Elmhurst (12km). Embassy contacts auto-populated by passport scan via GO2CUP app.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOST CITIES TABLE -->
+    <section class="cities-section" id="cities" style="padding: clamp(4rem, 8vw, 8rem) clamp(1.5rem, 5vw, 5rem);">
+        <div class="fade-in">
+            <div class="section-label">16 Host Cities</div>
+            <h2 class="section-title">EVERY CITY.<br>EVERY EDGE.</h2>
+        </div>
+        <div style="overflow-x: auto;" class="fade-in">
+            <table class="cities-table">
+                <thead>
+                    <tr>
+                        <th>City</th>
+                        <th>Stadium</th>
+                        <th>FBO</th>
+                        <th>Top Hotel</th>
+                        <th>Matches</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>New York / NJ</td><td>MetLife Stadium</td><td>Signature TEB</td><td>Ritz-Carlton CP</td><td>3 + Final</td><td><span class="city-status status-live">Live</span></td></tr>
+                    <tr><td>Los Angeles</td><td>SoFi Stadium</td><td>Signature LAX</td><td>Waldorf Beverly Hills</td><td>4 + SF</td><td><span class="city-status status-live">Live</span></td></tr>
+                    <tr><td>Dallas</td><td>AT&T Stadium</td><td>Million Air DAL</td><td>The Crescent Hotel</td><td>4</td><td><span class="city-status status-planned">Planned</span></td></tr>
+                    <tr><td>San Francisco</td><td>Levi's Stadium</td><td>Jet Aviation SJC</td><td>Rosewood Sand Hill</td><td>4</td><td><span class="city-status status-planned">Planned</span></td></tr>
+                    <tr><td>Miami</td><td>Hard Rock Stadium</td><td>Sheltair MIA</td><td>Faena Hotel</td><td>4</td><td><span class="city-status status-planned">Planned</span></td></tr>
+                    <tr><td>Seattle</td><td>Lumen Field</td><td>Clay Lacy SEA</td><td>Four Seasons Seattle</td><td>4</td><td><span class="city-status status-planned">Planned</span></td></tr>
+                    <tr><td>Boston</td><td>Gillette Stadium</td><td>Signature BOS</td><td>The Newbury Boston</td><td>4</td><td><span class="city-status status-planned">Planned</span></td></tr>
+                    <tr><td>Philadelphia</td><td>Lincoln Financial</td><td>PHL Jet Center</td><td>Four Seasons PHL</td><td>4</td><td><span class="city-status status-planned">Planned</span></td></tr>
+                    <tr><td>Kansas City</td><td>Arrowhead Stadium</td><td>Clay Lacy MCI</td><td>Loews Kansas City</td><td>3</td><td><span class="city-status status-planned">Planned</span></td></tr>
+                    <tr><td>Atlanta</td><td>Mercedes-Benz Stadium</td><td>Signature ATL</td><td>Four Seasons ATL</td><td>4</td><td><span class="city-status status-planned">Planned</span></td></tr>
+                    <tr><td>Houston</td><td>NRG Stadium</td><td>Signature HOU</td><td>Hotel Granduca</td><td>4</td><td><span class="city-status status-planned">Planned</span></td></tr>
+                    <tr><td>Mexico City</td><td>Estadio Azteca</td><td>AIFA / Landmark</td><td>Las Alcobas</td><td>3 + Opener</td><td><span class="city-status status-live">Live</span></td></tr>
+                    <tr><td>Guadalajara</td><td>Estadio Akron</td><td>Guadalajara Intl</td><td>Casa Fayette</td><td>3</td><td><span class="city-status status-planned">Planned</span></td></tr>
+                    <tr><td>Monterrey</td><td>Estadio BBVA</td><td>Del Norte FBO</td><td>Safi Royal Luxury</td><td>3</td><td><span class="city-status status-planned">Planned</span></td></tr>
+                    <tr><td>Toronto</td><td>BMO Field</td><td>Signature YYZ</td><td>Four Seasons Toronto</td><td>4</td><td><span class="city-status status-planned">Planned</span></td></tr>
+                    <tr><td>Vancouver</td><td>BC Place</td><td>Signature YVR</td><td>Rosewood Hotel Georgia</td><td>4</td><td><span class="city-status status-planned">Planned</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- LIVE MATCH SECTION -->
+    <section class="match-section" id="live" style="padding: clamp(4rem, 8vw, 8rem) clamp(1.5rem, 5vw, 5rem);">
+        <div class="fade-in">
+            <div class="section-label">Match Intel Automation</div>
+            <h2 class="section-title">REAL-TIME FEED.<br>AEO READY.</h2>
+            <p class="section-desc">The "Who's Playing Today" section runs on a fully automated pipeline. No manual updates. AI-generated AEO match summaries, live.</p>
+        </div>
+
+        <div class="match-pipeline fade-in">
+            <div class="pipeline-step">
+                <div class="pipeline-step-num">01</div>
+                <div class="pipeline-step-title">API DATA PULL</div>
+                <p class="pipeline-step-desc">Football-Data.org or Sportradar API delivers live match data on 60-second polling intervals during tournament dates.</p>
+                <div class="pipeline-step-tech">football-data.org / sportradar</div>
+            </div>
+            <div class="pipeline-step">
+                <div class="pipeline-step-num">02</div>
+                <div class="pipeline-step-title">AI SUMMARY GEN</div>
+                <p class="pipeline-step-desc">GPT-4o or Claude processes raw match data into 80-word AEO-structured summaries optimized for AI search engine retrieval.</p>
+                <div class="pipeline-step-tech">claude-3-5-sonnet / openai</div>
+            </div>
+            <div class="pipeline-step">
+                <div class="pipeline-step-num">03</div>
+                <div class="pipeline-step-title">SCHEMA INJECTION</div>
+                <p class="pipeline-step-desc">Summaries are wrapped in SportsEvent JSON-LD schema and injected into page headers for SGE and Perplexity indexing.</p>
+                <div class="pipeline-step-tech">next.js / vercel edge</div>
+            </div>
+            <div class="pipeline-step">
+                <div class="pipeline-step-num">04</div>
+                <div class="pipeline-step-title">LIVE RENDER</div>
+                <p class="pipeline-step-desc">Revalidation every 60 seconds via ISR. Match widget updates without full reload. Zero latency for end users globally.</p>
+                <div class="pipeline-step-tech">ISR / edge cache / CDN</div>
+            </div>
+        </div>
+
+        <div class="match-widget-demo fade-in">
+            <div class="match-widget-header">
+                <span style="font-family:'Bebas Neue',sans-serif; font-size:1.3rem; letter-spacing:0.05em;">Match Intel Feed</span>
+                <div class="live-badge"><div class="live-dot"></div> Live Demo</div>
+            </div>
+            <div class="match-card-demo">
+                <div class="match-card-teams">
+                    <div class="match-team">BRAZIL</div>
+                    <div class="match-score">2 : 1</div>
+                    <div class="match-team right">ARGENTINA</div>
+                </div>
+                <div class="match-meta">
+                    <span class="match-meta-item">68' | Hard Rock Stadium, Miami</span>
+                    <span class="match-meta-item">Group D · Matchday 2</span>
+                    <span class="match-meta-item" style="color:var(--neon);">⚽ 23' Vinicius Jr · 58' Rodrygo</span>
+                </div>
+                <div class="match-aeo-summary">
+                    <div class="match-aeo-label">AEO-Formatted Summary</div>
+                    Brazil leads Argentina 2–1 in a tense Group D clash at Hard Rock Stadium, Miami. Vinicius Jr opened scoring in the 23rd minute after a rapid counter-attack. Messi equalized via penalty in the 41st minute. Rodrygo restored Brazil's lead with a header from a Raphinha cross in the 58th minute. Current xG: BRA 2.3 · ARG 1.8. Attendance: 64,767.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIP CTA -->
+    <section class="vip-section" id="vip" style="padding: clamp(5rem, 10vw, 10rem) clamp(1.5rem, 5vw, 5rem);">
+        <div class="vip-bg-text">ACCESS</div>
+        <div class="vip-inner fade-in">
+            <div class="vip-scarcity">⚠ Intelligence List Closing: 147 Seats Remaining</div>
+            <h2 class="vip-title">THE GAME IS<br>WON <em>BEFORE</em><br>KICK-OFF.</h2>
+            <p class="vip-urgency">
+                Every FBO slot filled. Every Black-tier hotel sold out. Every helicopter block gone. This happens <strong>6 months before the opener</strong>. The GO2CUP Intelligence List exists so that when that moment arrives, you're already inside.
+            </p>
+            <div class="vip-proof">
+                <div class="proof-item">
+                    <div class="proof-num">3,200+</div>
+                    <div class="proof-label">HNW Members</div>
+                </div>
+                <div class="proof-item">
+                    <div class="proof-num">$480M</div>
+                    <div class="proof-label">Travel Managed</div>
+                </div>
+                <div class="proof-item">
+                    <div class="proof-num">16</div>
+                    <div class="proof-label">Cities Covered</div>
+                </div>
+                <div class="proof-item">
+                    <div class="proof-num">48hr</div>
+                    <div class="proof-label">Concierge SLA</div>
+                </div>
+            </div>
+            <div class="vip-form">
+                <div class="vip-form-row">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <input type="email" placeholder="Private Email Address">
+                <input type="tel" placeholder="WhatsApp / Direct Line (optional)">
+                <select style="background:var(--bg-surface); border:1px solid var(--border-mid); color:var(--text-secondary); padding:16px 20px; font-family:'DM Sans',sans-serif; font-size:14px; outline:none; appearance:none;">
+                    <option>Travel Budget Tier</option>
+                    <option>Gold — $25K–$100K</option>
+                    <option>Platinum — $100K–$500K</option>
+                    <option>Black — $500K+</option>
+                </select>
+                <button class="vip-submit" type="button">
+                    SECURE MY INTELLIGENCE ACCESS →
+                </button>
+                <div class="vip-micro">Zero spam. Classified distribution only. Unsubscribe any time. This is not a newsletter — it's a briefing.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="footer-logo">GO2CUP</span>
+                <p class="footer-brand-desc">The world's only intelligence-grade travel platform built exclusively for high-net-worth fans of the 2026 FIFA World Cup. Modern luxury meets high-octane sport.</p>
+            </div>
+            <div>
+                <div class="footer-col-title">Intelligence</div>
+                <ul class="footer-links">
+                    <li><a href="#">Host City Playbooks</a></li>
+                    <li><a href="#">FBO Directory</a></li>
+                    <li><a href="#">AEO Schema Docs</a></li>
+                    <li><a href="#">Match Feed API</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-col-title">Access Tiers</div>
+                <ul class="footer-links">
+                    <li><a href="#">Gold Membership</a></li>
+                    <li><a href="#">Platinum Membership</a></li>
+                    <li><a href="#">Black Tier</a></li>
+                    <li><a href="#">Corporate Packages</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-col-title">Company</div>
+                <ul class="footer-links">
+                    <li><a href="#">About GO2CUP</a></li>
+                    <li><a href="#">Partnership Intel</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="footer-copy">© 2026 GO2CUP. All rights reserved. Not affiliated with FIFA.</span>
+            <span class="footer-copy">DESIGNED FOR THE 1%</span>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>
+
