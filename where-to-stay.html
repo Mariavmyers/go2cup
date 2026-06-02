@@ -14,17 +14,18 @@
   <meta property="og:url" content="https://sportdgx.com/where-to-stay.html" />
   <meta property="og:site_name" content="GO2CUP" />
 
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --navy: #0A1F44;
-      --red: #B22234;
-      --green: #006847;
-      --gold: #F5B700;
-      --light: #f7f9fc;
-      --text: #172033;
-      --muted: #5f6b7a;
-      --border: #d9e1ec;
-      --white: #ffffff;
+      --dark-bg: #07060C;
+      --hero-bg: #0E0808;
+      --mexico-green: #006847;
+      --gold: #D4900A;
+      --gold-bright: #F0B020;
+      --fire-red: #CC2010;
+      --cream: #F0EDE8;
+      --text-mid: #B0A898;
+      --border: rgba(240,176,32,0.2);
     }
 
     * {
@@ -33,21 +34,21 @@
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background: var(--light);
+      font-family: 'Barlow', Arial, sans-serif;
+      color: var(--cream);
+      background: var(--dark-bg);
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(135deg, var(--navy), #123b7a);
-      color: var(--white);
+      background: var(--hero-bg);
+      color: #ffffff;
       padding: 56px 20px;
       text-align: center;
     }
 
     header .eyebrow {
-      color: var(--gold);
+      color: var(--gold-bright);
       font-weight: 700;
       letter-spacing: 0.08em;
       text-transform: uppercase;
@@ -60,18 +61,23 @@
       max-width: 920px;
       font-size: clamp(2rem, 4vw, 4rem);
       line-height: 1.05;
+      color: #ffffff;
+    }
+
+    header h1 .gold-line {
+      color: var(--gold-bright);
     }
 
     header p {
       max-width: 780px;
       margin: 0 auto 26px;
       font-size: 1.1rem;
-      color: #e6edf7;
+      color: var(--text-mid);
     }
 
     .top-nav {
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
+      background: var(--dark-bg);
+      border-bottom: 3px solid var(--mexico-green);
       padding: 14px 20px;
       display: flex;
       gap: 16px;
@@ -81,15 +87,19 @@
     }
 
     .top-nav a {
-      color: var(--navy);
+      color: var(--cream);
       text-decoration: none;
       font-weight: 700;
       font-size: 0.95rem;
     }
 
+    .top-nav a:hover {
+      color: var(--gold-bright);
+    }
+
     .brand-bar {
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
+      background: var(--dark-bg);
+      border-bottom: 3px solid var(--mexico-green);
       padding: 16px 20px;
       text-align: center;
     }
@@ -101,16 +111,17 @@
 
     .brand-bar .brand-name {
       display: block;
-      font-weight: 800;
-      font-size: 1.35rem;
-      color: var(--navy);
-      letter-spacing: 0.04em;
+      font-family: 'Anton', sans-serif;
+      font-weight: 400;
+      font-size: 1.6rem;
+      color: var(--gold-bright);
+      letter-spacing: 0.06em;
     }
 
     .brand-bar .brand-tagline {
       display: block;
       font-size: 0.82rem;
-      color: var(--muted);
+      color: var(--text-mid);
       margin-top: 4px;
     }
 
@@ -119,7 +130,7 @@
       margin-top: 10px;
       font-size: 0.9rem;
       font-weight: 700;
-      color: var(--navy);
+      color: var(--gold-bright);
       text-decoration: none;
     }
 
@@ -128,7 +139,7 @@
       margin: 0 auto 18px;
       line-height: 1.7;
       font-size: 0.88rem;
-      color: #c5d4ea;
+      color: var(--text-mid);
     }
 
     .container {
@@ -138,22 +149,22 @@
     }
 
     .notice {
-      background: #fff8e6;
-      border: 1px solid #f0d58c;
-      color: #4c3900;
+      background: rgba(240,176,32,0.08);
+      border: 1px solid var(--border);
+      color: var(--cream);
       border-radius: 16px;
       padding: 18px 20px;
       margin-bottom: 28px;
     }
 
     .section-title {
-      color: var(--navy);
+      color: var(--gold-bright);
       font-size: 2rem;
       margin: 0 0 10px;
     }
 
     .section-intro {
-      color: var(--muted);
+      color: var(--text-mid);
       margin-top: 0;
       max-width: 820px;
     }
@@ -166,22 +177,21 @@
     }
 
     .card {
-      background: var(--white);
-      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(240,176,32,0.15);
       border-radius: 18px;
       padding: 20px;
-      box-shadow: 0 8px 24px rgba(10, 31, 68, 0.06);
     }
 
     .card h3 {
       margin: 0 0 10px;
-      color: var(--navy);
+      color: var(--cream);
       font-size: 1.1rem;
     }
 
     .card p {
       margin: 0 0 14px;
-      color: var(--muted);
+      color: var(--text-mid);
       font-size: 0.96rem;
     }
 
@@ -189,15 +199,16 @@
       display: inline-block;
       padding: 5px 10px;
       border-radius: 999px;
-      background: #eaf1fb;
-      color: var(--navy);
+      background: rgba(240,176,32,0.15);
+      color: var(--gold-bright);
       font-size: 0.78rem;
       font-weight: 700;
     }
 
     .cta-panel {
-      background: var(--navy);
-      color: var(--white);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(240,176,32,0.15);
+      color: #ffffff;
       border-radius: 24px;
       padding: 28px;
       margin: 34px 0;
@@ -208,11 +219,12 @@
     .cta-panel h2 {
       margin: 0;
       font-size: 1.8rem;
+      color: var(--gold-bright);
     }
 
     .cta-panel p {
       margin: 0;
-      color: #dce7f7;
+      color: var(--text-mid);
     }
 
     .button-row {
@@ -228,23 +240,34 @@
       border-radius: 999px;
       padding: 12px 18px;
       font-weight: 800;
+      font-family: 'Barlow', sans-serif;
     }
 
     .btn-primary {
-      background: var(--gold);
-      color: #1b1600;
+      background: linear-gradient(135deg, #CC2010, #E83020);
+      color: #ffffff;
     }
 
     .btn-secondary {
       background: transparent;
-      color: var(--white);
-      border: 1px solid rgba(255,255,255,0.65);
+      color: var(--cream);
+      border: 2px solid var(--mexico-green);
     }
 
     .city-list {
       columns: 2;
       column-gap: 28px;
       padding-left: 20px;
+      color: var(--text-mid);
+    }
+
+    .city-list a {
+      color: var(--gold-bright);
+      text-decoration: none;
+    }
+
+    .city-list a:hover {
+      text-decoration: underline;
     }
 
     .city-list li {
@@ -253,27 +276,36 @@
     }
 
     .disclosure {
-      background: var(--white);
-      border-top: 4px solid var(--red);
+      background: rgba(255,255,255,0.04);
+      border-top: 4px solid var(--fire-red);
       border-radius: 18px;
       padding: 22px;
       margin-top: 30px;
-      color: var(--muted);
+      color: var(--text-mid);
       font-size: 0.95rem;
     }
 
+    .disclosure h2 {
+      color: var(--gold-bright);
+    }
+
     footer {
-      background: #08172f;
-      color: #dce7f7;
+      background: var(--dark-bg);
+      color: var(--text-mid);
       padding: 30px 20px;
       text-align: center;
       font-size: 0.9rem;
+      border-top: 1px solid var(--border);
     }
 
     footer a {
-      color: #ffffff;
+      color: var(--gold);
       margin: 0 8px;
       text-decoration: underline;
+    }
+
+    footer a:hover {
+      color: var(--gold-bright);
     }
 
     @media (max-width: 700px) {
@@ -307,7 +339,7 @@
 
   <header>
     <div class="eyebrow">World Cup 2026 Hotel Planning</div>
-    <h1>Where to Stay for World Cup 2026</h1>
+    <h1>Where to Stay for<br><span class="gold-line">World Cup 2026</span></h1>
     <p>
       A fan-first hotel planning hub for the 2026 World Cup across the USA, Mexico, and Canada.
       Use this page to understand host-city lodging zones, airport access, stadium proximity,
