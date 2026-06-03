@@ -1344,6 +1344,35 @@ font-size: 10px;
 .go2cup-footer-links { flex-direction: column; align-items: center; gap: 0.75rem; }
 .go2cup-footer-links .link-sep { display: none; }
 }
+/* ── MEXICO LAST CALL BLINK BUTTON ── */
+@keyframes mexicoUrgent {
+  0%   { background: #0057b8; box-shadow: 0 0 28px rgba(0,87,184,0.85), 0 0 56px rgba(0,87,184,0.4); }
+  33%  { background: #f5333f; box-shadow: 0 0 28px rgba(245,51,63,0.85), 0 0 56px rgba(245,51,63,0.4); }
+  66%  { background: #00a651; box-shadow: 0 0 28px rgba(0,166,81,0.85), 0 0 56px rgba(0,166,81,0.4); }
+  100% { background: #0057b8; box-shadow: 0 0 28px rgba(0,87,184,0.85), 0 0 56px rgba(0,87,184,0.4); }
+}
+.btn-mexico-last-call {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: white;
+  padding: 14px 32px;
+  border: 3px solid rgba(255,255,255,0.35);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  animation: mexicoUrgent 1.2s ease-in-out infinite;
+  transition: transform 0.2s;
+}
+.btn-mexico-last-call:hover {
+  animation-play-state: paused;
+  transform: translateY(-3px) scale(1.03);
+  border-color: white;
+}
 /* ── GLOBAL MOBILE PADDING FIX ── */
 @media (max-width: 480px) {
 .countdown-inner { gap: 0.75rem; }
@@ -1436,7 +1465,7 @@ font-size: 10px;
     <li><a href="sports-news.html">📰 Sports News</a></li>
     <li><a href="first-match-mexico.html">⚽ First Match</a></li>
   </ul>
-  <a href="https://mainentry.net/go2cup-trip-planning-guide" class="nav-cta" target="_blank" rel="noopener">GET YOUR COUNTRY HOPPER GUIDE →</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJIRLo6dBkPh57cKbVFnU1lz7dgutqzAHO2WsXiT2DDOp43g/viewform?usp=header" class="nav-cta" target="_blank" rel="noopener">GET YOUR COUNTRY HOPPER GUIDE →</a>
 </nav>
 
 <!-- HERO -->
@@ -1459,7 +1488,7 @@ font-size: 10px;
       </div>
     </div>
     <div class="hero-actions">
-      <a href="mexico-trip-guide.html" class="btn-green">🗺 Start Planning →</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSehWlmyUk0JrD1vzZaCsZKBRHj13Qy_frczkQmWDQut1o5xlg/viewform?usp=header" class="btn-mexico-last-call" target="_blank" rel="noopener">🇲🇽 LAST CALL — MEXICO OPENS JUNE 11 ⚽🔴</a>
       <a href="host-cities.html" class="btn-white-outline">Host Cities</a>
     </div>
   </div>
@@ -1589,7 +1618,7 @@ font-size: 10px;
     <p class="cat-section-desc">Everything a fan, traveler, or local business needs — organized into one intelligent hub. Click any category to explore. New guides added weekly.</p>
   </div>
   <div class="categories-grid fade-in">
-    <a href="https://mainentry.net/go2cup-mainentry-caas" class="cat-card green featured" target="_blank" rel="noopener">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJIRLo6dBkPh57cKbVFnU1lz7dgutqzAHO2WsXiT2DDOp43g/viewform" class="cat-card green featured" target="_blank" rel="noopener">
       <div class="cat-icon">📖</div>
       <div class="cat-title" style="font-size:1.8rem;">Get the GO2CUP Fan Country Hopper Starter Guide</div>
       <p class="cat-desc" style="font-size:14px; max-width:600px;">Get the free GO2CUP Fan Country Hopper Starter Guide with host-city planning notes, cross-border route thinking, hotel-zone prompts, safety reminders, and World Cup 2026 travel intelligence across the United States, Mexico, and Canada.</p>
@@ -1710,6 +1739,17 @@ font-size: 10px;
         <span class="cat-tag">Private Jets</span>
         <span class="cat-tag">VIP Suites</span>
         <span class="cat-tag">Black Tier</span>
+      </div>
+      <div class="cat-arrow">↗</div>
+    </a>
+    <a href="insider-fan-update.html" class="cat-card blue">
+      <div class="cat-icon">📰</div>
+      <div class="cat-title">Insider Fan Update</div>
+      <p class="cat-desc">The GO2CUP fan blog with match insights, travel stories, and on-the-ground World Cup 2026 intel from inside the host cities.</p>
+      <div class="cat-tags">
+        <span class="cat-tag">Match Insights</span>
+        <span class="cat-tag">Travel Stories</span>
+        <span class="cat-tag">WC 2026 Intel</span>
       </div>
       <div class="cat-arrow">↗</div>
     </a>
