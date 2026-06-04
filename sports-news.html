@@ -120,10 +120,9 @@
 .g2pub__col-title { font-family:var(--font-head); font-size:17px; font-weight:700; letter-spacing:-0.2px; }
 .g2pub__col-count { margin-left:auto; font-size:10px; color:var(--text-muted); background:var(--surface2); border:1px solid var(--border); padding:2px 9px; border-radius:10px; font-weight:500; }
 
-.g2pub__card-wrap { display:block; text-decoration:none; color:inherit; }
 .g2pub__card { background:var(--surface); border-radius:7px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,0.06), 0 4px 14px rgba(0,0,0,0.04); transition:box-shadow 0.22s ease, transform 0.22s ease; animation:g2fadein 0.4s ease both; }
 @keyframes g2fadein { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
-.g2pub__card-wrap:hover .g2pub__card { box-shadow:0 4px 18px rgba(0,0,0,0.11), 0 12px 32px rgba(0,0,0,0.07); transform:translateY(-2px); }
+.g2pub__card:hover { box-shadow:0 4px 18px rgba(0,0,0,0.11), 0 12px 32px rgba(0,0,0,0.07); transform:translateY(-2px); }
 .g2pub__card-img { width:100%; height:150px; overflow:hidden; display:block; position:relative; }
 .g2pub__card-img img { width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.4s ease; }
 .g2pub__card:hover .g2pub__card-img img { transform:scale(1.04); }
@@ -257,9 +256,9 @@
 
 <div class="g2pub">
   <nav class="g2pub__launch-nav" aria-label="Launch navigation">
-    <a href="https://mainentry.net/go2cup-insider">HUB</a>
-    <a href="https://mainentry.net/go2cup-host-cities-usa-mx-ca">HOST CITIES</a>
-    <a href="https://mainentry.net/partner-resources">PARTNER RESOURCES</a>
+    <a href="index.html">HOME</a>
+    <a href="host-cities.html">HOST CITIES</a>
+    <a href="maria-myers.html">PARTNER RESOURCES</a>
   </nav>
   <header class="g2pub__mast">
     <div class="g2pub__mast-left">
@@ -270,7 +269,7 @@
     </div>
     <div class="g2pub__mast-right">
       <div class="g2pub__mast-date" id="g2pub-date"></div>
-      <div class="g2pub__mast-domain">mainentry.net</div>
+      <div class="g2pub__mast-domain">sportdgx.com</div>
     </div>
   </header>
 
@@ -283,7 +282,7 @@
   <section class="g2pub__cta">
     <h2>Get the GO2CUP Sports News Briefing</h2>
     <p>Follow soccer, World Cup 2026, NFL, and Formula One through the GO2CUP angle: major events, teams, athletes, fan culture, media narratives, business signals, controversies, partnerships, and emerging opportunities in global sports.</p>
-    <a href="https://mainentry.net/worldwide-sports-news" class="g2pub__cta-btn">Send Me the Sports News Briefing</a>
+    <a href="maria-myers.html#contact" class="g2pub__cta-btn">Contact Maria Myers →</a>
     <p class="g2pub__cta-disclaimer">GO2CUP is independent. It is not affiliated with FIFA, NFL, Formula One, teams, leagues, drivers, athletes, event organizers, broadcasters, or official sponsors.</p>
   </section>
 
@@ -299,10 +298,10 @@
         GO2CUP is an independent, fan-built World Cup 2026 travel intelligence hub. GO2CUP is not affiliated with FIFA, host cities, teams, stadiums, governments, official sponsors, travel providers, or ticketing entities. We may earn commissions from qualifying purchases made through partner or affiliate links. Fans should verify schedules, prices, entry rules, availability, transportation details, and travel requirements with official sources and providers before booking. Curated sports headlines are for fan travel awareness only; confirm schedules and official event information with primary sources.
       </p>
       <div class="g2pub__trust-links">
-        <a href="https://mainentry.net/Go2Cup">Home</a>
-        <a href="https://mainentry.net/partner-resources">Partner Resources</a>
-        <a href="https://mainentry.net/affiliate-disclosure">Affiliate Disclosure</a>
-        <a href="https://mainentry.net/privacy">Privacy Policy</a>
+        <a href="index.html">Home</a>
+        <a href="maria-myers.html">Partner Resources</a>
+        <a href="disclaimer & disclosure/affiliate.html">Affiliate Disclosure</a>
+        <a href="disclaimer & disclosure/privacy.html">Privacy Policy</a>
       </div>
     </div>
   </footer>
@@ -316,7 +315,7 @@
     { key:'f1', id:'g2pub-col-f1', css:'col-f1', emoji:'&#127937;', badge:'Formula One', name:'Formula One' }
   ];
 
-  var MAX_AGE_DAYS = 4;
+  var MAX_AGE_DAYS = 15;
 
   /* Paste real curated news item objects inside this array, newest first. */
   var sportsNewsData = [
@@ -324,7 +323,6 @@
     sport: "worldcup",
     category: "Tickets / Fan Access",
     publishedDate: "2026-05-22",
-    articleUrl: "article-3.html",
     title: "New York City opens a $50 World Cup ticket path for local fans",
     summary: "New York City announced a limited discounted ticket program for residents, offering 1,000 World Cup tickets at $50 each through a lottery. The program includes free round-trip bus transportation to MetLife Stadium and is aimed at making selected matches more accessible to local fans.",
     go2cupAngle: "This is the kind of host-city access model fans should watch closely. If more cities create local-ticket or transportation bundles, World Cup planning will not only be about match tickets — it will also be about city-level programs, eligibility rules, transit pickup points, and timing.",
@@ -339,7 +337,6 @@
     sport: "worldcup",
     category: "Opening Ceremony",
     publishedDate: "2026-05-22",
-    articleUrl: "article-1.html",
     title: "World Cup 2026 opening ceremonies turn into a three-country entertainment rollout",
     summary: "FIFA has published opening-ceremony details across the host nations, including major artist lineups for the United States, Mexico, and Canada. The entertainment rollout adds another layer to fan planning beyond the matches themselves.",
     go2cupAngle: "Opening ceremonies are not just entertainment. They affect arrival timing, crowd movement, hotel demand, local transportation, security patterns, and fan-zone activity in host cities.",
@@ -354,9 +351,8 @@
     sport: "worldcup",
     category: "Team News",
     publishedDate: "2026-05-22",
-    articleUrl: "article-2.html",
     title: "England squad shock: Foden, Palmer, Alexander-Arnold and Maguire left out",
-    summary: "England’s World Cup squad announcement delivered several major omissions, with Phil Foden, Cole Palmer, Trent Alexander-Arnold, Harry Maguire and Luke Shaw left out. Ivan Toney returned to the squad as England leaned into form, chemistry, and squad balance.",
+    summary: "England's World Cup squad announcement delivered several major omissions, with Phil Foden, Cole Palmer, Trent Alexander-Arnold, Harry Maguire and Luke Shaw left out. Ivan Toney returned to the squad as England leaned into form, chemistry, and squad balance.",
     go2cupAngle: "Squad decisions change fan energy fast. When major names are left out or surprise players are recalled, supporter demand, media attention, and match narratives shift immediately.",
     fanTravelImpact: "England fans planning group-stage travel should expect heavy attention around team base locations, supporter gatherings, and early match cities.",
     sourceName: "Reuters",
@@ -370,9 +366,9 @@
     category: "Team News",
     publishedDate: "2026-05-21",
     title: "Mohamed Salah set to captain Egypt at World Cup 2026",
-    summary: "Mohamed Salah is set to captain Egypt as the national team prepares for World Cup 2026. Egypt’s squad announcement also brought attention to a major omission, with Mostafa Mohamed left out of the preliminary group.",
+    summary: "Mohamed Salah is set to captain Egypt as the national team prepares for World Cup 2026. Egypt's squad announcement also brought attention to a major omission, with Mostafa Mohamed left out of the preliminary group.",
     go2cupAngle: "Salah gives Egypt one of the clearest star-power stories of the tournament. Star captains affect ticket demand, neutral-fan interest, media attention, and diaspora travel patterns.",
-    fanTravelImpact: "Egypt supporters and neutral fans tracking Salah should watch Egypt’s match cities closely because demand around those fixtures may move faster than average.",
+    fanTravelImpact: "Egypt supporters and neutral fans tracking Salah should watch Egypt's match cities closely because demand around those fixtures may move faster than average.",
     sourceName: "Al Jazeera",
     sourceUrl: "https://www.aljazeera.com/sports/2026/5/21/mohamed-salah-to-captain-egypt-as-squad-announced-for-fifa-world-cup-2026",
     imageUrl: "TODO_IMAGE_URL",
@@ -398,7 +394,7 @@
     category: "Team Business",
     publishedDate: "2026-05-22",
     title: "Matthew Stafford and Rams agree to one-year extension",
-    summary: "The Rams and quarterback Matthew Stafford agreed to a one-year extension reportedly worth $55 million, keeping the veteran quarterback central to Los Angeles’ short-term plans.",
+    summary: "The Rams and quarterback Matthew Stafford agreed to a one-year extension reportedly worth $55 million, keeping the veteran quarterback central to Los Angeles' short-term plans.",
     go2cupAngle: "Quarterback stability is a business signal. It affects ticket demand, prime-time interest, sponsor confidence, fantasy attention, and local media gravity around a franchise.",
     fanTravelImpact: "Rams fans traveling for key games should expect stronger demand around high-profile matchups if Stafford remains the face of the team.",
     sourceName: "NFL.com",
@@ -426,7 +422,7 @@
     category: "Calendar / Format",
     publishedDate: "2026-05-22",
     title: "F1 sprint calendar keeps expanding the race-weekend playbook",
-    summary: "Formula One’s sprint format adds more high-stakes sessions across selected race weekends, creating more content, more fan movement, and more commercial inventory around each event.",
+    summary: "Formula One's sprint format adds more high-stakes sessions across selected race weekends, creating more content, more fan movement, and more commercial inventory around each event.",
     go2cupAngle: "Sprint weekends show how sports are turning single events into multi-day experience platforms. That same logic applies to World Cup host cities, where match days create surrounding travel, sponsor, fan-zone, and hospitality opportunities.",
     fanTravelImpact: "Fans planning around sprint weekends need to think beyond race day because meaningful sessions can affect hotel nights, arrival timing, and ticket value.",
     sourceName: "Red Bull",
@@ -524,9 +520,7 @@
       html += '<div class="g2pub__empty">No stories from the last ' + MAX_AGE_DAYS + ' days for this sport.<br>Add recent items with <code>sport: "' + col.key + '"</code> to sportsNewsData.</div>';
     } else {
       for (var i = 0; i < items.length; i++) {
-        var cardUrl = items[i].articleUrl || items[i].sourceUrl || '#';
-        var isExternal = !items[i].articleUrl;
-        html += '<a href="' + esc(cardUrl) + '" class="g2pub__card-wrap"' + (isExternal ? ' target="_blank" rel="noopener noreferrer"' : '') + '><article class="g2pub__card" style="animation-delay:' + (0.05 + i * 0.08).toFixed(2) + 's">' + buildCard(items[i], col) + '</article></a>';
+        html += '<article class="g2pub__card" style="animation-delay:' + (0.05 + i * 0.08).toFixed(2) + 's">' + buildCard(items[i], col) + '</article>';
       }
     }
 
