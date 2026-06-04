@@ -168,17 +168,19 @@
       padding: 8px 24px; border-radius: 40px; white-space: nowrap;
       box-shadow: 0 6px 24px rgba(201,130,107,0.4);
     }
-    .lang-pills { display: flex; gap: 10px; margin-top: 44px; justify-content: center; flex-wrap: wrap; }
+    .lang-pills { display: flex; gap: 8px; margin-top: 44px; justify-content: center; flex-wrap: wrap; }
     .lang-pill {
       background: rgba(255,255,255,0.06);
       border: 1px solid rgba(201,130,107,0.28);
-      border-radius: 40px; padding: 7px 18px;
-      font-size: 12px; font-weight: 500;
+      border-radius: 40px; padding: 6px 14px;
+      font-size: 11px; font-weight: 500;
       color: rgba(255,255,255,0.75); letter-spacing: 0.04em;
-      display: flex; align-items: center; gap: 7px;
+      display: flex; align-items: center; gap: 6px;
       transition: background 0.2s, border-color 0.2s;
+      text-decoration: none; cursor: pointer;
     }
-    .lang-pill:hover { background: rgba(201,130,107,0.12); border-color: var(--rose-gold); }
+    .lang-pill:hover { background: rgba(201,130,107,0.12); border-color: var(--rose-gold); color: #fff; text-decoration: none; }
+    .lang-pill.active { background: rgba(201,130,107,0.18); border-color: var(--rose-gold); color: #fff; }
 
     /* Hero text */
     .hero-eyebrow {
@@ -471,9 +473,10 @@
           <div class="photo-badge">Founder &amp; Owner · MainEntry LLC</div>
         </div>
         <div class="lang-pills">
-          <div class="lang-pill">🇺🇸 English</div>
-          <div class="lang-pill">🇧🇷 Português</div>
-          <div class="lang-pill">🇪🇸 Español</div>
+          <a href="maria-myers.html" class="lang-pill active">🇺🇸 English</a>
+          <a href="maria-myers-pt.html" class="lang-pill">🇧🇷 Português</a>
+          <a href="maria-myers-es.html" class="lang-pill">🇪🇸 Español</a>
+          <a href="maria-myers-it.html" class="lang-pill">🇮🇹 Italiano</a>
         </div>
       </div>
 
@@ -623,6 +626,7 @@
                   <option>🇺🇸 English</option>
                   <option>🇧🇷 Português</option>
                   <option>🇪🇸 Español</option>
+                  <option>🇮🇹 Italiano</option>
                 </select>
               </div>
               <div class="f-grp">
@@ -700,7 +704,7 @@
     </div>
     <div class="ft-bot">
       <p class="ft-copy">© 2026 Maria Myers — MainEntry LLC. All rights reserved.</p>
-      <div class="ft-langs"><span>English</span><span>Português</span><span>Español</span></div>
+      <div class="ft-langs"><a href="maria-myers.html" style="color:inherit;text-decoration:none">English</a><a href="maria-myers-pt.html" style="color:inherit;text-decoration:none">Português</a><a href="maria-myers-es.html" style="color:inherit;text-decoration:none">Español</a><a href="maria-myers-it.html" style="color:inherit;text-decoration:none">Italiano</a></div>
     </div>
   </div>
 </footer>
