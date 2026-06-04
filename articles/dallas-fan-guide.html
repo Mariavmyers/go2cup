@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dallas Fan Guide: World Cup 2026 at AT&T Stadium | GO2CUP</title>
+  <meta name="description" content="Everything you need to know as a fan attending FIFA World Cup 2026 matches in Dallas at AT&T Stadium — transport, hotels, food, and fan zones." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #06080d;
+      --gold: #d9a441;
+      --blue: #2f80d6;
+      --green: #1f9d57;
+      --red: #e2404d;
+      --text: #e8e8e8;
+      --muted: #9aa0ad;
+      --card: #0e1218;
+      --border: #1e2530;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Archivo', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #080b11;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      height: 56px;
+    }
+
+    .nav-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 26px;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+    .nav-logo .go { color: var(--blue); }
+    .nav-logo .two { color: var(--green); }
+    .nav-logo .cup { color: var(--red); }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+
+    /* LANG BAR */
+    .lang-bar {
+      background: #0a0d14;
+      border-bottom: 1px solid var(--border);
+      padding: 8px 24px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .lang-pill {
+      display: inline-block;
+      padding: 3px 10px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .lang-pill.active {
+      background: var(--gold);
+      color: #06080d;
+      cursor: default;
+    }
+    .lang-pill.inactive {
+      background: var(--border);
+      color: var(--muted);
+    }
+    .lang-pill.inactive:hover {
+      background: #2a3040;
+      color: var(--text);
+    }
+
+    /* ARTICLE HEADER */
+    .article-header {
+      max-width: 800px;
+      margin: 48px auto 0;
+      padding: 0 24px;
+    }
+    .category-badge {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 3px;
+      margin-bottom: 16px;
+    }
+    .article-header h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.1;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      font-size: 13px;
+      color: var(--muted);
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 40px;
+    }
+    .article-meta span { display: flex; align-items: center; gap: 6px; }
+
+    /* BODY */
+    .article-body {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px 64px;
+    }
+
+    .article-body h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 28px;
+      color: var(--gold);
+      margin: 48px 0 16px;
+      letter-spacing: 0.5px;
+    }
+
+    .article-body p { margin-bottom: 18px; }
+
+    .article-body ul, .article-body ol {
+      margin: 0 0 18px 20px;
+    }
+    .article-body li { margin-bottom: 8px; }
+
+    .article-body a {
+      color: var(--blue);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .article-body a:hover { color: var(--gold); }
+
+    /* TIPS BOX */
+    .tips-box {
+      background: var(--card);
+      border-left: 4px solid var(--gold);
+      border-radius: 0 6px 6px 0;
+      padding: 20px 24px;
+      margin: 32px 0;
+    }
+    .tips-box .tips-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 18px;
+      color: var(--gold);
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+    .tips-box ul { margin-left: 18px; }
+
+    /* INFO BOX */
+    .info-box {
+      background: #0a1520;
+      border: 1px solid var(--blue);
+      border-radius: 6px;
+      padding: 20px 24px;
+      margin: 32px 0;
+    }
+    .info-box .info-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 18px;
+      color: var(--blue);
+      margin-bottom: 12px;
+    }
+
+    /* WARNING BOX */
+    .warning-box {
+      background: #1a0d0e;
+      border: 1px solid var(--red);
+      border-radius: 6px;
+      padding: 20px 24px;
+      margin: 32px 0;
+    }
+    .warning-box .warning-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 18px;
+      color: var(--red);
+      margin-bottom: 12px;
+    }
+
+    /* AFFILIATE DISCLAIMER */
+    .affiliate-disclaimer {
+      background: #0e1218;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 14px 18px;
+      font-size: 12px;
+      color: var(--muted);
+      margin: 32px 0;
+      line-height: 1.5;
+    }
+
+    /* CTA BUTTON */
+    .cta-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 3px;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .cta-btn:hover { opacity: 0.85; }
+    .cta-btn.gold { background: var(--gold); color: #06080d; }
+    .cta-btn.blue { background: var(--blue); color: #fff; }
+    .cta-btn.green { background: var(--green); color: #fff; }
+
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 24px 0;
+    }
+
+    /* NEWSLETTER */
+    .newsletter-block {
+      background: linear-gradient(135deg, #0e1520 0%, #111827 100%);
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+      padding: 32px;
+      margin: 48px 0;
+      text-align: center;
+    }
+    .newsletter-block h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 26px;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .newsletter-block p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .newsletter-block a.cta-btn { text-decoration: none; }
+
+    /* RELATED */
+    .related-section {
+      border-top: 1px solid var(--border);
+      padding-top: 48px;
+      margin-top: 48px;
+    }
+    .related-section h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 24px;
+      color: var(--gold);
+      margin-bottom: 24px;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .related-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 18px;
+      text-decoration: none;
+      transition: border-color 0.2s;
+    }
+    .related-card:hover { border-color: var(--gold); }
+    .related-card .rc-cat {
+      font-size: 11px;
+      color: var(--blue);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .related-card .rc-title {
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #080b11;
+      border-top: 1px solid var(--border);
+      padding: 40px 24px;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+    .footer-logo .go { color: var(--blue); }
+    .footer-logo .two { color: var(--green); }
+    .footer-logo .cup { color: var(--red); }
+    footer p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+
+    /* STADIUM STAT GRID */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 12px;
+      margin: 24px 0;
+    }
+    .stat-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 16px;
+      text-align: center;
+    }
+    .stat-card .stat-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 28px;
+      color: var(--gold);
+    }
+    .stat-card .stat-label {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 0 16px; }
+      .nav-links { gap: 16px; }
+      .nav-links a { font-size: 13px; }
+      .article-header, .article-body { padding-left: 16px; padding-right: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Hub</a></li>
+      <li><a href="../where-to-stay.html">Where to Stay</a></li>
+      <li><a href="../index.html#partners">Partner Resources</a></li>
+      <li><a href="../index.html#blog">Blog</a></li>
+    </ul>
+  </nav>
+
+  <!-- LANG BAR -->
+  <div class="lang-bar">
+    <span class="lang-pill active">EN</span>
+    <a href="../maria-myers-pt.html" class="lang-pill inactive">PT</a>
+    <a href="../maria-myers-es.html" class="lang-pill inactive">ES</a>
+    <a href="../maria-myers-it.html" class="lang-pill inactive">IT</a>
+  </div>
+
+  <!-- ARTICLE HEADER -->
+  <header class="article-header">
+    <div class="category-badge">Host City</div>
+    <h1>Dallas Fan Guide: World Cup 2026 at AT&amp;T Stadium</h1>
+    <div class="article-meta">
+      <span>&#128197; April 9, 2026</span>
+      <span>&#9200; 7 min read</span>
+      <span>&#9997; By the GO2CUP Editorial Team</span>
+    </div>
+  </header>
+
+  <!-- ARTICLE BODY -->
+  <main class="article-body">
+
+    <div class="affiliate-disclaimer">
+      <strong>Affiliate Disclosure:</strong> GO2CUP earns a commission from qualifying purchases and bookings made through links on this page, including hotel and ticket links. This comes at no extra cost to you and helps us keep the hub free and updated.
+    </div>
+
+    <p>Dallas is one of the most exciting host cities for FIFA World Cup 2026 — a true American football mecca now welcoming the world's biggest sport. AT&amp;T Stadium in Arlington delivers a match-day experience unlike anything else on the host city list: massive capacity, a retractable roof, and full air conditioning that makes a genuine difference when Texas heat peaks in June. This guide covers everything a fan needs from arrival to final whistle.</p>
+
+    <h2>AT&amp;T Stadium: Fast Facts</h2>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-num">80,000+</div>
+        <div class="stat-label">Capacity</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">6</div>
+        <div class="stat-label">Matches Hosted</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">15 mi</div>
+        <div class="stat-label">From Downtown Dallas</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">72°F</div>
+        <div class="stat-label">Inside (A/C)</div>
+      </div>
+    </div>
+
+    <p>AT&amp;T Stadium is located in Arlington, Texas — a city positioned between Dallas and Fort Worth in the so-called "Mid-Cities" corridor. The stadium was built for the NFL's Dallas Cowboys and is among the largest domed venues in the world. Its retractable roof seals in air-conditioned comfort, which is critical context: outside temperatures in June regularly climb above 90°F with meaningful humidity, but inside the stadium you will be cool. Dress in layers if you run cold.</p>
+
+    <p>The venue hosts 6 FIFA World Cup 2026 matches including group stage and knockout round games. Check the <a href="../host-cities/dallas.html">Dallas host city page</a> for the confirmed match schedule as it is finalised.</p>
+
+    <h2>Getting to AT&amp;T Stadium</h2>
+
+    <p>This is the one logistical challenge Dallas fans need to plan around: there is no direct rail link from Dallas proper to AT&amp;T Stadium. Unlike some host cities where fans can hop on a subway to the ground, Arlington has historically resisted mass transit investment, and while there are long-term plans, they will not materially change your 2026 match-day reality.</p>
+
+    <div class="tips-box">
+      <div class="tips-title">Transport Options</div>
+      <ul>
+        <li><strong>Ride-share (Uber/Lyft):</strong> The recommended option. Expect surge pricing on match days — book in advance or walk 10-15 minutes from the stadium perimeter to a less congested pickup zone.</li>
+        <li><strong>Driving &amp; Parking:</strong> Parking is available around the stadium but fills fast. Pre-book a parking pass through the stadium or a third-party lot app. Budget 30-45 extra minutes post-match to exit.</li>
+        <li><strong>Official shuttle buses:</strong> FIFA and local authorities typically run shuttle services from designated park-and-ride locations. Watch for official announcements closer to tournament time.</li>
+        <li><strong>From DFW Airport:</strong> DFW is approximately 20 minutes from the stadium by ride-share — one of the most convenient airport-to-stadium connections on the host city list.</li>
+        <li><strong>From Love Field (DAL):</strong> About 30 minutes by ride-share via I-30.</li>
+      </ul>
+    </div>
+
+    <h2>Where to Stay in the Dallas Area</h2>
+
+    <p>You have two broad strategies: stay in Arlington close to the stadium, or stay in Dallas proper and commute. Most visitors opt for Dallas given the better dining, nightlife, and public transport options. Here are the top neighbourhoods broken down by vibe and budget.</p>
+
+    <h3 style="color:#fff; font-size:18px; margin: 24px 0 12px;">Uptown Dallas — Best All-Round Option</h3>
+    <p>Uptown is Dallas's most walkable neighbourhood with excellent bars, restaurants, and an M-Line streetcar that connects to downtown. It's lively, safe, and well-stocked with mid-range hotels and short-term apartments. Budget for $180-$350/night during World Cup period.</p>
+
+    <h3 style="color:#fff; font-size:18px; margin: 24px 0 12px;">Downtown Dallas — Central and Connected</h3>
+    <p>Downtown puts you near the DART light rail network which, while not reaching the stadium directly, makes getting around Dallas itself easier. Plenty of business hotels offer competitive rates, and the Arts District provides cultural options on rest days.</p>
+
+    <h3 style="color:#fff; font-size:18px; margin: 24px 0 12px;">Las Colinas — Closest to the Stadium</h3>
+    <p>Las Colinas is a planned corporate district about 10-12 miles from AT&amp;T Stadium, significantly closer than central Dallas. If minimising match-day travel is your priority, Las Colinas hotels offer a genuine advantage. Trade-off: the area is quieter and less vibrant after hours.</p>
+
+    <div class="cta-group">
+      <a href="https://www.booking.com/searchresults.html?ss=Dallas+Texas" class="cta-btn gold" target="_blank" rel="noopener">Search Dallas Hotels on Booking.com</a>
+      <a href="../where-to-stay.html" class="cta-btn blue">Full Accommodation Guide</a>
+    </div>
+
+    <div class="affiliate-disclaimer">
+      Hotel links above use affiliate partnerships. Prices vary by date and availability. Book early — Dallas hotel inventory tightens significantly for World Cup match dates.
+    </div>
+
+    <!-- MID-ARTICLE NEWSLETTER -->
+    <div class="newsletter-block">
+      <h3>Get Match Day Alerts</h3>
+      <p>Sign up for the GO2CUP newsletter and receive fan guides, schedule updates, and exclusive tips straight to your inbox.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform?usp=header" class="cta-btn gold" target="_blank" rel="noopener">Subscribe Free</a>
+    </div>
+
+    <h2>Dallas Weather in June — What to Expect</h2>
+
+    <div class="warning-box">
+      <div class="warning-title">Heat Warning</div>
+      <p>June in Dallas averages highs of 93°F (34°C) with humidity that makes it feel hotter. Direct sun is intense. Hydrate constantly when outdoors, wear sunscreen, and plan outdoor fan-zone time for early morning or evening.</p>
+    </div>
+
+    <p>The good news: AT&amp;T Stadium's air conditioning transforms the match experience. The venue is genuinely cool inside, so your time at the actual game will be comfortable regardless of outside conditions. The challenge is the journey — waiting for ride-shares or walking in the heat. Plan accordingly:</p>
+
+    <ul>
+      <li>Arrive at least 90 minutes before kick-off to avoid the midday rush and heat buildup outside</li>
+      <li>Carry a reusable water bottle (check stadium policy on sealed bottles)</li>
+      <li>Light, breathable fabrics and a hat are essential for outdoor time</li>
+      <li>Post-match, wait inside the stadium for 20-30 minutes after final whistle if possible — the crowd surge outside will be intense</li>
+    </ul>
+
+    <h2>Fan Zones &amp; Match-Day Atmosphere</h2>
+
+    <p>Dallas has invested in fan zones across the city to complement the stadium experience. The two main hubs for World Cup 2026 fan activity are expected to be:</p>
+
+    <div class="info-box">
+      <div class="info-title">Deep Ellum Fan Zone</div>
+      <p>Deep Ellum is Dallas's historic entertainment district east of downtown, famous for live music, street art, and an eclectic bar scene. Expect official and unofficial fan zones to cluster here, with big screens, food trucks, and a carnival atmosphere on match days. It's also one of the best areas to meet fans from other nations.</p>
+    </div>
+
+    <div class="info-box">
+      <div class="info-title">Uptown Fan Zone</div>
+      <p>Uptown's McKinney Avenue corridor is lined with sports bars and rooftop venues that will screen every match. This area attracts a slightly older, more local crowd and is excellent for the group-stage atmosphere when multiple games run simultaneously.</p>
+    </div>
+
+    <h2>Food Guide: BBQ and Tex-Mex for Football Fans</h2>
+
+    <p>Dallas and the broader DFW area is one of the great food cities of the American South. Two cuisines dominate and both are unmissable for visiting fans:</p>
+
+    <h3 style="color:#fff; font-size:18px; margin: 24px 0 12px;">Texas BBQ</h3>
+    <p>Brisket is king in Texas. Look for slow-smoked brisket with a proper bark (the dark crust), pork ribs, and jalapeño cheddar sausages. Quality BBQ joints often sell out by early afternoon, so aim for an 11am lunch before heading to evening matches. Pecan Lodge in Deep Ellum is a local institution worth queuing for.</p>
+
+    <h3 style="color:#fff; font-size:18px; margin: 24px 0 12px;">Tex-Mex</h3>
+    <p>Tex-Mex — the Texan interpretation of Mexican cuisine — is a comfort-food staple. Expect enchiladas, breakfast tacos, queso (a liquid cheese dip that Texans take very seriously), and frozen margaritas. Tex-Mex restaurants are everywhere in Dallas and represent excellent value compared to stadium food prices.</p>
+
+    <h3 style="color:#fff; font-size:18px; margin: 24px 0 12px;">Inside the Stadium</h3>
+    <p>AT&amp;T Stadium concessions include Texas-themed options alongside the standard stadium fare. Prices are premium — a meal and drinks inside can easily run $40-60 per person. Consider eating a full meal before arriving.</p>
+
+    <h2>Day Trip: Fort Worth Stockyards</h2>
+
+    <p>If you have a rest day between matches, the Fort Worth Stockyards is one of the best day trips from any World Cup 2026 host city. Located approximately 30 minutes west of Dallas (30 miles), the Stockyards is a preserved 19th-century cattle trading district that offers a genuinely unique slice of American Western heritage.</p>
+
+    <ul>
+      <li><strong>Twice-daily longhorn cattle drives</strong> down Exchange Avenue — the only daily cattle drive in the world</li>
+      <li><strong>Live country music</strong> at Billy Bob's Texas, the world's largest honky-tonk</li>
+      <li><strong>Western shopping</strong> — custom boots, hats, and leather goods</li>
+      <li><strong>Texan steakhouses</strong> — several excellent options for a true Texas steak experience</li>
+    </ul>
+
+    <p>Getting there: Ride-share from Dallas is straightforward and costs $25-40 each way. Alternatively, the TRE (Trinity Railway Express) connects Dallas Union Station to Fort Worth Central Station, from which the Stockyards is a short ride-share away.</p>
+
+    <h2>Tickets for Dallas Matches</h2>
+
+    <p>Official ticket allocations for Dallas group stage and knockout matches are managed through FIFA's ticketing platform. For fans seeking additional tickets or last-minute options, the secondary market is available through authorised resellers.</p>
+
+    <div class="cta-group">
+      <a href="https://www.viagogo.com/Sport-Tickets/Soccer/FIFA-World-Cup" class="cta-btn gold" target="_blank" rel="noopener">Find Dallas Match Tickets on Viagogo</a>
+    </div>
+
+    <div class="affiliate-disclaimer">
+      Ticket prices on secondary markets fluctuate with demand. Buy from reputable platforms only. GO2CUP earns a referral commission on qualifying ticket purchases.
+    </div>
+
+    <h2>Quick Dallas Fan Tips</h2>
+
+    <div class="tips-box">
+      <div class="tips-title">Before You Go — Checklist</div>
+      <ul>
+        <li>Pre-book your hotel: World Cup surge pricing kicks in months in advance</li>
+        <li>Download Uber and Lyft before arriving — you will need both on busy match days</li>
+        <li>Book ride-share at least 45 minutes before you need it on match days</li>
+        <li>AT&amp;T Stadium has a clear bag policy — check the official guidelines before packing</li>
+        <li>Portable phone charger is essential; stadium WiFi gets congested</li>
+        <li>DFW Airport has direct flights to most international hubs — a strong gateway city</li>
+        <li>Check <a href="../host-cities/dallas.html">our Dallas host city page</a> for confirmed match dates</li>
+      </ul>
+    </div>
+
+    <!-- BOTTOM NEWSLETTER -->
+    <div class="newsletter-block">
+      <h3>Don't Miss a Thing</h3>
+      <p>Schedule updates, fan zone openings, transport announcements — all in the GO2CUP newsletter.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform?usp=header" class="cta-btn gold" target="_blank" rel="noopener">Subscribe Free</a>
+    </div>
+
+    <!-- RELATED ARTICLES -->
+    <div class="related-section">
+      <h3>More Fan Guides</h3>
+      <div class="related-grid">
+        <a href="new-york-new-jersey-fan-guide.html" class="related-card">
+          <div class="rc-cat">Host City</div>
+          <div class="rc-title">New York / New Jersey: The World Cup Final at MetLife</div>
+        </a>
+        <a href="los-angeles-fan-guide.html" class="related-card">
+          <div class="rc-cat">Host City</div>
+          <div class="rc-title">Los Angeles Fan Guide: World Cup 2026 at SoFi Stadium</div>
+        </a>
+        <a href="miami-fan-guide.html" class="related-card">
+          <div class="rc-cat">Host City</div>
+          <div class="rc-title">Miami Fan Guide: World Cup 2026 at Hard Rock Stadium</div>
+        </a>
+        <a href="toronto-fan-guide.html" class="related-card">
+          <div class="rc-cat">Host City</div>
+          <div class="rc-title">Toronto Fan Guide: World Cup 2026 in Canada</div>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span>
+    </div>
+    <p>Your independent guide to FIFA World Cup 2026 | sportdgx.com</p>
+    <p style="margin-top:8px; font-size:11px;">GO2CUP is an independent fan hub and is not affiliated with FIFA or any official tournament body. Affiliate links used throughout — see individual disclosures.</p>
+  </footer>
+
+</body>
+</html>

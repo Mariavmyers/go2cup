@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New York / New Jersey Fan Guide: The World Cup Final at MetLife | GO2CUP</title>
+  <meta name="description" content="Your complete fan guide to FIFA World Cup 2026 at MetLife Stadium — including the July 19 Final. Transport from NYC, hotels, fan zones, and match-day tips." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #06080d;
+      --gold: #d9a441;
+      --blue: #2f80d6;
+      --green: #1f9d57;
+      --red: #e2404d;
+      --text: #e8e8e8;
+      --muted: #9aa0ad;
+      --card: #0e1218;
+      --border: #1e2530;
+    }
+
+    body { background: var(--bg); color: var(--text); font-family: 'Archivo', sans-serif; font-size: 16px; line-height: 1.7; }
+
+    nav { position: sticky; top: 0; z-index: 100; background: #080b11; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 24px; height: 56px; }
+    .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 26px; letter-spacing: 1px; text-decoration: none; }
+    .nav-logo .go { color: var(--blue); }
+    .nav-logo .two { color: var(--green); }
+    .nav-logo .cup { color: var(--red); }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--gold); }
+
+    .lang-bar { background: #0a0d14; border-bottom: 1px solid var(--border); padding: 8px 24px; display: flex; gap: 8px; align-items: center; }
+    .lang-pill { display: inline-block; padding: 3px 10px; font-size: 12px; font-weight: 600; border-radius: 3px; text-decoration: none; transition: background 0.2s, color 0.2s; }
+    .lang-pill.active { background: var(--gold); color: #06080d; cursor: default; }
+    .lang-pill.inactive { background: var(--border); color: var(--muted); }
+    .lang-pill.inactive:hover { background: #2a3040; color: var(--text); }
+
+    .article-header { max-width: 800px; margin: 48px auto 0; padding: 0 24px; }
+    .category-badge { display: inline-block; background: var(--blue); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 4px 10px; border-radius: 3px; margin-bottom: 16px; }
+    .article-header h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(32px, 5vw, 52px); line-height: 1.1; color: #fff; margin-bottom: 20px; }
+    .article-meta { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; font-size: 13px; color: var(--muted); padding-bottom: 24px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+
+    .article-body { max-width: 800px; margin: 0 auto; padding: 0 24px 64px; }
+    .article-body h2 { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--gold); margin: 48px 0 16px; letter-spacing: 0.5px; }
+    .article-body p { margin-bottom: 18px; }
+    .article-body ul, .article-body ol { margin: 0 0 18px 20px; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
+    .article-body a:hover { color: var(--gold); }
+
+    .tips-box { background: var(--card); border-left: 4px solid var(--gold); border-radius: 0 6px 6px 0; padding: 20px 24px; margin: 32px 0; }
+    .tips-box .tips-title { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--gold); margin-bottom: 12px; letter-spacing: 0.5px; }
+    .tips-box ul { margin-left: 18px; }
+
+    .info-box { background: #0a1520; border: 1px solid var(--blue); border-radius: 6px; padding: 20px 24px; margin: 32px 0; }
+    .info-box .info-title { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--blue); margin-bottom: 12px; }
+
+    .warning-box { background: #1a0d0e; border: 1px solid var(--red); border-radius: 6px; padding: 20px 24px; margin: 32px 0; }
+    .warning-box .warning-title { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--red); margin-bottom: 12px; }
+
+    .final-badge { background: linear-gradient(135deg, var(--gold), #b8860b); color: #06080d; font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 1px; text-align: center; padding: 16px 24px; border-radius: 6px; margin: 32px 0; }
+
+    .affiliate-disclaimer { background: #0e1218; border: 1px solid var(--border); border-radius: 6px; padding: 14px 18px; font-size: 12px; color: var(--muted); margin: 32px 0; line-height: 1.5; }
+
+    .cta-btn { display: inline-block; padding: 12px 24px; border-radius: 3px; font-weight: 700; font-size: 14px; text-decoration: none; transition: opacity 0.2s; }
+    .cta-btn:hover { opacity: 0.85; }
+    .cta-btn.gold { background: var(--gold); color: #06080d; }
+    .cta-btn.blue { background: var(--blue); color: #fff; }
+    .cta-group { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0; }
+
+    .newsletter-block { background: linear-gradient(135deg, #0e1520 0%, #111827 100%); border: 1px solid var(--gold); border-radius: 8px; padding: 32px; margin: 48px 0; text-align: center; }
+    .newsletter-block h3 { font-family: 'Bebas Neue', sans-serif; font-size: 26px; color: var(--gold); margin-bottom: 10px; }
+    .newsletter-block p { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; margin: 24px 0; }
+    .stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 16px; text-align: center; }
+    .stat-card .stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--gold); }
+    .stat-card .stat-label { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+    .related-section { border-top: 1px solid var(--border); padding-top: 48px; margin-top: 48px; }
+    .related-section h3 { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: var(--gold); margin-bottom: 24px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+    .related-card { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 18px; text-decoration: none; transition: border-color 0.2s; }
+    .related-card:hover { border-color: var(--gold); }
+    .related-card .rc-cat { font-size: 11px; color: var(--blue); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .related-card .rc-title { color: var(--text); font-size: 14px; font-weight: 600; line-height: 1.4; }
+
+    footer { background: #080b11; border-top: 1px solid var(--border); padding: 40px 24px; text-align: center; }
+    .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 28px; margin-bottom: 12px; }
+    .footer-logo .go { color: var(--blue); }
+    .footer-logo .two { color: var(--green); }
+    .footer-logo .cup { color: var(--red); }
+    footer p { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
+
+    @media (max-width: 600px) { nav { padding: 0 16px; } .nav-links { gap: 16px; } .article-header, .article-body { padding-left: 16px; padding-right: 16px; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Hub</a></li>
+      <li><a href="../where-to-stay.html">Where to Stay</a></li>
+      <li><a href="../index.html#partners">Partner Resources</a></li>
+      <li><a href="../index.html#blog">Blog</a></li>
+    </ul>
+  </nav>
+
+  <div class="lang-bar">
+    <span class="lang-pill active">EN</span>
+    <a href="../maria-myers-pt.html" class="lang-pill inactive">PT</a>
+    <a href="../maria-myers-es.html" class="lang-pill inactive">ES</a>
+    <a href="../maria-myers-it.html" class="lang-pill inactive">IT</a>
+  </div>
+
+  <header class="article-header">
+    <div class="category-badge">Host City</div>
+    <h1>New York / New Jersey Fan Guide: The World Cup Final at MetLife</h1>
+    <div class="article-meta">
+      <span>&#128197; April 14, 2026</span>
+      <span>&#9200; 8 min read</span>
+      <span>&#9997; By the GO2CUP Editorial Team</span>
+    </div>
+  </header>
+
+  <main class="article-body">
+
+    <div class="affiliate-disclaimer">
+      <strong>Affiliate Disclosure:</strong> GO2CUP earns a commission from qualifying purchases and bookings made through links on this page, including hotel and ticket links. This comes at no extra cost to you and helps us keep the hub free and updated.
+    </div>
+
+    <div class="final-badge">&#127942; FIFA WORLD CUP 2026 FINAL — JULY 19, 2026 &#127942;</div>
+
+    <p>The New York / New Jersey metro area is hosting the centrepiece of the entire FIFA World Cup 2026: the Final itself, played at MetLife Stadium on July 19, 2026. That alone makes this the most important host city to understand for serious tournament followers. But even beyond the Final, New York is a natural base for fans visiting multiple host cities — it's the most connected city in the tournament and the most electrifying backdrop on the planet for a World Cup.</p>
+
+    <p>This guide covers MetLife Stadium, how to get there from Manhattan, where to stay, what to expect from NYC prices, and how to make the most of the greatest city in the world while the world's greatest tournament comes to town.</p>
+
+    <h2>MetLife Stadium: Fast Facts</h2>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-num">82,500</div>
+        <div class="stat-label">Capacity</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">July 19</div>
+        <div class="stat-label">World Cup Final</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">~9 mi</div>
+        <div class="stat-label">From Midtown Manhattan</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">Open Air</div>
+        <div class="stat-label">No Roof / No A/C</div>
+      </div>
+    </div>
+
+    <p>MetLife Stadium sits in East Rutherford, New Jersey — technically not New York City but so close to Midtown Manhattan that it functions as part of the same metro universe. It is the home stadium of both the New York Giants and New York Jets of the NFL. With a capacity of 82,500 for football, it is one of the largest stadiums in the United States and will rank among the biggest World Cup venues in history for the Final.</p>
+
+    <p>Important note: MetLife is an open-air venue. Unlike AT&T Stadium in Dallas, there is no retractable roof and no air conditioning. July temperatures in the New York area average 85°F (29°C) with notable humidity. Plan for heat management — more on that below.</p>
+
+    <p>For confirmed match dates and group-stage allocations, visit the <a href="../host-cities/new-york-new-jersey.html">New York / New Jersey host city page</a>.</p>
+
+    <h2>Getting There from New York City</h2>
+
+    <p>The New York / New Jersey area offers the best transit connectivity of any World Cup 2026 host city — and for MetLife specifically, there is a direct and proven transport link that has been used for Super Bowl games and major concerts:</p>
+
+    <div class="info-box">
+      <div class="info-title">NJ Transit Train — The Best Option</div>
+      <p>NJ Transit operates a dedicated rail service from New York Penn Station (Midtown Manhattan, 34th Street) directly to Meadowlands Station, which is immediately adjacent to MetLife Stadium. Journey time is approximately 25-35 minutes. Services run frequently on match days, including extra trains before and after games. This is the fastest, cheapest, and most stress-free way to reach the stadium — use it.</p>
+    </div>
+
+    <div class="tips-box">
+      <div class="tips-title">All Transport Options</div>
+      <ul>
+        <li><strong>NJ Transit to Meadowlands:</strong> Highly recommended. Buy tickets in advance via the NJ Transit app to avoid queues. Return trains fill fast — board early after the final whistle.</li>
+        <li><strong>From Newark Liberty Airport:</strong> NJ Transit connects Newark Airport directly to Penn Station, then switch for Meadowlands service. Total journey ~50 minutes from the airport.</li>
+        <li><strong>From JFK Airport:</strong> AirTrain to Jamaica, then LIRR or subway to Penn Station, then NJ Transit. Budget 75-90 minutes and book transfers in advance.</li>
+        <li><strong>Driving:</strong> Strongly advised against on Final day. The Meadowlands area roads will be heavily congested. If you must drive, pre-book parking and allow 2+ extra hours.</li>
+        <li><strong>Ride-share:</strong> Useful from Hoboken or Jersey City, but surge pricing will be significant for the Final and knockout games.</li>
+      </ul>
+    </div>
+
+    <h2>Where to Stay: Neighbourhoods Breakdown</h2>
+
+    <div class="warning-box">
+      <div class="warning-title">Budget Alert: NYC Is the Most Expensive Host City</div>
+      <p>New York City consistently ranks among the world's most expensive cities, and World Cup demand will push hotel prices to extraordinary levels — especially for the Final weekend (July 17-20). Budget $300-600+ per night for mid-range options in Manhattan during that period. Book as early as possible. Consider New Jersey alternatives for better value.</p>
+    </div>
+
+    <h3 style="color:#fff; font-size:18px; margin: 24px 0 12px;">Midtown Manhattan — Best for Access</h3>
+    <p>Staying in Midtown puts you within walking distance of Penn Station and the NJ Transit connection. Times Square, the High Line, Central Park, and endless dining are all nearby. Expect to pay a premium — but the convenience for stadium access is unmatched.</p>
+
+    <h3 style="color:#fff; font-size:18px; margin: 24px 0 12px;">Hoboken, NJ — Best Value Near the Stadium</h3>
+    <p>Hoboken is a lively city directly across the Hudson River from Manhattan with PATH train connections to Midtown and easy ride-share access to MetLife. Hotels here cost significantly less than Manhattan equivalents and the food and bar scene is genuinely good. This is the best value base for fans prioritising stadium access over Manhattan sightseeing.</p>
+
+    <h3 style="color:#fff; font-size:18px; margin: 24px 0 12px;">Jersey City — Best Value Overall</h3>
+    <p>Jersey City has seen major development in recent years and offers Manhattan views, good hotels at lower prices, and PATH train links. Exchange Place and Newport areas are particularly convenient. An excellent choice for budget-conscious fans.</p>
+
+    <h3 style="color:#fff; font-size:18px; margin: 24px 0 12px;">Brooklyn — Atmosphere and Value</h3>
+    <p>Brooklyn offers a hipper, more local NYC experience with great food and nightlife. Transport to the stadium requires Penn Station connection via subway — add 20-30 minutes versus Midtown. Worth it for the neighbourhood experience.</p>
+
+    <div class="cta-group">
+      <a href="https://www.booking.com/searchresults.html?ss=New+York+City" class="cta-btn gold" target="_blank" rel="noopener">Search NYC Hotels on Booking.com</a>
+      <a href="../where-to-stay.html" class="cta-btn blue">Full Accommodation Guide</a>
+    </div>
+
+    <div class="affiliate-disclaimer">
+      Hotel links above use affiliate partnerships. For the World Cup Final weekend, we strongly recommend booking 6-12 months in advance. GO2CUP earns a commission on qualifying bookings.
+    </div>
+
+    <!-- MID-ARTICLE NEWSLETTER -->
+    <div class="newsletter-block">
+      <h3>Final Week Updates</h3>
+      <p>Get GO2CUP's newsletter for Final ticket availability alerts, fan zone opening times, and transport schedule updates for New York.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform?usp=header" class="cta-btn gold" target="_blank" rel="noopener">Subscribe Free</a>
+    </div>
+
+    <h2>Fan Zones in New York City</h2>
+
+    <p>New York City is expected to host some of the largest outdoor fan zones in World Cup history. The combination of massive fan footfall and iconic backdrops creates unparalleled atmosphere.</p>
+
+    <div class="info-box">
+      <div class="info-title">Times Square Fan Zone</div>
+      <p>Times Square — the crossroads of the world — will almost certainly serve as a primary fan zone hub with giant screens, live entertainment, and coverage of all tournament matches. The area transforms on major sporting occasions and a World Cup Final in the host country will be unlike anything seen there before. Plan for enormous crowds — arrive very early for prime position, especially on Final day.</p>
+    </div>
+
+    <div class="info-box">
+      <div class="info-title">Central Park Events</div>
+      <p>Central Park has hosted major outdoor screenings and events during previous global sporting occasions. Expect fan-friendly programming throughout the tournament, particularly during the knockout rounds. The park's Great Lawn and surrounding areas are natural gathering points for international fans.</p>
+    </div>
+
+    <h2>Weather in July — Heat and Humidity</h2>
+
+    <p>July in New York is genuinely hot and humid. Average highs sit around 85°F (29°C) but the combination with urban heat and humidity can make it feel significantly warmer. MetLife is an open-air stadium — you will be in direct sun for the early afternoon matches. For evening kick-offs, conditions improve considerably.</p>
+
+    <ul>
+      <li>Bring and use sunscreen — stadium seats can mean hours of direct sun exposure</li>
+      <li>Hydrate aggressively throughout the day, not just at the match</li>
+      <li>Light, breathable clothing is essential — avoid dark colours in direct sun</li>
+      <li>Evening kick-offs are more comfortable than midday games</li>
+      <li>A cooling towel or portable fan is worth packing for extended fan-zone time</li>
+    </ul>
+
+    <h2>Things to Do Around Match Day in New York</h2>
+
+    <p>New York arguably offers more to do than any other host city on the World Cup list. The challenge is not finding things — it's prioritising them.</p>
+
+    <ul>
+      <li><strong>The High Line:</strong> An elevated park built on a former rail line in Chelsea — free, scenic, and walkable in any direction</li>
+      <li><strong>Brooklyn Bridge:</strong> Walk across for classic Manhattan skyline views — best at sunrise or sunset</li>
+      <li><strong>Museum of Modern Art (MoMA):</strong> World-class art collection in Midtown; ideal for a rest-day cultural break</li>
+      <li><strong>One World Observatory:</strong> Top of the One World Trade Center for panoramic city views</li>
+      <li><strong>Smorgasburg:</strong> Brooklyn's massive outdoor food market (weekends) — a genuine foodie experience</li>
+      <li><strong>Staten Island Ferry:</strong> Free ferry with unbeatable Statue of Liberty and Manhattan skyline views</li>
+      <li><strong>Citi Field tours:</strong> Baseball at Citi Field (Queens) is a classic American summer evening</li>
+    </ul>
+
+    <h2>Transport Tips: Avoid Driving on Match Days</h2>
+
+    <p>This point bears repeating: do not drive to MetLife Stadium on high-profile match days, and absolutely do not drive on Final day. The Meadowlands road network was not designed for 82,500 people arriving simultaneously, and traffic gridlock after major events is legendary. The NJ Transit train is faster, cheaper, and infinitely less stressful.</p>
+
+    <div class="tips-box">
+      <div class="tips-title">Match Day Transport — Final Checklist</div>
+      <ul>
+        <li>Load the NJ Transit app and buy your round-trip ticket in advance</li>
+        <li>Arrive at Penn Station at least 60 minutes before the train you want — platforms fill fast</li>
+        <li>For the Final, consider arriving at Penn Station 90+ minutes before your planned departure</li>
+        <li>After the match, board the first available return train immediately — do not linger</li>
+        <li>Keep a portable charger: signal congestion at Penn Station can be extreme</li>
+      </ul>
+    </div>
+
+    <h2>The World Cup Final — July 19, 2026</h2>
+
+    <p>If you are in New York for the Final specifically, you are attending one of the most significant sporting events in history. A FIFA World Cup Final on American soil — the first since the iconic 1994 Final at the Rose Bowl — will draw global attention at an unprecedented scale. New York was selected as the Final host city in recognition of its status as a global capital, and MetLife's 82,500 capacity makes it fitting for the occasion.</p>
+
+    <p>Final tickets will be the most sought-after in the tournament. Secondary market prices will reflect this reality.</p>
+
+    <div class="cta-group">
+      <a href="https://www.viagogo.com/Sport-Tickets/Soccer/FIFA-World-Cup" class="cta-btn gold" target="_blank" rel="noopener">Find World Cup Final Tickets on Viagogo</a>
+    </div>
+
+    <div class="affiliate-disclaimer">
+      Ticket prices on secondary markets fluctuate with demand and may be significantly above face value for the Final. GO2CUP earns a referral commission on qualifying purchases.
+    </div>
+
+    <!-- BOTTOM NEWSLETTER -->
+    <div class="newsletter-block">
+      <h3>Stay Ahead of the Game</h3>
+      <p>GO2CUP newsletter: transport alerts, fan zone updates, and ticket availability for New York and every host city.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform?usp=header" class="cta-btn gold" target="_blank" rel="noopener">Subscribe Free</a>
+    </div>
+
+    <!-- RELATED -->
+    <div class="related-section">
+      <h3>More Fan Guides</h3>
+      <div class="related-grid">
+        <a href="dallas-fan-guide.html" class="related-card">
+          <div class="rc-cat">Host City</div>
+          <div class="rc-title">Dallas Fan Guide: World Cup 2026 at AT&T Stadium</div>
+        </a>
+        <a href="los-angeles-fan-guide.html" class="related-card">
+          <div class="rc-cat">Host City</div>
+          <div class="rc-title">Los Angeles Fan Guide: World Cup 2026 at SoFi Stadium</div>
+        </a>
+        <a href="miami-fan-guide.html" class="related-card">
+          <div class="rc-cat">Host City</div>
+          <div class="rc-title">Miami Fan Guide: World Cup 2026 at Hard Rock Stadium</div>
+        </a>
+        <a href="toronto-fan-guide.html" class="related-card">
+          <div class="rc-cat">Host City</div>
+          <div class="rc-title">Toronto Fan Guide: World Cup 2026 in Canada</div>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-logo">
+      <span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span>
+    </div>
+    <p>Your independent guide to FIFA World Cup 2026 | sportdgx.com</p>
+    <p style="margin-top:8px; font-size:11px;">GO2CUP is an independent fan hub and is not affiliated with FIFA or any official tournament body. Affiliate links used throughout — see individual disclosures.</p>
+  </footer>
+
+</body>
+</html>

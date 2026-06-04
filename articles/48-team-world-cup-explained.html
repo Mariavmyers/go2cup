@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The 48-Team World Cup Explained: What Fans Need to Know | GO2CUP</title>
+  <meta name="description" content="World Cup 2026 is the first 48-team tournament in history. Here's everything fans need to know about the new format, host nations and expanded schedule." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #06080d;
+      --bg2: #0d1117;
+      --bg3: #141922;
+      --gold: #d9a441;
+      --gold-dim: #a87c2e;
+      --blue: #2f80d6;
+      --green: #1f9d57;
+      --red: #e2404d;
+      --text: #e8eaf0;
+      --muted: #8b92a8;
+      --border: #1e2535;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Archivo', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #07090f;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      height: 58px;
+    }
+
+    .logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.7rem;
+      letter-spacing: 1px;
+    }
+    .logo span.go { color: var(--blue); }
+    .logo span.two { color: var(--green); }
+    .logo span.cup { color: var(--red); }
+
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      color: var(--text);
+      font-size: 0.88rem;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold); text-decoration: none; }
+
+    /* LANG BAR */
+    .lang-bar {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 24px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .lang-pill {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 3px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      transition: all 0.2s;
+    }
+    .lang-pill:hover { border-color: var(--gold); color: var(--gold); text-decoration: none; }
+    .lang-pill.active {
+      background: var(--gold);
+      color: #06080d;
+      border-color: var(--gold);
+    }
+
+    /* ARTICLE LAYOUT */
+    .article-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .category-tag {
+      display: inline-block;
+      background: var(--green);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 3px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.1;
+      color: #fff;
+      margin-bottom: 18px;
+      letter-spacing: 0.5px;
+    }
+
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 0.84rem;
+      margin-bottom: 36px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .article-meta .author { color: var(--gold); font-weight: 600; }
+
+    /* DISCLAIMER */
+    .disclaimer {
+      background: var(--bg3);
+      border-left: 3px solid var(--gold);
+      padding: 14px 18px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 36px;
+      border-radius: 0 3px 3px 0;
+    }
+
+    /* BODY CONTENT */
+    .article-body h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.7rem;
+      color: var(--gold);
+      margin: 40px 0 14px;
+      letter-spacing: 0.5px;
+    }
+
+    .article-body p { margin-bottom: 18px; }
+
+    .article-body ul, .article-body ol {
+      margin: 0 0 18px 22px;
+    }
+    .article-body li { margin-bottom: 8px; }
+
+    .article-body strong { color: #fff; font-weight: 600; }
+
+    .highlight-box {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--green);
+      padding: 18px 20px;
+      margin: 28px 0;
+      border-radius: 0 3px 3px 0;
+    }
+    .highlight-box p { margin-bottom: 0; }
+
+    /* FORMAT TABLE */
+    .format-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 0.9rem;
+    }
+    .format-table th {
+      background: var(--bg3);
+      color: var(--gold);
+      font-weight: 700;
+      text-align: left;
+      padding: 10px 14px;
+      border-bottom: 2px solid var(--gold-dim);
+    }
+    .format-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+    }
+    .format-table tr:hover td { background: var(--bg3); }
+
+    /* NEWSLETTER */
+    .newsletter-box {
+      background: linear-gradient(135deg, #0d1520 0%, #101828 100%);
+      border: 1px solid var(--gold-dim);
+      border-radius: 3px;
+      padding: 32px 28px;
+      margin: 44px 0;
+      text-align: center;
+    }
+    .newsletter-box h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .newsletter-box p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+    .btn-gold {
+      display: inline-block;
+      background: var(--gold);
+      color: #06080d;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 12px 28px;
+      border-radius: 3px;
+      letter-spacing: 0.5px;
+      transition: background 0.2s;
+    }
+    .btn-gold:hover { background: #e8b24e; text-decoration: none; }
+
+    /* RELATED */
+    .related-section {
+      margin-top: 56px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+    }
+    .related-section h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.4rem;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .related-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 16px;
+      transition: border-color 0.2s;
+    }
+    .related-card:hover { border-color: var(--gold); text-decoration: none; }
+    .related-card .rc-tag {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--blue);
+      margin-bottom: 6px;
+    }
+    .related-card .rc-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #07090f;
+      border-top: 1px solid var(--border);
+      padding: 48px 24px 32px;
+    }
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .footer-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+    .footer-tagline {
+      color: var(--muted);
+      font-size: 0.84rem;
+      margin-bottom: 28px;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-bottom: 28px;
+    }
+    .footer-links a {
+      color: var(--muted);
+      font-size: 0.82rem;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--gold); text-decoration: none; }
+    .footer-copy {
+      color: #4a5068;
+      font-size: 0.78rem;
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 0 16px; }
+      .nav-links { gap: 16px; }
+      .article-wrap { padding: 32px 16px 60px; }
+      .format-table { font-size: 0.82rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="../index.html" class="logo" style="text-decoration:none;">
+    <span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Hub</a></li>
+    <li><a href="../where-to-stay/mexico-city.html">Where to Stay</a></li>
+    <li><a href="../affiliate.html">Partner Resources</a></li>
+    <li><a href="../blog.html">Blog</a></li>
+  </ul>
+</nav>
+
+<!-- LANG BAR -->
+<div class="lang-bar">
+  <span class="lang-pill active">EN</span>
+  <a href="../maria-myers-pt.html" class="lang-pill">PT</a>
+  <a href="../maria-myers-es.html" class="lang-pill">ES</a>
+  <a href="../maria-myers-it.html" class="lang-pill">IT</a>
+</div>
+
+<!-- ARTICLE -->
+<main class="article-wrap">
+
+  <span class="category-tag">Fan Tips</span>
+  <h1>The 48-Team World Cup Explained: What Fans Need to Know</h1>
+
+  <div class="article-meta">
+    <span>March 8, 2026</span>
+    <span>·</span>
+    <span>6 min read</span>
+    <span>·</span>
+    <span class="author">Maria Myers · GO2CUP</span>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Affiliate Disclaimer:</strong> GO2CUP earns a commission on bookings made through links on this page (hotels, tickets, travel). This comes at no extra cost to you and helps us keep the guide free. All recommendations are editorially independent.
+  </div>
+
+  <div class="article-body">
+
+    <p>World Cup 2026 is unlike any tournament that has come before it. For the first time in history, <strong>48 nations</strong> will compete for the World Cup trophy across <strong>three host countries</strong> and <strong>16 host cities</strong>. That means more teams, more matches, more cities — and for fans, more decisions about where to go and what to watch. Here is everything you need to understand the new format before you plan your trip.</p>
+
+    <h2>The Three Host Nations</h2>
+
+    <p>The 2026 World Cup is jointly hosted by the United States, Mexico and Canada — making it the first tri-nation World Cup in history. The host responsibilities break down roughly as:</p>
+
+    <ul>
+      <li><strong>United States:</strong> 11 host cities, including the Final at MetLife Stadium in New York/New Jersey on July 19.</li>
+      <li><strong>Mexico:</strong> 3 host cities — Mexico City, Guadalajara and Monterrey. Mexico City hosts the opening match.</li>
+      <li><strong>Canada:</strong> 2 host cities — Toronto and Vancouver.</li>
+    </ul>
+
+    <p>This geographic spread is both the tournament's greatest asset and its biggest logistical challenge for travelling fans. Group-stage matches for a single team can span two different countries. Planning ahead is essential.</p>
+
+    <h2>How Many Matches Will There Be?</h2>
+
+    <p>The expansion from 32 to 48 teams means a dramatic increase in the number of matches. The total is <strong>104 matches</strong>, up from 64 in the previous 32-team format. The group stage alone accounts for 72 matches across 12 groups.</p>
+
+    <div class="highlight-box">
+      <p><strong>By the numbers:</strong> 48 teams · 104 matches · 3 host nations · 16 host cities · 39 days of football (June 11 – July 19, 2026)</p>
+    </div>
+
+    <h2>The New Group Stage Format Explained</h2>
+
+    <p>The format change is the most significant structural shift in World Cup history. Here is how it works:</p>
+
+    <ul>
+      <li><strong>12 groups of 4 teams</strong> replace the previous 8 groups of 4.</li>
+      <li>Each team plays <strong>3 group-stage matches</strong>, same as before.</li>
+      <li>The top <strong>2 teams from each group advance</strong> automatically — that is 24 teams.</li>
+      <li>The <strong>8 best third-placed teams</strong> from across all 12 groups also advance.</li>
+      <li>This creates a <strong>32-team Round of 32</strong> to kick off the knockout phase.</li>
+    </ul>
+
+    <table class="format-table">
+      <thead>
+        <tr>
+          <th>Stage</th>
+          <th>Teams</th>
+          <th>Matches</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Group Stage (12 groups)</td><td>48</td><td>72</td></tr>
+        <tr><td>Round of 32</td><td>32</td><td>16</td></tr>
+        <tr><td>Round of 16</td><td>16</td><td>8</td></tr>
+        <tr><td>Quarter-finals</td><td>8</td><td>4</td></tr>
+        <tr><td>Semi-finals</td><td>4</td><td>2</td></tr>
+        <tr><td>Third-Place Play-off</td><td>2</td><td>1</td></tr>
+        <tr><td>Final</td><td>2</td><td>1</td></tr>
+        <tr><td><strong>Total</strong></td><td></td><td><strong>104</strong></td></tr>
+      </tbody>
+    </table>
+
+    <!-- NEWSLETTER MID -->
+    <div class="newsletter-box">
+      <h3>Plan Your 2026 World Cup Trip</h3>
+      <p>Get schedule alerts, city guides and travel tips from GO2CUP straight to your inbox.</p>
+      <a class="btn-gold" href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform?usp=header" target="_blank" rel="noopener">Subscribe Free</a>
+    </div>
+
+    <h2>What the New Format Means for the Third-Place Spots</h2>
+
+    <p>The eight best third-placed teams advancing sounds complicated, but it works similarly to how UEFA Euro expanded its format in 1986 and again in 2016. The eight third-place teams are ranked by:</p>
+
+    <ol>
+      <li>Points</li>
+      <li>Goal difference</li>
+      <li>Goals scored</li>
+      <li>FIFA ranking (if still tied)</li>
+    </ol>
+
+    <p>This means that finishing third in a group is no longer an automatic exit — it simply puts your fate partly in the hands of results across other groups. For fans, this extends the tournament's group-stage tension significantly. You may still need to follow your team's result <em>and</em> watch other groups simultaneously on the final matchday.</p>
+
+    <h2>What This Means for Travelling Fans</h2>
+
+    <p>The expanded format creates both opportunity and challenge for fans on the road:</p>
+
+    <ul>
+      <li><strong>More matches to choose from:</strong> With 104 games across 16 cities, fans who cannot get tickets to their own nation's matches have far more neutral games to attend.</li>
+      <li><strong>Greater cross-continental travel:</strong> A team's three group-stage games could span Mexico, the US and Canada. Check your team's group allocation carefully before booking flights.</li>
+      <li><strong>Knockout stage decisions come later:</strong> With 32 teams remaining after the group stage, the bracket is larger and travel decisions for later rounds are harder to predict far in advance.</li>
+      <li><strong>More ticket opportunities:</strong> 104 matches means significantly more total seat inventory. Early knockout rounds in regional cities may have available tickets closer to match date.</li>
+    </ul>
+
+    <div class="highlight-box">
+      <p><strong>Planning tip:</strong> Book your group-stage matches and accommodation first — those dates are fixed. Leave knockout-stage plans flexible with refundable hotels until the bracket clarifies after the group stage ends July 2.</p>
+    </div>
+
+    <h2>Tips for Planning Around the Expanded Schedule</h2>
+
+    <p>The group stage runs from <strong>June 11 to July 2, 2026</strong>. The Round of 32 begins July 4. Here is a simple framework for planning your trip:</p>
+
+    <ol>
+      <li><strong>Anchor on your team's group-stage fixtures</strong> — dates and venues are set.</li>
+      <li><strong>Book refundable hotels</strong> for knockout stage cities you think your team might reach.</li>
+      <li><strong>Buy group-stage tickets now</strong> via official or authorized resale — see our <a href="how-to-get-world-cup-tickets.html">tickets guide</a>.</li>
+      <li><strong>Plan transit between cities</strong> — Amtrak, domestic flights and intercity buses all serve the US host cities. Within Mexico, aeromar and budget airlines link Mexico City, Guadalajara and Monterrey.</li>
+      <li><strong>Use the <a href="../host-cities.html">host cities overview</a></strong> to compare venues and decide where to base yourself for multiple group-stage games in the same region.</li>
+    </ol>
+
+    <p>For a deep dive into the full format structure and how it compares to previous tournaments, visit our dedicated <a href="../the-48-team-format.html">48-team format explainer</a> page.</p>
+
+    <!-- NEWSLETTER BOTTOM -->
+    <div class="newsletter-box">
+      <h3>Stay in the Loop</h3>
+      <p>Subscribe to GO2CUP for host city guides, ticket alerts and World Cup 2026 travel tips.</p>
+      <a class="btn-gold" href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform?usp=header" target="_blank" rel="noopener">Get the Newsletter</a>
+    </div>
+
+  </div><!-- /article-body -->
+
+  <!-- RELATED ARTICLES -->
+  <div class="related-section">
+    <h3>Related Articles</h3>
+    <div class="related-grid">
+      <a href="mexico-city-fan-guide.html" class="related-card">
+        <div class="rc-tag">Host City</div>
+        <div class="rc-title">Mexico City Fan Guide: Everything You Need to Know for World Cup 2026</div>
+      </a>
+      <a href="world-cup-match-schedule.html" class="related-card">
+        <div class="rc-tag">Schedule</div>
+        <div class="rc-title">World Cup 2026 Match Schedule: Every Group Stage Game by Host City</div>
+      </a>
+      <a href="how-to-get-world-cup-tickets.html" class="related-card">
+        <div class="rc-tag">Tickets</div>
+        <div class="rc-title">How to Get Tickets for World Cup 2026 — Official &amp; Resale Options</div>
+      </a>
+      <a href="best-neighborhoods-mexico-city.html" class="related-card">
+        <div class="rc-tag">Hotels</div>
+        <div class="rc-title">Best Neighborhoods to Stay in Mexico City for the World Cup</div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <span style="color:var(--blue);">GO</span><span style="color:var(--green);">2</span><span style="color:var(--red);">CUP</span>
+    </div>
+    <p class="footer-tagline">Your independent travel hub for FIFA World Cup 2026.</p>
+    <div class="footer-links">
+      <a href="../affiliate.html">Affiliate Disclosure</a>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Use</a>
+      <a href="../legal-hub.html">Legal Hub</a>
+      <a href="../maria-myers.html">About Maria Myers</a>
+      <a href="../blog.html">Blog</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 GO2CUP · sportdgx.com · All rights reserved. GO2CUP is an independent fan travel guide and is not affiliated with FIFA or any official tournament body.</p>
+  </div>
+</footer>
+
+</body>
+</html>

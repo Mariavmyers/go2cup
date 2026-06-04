@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Los Angeles Fan Guide: World Cup 2026 at SoFi Stadium | GO2CUP</title>
+  <meta name="description" content="Your complete fan guide to FIFA World Cup 2026 at SoFi Stadium in Inglewood — transport, hotels, weather, fan zones, food, and LA day trips." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg: #06080d; --gold: #d9a441; --blue: #2f80d6; --green: #1f9d57; --red: #e2404d; --text: #e8e8e8; --muted: #9aa0ad; --card: #0e1218; --border: #1e2530; }
+    body { background: var(--bg); color: var(--text); font-family: 'Archivo', sans-serif; font-size: 16px; line-height: 1.7; }
+    nav { position: sticky; top: 0; z-index: 100; background: #080b11; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 24px; height: 56px; }
+    .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 26px; letter-spacing: 1px; text-decoration: none; }
+    .nav-logo .go { color: var(--blue); } .nav-logo .two { color: var(--green); } .nav-logo .cup { color: var(--red); }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--gold); }
+    .lang-bar { background: #0a0d14; border-bottom: 1px solid var(--border); padding: 8px 24px; display: flex; gap: 8px; align-items: center; }
+    .lang-pill { display: inline-block; padding: 3px 10px; font-size: 12px; font-weight: 600; border-radius: 3px; text-decoration: none; transition: background 0.2s, color 0.2s; }
+    .lang-pill.active { background: var(--gold); color: #06080d; cursor: default; }
+    .lang-pill.inactive { background: var(--border); color: var(--muted); }
+    .lang-pill.inactive:hover { background: #2a3040; color: var(--text); }
+    .article-header { max-width: 800px; margin: 48px auto 0; padding: 0 24px; }
+    .category-badge { display: inline-block; background: var(--blue); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 4px 10px; border-radius: 3px; margin-bottom: 16px; }
+    .article-header h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(32px, 5vw, 52px); line-height: 1.1; color: #fff; margin-bottom: 20px; }
+    .article-meta { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; font-size: 13px; color: var(--muted); padding-bottom: 24px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+    .article-body { max-width: 800px; margin: 0 auto; padding: 0 24px 64px; }
+    .article-body h2 { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--gold); margin: 48px 0 16px; letter-spacing: 0.5px; }
+    .article-body p { margin-bottom: 18px; }
+    .article-body ul, .article-body ol { margin: 0 0 18px 20px; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
+    .article-body a:hover { color: var(--gold); }
+    .tips-box { background: var(--card); border-left: 4px solid var(--gold); border-radius: 0 6px 6px 0; padding: 20px 24px; margin: 32px 0; }
+    .tips-box .tips-title { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--gold); margin-bottom: 12px; }
+    .tips-box ul { margin-left: 18px; }
+    .info-box { background: #0a1520; border: 1px solid var(--blue); border-radius: 6px; padding: 20px 24px; margin: 32px 0; }
+    .info-box .info-title { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--blue); margin-bottom: 12px; }
+    .green-box { background: #071510; border: 1px solid var(--green); border-radius: 6px; padding: 20px 24px; margin: 32px 0; }
+    .green-box .green-title { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--green); margin-bottom: 12px; }
+    .affiliate-disclaimer { background: #0e1218; border: 1px solid var(--border); border-radius: 6px; padding: 14px 18px; font-size: 12px; color: var(--muted); margin: 32px 0; line-height: 1.5; }
+    .cta-btn { display: inline-block; padding: 12px 24px; border-radius: 3px; font-weight: 700; font-size: 14px; text-decoration: none; transition: opacity 0.2s; }
+    .cta-btn:hover { opacity: 0.85; }
+    .cta-btn.gold { background: var(--gold); color: #06080d; }
+    .cta-btn.blue { background: var(--blue); color: #fff; }
+    .cta-group { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0; }
+    .newsletter-block { background: linear-gradient(135deg, #0e1520 0%, #111827 100%); border: 1px solid var(--gold); border-radius: 8px; padding: 32px; margin: 48px 0; text-align: center; }
+    .newsletter-block h3 { font-family: 'Bebas Neue', sans-serif; font-size: 26px; color: var(--gold); margin-bottom: 10px; }
+    .newsletter-block p { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; margin: 24px 0; }
+    .stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 16px; text-align: center; }
+    .stat-card .stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--gold); }
+    .stat-card .stat-label { font-size: 12px; color: var(--muted); margin-top: 4px; }
+    .food-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 16px; margin: 24px 0; }
+    .food-card { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 18px; }
+    .food-card h4 { color: var(--gold); font-size: 15px; margin-bottom: 8px; }
+    .food-card p { font-size: 13px; color: var(--muted); margin: 0; }
+    .related-section { border-top: 1px solid var(--border); padding-top: 48px; margin-top: 48px; }
+    .related-section h3 { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: var(--gold); margin-bottom: 24px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+    .related-card { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 18px; text-decoration: none; transition: border-color 0.2s; }
+    .related-card:hover { border-color: var(--gold); }
+    .related-card .rc-cat { font-size: 11px; color: var(--blue); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .related-card .rc-title { color: var(--text); font-size: 14px; font-weight: 600; line-height: 1.4; }
+    footer { background: #080b11; border-top: 1px solid var(--border); padding: 40px 24px; text-align: center; }
+    .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 28px; margin-bottom: 12px; }
+    .footer-logo .go { color: var(--blue); } .footer-logo .two { color: var(--green); } .footer-logo .cup { color: var(--red); }
+    footer p { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
+    @media (max-width: 600px) { nav { padding: 0 16px; } .nav-links { gap: 16px; } .article-header, .article-body { padding-left: 16px; padding-right: 16px; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Hub</a></li>
+      <li><a href="../where-to-stay.html">Where to Stay</a></li>
+      <li><a href="../index.html#partners">Partner Resources</a></li>
+      <li><a href="../index.html#blog">Blog</a></li>
+    </ul>
+  </nav>
+
+  <div class="lang-bar">
+    <span class="lang-pill active">EN</span>
+    <a href="../maria-myers-pt.html" class="lang-pill inactive">PT</a>
+    <a href="../maria-myers-es.html" class="lang-pill inactive">ES</a>
+    <a href="../maria-myers-it.html" class="lang-pill inactive">IT</a>
+  </div>
+
+  <header class="article-header">
+    <div class="category-badge">Host City</div>
+    <h1>Los Angeles Fan Guide: World Cup 2026 at SoFi Stadium</h1>
+    <div class="article-meta">
+      <span>&#128197; April 19, 2026</span>
+      <span>&#9200; 7 min read</span>
+      <span>&#9997; By the GO2CUP Editorial Team</span>
+    </div>
+  </header>
+
+  <main class="article-body">
+
+    <div class="affiliate-disclaimer">
+      <strong>Affiliate Disclosure:</strong> GO2CUP earns a commission from qualifying purchases and bookings made through links on this page, including hotel and ticket links. This comes at no extra cost to you and helps us keep the hub free and updated.
+    </div>
+
+    <p>Los Angeles is the entertainment capital of the world, so it's fitting that it hosts six FIFA World Cup 2026 matches at the stunning SoFi Stadium in Inglewood. LA brings something no other host city can match: perfect summer weather, the most diverse and exciting food scene in the tournament, world-famous beaches, and the full spectacle of Hollywood. This guide has everything you need to make your LA World Cup trip unforgettable.</p>
+
+    <h2>SoFi Stadium: Fast Facts</h2>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-num">70,000+</div>
+        <div class="stat-label">Capacity</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">6</div>
+        <div class="stat-label">Matches Hosted</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">Inglewood</div>
+        <div class="stat-label">Location</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">75-80°F</div>
+        <div class="stat-label">Avg. Match-Day Temp</div>
+      </div>
+    </div>
+
+    <p>SoFi Stadium opened in 2020 and is one of the most technologically advanced sports venues in the world. It is the home of the NFL's Los Angeles Rams and Los Angeles Chargers. The stadium has a distinctive translucent canopy roof — it covers the seating bowl and keeps direct rain off fans, but it is open-air rather than fully enclosed. There is no active air conditioning, but LA's June-July weather is so consistently mild that this is rarely an issue. The field is artificial turf, which FIFA has approved for tournament play.</p>
+
+    <p>Visit the <a href="../host-cities/los-angeles.html">Los Angeles host city page</a> for the full match schedule and confirmed group-stage allocations.</p>
+
+    <div class="green-box">
+      <div class="green-title">The Weather Advantage</div>
+      <p>Los Angeles has the best match-day weather of any US host city by a considerable margin. June and July average highs of 75-80°F (24-27°C) with low humidity, clear skies, and reliable sunshine. There is virtually no rain risk. This is the dream outdoor football climate. You will not be battling Dallas heat or New York humidity — just a beautiful California day.</p>
+    </div>
+
+    <h2>Getting to SoFi Stadium</h2>
+
+    <p>Transport to SoFi Stadium is one of the more complex logistics challenges among host cities — mainly because LA is a car city with notorious traffic. There is no traditional direct subway line to the stadium, though the situation is improving:</p>
+
+    <div class="info-box">
+      <div class="info-title">Crenshaw/LAX Metro Line</div>
+      <p>The Crenshaw/LAX Metro K Line is the closest rail option to SoFi Stadium. The Inglewood station on this line is approximately a 20-minute walk from the stadium entrance. From downtown LA, take the Metro Blue/A Line to Crenshaw station, then switch to the K Line. The total journey from downtown is approximately 35-50 minutes. This is a genuine option that avoids parking chaos — explore the Metro trip planner to plan your specific route.</p>
+    </div>
+
+    <div class="tips-box">
+      <div class="tips-title">All Transport Options</div>
+      <ul>
+        <li><strong>Ride-share (Uber/Lyft):</strong> The most common choice. Designated drop-off zones are located away from the main entrance. Book well in advance and use a pickup zone further from the stadium for return journeys to avoid extreme surge pricing.</li>
+        <li><strong>LAX Airport:</strong> SoFi Stadium is one of the closest stadium-to-airport distances on the host city list — approximately 3 miles. Ride-share takes 10-20 minutes in light traffic. However, LAX traffic can be severe; budget extra time.</li>
+        <li><strong>Driving &amp; parking:</strong> Parking is available but pre-booking is essential. Lots fill very quickly. Expect to pay $40-80 for event parking and 30-60 minutes to exit after the final whistle.</li>
+        <li><strong>Shuttle services:</strong> Official World Cup shuttle routes are expected from several LA hubs. Check for announcements as the tournament approaches.</li>
+      </ul>
+    </div>
+
+    <h2>Where to Stay in Los Angeles</h2>
+
+    <p>LA is geographically enormous — 500+ square miles — and choosing the right neighbourhood dramatically affects your experience. Here are the best bases for World Cup fans:</p>
+
+    <h3 style="color:#fff; font-size:18px; margin: 24px 0 12px;">Santa Monica — Best Beach Base</h3>
+    <p>Santa Monica is one of the most popular choices for international visitors for good reason: beautiful beachfront, excellent restaurants, a lively pier, and a walkable grid layout that is unusual for LA. The Metro E (Expo) Line connects Santa Monica to downtown and onwards to Crenshaw for the stadium. Budget for $250-500/night in June-July.</p>
+
+    <h3 style="color:#fff; font-size:18px; margin: 24px 0 12px;">Manhattan Beach — Closest Upscale Option</h3>
+    <p>Manhattan Beach is a laid-back, affluent beach city just south of LAX and literally minutes from SoFi Stadium. If proximity to the venue is your top priority and you want a beach environment, this is your best bet. It has excellent seafood restaurants and a beautiful pier. A slightly quieter alternative to Santa Monica.</p>
+
+    <h3 style="color:#fff; font-size:18px; margin: 24px 0 12px;">Downtown LA — City Centre Access</h3>
+    <p>Downtown LA (DTLA) has been transformed over the past decade with a wave of hotel development, great food halls, and the LA Live entertainment complex. It is the best base for fans wanting urban energy and easy Metro connections. Less charming than the beach areas but very well-connected.</p>
+
+    <h3 style="color:#fff; font-size:18px; margin: 24px 0 12px;">Inglewood — Maximum Stadium Proximity</h3>
+    <p>Staying in Inglewood itself means a short walk or quick ride to SoFi. Hotel supply is more limited than other areas, but for fans attending multiple matches this is the most practical base. Book very early as options are limited.</p>
+
+    <div class="cta-group">
+      <a href="https://www.booking.com/searchresults.html?ss=Los+Angeles+California" class="cta-btn gold" target="_blank" rel="noopener">Search LA Hotels on Booking.com</a>
+      <a href="../where-to-stay.html" class="cta-btn blue">Full Accommodation Guide</a>
+    </div>
+
+    <div class="affiliate-disclaimer">
+      Hotel links use affiliate partnerships. LA hotel prices during World Cup matches will be significantly above normal rates. Book 4-6 months ahead for best availability.
+    </div>
+
+    <!-- MID-ARTICLE NEWSLETTER -->
+    <div class="newsletter-block">
+      <h3>LA Match Day Alerts</h3>
+      <p>Get transport updates, fan zone news, and match schedule changes for Los Angeles straight to your inbox.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform?usp=header" class="cta-btn gold" target="_blank" rel="noopener">Subscribe Free</a>
+    </div>
+
+    <h2>Fan Zones in Los Angeles</h2>
+
+    <div class="info-box">
+      <div class="info-title">LA Live Fan Zone</div>
+      <p>LA Live — the entertainment complex adjacent to the Crypto.com Arena and the Staples Center neighbourhood in downtown — is the natural hub for World Cup fan activity in the city. The open-air plaza has hosted major sports watch parties before and has the capacity and infrastructure for a large-scale fan zone. Expect big screens, live music, and food vendors throughout the tournament.</p>
+    </div>
+
+    <div class="info-box">
+      <div class="info-title">Venice Beach</div>
+      <p>Venice Beach's famous boardwalk and Muscle Beach area will inevitably become an organic fan gathering zone, especially during group-stage days when fans from every nation are in town. The free-spirited, multicultural energy of Venice Beach is a perfect backdrop for the World Cup's global spirit. Keep an eye out for official programming announcements in the run-up to the tournament.</p>
+    </div>
+
+    <h2>Food Guide: The Best International Food City on the Host List</h2>
+
+    <p>This is LA's greatest World Cup asset: no host city in the 2026 tournament offers a more diverse or higher-quality food scene. Los Angeles is home to communities from every corner of the world, and their culinary traditions are represented in authentic, world-class restaurants at every price point.</p>
+
+    <div class="food-grid">
+      <div class="food-card">
+        <h4>Mexican &amp; Latin American</h4>
+        <p>LA has the best Mexican food in the United States. Tacos al pastor, birria tacos, tamales — find exceptional versions in East LA, Boyle Heights, and across the city.</p>
+      </div>
+      <div class="food-card">
+        <h4>Korean</h4>
+        <p>Koreatown (K-Town) is one of the densest restaurant areas in the country. Korean BBQ, bibimbap, and jjigae at exceptional quality — open late night after matches.</p>
+      </div>
+      <div class="food-card">
+        <h4>Japanese</h4>
+        <p>Little Tokyo in downtown LA and broader Sawtelle "Little Osaka" offer ramen, sushi, and izakaya dining that rivals Japan itself.</p>
+      </div>
+      <div class="food-card">
+        <h4>Ethiopian &amp; African</h4>
+        <p>LA's Fairfax district and Leimert Park have excellent Ethiopian restaurants — a great option for fans from African nations attending World Cup matches.</p>
+      </div>
+      <div class="food-card">
+        <h4>Persian</h4>
+        <p>"Tehrangeles" — Westwood and surrounding areas — is home to the largest Iranian diaspora outside Iran, with outstanding Persian cuisine.</p>
+      </div>
+      <div class="food-card">
+        <h4>Smash Burgers &amp; Craft Food</h4>
+        <p>LA's casual dining scene is elite. Animal, Guerrilla Tacos, Eggslut (Grand Central Market) — world-class food at accessible prices.</p>
+      </div>
+    </div>
+
+    <h2>Day Trips and Sightseeing</h2>
+
+    <p>With some of the best weather in the tournament and a rest day between matches, Los Angeles provides exceptional options beyond the stadium:</p>
+
+    <ul>
+      <li><strong>Santa Monica &amp; Venice Beach:</strong> The classic LA beach experience — pier, boardwalk, sunset views. 30-45 minutes from downtown by Metro.</li>
+      <li><strong>Hollywood &amp; the Walk of Fame:</strong> A genuinely interesting cultural circuit including the Hollywood sign viewpoints, TCL Chinese Theatre, and the Dolby Theatre where the Oscars are held.</li>
+      <li><strong>Beverly Hills &amp; Rodeo Drive:</strong> Window-shopping and people-watching in the most glamorous shopping district in the Americas — free to stroll.</li>
+      <li><strong>The Getty Center:</strong> World-class art museum with spectacular panoramic views of LA — free admission, small parking fee, or take the Metro and shuttle.</li>
+      <li><strong>Griffith Observatory:</strong> Iconic hilltop observatory with the best free views of the Hollywood sign and the LA basin. A must for first-time visitors.</li>
+      <li><strong>Universal Studios Hollywood:</strong> Full theme park experience — great for families and fans with a spare day. Book tickets well in advance.</li>
+    </ul>
+
+    <h2>Tickets for Los Angeles Matches</h2>
+
+    <div class="cta-group">
+      <a href="https://www.viagogo.com/Sport-Tickets/Soccer/FIFA-World-Cup" class="cta-btn gold" target="_blank" rel="noopener">Find LA Match Tickets on Viagogo</a>
+    </div>
+
+    <div class="affiliate-disclaimer">
+      Secondary market ticket prices fluctuate with demand. GO2CUP earns a referral commission on qualifying purchases.
+    </div>
+
+    <div class="tips-box">
+      <div class="tips-title">Los Angeles Fan Checklist</div>
+      <ul>
+        <li>LA traffic is real — add at least 30 minutes to any journey estimate during peak hours</li>
+        <li>Rent a car only if you are comfortable with freeway driving and have pre-booked parking</li>
+        <li>Download Google Maps offline for LA — it handles the city's complex routing well</li>
+        <li>SPF 30+ sunscreen is essential even in pleasant weather — UV levels are high in Southern California</li>
+        <li>Many world-class restaurants in LA require reservations weeks in advance — plan ahead</li>
+        <li>The Metro is improving rapidly and is a genuinely viable option for several key routes</li>
+        <li>Check the <a href="../host-cities/los-angeles.html">LA host city page</a> for confirmed match dates and schedules</li>
+      </ul>
+    </div>
+
+    <!-- BOTTOM NEWSLETTER -->
+    <div class="newsletter-block">
+      <h3>World Cup LA Updates</h3>
+      <p>Fan zones, transport routes, match schedules, and more — all in the GO2CUP newsletter.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform?usp=header" class="cta-btn gold" target="_blank" rel="noopener">Subscribe Free</a>
+    </div>
+
+    <!-- RELATED -->
+    <div class="related-section">
+      <h3>More Fan Guides</h3>
+      <div class="related-grid">
+        <a href="dallas-fan-guide.html" class="related-card">
+          <div class="rc-cat">Host City</div>
+          <div class="rc-title">Dallas Fan Guide: World Cup 2026 at AT&T Stadium</div>
+        </a>
+        <a href="new-york-new-jersey-fan-guide.html" class="related-card">
+          <div class="rc-cat">Host City</div>
+          <div class="rc-title">New York / New Jersey: The World Cup Final at MetLife</div>
+        </a>
+        <a href="miami-fan-guide.html" class="related-card">
+          <div class="rc-cat">Host City</div>
+          <div class="rc-title">Miami Fan Guide: World Cup 2026 at Hard Rock Stadium</div>
+        </a>
+        <a href="toronto-fan-guide.html" class="related-card">
+          <div class="rc-cat">Host City</div>
+          <div class="rc-title">Toronto Fan Guide: World Cup 2026 in Canada</div>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-logo">
+      <span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span>
+    </div>
+    <p>Your independent guide to FIFA World Cup 2026 | sportdgx.com</p>
+    <p style="margin-top:8px; font-size:11px;">GO2CUP is an independent fan hub and is not affiliated with FIFA or any official tournament body. Affiliate links used throughout — see individual disclosures.</p>
+  </footer>
+
+</body>
+</html>

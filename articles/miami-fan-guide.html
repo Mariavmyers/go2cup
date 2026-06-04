@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miami Fan Guide: World Cup 2026 at Hard Rock Stadium | GO2CUP</title>
+  <meta name="description" content="Your complete fan guide to FIFA World Cup 2026 at Hard Rock Stadium in Miami Gardens — transport, hotels, weather warnings, beaches, food, and fan zones." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg: #06080d; --gold: #d9a441; --blue: #2f80d6; --green: #1f9d57; --red: #e2404d; --text: #e8e8e8; --muted: #9aa0ad; --card: #0e1218; --border: #1e2530; }
+    body { background: var(--bg); color: var(--text); font-family: 'Archivo', sans-serif; font-size: 16px; line-height: 1.7; }
+    nav { position: sticky; top: 0; z-index: 100; background: #080b11; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 24px; height: 56px; }
+    .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 26px; letter-spacing: 1px; text-decoration: none; }
+    .nav-logo .go { color: var(--blue); } .nav-logo .two { color: var(--green); } .nav-logo .cup { color: var(--red); }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--gold); }
+    .lang-bar { background: #0a0d14; border-bottom: 1px solid var(--border); padding: 8px 24px; display: flex; gap: 8px; align-items: center; }
+    .lang-pill { display: inline-block; padding: 3px 10px; font-size: 12px; font-weight: 600; border-radius: 3px; text-decoration: none; transition: background 0.2s, color 0.2s; }
+    .lang-pill.active { background: var(--gold); color: #06080d; cursor: default; }
+    .lang-pill.inactive { background: var(--border); color: var(--muted); }
+    .lang-pill.inactive:hover { background: #2a3040; color: var(--text); }
+    .article-header { max-width: 800px; margin: 48px auto 0; padding: 0 24px; }
+    .category-badge { display: inline-block; background: var(--blue); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 4px 10px; border-radius: 3px; margin-bottom: 16px; }
+    .article-header h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(32px, 5vw, 52px); line-height: 1.1; color: #fff; margin-bottom: 20px; }
+    .article-meta { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; font-size: 13px; color: var(--muted); padding-bottom: 24px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+    .article-body { max-width: 800px; margin: 0 auto; padding: 0 24px 64px; }
+    .article-body h2 { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--gold); margin: 48px 0 16px; letter-spacing: 0.5px; }
+    .article-body p { margin-bottom: 18px; }
+    .article-body ul, .article-body ol { margin: 0 0 18px 20px; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
+    .article-body a:hover { color: var(--gold); }
+    .tips-box { background: var(--card); border-left: 4px solid var(--gold); border-radius: 0 6px 6px 0; padding: 20px 24px; margin: 32px 0; }
+    .tips-box .tips-title { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--gold); margin-bottom: 12px; }
+    .tips-box ul { margin-left: 18px; }
+    .info-box { background: #0a1520; border: 1px solid var(--blue); border-radius: 6px; padding: 20px 24px; margin: 32px 0; }
+    .info-box .info-title { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--blue); margin-bottom: 12px; }
+    .warning-box { background: #1a0d0e; border: 1px solid var(--red); border-radius: 6px; padding: 20px 24px; margin: 32px 0; }
+    .warning-box .warning-title { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--red); margin-bottom: 12px; }
+    .affiliate-disclaimer { background: #0e1218; border: 1px solid var(--border); border-radius: 6px; padding: 14px 18px; font-size: 12px; color: var(--muted); margin: 32px 0; line-height: 1.5; }
+    .cta-btn { display: inline-block; padding: 12px 24px; border-radius: 3px; font-weight: 700; font-size: 14px; text-decoration: none; transition: opacity 0.2s; }
+    .cta-btn:hover { opacity: 0.85; }
+    .cta-btn.gold { background: var(--gold); color: #06080d; }
+    .cta-btn.blue { background: var(--blue); color: #fff; }
+    .cta-group { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0; }
+    .newsletter-block { background: linear-gradient(135deg, #0e1520 0%, #111827 100%); border: 1px solid var(--gold); border-radius: 8px; padding: 32px; margin: 48px 0; text-align: center; }
+    .newsletter-block h3 { font-family: 'Bebas Neue', sans-serif; font-size: 26px; color: var(--gold); margin-bottom: 10px; }
+    .newsletter-block p { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; margin: 24px 0; }
+    .stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 16px; text-align: center; }
+    .stat-card .stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--gold); }
+    .stat-card .stat-label { font-size: 12px; color: var(--muted); margin-top: 4px; }
+    .neighbourhood-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 16px; margin: 24px 0; }
+    .neighbourhood-card { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 18px; }
+    .neighbourhood-card h4 { color: var(--gold); font-size: 15px; margin-bottom: 8px; }
+    .neighbourhood-card p { font-size: 13px; color: var(--muted); margin: 0; }
+    .related-section { border-top: 1px solid var(--border); padding-top: 48px; margin-top: 48px; }
+    .related-section h3 { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: var(--gold); margin-bottom: 24px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+    .related-card { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 18px; text-decoration: none; transition: border-color 0.2s; }
+    .related-card:hover { border-color: var(--gold); }
+    .related-card .rc-cat { font-size: 11px; color: var(--blue); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .related-card .rc-title { color: var(--text); font-size: 14px; font-weight: 600; line-height: 1.4; }
+    footer { background: #080b11; border-top: 1px solid var(--border); padding: 40px 24px; text-align: center; }
+    .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 28px; margin-bottom: 12px; }
+    .footer-logo .go { color: var(--blue); } .footer-logo .two { color: var(--green); } .footer-logo .cup { color: var(--red); }
+    footer p { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
+    @media (max-width: 600px) { nav { padding: 0 16px; } .nav-links { gap: 16px; } .article-header, .article-body { padding-left: 16px; padding-right: 16px; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Hub</a></li>
+      <li><a href="../where-to-stay.html">Where to Stay</a></li>
+      <li><a href="../index.html#partners">Partner Resources</a></li>
+      <li><a href="../index.html#blog">Blog</a></li>
+    </ul>
+  </nav>
+
+  <div class="lang-bar">
+    <span class="lang-pill active">EN</span>
+    <a href="../maria-myers-pt.html" class="lang-pill inactive">PT</a>
+    <a href="../maria-myers-es.html" class="lang-pill inactive">ES</a>
+    <a href="../maria-myers-it.html" class="lang-pill inactive">IT</a>
+  </div>
+
+  <header class="article-header">
+    <div class="category-badge">Host City</div>
+    <h1>Miami Fan Guide: World Cup 2026 at Hard Rock Stadium</h1>
+    <div class="article-meta">
+      <span>&#128197; April 24, 2026</span>
+      <span>&#9200; 7 min read</span>
+      <span>&#9997; By the GO2CUP Editorial Team</span>
+    </div>
+  </header>
+
+  <main class="article-body">
+
+    <div class="affiliate-disclaimer">
+      <strong>Affiliate Disclosure:</strong> GO2CUP earns a commission from qualifying purchases and bookings made through links on this page, including hotel and ticket links. This comes at no extra cost to you and helps us keep the hub free and updated.
+    </div>
+
+    <p>Miami is one of the most culturally vibrant cities in the United States and arguably the most football-passionate host city on the 2026 roster. With a massive Latin American diaspora, a deep footballing culture, world-famous beaches, sensational cuisine, and a nightlife scene that never seems to sleep, Miami promises a World Cup atmosphere unlike any other host city. But there is a non-negotiable reality to plan around: Miami's summer weather is brutal, and Hard Rock Stadium is open-air. Read this guide before you go.</p>
+
+    <h2>Hard Rock Stadium: Fast Facts</h2>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-num">65,000+</div>
+        <div class="stat-label">Capacity</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">6</div>
+        <div class="stat-label">Matches Hosted</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">Miami Gardens</div>
+        <div class="stat-label">Location</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">Partial</div>
+        <div class="stat-label">Shade Coverage</div>
+      </div>
+    </div>
+
+    <p>Hard Rock Stadium is located in Miami Gardens, approximately 15 miles north of downtown Miami and about 25 miles from South Beach. It is the home of the NFL's Miami Dolphins and has previously hosted Super Bowls, major tennis events at the Miami Open, and international football matches. The stadium underwent a major renovation that added a large canopy structure providing partial shade to the seating bowl — a critical upgrade given Miami's summer conditions. However, it is not enclosed and not air conditioned.</p>
+
+    <p>Visit the <a href="../host-cities/miami.html">Miami host city page</a> for the confirmed match schedule and group-stage details.</p>
+
+    <h2>Miami Weather: The Most Important Section of This Guide</h2>
+
+    <div class="warning-box">
+      <div class="warning-title">Extreme Heat and Humidity — Read This Carefully</div>
+      <p>June and July in Miami are among the hottest and most humid months in any major US city. Average high temperatures reach 90°F (32°C), but the humidity makes the "feels like" temperature significantly higher — often 100-105°F (38-40°C). Daily afternoon thunderstorms are common between 2pm and 6pm, typically passing within 30-45 minutes but capable of delaying or interrupting matches. This is not a city where you can underestimate summer weather. Dehydration is a serious risk.</p>
+    </div>
+
+    <ul>
+      <li><strong>Hydrate constantly:</strong> Drink water before, during, and after the match — not just when thirsty. Sports drinks with electrolytes are better than water alone in this heat.</li>
+      <li><strong>Sunscreen is non-negotiable:</strong> Apply before leaving your hotel and carry a travel-size bottle for reapplication.</li>
+      <li><strong>Shade is precious:</strong> The stadium canopy covers some seats better than others — check your seat location and consider higher-tier covered sections even at a premium.</li>
+      <li><strong>Afternoon thunderstorm planning:</strong> If you are outdoors at fan zones in the afternoon, know the nearest indoor shelter in advance. Storms can build rapidly.</li>
+      <li><strong>Dress for heat, not fashion:</strong> Lightweight, moisture-wicking fabrics in light colours. Leave the replica shirt with the collar for cooler cities.</li>
+    </ul>
+
+    <h2>Getting to Hard Rock Stadium</h2>
+
+    <p>Transport is the second major challenge for Miami match-goers. There is no direct public transit link from South Beach or downtown Miami to Hard Rock Stadium.</p>
+
+    <div class="tips-box">
+      <div class="tips-title">Transport Options</div>
+      <ul>
+        <li><strong>Ride-share (Uber/Lyft):</strong> The standard choice. From downtown Miami, journey time is approximately 25 minutes in normal traffic but can exceed 45-60 minutes in match-day congestion. Book well in advance and use a pickup point away from the immediate stadium perimeter for return journeys.</li>
+        <li><strong>From South Beach:</strong> South Beach to the stadium is approximately 30-40 minutes under normal conditions. Budget 60+ minutes on match days.</li>
+        <li><strong>Miami International Airport:</strong> MIA is conveniently located roughly midway between downtown Miami and the stadium — approximately 15-20 minutes by ride-share. A strong gateway for international fans.</li>
+        <li><strong>Tri-Rail:</strong> The Tri-Rail commuter service stops at Hialeah Market and Metrorail Transfer stations. With connections this can reach the broader stadium area but requires a ride-share for the final leg — not ideal but an option for fans staying in areas near rail stops.</li>
+        <li><strong>Official shuttles:</strong> Tournament-specific shuttle services from designated Miami hubs are expected. Follow official announcements as the tournament approaches.</li>
+        <li><strong>Driving:</strong> Parking is available around the stadium. Pre-book to guarantee a spot and allow extra time post-match.</li>
+      </ul>
+    </div>
+
+    <h2>Where to Stay in Miami</h2>
+
+    <div class="neighbourhood-grid">
+      <div class="neighbourhood-card">
+        <h4>South Beach</h4>
+        <p>The iconic Art Deco beachfront district. Premium prices, but the experience of staying on Ocean Drive with the best beach in the US is genuinely special. Good for fans who want the full Miami experience on rest days.</p>
+      </div>
+      <div class="neighbourhood-card">
+        <h4>Brickell</h4>
+        <p>Miami's financial district and fastest-growing neighbourhood. Modern hotels, excellent restaurants, and walkable waterfront. More affordable than South Beach with better access to downtown attractions.</p>
+      </div>
+      <div class="neighbourhood-card">
+        <h4>Wynwood</h4>
+        <p>Miami's arts district, famous for its street murals and gallery scene. Excellent food halls, craft breweries, and boutique hotels. A great base for younger fans who want a local feel over tourist strip.</p>
+      </div>
+      <div class="neighbourhood-card">
+        <h4>Coral Gables</h4>
+        <p>Upscale, tree-lined suburb south of downtown with excellent restaurants and quieter streets. A comfortable base if you want to avoid the South Beach crowds while staying within easy ride-share range of the stadium.</p>
+      </div>
+      <div class="neighbourhood-card">
+        <h4>Miami Gardens</h4>
+        <p>Staying close to the stadium in Miami Gardens makes match-day logistics simple. Limited hotel options compared to the beach neighbourhoods, but worth considering for fans attending multiple matches.</p>
+      </div>
+      <div class="neighbourhood-card">
+        <h4>Aventura</h4>
+        <p>Upscale shopping and residential area between Miami and Fort Lauderdale, roughly 15 minutes from the stadium. A quieter alternative with good hotels at slightly lower prices than South Beach.</p>
+      </div>
+    </div>
+
+    <div class="cta-group">
+      <a href="https://www.booking.com/searchresults.html?ss=Miami+Florida" class="cta-btn gold" target="_blank" rel="noopener">Search Miami Hotels on Booking.com</a>
+      <a href="../where-to-stay.html" class="cta-btn blue">Full Accommodation Guide</a>
+    </div>
+
+    <div class="affiliate-disclaimer">
+      Hotel links use affiliate partnerships. Miami prices during World Cup matches will be above average, particularly in South Beach. Book well in advance.
+    </div>
+
+    <!-- MID-ARTICLE NEWSLETTER -->
+    <div class="newsletter-block">
+      <h3>Miami Match Day Alerts</h3>
+      <p>Weather warnings, transport updates, fan zone openings — subscribe to the GO2CUP newsletter for everything Miami World Cup.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform?usp=header" class="cta-btn gold" target="_blank" rel="noopener">Subscribe Free</a>
+    </div>
+
+    <h2>Fan Zones in Miami</h2>
+
+    <div class="info-box">
+      <div class="info-title">Bayfront Park Fan Zone</div>
+      <p>Bayfront Park in downtown Miami sits on the beautiful Biscayne Bay waterfront and is the natural location for the city's main official fan zone. With a large outdoor amphitheatre and open lawns, the park has hosted major events before and the bay backdrop makes for a stunning setting. Note: afternoon heat and potential thunderstorms are factors for outdoor fan zones — plan accordingly.</p>
+    </div>
+
+    <div class="info-box">
+      <div class="info-title">Wynwood Fan Scene</div>
+      <p>Wynwood's outdoor bars, food halls, and street-art backdrops will make it an organic fan gathering zone. The neighbourhood has multiple venues with large screens, and the creative, multicultural energy fits the World Cup spirit perfectly. More sheltered from afternoon heat than a completely open park — look for venues with shade structures or indoor/outdoor hybrid spaces.</p>
+    </div>
+
+    <h2>Miami's Beaches: Fan Days Done Right</h2>
+
+    <p>Between matches, Miami's beaches are the obvious draw — and they genuinely deliver. Here is how to maximise your beach time around match days:</p>
+
+    <ul>
+      <li><strong>South Beach (Miami Beach):</strong> The most famous, with lifeguard towers painted in pastel colours, warm turquoise water, and a lively boardwalk. Get there by 9am before the crowds build and the heat peaks.</li>
+      <li><strong>Crandon Park Beach (Key Biscayne):</strong> Less crowded than South Beach, with calmer waters and more natural surroundings. Great for families and fans wanting a quieter beach day.</li>
+      <li><strong>Haulover Beach:</strong> A longer beach with consistent surf and plenty of parking — popular with locals for good reason.</li>
+      <li><strong>Timing:</strong> Beach before noon, shade and lunch from noon-3pm, afternoon thunderstorm if it comes, then fan zone or stadium in the evening. This is the Miami summer rhythm — embrace it.</li>
+    </ul>
+
+    <h2>Food Guide: Latin American and Caribbean Excellence</h2>
+
+    <p>Miami's diverse food scene is one of its greatest assets. The city's large Cuban, Colombian, Venezuelan, Haitian, Brazilian, and Jamaican communities have created an extraordinary range of authentic restaurants at every price point.</p>
+
+    <ul>
+      <li><strong>Cuban food:</strong> Little Havana on Calle Ocho is a cultural institution. Ropa vieja, Cuban sandwiches, strong espresso — essential eating for any visitor.</li>
+      <li><strong>Colombian and Venezuelan:</strong> Arepas, bandeja paisa, empanadas — outstanding quality throughout the Doral and Kendall areas and in the Brickell food scene.</li>
+      <li><strong>Haitian cuisine:</strong> Little Haiti neighbourhood offers authentic Haitian Creole food at excellent prices — griot (fried pork), rice and beans, and plantains.</li>
+      <li><strong>Seafood:</strong> Stone crabs (seasonal but check availability), fresh grouper, and mahi-mahi are Miami seafood staples.</li>
+      <li><strong>Wynwood food halls:</strong> The Wynwood area has excellent food halls with multiple vendors — a great option for groups with varied tastes.</li>
+    </ul>
+
+    <h2>Water Taxi: The Scenic Way Around</h2>
+
+    <p>Miami's water taxi service connects several points along Biscayne Bay including Bayside Marketplace, various hotel docks, and waterfront restaurants. It is not a practical route to the stadium, but as a way to travel between downtown, Brickell, and South Beach it offers a genuinely scenic and fun alternative to ride-share on rest days. Check current route maps and schedules locally.</p>
+
+    <h2>Tickets for Miami Matches</h2>
+
+    <div class="cta-group">
+      <a href="https://www.viagogo.com/Sport-Tickets/Soccer/FIFA-World-Cup" class="cta-btn gold" target="_blank" rel="noopener">Find Miami Match Tickets on Viagogo</a>
+    </div>
+
+    <div class="affiliate-disclaimer">
+      Secondary market prices vary by match and demand. GO2CUP earns a referral commission on qualifying purchases.
+    </div>
+
+    <div class="tips-box">
+      <div class="tips-title">Miami Fan Checklist</div>
+      <ul>
+        <li>Pack more sunscreen than you think you need</li>
+        <li>Carry an electrolyte drink or powder — plain water alone is insufficient in this heat</li>
+        <li>Download a weather radar app (Weather Underground or MyRadar) to track incoming afternoon storms</li>
+        <li>Book stadium transport in advance — do not assume ride-share availability on match days</li>
+        <li>Early morning and evening are the best times for outdoor activity</li>
+        <li>Most beach restaurants and bars are cash-friendly but card is universally accepted</li>
+        <li>Spanish is widely spoken in Miami — knowing a few words goes a long way and is warmly received</li>
+        <li>Check the <a href="../host-cities/miami.html">Miami host city page</a> for match schedule updates</li>
+      </ul>
+    </div>
+
+    <!-- BOTTOM NEWSLETTER -->
+    <div class="newsletter-block">
+      <h3>Everything Miami World Cup</h3>
+      <p>Newsletter subscribers get first access to our match-by-match Miami heat strategy guides, fan zone programming, and hotel deal alerts.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform?usp=header" class="cta-btn gold" target="_blank" rel="noopener">Subscribe Free</a>
+    </div>
+
+    <!-- RELATED -->
+    <div class="related-section">
+      <h3>More Fan Guides</h3>
+      <div class="related-grid">
+        <a href="dallas-fan-guide.html" class="related-card">
+          <div class="rc-cat">Host City</div>
+          <div class="rc-title">Dallas Fan Guide: World Cup 2026 at AT&T Stadium</div>
+        </a>
+        <a href="new-york-new-jersey-fan-guide.html" class="related-card">
+          <div class="rc-cat">Host City</div>
+          <div class="rc-title">New York / New Jersey: The World Cup Final at MetLife</div>
+        </a>
+        <a href="los-angeles-fan-guide.html" class="related-card">
+          <div class="rc-cat">Host City</div>
+          <div class="rc-title">Los Angeles Fan Guide: World Cup 2026 at SoFi Stadium</div>
+        </a>
+        <a href="toronto-fan-guide.html" class="related-card">
+          <div class="rc-cat">Host City</div>
+          <div class="rc-title">Toronto Fan Guide: World Cup 2026 in Canada</div>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-logo">
+      <span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span>
+    </div>
+    <p>Your independent guide to FIFA World Cup 2026 | sportdgx.com</p>
+    <p style="margin-top:8px; font-size:11px;">GO2CUP is an independent fan hub and is not affiliated with FIFA or any official tournament body. Affiliate links used throughout — see individual disclosures.</p>
+  </footer>
+
+</body>
+</html>
