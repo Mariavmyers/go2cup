@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mexico City Fan Guide: Everything You Need to Know for World Cup 2026 | GO2CUP</title>
+  <meta name="description" content="Your complete Mexico City fan guide for World Cup 2026. Estadio Azteca, hotel zones, transit, safety tips, street food and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #06080d;
+      --bg2: #0d1117;
+      --bg3: #141922;
+      --gold: #d9a441;
+      --gold-dim: #a87c2e;
+      --blue: #2f80d6;
+      --green: #1f9d57;
+      --red: #e2404d;
+      --text: #e8eaf0;
+      --muted: #8b92a8;
+      --border: #1e2535;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Archivo', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #07090f;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      height: 58px;
+    }
+
+    .logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.7rem;
+      letter-spacing: 1px;
+    }
+    .logo span.go { color: var(--blue); }
+    .logo span.two { color: var(--green); }
+    .logo span.cup { color: var(--red); }
+
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      color: var(--text);
+      font-size: 0.88rem;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold); text-decoration: none; }
+
+    /* LANG BAR */
+    .lang-bar {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 24px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .lang-pill {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 3px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      transition: all 0.2s;
+    }
+    .lang-pill:hover { border-color: var(--gold); color: var(--gold); text-decoration: none; }
+    .lang-pill.active {
+      background: var(--gold);
+      color: #06080d;
+      border-color: var(--gold);
+    }
+
+    /* ARTICLE LAYOUT */
+    .article-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .category-tag {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 3px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.1;
+      color: #fff;
+      margin-bottom: 18px;
+      letter-spacing: 0.5px;
+    }
+
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 0.84rem;
+      margin-bottom: 36px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .article-meta .author { color: var(--gold); font-weight: 600; }
+
+    /* DISCLAIMER */
+    .disclaimer {
+      background: var(--bg3);
+      border-left: 3px solid var(--gold);
+      padding: 14px 18px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 36px;
+      border-radius: 0 3px 3px 0;
+    }
+
+    /* BODY CONTENT */
+    .article-body h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.7rem;
+      color: var(--gold);
+      margin: 40px 0 14px;
+      letter-spacing: 0.5px;
+    }
+
+    .article-body p { margin-bottom: 18px; }
+
+    .article-body ul, .article-body ol {
+      margin: 0 0 18px 22px;
+    }
+    .article-body li { margin-bottom: 8px; }
+
+    .article-body strong { color: #fff; font-weight: 600; }
+
+    .highlight-box {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--green);
+      padding: 18px 20px;
+      margin: 28px 0;
+      border-radius: 0 3px 3px 0;
+    }
+    .highlight-box p { margin-bottom: 0; }
+
+    /* NEWSLETTER */
+    .newsletter-box {
+      background: linear-gradient(135deg, #0d1520 0%, #101828 100%);
+      border: 1px solid var(--gold-dim);
+      border-radius: 3px;
+      padding: 32px 28px;
+      margin: 44px 0;
+      text-align: center;
+    }
+    .newsletter-box h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .newsletter-box p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+    .btn-gold {
+      display: inline-block;
+      background: var(--gold);
+      color: #06080d;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 12px 28px;
+      border-radius: 3px;
+      letter-spacing: 0.5px;
+      transition: background 0.2s;
+    }
+    .btn-gold:hover { background: #e8b24e; text-decoration: none; }
+
+    /* RELATED */
+    .related-section {
+      margin-top: 56px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+    }
+    .related-section h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.4rem;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .related-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 16px;
+      transition: border-color 0.2s;
+    }
+    .related-card:hover { border-color: var(--gold); text-decoration: none; }
+    .related-card .rc-tag {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--blue);
+      margin-bottom: 6px;
+    }
+    .related-card .rc-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #07090f;
+      border-top: 1px solid var(--border);
+      padding: 48px 24px 32px;
+    }
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .footer-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+    .footer-tagline {
+      color: var(--muted);
+      font-size: 0.84rem;
+      margin-bottom: 28px;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-bottom: 28px;
+    }
+    .footer-links a {
+      color: var(--muted);
+      font-size: 0.82rem;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--gold); text-decoration: none; }
+    .footer-copy {
+      color: #4a5068;
+      font-size: 0.78rem;
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 0 16px; }
+      .nav-links { gap: 16px; }
+      .article-wrap { padding: 32px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="../index.html" class="logo" style="text-decoration:none;">
+    <span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Hub</a></li>
+    <li><a href="../where-to-stay/mexico-city.html">Where to Stay</a></li>
+    <li><a href="../affiliate.html">Partner Resources</a></li>
+    <li><a href="../blog.html">Blog</a></li>
+  </ul>
+</nav>
+
+<!-- LANG BAR -->
+<div class="lang-bar">
+  <span class="lang-pill active">EN</span>
+  <a href="../maria-myers-pt.html" class="lang-pill">PT</a>
+  <a href="../maria-myers-es.html" class="lang-pill">ES</a>
+  <a href="../maria-myers-it.html" class="lang-pill">IT</a>
+</div>
+
+<!-- ARTICLE -->
+<main class="article-wrap">
+
+  <span class="category-tag">Host City</span>
+  <h1>Mexico City Fan Guide: Everything You Need to Know for World Cup 2026</h1>
+
+  <div class="article-meta">
+    <span>March 5, 2026</span>
+    <span>·</span>
+    <span>8 min read</span>
+    <span>·</span>
+    <span class="author">Maria Myers · GO2CUP</span>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Affiliate Disclaimer:</strong> GO2CUP earns a commission on bookings made through links on this page (hotels, tickets, travel). This comes at no extra cost to you and helps us keep the guide free. All recommendations are editorially independent.
+  </div>
+
+  <div class="article-body">
+
+    <p>Mexico City is the beating heart of World Cup 2026. It hosts the tournament's <strong>opening match on June 11</strong> — Mexico vs South Africa at the legendary Estadio Azteca — and it will be the first venue fans experience when the greatest show on earth kicks off. Whether you're there for the opening ceremony or just chasing the atmosphere of the largest city in North America, this guide covers everything you need to arrive prepared.</p>
+
+    <h2>Estadio Azteca: The Only Stadium to Host Three World Cups</h2>
+
+    <p>No venue in football history compares to <strong>Estadio Azteca</strong>. With a capacity of <strong>87,000 seats</strong>, it is the largest stadium in the Western Hemisphere and the only ground to have hosted a World Cup Final not once, but twice — in 1970 (Brazil vs Italy) and 1986 (Argentina vs West Germany). In 2026, it becomes the first stadium ever to host matches at three separate FIFA World Cups.</p>
+
+    <p>The stadium was renovated ahead of 2026 with upgraded hospitality areas, improved drainage, and expanded concession facilities. Its iconic oval bowl structure and the perpetual noise of Mexican fans create an atmosphere unlike anything else in world football.</p>
+
+    <div class="highlight-box">
+      <p><strong>Key facts:</strong> Estadio Azteca, Calzada de Tlalpan 3465, Colonia Santa Úrsula, Mexico City. Capacity: 87,000. Opened: 1966. Surface: Natural grass. Nearest transit: Tren Ligero (see below).</p>
+    </div>
+
+    <h2>El Tri Matches at World Cup 2026</h2>
+
+    <p>Mexico's group-stage schedule spans three cities and gives fans who are based in CDMX the chance to see the home side open the tournament:</p>
+
+    <ul>
+      <li><strong>June 11 — Mexico vs South Africa</strong> at Estadio Azteca, Mexico City (Opening Match)</li>
+      <li><strong>June 18 — Mexico vs South Korea</strong> in Guadalajara</li>
+      <li><strong>June 24 — Mexico vs Czechia</strong> (venue TBC by FIFA)</li>
+    </ul>
+
+    <p>The opening match on June 11 will be one of the most electric footballing occasions in Mexican history. Tickets for this game sold out in the official lottery but remain available on the secondary market — see our <a href="how-to-get-world-cup-tickets.html">ticket guide</a> for options.</p>
+
+    <!-- NEWSLETTER MID -->
+    <div class="newsletter-box">
+      <h3>Stay Ahead of the Tournament</h3>
+      <p>Get World Cup 2026 travel alerts, match-day tips and hotel deals delivered to your inbox.</p>
+      <a class="btn-gold" href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform?usp=header" target="_blank" rel="noopener">Subscribe Free</a>
+    </div>
+
+    <h2>Best Hotel Zones in Mexico City</h2>
+
+    <p>Mexico City is a vast metropolis. Where you stay makes a significant difference to your experience. Here are the four main zones for World Cup visitors:</p>
+
+    <ul>
+      <li><strong>Roma Norte:</strong> The most popular choice for international fans. Walkable, full of restaurants, craft cocktail bars and corner cafés. Metro Line 1 (Insurgentes) gives reasonable access to the stadium.</li>
+      <li><strong>Condesa:</strong> Immediately adjacent to Roma Norte, slightly quieter, famous for tree-lined streets and art deco buildings. Ideal for couples and families who want calm between matches.</li>
+      <li><strong>Polanco:</strong> Mexico City's most upscale district. Home to luxury hotels, Chapultepec Park and world-class dining. Pricier but extremely safe and polished.</li>
+      <li><strong>Paseo de la Reforma:</strong> The grand boulevard running through the city centre. Business-class hotels here offer great value and central access to multiple metro lines.</li>
+    </ul>
+
+    <p>For detailed hotel picks and price comparisons in each zone, see our <a href="../where-to-stay/mexico-city.html">Mexico City hotel guide</a>.</p>
+
+    <h2>Getting to Estadio Azteca by Metro</h2>
+
+    <p>The Azteca is in the south of the city. The most reliable route on match days:</p>
+
+    <ol>
+      <li>Take <strong>Metro Line 2</strong> (Blue Line) south to <strong>Tasqueña</strong> terminal station.</li>
+      <li>Exit and follow signs to the <strong>Tren Ligero</strong> (light rail) platform directly adjacent to Tasqueña Metro.</li>
+      <li>Board the Tren Ligero and ride <strong>6 stops south</strong> to <strong>Estadio Azteca</strong> station.</li>
+      <li>Walk 5 minutes through the pedestrian approach to the ground.</li>
+    </ol>
+
+    <p>The full journey from Roma Norte or Condesa takes approximately 45–55 minutes depending on connections. On match days, the Tren Ligero runs extra services and the platforms get crowded — arrive at least 90 minutes before kick-off. Metro fare is around 5 MXN (under $0.30 USD).</p>
+
+    <div class="highlight-box">
+      <p><strong>Pro tip:</strong> Buy a rechargeable <em>tarjeta de movilidad integrada</em> (mobility card) at any Metro station to skip ticket queues on match days. Load at least 50 MXN to cover your trips.</p>
+    </div>
+
+    <h2>Safety Tips for Mexico City</h2>
+
+    <p>Mexico City is a major international metropolis with millions of daily visitors. The areas recommended for World Cup fans — Roma, Condesa, Polanco and Reforma — are well-patrolled, tourist-friendly neighbourhoods. Keep these basics in mind:</p>
+
+    <ul>
+      <li>Use <strong>Uber or Beat</strong> (ride-hailing apps) rather than street taxis at night.</li>
+      <li>Avoid displaying expensive cameras or jewellery on public transport.</li>
+      <li>Keep a photocopy of your passport and hotel address in your bag.</li>
+      <li>The Metro is safe during daylight hours; avoid very late-night trips on quieter lines.</li>
+      <li>Stay aware around ATMs — use machines inside supermarkets or bank lobbies.</li>
+      <li>Emergency number: <strong>911</strong> (same as the US).</li>
+      <li>Tourist Police (Policía de Turismo) are deployed throughout the historic centre and major tourist areas during the tournament.</li>
+    </ul>
+
+    <h2>Fan Zones and the Zócalo</h2>
+
+    <p>Mexico City's main public fan zone is centred on the <strong>Zócalo</strong> — the vast main square in the historic centre, one of the largest public squares in the world. FIFA and the city government operate official fan zones with giant screens, live music, food stalls and cultural performances. Entry to fan zones is free but requires a wristband distributed on the day.</p>
+
+    <p>Secondary fan zones are set up in Parque España (Roma Norte) and along Paseo de la Reforma near the Angel of Independence monument. The Reforma fan zone is the most accessible from the main hotel districts.</p>
+
+    <h2>Day Trip: Teotihuacan</h2>
+
+    <p>If you have a rest day between matches, the ancient pyramids of <strong>Teotihuacan</strong> are one of the most extraordinary sites in the Americas — just 50 km northeast of the city centre. Buses depart regularly from the Terminal Norte bus station. The site opens at 09:00 and is best visited on a weekday morning to avoid crowds. Budget 5–6 hours for a full visit including climbing the Pyramid of the Sun and Pyramid of the Moon.</p>
+
+    <h2>Currency and Payments</h2>
+
+    <p>Mexico uses the <strong>Mexican Peso (MXN)</strong>. As of early 2026, the rate is approximately 17–18 MXN to 1 USD. Most restaurants, hotels and shops in tourist areas accept Visa and Mastercard. Cash is important for street food, markets and smaller vendors. ATMs are widespread in the hotel zones and generally safe to use during daytime hours.</p>
+
+    <h2>Best Street Food Areas</h2>
+
+    <p>Mexico City is one of the world's great food cities. For World Cup visitors on the go, these areas offer the best street food density:</p>
+
+    <ul>
+      <li><strong>Mercado de Medellín</strong> (Roma Norte): Covered market with excellent tacos, tlayudas and fresh juices.</li>
+      <li><strong>Mercado Jamaica</strong>: Flowers and food combined — try the tacos de canasta and agua de jamaica.</li>
+      <li><strong>Calle Álvaro Obregón</strong> (Roma): The main promenade lined with taco stands after dark.</li>
+      <li><strong>Around Estadio Azteca</strong>: On match days, dozens of street stalls set up along Calzada de Tlalpan serving elotes, churros, tamales and grilled meats.</li>
+    </ul>
+
+    <p>For the complete picture on getting around the city and planning your Mexico trip, visit our <a href="../mexico-trip-guide.html">Mexico Trip Guide</a> and the full <a href="../host-cities/mexico-city.html">Mexico City host city page</a>.</p>
+
+    <!-- NEWSLETTER BOTTOM -->
+    <div class="newsletter-box">
+      <h3>Don't Miss a Match-Day Update</h3>
+      <p>Subscribe to GO2CUP for venue guides, schedule alerts and exclusive travel tips for World Cup 2026.</p>
+      <a class="btn-gold" href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform?usp=header" target="_blank" rel="noopener">Get the Newsletter</a>
+    </div>
+
+  </div><!-- /article-body -->
+
+  <!-- RELATED ARTICLES -->
+  <div class="related-section">
+    <h3>Related Articles</h3>
+    <div class="related-grid">
+      <a href="48-team-world-cup-explained.html" class="related-card">
+        <div class="rc-tag">Fan Tips</div>
+        <div class="rc-title">The 48-Team World Cup Explained: What Fans Need to Know</div>
+      </a>
+      <a href="how-to-get-world-cup-tickets.html" class="related-card">
+        <div class="rc-tag">Tickets</div>
+        <div class="rc-title">How to Get Tickets for World Cup 2026 — Official &amp; Resale Options</div>
+      </a>
+      <a href="best-neighborhoods-mexico-city.html" class="related-card">
+        <div class="rc-tag">Hotels</div>
+        <div class="rc-title">Best Neighborhoods to Stay in Mexico City for the World Cup</div>
+      </a>
+      <a href="world-cup-match-schedule.html" class="related-card">
+        <div class="rc-tag">Schedule</div>
+        <div class="rc-title">World Cup 2026 Match Schedule: Every Group Stage Game by Host City</div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <span class="go" style="color:var(--blue);">GO</span><span class="two" style="color:var(--green);">2</span><span class="cup" style="color:var(--red);">CUP</span>
+    </div>
+    <p class="footer-tagline">Your independent travel hub for FIFA World Cup 2026.</p>
+    <div class="footer-links">
+      <a href="../affiliate.html">Affiliate Disclosure</a>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Use</a>
+      <a href="../legal-hub.html">Legal Hub</a>
+      <a href="../maria-myers.html">About Maria Myers</a>
+      <a href="../blog.html">Blog</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 GO2CUP · sportdgx.com · All rights reserved. GO2CUP is an independent fan travel guide and is not affiliated with FIFA or any official tournament body.</p>
+  </div>
+</footer>
+
+</body>
+</html>
