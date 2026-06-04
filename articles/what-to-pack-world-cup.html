@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What to Pack for the World Cup: The Ultimate Fan Checklist | GO2CUP</title>
+  <meta name="description" content="Complete packing checklist for FIFA World Cup 2026 fans. Documents, clothing, tech, health, stadium rules, and what to leave at home." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #06080d;
+      --gold: #d9a441;
+      --blue: #2f80d6;
+      --green: #1f9d57;
+      --red: #e2404d;
+      --text: #e4e8f0;
+      --muted: #8a94a6;
+      --card: #0d1117;
+      --border: #1e2530;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: 'Archivo', sans-serif; font-size: 17px; line-height: 1.75; }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(6,8,13,0.97); border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 28px; height: 58px; backdrop-filter: blur(8px);
+    }
+    .logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.7rem; text-decoration: none; letter-spacing: 1px; }
+    .logo span.go { color: var(--blue); }
+    .logo span.two { color: var(--green); }
+    .logo span.cup { color: var(--red); }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color .2s; }
+    .nav-links a:hover { color: var(--gold); }
+    .lang-bar {
+      background: var(--card); border-bottom: 1px solid var(--border);
+      display: flex; gap: 6px; padding: 10px 28px;
+    }
+    .lang-pill {
+      display: inline-block; padding: 4px 12px; font-size: 0.78rem; font-weight: 600;
+      border-radius: 3px; text-decoration: none; text-transform: uppercase; letter-spacing: .5px;
+      border: 1px solid var(--border); color: var(--muted); transition: all .2s;
+    }
+    .lang-pill.active { background: var(--gold); color: #06080d; border-color: var(--gold); }
+    .lang-pill:not(.active):hover { border-color: var(--gold); color: var(--gold); }
+    .article-hero { max-width: 860px; margin: 0 auto; padding: 56px 28px 32px; }
+    .category-badge {
+      display: inline-block; background: var(--green); color: #fff;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase;
+      padding: 4px 10px; border-radius: 3px; margin-bottom: 18px;
+    }
+    .article-hero h1 {
+      font-family: 'Bebas Neue', sans-serif; font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.1; color: #fff; margin-bottom: 18px; letter-spacing: .5px;
+    }
+    .meta { display: flex; flex-wrap: wrap; gap: 16px; color: var(--muted); font-size: 0.86rem; margin-bottom: 8px; }
+    .byline { color: var(--gold); font-size: 0.88rem; font-weight: 600; margin-top: 6px; }
+    .disclaimer { max-width: 860px; margin: 0 auto 0; padding: 0 28px 18px; }
+    .disclaimer-box {
+      background: #0d1117; border-left: 3px solid var(--gold);
+      padding: 12px 16px; font-size: 0.82rem; color: var(--muted); border-radius: 0 3px 3px 0;
+    }
+    .article-body { max-width: 860px; margin: 0 auto; padding: 0 28px 60px; }
+    .article-body h2 {
+      font-family: 'Bebas Neue', sans-serif; font-size: 1.75rem; color: var(--gold);
+      margin: 48px 0 16px; letter-spacing: .5px; border-bottom: 1px solid var(--border); padding-bottom: 8px;
+    }
+    .article-body h3 { font-size: 1.1rem; color: #fff; margin: 28px 0 10px; font-weight: 700; }
+    .article-body p { margin-bottom: 18px; }
+    .article-body ul, .article-body ol { margin: 0 0 18px 20px; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body a { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+    .article-body a:hover { color: var(--gold); }
+    .tip-box {
+      background: #0a1628; border-left: 3px solid var(--blue);
+      border-radius: 0 3px 3px 0; padding: 16px 20px; margin: 24px 0;
+    }
+    .tip-box strong { color: var(--blue); display: block; margin-bottom: 5px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: .5px; }
+    .warn-box {
+      background: #1a0a0b; border-left: 3px solid var(--red);
+      border-radius: 0 3px 3px 0; padding: 16px 20px; margin: 24px 0;
+    }
+    .warn-box strong { color: var(--red); display: block; margin-bottom: 5px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: .5px; }
+    /* CHECKLIST */
+    .checklist-section {
+      background: var(--card); border: 1px solid var(--border); border-radius: 3px;
+      padding: 24px 24px; margin: 24px 0;
+    }
+    .checklist-section h3 {
+      font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem; letter-spacing: .5px;
+      color: var(--gold); margin-bottom: 14px;
+    }
+    .checklist { list-style: none; margin: 0; padding: 0; }
+    .checklist li {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 7px 0; border-bottom: 1px solid var(--border); font-size: 0.93rem;
+    }
+    .checklist li:last-child { border-bottom: none; }
+    .checklist li::before {
+      content: '☐'; color: var(--gold); font-size: 1.1rem; flex-shrink: 0; line-height: 1.5;
+    }
+    .checklist li span { color: var(--text); }
+    .checklist li em { color: var(--muted); font-style: normal; font-size: 0.83rem; display: block; }
+    /* STADIUM RULES */
+    .rules-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 24px 0; }
+    .allowed-card, .banned-card {
+      background: var(--card); border-radius: 3px; padding: 20px 16px;
+    }
+    .allowed-card { border-top: 3px solid var(--green); }
+    .banned-card { border-top: 3px solid var(--red); }
+    .allowed-card h4 { color: var(--green); font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: .5px; margin-bottom: 10px; }
+    .banned-card h4 { color: var(--red); font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: .5px; margin-bottom: 10px; }
+    .allowed-card li, .banned-card li { font-size: 0.86rem; color: var(--muted); margin-bottom: 6px; list-style: none; padding-left: 16px; position: relative; }
+    .allowed-card li::before { content: '✓'; color: var(--green); position: absolute; left: 0; }
+    .banned-card li::before { content: '✗'; color: var(--red); position: absolute; left: 0; }
+    .newsletter-box {
+      background: var(--card); border: 1px solid var(--border); border-radius: 3px;
+      padding: 32px 28px; margin: 40px 0; text-align: center;
+    }
+    .newsletter-box h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; color: #fff; margin-bottom: 8px; }
+    .newsletter-box p { color: var(--muted); font-size: 0.9rem; margin-bottom: 18px; }
+    .newsletter-btn {
+      display: inline-block; background: var(--green); color: #fff;
+      padding: 12px 28px; border-radius: 3px; font-weight: 700; text-decoration: none;
+      font-size: 0.95rem; transition: opacity .2s;
+    }
+    .newsletter-btn:hover { opacity: .85; color: #fff; }
+    .related-section { margin: 48px 0 0; }
+    .related-section h2 { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; color: var(--gold); margin-bottom: 18px; letter-spacing: .5px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+    .related-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 3px;
+      padding: 18px 16px; text-decoration: none; display: block; transition: border-color .2s;
+    }
+    .related-card:hover { border-color: var(--gold); }
+    .related-card .rc-cat { font-size: 0.72rem; color: var(--gold); font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px; }
+    .related-card .rc-title { color: #fff; font-weight: 600; font-size: 0.95rem; line-height: 1.4; }
+    footer {
+      background: var(--card); border-top: 1px solid var(--border);
+      padding: 32px 28px; text-align: center;
+    }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 16px; }
+    .footer-links a { color: var(--muted); text-decoration: none; font-size: 0.85rem; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { color: var(--muted); font-size: 0.8rem; }
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .article-hero, .article-body, .disclaimer { padding-left: 16px; padding-right: 16px; }
+      .rules-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="logo" href="../index.html"><span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Hub</a></li>
+      <li><a href="../where-to-stay.html">Where to Stay</a></li>
+      <li><a href="../partner-resources.html">Partner Resources</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <div class="lang-bar">
+    <span class="lang-pill active">EN</span>
+    <a class="lang-pill" href="../maria-myers-pt.html">PT</a>
+    <a class="lang-pill" href="../maria-myers-es.html">ES</a>
+    <a class="lang-pill" href="../maria-myers-it.html">IT</a>
+  </div>
+
+  <header class="article-hero">
+    <div class="category-badge">Fan Tips</div>
+    <h1>What to Pack for the World Cup: The Ultimate Fan Checklist</h1>
+    <div class="meta">
+      <span>April 2, 2026</span>
+      <span>5 min read</span>
+    </div>
+    <div class="byline">Maria Myers · GO2CUP</div>
+  </header>
+
+  <div class="disclaimer">
+    <div class="disclaimer-box">
+      <strong>Affiliate Disclaimer:</strong> GO2CUP earns a commission through partner links on this page at no extra cost to you. Product recommendations are editorially independent.
+    </div>
+  </div>
+
+  <main class="article-body">
+
+    <p>Whether you are heading to Mexico City for three group stage matches or island-hopping between five US cities for two weeks, getting your packing right makes or breaks the experience. This checklist covers everything — documents, clothing, tech, health, and money — including what the stadiums will and won't let you bring in.</p>
+
+    <h2>Documents: Get These Right First</h2>
+    <p>A documentation failure can derail your entire trip. Sort these before anything else.</p>
+
+    <div class="checklist-section">
+      <h3>Essential Documents</h3>
+      <ul class="checklist">
+        <li><span>Passport (valid for at least 6 months beyond your travel dates) <em>Check expiry NOW — passport renewals are running weeks behind in many countries</em></span></li>
+        <li><span>Match tickets — printed AND saved digitally offline <em>Download the FIFA ticketing app and save tickets to your phone wallet</em></span></li>
+        <li><span>Flight booking confirmations (printed + in email) <em>Screenshot or PDF in case you have no signal at border/airport</em></span></li>
+        <li><span>Hotel booking confirmation(s)</span></li>
+        <li><span>Travel insurance policy document and emergency contact number <em>Keep the emergency number in your phone contacts</em></span></li>
+        <li><span>Passport photocopy — kept separately from your actual passport <em>Store one copy in luggage, email one to yourself</em></span></li>
+        <li><span>Visa documents if required <em>Canada requires an eTA for many nationalities; check requirements well in advance</em></span></li>
+        <li><span>US STEP registration confirmation (US citizens traveling to Mexico)</span></li>
+        <li><span>Emergency contact card — laminated or written, in your wallet</span></li>
+      </ul>
+    </div>
+
+    <!-- MID-ARTICLE NEWSLETTER -->
+    <div class="newsletter-box">
+      <h3>Pre-Trip Checklist Updates</h3>
+      <p>We publish weekly fan briefings with last-minute tips, stadium rule updates, and city-specific alerts before every match week.</p>
+      <a class="newsletter-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform?usp=header" target="_blank" rel="noopener">Subscribe Free</a>
+    </div>
+
+    <h2>Clothing: Pack Smart for the Climate</h2>
+    <p>The World Cup runs June through July across three countries with very different climates — coastal heat in Miami, altitude cold in Mexico City evenings, Pacific cool in Vancouver. Pack layers.</p>
+
+    <div class="checklist-section">
+      <h3>Clothing Checklist</h3>
+      <ul class="checklist">
+        <li><span>Team jersey (or two — home and away) <em>Wear it to every match. This is non-negotiable.</em></span></li>
+        <li><span>Light long-sleeve layer for stadium air conditioning <em>US and Canada stadiums are air-conditioned aggressively — bring a layer even in summer</em></span></li>
+        <li><span>Rain jacket / packable waterproof <em>Mexico's rainy season (June–September) means afternoon showers in CDMX and GDL. Lightweight packable jackets compress to nothing in your bag.</em></span></li>
+        <li><span>Comfortable walking shoes (broken in, not new) <em>You will walk 8–15km per match day</em></span></li>
+        <li><span>One pair of sandals or casual shoes for evenings</span></li>
+        <li><span>3–5 t-shirts (moisture wicking if possible)</span></li>
+        <li><span>2 pairs of lightweight trousers / shorts</span></li>
+        <li><span>Sunhat or cap for outdoor fan zones and daytime sightseeing</span></li>
+        <li><span>A small crossbody or chest bag for matchday essentials <em>Backpacks are restricted at most stadiums — see stadium rules below</em></span></li>
+        <li><span>Socks x5+ (more than you think — feet take punishment on long walking days)</span></li>
+      </ul>
+    </div>
+
+    <div class="tip-box">
+      <strong>Altitude & Mexico City Evenings</strong>
+      Mexico City sits at 2,240m. Evenings can drop to 12–15°C (54–59°F) even in summer — surprisingly cold for a tropical country. Your rain jacket doubles as an evening layer.
+    </div>
+
+    <h2>Tech & Connectivity</h2>
+
+    <div class="checklist-section">
+      <h3>Tech Checklist</h3>
+      <ul class="checklist">
+        <li><span>Portable phone charger / power bank (10,000–20,000mAh) <em>Match days are 6–10 hours away from an outlet. A dead phone means no Uber, no ticket, no communication.</em></span></li>
+        <li><span>Universal travel adapter <em>Type A/B in US and Mexico; Type A/B in Canada — same as US. If multi-country, get a universal.</em></span></li>
+        <li><span>Local SIM card or international data plan sorted before travel <em>Buy a Telcel or AT&T Mexico SIM at any Oxxo for $10–20. Saves expensive roaming.</em></span></li>
+        <li><span>Offline maps downloaded (Google Maps or Maps.me) <em>Download the city maps before you land — you may have no data at the airport</em></span></li>
+        <li><span>Uber, DiDi, and Lyft apps installed and payment method added</span></li>
+        <li><span>FIFA ticketing app installed with tickets saved offline</span></li>
+        <li><span>Translation app with Spanish downloaded offline (Mexico)</span></li>
+        <li><span>Earphones / headphones for airports and long travel days</span></li>
+        <li><span>Camera or keep phone storage clear — you will take hundreds of photos</span></li>
+      </ul>
+    </div>
+
+    <h2>Health & Wellbeing</h2>
+
+    <div class="checklist-section">
+      <h3>Health Checklist</h3>
+      <ul class="checklist">
+        <li><span>Sunscreen (SPF 50+) <em>UV index in Mexico and Southern US is extremely high in June–July. Reapply every 2 hours outdoors.</em></span></li>
+        <li><span>Altitude medication or ibuprofen (for Mexico City) <em>Mexico City is at 2,240m. Consult your doctor about acetazolamide if you are prone to altitude sickness.</em></span></li>
+        <li><span>Oral rehydration salts (ORS sachets) <em>Heat + altitude + long days + alcohol = dehydration. ORS packets restore electrolytes fast.</em></span></li>
+        <li><span>Antidiarrheal medication <em>Traveler's diarrhea is common on diet changes — be prepared</em></span></li>
+        <li><span>Hand sanitizer <em>Crowded stadiums and fan zones; not always soap at every sink</em></span></li>
+        <li><span>Insect repellent (for Mexico outdoor venues and evenings)</span></li>
+        <li><span>Any prescription medications — 2-week supply in original packaging with prescription</span></li>
+        <li><span>Basic first aid: blister pads, paracetamol, antihistamine</span></li>
+        <li><span>Water purification tablets as backup (Mexico — avoid tap water)</span></li>
+      </ul>
+    </div>
+
+    <h2>Money & Cards</h2>
+
+    <div class="checklist-section">
+      <h3>Money Checklist</h3>
+      <ul class="checklist">
+        <li><span>Notify your bank(s) of travel dates and destinations before you leave</span></li>
+        <li><span>Local currency for each country you're visiting <em>Mexico: MXN pesos. Get from ATM on arrival, not airport exchange booth.</em></span></li>
+        <li><span>Credit card with no foreign transaction fees <em>Revolut, Charles Schwab, Wise, and most travel credit cards — check yours before going</em></span></li>
+        <li><span>Secondary card stored separately (hotel safe) in case primary is lost/stolen</span></li>
+        <li><span>Small amount of USD cash as emergency backup (accepted in tourist areas of all host countries)</span></li>
+        <li><span>Money belt or hidden pouch for passport and backup cash</span></li>
+      </ul>
+    </div>
+
+    <h2>Stadium Rules: What You Can and Cannot Bring In</h2>
+    <p>Every World Cup 2026 stadium enforces FIFA's standard bag and item policy. Arriving with prohibited items means either abandoning them at the gate or missing the match. Know the rules.</p>
+
+    <div class="rules-grid">
+      <div class="allowed-card">
+        <h4>Allowed</h4>
+        <ul>
+          <li>Small bag / purse (max ~20cm × 20cm × 8cm — check each stadium)</li>
+          <li>Clear/transparent small backpack (some venues)</li>
+          <li>Team scarves, flags, and jerseys</li>
+          <li>Non-professional cameras (no detachable lenses)</li>
+          <li>Smartphone</li>
+          <li>Sealed small plastic water bottle (check venue rules)</li>
+          <li>Prescription medication in original packaging</li>
+          <li>Hearing aids and medical devices</li>
+          <li>Face paint and fan accessories</li>
+        </ul>
+      </div>
+      <div class="banned-card">
+        <h4>Not Allowed</h4>
+        <ul>
+          <li>Large backpacks or bags exceeding size limits</li>
+          <li>Outside food and drinks</li>
+          <li>Professional cameras with detachable lenses</li>
+          <li>Tripods, selfie sticks, monopods</li>
+          <li>Glass bottles or metal cans</li>
+          <li>Laser pointers</li>
+          <li>Fireworks, flares, or smoke bombs</li>
+          <li>Umbrellas (large)</li>
+          <li>Poles for flags over designated length</li>
+          <li>Political banners or offensive materials</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="warn-box">
+      <strong>Bag Check Rule</strong>
+      On match days, carry only what fits in a small bag. Leave your daypack at the hotel. Stadium security checks are thorough and lines for bag inspection are long — arriving with a large bag adds significant time to entry.
+    </div>
+
+    <h2>Fan Accessories Worth Packing</h2>
+    <ul>
+      <li>Team scarf — doubles as identification, warmth, and stadium photo prop</li>
+      <li>Mini handheld flag (within allowed dimensions)</li>
+      <li>Face paint in national colors</li>
+      <li>Foam earplugs — stadium crowds can exceed 90dB; good for kids especially</li>
+      <li>Small laminated country map of your host city (no signal backup)</li>
+    </ul>
+
+    <h2>What to Leave at Home</h2>
+    <ul>
+      <li><strong>Expensive jewelry or watches</strong> — leaves you vulnerable to theft in crowded areas</li>
+      <li><strong>Laptop</strong> — unless you are working remotely, a phone and tablet are sufficient and far easier to secure</li>
+      <li><strong>Large SLR camera with multiple lenses</strong> — won't get through stadium security anyway</li>
+      <li><strong>Your entire wardrobe</strong> — pack light; laundry services are cheap in all host cities</li>
+      <li><strong>Excess cash</strong> — you do not need to carry more than one day's spending money at a time</li>
+    </ul>
+
+    <p>For destination-specific guidance on what to expect in each host city, see our <a href="../host-cities.html">Host Cities guide</a>. For safety-specific tips when visiting Mexico, read our dedicated article: <a href="safety-tips-mexico.html">Safety Tips for World Cup Fans Traveling to Mexico</a>.</p>
+
+    <!-- BOTTOM NEWSLETTER -->
+    <div class="newsletter-box">
+      <h3>Don't Miss Any Fan Prep Updates</h3>
+      <p>Stadium policy updates, new city guides, and fan briefings — delivered weekly before the tournament.</p>
+      <a class="newsletter-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform?usp=header" target="_blank" rel="noopener">Subscribe Free</a>
+    </div>
+
+    <!-- RELATED ARTICLES -->
+    <div class="related-section">
+      <h2>Related Articles</h2>
+      <div class="related-grid">
+        <a class="related-card" href="../host-cities.html">
+          <div class="rc-cat">Host Cities</div>
+          <div class="rc-title">All 16 World Cup 2026 Host Cities Guide</div>
+        </a>
+        <a class="related-card" href="safety-tips-mexico.html">
+          <div class="rc-cat">Safety</div>
+          <div class="rc-title">Safety Tips for World Cup Fans in Mexico</div>
+        </a>
+        <a class="related-card" href="world-cup-budget-guide.html">
+          <div class="rc-cat">Budget</div>
+          <div class="rc-title">World Cup 2026 Budget Guide</div>
+        </a>
+        <a class="related-card" href="multi-city-world-cup-trip.html">
+          <div class="rc-cat">Trip Planning</div>
+          <div class="rc-title">How to Plan a Multi-City World Cup Trip</div>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="../affiliate.html">Affiliate Disclosure</a>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Use</a>
+      <a href="../legal-hub.html">Legal Hub</a>
+      <a href="../maria-myers.html">About Maria Myers</a>
+    </div>
+    <div class="footer-copy">&copy; 2026 GO2CUP · sportdgx.com · All rights reserved.</div>
+  </footer>
+
+</body>
+</html>

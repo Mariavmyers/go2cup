@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Plan a Multi-City World Cup Trip (Country Hopper Guide) | GO2CUP</title>
+  <meta name="description" content="Complete guide to planning a multi-city FIFA World Cup 2026 trip. Best city combos, transport between cities, border crossings, open-jaw flights, and budgeting tips." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #06080d;
+      --gold: #d9a441;
+      --blue: #2f80d6;
+      --green: #1f9d57;
+      --red: #e2404d;
+      --text: #e4e8f0;
+      --muted: #8a94a6;
+      --card: #0d1117;
+      --border: #1e2530;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: 'Archivo', sans-serif; font-size: 17px; line-height: 1.75; }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(6,8,13,0.97); border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 28px; height: 58px; backdrop-filter: blur(8px);
+    }
+    .logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.7rem; text-decoration: none; letter-spacing: 1px; }
+    .logo span.go { color: var(--blue); }
+    .logo span.two { color: var(--green); }
+    .logo span.cup { color: var(--red); }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color .2s; }
+    .nav-links a:hover { color: var(--gold); }
+    .lang-bar {
+      background: var(--card); border-bottom: 1px solid var(--border);
+      display: flex; gap: 6px; padding: 10px 28px;
+    }
+    .lang-pill {
+      display: inline-block; padding: 4px 12px; font-size: 0.78rem; font-weight: 600;
+      border-radius: 3px; text-decoration: none; text-transform: uppercase; letter-spacing: .5px;
+      border: 1px solid var(--border); color: var(--muted); transition: all .2s;
+    }
+    .lang-pill.active { background: var(--gold); color: #06080d; border-color: var(--gold); }
+    .lang-pill:not(.active):hover { border-color: var(--gold); color: var(--gold); }
+    .article-hero { max-width: 860px; margin: 0 auto; padding: 56px 28px 32px; }
+    .category-badge {
+      display: inline-block; background: var(--blue); color: #fff;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase;
+      padding: 4px 10px; border-radius: 3px; margin-bottom: 18px;
+    }
+    .article-hero h1 {
+      font-family: 'Bebas Neue', sans-serif; font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.1; color: #fff; margin-bottom: 18px; letter-spacing: .5px;
+    }
+    .meta { display: flex; flex-wrap: wrap; gap: 16px; color: var(--muted); font-size: 0.86rem; margin-bottom: 8px; }
+    .byline { color: var(--gold); font-size: 0.88rem; font-weight: 600; margin-top: 6px; }
+    .disclaimer { max-width: 860px; margin: 0 auto 0; padding: 0 28px 18px; }
+    .disclaimer-box {
+      background: #0d1117; border-left: 3px solid var(--gold);
+      padding: 12px 16px; font-size: 0.82rem; color: var(--muted); border-radius: 0 3px 3px 0;
+    }
+    .article-body { max-width: 860px; margin: 0 auto; padding: 0 28px 60px; }
+    .article-body h2 {
+      font-family: 'Bebas Neue', sans-serif; font-size: 1.75rem; color: var(--gold);
+      margin: 48px 0 16px; letter-spacing: .5px; border-bottom: 1px solid var(--border); padding-bottom: 8px;
+    }
+    .article-body h3 { font-size: 1.1rem; color: #fff; margin: 28px 0 10px; font-weight: 700; }
+    .article-body p { margin-bottom: 18px; }
+    .article-body ul, .article-body ol { margin: 0 0 18px 20px; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body a { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+    .article-body a:hover { color: var(--gold); }
+    .tip-box {
+      background: #0a1628; border-left: 3px solid var(--blue);
+      border-radius: 0 3px 3px 0; padding: 16px 20px; margin: 24px 0;
+    }
+    .tip-box strong { color: var(--blue); display: block; margin-bottom: 5px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: .5px; }
+    .warn-box {
+      background: #1a0a0b; border-left: 3px solid var(--red);
+      border-radius: 0 3px 3px 0; padding: 16px 20px; margin: 24px 0;
+    }
+    .warn-box strong { color: var(--red); display: block; margin-bottom: 5px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: .5px; }
+    .green-box {
+      background: #071a10; border-left: 3px solid var(--green);
+      border-radius: 0 3px 3px 0; padding: 16px 20px; margin: 24px 0;
+    }
+    .green-box strong { color: var(--green); display: block; margin-bottom: 5px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: .5px; }
+    .combo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin: 24px 0; }
+    .combo-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 3px;
+      padding: 22px 20px;
+    }
+    .combo-card .combo-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.15rem; color: var(--gold); letter-spacing: .5px; margin-bottom: 8px; }
+    .combo-card .combo-route { color: #fff; font-weight: 600; font-size: 0.95rem; margin-bottom: 8px; }
+    .combo-card .combo-transport { color: var(--blue); font-size: 0.85rem; margin-bottom: 6px; }
+    .combo-card .combo-note { color: var(--muted); font-size: 0.83rem; }
+    .data-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9rem; }
+    .data-table th { background: #111827; color: var(--gold); text-align: left; padding: 10px 14px; border-bottom: 2px solid var(--border); font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: .5px; }
+    .data-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table tr:hover td { background: #0d1117; }
+    .itinerary-block {
+      background: var(--card); border: 1px solid var(--border); border-radius: 3px;
+      padding: 24px; margin: 24px 0;
+    }
+    .itinerary-block h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem; color: var(--gold); letter-spacing: .5px; margin-bottom: 14px; }
+    .itin-day { display: flex; gap: 14px; margin-bottom: 12px; align-items: flex-start; }
+    .itin-day-label {
+      background: var(--gold); color: #06080d; font-weight: 700; font-size: 0.78rem;
+      padding: 3px 8px; border-radius: 3px; flex-shrink: 0; margin-top: 3px;
+    }
+    .itin-day-content { color: var(--text); font-size: 0.92rem; }
+    .itin-day-content strong { color: #fff; }
+    .newsletter-box {
+      background: var(--card); border: 1px solid var(--border); border-radius: 3px;
+      padding: 32px 28px; margin: 40px 0; text-align: center;
+    }
+    .newsletter-box h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; color: #fff; margin-bottom: 8px; }
+    .newsletter-box p { color: var(--muted); font-size: 0.9rem; margin-bottom: 18px; }
+    .newsletter-btn {
+      display: inline-block; background: var(--green); color: #fff;
+      padding: 12px 28px; border-radius: 3px; font-weight: 700; text-decoration: none;
+      font-size: 0.95rem; transition: opacity .2s;
+    }
+    .newsletter-btn:hover { opacity: .85; color: #fff; }
+    .cta-box {
+      background: linear-gradient(135deg, #0d1117 0%, #111827 100%);
+      border: 1px solid var(--gold); border-radius: 3px;
+      padding: 32px 28px; margin: 40px 0; text-align: center;
+    }
+    .cta-box h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; color: var(--gold); margin-bottom: 10px; letter-spacing: .5px; }
+    .cta-box p { color: var(--muted); font-size: 0.92rem; margin-bottom: 20px; }
+    .cta-btn-gold {
+      display: inline-block; background: var(--gold); color: #06080d;
+      padding: 12px 28px; border-radius: 3px; font-weight: 700; text-decoration: none;
+      font-size: 0.95rem; letter-spacing: .5px; transition: opacity .2s; margin: 4px;
+    }
+    .cta-btn-gold:hover { opacity: .85; color: #06080d; }
+    .related-section { margin: 48px 0 0; }
+    .related-section h2 { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; color: var(--gold); margin-bottom: 18px; letter-spacing: .5px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+    .related-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 3px;
+      padding: 18px 16px; text-decoration: none; display: block; transition: border-color .2s;
+    }
+    .related-card:hover { border-color: var(--gold); }
+    .related-card .rc-cat { font-size: 0.72rem; color: var(--gold); font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px; }
+    .related-card .rc-title { color: #fff; font-weight: 600; font-size: 0.95rem; line-height: 1.4; }
+    footer {
+      background: var(--card); border-top: 1px solid var(--border);
+      padding: 32px 28px; text-align: center;
+    }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 16px; }
+    .footer-links a { color: var(--muted); text-decoration: none; font-size: 0.85rem; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { color: var(--muted); font-size: 0.8rem; }
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .article-hero, .article-body, .disclaimer { padding-left: 16px; padding-right: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="logo" href="../index.html"><span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Hub</a></li>
+      <li><a href="../where-to-stay.html">Where to Stay</a></li>
+      <li><a href="../partner-resources.html">Partner Resources</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <div class="lang-bar">
+    <span class="lang-pill active">EN</span>
+    <a class="lang-pill" href="../maria-myers-pt.html">PT</a>
+    <a class="lang-pill" href="../maria-myers-es.html">ES</a>
+    <a class="lang-pill" href="../maria-myers-it.html">IT</a>
+  </div>
+
+  <header class="article-hero">
+    <div class="category-badge">Trip Planning</div>
+    <h1>How to Plan a Multi-City World Cup Trip (Country Hopper Guide)</h1>
+    <div class="meta">
+      <span>April 5, 2026</span>
+      <span>9 min read</span>
+    </div>
+    <div class="byline">Maria Myers · GO2CUP</div>
+  </header>
+
+  <div class="disclaimer">
+    <div class="disclaimer-box">
+      <strong>Affiliate Disclaimer:</strong> GO2CUP earns a commission when you book hotels or flights through our partner links. This is at no extra cost to you and helps fund our editorial team. All recommendations are independent.
+    </div>
+  </div>
+
+  <main class="article-body">
+
+    <p>The FIFA World Cup 2026 is the first edition with 48 teams and 16 host cities across three countries. For the first time in history, a single trip can take you from a rooftop taqueria in Mexico City to a Dallas Cowboys stadium, a Vancouver pitch on the Pacific, and a New York night out — all within the same World Cup experience. Multi-city trips are more complex to plan, but they are absolutely worth it. This is the complete guide.</p>
+
+    <h2>Why a Multi-City Trip Is Worth It</h2>
+    <p>A single-city trip gives you depth. A multi-city trip gives you the full World Cup. Here is why fans are choosing to hop:</p>
+
+    <ul>
+      <li><strong>More matches:</strong> Group stage matches are spread across all 16 cities. If your team plays in different venues, you either travel or miss games.</li>
+      <li><strong>Three countries, one tournament:</strong> The cultural contrast between Mexico City, Dallas, and Vancouver is extraordinary — and all within the same event.</li>
+      <li><strong>Cost arbitrage:</strong> Mix expensive US city stays with far cheaper Mexico legs to bring your average daily cost down significantly.</li>
+      <li><strong>Flexibility for knock-out rounds:</strong> If you plan a circuit, you can position yourself close to wherever your team's knock-out matches end up.</li>
+      <li><strong>The experience itself:</strong> Attending a World Cup in multiple countries in the same summer is a once-in-a-lifetime story.</li>
+    </ul>
+
+    <h2>Start With the Match Schedule</h2>
+    <p>Everything in a multi-city World Cup trip flows from the match schedule. Before you book anything — flights, hotels, activities — get the full group stage schedule and map out every match involving your team(s).</p>
+
+    <p>Key facts about the 2026 schedule structure:</p>
+    <ul>
+      <li>There are 48 teams in 12 groups of 4, each playing 3 group stage matches</li>
+      <li>Group stage matches run from mid-June to early July 2026</li>
+      <li>Round of 32 begins early July; knockout rounds follow through the Final on July 19 at MetLife Stadium, New Jersey</li>
+      <li>Each team's 3 group games may be in 3 different cities — sometimes different countries</li>
+      <li>Matches in the same city are often days apart — plan for 2–3 night stays minimum per city</li>
+    </ul>
+
+    <p>See the full schedule and city-by-city match calendar on our <a href="../host-cities.html">Host Cities page</a>.</p>
+
+    <!-- MID-ARTICLE NEWSLETTER -->
+    <div class="newsletter-box">
+      <h3>Multi-City Trip Planning Updates</h3>
+      <p>Match schedule alerts, transport updates, and city-by-city prep guides — delivered free every week.</p>
+      <a class="newsletter-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform?usp=header" target="_blank" rel="noopener">Subscribe Free</a>
+    </div>
+
+    <h2>Best City Combinations</h2>
+    <p>Not all multi-city combinations are equally practical. Some cities are close together and easily connected; others require significant travel time. Here are the best pairings based on geography, transport, and experience.</p>
+
+    <div class="combo-grid">
+      <div class="combo-card">
+        <div class="combo-title">Mexico Triple</div>
+        <div class="combo-route">Mexico City + Guadalajara + Monterrey</div>
+        <div class="combo-transport">Domestic flights or long-haul bus</div>
+        <div class="combo-note">All three are Mexican host cities. CDMX to GDL: 55 min flight or 5 hr bus. CDMX to MTY: 1.5 hr flight. Best value trip in the entire tournament — costs are dramatically lower than US cities.</div>
+      </div>
+      <div class="combo-card">
+        <div class="combo-title">Texas Double</div>
+        <div class="combo-route">Dallas + Houston</div>
+        <div class="combo-transport">Car, bus (3.5 hrs), or short flight</div>
+        <div class="combo-note">Only 240 miles apart. Greyhound and FlixBus run frequently. FlixBus is under $25. Driving is easiest — rent a car if between groups of 3+.</div>
+      </div>
+      <div class="combo-card">
+        <div class="combo-title">East Coast Run</div>
+        <div class="combo-route">New York/NJ + Philadelphia + Boston</div>
+        <div class="combo-transport">Amtrak (Acela + Northeast Regional)</div>
+        <div class="combo-note">NY to Philly: 60 mins on Acela. NY to Boston: 3.5 hrs. No flights needed. Dense match schedule makes this the best US multi-city rail loop.</div>
+      </div>
+      <div class="combo-card">
+        <div class="combo-title">Pacific Coast</div>
+        <div class="combo-route">Los Angeles + San Francisco Bay Area + Seattle + Vancouver</div>
+        <div class="combo-transport">Flights between cities (1–2 hrs each)</div>
+        <div class="combo-note">4 cities along the Pacific corridor. Amtrak Coast Starlight connects LA to SF (12 hrs scenic — worth it for one leg). Seattle to Vancouver is a 3-hr drive or Amtrak Cascades.</div>
+      </div>
+      <div class="combo-card">
+        <div class="combo-title">Mexico + Texas</div>
+        <div class="combo-route">Mexico City + Guadalajara + Dallas or Houston</div>
+        <div class="combo-transport">Direct flights (2–3 hrs)</div>
+        <div class="combo-note">The most popular international combination. Budget 5–7 days in Mexico (cheaper), then cross to Texas for knockout rounds. Mix of culture and convenience.</div>
+      </div>
+      <div class="combo-card">
+        <div class="combo-title">Central Circuit</div>
+        <div class="combo-route">Kansas City + Atlanta + Miami</div>
+        <div class="combo-transport">Flights (1.5–2.5 hrs each)</div>
+        <div class="combo-note">Three distinct US cities, each with their own match slate. Good option for fans whose team is based in the US Midwest/South group. Miami adds a beach bonus between matches.</div>
+      </div>
+    </div>
+
+    <h2>Transport Between US Host Cities</h2>
+
+    <h3>Flights</h3>
+    <p>For most inter-city travel in the US, especially distances over 400 miles, short-haul flights are the fastest option. Southwest, United Express, and Delta Connection operate most of the routes between host cities. Book early — prices on these legs spike during World Cup weeks.</p>
+
+    <h3>Train (Amtrak)</h3>
+    <p>Amtrak is excellent on the Northeast Corridor (Boston–NYC–Philadelphia) and has solid service on some western routes. It's slow everywhere else in the US. Do not plan train travel between Dallas and Houston (no direct Amtrak), or Texas and the Midwest.</p>
+    <ul>
+      <li><strong>NY Penn ↔ Philadelphia 30th St:</strong> Acela 67 min / Regional 90 min (~$25–$150)</li>
+      <li><strong>NY Penn ↔ Boston South Station:</strong> Acela 3.5 hrs (~$75–$250)</li>
+      <li><strong>Los Angeles ↔ San Francisco:</strong> Coast Starlight 12 hrs (scenic but slow — better as an experience than a transfer)</li>
+      <li><strong>Seattle ↔ Vancouver:</strong> Amtrak Cascades 3.5 hrs (~$35–$80)</li>
+    </ul>
+
+    <h3>Bus (FlixBus, Greyhound, Megabus)</h3>
+    <p>Bus is the cheapest option for shorter US routes. Reliable, comfortable, and bookable same-day.</p>
+    <ul>
+      <li><strong>Dallas ↔ Houston:</strong> 3.5–4 hrs, from $20–40</li>
+      <li><strong>Los Angeles ↔ Las Vegas:</strong> 4–5 hrs (useful detour)</li>
+      <li><strong>Philadelphia ↔ NYC:</strong> 2–2.5 hrs, from $15</li>
+    </ul>
+
+    <h2>Crossing Borders: What Fans Need to Know</h2>
+
+    <h3>US ↔ Mexico</h3>
+    <p>Most nationalities entering Mexico on a tourist stay for under 180 days do not need a pre-arranged visa — you receive a tourist entry (Forma Migratoria Múltiple) on arrival. However, requirements vary by nationality.</p>
+    <ul>
+      <li><strong>US citizens:</strong> Valid US passport required. No visa needed for tourist stays.</li>
+      <li><strong>EU citizens:</strong> No visa required for Mexico. Valid passport required.</li>
+      <li><strong>Check your specific nationality</strong> with Mexico's consulate — requirements vary for some countries</li>
+      <li>When flying into Mexico, complete the immigration form on the plane</li>
+      <li>Keep your entry form (FMM) — you will surrender it on departure. Losing it can cause delays at the airport</li>
+    </ul>
+
+    <h3>US ↔ Canada</h3>
+    <p>Canada requires an Electronic Travel Authorization (eTA) for visa-exempt foreign nationals flying into Canada. This is NOT required for US citizens.</p>
+    <ul>
+      <li><strong>US citizens:</strong> Valid US passport required — no eTA needed</li>
+      <li><strong>Most EU, UK, Australian citizens:</strong> eTA required (apply online at ircc.canada.ca — takes minutes, costs CAD $7, valid 5 years)</li>
+      <li><strong>Other nationalities:</strong> May require a full Canadian visa — check well in advance</li>
+      <li>Land border crossing between Seattle and Vancouver: passport required for all nationalities</li>
+    </ul>
+
+    <div class="warn-box">
+      <strong>Apply for Your eTA Now</strong>
+      If you are a non-US citizen flying to Canada, apply for your eTA before booking flights. While usually approved in minutes, some applications are referred for manual review which can take days or weeks.
+    </div>
+
+    <h2>Open-Jaw Flight Strategy for Multi-City Trips</h2>
+    <p>The single best flight strategy for multi-city World Cup travel is the open-jaw ticket: fly into one city, fly home from a different one. This saves you the cost and time of backtracking to your entry airport.</p>
+
+    <h3>Sample Open-Jaw Strategies</h3>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Fly In</th>
+          <th>Fly Out</th>
+          <th>Cities Covered</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mexico City (MEX)</td>
+          <td>Dallas (DFW)</td>
+          <td>CDMX, GDL, MTY, Dallas</td>
+          <td>Start in Mexico; end in Texas for knockout rounds</td>
+        </tr>
+        <tr>
+          <td>New York (JFK)</td>
+          <td>Miami (MIA)</td>
+          <td>NYC, Philly, Boston, Miami</td>
+          <td>Northeast loop south to Miami; train for most legs</td>
+        </tr>
+        <tr>
+          <td>Vancouver (YVR)</td>
+          <td>Los Angeles (LAX)</td>
+          <td>Vancouver, Seattle, LA, SF Bay</td>
+          <td>Pacific coast south; good Asian/Oceanic entry point</td>
+        </tr>
+        <tr>
+          <td>Houston (IAH)</td>
+          <td>New York (EWR)</td>
+          <td>Houston, Dallas, NYC, Philly</td>
+          <td>Texas start, end near MetLife for final</td>
+        </tr>
+        <tr>
+          <td>Mexico City (MEX)</td>
+          <td>New York (JFK)</td>
+          <td>Mexico triple + East Coast</td>
+          <td>Full 2-country circuit; 2–3 weeks ideal</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="tip-box">
+      <strong>Book Open-Jaw on Kiwi.com</strong>
+      <a href="https://www.kiwi.com" target="_blank" rel="noopener">Kiwi.com</a> specializes in non-standard itineraries including open-jaw, multi-city, and self-connecting tickets that mainstream sites miss. Also check Google Flights multi-city search for price comparison.
+    </div>
+
+    <h2>Sample 12-Day Multi-City Itinerary</h2>
+
+    <div class="itinerary-block">
+      <h3>Mexico City → Dallas → New York (2 Matches + Atmosphere)</h3>
+      <div class="itin-day">
+        <span class="itin-day-label">Days 1–2</span>
+        <div class="itin-day-content"><strong>Arrive Mexico City.</strong> Settle in Condesa or Roma Norte. Altitude acclimatization day — explore on foot, light meals, early night.</div>
+      </div>
+      <div class="itin-day">
+        <span class="itin-day-label">Day 3</span>
+        <div class="itin-day-content"><strong>Match Day — Mexico City.</strong> Estadio Azteca. Fan zones in the morning, match afternoon/evening. Post-match in Condesa.</div>
+      </div>
+      <div class="itin-day">
+        <span class="itin-day-label">Day 4</span>
+        <div class="itin-day-content"><strong>Mexico City sightseeing.</strong> Zócalo, Teotihuacán pyramids, Mercado de Jamaica. Second match in fan zone at night.</div>
+      </div>
+      <div class="itin-day">
+        <span class="itin-day-label">Day 5</span>
+        <div class="itin-day-content"><strong>Fly to Guadalajara</strong> (55 min / ~$60). Check in near Estadio Akron. Explore Zapopan and Tlaquepaque.</div>
+      </div>
+      <div class="itin-day">
+        <span class="itin-day-label">Day 6</span>
+        <div class="itin-day-content"><strong>Match Day — Guadalajara.</strong> Estadio Akron. Fan pre-match events around Plaza Patria area.</div>
+      </div>
+      <div class="itin-day">
+        <span class="itin-day-label">Day 7</span>
+        <div class="itin-day-content"><strong>Fly to Dallas</strong> (2.5 hrs / ~$150–250 from GDL). Check in near AT&T Stadium in Arlington.</div>
+      </div>
+      <div class="itin-day">
+        <span class="itin-day-label">Days 8–9</span>
+        <div class="itin-day-content"><strong>Dallas + Match Day.</strong> AT&T Stadium. Explore downtown Dallas, Deep Ellum, and Reunion Tower. Match on Day 8 or 9.</div>
+      </div>
+      <div class="itin-day">
+        <span class="itin-day-label">Day 10</span>
+        <div class="itin-day-content"><strong>Travel day.</strong> Fly Dallas to New York (3 hrs). Check in Midtown or Jersey City (closer to MetLife).</div>
+      </div>
+      <div class="itin-day">
+        <span class="itin-day-label">Days 11–12</span>
+        <div class="itin-day-content"><strong>New York City.</strong> Match at MetLife Stadium or fan zone in Manhattan. Fly home from JFK or EWR on Day 12.</div>
+      </div>
+    </div>
+
+    <h2>Packing for Multiple Climates</h2>
+    <p>A multi-country trip means packing for genuinely different conditions:</p>
+    <ul>
+      <li><strong>Mexico City (2,240m):</strong> Warm days 20–24°C, cool evenings 12–16°C, afternoon rain showers in June–July</li>
+      <li><strong>Guadalajara / Monterrey:</strong> Hot and humid June-July, 28–34°C; occasional heavy rain</li>
+      <li><strong>Texas (Dallas/Houston):</strong> Very hot and humid, 35–40°C; air-conditioned everything indoors</li>
+      <li><strong>East Coast US (NYC/Philly/Boston):</strong> Hot in July, 28–34°C; occasional storms</li>
+      <li><strong>Pacific Northwest (Seattle/Vancouver):</strong> Mild, 18–24°C; can be overcast and cool in evenings</li>
+    </ul>
+
+    <p>Pack layered, versatile clothing. A light rain jacket, one warm layer for Mexico City evenings and Pacific Northwest, and moisture-wicking shirts for Texas heat. See the full <a href="what-to-pack-world-cup.html">packing guide here</a>.</p>
+
+    <h2>Booking Flexibility: The Multi-City Rule</h2>
+    <p>Multi-city trips require more booking flexibility than single-city trips. If your team advances unexpectedly to a later round in a different city, you need to be able to move. Build flexibility in:</p>
+    <ul>
+      <li>Choose refundable or changeable hotel rates where the price premium is small</li>
+      <li>Book flights on airlines with no change fees (Southwest for US domestic; check international carriers)</li>
+      <li>Do not book non-refundable accommodation more than 2 nights before each leg begins</li>
+      <li>Avoid selling your hotel slots for later rounds until your team's progress is clear</li>
+    </ul>
+
+    <h2>Multi-City vs Single-City: Budget Comparison</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Factor</th>
+          <th>Single City (US)</th>
+          <th>Multi-City (Mexico + US)</th>
+          <th>Multi-City (3 Countries)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Flights</td>
+          <td>$400 round trip</td>
+          <td>$600–900 (open jaw + intern.)</td>
+          <td>$900–1,400</td>
+        </tr>
+        <tr>
+          <td>Accommodation</td>
+          <td>$1,050 (7 nights @ $150)</td>
+          <td>$800–1,200 (mix of MX + US)</td>
+          <td>$1,000–1,800</td>
+        </tr>
+        <tr>
+          <td>Between-city transport</td>
+          <td>$0</td>
+          <td>$150–350</td>
+          <td>$400–700</td>
+        </tr>
+        <tr>
+          <td>Daily costs</td>
+          <td>$150/day (US city)</td>
+          <td>$90–130/day (mixed)</td>
+          <td>$90–150/day (mixed)</td>
+        </tr>
+        <tr>
+          <td>Trip complexity</td>
+          <td>Low</td>
+          <td>Medium</td>
+          <td>High</td>
+        </tr>
+        <tr>
+          <td>Overall experience</td>
+          <td>Focused</td>
+          <td>Varied + cost-efficient</td>
+          <td>Maximum World Cup breadth</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>A Mexico + one US city combination often costs less total than a single US city stay, because the lower Mexico costs offset the additional transport expenses. Smart routing makes multi-city affordable.</p>
+
+    <!-- CTA -->
+    <div class="cta-box">
+      <h3>Plan Your Full World Cup Route</h3>
+      <p>Explore every host city, book hotels, find tickets, and get transport info — all in one place.</p>
+      <a class="cta-btn-gold" href="../host-cities.html">Host Cities Hub →</a>
+      <a class="cta-btn-gold" href="../hopper-guide.html">Country Hopper Guide →</a>
+    </div>
+
+    <p>For the complete flight booking strategy for your multi-city trip, see our dedicated article: <a href="flights-to-world-cup.html">Flying to the World Cup: Best Flights to Host Cities</a>.</p>
+
+    <!-- BOTTOM NEWSLETTER -->
+    <div class="newsletter-box">
+      <h3>Get Your GO2CUP Weekly Briefing</h3>
+      <p>Multi-city trip tips, schedule updates, ticket alerts, and city guides — free every week before the tournament.</p>
+      <a class="newsletter-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform?usp=header" target="_blank" rel="noopener">Subscribe Free</a>
+    </div>
+
+    <!-- RELATED ARTICLES -->
+    <div class="related-section">
+      <h2>Related Articles</h2>
+      <div class="related-grid">
+        <a class="related-card" href="../hopper-guide.html">
+          <div class="rc-cat">Trip Planning</div>
+          <div class="rc-title">The GO2CUP Country Hopper Guide: 3 Countries, 1 World Cup</div>
+        </a>
+        <a class="related-card" href="../host-cities.html">
+          <div class="rc-cat">Host Cities</div>
+          <div class="rc-title">All 16 World Cup 2026 Host Cities</div>
+        </a>
+        <a class="related-card" href="flights-to-world-cup.html">
+          <div class="rc-cat">Flights</div>
+          <div class="rc-title">Flying to the World Cup: Best Flights to Host Cities</div>
+        </a>
+        <a class="related-card" href="world-cup-budget-guide.html">
+          <div class="rc-cat">Budget</div>
+          <div class="rc-title">World Cup 2026 Budget Guide: How Much Does It Cost?</div>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="../affiliate.html">Affiliate Disclosure</a>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Use</a>
+      <a href="../legal-hub.html">Legal Hub</a>
+      <a href="../maria-myers.html">About Maria Myers</a>
+    </div>
+    <div class="footer-copy">&copy; 2026 GO2CUP · sportdgx.com · All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
