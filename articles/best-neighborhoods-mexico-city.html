@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Neighborhoods to Stay in Mexico City for the World Cup | GO2CUP</title>
+  <meta name="description" content="Compare Roma Norte, Condesa, Polanco, Reforma, and Centro Histórico — the 5 best neighborhoods to stay in Mexico City during the 2026 FIFA World Cup." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #06080d;
+      --bg2: #0d1117;
+      --bg3: #131820;
+      --border: #1e2530;
+      --gold: #d9a441;
+      --blue: #2f80d6;
+      --green: #1f9d57;
+      --red: #e2404d;
+      --text: #c8d0dc;
+      --text-muted: #7a8696;
+      --white: #f0f4fa;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Archivo', sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(6, 8, 13, 0.97);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .nav-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 26px;
+      letter-spacing: 1px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .nav-logo .go { color: var(--blue); }
+    .nav-logo .two { color: var(--green); }
+    .nav-logo .cup { color: var(--red); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: color 0.2s, background 0.2s;
+      white-space: nowrap;
+    }
+    .nav-links a:hover { color: var(--white); background: var(--border); }
+
+    /* LANG PILLS */
+    .lang-pills {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    .lang-pill {
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 9px;
+      border-radius: 3px;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      transition: border-color 0.2s, color 0.2s;
+      letter-spacing: 0.5px;
+    }
+    .lang-pill:hover { border-color: var(--text-muted); color: var(--white); }
+    .lang-pill.active { border-color: var(--gold); color: var(--gold); }
+
+    /* LAYOUT */
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* DISCLAIMER */
+    .disclaimer {
+      background: #10141c;
+      border: 1px solid #2a3040;
+      border-left: 3px solid var(--gold);
+      border-radius: 4px;
+      padding: 14px 18px;
+      margin: 32px 0 0;
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .disclaimer strong { color: var(--gold); }
+
+    /* HERO */
+    .article-hero {
+      padding: 36px 0 28px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 36px;
+    }
+
+    .category-badge {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 3px;
+      margin-bottom: 14px;
+    }
+
+    .article-hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(32px, 6vw, 52px);
+      line-height: 1.1;
+      color: var(--white);
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      font-size: 13px;
+      color: var(--text-muted);
+      align-items: center;
+    }
+    .article-meta span { display: flex; align-items: center; gap: 5px; }
+    .article-meta .dot { color: var(--border); }
+
+    /* ARTICLE BODY */
+    .article-body {
+      margin-bottom: 60px;
+    }
+
+    .article-body p {
+      margin-bottom: 20px;
+      color: var(--text);
+    }
+
+    .article-body h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 28px;
+      letter-spacing: 0.8px;
+      color: var(--white);
+      margin: 48px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .article-body h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--white);
+      margin: 28px 0 10px;
+    }
+
+    .article-body ul, .article-body ol {
+      margin: 0 0 20px 20px;
+      color: var(--text);
+    }
+    .article-body li { margin-bottom: 6px; }
+
+    .article-body a {
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .article-body a:hover { border-bottom-color: var(--gold); }
+
+    /* NEIGHBORHOOD CARDS */
+    .neighborhood-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 28px;
+      margin: 28px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .neighborhood-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+    }
+    .card-gold::before { background: var(--gold); }
+    .card-blue::before { background: var(--blue); }
+    .card-green::before { background: var(--green); }
+    .card-red::before { background: var(--red); }
+    .card-purple::before { background: #9b59b6; }
+
+    .neighborhood-card h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 24px;
+      letter-spacing: 0.8px;
+      color: var(--white);
+      margin: 0 0 6px;
+    }
+
+    .card-tagline {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-bottom: 16px;
+    }
+
+    .card-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin: 16px 0;
+    }
+
+    .stat-item {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 10px 14px;
+    }
+    .stat-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-bottom: 3px;
+    }
+    .stat-value {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    .pros-cons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 16px;
+    }
+    @media (max-width: 560px) { .pros-cons { grid-template-columns: 1fr; } }
+
+    .pros, .cons {
+      background: var(--bg3);
+      border-radius: 4px;
+      padding: 14px;
+    }
+    .pros-title, .cons-title {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .pros-title { color: var(--green); }
+    .cons-title { color: var(--red); }
+    .pros ul, .cons ul { margin: 0; padding-left: 16px; }
+    .pros li, .cons li { font-size: 13px; margin-bottom: 4px; color: var(--text); }
+
+    .best-for-badge {
+      display: inline-block;
+      background: rgba(217, 164, 65, 0.12);
+      border: 1px solid rgba(217, 164, 65, 0.35);
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 3px;
+      margin-top: 14px;
+    }
+
+    /* COMPARISON TABLE */
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 14px;
+      overflow-x: auto;
+      display: block;
+    }
+    .comparison-table th {
+      background: var(--bg3);
+      color: var(--gold);
+      font-weight: 700;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 12px 14px;
+      text-align: left;
+      border-bottom: 2px solid var(--border);
+      white-space: nowrap;
+    }
+    .comparison-table td {
+      padding: 11px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+      vertical-align: top;
+    }
+    .comparison-table tr:hover td { background: rgba(255,255,255,0.02); }
+    .comparison-table td:first-child { font-weight: 600; color: var(--white); white-space: nowrap; }
+
+    /* NEWSLETTER BOX */
+    .newsletter-box {
+      background: linear-gradient(135deg, #0d1420 0%, #111827 100%);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--gold);
+      border-radius: 8px;
+      padding: 32px;
+      margin: 48px 0;
+      text-align: center;
+    }
+    .newsletter-box h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 26px;
+      color: var(--white);
+      margin-bottom: 8px;
+      letter-spacing: 0.8px;
+    }
+    .newsletter-box p {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .newsletter-btn {
+      display: inline-block;
+      background: var(--gold);
+      color: #06080d;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 12px 28px;
+      border-radius: 4px;
+      text-decoration: none;
+      letter-spacing: 0.3px;
+      transition: opacity 0.2s;
+    }
+    .newsletter-btn:hover { opacity: 0.88; }
+
+    /* CTA BOOKING */
+    .booking-cta {
+      background: linear-gradient(135deg, #0f1e35 0%, #0d1117 100%);
+      border: 1px solid #1e3a5f;
+      border-radius: 8px;
+      padding: 28px 32px;
+      margin: 36px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .booking-cta-text h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .booking-cta-text p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+    .booking-btn {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: opacity 0.2s;
+    }
+    .booking-btn:hover { opacity: 0.88; }
+
+    /* RELATED ARTICLES */
+    .related-section {
+      margin: 60px 0;
+      padding-top: 36px;
+      border-top: 1px solid var(--border);
+    }
+    .related-section h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 26px;
+      color: var(--white);
+      letter-spacing: 0.8px;
+      margin-bottom: 20px;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .related-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px;
+      text-decoration: none;
+      transition: border-color 0.2s, background 0.2s;
+      display: block;
+    }
+    .related-card:hover { border-color: var(--gold); background: var(--bg3); }
+    .related-card .rc-cat {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--blue);
+      margin-bottom: 8px;
+    }
+    .related-card h4 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+    .related-card .rc-meta {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      padding: 36px 24px;
+      margin-top: 60px;
+    }
+    .footer-inner {
+      max-width: 820px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .footer-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22px;
+      text-decoration: none;
+    }
+    .footer-logo .go { color: var(--blue); }
+    .footer-logo .two { color: var(--green); }
+    .footer-logo .cup { color: var(--red); }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 16px;
+      list-style: none;
+    }
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--white); }
+
+    .footer-copy {
+      width: 100%;
+      font-size: 12px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+      margin-top: 8px;
+    }
+
+    /* HIGHLIGHT BOX */
+    .highlight-box {
+      background: rgba(217, 164, 65, 0.07);
+      border: 1px solid rgba(217, 164, 65, 0.2);
+      border-radius: 6px;
+      padding: 20px 24px;
+      margin: 28px 0;
+    }
+    .highlight-box p { margin: 0; color: var(--text); font-size: 15px; }
+    .highlight-box strong { color: var(--gold); }
+
+    @media (max-width: 640px) {
+      nav { padding: 0 14px; height: auto; min-height: 60px; flex-wrap: wrap; padding: 10px 14px; gap: 8px; }
+      .nav-links { gap: 2px; }
+      .nav-links a { padding: 5px 8px; font-size: 12px; }
+      .booking-cta { flex-direction: column; text-align: center; }
+      .card-stats { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Hub</a></li>
+      <li><a href="../where-to-stay.html">Where to Stay</a></li>
+      <li><a href="../maria-myers.html">Partner Resources</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+    </ul>
+    <div class="lang-pills">
+      <a href="#" class="lang-pill active">EN</a>
+      <a href="../maria-myers-pt.html" class="lang-pill">PT</a>
+      <a href="../maria-myers-es.html" class="lang-pill">ES</a>
+      <a href="../maria-myers-it.html" class="lang-pill">IT</a>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <div class="container">
+
+      <!-- DISCLAIMER -->
+      <div class="disclaimer">
+        <strong>Affiliate Disclosure:</strong> GO2CUP may earn a commission when you book hotels through links on this page, at no extra cost to you. We only recommend properties and platforms we genuinely believe serve World Cup travelers well. All editorial opinions are our own.
+      </div>
+
+      <!-- HERO -->
+      <header class="article-hero">
+        <div class="category-badge">Hotels</div>
+        <h1>Best Neighborhoods to Stay in Mexico City for the World Cup</h1>
+        <div class="article-meta">
+          <span>March 19, 2026</span>
+          <span class="dot">·</span>
+          <span>6 min read</span>
+          <span class="dot">·</span>
+          <span>Maria Myers</span>
+          <span class="dot">·</span>
+          <span>GO2CUP</span>
+        </div>
+      </header>
+
+      <!-- ARTICLE BODY -->
+      <article class="article-body">
+
+        <p>
+          Mexico City is one of the most electrifying host cities for the 2026 FIFA World Cup — a megalopolis of 22 million people, world-class cuisine, centuries of history, and some of the best street energy on the planet. But where you stay will define your entire experience. Get it right and you'll walk out your door into the beating heart of the city. Get it wrong and you'll spend your match days burning time in traffic or feeling unsafe after dark.
+        </p>
+
+        <p>
+          We've broken down the five neighborhoods that make the most sense for World Cup visitors, based on safety, price, transit access to <a href="../host-cities/mexico-city.html">Estadio Azteca</a>, and the kind of atmosphere each delivers. Whether you're traveling on a shoestring or flying business class, there's a right answer here for you.
+        </p>
+
+        <div class="highlight-box">
+          <p><strong>Quick tip:</strong> Estadio Azteca is in the south of the city. All transit times below are via Mexico City Metro — the cheapest, most reliable option for match days. Book accommodation early; World Cup dates will sell out months in advance.</p>
+        </div>
+
+        <!-- COMPARISON TABLE -->
+        <h2>Quick Comparison: All 5 Neighborhoods</h2>
+
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Neighborhood</th>
+              <th>Price/Night</th>
+              <th>Transit to Azteca</th>
+              <th>Vibe</th>
+              <th>Best For</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Roma Norte</td>
+              <td>$80–$150</td>
+              <td>45–60 min</td>
+              <td>Trendy, social</td>
+              <td>Ages 25–40</td>
+            </tr>
+            <tr>
+              <td>Condesa</td>
+              <td>$90–$160</td>
+              <td>45–60 min</td>
+              <td>Leafy, bohemian</td>
+              <td>Couples, families</td>
+            </tr>
+            <tr>
+              <td>Polanco</td>
+              <td>$200–$500+</td>
+              <td>50–60 min</td>
+              <td>Luxury, refined</td>
+              <td>High-end travelers</td>
+            </tr>
+            <tr>
+              <td>Reforma</td>
+              <td>$100–$300</td>
+              <td>50–60 min</td>
+              <td>Business, central</td>
+              <td>All types</td>
+            </tr>
+            <tr>
+              <td>Centro Histórico</td>
+              <td>$50–$80</td>
+              <td>55–70 min</td>
+              <td>Historic, vibrant</td>
+              <td>Budget travelers</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- NEIGHBORHOOD 1 -->
+        <h2>The 5 Best Neighborhoods in Detail</h2>
+
+        <div class="neighborhood-card card-gold">
+          <h3>1. Roma Norte</h3>
+          <p class="card-tagline">The social hub — where the World Cup energy will be loudest</p>
+
+          <p>
+            Roma Norte is the neighborhood that gets talked about most among international visitors — and for good reason. It's walkable, photogenic, and absolutely alive with restaurants, rooftop bars, independent coffee shops, and mezcalerias that stay buzzing until the early hours. Streets are lined with early-20th-century mansions converted into boutique hotels and apartments, giving it a character unlike anything you'll find in newer districts.
+          </p>
+          <p>
+            For World Cup 2026, expect Roma Norte to be the social nerve center for traveling fans. Fan parties, informal watch gatherings, and street celebrations will flood this area on match nights. The neighborhood's density of bars means you'll never be far from a screen or a crowd.
+          </p>
+
+          <div class="card-stats">
+            <div class="stat-item">
+              <div class="stat-label">Price Range</div>
+              <div class="stat-value">$80–$150 / night</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Transit to Azteca</div>
+              <div class="stat-value">45–60 min (Metro L2)</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Safety Level</div>
+              <div class="stat-value">Good (stay aware)</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Best Age Group</div>
+              <div class="stat-value">25–40</div>
+            </div>
+          </div>
+
+          <div class="pros-cons">
+            <div class="pros">
+              <div class="pros-title">Pros</div>
+              <ul>
+                <li>Outstanding restaurant scene</li>
+                <li>Lively nightlife, great fan atmosphere</li>
+                <li>Walkable and bikeable</li>
+                <li>Well-connected metro access</li>
+                <li>Wide range of accommodation types</li>
+              </ul>
+            </div>
+            <div class="cons">
+              <div class="cons-title">Cons</div>
+              <ul>
+                <li>Can get very noisy on weekends</li>
+                <li>Petty theft risk in crowded areas</li>
+                <li>Prices spike during events</li>
+                <li>Not the cheapest option</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="best-for-badge">Best for: Social fans, solo travelers, groups aged 25–40</div>
+        </div>
+
+        <!-- NEIGHBORHOOD 2 -->
+        <div class="neighborhood-card card-blue">
+          <h3>2. Condesa</h3>
+          <p class="card-tagline">The peaceful twin — all the charm, less of the chaos</p>
+
+          <p>
+            Condesa sits directly adjacent to Roma Norte and shares much of the same DNA — great food, independent cafes, a young professional crowd — but with a notably calmer atmosphere. Tree-lined boulevards, Art Deco architecture, and Parque México give it a residential elegance that's genuinely relaxing after the intensity of match days. It's consistently ranked among the safest neighborhoods in the capital.
+          </p>
+          <p>
+            If you're traveling with a partner, young family, or simply want to decompress in quieter surroundings without sacrificing access to the city's best experiences, Condesa is the smarter pick over Roma. You're still close to Paseo de la Reforma and the city's major attractions, and the metro connection south to Azteca follows the same route.
+          </p>
+
+          <div class="card-stats">
+            <div class="stat-item">
+              <div class="stat-label">Price Range</div>
+              <div class="stat-value">$90–$160 / night</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Transit to Azteca</div>
+              <div class="stat-value">45–60 min (Metro L2)</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Safety Level</div>
+              <div class="stat-value">Very Good</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Best Age Group</div>
+              <div class="stat-value">All ages</div>
+            </div>
+          </div>
+
+          <div class="pros-cons">
+            <div class="pros">
+              <div class="pros-title">Pros</div>
+              <ul>
+                <li>One of the safest neighborhoods in CDMX</li>
+                <li>Beautiful parks and green spaces</li>
+                <li>Quieter but still well-equipped</li>
+                <li>Strong café and dining culture</li>
+                <li>Adjacent to Reforma corridor</li>
+              </ul>
+            </div>
+            <div class="cons">
+              <div class="cons-title">Cons</div>
+              <ul>
+                <li>Slightly quieter nightlife</li>
+                <li>Marginally more expensive than Roma</li>
+                <li>Less fan party atmosphere</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="best-for-badge">Best for: Couples, families, travelers who value calm over party scene</div>
+        </div>
+
+        <!-- NEWSLETTER MID -->
+        <div class="newsletter-box">
+          <h3>Get World Cup Travel Guides First</h3>
+          <p>Neighborhood breakdowns, stadium guides, safety tips, and hotel alerts — straight to your inbox before prices spike.</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform?usp=header" target="_blank" rel="noopener" class="newsletter-btn">Subscribe Free</a>
+        </div>
+
+        <!-- NEIGHBORHOOD 3 -->
+        <div class="neighborhood-card card-green">
+          <h3>3. Polanco</h3>
+          <p class="card-tagline">The luxury district — five-star service, elite security, zero compromises</p>
+
+          <p>
+            Polanco is Mexico City's answer to Beverly Hills. This is where the flagship stores of every major international brand line the streets, where the city's finest restaurants cluster (including multiple spots recognized among Latin America's best), and where every major international hotel chain maintains a flagship property. Security here is visible and robust — many streets have private guards, and the neighborhood has an entirely different feel from the rest of the city.
+          </p>
+          <p>
+            Adjacent to the vast Bosque de Chapultepec park — a genuine urban oasis — Polanco is ideal for travelers who want a completely premium experience and aren't concerned about budget. The Anthropology Museum, one of the world's great cultural institutions, is a short walk away. The transit connection to Estadio Azteca takes slightly longer, but ride-shares from here are plentiful and reliable.
+          </p>
+
+          <div class="card-stats">
+            <div class="stat-item">
+              <div class="stat-label">Price Range</div>
+              <div class="stat-value">$200–$500+ / night</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Transit to Azteca</div>
+              <div class="stat-value">50–60 min (Metro + ride)</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Safety Level</div>
+              <div class="stat-value">Excellent</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Best Age Group</div>
+              <div class="stat-value">All — premium travelers</div>
+            </div>
+          </div>
+
+          <div class="pros-cons">
+            <div class="pros">
+              <div class="pros-title">Pros</div>
+              <ul>
+                <li>Elite security, extremely safe</li>
+                <li>World-class restaurants and shopping</li>
+                <li>Chapultepec Park on your doorstep</li>
+                <li>Premium hotel infrastructure</li>
+                <li>Clean, well-maintained streets</li>
+              </ul>
+            </div>
+            <div class="cons">
+              <div class="cons-title">Cons</div>
+              <ul>
+                <li>Very expensive — everything</li>
+                <li>Can feel sterile, less authentic</li>
+                <li>Further from metro for Azteca</li>
+                <li>Traffic can be brutal</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="best-for-badge">Best for: Luxury travelers, corporate groups, VIP ticket holders</div>
+        </div>
+
+        <!-- NEIGHBORHOOD 4 -->
+        <div class="neighborhood-card card-red">
+          <h3>4. Reforma Corridor</h3>
+          <p class="card-tagline">The business spine — maximum connectivity, international hotel brands</p>
+
+          <p>
+            Paseo de la Reforma is Mexico City's grand boulevard — a wide, tree-lined avenue that cuts diagonally across the city, lined with skyscrapers, monuments, and large-format hotels. Staying here means you're at the geographic and logistical center of the city, with easy metro and Metrobús connections in every direction. The Angel of Independence monument — almost certainly a fan gathering point during the tournament — is right here.
+          </p>
+          <p>
+            Reforma is pragmatic more than romantic. You won't find as much neighborhood character or local charm here as you will in Roma or Condesa, but you will find supremely functional accommodation, efficient transportation, and easy access to both the historic center and the wealthier western districts. For travelers on longer itineraries who need a reliable base, it's an excellent choice.
+          </p>
+
+          <div class="card-stats">
+            <div class="stat-item">
+              <div class="stat-label">Price Range</div>
+              <div class="stat-value">$100–$300 / night</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Transit to Azteca</div>
+              <div class="stat-value">50–60 min (Metro L1)</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Safety Level</div>
+              <div class="stat-value">Good</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Best Age Group</div>
+              <div class="stat-value">All types</div>
+            </div>
+          </div>
+
+          <div class="pros-cons">
+            <div class="pros">
+              <div class="pros-title">Pros</div>
+              <ul>
+                <li>Central location, great connections</li>
+                <li>Major international hotel brands</li>
+                <li>Angel Monument — fan gathering point</li>
+                <li>Wide price range available</li>
+                <li>Metrobús and Metro both accessible</li>
+              </ul>
+            </div>
+            <div class="cons">
+              <div class="cons-title">Cons</div>
+              <ul>
+                <li>Less neighborhood character</li>
+                <li>Heavy traffic on the boulevard</li>
+                <li>More corporate feel</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="best-for-badge">Best for: Business travelers, families wanting safety and convenience, all nationalities</div>
+        </div>
+
+        <!-- NEIGHBORHOOD 5 -->
+        <div class="neighborhood-card card-purple">
+          <h3>5. Centro Histórico</h3>
+          <p class="card-tagline">The budget option — history, culture, and the fan zone on your doorstep</p>
+
+          <p>
+            The historic center of Mexico City — built on the ruins of Tenochtitlán, the Aztec capital — is one of the most extraordinary urban environments in the Americas. The Zócalo, one of the world's largest public squares, will almost certainly host a major FIFA fan zone during the tournament. Staying here puts you at the epicenter of daytime culture: the Palacio de Bellas Artes, Templo Mayor, the Murales of Diego Rivera, and hundreds of years of layered history all within walking distance.
+          </p>
+          <p>
+            However, caution is warranted. The historic center has undergone significant improvement in recent years but remains uneven — certain blocks are well-policed and busy, others become deserted and higher-risk after dark. Solo female travelers and those unfamiliar with the city should be especially vigilant at night. That said, for experienced budget travelers who keep their wits about them, Centro offers tremendous value and an authenticity the wealthier neighborhoods simply cannot match.
+          </p>
+
+          <div class="card-stats">
+            <div class="stat-item">
+              <div class="stat-label">Price Range</div>
+              <div class="stat-value">$50–$80 / night</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Transit to Azteca</div>
+              <div class="stat-value">55–70 min (Metro L2)</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Safety Level</div>
+              <div class="stat-value">Moderate (be alert)</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Best Age Group</div>
+              <div class="stat-value">Budget-savvy travelers</div>
+            </div>
+          </div>
+
+          <div class="pros-cons">
+            <div class="pros">
+              <div class="pros-title">Pros</div>
+              <ul>
+                <li>Cheapest accommodation in the city</li>
+                <li>Zócalo Fan Zone likely nearby</li>
+                <li>Unrivaled historic culture</li>
+                <li>Great street food and markets</li>
+                <li>Direct metro line to Azteca</li>
+              </ul>
+            </div>
+            <div class="cons">
+              <div class="cons-title">Cons</div>
+              <ul>
+                <li>Safety concerns after dark</li>
+                <li>Uneven quality across blocks</li>
+                <li>Crowded and chaotic during events</li>
+                <li>Not recommended for first-timers alone at night</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="best-for-badge">Best for: Budget travelers, history enthusiasts, experienced solo backpackers</div>
+        </div>
+
+        <!-- BOOKING CTA -->
+        <div class="booking-cta">
+          <div class="booking-cta-text">
+            <h3>Find Hotels in Mexico City</h3>
+            <p>Search all neighborhoods, filter by price and rating, compare World Cup dates.</p>
+          </div>
+          <a href="https://www.booking.com/searchresults.html?ss=Mexico+City" target="_blank" rel="noopener sponsored" class="booking-btn">Search on Booking.com</a>
+        </div>
+
+        <h2>Which Neighborhood is Right for You?</h2>
+
+        <p>
+          The honest answer is that <strong>Roma Norte or Condesa</strong> will serve the majority of World Cup visitors best. They hit the sweet spot of price, safety, atmosphere, and transit access. If you're traveling with a tight group and want the energy of the tournament to surround you 24/7, Roma Norte is your pick. If you want that same level of access but with a calmer base to return to, Condesa wins.
+        </p>
+        <p>
+          <strong>Polanco</strong> is the clear choice if budget is not a concern — it's objectively the safest and most comfortable part of the city, and the restaurant scene alone justifies the premium. <strong>Reforma</strong> makes strong sense for travelers who prioritize logistical efficiency over local flavor, or those booking through corporate travel programs. And <strong>Centro Histórico</strong> rewards adventurous budget travelers who do their homework on which specific blocks and hotels to choose.
+        </p>
+        <p>
+          For a full breakdown of accommodation options at each price tier, see our <a href="../where-to-stay/mexico-city.html">Mexico City Where to Stay guide</a>, and for everything else you need to plan your trip, visit the <a href="../host-cities/mexico-city.html">Mexico City Host City hub</a> or read our comprehensive <a href="../mexico-trip-guide.html">Mexico Trip Planning Guide</a>.
+        </p>
+
+        <h2>Getting to Estadio Azteca from Any Neighborhood</h2>
+
+        <p>
+          Estadio Azteca is located in the south of the city in the Xochimilco district. The Metro is by far the best option on match days — it's cheap (under $0.30 USD per journey), extensive, and avoids the surface traffic gridlock that will affect all road vehicles during the tournament.
+        </p>
+        <ul>
+          <li><strong>From Roma Norte / Condesa:</strong> Take Metro Line 2 westbound toward Tasqueña, then transfer to the Tren Ligero (light rail) southbound to Estadio Azteca. Total journey: 45–60 minutes.</li>
+          <li><strong>From Polanco / Reforma:</strong> Take Metro Line 7 or Metrobús to a Line 2 connection, then same route south. Total: 50–60 minutes depending on starting point.</li>
+          <li><strong>From Centro Histórico:</strong> Metro Line 2 is directly accessible from several Zócalo stations — head westbound to Tasqueña, then Tren Ligero south. Total: 55–70 minutes.</li>
+        </ul>
+        <p>
+          Plan to arrive at least 90 minutes before kickoff on major match days. Security queues at Azteca can be significant, and the surrounding streets fill up quickly with vendors, fans, and organized activities.
+        </p>
+
+        <!-- NEWSLETTER BOTTOM -->
+        <div class="newsletter-box">
+          <h3>Don't Miss a Single World Cup Update</h3>
+          <p>Hotel deals, match schedules, fan zone announcements, and safety guides — all before the crowds find them.</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform?usp=header" target="_blank" rel="noopener" class="newsletter-btn">Join the GO2CUP Newsletter</a>
+        </div>
+
+      </article>
+
+      <!-- RELATED ARTICLES -->
+      <section class="related-section">
+        <h2>Related Articles</h2>
+        <div class="related-grid">
+          <a href="mexico-city-fan-guide.html" class="related-card">
+            <div class="rc-cat">Fan Guide</div>
+            <h4>Mexico City Fan Guide: Everything You Need to Know</h4>
+            <div class="rc-meta">8 min read · GO2CUP</div>
+          </a>
+          <a href="best-hotels-estadio-azteca.html" class="related-card">
+            <div class="rc-cat">Hotels</div>
+            <h4>Best Hotels Near Estadio Azteca for World Cup Matches</h4>
+            <div class="rc-meta">5 min read · GO2CUP</div>
+          </a>
+          <a href="safety-tips-mexico.html" class="related-card">
+            <div class="rc-cat">Safety</div>
+            <h4>Safety Tips for Traveling in Mexico During the World Cup</h4>
+            <div class="rc-meta">6 min read · GO2CUP</div>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <a href="../index.html" class="footer-logo">
+        <span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="../affiliate.html">Affiliate Disclosure</a></li>
+        <li><a href="../privacy.html">Privacy Policy</a></li>
+        <li><a href="../terms.html">Terms of Use</a></li>
+        <li><a href="../legal-hub.html">Legal Hub</a></li>
+        <li><a href="../maria-myers.html">Partner Resources</a></li>
+      </ul>
+      <p class="footer-copy">
+        &copy; 2026 GO2CUP &mdash; a <a href="https://sportdgx.com" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration:none;">sportdgx.com</a> property. All rights reserved. Hotel prices and transit times are estimates and subject to change. Always verify current information before travel.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
