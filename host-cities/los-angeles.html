@@ -576,63 +576,34 @@ p { font-size: 1.05rem; color: var(--cream-dim); margin-bottom: 1.4rem; max-widt
 </style>
 </head>
 <body>
-<div class="go2cup-return-top-wrap"><a class="go2cup-return-tab" href="../index.html" aria-label="Return to GO2CUP Insider"><span class="go2cup-go">GO</span><span class="go2cup-2">2</span><span class="go2cup-cup">CUP</span></a></div>
-
-<!-- ── GO2CUP TRAVEL SERVICES NAV ── -->
+<!-- ── GO2CUP 8-TAB NAV ── -->
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&display=swap');
-.g2c-cnav{background:#071422;border-bottom:2px solid #2f80ff;padding:0 12px;display:flex;flex-wrap:wrap;align-items:stretch;gap:0;font-family:'Barlow Condensed',Arial,sans-serif;position:relative;z-index:200;}
-.g2c-cnav-link{color:rgba(232,237,245,.65);text-decoration:none;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:10px 12px;border-bottom:2px solid transparent;transition:color .2s,border-color .2s;white-space:nowrap;display:flex;align-items:center;}
-.g2c-cnav-link:hover{color:#fff;border-bottom-color:#2f80ff;}
-.g2c-cnav-sep{width:1px;background:rgba(255,255,255,.08);margin:6px 0;align-self:stretch;}
-.g2c-cnav-drop{position:relative;display:flex;align-items:stretch;}
-.g2c-cnav-drop-btn{color:rgba(232,237,245,.65);background:none;border:none;border-bottom:2px solid transparent;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:10px 12px;cursor:pointer;display:flex;align-items:center;gap:5px;transition:color .2s,border-color .2s;white-space:nowrap;font-family:'Barlow Condensed',Arial,sans-serif;}
-.g2c-cnav-drop-btn:hover{color:#fff;border-bottom-color:#21c25a;}
-.g2c-cnav-menu{display:none;position:absolute;top:100%;left:0;background:#0d1b2a;border:1px solid rgba(47,128,255,.3);border-radius:0 0 10px 10px;min-width:220px;padding:6px 0;z-index:300;box-shadow:0 8px 24px rgba(0,0,0,.5);}
-.g2c-cnav-drop:hover .g2c-cnav-menu{display:block;}
-.g2c-cnav-menu a{display:block;color:rgba(232,237,245,.7);text-decoration:none;font-size:.78rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;padding:8px 16px;transition:background .15s,color .15s;}
-.g2c-cnav-menu a:hover{background:rgba(47,128,255,.15);color:#fff;}
-.g2c-cnav-btn{margin-left:auto;margin-right:4px;align-self:center;padding:7px 14px;background:#2f80ff;color:#fff!important;border-radius:999px;font-size:.75rem;font-weight:700;text-decoration:none!important;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;transition:background .2s;}
-.g2c-cnav-btn:hover{background:#1a6be0;}
-@media(max-width:640px){.g2c-cnav{overflow-x:auto;flex-wrap:nowrap;}.g2c-cnav-btn{margin-left:8px;}}
+.g2c-8nav{background:#071422;border-bottom:3px solid #2f80ff;display:flex;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;font-family:'Barlow Condensed',Arial,sans-serif;}
+.g2c-8nav::-webkit-scrollbar{display:none;}
+.g2c-8nav a{flex:1 1 0;min-width:fit-content;min-width:-webkit-max-content;padding:14px 10px;text-align:center;color:rgba(232,237,245,.65);text-decoration:none;font-size:.73rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border-right:1px solid rgba(47,128,255,.12);white-space:nowrap;transition:background .2s,color .2s;border-radius:0;}
+.g2c-8nav a:last-child{border-right:none;}
+.g2c-8nav a:hover,.g2c-8nav a:focus{background:rgba(47,128,255,.2);color:#fff;}
+.g2c-8nav .t-stay{border-top:3px solid #2f80ff;}
+.g2c-8nav .t-transp{border-top:3px solid #21c25a;}
+.g2c-8nav .t-things{border-top:3px solid #ff4338;}
+.g2c-8nav .t-luxury{border-top:3px solid #C9A84C;}
+.g2c-8nav .t-blog,.g2c-8nav .t-news{border-top:3px solid rgba(232,237,245,.2);}
+.g2c-8nav .t-maria{border-top:3px solid #21c25a;}
+.g2c-8nav .t-hub{background:rgba(47,128,255,.1);border-top:3px solid #2f80ff;}
+@media(max-width:640px){.g2c-8nav{font-size:.68rem;}.g2c-8nav a{padding:12px 8px;}}
 </style>
-<nav class="g2c-cnav" aria-label="GO2CUP city navigation">
-  <a href="/where-to-stay.html" class="g2c-cnav-link">Where to Stay</a>
-  <div class="g2c-cnav-sep"></div>
-  <a href="#" class="g2c-cnav-link">Guide</a>
-  <div class="g2c-cnav-sep"></div>
-  <a href="../emergency.html" class="g2c-cnav-link">Emergency / Embassy</a>
-  <div class="g2c-cnav-sep"></div>
-  <a href="../maria-myers.html" class="g2c-cnav-link">Interpreter Help</a>
-  <div class="g2c-cnav-sep"></div>
-  <a href="../blog.html" class="g2c-cnav-link">Blog</a>
-  <div class="g2c-cnav-sep"></div>
-  <a href="../sports-news.html" class="g2c-cnav-link">Sports News</a>
-  <div class="g2c-cnav-sep"></div>
-  <div class="g2c-cnav-drop">
-    <button class="g2c-cnav-drop-btn">Travel Services ▾</button>
-    <div class="g2c-cnav-menu">
-      <a href="/where-to-stay.html">USA 250th Anniversary</a>
-      <a href="/where-to-stay.html">Tours &amp; Activities</a>
-      <a href="/where-to-stay.html">Museum &amp; Attraction Tickets</a>
-      <a href="/where-to-stay.html">Concert/Sports/Theater Tickets</a>
-      <a href="/where-to-stay.html">City Sightseeing Passes</a>
-      <a href="/where-to-stay.html">Self-Guided Audio Tours</a>
-      <a href="/where-to-stay.html">Global eSIM &amp; Mobile Data</a>
-      <a href="/where-to-stay.html">Universal Travel SIM</a>
-      <a href="/where-to-stay.html">Airport Transfers &amp; Taxis</a>
-      <a href="/where-to-stay.html">Car Rentals</a>
-      <a href="/where-to-stay.html">Scooter/Motorcycle/Bicycle Rentals</a>
-      <a href="/where-to-stay.html">Yacht &amp; Boat Rentals</a>
-      <a href="/where-to-stay.html">Flight Search</a>
-      <a href="/where-to-stay.html">Flight Delay Compensation</a>
-      <a href="/where-to-stay.html">Travel Insurance</a>
-      <a href="/where-to-stay.html">Luggage Storage</a>
-    </div>
-  </div>
-  <a href="/where-to-stay.html" class="g2c-cnav-btn">Find Travel Services →</a>
+<nav class="g2c-8nav" aria-label="GO2CUP navigation">
+  <a href="/where-to-stay.html#stay"      class="t-stay">Stay &amp; Essentials</a>
+  <a href="/where-to-stay.html#transport" class="t-transp">Transport &amp; Rentals</a>
+  <a href="/where-to-stay.html#things"    class="t-things">Things to Do</a>
+  <a href="/where-to-stay.html#luxury"    class="t-luxury">Luxury / Premium</a>
+  <a href="/blog.html"                    class="t-blog">Blog</a>
+  <a href="/sports-news.html"             class="t-news">News</a>
+  <a href="/maria-myers.html"             class="t-maria">Talk to Maria</a>
+  <a href="/index.html"                   class="t-hub">Back to Hub</a>
 </nav>
-<!-- ── END GO2CUP TRAVEL SERVICES NAV ── -->
+<!-- ── END 8-TAB NAV ── -->
 
 
 <!-- HERO -->
@@ -784,43 +755,6 @@ p { font-size: 1.05rem; color: var(--cream-dim); margin-bottom: 1.4rem; max-widt
   </div>
 </section>
 
-<div class="divider"></div>
-
-<!-- BOOKING HUB -->
-<div class="booking-hub">
-  <div class="section-label">Book Your Trip</div>
-  <div class="booking-hub-title">Everything You Need — One Place</div>
-  <p class="booking-hub-sub">All booking links open in a new tab so you never lose your place in this guide. Every link supports Go2Cup at no extra cost to you.</p>
-  <div class="booking-grid">
-    <a href="https://klook.tp.st/bn2BkqtI" target="_blank" rel="noopener" class="booking-btn">
-      <i class="fas fa-ticket-alt"></i>Tours &amp; Activities
-    </a>
-    <a href="https://tiqets.tp.st/QLgjBEpB" target="_blank" rel="noopener" class="booking-btn">
-      <i class="fas fa-star"></i>Attractions &amp; Tickets
-    </a>
-    <a href="https://kiwi.tp.st/p4JYHJO9" target="_blank" rel="noopener" class="booking-btn">
-      <i class="fas fa-plane"></i>Find Flights
-    </a>
-    <a href="https://gettransfer.tp.st/drwAeHXI" target="_blank" rel="noopener" class="booking-btn">
-      <i class="fas fa-taxi"></i>Airport Transfers
-    </a>
-    <a href="https://gettransfer.tp.st/drwAeHXI" target="_blank" rel="noopener" class="booking-btn">
-      <i class="fas fa-car"></i>Private Transfers
-    </a>
-    <a href="https://airhelp.tp.st/yFHjlZJm" target="_blank" rel="noopener" class="booking-btn">
-      <i class="fas fa-shield-alt"></i>Flight Compensation
-    </a>
-    <a href="../fbo-vip.html" target="_blank" rel="noopener" class="booking-btn vip">
-      <i class="fas fa-plane-arrival"></i>FBO / VIP
-    </a>
-    <a href="https://searadar.tp.st/OsyDiOF3" target="_blank" rel="noopener" class="booking-btn">
-      <i class="fas fa-ship"></i>Yacht / Premium Water Transfer
-    </a>
-<a href="../index.html" target="_blank" rel="noopener" class="booking-btn vip">
-      <i class="fas fa-compass"></i>GO2CUP Hub
-    </a>
-  </div>
-</div>
 
 <div class="divider"></div>
 
@@ -914,26 +848,64 @@ p { font-size: 1.05rem; color: var(--cream-dim); margin-bottom: 1.4rem; max-widt
 </section>
 
 
-<div class="go2cup-bottom-return-wrap"><a class="go2cup-return-tab" href="../index.html" aria-label="Return to GO2CUP Insider"><span class="go2cup-go">GO</span><span class="go2cup-2">2</span><span class="go2cup-cup">CUP</span></a></div>
-<footer class="go2cup-page-footer">
-  <p style="font-size:0.8rem;opacity:0.7;line-height:1.6;margin-top:1rem;">
-GO2CUP is an independent fan travel guide operated by MainEntry LLC.
-The terms World Cup®, FIFA®, and FIFA World Cup™ are registered trademarks
+<!-- ── CITY NAV RESTYLE ── -->
+<style>
+.city-nav-grid .city-nav-link>span:first-child,.city-nav-link.city-nav-current>span:first-child{display:none!important;}
+.city-nav-link{background:rgba(47,128,255,.1)!important;border:1px solid rgba(47,128,255,.25)!important;border-radius:0!important;color:rgba(232,237,245,.85)!important;font-weight:600!important;}
+.city-nav-link:hover,.city-nav-link.active{background:#2f80ff!important;border-color:#2f80ff!important;color:#fff!important;}
+.city-nav-current{background:rgba(33,194,90,.18)!important;border-color:rgba(33,194,90,.4)!important;color:rgba(232,237,245,.9)!important;}
+</style>
+<!-- ── SITE FOOTER ── -->
+<style>
+.g2c-ft{background:#060f1a;border-top:1px solid rgba(47,128,255,.18);padding:48px 20px 30px;font-family:'Barlow',Arial,sans-serif;}
+.g2c-ft-inner{max-width:960px;margin:0 auto;text-align:center;}
+.g2c-ft-wm{font-family:'Bebas Neue',cursive;font-size:2.4rem;letter-spacing:.05em;margin-bottom:4px;line-height:1;}
+.g2c-ft-wm .go{color:#2f80ff;}.g2c-ft-wm .tw{color:#21c25a;}.g2c-ft-wm .cu{color:#ff4338;}
+.g2c-ft-env{display:inline-block;margin:10px 0 16px;color:rgba(232,237,245,.55);font-size:1.4rem;text-decoration:none;transition:color .2s;}
+.g2c-ft-env:hover{color:#2f80ff;}
+.g2c-ft-links{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;margin-bottom:18px;}
+.g2c-ft-links a{font-family:'Barlow Condensed',sans-serif;font-size:.85rem;font-weight:600;color:rgba(232,237,245,.55);text-decoration:none;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;}
+.g2c-ft-links a:hover{color:#2f80ff;}
+.g2c-ft-signups{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:24px;}
+.g2c-ft-signups a{font-family:'Barlow Condensed',sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#fff;text-decoration:none;background:rgba(47,128,255,.2);border:1px solid rgba(47,128,255,.3);padding:8px 14px;transition:background .2s,border-color .2s;}
+.g2c-ft-signups a:hover{background:rgba(47,128,255,.4);border-color:#2f80ff;}
+.g2c-ft-disc{font-size:.84rem;color:rgba(232,237,245,.4);line-height:1.7;max-width:820px;margin:0 auto 12px;}
+.g2c-ft-tm{font-size:.78rem;color:rgba(232,237,245,.28);line-height:1.65;max-width:820px;margin:0 auto 18px;}
+.g2c-ft-copy{font-size:.8rem;color:rgba(232,237,245,.25);margin:0;}
+</style>
+<footer class="g2c-ft">
+  <div class="g2c-ft-inner">
+    <div class="g2c-ft-wm"><span class="go">GO</span><span class="tw">2</span><span class="cu">CUP</span></div>
+    <a href="mailto:contact@sportdgx.com" class="g2c-ft-env" aria-label="Email GO2CUP">&#9993;</a>
+    <nav class="g2c-ft-links" aria-label="Footer navigation">
+      <a href="/index.html">Home</a>
+      <a href="/host-cities.html">Host Cities</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/sports-news.html">Sports News</a>
+      <a href="/emergency.html">Emergency / Embassies</a>
+      <a href="/fbo-vip.html">FBO / Private Aviation</a>
+      <a href="/legal/disclaimers.html">Legal</a>
+      <a href="/maria-myers.html">About</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3_Nd1UgH81RW4oYpZX6zMwCj9ZWApRaVUzShIc4UISRw2hQ/viewform" target="_blank" rel="noopener">Advertise With Us</a>
+    </nav>
+    <div class="g2c-ft-signups">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJIRLo6dBkPh57cKbVFnU1lz7dgutqzAHO2WsXiT2DDOp43g/viewform" target="_blank" rel="noopener">Country Hopper Newsletter</a>
+      <a href="https://docs.google.com/forms/d/1KPC8ZSMGdq0QHnAf79OEP1uomLNDC4P0k0VyD9T2hPw/edit" target="_blank" rel="noopener">Mexico Opening Day</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform" target="_blank" rel="noopener">Daily 2026 World Cup News</a>
+    </div>
+    <p class="g2c-ft-disc">GO2CUP is an independent fan guide operated by MainEntry LLC and is not affiliated with FIFA.</p>
+    <p class="g2c-ft-tm">GO2CUP is an independent fan travel guide operated by MainEntry LLC.
+The terms World Cup&reg;, FIFA&reg;, and FIFA World Cup&trade; are registered trademarks
 of FIFA. GO2CUP is not affiliated with, licensed by, sponsored by, endorsed
 by, or officially connected to FIFA, any national football federation,
 host cities, stadiums, governments, official sponsors, travel providers,
 or ticketing entities. Affiliate links are disclosed. Always verify schedules,
-prices, and travel requirements with official sources before booking.
-</p>
-  <nav class="go2cup-legal-nav" aria-label="Legal and disclosures">
-    <a href="../legal-hub.html">Legal Hub</a>
-    <a href="../sponsored.html">Sponsored Content Disclaimer</a>
-    <a href="../terms.html">Terms</a>
-    <a href="../privacy.html">Privacy</a>
-    <a href="../affiliate.html">Affiliate Disclosure</a>
-  </nav>
-  <p class="go2cup-about-maria"><a href="../maria-myers.html">About Maria Myers</a></p>
+prices, and travel requirements with official sources before booking.</p>
+    <p class="g2c-ft-copy">&copy; 2026 GO2CUP &middot; sportdgx.com &middot; All rights reserved.</p>
+  </div>
 </footer>
+<!-- ── END SITE FOOTER ── -->
 
 </body>
 </html>
