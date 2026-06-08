@@ -19,537 +19,881 @@
   gtag('config', 'G-Q4WSZ56TCX');
 </script>
 
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Services for World Cup 2026 | GO2CUP</title>
+<meta name="description" content="Your GO2CUP travel-services hub for World Cup 2026 — tours, eSIMs, airport transfers, car rentals, flights, luggage storage and more for all 16 host cities.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://sportdgx.com/where-to-stay.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Travel Services for World Cup 2026 | GO2CUP">
+<meta property="og:description" content="GO2CUP travel-services hub — tours, eSIMs, airport transfers, car rentals, flights, luggage storage and more for every World Cup 2026 host city.">
+<meta property="og:url" content="https://sportdgx.com/where-to-stay.html">
+<meta property="og:site_name" content="GO2CUP">
 
-  <title>Where to Stay for World Cup 2026 | GO2CUP Hotel Planning Hub</title>
-  <meta name="description" content="Plan where to stay for World Cup 2026 across the USA, Mexico, and Canada. GO2CUP helps fans compare host cities, hotel zones, airport access, stadium areas, and travel planning resources." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://sportdgx.com/where-to-stay.html" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Where to Stay for World Cup 2026 | GO2CUP Hotel Planning Hub" />
-  <meta property="og:description" content="Plan where to stay for World Cup 2026 across the USA, Mexico, and Canada. Compare host cities, hotel zones, airport access, and stadium areas." />
-  <meta property="og:url" content="https://sportdgx.com/where-to-stay.html" />
-  <meta property="og:site_name" content="GO2CUP" />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --dark-bg: #07060C;
-      --hero-bg: #0E0808;
-      --mexico-green: #006847;
-      --gold: #D4900A;
-      --gold-bright: #F0B020;
-      --fire-red: #CC2010;
-      --cream: #F0EDE8;
-      --text-mid: #B0A898;
-      --border: rgba(240,176,32,0.2);
-    }
+<style>
+/* ── ROOT TOKENS ── */
+:root {
+  --bg:          #0d1b2a;   /* lighter navy — the "lighter room" vs hub's #020617 */
+  --bg-section:  #0a1520;
+  --bg-card:     rgba(255,255,255,0.055);
+  --bg-card-hov: rgba(255,255,255,0.10);
+  --border:      rgba(47,128,255,0.18);
+  --border-hov:  rgba(47,128,255,0.45);
+  --go-blue:     #2f80ff;
+  --go-green:    #21c25a;
+  --cup-red:     #ff4338;
+  --gold:        #C9A84C;
+  --text:        #e8edf5;
+  --text-muted:  rgba(232,237,245,0.55);
+  --radius-card: 18px;
+}
 
-    * {
-      box-sizing: border-box;
-    }
+* { box-sizing: border-box; }
 
-    body {
-      margin: 0;
-      font-family: 'Barlow', Arial, sans-serif;
-      color: var(--cream);
-      background: var(--dark-bg);
-      line-height: 1.6;
-    }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Barlow', Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
 
-    header {
-      background: var(--hero-bg);
-      color: #ffffff;
-      padding: 56px 20px;
-      text-align: center;
-    }
+/* ── FONTS ── */
+.bebas   { font-family: 'Bebas Neue', cursive; }
+.cond    { font-family: 'Barlow Condensed', sans-serif; }
 
-    header .eyebrow {
-      color: var(--gold-bright);
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      font-size: 0.82rem;
-      margin-bottom: 12px;
-    }
+/* ── SITE HEADER ── */
+.site-header {
+  background: #060f1a;
+  border-bottom: 2px solid var(--go-blue);
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-height: 60px;
+}
 
-    header h1 {
-      margin: 0 auto 18px;
-      max-width: 920px;
-      font-size: clamp(2rem, 4vw, 4rem);
-      line-height: 1.05;
-      color: #ffffff;
-    }
+.wordmark {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  line-height: 1;
+  padding: 10px 0;
+}
+.wordmark .go  { color: var(--go-blue); }
+.wordmark .two { color: var(--go-green); }
+.wordmark .cup { color: var(--cup-red); }
 
-    header h1 .gold-line {
-      color: var(--gold-bright);
-    }
+.site-nav {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.site-nav a {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(232,237,245,0.65);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+}
+.site-nav a:hover {
+  color: #fff;
+  background: rgba(47,128,255,0.15);
+}
 
-    header p {
-      max-width: 780px;
-      margin: 0 auto 26px;
-      font-size: 1.1rem;
-      color: var(--text-mid);
-    }
+/* ── INTRO BANNER ── */
+.intro-banner {
+  background: linear-gradient(135deg, #060f1a 0%, #0f2a42 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 48px 20px 40px;
+  text-align: center;
+}
+.intro-banner h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  letter-spacing: 0.04em;
+  margin: 0 0 12px;
+  line-height: 1.05;
+}
+.intro-banner h1 .go  { color: var(--go-blue); }
+.intro-banner h1 .two { color: var(--go-green); }
+.intro-banner h1 .cup { color: var(--cup-red); }
+.intro-banner .subtitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 680px;
+  margin: 0 auto;
+  letter-spacing: 0.02em;
+}
 
-    .top-nav {
-      background: var(--dark-bg);
-      border-bottom: 3px solid var(--mexico-green);
-      padding: 14px 20px;
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
+/* ── MAIN CONTAINER ── */
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-    .top-nav a {
-      color: var(--cream);
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 0.95rem;
-    }
+/* ── CATEGORY SECTION ── */
+.cat-section {
+  padding: 48px 0 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.cat-section:last-of-type {
+  border-bottom: none;
+}
 
-    .top-nav a:hover {
-      color: var(--gold-bright);
-    }
+.cat-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+.cat-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+.cat-title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.6rem;
+  letter-spacing: 0.06em;
+  color: var(--text);
+  margin: 0;
+}
+.cat-accent {
+  flex-grow: 1;
+  height: 2px;
+  background: linear-gradient(to right, var(--go-blue), transparent);
+  border-radius: 2px;
+}
 
-    .brand-bar {
-      background: var(--dark-bg);
-      border-bottom: 3px solid var(--mexico-green);
-      padding: 16px 20px;
-      text-align: center;
-    }
+/* ── AFFILIATE CARD GRID ── */
+.aff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+}
 
-    .brand-bar a {
-      color: inherit;
-      text-decoration: none;
-    }
+/* ── AFFILIATE CARD ── */
+.aff-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: background 0.25s, border-color 0.25s, transform 0.2s;
+}
+.aff-card:hover {
+  background: var(--bg-card-hov);
+  border-color: var(--border-hov);
+  transform: translateY(-2px);
+}
+.aff-brand {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 0.03em;
+}
+.aff-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
+  flex-grow: 1;
+  line-height: 1.5;
+}
+.aff-btn {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--go-blue);
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.2s, transform 0.15s;
+}
+.aff-btn:hover {
+  background: #1a6be0;
+  transform: scale(1.02);
+}
 
-    .brand-bar .brand-name {
-      display: block;
-      font-family: 'Anton', sans-serif;
-      font-weight: 400;
-      font-size: 1.6rem;
-      color: var(--gold-bright);
-      letter-spacing: 0.06em;
-    }
+/* ── CATEGORY-SPECIFIC ACCENT COLORS ── */
+.cat-green .aff-btn  { background: var(--go-green); }
+.cat-green .aff-btn:hover { background: #18a049; }
+.cat-red   .aff-btn  { background: var(--cup-red); }
+.cat-red   .aff-btn:hover { background: #d93028; }
+.cat-gold  .aff-btn  { background: var(--gold); color: #000; }
+.cat-gold  .aff-btn:hover { background: #b08a3a; }
+.cat-green .cat-accent { background: linear-gradient(to right, var(--go-green), transparent); }
+.cat-red   .cat-accent { background: linear-gradient(to right, var(--cup-red), transparent); }
+.cat-gold  .cat-accent { background: linear-gradient(to right, var(--gold), transparent); }
 
-    .brand-bar .brand-tagline {
-      display: block;
-      font-size: 0.82rem;
-      color: var(--text-mid);
-      margin-top: 4px;
-    }
+/* ── HOST CITY QUICK NAV ── */
+.city-nav-section {
+  background: var(--bg-section);
+  border-top: 2px solid var(--go-blue);
+  border-bottom: 2px solid var(--go-blue);
+  padding: 36px 20px;
+  margin-top: 20px;
+}
+.city-nav-section h2 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
+  letter-spacing: 0.07em;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 0 0 22px;
+  text-transform: uppercase;
+}
+.city-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.city-pill {
+  display: inline-block;
+  padding: 9px 18px;
+  border: 1px solid rgba(47,128,255,0.3);
+  border-radius: 999px;
+  background: rgba(47,128,255,0.08);
+  color: var(--text);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.city-pill:hover {
+  background: var(--go-blue);
+  border-color: var(--go-blue);
+  color: #fff;
+}
+.city-pill.final {
+  border-color: rgba(255,67,56,0.5);
+  background: rgba(255,67,56,0.1);
+}
+.city-pill.final:hover {
+  background: var(--cup-red);
+  border-color: var(--cup-red);
+}
+.city-pill.opener {
+  border-color: rgba(33,194,90,0.5);
+  background: rgba(33,194,90,0.1);
+}
+.city-pill.opener:hover {
+  background: var(--go-green);
+  border-color: var(--go-green);
+}
 
-    .hub-back {
-      display: block;
-      margin-top: 10px;
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: var(--gold-bright);
-      text-decoration: none;
-    }
+/* ── FOOTER ── */
+.site-footer {
+  background: #060f1a;
+  border-top: 1px solid var(--border);
+  padding: 48px 20px 30px;
+}
+.footer-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer-wordmark {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.4rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+.footer-wordmark .go  { color: var(--go-blue); }
+.footer-wordmark .two { color: var(--go-green); }
+.footer-wordmark .cup { color: var(--cup-red); }
 
-    .go2cup-standard-footer {
-      max-width: 820px;
-      margin: 0 auto 18px;
-      line-height: 1.7;
-      font-size: 0.88rem;
-      color: var(--text-mid);
-    }
+.footer-envelope {
+  display: inline-block;
+  margin: 10px 0 16px;
+  color: var(--text-muted);
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-envelope:hover { color: var(--go-blue); }
 
-    .container {
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 34px 20px;
-    }
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+.footer-links a {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--go-blue); }
 
-    .notice {
-      background: rgba(240,176,32,0.08);
-      border: 1px solid var(--border);
-      color: var(--cream);
-      border-radius: 16px;
-      padding: 18px 20px;
-      margin-bottom: 28px;
-    }
+.footer-disclosure {
+  font-size: 0.84rem;
+  color: rgba(232,237,245,0.4);
+  line-height: 1.7;
+  max-width: 820px;
+  margin: 0 auto 18px;
+}
+.footer-trademark {
+  font-size: 0.78rem;
+  color: rgba(232,237,245,0.28);
+  line-height: 1.65;
+  max-width: 820px;
+  margin: 0 auto 18px;
+}
+.footer-copy {
+  font-size: 0.8rem;
+  color: rgba(232,237,245,0.25);
+  margin: 0;
+}
 
-    .section-title {
-      color: var(--gold-bright);
-      font-size: 2rem;
-      margin: 0 0 10px;
-    }
-
-    .section-intro {
-      color: var(--text-mid);
-      margin-top: 0;
-      max-width: 820px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-      gap: 18px;
-      margin-top: 24px;
-    }
-
-    .card {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(240,176,32,0.15);
-      border-radius: 18px;
-      padding: 20px;
-    }
-
-    .card h3 {
-      margin: 0 0 10px;
-      color: var(--cream);
-      font-size: 1.1rem;
-    }
-
-    .card p {
-      margin: 0 0 14px;
-      color: var(--text-mid);
-      font-size: 0.96rem;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 5px 10px;
-      border-radius: 999px;
-      background: rgba(240,176,32,0.15);
-      color: var(--gold-bright);
-      font-size: 0.78rem;
-      font-weight: 700;
-    }
-
-    .cta-panel {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(240,176,32,0.15);
-      color: #ffffff;
-      border-radius: 24px;
-      padding: 28px;
-      margin: 34px 0;
-      display: grid;
-      gap: 14px;
-    }
-
-    .cta-panel h2 {
-      margin: 0;
-      font-size: 1.8rem;
-      color: var(--gold-bright);
-    }
-
-    .cta-panel p {
-      margin: 0;
-      color: var(--text-mid);
-    }
-
-    .button-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 10px;
-    }
-
-    .btn {
-      display: inline-block;
-      text-decoration: none;
-      border-radius: 999px;
-      padding: 12px 18px;
-      font-weight: 800;
-      font-family: 'Barlow', sans-serif;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, #CC2010, #E83020);
-      color: #ffffff;
-    }
-
-    .btn-secondary {
-      background: transparent;
-      color: var(--cream);
-      border: 2px solid var(--mexico-green);
-    }
-
-    .city-list {
-      columns: 2;
-      column-gap: 28px;
-      padding-left: 20px;
-      color: var(--text-mid);
-    }
-
-    .city-list a {
-      color: var(--gold-bright);
-      text-decoration: none;
-    }
-
-    .city-list a:hover {
-      text-decoration: underline;
-    }
-
-    .city-list li {
-      break-inside: avoid;
-      margin-bottom: 8px;
-    }
-
-    .disclosure {
-      background: rgba(255,255,255,0.04);
-      border-top: 4px solid var(--fire-red);
-      border-radius: 18px;
-      padding: 22px;
-      margin-top: 30px;
-      color: var(--text-mid);
-      font-size: 0.95rem;
-    }
-
-    .disclosure h2 {
-      color: var(--gold-bright);
-    }
-
-    footer {
-      background: var(--dark-bg);
-      color: var(--text-mid);
-      padding: 30px 20px;
-      text-align: center;
-      font-size: 0.9rem;
-      border-top: 1px solid var(--border);
-    }
-
-    footer a {
-      color: var(--gold);
-      margin: 0 8px;
-      text-decoration: underline;
-    }
-
-    footer a:hover {
-      color: var(--gold-bright);
-    }
-
-    @media (max-width: 700px) {
-      .city-list {
-        columns: 1;
-      }
-
-      header {
-        padding: 42px 18px;
-      }
-    }
-  </style>
+/* ── RESPONSIVE ── */
+@media (max-width: 640px) {
+  .site-header { justify-content: center; }
+  .intro-banner h1 { font-size: 2rem; }
+  .aff-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 440px) {
+  .aff-grid { grid-template-columns: 1fr; }
+}
+</style>
 </head>
 
 <body>
-  <div class="brand-bar">
-    <a href="index.html">
-      <span class="brand-name">GO2CUP</span>
-      <span class="brand-tagline">The World Cup 2026 Fan Intelligence Hub</span>
-    </a>
-    <a class="hub-back" href="index.html">← Back to GO2CUP Hub</a>
-  </div>
-  <nav class="top-nav">
+
+<!-- ── SITE HEADER ── -->
+<header class="site-header">
+  <a href="index.html" class="wordmark">
+    <span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span>
+  </a>
+  <nav class="site-nav" aria-label="Site navigation">
     <a href="index.html">Home</a>
     <a href="host-cities.html">Host Cities</a>
-    <a href="emergency.html">Emergency</a>
-    <a href="budget-calculator.html">Budget Calculator</a>
-    <a href="mexico-trip-guide.html">Mexico Trip Guide</a>
-    <a href="disclaimers.html">Disclaimers</a>
+    <a href="blog.html">Blog</a>
+    <a href="sports-news.html">Sports News</a>
   </nav>
+</header>
 
-  <header>
-    <div class="eyebrow">World Cup 2026 Hotel Planning</div>
-    <h1>Where to Stay for<br><span class="gold-line">World Cup 2026</span></h1>
-    <p>
-      A fan-first hotel planning hub for the 2026 World Cup across the USA, Mexico, and Canada.
-      Use this page to understand host-city lodging zones, airport access, stadium proximity,
-      and smarter booking decisions before prices rise.
-    </p>
-    <div class="button-row" style="justify-content:center;">
-      <button type="button" class="btn btn-primary" style="background:#00a651;color:white;">SEARCH HOTELS IN MEXICO CITY</button>
-      <a class="btn btn-secondary" href="host-cities.html">Explore Host Cities</a>
+<!-- ── INTRO BANNER ── -->
+<div class="intro-banner">
+  <h1>
+    <span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span>
+    &nbsp;TRAVEL SERVICES
+  </h1>
+  <p class="subtitle">
+    Your GO2CUP travel-services hub — everything World Cup 2026 fans need to book tours, get connected, move between cities, and travel smarter across all 16 host cities.
+  </p>
+</div>
+
+<!-- ── MAIN CONTENT ── -->
+<main class="container">
+
+  <!-- ═══════════════════════════════════════════════════
+       CATEGORY: Tours, Activities & Experiences
+       ADD NEW CARDS: copy an <article class="aff-card"> block and paste before the closing </div> of .aff-grid
+  ════════════════════════════════════════════════════ -->
+  <section class="cat-section" id="tours">
+    <div class="cat-header">
+      <span class="cat-icon">🗺️</span>
+      <h2 class="cat-title">Tours, Activities &amp; Experiences</h2>
+      <div class="cat-accent"></div>
     </div>
-  </header>
+    <div class="aff-grid">
 
-  <main class="container">
-    <div class="notice">
-      <strong>Independent fan-built resource:</strong> GO2CUP is not affiliated with, endorsed by,
-      or officially connected to FIFA, host cities, stadiums, teams, government agencies, or official World Cup partners
-      unless clearly stated.
+      <!-- Klook -->
+      <article class="aff-card">
+        <h3 class="aff-brand">Klook</h3>
+        <p class="aff-desc">Book tours, activities, attraction tickets and local transport worldwide.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=4110&u=https%3A%2F%2Fklook.com&campaign_id=137"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Explore Klook →</a>
+      </article>
+
+      <!-- KKday -->
+      <article class="aff-card">
+        <h3 class="aff-brand">KKday</h3>
+        <p class="aff-desc">Local tours, experiences and activities across Asia and worldwide.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=9074&u=https%3A%2F%2Fkkday.com&campaign_id=633"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Explore KKday →</a>
+      </article>
+
+      <!-- WeGoTrip -->
+      <article class="aff-card">
+        <h3 class="aff-brand">WeGoTrip</h3>
+        <p class="aff-desc">Self-guided audio tours and digital tickets by local experts.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=4487&u=https%3A%2F%2Fwegotrip.com&campaign_id=150"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Explore WeGoTrip →</a>
+      </article>
+
+      <!-- Tiqets -->
+      <article class="aff-card">
+        <h3 class="aff-brand">Tiqets</h3>
+        <p class="aff-desc">Instant mobile tickets to museums, shows and attractions.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=2074&u=https%3A%2F%2Ftiqets.com&campaign_id=89"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Explore Tiqets →</a>
+      </article>
+
+      <!-- EKTA -->
+      <article class="aff-card">
+        <h3 class="aff-brand">EKTA</h3>
+        <p class="aff-desc">International travel insurance with medical and trip coverage.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=5869&u=https%3A%2F%2Fektatraveling.com&campaign_id=225"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Explore EKTA →</a>
+      </article>
+
+      <!-- ADD NEW TOURS/ACTIVITIES CARDS HERE -->
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CATEGORY: City Sightseeing Passes
+       ADD NEW CARDS: copy an <article class="aff-card"> block and paste before the closing </div>
+  ════════════════════════════════════════════════════ -->
+  <section class="cat-section cat-green" id="passes">
+    <div class="cat-header">
+      <span class="cat-icon">🎫</span>
+      <h2 class="cat-title">City Sightseeing Passes</h2>
+      <div class="cat-accent cat-green"></div>
+    </div>
+    <div class="aff-grid">
+
+      <!-- Go City -->
+      <article class="aff-card">
+        <h3 class="aff-brand">Go City</h3>
+        <p class="aff-desc">One pass for entry to dozens of top city attractions.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=1942&u=https%3A%2F%2Fgocity.com&campaign_id=62"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Get a Go City Pass →</a>
+      </article>
+
+      <!-- ADD NEW CITY PASS CARDS HERE -->
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CATEGORY: Tickets (Concerts, Sports, Theater)
+       ADD NEW CARDS: copy an <article class="aff-card"> block and paste before the closing </div>
+  ════════════════════════════════════════════════════ -->
+  <section class="cat-section cat-red" id="tickets">
+    <div class="cat-header">
+      <span class="cat-icon">🎟️</span>
+      <h2 class="cat-title">Tickets — Concerts, Sports &amp; Theater</h2>
+      <div class="cat-accent"></div>
+    </div>
+    <div class="aff-grid">
+
+      <!-- TicketNetwork -->
+      <article class="aff-card">
+        <h3 class="aff-brand">TicketNetwork</h3>
+        <p class="aff-desc">Tickets for live concerts, sports and theater worldwide.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=1948&u=https%3A%2F%2Fticketnetwork.com&campaign_id=72"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Browse Tickets →</a>
+      </article>
+
+      <!-- ADD NEW TICKET CARDS HERE -->
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CATEGORY: eSIM & Mobile Data
+       ADD NEW CARDS: copy an <article class="aff-card"> block and paste before the closing </div>
+  ════════════════════════════════════════════════════ -->
+  <section class="cat-section" id="esim">
+    <div class="cat-header">
+      <span class="cat-icon">📱</span>
+      <h2 class="cat-title">eSIM &amp; Mobile Data</h2>
+      <div class="cat-accent"></div>
+    </div>
+    <div class="aff-grid">
+
+      <!-- Airalo -->
+      <article class="aff-card">
+        <h3 class="aff-brand">Airalo</h3>
+        <p class="aff-desc">Affordable local eSIM data for hundreds of countries.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=8310&u=https%3A%2F%2Fairalo.com&campaign_id=541"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Get Airalo eSIM →</a>
+      </article>
+
+      <!-- Yesim -->
+      <article class="aff-card">
+        <h3 class="aff-brand">Yesim</h3>
+        <p class="aff-desc">Global eSIM for instant mobile data, no physical SIM needed.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=5998&u=https%3A%2F%2Fyesim.tech&campaign_id=224"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Get Yesim eSIM →</a>
+      </article>
+
+      <!-- Saily -->
+      <article class="aff-card">
+        <h3 class="aff-brand">Saily</h3>
+        <p class="aff-desc">Easy eSIM app for fast, secure travel data globally.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=8979&u=https%3A%2F%2Fsaily.com&campaign_id=629"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Get Saily eSIM →</a>
+      </article>
+
+      <!-- Drimsim -->
+      <article class="aff-card">
+        <h3 class="aff-brand">Drimsim</h3>
+        <p class="aff-desc">Universal travel SIM/eSIM, pay-as-you-go global data.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=2762&u=https%3A%2F%2Fw1.drimsim.com&campaign_id=102"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Get Drimsim →</a>
+      </article>
+
+      <!-- ADD NEW eSIM CARDS HERE -->
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CATEGORY: Airport Transfers & Taxis
+       ADD NEW CARDS: copy an <article class="aff-card"> block and paste before the closing </div>
+  ════════════════════════════════════════════════════ -->
+  <section class="cat-section cat-green" id="transfers">
+    <div class="cat-header">
+      <span class="cat-icon">🚖</span>
+      <h2 class="cat-title">Airport Transfers &amp; Taxis</h2>
+      <div class="cat-accent"></div>
+    </div>
+    <div class="aff-grid">
+
+      <!-- GetTransfer -->
+      <article class="aff-card">
+        <h3 class="aff-brand">GetTransfer</h3>
+        <p class="aff-desc">Private transfers and chauffeured rides via bidding.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=4439&u=https%3A%2F%2Fgettransfer.com&campaign_id=147"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Book Transfer →</a>
+      </article>
+
+      <!-- Kiwitaxi -->
+      <article class="aff-card">
+        <h3 class="aff-brand">Kiwitaxi</h3>
+        <p class="aff-desc">Private airport transfers and tourist taxi rides worldwide.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=647&u=https%3A%2F%2Fkiwitaxi.com&campaign_id=1"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Book Kiwitaxi →</a>
+      </article>
+
+      <!-- Welcome Pickups -->
+      <article class="aff-card">
+        <h3 class="aff-brand">Welcome Pickups</h3>
+        <p class="aff-desc">Premium airport pickups with local English-speaking drivers.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=8919&u=https%3A%2F%2Fwelcomepickups.com&campaign_id=627"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Book Pickup →</a>
+      </article>
+
+      <!-- Intui.travel -->
+      <article class="aff-card">
+        <h3 class="aff-brand">Intui.travel</h3>
+        <p class="aff-desc">Airport transfers and transport to hotels or villas.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=657&u=https%3A%2F%2Fintui.travel&campaign_id=22"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Book Transfer →</a>
+      </article>
+
+      <!-- ADD NEW TRANSFER CARDS HERE -->
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CATEGORY: Car Rentals
+       ADD NEW CARDS: copy an <article class="aff-card"> block and paste before the closing </div>
+  ════════════════════════════════════════════════════ -->
+  <section class="cat-section" id="cars">
+    <div class="cat-header">
+      <span class="cat-icon">🚗</span>
+      <h2 class="cat-title">Car Rentals</h2>
+      <div class="cat-accent"></div>
+    </div>
+    <div class="aff-grid">
+
+      <!-- Localrent -->
+      <article class="aff-card">
+        <h3 class="aff-brand">Localrent</h3>
+        <p class="aff-desc">Rent cars from local independent companies, often cheaper.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=2043&u=https%3A%2F%2Flocalrent.com%2Fen&campaign_id=87"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Search Cars →</a>
+      </article>
+
+      <!-- GetRentacar -->
+      <article class="aff-card">
+        <h3 class="aff-brand">GetRentacar</h3>
+        <p class="aff-desc">Rent cars, vans or luxury vehicles from local providers.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=5996&u=https%3A%2F%2Fgetrentacar.com&campaign_id=222"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Search Cars →</a>
+      </article>
+
+      <!-- EconomyBookings -->
+      <article class="aff-card">
+        <h3 class="aff-brand">EconomyBookings</h3>
+        <p class="aff-desc">Compare 800+ car rental companies for low-cost deals.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=2018&u=https%3A%2F%2Fwww.economybookings.com&campaign_id=10"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Compare Deals →</a>
+      </article>
+
+      <!-- AutoEurope -->
+      <article class="aff-card">
+        <h3 class="aff-brand">AutoEurope</h3>
+        <p class="aff-desc">Compare top brands for discounted car hire, strong in Europe.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=4354&u=https%3A%2F%2Fautoeurope.eu&campaign_id=143"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Compare Deals →</a>
+      </article>
+
+      <!-- QEEQ -->
+      <article class="aff-card">
+        <h3 class="aff-brand">QEEQ</h3>
+        <p class="aff-desc">Car hire deals in 200+ countries with price-drop protection.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=4845&u=https%3A%2F%2Fqeeq.com&campaign_id=172"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Search QEEQ →</a>
+      </article>
+
+      <!-- ADD NEW CAR RENTAL CARDS HERE -->
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CATEGORY: Scooter, Motorcycle & Bicycle Rentals
+       ADD NEW CARDS: copy an <article class="aff-card"> block and paste before the closing </div>
+  ════════════════════════════════════════════════════ -->
+  <section class="cat-section cat-green" id="bikes">
+    <div class="cat-header">
+      <span class="cat-icon">🛵</span>
+      <h2 class="cat-title">Scooter, Motorcycle &amp; Bicycle Rentals</h2>
+      <div class="cat-accent"></div>
+    </div>
+    <div class="aff-grid">
+
+      <!-- BikesBooking -->
+      <article class="aff-card">
+        <h3 class="aff-brand">BikesBooking</h3>
+        <p class="aff-desc">Rent motorcycles, scooters, bicycles and ATVs worldwide.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=1767&u=https%3A%2F%2Fbikesbooking.com&campaign_id=57"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Rent a Bike →</a>
+      </article>
+
+      <!-- ADD NEW BIKE RENTAL CARDS HERE -->
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CATEGORY: Yacht & Boat Rentals
+       ADD NEW CARDS: copy an <article class="aff-card"> block and paste before the closing </div>
+  ════════════════════════════════════════════════════ -->
+  <section class="cat-section" id="boats">
+    <div class="cat-header">
+      <span class="cat-icon">⛵</span>
+      <h2 class="cat-title">Yacht &amp; Boat Rentals</h2>
+      <div class="cat-accent"></div>
+    </div>
+    <div class="aff-grid">
+
+      <!-- SEARADAR -->
+      <article class="aff-card">
+        <h3 class="aff-brand">SEARADAR</h3>
+        <p class="aff-desc">Charter sailboats, catamarans and motorboats globally.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=5907&u=https%3A%2F%2Fsearadar.com&campaign_id=258"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Charter a Boat →</a>
+      </article>
+
+      <!-- ADD NEW BOAT RENTAL CARDS HERE -->
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CATEGORY: Flights
+       ADD NEW CARDS: copy an <article class="aff-card"> block and paste before the closing </div>
+  ════════════════════════════════════════════════════ -->
+  <section class="cat-section cat-red" id="flights">
+    <div class="cat-header">
+      <span class="cat-icon">✈️</span>
+      <h2 class="cat-title">Flights</h2>
+      <div class="cat-accent"></div>
+    </div>
+    <div class="aff-grid">
+
+      <!-- Aviasales -->
+      <article class="aff-card">
+        <h3 class="aff-brand">Aviasales</h3>
+        <p class="aff-desc">Search hundreds of airlines for the cheapest flights.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=4114&u=https%3A%2F%2Faviasales.com&campaign_id=100"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Search Flights →</a>
+      </article>
+
+      <!-- ADD NEW FLIGHT CARDS HERE -->
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CATEGORY: Flight Delay Compensation
+       ADD NEW CARDS: copy an <article class="aff-card"> block and paste before the closing </div>
+  ════════════════════════════════════════════════════ -->
+  <section class="cat-section" id="compensation">
+    <div class="cat-header">
+      <span class="cat-icon">💸</span>
+      <h2 class="cat-title">Flight Delay Compensation</h2>
+      <div class="cat-accent"></div>
+    </div>
+    <div class="aff-grid">
+
+      <!-- AirHelp -->
+      <article class="aff-card">
+        <h3 class="aff-brand">AirHelp</h3>
+        <p class="aff-desc">Claim airline compensation for delayed/canceled flights.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=9139&u=https%3A%2F%2Fairhelp.com&campaign_id=120"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Check Claim →</a>
+      </article>
+
+      <!-- Compensair -->
+      <article class="aff-card">
+        <h3 class="aff-brand">Compensair</h3>
+        <p class="aff-desc">Manages flight delay/cancellation compensation claims.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=4129&u=https%3A%2F%2Fcompensair.com&campaign_id=86"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Check Claim →</a>
+      </article>
+
+      <!-- ADD NEW COMPENSATION CARDS HERE -->
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CATEGORY: Luggage Storage
+       ADD NEW CARDS: copy an <article class="aff-card"> block and paste before the closing </div>
+  ════════════════════════════════════════════════════ -->
+  <section class="cat-section cat-gold" id="luggage">
+    <div class="cat-header">
+      <span class="cat-icon">🧳</span>
+      <h2 class="cat-title">Luggage Storage</h2>
+      <div class="cat-accent"></div>
+    </div>
+    <div class="aff-grid">
+
+      <!-- Radical Storage -->
+      <article class="aff-card">
+        <h3 class="aff-brand">Radical Storage</h3>
+        <p class="aff-desc">Drop heavy bags at secure verified local luggage points.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=5867&u=https%3A%2F%2Fradicalstorage.com&campaign_id=209"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Find Storage →</a>
+      </article>
+
+      <!-- ADD NEW LUGGAGE STORAGE CARDS HERE -->
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ── HOST CITY QUICK NAV ── -->
+<div class="city-nav-section">
+  <div class="container">
+    <h2>Explore All 16 Host Cities</h2>
+    <div class="city-grid">
+      <!-- USA -->
+      <a href="/host-cities/new-york-new-jersey.html" class="city-pill final">New York / New Jersey ★ Final</a>
+      <a href="/host-cities/los-angeles.html"          class="city-pill">Los Angeles</a>
+      <a href="/host-cities/dallas.html"               class="city-pill">Dallas</a>
+      <a href="/host-cities/kansas-city.html"          class="city-pill">Kansas City</a>
+      <a href="/host-cities/houston.html"              class="city-pill">Houston</a>
+      <a href="/host-cities/atlanta.html"              class="city-pill">Atlanta</a>
+      <a href="/host-cities/miami.html"                class="city-pill">Miami</a>
+      <a href="/host-cities/philadelphia.html"         class="city-pill">Philadelphia</a>
+      <a href="/host-cities/seattle.html"              class="city-pill">Seattle</a>
+      <a href="/host-cities/san-francisco-bay-area.html" class="city-pill">San Francisco Bay Area</a>
+      <a href="/host-cities/boston-foxborough.html"    class="city-pill">Boston / Foxborough</a>
+      <!-- Mexico -->
+      <a href="/host-cities/mexico-city.html"          class="city-pill opener">Mexico City ★ Opener</a>
+      <a href="/host-cities/guadalajara.html"          class="city-pill">Guadalajara</a>
+      <a href="/host-cities/monterrey.html"            class="city-pill">Monterrey</a>
+      <!-- Canada -->
+      <a href="/host-cities/toronto.html"              class="city-pill">Toronto</a>
+      <a href="/host-cities/vancouver.html"            class="city-pill">Vancouver</a>
+    </div>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-wordmark">
+      <span class="go">GO</span><span class="two">2</span><span class="cup">CUP</span>
     </div>
 
-    <section class="cta-panel">
-      <h2>Compare stays before match demand rises</h2>
-      <p>
-        Use this guide to compare neighborhoods, stadium access, airport routes, and hotel timing before prices move.
-      </p>
-      <div class="button-row">
-        <button type="button" class="btn btn-primary" style="background:#00a651;color:white;">SEARCH HOTELS IN MEXICO CITY</button>
-        <a class="btn btn-secondary" href="https://www.viator.com/searchResults/all?text=world+cup+2026&pid=YOUR_VIATOR_PARTNER_ID" target="_blank" rel="noopener noreferrer">Browse Tours on Viator &rarr;</a>
-      </div>
-      <p>
-        Pricing and availability can change. Check current availability and verify routes before travel.
-      </p>
-    </section>
+    <!-- Envelope icon only — no email address shown -->
+    <a href="mailto:contact@sportdgx.com" class="footer-envelope" aria-label="Email GO2CUP">&#9993;</a>
 
-    <section>
-      <h2 class="section-title">How to Think About Hotels for World Cup 2026</h2>
-      <p class="section-intro">
-        The best hotel is not always the closest hotel to the stadium. For World Cup travel, fans should compare
-        stadium access, airport access, transit reliability, neighborhood safety, food options, match-day crowd flow,
-        and the cost of moving between cities.
-      </p>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="host-cities.html">Host Cities</a>
+      <a href="blog.html">Blog</a>
+      <a href="sports-news.html">Sports News</a>
+      <a href="emergency.html">Emergency</a>
+      <a href="emergency.html">Embassies</a><!-- fallback: no embassies.html found -->
+      <a href="fbo-vip.html">FBO / Private Aviation</a>
+      <a href="legal/disclaimers.html">Legal</a>
+      <a href="maria-myers.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="mailto:contact@sportdgx.com">Advertise With Me</a><!-- fallback: no advertise.html found -->
+    </nav>
 
-      <div class="grid">
-        <article class="card">
-          <span class="badge">Match-day access</span>
-          <h3>Stay near transit, not just the stadium</h3>
-          <p>
-            A hotel near a reliable train, metro, shuttle, or rideshare zone may be better than a hotel close to a stadium
-            but hard to reach on match day.
-          </p>
-        </article>
-
-        <article class="card">
-          <span class="badge">Airport logic</span>
-          <h3>Know your arrival airport</h3>
-          <p>
-            Some host cities have major airports far from the stadium area. Check transfer time before booking a hotel
-            that looks cheap but creates expensive rides.
-          </p>
-        </article>
-
-        <article class="card">
-          <span class="badge">Budget control</span>
-          <h3>Book with cancellation flexibility</h3>
-          <p>
-            Prices and availability can change fast around match dates. Flexible cancellation can protect you while your
-            match schedule, flights, and city route are still forming.
-          </p>
-        </article>
-
-        <article class="card">
-          <span class="badge">Multi-city fans</span>
-          <h3>Plan the route before the room</h3>
-          <p>
-            If you are following a team or attending multiple matches, choose hotels based on the full trip route,
-            not only one match city.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="cta-panel">
-      <h2>Catching El Tri in Mexico? Read the full trip guide.</h2>
-      <p>
-        Complete planning guide for the Mexico group stage — flights from Kansas City, hotel zones in CDMX and Guadalajara, Estadio Azteca transit, Teotihuacan day trips, safety tips, and a full itinerary covering all three El Tri matches.
-      </p>
-      <div class="button-row">
-        <a class="btn btn-primary" href="mexico-trip-guide.html">Read the GO2CUP Mexico Trip Guide &rarr;</a>
-        <a class="btn btn-secondary" href="budget-calculator.html">Open Budget Calculator</a>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">Host Cities to Watch for Hotel Demand</h2>
-      <p class="section-intro">
-        GO2CUP will build city-by-city hotel planning pages for each World Cup 2026 host city. These pages will help
-        fans compare stay zones, airport routes, stadium access, and booking considerations.
-      </p>
-
-      <ul class="city-list">
-        <li><a href="where-to-stay/atlanta.html">Atlanta</a></li>
-        <li><a href="where-to-stay/boston.html">Boston / Foxborough</a></li>
-        <li><a href="where-to-stay/dallas.html">Dallas</a></li>
-        <li><a href="where-to-stay/guadalajara.html">Guadalajara</a></li>
-        <li><a href="where-to-stay/houston.html">Houston</a></li>
-        <li><a href="where-to-stay/kansas-city.html">Kansas City</a></li>
-        <li><a href="where-to-stay/los-angeles.html">Los Angeles</a></li>
-        <li><a href="where-to-stay/mexico-city.html">Mexico City</a></li>
-        <li><a href="where-to-stay/miami-city.html">Miami</a></li>
-        <li><a href="where-to-stay/monterrey.html">Monterrey</a></li>
-        <li><a href="where-to-stay/new-york-new-jersey.html">New York / New Jersey</a></li>
-        <li><a href="where-to-stay/philadelphia.html">Philadelphia</a></li>
-        <li><a href="where-to-stay/san-francisco-bay-area.html">San Francisco Bay Area</a></li>
-        <li><a href="where-to-stay/seattle.html">Seattle</a></li>
-        <li><a href="where-to-stay/toronto.html">Toronto</a></li>
-        <li><a href="where-to-stay/vancouver.html">Vancouver</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2 class="section-title">Booking Platforms and Travel Tools</h2>
-      <p class="section-intro">
-        GO2CUP earns a commission from qualifying purchases made through the links below — at no extra cost to you.
-        Recommendations are chosen for fan planning value and relevance to World Cup 2026 travel.
-      </p>
-
-      <div class="grid">
-        <article class="card">
-          <span class="badge">Hotels &amp; Stays</span>
-          <h3>Search hotels on Booking.com</h3>
-          <p>
-            Compare availability, neighbourhood, cancellation policy, and price across all 16 World Cup host cities.
-            Book now with flexible cancellation while inventory lasts.
-          </p>
-          <button type="button" class="btn btn-primary" style="font-size:0.88rem;color:white;">SEARCH HOTELS IN MEXICO CITY</button>
-        </article>
-
-        <article class="card">
-          <span class="badge">Match Tickets</span>
-          <h3>Find tickets on SeatGeek</h3>
-          <p>
-            Browse the secondary ticket market for group stage matches, knockout rounds, and the World Cup Final
-            at MetLife Stadium. Prices move fast as matches sell out.
-          </p>
-          <button type="button" class="btn btn-primary" style="font-size:0.88rem;">FIND OPENING MATCH TICKETS</button>
-        </article>
-
-        <article class="card">
-          <span class="badge">Tours &amp; Experiences</span>
-          <h3>Book tours on Viator</h3>
-          <p>
-            Pre-match city tours, stadium experiences, airport transfers, Teotihuacan hot air balloon, and day trips
-            across host cities. Availability fills up weeks before match day.
-          </p>
-          <a class="btn btn-primary" style="font-size:0.88rem;" href="https://www.viator.com/searchResults/all?text=world+cup+2026&pid=YOUR_VIATOR_PARTNER_ID" target="_blank" rel="noopener noreferrer">Browse Tours on Viator &rarr;</a>
-        </article>
-
-        <article class="card">
-          <span class="badge">Full Trip Guide</span>
-          <h3>GO2CUP Mexico Trip Guide</h3>
-          <p>
-            Flights from Kansas City, hotel zones in CDMX and Guadalajara, Azteca transit, day trips,
-            safety tips, and a full itinerary for all three El Tri group stage matches.
-          </p>
-          <a class="btn btn-primary" style="font-size:0.88rem;" href="mexico-trip-guide.html">Read the Mexico Trip Guide &rarr;</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="disclosure">
-      <h2>Affiliate and Travel Disclosure</h2>
-      <p>
-        GO2CUP is an independent, fan-built World Cup 2026 travel intelligence hub. GO2CUP is not affiliated with FIFA, host cities, teams, stadiums, governments, official sponsors, travel providers, or ticketing entities. We may earn commissions from qualifying purchases made through partner or affiliate links. Fans should verify schedules, prices, entry rules, availability, transportation details, and travel requirements with official sources and providers before booking.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <p class="go2cup-standard-footer">
-      GO2CUP is an independent, fan-built World Cup 2026 travel intelligence hub. GO2CUP is not affiliated with FIFA, host cities, teams, stadiums, governments, official sponsors, travel providers, or ticketing entities. We may earn commissions from qualifying purchases made through partner or affiliate links. Fans should verify schedules, prices, entry rules, availability, transportation details, and travel requirements with official sources and providers before booking.
+    <p class="footer-disclosure">
+      GO2CUP is an independent, fan-built World Cup 2026 travel intelligence hub. GO2CUP is not affiliated with FIFA,
+      host cities, teams, stadiums, governments, official sponsors, travel providers, or ticketing entities.
+      We may earn commissions from qualifying purchases made through partner or affiliate links.
+      Fans should verify schedules, prices, entry rules, availability, transportation details, and travel requirements
+      with official sources and providers before booking.
     </p>
-    <p>
-      GO2CUP &mdash; Independent fan-built World Cup 2026 hub | Built by Maria Myers | sportdgx.com
+
+    <p class="footer-trademark">
+      GO2CUP is an independent fan travel guide operated by MainEntry LLC.
+      The terms World Cup&reg;, FIFA&reg;, and FIFA World Cup&trade; are registered trademarks of FIFA.
+      GO2CUP is not affiliated with, licensed by, sponsored by, endorsed by, or officially connected to FIFA,
+      any national football federation, host cities, stadiums, governments, official sponsors, travel providers,
+      or ticketing entities. Affiliate links are disclosed. Always verify schedules, prices, and travel requirements
+      with official sources before booking.
     </p>
-    <p style="font-size:0.8rem;opacity:0.7;line-height:1.6;margin-top:1rem;">
-GO2CUP is an independent fan travel guide operated by MainEntry LLC.
-The terms World Cup®, FIFA®, and FIFA World Cup™ are registered trademarks
-of FIFA. GO2CUP is not affiliated with, licensed by, sponsored by, endorsed
-by, or officially connected to FIFA, any national football federation,
-host cities, stadiums, governments, official sponsors, travel providers,
-or ticketing entities. Affiliate links are disclosed. Always verify schedules,
-prices, and travel requirements with official sources before booking.
-</p>
-  </footer>
+
+    <p class="footer-copy">&copy; 2026 GO2CUP &middot; sportdgx.com &middot; All rights reserved.</p>
+
+  </div>
+</footer>
+
 </body>
 </html>
