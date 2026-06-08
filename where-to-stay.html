@@ -382,6 +382,37 @@ body {
   margin: 0;
 }
 
+/* ── GROUP HEADERS ── */
+.g2c-group-hdr {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 52px 0 12px;
+  border-top: 2px solid rgba(255,255,255,0.06);
+  margin-top: 8px;
+}
+.g2c-group-hdr:first-child {
+  border-top: none;
+  padding-top: 36px;
+}
+.g2c-group-title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  margin: 0;
+  white-space: nowrap;
+  color: rgba(232,237,245,0.7);
+}
+.g2c-group-bar {
+  flex-grow: 1;
+  height: 2px;
+  border-radius: 2px;
+}
+.g2c-grp-things .g2c-group-bar    { background: linear-gradient(to right, var(--cup-red), transparent); }
+.g2c-grp-stay .g2c-group-bar      { background: linear-gradient(to right, var(--go-blue), transparent); }
+.g2c-grp-transport .g2c-group-bar { background: linear-gradient(to right, var(--go-green), transparent); }
+.g2c-grp-luxury .g2c-group-bar    { background: linear-gradient(to right, var(--gold), transparent); }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 640px) {
   .site-header { justify-content: center; }
@@ -422,6 +453,12 @@ body {
 
 <!-- ── MAIN CONTENT ── -->
 <main class="container">
+
+  <!-- ── GROUP: THINGS TO DO ── -->
+  <div id="things" class="g2c-group-hdr g2c-grp-things">
+    <h2 class="g2c-group-title">Things to Do</h2>
+    <div class="g2c-group-bar"></div>
+  </div>
 
   <!-- ═══════════════════════════════════════════════════
        CATEGORY: Tours, Activities & Experiences
@@ -530,6 +567,12 @@ body {
     </div>
   </section>
 
+  <!-- ── GROUP: STAY & ESSENTIALS ── -->
+  <div id="stay" class="g2c-group-hdr g2c-grp-stay">
+    <h2 class="g2c-group-title">Stay &amp; Essentials</h2>
+    <div class="g2c-group-bar"></div>
+  </div>
+
   <!-- ═══════════════════════════════════════════════════
        CATEGORY: eSIM & Mobile Data
        ADD NEW CARDS: copy an <article class="aff-card"> block and paste before the closing </div>
@@ -575,6 +618,95 @@ body {
       </article>
 
       <!-- ADD NEW eSIM CARDS HERE -->
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CATEGORY: Luggage Storage
+       ADD NEW CARDS: copy an <article class="aff-card"> block and paste before the closing </div>
+  ════════════════════════════════════════════════════ -->
+  <section class="cat-section cat-gold" id="luggage">
+    <div class="cat-header">
+      <span class="cat-icon">🧳</span>
+      <h2 class="cat-title">Luggage Storage</h2>
+      <div class="cat-accent"></div>
+    </div>
+    <div class="aff-grid">
+
+      <!-- Radical Storage -->
+      <article class="aff-card">
+        <h3 class="aff-brand">Radical Storage</h3>
+        <p class="aff-desc">Drop heavy bags at secure verified local luggage points.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=5867&u=https%3A%2F%2Fradicalstorage.com&campaign_id=209"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Find Storage →</a>
+      </article>
+
+      <!-- ADD NEW LUGGAGE STORAGE CARDS HERE -->
+
+    </div>
+  </section>
+
+  <!-- ── GROUP: TRANSPORT & RENTALS ── -->
+  <div id="transport" class="g2c-group-hdr g2c-grp-transport">
+    <h2 class="g2c-group-title">Transport &amp; Rentals</h2>
+    <div class="g2c-group-bar"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════
+       CATEGORY: Flights
+       ADD NEW CARDS: copy an <article class="aff-card"> block and paste before the closing </div>
+  ════════════════════════════════════════════════════ -->
+  <section class="cat-section cat-red" id="flights">
+    <div class="cat-header">
+      <span class="cat-icon">✈️</span>
+      <h2 class="cat-title">Flights</h2>
+      <div class="cat-accent"></div>
+    </div>
+    <div class="aff-grid">
+
+      <!-- Aviasales -->
+      <article class="aff-card">
+        <h3 class="aff-brand">Aviasales</h3>
+        <p class="aff-desc">Search hundreds of airlines for the cheapest flights.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=4114&u=https%3A%2F%2Faviasales.com&campaign_id=100"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Search Flights →</a>
+      </article>
+
+      <!-- ADD NEW FLIGHT CARDS HERE -->
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CATEGORY: Flight Delay Compensation
+       ADD NEW CARDS: copy an <article class="aff-card"> block and paste before the closing </div>
+  ════════════════════════════════════════════════════ -->
+  <section class="cat-section" id="compensation">
+    <div class="cat-header">
+      <span class="cat-icon">💸</span>
+      <h2 class="cat-title">Flight Delay Compensation</h2>
+      <div class="cat-accent"></div>
+    </div>
+    <div class="aff-grid">
+
+      <!-- AirHelp -->
+      <article class="aff-card">
+        <h3 class="aff-brand">AirHelp</h3>
+        <p class="aff-desc">Claim airline compensation for delayed/canceled flights.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=9139&u=https%3A%2F%2Fairhelp.com&campaign_id=120"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Check Claim →</a>
+      </article>
+
+      <!-- Compensair -->
+      <article class="aff-card">
+        <h3 class="aff-brand">Compensair</h3>
+        <p class="aff-desc">Manages flight delay/cancellation compensation claims.</p>
+        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=4129&u=https%3A%2F%2Fcompensair.com&campaign_id=86"
+           target="_blank" rel="noopener sponsored" class="aff-btn">Check Claim →</a>
+      </article>
+
+      <!-- ADD NEW COMPENSATION CARDS HERE -->
 
     </div>
   </section>
@@ -710,6 +842,12 @@ body {
     </div>
   </section>
 
+  <!-- ── GROUP: LUXURY / PREMIUM ── -->
+  <div id="luxury" class="g2c-group-hdr g2c-grp-luxury">
+    <h2 class="g2c-group-title">Luxury / Premium</h2>
+    <div class="g2c-group-bar"></div>
+  </div>
+
   <!-- ═══════════════════════════════════════════════════
        CATEGORY: Yacht & Boat Rentals
        ADD NEW CARDS: copy an <article class="aff-card"> block and paste before the closing </div>
@@ -731,89 +869,6 @@ body {
       </article>
 
       <!-- ADD NEW BOAT RENTAL CARDS HERE -->
-
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════
-       CATEGORY: Flights
-       ADD NEW CARDS: copy an <article class="aff-card"> block and paste before the closing </div>
-  ════════════════════════════════════════════════════ -->
-  <section class="cat-section cat-red" id="flights">
-    <div class="cat-header">
-      <span class="cat-icon">✈️</span>
-      <h2 class="cat-title">Flights</h2>
-      <div class="cat-accent"></div>
-    </div>
-    <div class="aff-grid">
-
-      <!-- Aviasales -->
-      <article class="aff-card">
-        <h3 class="aff-brand">Aviasales</h3>
-        <p class="aff-desc">Search hundreds of airlines for the cheapest flights.</p>
-        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=4114&u=https%3A%2F%2Faviasales.com&campaign_id=100"
-           target="_blank" rel="noopener sponsored" class="aff-btn">Search Flights →</a>
-      </article>
-
-      <!-- ADD NEW FLIGHT CARDS HERE -->
-
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════
-       CATEGORY: Flight Delay Compensation
-       ADD NEW CARDS: copy an <article class="aff-card"> block and paste before the closing </div>
-  ════════════════════════════════════════════════════ -->
-  <section class="cat-section" id="compensation">
-    <div class="cat-header">
-      <span class="cat-icon">💸</span>
-      <h2 class="cat-title">Flight Delay Compensation</h2>
-      <div class="cat-accent"></div>
-    </div>
-    <div class="aff-grid">
-
-      <!-- AirHelp -->
-      <article class="aff-card">
-        <h3 class="aff-brand">AirHelp</h3>
-        <p class="aff-desc">Claim airline compensation for delayed/canceled flights.</p>
-        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=9139&u=https%3A%2F%2Fairhelp.com&campaign_id=120"
-           target="_blank" rel="noopener sponsored" class="aff-btn">Check Claim →</a>
-      </article>
-
-      <!-- Compensair -->
-      <article class="aff-card">
-        <h3 class="aff-brand">Compensair</h3>
-        <p class="aff-desc">Manages flight delay/cancellation compensation claims.</p>
-        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=4129&u=https%3A%2F%2Fcompensair.com&campaign_id=86"
-           target="_blank" rel="noopener sponsored" class="aff-btn">Check Claim →</a>
-      </article>
-
-      <!-- ADD NEW COMPENSATION CARDS HERE -->
-
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════
-       CATEGORY: Luggage Storage
-       ADD NEW CARDS: copy an <article class="aff-card"> block and paste before the closing </div>
-  ════════════════════════════════════════════════════ -->
-  <section class="cat-section cat-gold" id="luggage">
-    <div class="cat-header">
-      <span class="cat-icon">🧳</span>
-      <h2 class="cat-title">Luggage Storage</h2>
-      <div class="cat-accent"></div>
-    </div>
-    <div class="aff-grid">
-
-      <!-- Radical Storage -->
-      <article class="aff-card">
-        <h3 class="aff-brand">Radical Storage</h3>
-        <p class="aff-desc">Drop heavy bags at secure verified local luggage points.</p>
-        <a href="https://tp.media/r?marker=736515.worldcup26&trs=536726&p=5867&u=https%3A%2F%2Fradicalstorage.com&campaign_id=209"
-           target="_blank" rel="noopener sponsored" class="aff-btn">Find Storage →</a>
-      </article>
-
-      <!-- ADD NEW LUGGAGE STORAGE CARDS HERE -->
 
     </div>
   </section>
