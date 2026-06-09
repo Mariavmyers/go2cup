@@ -142,6 +142,7 @@
 .g2pub__card { background:var(--surface); border-radius:7px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,0.06), 0 4px 14px rgba(0,0,0,0.04); transition:box-shadow 0.22s ease, transform 0.22s ease; animation:g2fadein 0.4s ease both; }
 @keyframes g2fadein { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
 .g2pub__card:hover { box-shadow:0 4px 18px rgba(0,0,0,0.11), 0 12px 32px rgba(0,0,0,0.07); transform:translateY(-2px); }
+.g2pub__card--today { background:#f1fff6; border:1px solid #b7e4c7; }
 .g2pub__card-img { width:100%; height:150px; overflow:hidden; display:block; position:relative; }
 .g2pub__card-img img { width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.4s ease; }
 .g2pub__card:hover .g2pub__card-img img { transform:scale(1.04); }
@@ -352,6 +353,132 @@ prices, and travel requirements with official sources before booking.
 
   /* Paste real curated news item objects inside this array, newest first. */
   var sportsNewsData = [
+  {
+    sport: "worldcup",
+    category: "World Cup Archive",
+    publishedDate: "2026-06-09",
+    title: "FIFA revisits Benjamin Pavard's World Cup wonder goal",
+    summary: "FIFA spotlighted Benjamin Pavard's long-range strike for France against Argentina at the 2018 World Cup, one of the most replayed knockout-stage goals from that tournament.",
+    go2cupAngle: "Historic World Cup moments help build fan culture before 2026. These archive features are useful for SportDGX News because they keep casual fans connected to iconic players, national-team memories, and tournament storytelling.",
+    fanTravelImpact: "Fans planning World Cup 2026 trips can use these archive pieces to build match-day excitement, watch-party themes, and content around national-team history.",
+    sourceName: "FIFA",
+    sourceUrl: "https://www.fifa.com/en/articles/benjamin-pavard-france-argentina-2018",
+    imageUrl: "TODO_IMAGE_URL",
+    imageAlt: "France supporters celebrating a World Cup goal",
+    tags: ["FIFA", "World Cup", "France", "Benjamin Pavard"]
+  },
+  {
+    sport: "worldcup",
+    category: "World Cup Archive",
+    publishedDate: "2026-06-09",
+    title: "FIFA countdown recalls Zidane's headers against Brazil",
+    summary: "FIFA's countdown content revisited Zinedine Zidane's two headed goals for France against Brazil in the 1998 World Cup final, one of the defining performances in tournament history.",
+    go2cupAngle: "Countdown stories are strong fan-engagement content. They connect today's World Cup 2026 audience with legendary players, famous finals, and the emotional history that makes the tournament bigger than one match schedule.",
+    fanTravelImpact: "France and Brazil supporters traveling in 2026 should expect these rivalry memories to appear in fan zones, watch parties, media coverage, and supporter conversations.",
+    sourceName: "FIFA",
+    sourceUrl: "https://www.fifa.com/en/articles/zinedine-zidane-headers-1998-final",
+    imageUrl: "TODO_IMAGE_URL",
+    imageAlt: "France and Brazil World Cup final atmosphere",
+    tags: ["FIFA", "World Cup", "Zinedine Zidane", "Brazil"]
+  },
+  {
+    sport: "worldcup",
+    category: "Tournament Guide",
+    publishedDate: "2026-06-09",
+    title: "FIFA World Cup 2026 line-up is complete with 48 qualified teams",
+    summary: "FIFA's qualified-teams page lists all 48 teams for the 2026 World Cup, including the three co-hosts Canada, Mexico and the United States, plus qualifiers from AFC, CAF, Concacaf, CONMEBOL, OFC and UEFA.",
+    go2cupAngle: "The completed field turns World Cup planning from general interest into real fan travel decisions. Supporters can now connect teams with groups, host cities, ticket demand, travel routes, and likely watch-party markets.",
+    fanTravelImpact: "Fans should start matching their national team's fixtures with host cities, hotel zones, airports, ground transportation, and ticket windows before prices and availability move again.",
+    sourceName: "FIFA",
+    sourceUrl: "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/world-cup-2026-who-has-qualified",
+    imageUrl: "TODO_IMAGE_URL",
+    imageAlt: "Flags of World Cup 2026 qualified nations",
+    tags: ["World Cup 2026", "Qualified Teams", "Groups", "Fan Travel"]
+  },
+  {
+    sport: "worldcup",
+    category: "Fixtures / Schedule",
+    publishedDate: "2026-06-09",
+    title: "FIFA match schedule gives fans the full 104-game World Cup roadmap",
+    summary: "FIFA's official match schedule shows the full 104-match structure for World Cup 2026 across Canada, Mexico and the United States, including group-stage games, knockout rounds, semi-finals and the final.",
+    go2cupAngle: "The schedule is the backbone of SportDGX News coverage. Every hotel decision, fan route, watch party, sponsor activation, and host-city story starts with where and when matches are played.",
+    fanTravelImpact: "Fans should use the official schedule before booking flights, hotels, rental cars, parking, tickets, and multi-city routes because fixture timing can change the best travel plan.",
+    sourceName: "FIFA",
+    sourceUrl: "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+    imageUrl: "TODO_IMAGE_URL",
+    imageAlt: "World Cup 2026 match schedule graphic",
+    tags: ["World Cup 2026", "Match Schedule", "Fixtures", "Host Cities"]
+  },
+  {
+    sport: "worldcup",
+    category: "Tournament Guide",
+    publishedDate: "2026-06-09",
+    title: "FIFA guide explains World Cup 2026 fixtures, groups, teams and host cities",
+    summary: "FIFA's tournament guide brings together key World Cup 2026 information, including teams, groups, fixtures, host countries, cities, dates and ticket information.",
+    go2cupAngle: "This is a core reference story for SportDGX News. It gives fans one official place to confirm the facts before SportDGX adds the fan-travel, host-city, and sports-business angle.",
+    fanTravelImpact: "Fans should bookmark the official guide and compare it with local host-city information before making travel, ticket, hotel, parking or watch-party plans.",
+    sourceName: "FIFA",
+    sourceUrl: "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-hosts-cities-dates-usa-mexico-canada",
+    imageUrl: "TODO_IMAGE_URL",
+    imageAlt: "World Cup 2026 host city and team information",
+    tags: ["World Cup 2026", "Host Cities", "Tickets", "Tournament Guide"]
+  },
+  {
+    sport: "worldcup",
+    category: "Team News",
+    publishedDate: "2026-06-09",
+    title: "David Alaba says Austria are aiming high at World Cup 2026",
+    summary: "FIFA featured Austria captain David Alaba as Austria prepare for World Cup 2026, with the defender framing the tournament as a major opportunity for the national team.",
+    go2cupAngle: "Austria's return gives SportDGX News another strong team-watch story. Alaba brings star power, leadership, and European supporter interest into the 2026 fan-travel picture.",
+    fanTravelImpact: "Austria fans should track group-stage cities, supporter meetups, hotel demand, and match-day travel routes as interest builds around the team's fixtures.",
+    sourceName: "FIFA",
+    sourceUrl: "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/david-alaba-austria-interview",
+    imageUrl: "TODO_IMAGE_URL",
+    imageAlt: "Austria football supporters at an international match",
+    tags: ["Austria", "David Alaba", "World Cup 2026", "Team Watch"]
+  },
+  {
+    sport: "worldcup",
+    category: "World Cup Archive",
+    publishedDate: "2026-06-09",
+    title: "FIFA archive looks back at Milutinovic's World Cup impact",
+    summary: "FIFA's archive content revisits Bora Milutinovic, the celebrated coach known for leading multiple national teams at the World Cup and shaping tournament history across different football cultures.",
+    go2cupAngle: "Coach legacy stories add depth to World Cup coverage. They help SportDGX News explain how national-team identity, tactics, and fan expectations are built over many tournament cycles.",
+    fanTravelImpact: "Archive stories like this are useful for fans creating country-focused watch parties, cultural guides, and pre-match storytelling around national-team history.",
+    sourceName: "FIFA",
+    sourceUrl: "https://www.fifa.com/en/articles/bora-milutinovic-world-cup-coach",
+    imageUrl: "TODO_IMAGE_URL",
+    imageAlt: "World Cup coach on the sideline",
+    tags: ["FIFA", "World Cup Archive", "Bora Milutinovic", "Coaches"]
+  },
+  {
+    sport: "worldcup",
+    category: "World Cup Archive",
+    publishedDate: "2026-06-09",
+    title: "FIFA remembers Slovakia ending Italy's World Cup reign",
+    summary: "FIFA's archive revisits Slovakia's famous 2010 World Cup win over Italy, a result that eliminated the defending champions and became one of the tournament's memorable group-stage shocks.",
+    go2cupAngle: "Upset stories are perfect World Cup content because they remind fans that reputation does not guarantee survival. SportDGX News can use these moments to explain why every group-stage match matters.",
+    fanTravelImpact: "Fans traveling for group-stage matches should treat every game as meaningful because historic upsets often happen before the knockout rounds begin.",
+    sourceName: "FIFA",
+    sourceUrl: "https://www.fifa.com/en/articles/slovakia-italy-2010-world-cup",
+    imageUrl: "TODO_IMAGE_URL",
+    imageAlt: "Slovakia supporters celebrating a World Cup upset",
+    tags: ["FIFA", "Slovakia", "Italy", "World Cup Archive"]
+  },
+  {
+    sport: "worldcup",
+    category: "World Cup Archive",
+    publishedDate: "2026-06-09",
+    title: "FIFA archive highlights Coll's lasting corner-kick record",
+    summary: "FIFA's archive content looks back at Coll's enduring World Cup corner achievement, connecting older tournament history with modern fan interest in records and unusual milestones.",
+    go2cupAngle: "Record stories give SportDGX News lightweight but useful World Cup content between major breaking-news updates. They help fans learn tournament history while waiting for current match and travel news.",
+    fanTravelImpact: "These archive stories can support watch-party trivia, fan guides, newsletter items, and social posts for supporters following World Cup history before 2026.",
+    sourceName: "FIFA",
+    sourceUrl: "https://www.fifa.com/en/articles/coll-corner-world-cup-record",
+    imageUrl: "TODO_IMAGE_URL",
+    imageAlt: "Historic World Cup corner kick moment",
+    tags: ["FIFA", "World Cup Records", "Archive", "Fan Culture"]
+  },
   {
     sport: "worldcup",
     category: "Kansas City / Fan Festival",
@@ -664,8 +791,11 @@ prices, and travel requirements with official sources before booking.
     if (items.length === 0) {
       html += '<div class="g2pub__empty">No stories from the last ' + MAX_AGE_DAYS + ' days for this sport.<br>Add recent items with <code>sport: "' + col.key + '"</code> to sportsNewsData.</div>';
     } else {
+      var _d = new Date();
+      var _todayStr = _d.getFullYear() + '-' + String(_d.getMonth()+1).padStart(2,'0') + '-' + String(_d.getDate()).padStart(2,'0');
       for (var i = 0; i < items.length; i++) {
-        html += '<article class="g2pub__card" style="animation-delay:' + (0.05 + i * 0.08).toFixed(2) + 's">' + buildCard(items[i], col) + '</article>';
+        var _cardClass = 'g2pub__card' + (items[i].publishedDate === _todayStr ? ' g2pub__card--today' : '');
+        html += '<article class="' + _cardClass + '" style="animation-delay:' + (0.05 + i * 0.08).toFixed(2) + 's">' + buildCard(items[i], col) + '</article>';
       }
     }
 
