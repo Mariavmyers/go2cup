@@ -60,8 +60,8 @@
     html { scroll-behavior: smooth; }
     body {
       font-family: 'DM Sans', sans-serif;
-      background: var(--warm-white);
-      color: var(--text-dark);
+      background: #1C1232;
+      color: rgba(255,255,255,0.88);
       line-height: 1.65;
       overflow-x: hidden;
     }
@@ -121,7 +121,7 @@
     /* ── HERO ── */
     .hero {
       min-height: 100vh;
-      background: linear-gradient(135deg, #fdf8f4 0%, #f8f0e8 40%, #f3e8de 100%);
+      background: linear-gradient(135deg, #1C1232 0%, #2D1B55 50%, #3A2468 100%);
       display: flex; align-items: center;
       position: relative; overflow: hidden;
       padding: 100px 0 80px;
@@ -129,8 +129,8 @@
     .hero-bg {
       position: absolute; inset: 0; pointer-events: none;
       background:
-        radial-gradient(ellipse 70% 70% at 80% 30%, rgba(201,130,107,0.09) 0%, transparent 65%),
-        radial-gradient(ellipse 40% 60% at 5% 90%, rgba(201,130,107,0.05) 0%, transparent 55%);
+        radial-gradient(ellipse 70% 70% at 80% 30%, rgba(155,100,220,0.18) 0%, transparent 65%),
+        radial-gradient(ellipse 40% 60% at 5% 90%, rgba(201,130,107,0.1) 0%, transparent 55%);
     }
     .hero-line {
       position: absolute; top: 0; bottom: 0; left: 0;
@@ -147,17 +147,17 @@
 
     /* Photo */
     .photo-wrap { position: relative; display: flex; flex-direction: column; align-items: center; }
+    .photo-box { position: relative; }
     .photo-glow {
       position: absolute; top: -20px; left: -20px; right: -20px; bottom: -20px;
-      
-      background: radial-gradient(ellipse at center, rgba(201,130,107,0.18) 0%, transparent 70%);
+      background: radial-gradient(ellipse at center, rgba(155,100,220,0.22) 0%, transparent 70%);
       pointer-events: none;
-      border-radius: 14px;
+      border-radius: 18px;
     }
     .photo-ring {
       position: absolute; inset: -10px;
-      border-radius: 14px;
-      border: 1px solid rgba(201,130,107,0.3);
+      border-radius: 18px;
+      border: 1px solid rgba(180,130,230,0.4);
       animation: breathe 4s ease-in-out infinite;
     }
     @keyframes breathe {
@@ -172,7 +172,7 @@
       box-shadow:
         0 0 0 10px rgba(201,130,107,0.08),
         0 32px 80px rgba(0,0,0,0.55),
-        0 0 50px rgba(201,130,107,0.14);
+        0 0 50px rgba(155,100,220,0.2);
       position: relative;
     }
     .photo-frame img {
@@ -182,26 +182,26 @@
     }
     .photo-frame:hover img { transform: scale(1.04); }
     .photo-badge {
-      position: absolute; bottom: -18px; left: 50%; transform: translateX(-50%);
+      margin-top: 20px;
       background: var(--rose-gold); color: var(--white);
       font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
       padding: 8px 24px; border-radius: 40px; white-space: nowrap;
       box-shadow: 0 6px 24px rgba(201,130,107,0.4);
     }
-    .lang-pills { display: flex; gap: 10px; margin-top: 36px; justify-content: center; flex-wrap: wrap; }
+    .lang-pills { display: flex; gap: 10px; margin-top: 16px; justify-content: center; flex-wrap: wrap; }
     .lang-pill {
-      display: inline-block;
-      padding: 9px 18px;
-      font-size: 12px; font-weight: 700;
+      display: inline-flex; align-items: center;
+      padding: 8px 18px;
+      font-size: 11.5px; font-weight: 600;
       letter-spacing: 0.06em; text-transform: uppercase;
-      border-radius: 4px;
+      border-radius: 40px;
+      background: rgba(155,100,220,0.14);
+      border: 1px solid rgba(180,130,230,0.45);
+      color: rgba(255,255,255,0.85);
       text-decoration: none;
-      transition: opacity 0.2s, transform 0.15s;
+      transition: background 0.2s, border-color 0.2s, transform 0.15s;
     }
-    .lang-pill:hover { opacity: 0.85; transform: translateY(-1px); text-decoration: none; }
-    .lang-pill.pt { background: #daeeff; color: #1a5f8a; border: 1px solid #a8d4f0; }
-    .lang-pill.es { background: #ffe0e0; color: #8a2020; border: 1px solid #f0a8a8; }
-    .lang-pill.it { background: #d6f5e0; color: #1a6b38; border: 1px solid #9dddb8; }
+    .lang-pill:hover { background: rgba(155,100,220,0.30); border-color: #c4a0e8; color: #fff; transform: translateY(-1px); text-decoration: none; }
 
     /* Hero text */
     .hero-eyebrow {
@@ -212,21 +212,21 @@
     .hero-eyebrow::before { content:''; display:block; width:28px; height:1px; background:var(--rose-gold); }
     .hero-name {
       font-size: clamp(54px, 5.5vw, 80px);
-      font-weight: 900; color: var(--text-dark);
+      font-weight: 900; color: var(--white);
       letter-spacing: -0.02em; line-height: 1.0;
       margin-bottom: 14px;
     }
     .hero-name em { font-style: italic; color: var(--rose-gold); }
     .hero-role {
       font-size: 15px; font-weight: 400;
-      color: rgba(40,25,15,0.5);
+      color: rgba(255,255,255,0.65);
       letter-spacing: 0.03em; margin-bottom: 28px;
       border-left: 2px solid var(--rose-gold);
       padding-left: 16px; line-height: 1.6;
     }
     .hero-bar { width: 48px; height: 2px; background: var(--rose-gold); margin: 20px 0 26px; }
     .hero-bio {
-      font-size: 16.5px; color: #2D1810;
+      font-size: 16.5px; color: rgba(255,255,255,0.82);
       line-height: 1.85; max-width: 540px; margin-bottom: 24px;
     }
     .hero-quote {
@@ -256,24 +256,24 @@
     .btn-o:hover { border-color: var(--rose-gold); color: var(--rose-light); transform: translateY(-2px); }
 
     /* ── ABOUT ── */
-    .about-sec { background: var(--off-white); padding: 90px 0; }
+    .about-sec { background: #231545; padding: 90px 0; }
     .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
     .sec-label { font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rose-gold); margin-bottom: 14px; }
-    .sec-h2 { font-size: clamp(28px, 3.5vw, 44px); font-weight: 700; color: var(--black); margin-bottom: 22px; line-height: 1.15; }
-    .sec-h2 em { font-style: italic; color: var(--red); }
-    .about-p { font-size: 15.5px; color: var(--text-mid); line-height: 1.85; margin-bottom: 16px; }
+    .sec-h2 { font-size: clamp(28px, 3.5vw, 44px); font-weight: 700; color: var(--white); margin-bottom: 22px; line-height: 1.15; }
+    .sec-h2 em { font-style: italic; color: var(--rose-light); }
+    .about-p { font-size: 15.5px; color: rgba(255,255,255,0.72); line-height: 1.85; margin-bottom: 16px; }
     .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 36px; }
     .stat-c {
-      background: var(--white); border: 1px solid var(--border);
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(155,100,220,0.25);
       border-radius: var(--r-md); padding: 24px 20px; text-align: center;
       transition: transform 0.25s, box-shadow 0.25s;
     }
     .stat-c:hover { transform: translateY(-4px); box-shadow: var(--shadow-rose); }
     .stat-n { font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 700; color: var(--rose-gold); line-height: 1; }
-    .stat-l { font-size: 12px; color: var(--text-soft); margin-top: 6px; font-weight: 500; }
+    .stat-l { font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 6px; font-weight: 500; }
 
     /* ── MAINENTRY DARK ── */
-    .me-sec { background: linear-gradient(135deg, #fdf8f4 0%, #f8f0e8 40%, #f3e8de 100%); padding: 90px 0; position: relative; overflow: hidden; }
+    .me-sec { background: linear-gradient(135deg, #1C1232 0%, #2D1B55 50%, #1C1232 100%); padding: 90px 0; position: relative; overflow: hidden; }
     .me-sec::before {
       content:''; position:absolute; top:-80px; right:-80px;
       width:450px; height:450px; border-radius:50%;
@@ -297,31 +297,31 @@
     .me-card p { font-size: 17px; color: rgba(255,255,255,0.75); line-height: 1.9; }
 
     /* ── PROJECTS ── */
-    .proj-sec { background: var(--warm-white); padding: 90px 0; }
-    .sec-h2-d { font-size: clamp(30px, 4vw, 50px); font-weight: 700; color: var(--black); margin-bottom: 14px; }
-    .sec-sub-d { font-size: 16px; color: var(--text-mid); max-width: 580px; margin: 0 auto; line-height: 1.75; }
+    .proj-sec { background: #251650; padding: 90px 0; }
+    .sec-h2-d { font-size: clamp(30px, 4vw, 50px); font-weight: 700; color: var(--white); margin-bottom: 14px; }
+    .sec-sub-d { font-size: 16px; color: rgba(255,255,255,0.62); max-width: 580px; margin: 0 auto; line-height: 1.75; }
     .proj-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 26px; }
     .proj-card {
-      background: var(--white);
-      border: 1px solid rgba(0,0,0,0.07);
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(155,100,220,0.22);
       border-radius: var(--r-lg); padding: 38px 30px;
       position: relative; overflow: hidden;
       transition: transform 0.3s, box-shadow 0.3s;
     }
     .proj-card:hover { transform: translateY(-7px); box-shadow: var(--shadow-dark); }
     .proj-card::before { content:''; position:absolute; top:0; left:0; right:0; height:4px; }
-    .go2cup::before { background: linear-gradient(90deg, #111, var(--rose-gold)); }
-    .lumina::before { background: linear-gradient(90deg, #2a2a2a, var(--rose-light)); }
+    .go2cup::before { background: linear-gradient(90deg, #6B3FA0, var(--rose-gold)); }
+    .lumina::before { background: linear-gradient(90deg, #4A2880, var(--rose-light)); }
     .vernillo::before { background: linear-gradient(90deg, var(--red), var(--rose-gold)); }
     .proj-icon {
       width: 50px; height: 50px; border-radius: 13px;
-      background: var(--off-white); display: flex;
+      background: rgba(255,255,255,0.08); display: flex;
       align-items: center; justify-content: center;
       font-size: 22px; margin-bottom: 22px;
     }
-    .proj-name { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--black); margin-bottom: 6px; }
+    .proj-name { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--white); margin-bottom: 6px; }
     .proj-tag { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--rose-gold); margin-bottom: 14px; }
-    .proj-desc { font-size: 14.5px; color: var(--text-mid); line-height: 1.8; }
+    .proj-desc { font-size: 14.5px; color: rgba(255,255,255,0.68); line-height: 1.8; }
 
     /* ── HELP ── */
     .help-sec { background: var(--charcoal-2); padding: 90px 0; }
@@ -338,7 +338,7 @@
     .h-title { font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.7); line-height: 1.4; transition: color 0.25s; }
 
     /* ── CONTACT ── */
-    .contact-sec { background: linear-gradient(135deg, #fdf8f4 0%, #f8f0e8 40%, #f3e8de 100%); padding: 100px 0; position: relative; overflow: hidden; }
+    .contact-sec { background: linear-gradient(135deg, #1C1232 0%, #2D1B55 60%, #231545 100%); padding: 100px 0; position: relative; overflow: hidden; }
     .contact-sec::after {
       content:''; position:absolute; bottom:-100px; right:-100px;
       width:400px; height:400px; border-radius:50%;
@@ -488,16 +488,18 @@
 
       <!-- Photo Column -->
       <div class="photo-wrap fade-l">
-        <div class="photo-glow"></div>
-        <div class="photo-ring"></div>
-        <div class="photo-frame">
-          <img src="maria-photo.jpg" alt="Maria Myers" loading="eager" />
-          <div class="photo-badge">Founder &amp; Owner</div>
+        <div class="photo-box">
+          <div class="photo-glow"></div>
+          <div class="photo-ring"></div>
+          <div class="photo-frame">
+            <img src="maria-photo.jpg" alt="Maria Myers" loading="eager" />
+          </div>
         </div>
+        <div class="photo-badge">Founder &amp; Owner of MainEntry LLC</div>
         <div class="lang-pills">
-          <a href="maria-myers-pt.html" class="lang-pill pt">🇧🇷 Português</a>
-          <a href="maria-myers-es.html" class="lang-pill es">🇪🇸 Español</a>
-          <a href="maria-myers-it.html" class="lang-pill it">🇮🇹 Italiano</a>
+          <a href="maria-myers-pt.html" class="lang-pill pt">Português</a>
+          <a href="maria-myers-es.html" class="lang-pill es">Español</a>
+          <a href="maria-myers-it.html" class="lang-pill it">Italiano</a>
         </div>
       </div>
 
