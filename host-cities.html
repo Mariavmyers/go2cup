@@ -178,19 +178,32 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 11px 14px;
-  border: 1px solid rgba(47,128,255,.2);
+  border: 2px solid #2d3748;
+  border-left: 6px solid #2d3748;
   border-radius: 0;
-  background: rgba(47,128,255,.07);
+  background: #1c2536;
   text-decoration: none !important;
+  font-weight: 500;
   transition: background .2s, border-color .2s;
   margin-bottom: 4px;
 }
 .city-link:hover {
-  background: rgba(47,128,255,.22);
-  border-color: rgba(47,128,255,.55);
-  padding-left: 18px;
+  background: #232d42;
   border-radius: 0;
 }
+/* ── per-city colors ── */
+.city-link[href*="guadalajara"],.city-link[href*="san-francisco"]{border-color:#8a6d1f;}
+.city-link[href*="guadalajara"]>span:first-child,.city-link[href*="san-francisco"]>span:first-child{color:#E5C07B!important;}
+.city-link[href*="atlanta"],.city-link[href*="monterrey"],.city-link[href*="boston"]{border-color:#8f3138;}
+.city-link[href*="atlanta"]>span:first-child,.city-link[href*="monterrey"]>span:first-child,.city-link[href*="boston"]>span:first-child{color:#E06C75!important;}
+.city-link[href*="mexico-city"],.city-link[href*="kansas-city"],.city-link[href*="toronto"]{border-color:#4f7236;}
+.city-link[href*="mexico-city"]>span:first-child,.city-link[href*="kansas-city"]>span:first-child,.city-link[href*="toronto"]>span:first-child{color:#98C379!important;}
+.city-link[href*="miami"],.city-link[href*="seattle"],.city-link[href*="vancouver"]{border-color:#2c6e77;}
+.city-link[href*="miami"]>span:first-child,.city-link[href*="seattle"]>span:first-child,.city-link[href*="vancouver"]>span:first-child{color:#56B6C2!important;}
+.city-link[href*="new-york"],.city-link[href*="dallas"],.city-link[href*="philadelphia"]{border-color:#2d6298;}
+.city-link[href*="new-york"]>span:first-child,.city-link[href*="dallas"]>span:first-child,.city-link[href*="philadelphia"]>span:first-child{color:#61AFEF!important;}
+.city-link[href*="los-angeles"],.city-link[href*="houston"]{border-color:#8a5a2f;}
+.city-link[href*="los-angeles"]>span:first-child,.city-link[href*="houston"]>span:first-child{color:#D19A66!important;}
 
 /* ── CUSTOM SCROLLBAR ── */
 .custom-scrollbar::-webkit-scrollbar { width: 4px; }

@@ -868,9 +868,15 @@ p { font-size: 1.05rem; color: var(--star-dim); margin-bottom: 1.4rem; max-width
 <!-- ── CITY NAV RESTYLE ── -->
 <style>
 .city-nav-grid .city-nav-link>span:first-child,.city-nav-link.city-nav-current>span:first-child{display:none!important;}
-.city-nav-link{background:rgba(47,128,255,.1)!important;border:1px solid rgba(47,128,255,.25)!important;border-radius:0!important;color:rgba(232,237,245,.85)!important;font-weight:600!important;}
-.city-nav-link:hover,.city-nav-link.active{background:#2f80ff!important;border-color:#2f80ff!important;color:#fff!important;}
-.city-nav-current{background:rgba(33,194,90,.18)!important;border-color:rgba(33,194,90,.4)!important;color:rgba(232,237,245,.9)!important;}
+.city-nav-link{background:#1c2536!important;border:2px solid #2d3748!important;border-left:6px solid #2d3748!important;border-radius:0!important;color:rgba(232,237,245,.8)!important;font-weight:500!important;transition:background .2s!important;}
+.city-nav-link:hover{background:#232d42!important;}
+.city-nav-current{background:#1c2536!important;border:2px solid rgba(33,194,90,.4)!important;border-left:6px solid rgba(33,194,90,.5)!important;border-radius:0!important;color:rgba(232,237,245,.65)!important;font-style:italic;}
+.city-nav-link[href*="guadalajara"],.city-nav-link[href*="san-francisco"]{border-color:#8a6d1f!important;color:#E5C07B!important;}
+.city-nav-link[href*="atlanta"],.city-nav-link[href*="monterrey"],.city-nav-link[href*="boston"]{border-color:#8f3138!important;color:#E06C75!important;}
+.city-nav-link[href*="mexico-city"],.city-nav-link[href*="kansas-city"],.city-nav-link[href*="toronto"]{border-color:#4f7236!important;color:#98C379!important;}
+.city-nav-link[href*="miami"],.city-nav-link[href*="seattle"],.city-nav-link[href*="vancouver"]{border-color:#2c6e77!important;color:#56B6C2!important;}
+.city-nav-link[href*="new-york"],.city-nav-link[href*="dallas"],.city-nav-link[href*="philadelphia"]{border-color:#2d6298!important;color:#61AFEF!important;}
+.city-nav-link[href*="los-angeles"],.city-nav-link[href*="houston"]{border-color:#8a5a2f!important;color:#D19A66!important;}
 </style>
 <!-- ── SITE FOOTER ── -->
 <style>
