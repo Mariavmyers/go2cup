@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Cup Matches Board — preview</title>
+<style>
+  /* ===== GO2CUP MATCHES BOARD — paste the <section class="wc-matches"> block into index.html ===== */
+  body{margin:0;background:#fdfcfb;font-family:'Inter','Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;}
+  .wc-matches{--go-blue:#2f80ff;--go-green:#21c25a;--cup-red:#ff4338;--ink:#1d2433;--ink-soft:#566072;--muted:#8a8f9b;--line:#e7e3db;--card:#fff;--soft:#f7f5f0;
+    max-width:1040px;margin:0 auto;padding:42px 22px 50px;color:var(--ink);}
+  .wc-matches .head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:8px;}
+  .wc-matches .live{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--cup-red);}
+  .wc-matches .dot{width:9px;height:9px;border-radius:50%;background:var(--cup-red);box-shadow:0 0 0 0 rgba(255,67,56,.6);animation:pulse 1.6s infinite;}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,67,56,.55)}70%{box-shadow:0 0 0 9px rgba(255,67,56,0)}100%{box-shadow:0 0 0 0 rgba(255,67,56,0)}}
+  .wc-matches h2{font-size:30px;font-weight:800;letter-spacing:-.02em;margin:8px 0 2px;}
+  .wc-matches .meta{font-size:13px;color:var(--muted);}
+  .wc-matches .sched{font-size:13px;font-weight:700;color:var(--go-blue);text-decoration:none;}
+
+  .wc-matches .result{margin:18px 0 26px;background:linear-gradient(135deg,#eafaf0 0%,#fff 60%);border:1px solid #cdeed8;border-radius:14px;padding:16px 18px;display:flex;flex-wrap:wrap;align-items:center;gap:14px;}
+  .wc-matches .ft{font-size:11px;font-weight:800;letter-spacing:.06em;color:#1f8a57;background:#d9f3e3;border-radius:20px;padding:4px 10px;}
+  .wc-matches .result .ln{font-size:18px;font-weight:800;}
+  .wc-matches .result .sub{font-size:13px;color:var(--ink-soft);}
+
+  .wc-matches .day{font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin:24px 0 12px;padding-bottom:7px;border-bottom:2px solid var(--line);}
+  .wc-matches .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;}
+  .wc-matches .m{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:14px 16px;}
+  .wc-matches .grp{font-size:10.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);}
+  .wc-matches .tm{display:flex;align-items:center;gap:9px;font-size:16px;font-weight:700;margin-top:7px;}
+  .wc-matches .code{display:inline-block;min-width:30px;font-size:11px;font-weight:800;letter-spacing:.04em;color:#fff;background:var(--go-blue);border-radius:5px;padding:2px 5px;text-align:center;}
+  .wc-matches .code.r{background:var(--cup-red);} .wc-matches .code.g{background:var(--go-green);}
+  .wc-matches .vs{font-size:11px;color:var(--muted);margin:3px 0 3px 6px;}
+  .wc-matches .when{margin-top:10px;font-size:13px;font-weight:700;color:var(--go-blue);}
+  .wc-matches .where{font-size:12.5px;color:var(--muted);}
+
+  .wc-matches .kc{margin-top:24px;background:#fff4f3;border:1px solid #ffd2ce;border-radius:13px;padding:15px 18px;}
+  .wc-matches .kc b{color:var(--cup-red);}
+  .wc-matches .kc .t{font-size:15px;font-weight:800;}
+  .wc-matches .kc .d{font-size:13px;color:var(--ink-soft);margin-top:2px;}
+
+  @media(max-width:560px){.wc-matches h2{font-size:24px;}}
+</style>
+</head>
+<body>
+
+<!-- ============ INSERT FROM HERE INTO index.html (right under the hero) ============ -->
+<section class="wc-matches">
+  <div class="head">
+    <div>
+      <span class="live"><span class="dot"></span>Live now · Group Stage</span>
+      <h2>World Cup — Today &amp; This Weekend</h2>
+      <div class="meta">Updated June 12 · all times Eastern (ET)</div>
+    </div>
+    <a class="sched" href="/sports-news.html">Full schedule →</a>
+  </div>
+
+  <div class="result">
+    <span class="ft">Full time</span>
+    <div>
+      <div class="ln">Mexico 2 – 0 South Africa</div>
+      <div class="sub">Opening match · Estadio Azteca, Mexico City · Quiñones &amp; Jiménez</div>
+    </div>
+  </div>
+
+  <div class="day">Today — Friday, June 12</div>
+  <div class="grid">
+    <div class="m">
+      <div class="grp">Group B</div>
+      <div class="tm"><span class="code r">CAN</span> Canada</div>
+      <div class="vs">vs</div>
+      <div class="tm"><span class="code">BIH</span> Bosnia &amp; Herzegovina</div>
+      <div class="when">3:00 PM ET</div>
+      <div class="where">BMO Field, Toronto</div>
+    </div>
+    <div class="m">
+      <div class="grp">Group D</div>
+      <div class="tm"><span class="code">USA</span> United States</div>
+      <div class="vs">vs</div>
+      <div class="tm"><span class="code r">PAR</span> Paraguay</div>
+      <div class="when">9:00 PM ET</div>
+      <div class="where">SoFi Stadium, Los Angeles</div>
+    </div>
+  </div>
+
+  <div class="day">Saturday, June 13</div>
+  <div class="grid">
+    <div class="m">
+      <div class="grp">Group B</div>
+      <div class="tm"><span class="code r">QAT</span> Qatar</div>
+      <div class="vs">vs</div>
+      <div class="tm"><span class="code">SUI</span> Switzerland</div>
+      <div class="when">3:00 PM ET</div>
+      <div class="where">Levi's Stadium, San Francisco Bay</div>
+    </div>
+    <div class="m">
+      <div class="grp">Group C</div>
+      <div class="tm"><span class="code g">BRA</span> Brazil</div>
+      <div class="vs">vs</div>
+      <div class="tm"><span class="code r">MAR</span> Morocco</div>
+      <div class="when">6:00 PM ET</div>
+      <div class="where">MetLife Stadium, New Jersey</div>
+    </div>
+    <div class="m">
+      <div class="grp">Group C</div>
+      <div class="tm"><span class="code">HAI</span> Haiti</div>
+      <div class="vs">vs</div>
+      <div class="tm"><span class="code">SCO</span> Scotland</div>
+      <div class="when">9:00 PM ET</div>
+      <div class="where">Gillette Stadium, Boston</div>
+    </div>
+  </div>
+
+  <div class="day">Sunday, June 14 — Highlights</div>
+  <div class="grid">
+    <div class="m">
+      <div class="grp">Group E</div>
+      <div class="tm"><span class="code g">GER</span> Germany</div>
+      <div class="vs">vs</div>
+      <div class="tm"><span class="code">CUW</span> Curaçao</div>
+      <div class="when">1:00 PM ET</div>
+      <div class="where">NRG Stadium, Houston</div>
+    </div>
+    <div class="m">
+      <div class="grp">Group F</div>
+      <div class="tm"><span class="code">NED</span> Netherlands</div>
+      <div class="vs">vs</div>
+      <div class="tm"><span class="code r">JPN</span> Japan</div>
+      <div class="when">4:00 PM ET</div>
+      <div class="where">AT&amp;T Stadium, Arlington</div>
+    </div>
+  </div>
+
+  <div class="kc">
+    <div class="t">🏟️ <b>Coming to Kansas City</b></div>
+    <div class="d">Ecuador vs Curaçao · Saturday, June 20 · Arrowhead Stadium — your home city is a 2026 host city.</div>
+  </div>
+</section>
+<!-- ============ INSERT TO HERE ============ -->
+
+</body>
+</html>
