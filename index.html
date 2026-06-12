@@ -352,9 +352,9 @@ display: inline-block;
 position: relative;
 z-index: 2;
 display: flex;
-align-items: stretch;
+align-items: center;
 justify-content: center;
-overflow: hidden;
+padding: clamp(2rem, 4vw, 4rem);
 }
 .hero-img-wrap {
 width: 100%;
@@ -1418,6 +1418,24 @@ font-size: 10px;
 .chapter-link { padding: 0.85rem 1rem; }
 .chapter-title { font-size: 13px; }
 }
+/* ===== TRIP PANEL ===== */
+.wc-trip{--blue:#2f80ff;--green:#21c25a;--red:#ff4338;--gold:#ffd84d;--cyan:#27c4d6;
+  width:380px;max-width:100%;background:rgba(8,22,14,.55);backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:22px 20px 16px;
+  box-shadow:0 18px 50px rgba(0,0,0,.35);color:#fff;}
+.wc-trip .eb{display:block;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--green);}
+.wc-trip .sub{display:block;font-size:13.5px;color:rgba(255,255,255,.7);margin:5px 0 16px;}
+.wc-trip a.trip-btn{display:flex;align-items:center;gap:13px;text-decoration:none;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;
+  padding:12px 14px;margin-bottom:9px;transition:transform .14s ease,background .14s ease,border-color .14s ease;}
+.wc-trip a.trip-btn:hover{transform:translateX(3px);background:rgba(255,255,255,.12);border-color:var(--ac);}
+.wc-trip .ic{flex-shrink:0;width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+  font-size:19px;background:rgba(255,255,255,.1);box-shadow:inset 0 0 0 1.5px var(--ac);}
+.wc-trip .tx{display:flex;flex-direction:column;line-height:1.25;flex:1;}
+.wc-trip .tx b{font-size:15px;font-weight:700;color:#fff;}
+.wc-trip .tx i{font-style:normal;font-size:12px;color:rgba(255,255,255,.6);margin-top:1px;}
+.wc-trip .ar{color:var(--ac);font-size:18px;font-weight:700;}
+.wc-trip .disc{font-size:10.5px;color:rgba(255,255,255,.45);margin-top:8px;text-align:center;}
 /* ===== MATCHES BOARD ===== */
 .wc-matches{--go-blue:#2f80ff;--go-green:#21c25a;--cup-red:#ff4338;--ink:#1d2433;--ink-soft:#566072;--muted:#8a8f9b;--line:#e7e3db;--card:#fff;--soft:#f7f5f0;max-width:1040px;margin:0 auto;padding:42px 22px 50px;color:var(--ink);}
 .wc-matches .head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:8px;}
@@ -1547,13 +1565,42 @@ font-size: 10px;
     </div>
   </div>
   <div class="hero-right">
-    <div class="hero-img-wrap" style="background:linear-gradient(135deg,#0d1f0e 0%,#1a3a1e 45%,#0057b8 100%);">
-      <div class="hero-img-overlay"></div>
-      <div class="hero-img-badge">
-        <div class="badge-num">55</div>
-        <div class="badge-label">Days to the Final</div>
-      </div>
-    </div>
+    <aside class="wc-trip">
+      <span class="eb">⚽ Plan your World Cup trip</span>
+      <span class="sub">Everything for the journey — booked in a tap.</span>
+
+      <a class="trip-btn" href="/where-to-stay.html" style="--ac:#2f80ff">
+        <span class="ic">🏨</span>
+        <span class="tx"><b>Find Hotels</b><i>Stays near every host city</i></span>
+        <span class="ar">→</span>
+      </a>
+
+      <a class="trip-btn" href="https://aviasales.tpk.lu/gsLDMhOV" target="_blank" rel="sponsored noopener" style="--ac:#21c25a">
+        <span class="ic">✈️</span>
+        <span class="tx"><b>Find Flights</b><i>Compare every airline</i></span>
+        <span class="ar">→</span>
+      </a>
+
+      <a class="trip-btn" href="https://kiwitaxi.tpk.lu/BqfvRurI" target="_blank" rel="sponsored noopener" style="--ac:#ffd84d">
+        <span class="ic">🚕</span>
+        <span class="tx"><b>Airport Transfers</b><i>Door-to-door rides</i></span>
+        <span class="ar">→</span>
+      </a>
+
+      <a class="trip-btn" href="https://tiqets.tpk.lu/finZfjdm" target="_blank" rel="sponsored noopener" style="--ac:#ff4338">
+        <span class="ic">🎟️</span>
+        <span class="tx"><b>Tickets &amp; Attractions</b><i>Skip-the-line in host cities</i></span>
+        <span class="ar">→</span>
+      </a>
+
+      <a class="trip-btn" href="https://yesim.tpk.lu/C1Ccs6ol" target="_blank" rel="sponsored noopener" style="--ac:#27c4d6">
+        <span class="ic">📱</span>
+        <span class="tx"><b>eSIM Data</b><i>Stay connected abroad</i></span>
+        <span class="ar">→</span>
+      </a>
+
+      <div class="disc">We may earn a commission from these partner links.</div>
+    </aside>
   </div>
 </section>
 
