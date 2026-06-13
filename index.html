@@ -215,9 +215,9 @@ transition: all 0.2s;
 background: var(--dark-pitch);
 position: relative;
 overflow: hidden;
-min-height: 88vh;
+min-height: auto;
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 3fr 2fr;
 align-items: stretch;
 }
 @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } }
@@ -1548,22 +1548,22 @@ font-size: 10px;
   <div class="hero-pitch-lines"></div>
   <div class="hero-left fade-in" style="padding-top:1.5rem;justify-content:flex-start;">
     <div class="hero-eyebrow" style="margin-bottom:0.5rem;">🏆 THE WORLD CUP IS LIVE — GROUP STAGE</div>
-    <h1 style="font-size:clamp(1.2rem,3vw,2.8rem);line-height:1.1;margin-bottom:0.35rem;">PLAN YOUR <span class="accent">WORLD CUP</span> <span class="fire-accent">JOURNEY.</span></h1>
-    <div class="hero-tagline" style="margin-bottom:0.85rem;">USA · México · Canadá · Host Cities · Hotels · Fan Intel</div>
+    <h1 style="font-size:clamp(40px,6vw,64px);line-height:1.05;margin-bottom:0.35rem;">PLAN YOUR <span class="accent">WORLD CUP</span> <span class="fire-accent">JOURNEY.</span></h1>
+    <div class="hero-tagline" style="margin-bottom:1rem;">USA · México · Canadá · Host Cities · Hotels · Fan Intel</div>
 
-    <!-- Compact scoreboard -->
-    <div style="background:rgba(4,14,8,0.92);border:1px solid rgba(47,128,255,0.22);border-radius:10px;overflow:hidden;margin-bottom:1.25rem;max-width:520px;font-family:'Barlow Condensed',sans-serif;">
+    <!-- Scoreboard -->
+    <div style="background:rgba(4,14,8,0.92);border:1px solid rgba(47,128,255,0.22);border-radius:10px;overflow:hidden;margin-bottom:1.5rem;font-family:'Barlow Condensed',sans-serif;">
 
       <!-- TODAY -->
-      <div style="background:rgba(47,128,255,0.13);border-bottom:1px solid rgba(47,128,255,0.28);padding:5px 12px;">
+      <div style="background:rgba(47,128,255,0.13);border-bottom:1px solid rgba(47,128,255,0.28);padding:6px 14px;">
         <span style="font-size:10px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:#5ba8ff;">● Today · Sat, June 13</span>
       </div>
-      <div style="display:flex;align-items:center;gap:10px;padding:7px 12px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <span style="flex:0 0 auto;background:rgba(47,128,255,0.2);color:#7ec0ff;font-size:10px;font-weight:700;letter-spacing:0.06em;padding:2px 7px;border-radius:3px;white-space:nowrap;">3:00 PM</span>
-        <div style="flex:1;display:flex;align-items:center;gap:5px;font-size:12px;font-weight:700;color:#fff;min-width:0;">
+      <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
+        <span style="flex:0 0 auto;background:rgba(47,128,255,0.2);color:#7ec0ff;font-size:10px;font-weight:700;letter-spacing:0.06em;padding:2px 8px;border-radius:3px;white-space:nowrap;">3:00 PM</span>
+        <div style="flex:1;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:700;color:#fff;min-width:0;">
           <img src="https://flagcdn.com/32x24/qa.png" width="16" alt="Qatar" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
           <span>Qatar</span>
-          <span style="color:rgba(255,255,255,0.3);font-weight:400;font-size:10px;padding:0 2px;">vs</span>
+          <span style="color:rgba(255,255,255,0.3);font-weight:400;font-size:11px;padding:0 2px;">vs</span>
           <img src="https://flagcdn.com/32x24/ch.png" width="16" alt="Switzerland" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
           <span>Switzerland</span>
         </div>
@@ -1572,12 +1572,12 @@ font-size: 10px;
           <div style="font-size:9px;color:rgba(255,255,255,0.25);white-space:nowrap;">19:00 UTC</div>
         </div>
       </div>
-      <div style="display:flex;align-items:center;gap:10px;padding:7px 12px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <span style="flex:0 0 auto;background:rgba(47,128,255,0.2);color:#7ec0ff;font-size:10px;font-weight:700;letter-spacing:0.06em;padding:2px 7px;border-radius:3px;white-space:nowrap;">6:00 PM</span>
-        <div style="flex:1;display:flex;align-items:center;gap:5px;font-size:12px;font-weight:700;color:#fff;min-width:0;">
+      <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
+        <span style="flex:0 0 auto;background:rgba(47,128,255,0.2);color:#7ec0ff;font-size:10px;font-weight:700;letter-spacing:0.06em;padding:2px 8px;border-radius:3px;white-space:nowrap;">6:00 PM</span>
+        <div style="flex:1;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:700;color:#fff;min-width:0;">
           <img src="https://flagcdn.com/32x24/br.png" width="16" alt="Brazil" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
           <span>Brazil</span>
-          <span style="color:rgba(255,255,255,0.3);font-weight:400;font-size:10px;padding:0 2px;">vs</span>
+          <span style="color:rgba(255,255,255,0.3);font-weight:400;font-size:11px;padding:0 2px;">vs</span>
           <img src="https://flagcdn.com/32x24/ma.png" width="16" alt="Morocco" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
           <span>Morocco</span>
         </div>
@@ -1586,12 +1586,12 @@ font-size: 10px;
           <div style="font-size:9px;color:rgba(255,255,255,0.25);white-space:nowrap;">22:00 UTC</div>
         </div>
       </div>
-      <div style="display:flex;align-items:center;gap:10px;padding:7px 12px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <span style="flex:0 0 auto;background:rgba(47,128,255,0.2);color:#7ec0ff;font-size:10px;font-weight:700;letter-spacing:0.06em;padding:2px 7px;border-radius:3px;white-space:nowrap;">9:00 PM</span>
-        <div style="flex:1;display:flex;align-items:center;gap:5px;font-size:12px;font-weight:700;color:#fff;min-width:0;">
+      <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
+        <span style="flex:0 0 auto;background:rgba(47,128,255,0.2);color:#7ec0ff;font-size:10px;font-weight:700;letter-spacing:0.06em;padding:2px 8px;border-radius:3px;white-space:nowrap;">9:00 PM</span>
+        <div style="flex:1;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:700;color:#fff;min-width:0;">
           <img src="https://flagcdn.com/32x24/ht.png" width="16" alt="Haiti" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
           <span>Haiti</span>
-          <span style="color:rgba(255,255,255,0.3);font-weight:400;font-size:10px;padding:0 2px;">vs</span>
+          <span style="color:rgba(255,255,255,0.3);font-weight:400;font-size:11px;padding:0 2px;">vs</span>
           <img src="https://flagcdn.com/32x24/gb-sct.png" width="16" alt="Scotland" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
           <span>Scotland</span>
         </div>
@@ -1602,48 +1602,48 @@ font-size: 10px;
       </div>
 
       <!-- FRI JUNE 12 -->
-      <div style="background:rgba(245,197,24,0.07);border-top:1px solid rgba(245,197,24,0.22);border-bottom:1px solid rgba(245,197,24,0.12);padding:4px 12px;">
+      <div style="background:rgba(245,197,24,0.07);border-top:1px solid rgba(245,197,24,0.22);border-bottom:1px solid rgba(245,197,24,0.12);padding:4px 14px;">
         <span style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#c8971a;">Fri, June 12 · FT</span>
       </div>
-      <div style="display:flex;align-items:center;gap:7px;padding:6px 12px;border-bottom:1px solid rgba(255,255,255,0.05);">
+      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
         <img src="https://flagcdn.com/32x24/us.png" width="16" alt="USA" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:12px;font-weight:700;color:#fff;flex:1;">United States</span>
-        <span style="font-size:14px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">4</span>
-        <span style="font-size:10px;color:rgba(255,255,255,0.25);padding:0 2px;">–</span>
-        <span style="font-size:14px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:12px;font-weight:700;color:#fff;flex:1;text-align:right;">Paraguay</span>
+        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">United States</span>
+        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">4</span>
+        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
+        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">1</span>
+        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Paraguay</span>
         <img src="https://flagcdn.com/32x24/py.png" width="16" alt="Paraguay" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
       </div>
-      <div style="display:flex;align-items:center;gap:7px;padding:6px 12px;">
+      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;">
         <img src="https://flagcdn.com/32x24/ca.png" width="16" alt="Canada" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:12px;font-weight:700;color:#fff;flex:1;">Canada</span>
-        <span style="font-size:14px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:10px;color:rgba(255,255,255,0.25);padding:0 2px;">–</span>
-        <span style="font-size:14px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:12px;font-weight:700;color:#fff;flex:1;text-align:right;">Bosnia &amp; Herz.</span>
+        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Canada</span>
+        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">1</span>
+        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
+        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">1</span>
+        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Bosnia &amp; Herz.</span>
         <img src="https://flagcdn.com/32x24/ba.png" width="16" alt="Bosnia" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
       </div>
 
       <!-- THU JUNE 11 -->
-      <div style="background:rgba(255,67,56,0.07);border-top:1px solid rgba(255,67,56,0.22);border-bottom:1px solid rgba(255,67,56,0.12);padding:4px 12px;">
+      <div style="background:rgba(255,67,56,0.07);border-top:1px solid rgba(255,67,56,0.22);border-bottom:1px solid rgba(255,67,56,0.12);padding:4px 14px;">
         <span style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#ff6b5b;">Thu, June 11 · FT</span>
       </div>
-      <div style="display:flex;align-items:center;gap:7px;padding:6px 12px;border-bottom:1px solid rgba(255,255,255,0.05);">
+      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
         <img src="https://flagcdn.com/32x24/mx.png" width="16" alt="Mexico" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:12px;font-weight:700;color:#fff;flex:1;">Mexico</span>
-        <span style="font-size:14px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">2</span>
-        <span style="font-size:10px;color:rgba(255,255,255,0.25);padding:0 2px;">–</span>
-        <span style="font-size:14px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">0</span>
-        <span style="font-size:12px;font-weight:700;color:#fff;flex:1;text-align:right;">South Africa</span>
+        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Mexico</span>
+        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">2</span>
+        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
+        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">0</span>
+        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">South Africa</span>
         <img src="https://flagcdn.com/32x24/za.png" width="16" alt="South Africa" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
       </div>
-      <div style="display:flex;align-items:center;gap:7px;padding:6px 12px;">
+      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;">
         <img src="https://flagcdn.com/32x24/kr.png" width="16" alt="South Korea" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:12px;font-weight:700;color:#fff;flex:1;">South Korea</span>
-        <span style="font-size:14px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">2</span>
-        <span style="font-size:10px;color:rgba(255,255,255,0.25);padding:0 2px;">–</span>
-        <span style="font-size:14px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:12px;font-weight:700;color:#fff;flex:1;text-align:right;">Czechia</span>
+        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">South Korea</span>
+        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">2</span>
+        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
+        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">1</span>
+        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Czechia</span>
         <img src="https://flagcdn.com/32x24/cz.png" width="16" alt="Czechia" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
       </div>
 
