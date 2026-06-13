@@ -1546,36 +1546,110 @@ font-size: 10px;
 <!-- HERO -->
 <section class="hero">
   <div class="hero-pitch-lines"></div>
-  <div class="hero-left fade-in">
-    <div class="hero-eyebrow">🏆 THE WORLD CUP IS LIVE — GROUP STAGE</div>
-    <h1>PLAN YOUR<br><span class="accent">WORLD CUP</span><br><span class="fire-accent">JOURNEY.</span></h1>
-    <div class="hero-tagline">USA · México · Canadá · Host Cities · Hotels · Fan Intel</div>
-    <div class="hero-opener-card" style="padding:1.25rem 1.5rem;">
-      <div class="opener-label">📊 Scoreboard — Group Stage</div>
+  <div class="hero-left fade-in" style="padding-top:1.5rem;justify-content:flex-start;">
+    <div class="hero-eyebrow" style="margin-bottom:0.5rem;">🏆 THE WORLD CUP IS LIVE — GROUP STAGE</div>
+    <h1 style="font-size:clamp(1.2rem,3vw,2.8rem);line-height:1.1;margin-bottom:0.35rem;">PLAN YOUR <span class="accent">WORLD CUP</span> <span class="fire-accent">JOURNEY.</span></h1>
+    <div class="hero-tagline" style="margin-bottom:0.85rem;">USA · México · Canadá · Host Cities · Hotels · Fan Intel</div>
 
-      <div style="font-family:'Space Mono',monospace;font-size:8px;letter-spacing:0.18em;color:rgba(255,255,255,0.4);text-transform:uppercase;margin:0.75rem 0 0.35rem;">Thu June 11 — Full Time</div>
-      <div class="opener-match" style="font-size:1.15rem;margin-bottom:0.15rem;">&#x1F1F2;&#x1F1FD; Mexico <span style="color:var(--pitch-light)">2</span>–0 South Africa &#x1F1FF;&#x1F1E6;</div>
-      <div class="opener-details" style="margin-bottom:0.5rem;">Estadio Azteca, Mexico City</div>
-      <div class="opener-match" style="font-size:1.15rem;margin-bottom:0.15rem;">&#x1F1F0;&#x1F1F7; South Korea <span style="color:var(--pitch-light)">2</span>–1 Czechia &#x1F1E8;&#x1F1FF;</div>
-      <div class="opener-details" style="margin-bottom:0.85rem;">Guadalajara</div>
+    <!-- Compact scoreboard -->
+    <div style="background:rgba(4,14,8,0.92);border:1px solid rgba(47,128,255,0.22);border-radius:10px;overflow:hidden;margin-bottom:1.25rem;max-width:520px;font-family:'Barlow Condensed',sans-serif;">
 
-      <div style="font-family:'Space Mono',monospace;font-size:8px;letter-spacing:0.18em;color:rgba(255,255,255,0.4);text-transform:uppercase;margin:0 0 0.35rem;">Fri June 12 — Full Time</div>
-      <div class="opener-match" style="font-size:1.15rem;margin-bottom:0.15rem;">&#x1F1FA;&#x1F1F8; USA <span style="color:var(--pitch-light)">4</span>–1 Paraguay &#x1F1F5;&#x1F1FE;</div>
-      <div class="opener-details" style="margin-bottom:0.5rem;">SoFi Stadium, Los Angeles</div>
-      <div class="opener-match" style="font-size:1.15rem;margin-bottom:0.15rem;">&#x1F1E8;&#x1F1E6; Canada 1–1 Bosnia &amp; Herzegovina &#x1F1E7;&#x1F1E6;</div>
-      <div class="opener-details" style="margin-bottom:0.85rem;">BMO Field, Toronto</div>
+      <!-- TODAY -->
+      <div style="background:rgba(47,128,255,0.13);border-bottom:1px solid rgba(47,128,255,0.28);padding:5px 12px;">
+        <span style="font-size:10px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:#5ba8ff;">● Today · Sat, June 13</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;padding:7px 12px;border-bottom:1px solid rgba(255,255,255,0.05);">
+        <span style="flex:0 0 auto;background:rgba(47,128,255,0.2);color:#7ec0ff;font-size:10px;font-weight:700;letter-spacing:0.06em;padding:2px 7px;border-radius:3px;white-space:nowrap;">3:00 PM</span>
+        <div style="flex:1;display:flex;align-items:center;gap:5px;font-size:12px;font-weight:700;color:#fff;min-width:0;">
+          <img src="https://flagcdn.com/32x24/qa.png" width="16" alt="Qatar" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
+          <span>Qatar</span>
+          <span style="color:rgba(255,255,255,0.3);font-weight:400;font-size:10px;padding:0 2px;">vs</span>
+          <img src="https://flagcdn.com/32x24/ch.png" width="16" alt="Switzerland" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
+          <span>Switzerland</span>
+        </div>
+        <div style="flex:0 0 auto;text-align:right;line-height:1.35;">
+          <div style="font-size:10px;color:rgba(255,255,255,0.4);white-space:nowrap;">Levi's · SF Bay</div>
+          <div style="font-size:9px;color:rgba(255,255,255,0.25);white-space:nowrap;">19:00 UTC</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;padding:7px 12px;border-bottom:1px solid rgba(255,255,255,0.05);">
+        <span style="flex:0 0 auto;background:rgba(47,128,255,0.2);color:#7ec0ff;font-size:10px;font-weight:700;letter-spacing:0.06em;padding:2px 7px;border-radius:3px;white-space:nowrap;">6:00 PM</span>
+        <div style="flex:1;display:flex;align-items:center;gap:5px;font-size:12px;font-weight:700;color:#fff;min-width:0;">
+          <img src="https://flagcdn.com/32x24/br.png" width="16" alt="Brazil" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
+          <span>Brazil</span>
+          <span style="color:rgba(255,255,255,0.3);font-weight:400;font-size:10px;padding:0 2px;">vs</span>
+          <img src="https://flagcdn.com/32x24/ma.png" width="16" alt="Morocco" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
+          <span>Morocco</span>
+        </div>
+        <div style="flex:0 0 auto;text-align:right;line-height:1.35;">
+          <div style="font-size:10px;color:rgba(255,255,255,0.4);white-space:nowrap;">MetLife · NY/NJ</div>
+          <div style="font-size:9px;color:rgba(255,255,255,0.25);white-space:nowrap;">22:00 UTC</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;padding:7px 12px;border-bottom:1px solid rgba(255,255,255,0.05);">
+        <span style="flex:0 0 auto;background:rgba(47,128,255,0.2);color:#7ec0ff;font-size:10px;font-weight:700;letter-spacing:0.06em;padding:2px 7px;border-radius:3px;white-space:nowrap;">9:00 PM</span>
+        <div style="flex:1;display:flex;align-items:center;gap:5px;font-size:12px;font-weight:700;color:#fff;min-width:0;">
+          <img src="https://flagcdn.com/32x24/ht.png" width="16" alt="Haiti" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
+          <span>Haiti</span>
+          <span style="color:rgba(255,255,255,0.3);font-weight:400;font-size:10px;padding:0 2px;">vs</span>
+          <img src="https://flagcdn.com/32x24/gb-sct.png" width="16" alt="Scotland" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
+          <span>Scotland</span>
+        </div>
+        <div style="flex:0 0 auto;text-align:right;line-height:1.35;">
+          <div style="font-size:10px;color:rgba(255,255,255,0.4);white-space:nowrap;">Gillette · Boston</div>
+          <div style="font-size:9px;color:rgba(255,255,255,0.25);white-space:nowrap;">01:00 UTC +1</div>
+        </div>
+      </div>
 
-      <div style="font-family:'Space Mono',monospace;font-size:8px;letter-spacing:0.18em;color:var(--pitch-light);text-transform:uppercase;margin:0 0 0.35rem;">Sat June 13 — Today</div>
-      <div class="opener-match" style="font-size:1.05rem;margin-bottom:0.15rem;">Qatar vs Switzerland</div>
-      <div class="opener-details" style="margin-bottom:0.5rem;">Levi's Stadium, San Francisco Bay Area · 3:00 PM ET / 19:00 UTC</div>
-      <div class="opener-match" style="font-size:1.05rem;margin-bottom:0.15rem;">Brazil vs Morocco</div>
-      <div class="opener-details" style="margin-bottom:0.5rem;">MetLife Stadium, New York/New Jersey · 6:00 PM ET / 22:00 UTC</div>
-      <div class="opener-match" style="font-size:1.05rem;margin-bottom:0.15rem;">Haiti vs Scotland</div>
-      <div class="opener-details">Gillette Stadium, Boston · 9:00 PM ET / 01:00 UTC (+1 day)</div>
+      <!-- FRI JUNE 12 -->
+      <div style="background:rgba(245,197,24,0.07);border-top:1px solid rgba(245,197,24,0.22);border-bottom:1px solid rgba(245,197,24,0.12);padding:4px 12px;">
+        <span style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#c8971a;">Fri, June 12 · FT</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;padding:6px 12px;border-bottom:1px solid rgba(255,255,255,0.05);">
+        <img src="https://flagcdn.com/32x24/us.png" width="16" alt="USA" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
+        <span style="font-size:12px;font-weight:700;color:#fff;flex:1;">United States</span>
+        <span style="font-size:14px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">4</span>
+        <span style="font-size:10px;color:rgba(255,255,255,0.25);padding:0 2px;">–</span>
+        <span style="font-size:14px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">1</span>
+        <span style="font-size:12px;font-weight:700;color:#fff;flex:1;text-align:right;">Paraguay</span>
+        <img src="https://flagcdn.com/32x24/py.png" width="16" alt="Paraguay" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;padding:6px 12px;">
+        <img src="https://flagcdn.com/32x24/ca.png" width="16" alt="Canada" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
+        <span style="font-size:12px;font-weight:700;color:#fff;flex:1;">Canada</span>
+        <span style="font-size:14px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">1</span>
+        <span style="font-size:10px;color:rgba(255,255,255,0.25);padding:0 2px;">–</span>
+        <span style="font-size:14px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">1</span>
+        <span style="font-size:12px;font-weight:700;color:#fff;flex:1;text-align:right;">Bosnia &amp; Herz.</span>
+        <img src="https://flagcdn.com/32x24/ba.png" width="16" alt="Bosnia" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
+      </div>
+
+      <!-- THU JUNE 11 -->
+      <div style="background:rgba(255,67,56,0.07);border-top:1px solid rgba(255,67,56,0.22);border-bottom:1px solid rgba(255,67,56,0.12);padding:4px 12px;">
+        <span style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#ff6b5b;">Thu, June 11 · FT</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;padding:6px 12px;border-bottom:1px solid rgba(255,255,255,0.05);">
+        <img src="https://flagcdn.com/32x24/mx.png" width="16" alt="Mexico" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
+        <span style="font-size:12px;font-weight:700;color:#fff;flex:1;">Mexico</span>
+        <span style="font-size:14px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">2</span>
+        <span style="font-size:10px;color:rgba(255,255,255,0.25);padding:0 2px;">–</span>
+        <span style="font-size:14px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">0</span>
+        <span style="font-size:12px;font-weight:700;color:#fff;flex:1;text-align:right;">South Africa</span>
+        <img src="https://flagcdn.com/32x24/za.png" width="16" alt="South Africa" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;padding:6px 12px;">
+        <img src="https://flagcdn.com/32x24/kr.png" width="16" alt="South Korea" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
+        <span style="font-size:12px;font-weight:700;color:#fff;flex:1;">South Korea</span>
+        <span style="font-size:14px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">2</span>
+        <span style="font-size:10px;color:rgba(255,255,255,0.25);padding:0 2px;">–</span>
+        <span style="font-size:14px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">1</span>
+        <span style="font-size:12px;font-weight:700;color:#fff;flex:1;text-align:right;">Czechia</span>
+        <img src="https://flagcdn.com/32x24/cz.png" width="16" alt="Czechia" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
+      </div>
+
     </div>
     <div class="hero-actions">
-      <a href="/sports-news.html" class="btn-mexico-last-call">⚽ 48 teams. One champion. It's on — follow every match</a>
-      <a href="host-cities.html" class="btn-white-outline">Host Cities</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeiVoHx28R79f3_G2lAAByBP23AroECJ8HpFqskUl0VRipiMg/viewform?usp=header" class="btn-green" target="_blank" rel="noopener">✉ Get the highlights &amp; my hot takes</a>
     </div>
   </div>
   <div class="hero-right">
