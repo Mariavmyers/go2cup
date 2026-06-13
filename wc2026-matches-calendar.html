@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Cup 2026 — Full Calendar | GO2CUP</title>
+<meta name="description" content="The complete FIFA World Cup 2026 schedule — all 104 matches, kickoff times in US Eastern Time, results updated daily. Independent fan guide by MainEntry LLC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --go-blue:#2f80ff; --green:#21c25a; --cup-red:#ff4338; --gold:#f5c518;
+    --bg:#07180e; --card:#0a2413; --card-2:#06180d; --line:rgba(33,194,90,0.22);
+    --text:#eef3f0; --muted:#9fb3a6; --dim:#7d9085;
+    --display:'Bebas Neue',Impact,sans-serif; --cond:'Oswald',sans-serif; --body:'Inter',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:var(--body);
+    background-image:linear-gradient(rgba(33,194,90,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(33,194,90,0.04) 1px,transparent 1px);
+    background-size:34px 34px;}
+  a{color:inherit;text-decoration:none}
+
+  /* Header */
+  .topbar{background:#fff;display:flex;align-items:center;justify-content:space-between;padding:14px 28px;flex-wrap:wrap;gap:12px}
+  .logo{font-family:var(--display);font-size:30px;letter-spacing:1px;color:#0a2413;line-height:1}
+  .logo span{color:var(--cup-red)}
+  .logo small{display:block;font-family:var(--cond);font-size:10px;letter-spacing:2px;color:#5a6f60;font-weight:600}
+  .nav{display:flex;gap:20px;font-family:var(--cond);font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#0a2413;flex-wrap:wrap}
+  .nav a:hover{color:var(--go-blue)}
+  .cta-top{background:var(--cup-red);color:#fff;font-family:var(--cond);font-weight:700;font-size:12px;letter-spacing:1px;text-transform:uppercase;padding:11px 18px;border-radius:6px}
+
+  /* Stream bar */
+  .stream{background:#08321a;border-top:1px solid var(--go-blue);border-bottom:1px solid var(--go-blue);
+    display:flex;align-items:center;justify-content:space-between;padding:9px 28px;flex-wrap:wrap;gap:8px}
+  .stream span{font-family:var(--cond);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#9ec5f5;font-weight:600}
+  .stream a{color:var(--go-blue);font-weight:700}
+
+  /* Hero */
+  .hero{padding:44px 28px 26px;max-width:1040px;margin:0 auto}
+  .eyebrow{display:flex;align-items:center;gap:10px;color:var(--green);font-family:var(--cond);
+    font-size:13px;letter-spacing:3px;text-transform:uppercase;font-weight:600;margin-bottom:10px}
+  .eyebrow .bar{width:26px;height:2px;background:var(--green)}
+  h1{font-family:var(--display);font-size:clamp(48px,9vw,90px);line-height:0.9;letter-spacing:1px}
+  h1 .b{color:var(--go-blue)} h1 .g{color:var(--green)} h1 .y{color:var(--gold)}
+  .sub{color:var(--muted);font-family:var(--cond);font-size:15px;letter-spacing:1px;text-transform:uppercase;margin-top:12px}
+
+  /* Legend */
+  .legend{display:flex;gap:18px;flex-wrap:wrap;max-width:1040px;margin:8px auto 0;padding:0 28px}
+  .legend div{display:flex;align-items:center;gap:7px;font-family:var(--cond);font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--dim)}
+  .dot{width:9px;height:9px;border-radius:50%}
+
+  /* Calendar */
+  .wrap{max-width:1040px;margin:0 auto;padding:26px 28px 10px}
+  .phase{font-family:var(--display);font-size:34px;letter-spacing:2px;color:#fff;margin:30px 0 4px}
+  .phase small{font-family:var(--cond);font-size:13px;letter-spacing:1px;color:var(--green);font-weight:600;display:block;text-transform:uppercase}
+
+  .day{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:16px}
+  .day.today{border-color:var(--go-blue);box-shadow:0 0 0 1px rgba(47,128,255,0.25)}
+  .dayhead{display:flex;align-items:center;justify-content:space-between;background:var(--card-2);padding:11px 18px;border-bottom:1px solid var(--line)}
+  .daydate{font-family:var(--cond);font-size:15px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#fff}
+  .daytag{font-family:var(--cond);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;padding:3px 10px;border-radius:5px}
+  .tag-today{background:var(--go-blue);color:#fff}
+  .tag-done{background:rgba(33,194,90,0.15);color:var(--green)}
+  .tag-up{background:rgba(255,255,255,0.07);color:var(--dim)}
+
+  .match{display:flex;align-items:center;gap:14px;padding:13px 18px;border-bottom:1px solid rgba(255,255,255,0.05)}
+  .match:last-child{border-bottom:none}
+  .slot{flex:0 0 86px;display:flex;flex-direction:column;gap:3px}
+  .time{font-family:var(--cond);font-weight:600;font-size:14px;letter-spacing:0.5px;color:#cfe0d8;background:rgba(255,255,255,0.05);padding:5px 9px;border-radius:6px;text-align:center;white-space:nowrap}
+  .match.today .time{background:#13335c;color:#9ec5f5}
+  .grp{font-family:var(--cond);font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--dim);text-align:center}
+  .teams{flex:1;min-width:0}
+  .team{display:flex;align-items:center;gap:9px;padding:2px 0}
+  .code{flex:0 0 auto;background:#13261b;color:#bcd4c6;font-family:var(--cond);font-weight:600;font-size:10px;letter-spacing:1px;padding:2px 7px;border-radius:4px}
+  .tname{font-family:var(--cond);font-size:16px;font-weight:500;color:#eef3f0}
+  .winner .tname{font-weight:600}
+  .score{flex:0 0 auto;font-family:var(--display);font-size:30px;letter-spacing:3px;line-height:1;min-width:70px;text-align:right;color:#fff}
+  .score .w{color:var(--green)}
+  .score .d{color:#5a6f60}
+  .ko-note{padding:13px 18px;color:var(--dim);font-family:var(--cond);font-size:13px;letter-spacing:0.5px}
+
+  /* CTA + footer */
+  .ctarow{max-width:1040px;margin:36px auto 0;padding:0 28px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase;padding:14px 22px;border-radius:8px}
+  .btn-primary{background:var(--go-blue);color:#fff}
+  .btn-ghost{border:1px solid rgba(255,255,255,0.3);color:#fff}
+  footer{max-width:1040px;margin:46px auto 0;padding:26px 28px 50px;border-top:1px solid var(--line)}
+  .fmail{display:inline-flex;align-items:center;gap:8px;color:var(--green);font-family:var(--cond);font-weight:600;letter-spacing:1px;text-transform:uppercase;font-size:13px;margin-bottom:14px}
+  .flinks{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--cond);font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+  .flinks a:hover{color:var(--go-blue)}
+  .fnote p{color:var(--dim);font-size:12px;line-height:1.7;max-width:680px}
+  @media(max-width:560px){
+    .slot{flex-basis:70px}.score{font-size:24px;min-width:56px}.tname{font-size:14px}
+    .nav{display:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">Sport<span>DGX</span><small>Sports News &amp; Fan Travel</small></div>
+  <nav class="nav">
+    <a href="/index.html#host-cities">Host Cities</a>
+    <a href="/where-to-stay.html">Where to Stay</a>
+    <a href="/sports-news.html">Sports News</a>
+    <a href="/calendar.html">Calendar</a>
+    <a href="/first-match-mexico.html">First Match</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/maria-myers.html">Hire Maria</a>
+  </nav>
+  <a class="cta-top" href="#subscribe">Get the highlights &amp; my hot takes →</a>
+</div>
+
+<div class="stream">
+  <span>▶ Watch World Cup 2026 live — FuboTV · Hulu · Sling · DirecTV · YouTube TV</span>
+  <a href="/streaming.html">Stream now →</a>
+</div>
+
+<section class="hero">
+  <div class="eyebrow"><span class="bar"></span>🏆 The World Cup is live — full calendar</div>
+  <h1><span class="b">WORLD CUP</span> <span class="g">2026</span><br><span class="y">EVERY MATCH.</span></h1>
+  <div class="sub">104 games · 16 cities · 3 nations · all kickoffs in ET (US Eastern)</div>
+</section>
+
+<div class="legend">
+  <div><span class="dot" style="background:var(--green)"></span> Result in</div>
+  <div><span class="dot" style="background:var(--go-blue)"></span> Today</div>
+  <div><span class="dot" style="background:#5f7468"></span> Upcoming</div>
+</div>
+
+<div class="wrap">
+  <div class="phase">Group Stage<small>June 11 – June 27</small></div>
+  <div id="group-stage"></div>
+
+  <div class="phase">Knockouts<small>Round of 32 → Final · July 19</small></div>
+  <div id="knockouts"></div>
+</div>
+
+<div class="ctarow" id="subscribe">
+  <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSeiVoHx28R79f3_G2lAAByBP23AroECJ8HpFqskUl0VRipiMg/viewform" target="_blank" rel="noopener">✉ Get the highlights &amp; my hot takes</a>
+  <a class="btn btn-ghost" href="/index.html#host-cities">Host Cities</a>
+</div>
+
+<footer>
+  <a class="fmail" href="mailto:contact@sportdgx.com">✉ Contact us</a>
+  <div class="flinks">
+    <a href="/index.html">Home</a>
+    <a href="/index.html#host-cities">Host Cities</a>
+    <a href="/calendar.html">Calendar</a>
+    <a href="/where-to-stay.html">Where to Stay</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/legal.html">Legal</a>
+  </div>
+  <div class="fnote">
+    <p>GO2CUP is an independent fan guide operated by MainEntry LLC and is not affiliated with FIFA. Results and fixtures compiled from public sources; kickoff times are in US Eastern Time and subject to change. Some links are affiliate links from which we may earn a commission. © 2026 MainEntry LLC. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+/* ===== EDIT HERE EACH DAY =====
+   To post a result: add  s:[homeScore, awayScore]  to a match and set  st:'done'.
+   't' is kickoff time (ET). 'st' = 'done' | 'today' | 'up'.
+   'g' is the group letter. Teams are [CODE, "Name"].                       */
+
+const GROUP_STAGE = [
+  {date:"Thu, June 11", st:"done", m:[
+    {t:"3:00 PM", g:"A", h:["MEX","Mexico"], a:["RSA","South Africa"], s:[2,0]},
+    {t:"10:00 PM", g:"A", h:["KOR","South Korea"], a:["CZE","Czechia"], s:[2,1]},
+  ]},
+  {date:"Fri, June 12", st:"done", m:[
+    {t:"3:00 PM", g:"B", h:["CAN","Canada"], a:["BIH","Bosnia & Herzegovina"], s:[1,1]},
+    {t:"9:00 PM", g:"D", h:["USA","United States"], a:["PAR","Paraguay"], s:[4,1]},
+  ]},
+  {date:"Sat, June 13", st:"today", m:[
+    {t:"3:00 PM", g:"B", h:["QAT","Qatar"], a:["SUI","Switzerland"]},
+    {t:"6:00 PM", g:"C", h:["BRA","Brazil"], a:["MAR","Morocco"]},
+    {t:"9:00 PM", g:"C", h:["HAI","Haiti"], a:["SCO","Scotland"]},
+    {t:"12:00 AM", g:"D", h:["AUS","Australia"], a:["TUR","Türkiye"]},
+  ]},
+  {date:"Sun, June 14", st:"up", m:[
+    {t:"1:00 PM", g:"E", h:["GER","Germany"], a:["CUW","Curaçao"]},
+    {t:"4:00 PM", g:"F", h:["NED","Netherlands"], a:["JPN","Japan"]},
+    {t:"7:00 PM", g:"E", h:["CIV","Ivory Coast"], a:["ECU","Ecuador"]},
+    {t:"10:00 PM", g:"F", h:["SWE","Sweden"], a:["TUN","Tunisia"]},
+  ]},
+  {date:"Mon, June 15", st:"up", m:[
+    {t:"12:00 PM", g:"H", h:["ESP","Spain"], a:["CPV","Cape Verde"]},
+    {t:"3:00 PM", g:"G", h:["BEL","Belgium"], a:["EGY","Egypt"]},
+    {t:"6:00 PM", g:"H", h:["KSA","Saudi Arabia"], a:["URU","Uruguay"]},
+    {t:"9:00 PM", g:"G", h:["IRN","Iran"], a:["NZL","New Zealand"]},
+  ]},
+  {date:"Tue, June 16", st:"up", m:[
+    {t:"3:00 PM", g:"I", h:["FRA","France"], a:["SEN","Senegal"]},
+    {t:"6:00 PM", g:"I", h:["IRQ","Iraq"], a:["NOR","Norway"]},
+    {t:"9:00 PM", g:"J", h:["ARG","Argentina"], a:["ALG","Algeria"]},
+    {t:"12:00 AM", g:"J", h:["AUT","Austria"], a:["JOR","Jordan"]},
+  ]},
+  {date:"Wed, June 17", st:"up", m:[
+    {t:"1:00 PM", g:"K", h:["POR","Portugal"], a:["COD","DR Congo"]},
+    {t:"4:00 PM", g:"L", h:["ENG","England"], a:["CRO","Croatia"]},
+    {t:"7:00 PM", g:"L", h:["GHA","Ghana"], a:["PAN","Panama"]},
+    {t:"10:00 PM", g:"K", h:["UZB","Uzbekistan"], a:["COL","Colombia"]},
+  ]},
+  {date:"Thu, June 18", st:"up", m:[
+    {t:"12:00 PM", g:"A", h:["CZE","Czechia"], a:["RSA","South Africa"]},
+    {t:"3:00 PM", g:"B", h:["SUI","Switzerland"], a:["BIH","Bosnia & Herzegovina"]},
+    {t:"6:00 PM", g:"B", h:["CAN","Canada"], a:["QAT","Qatar"]},
+    {t:"9:00 PM", g:"A", h:["MEX","Mexico"], a:["KOR","South Korea"]},
+  ]},
+  {date:"Fri, June 19", st:"up", m:[
+    {t:"3:00 PM", g:"D", h:["USA","United States"], a:["AUS","Australia"]},
+    {t:"6:00 PM", g:"C", h:["SCO","Scotland"], a:["MAR","Morocco"]},
+    {t:"9:00 PM", g:"C", h:["BRA","Brazil"], a:["HAI","Haiti"]},
+    {t:"12:00 AM", g:"D", h:["TUR","Türkiye"], a:["PAR","Paraguay"]},
+  ]},
+  {date:"Sat, June 20", st:"up", m:[
+    {t:"1:00 PM", g:"F", h:["NED","Netherlands"], a:["SWE","Sweden"]},
+    {t:"4:00 PM", g:"E", h:["GER","Germany"], a:["CIV","Ivory Coast"]},
+    {t:"8:00 PM", g:"E", h:["ECU","Ecuador"], a:["CUW","Curaçao"]},
+    {t:"12:00 AM", g:"F", h:["TUN","Tunisia"], a:["JPN","Japan"]},
+  ]},
+  {date:"Sun, June 21", st:"up", m:[
+    {t:"12:00 PM", g:"H", h:["ESP","Spain"], a:["KSA","Saudi Arabia"]},
+    {t:"3:00 PM", g:"G", h:["BEL","Belgium"], a:["IRN","Iran"]},
+    {t:"6:00 PM", g:"H", h:["URU","Uruguay"], a:["CPV","Cape Verde"]},
+    {t:"9:00 PM", g:"G", h:["NZL","New Zealand"], a:["EGY","Egypt"]},
+  ]},
+  {date:"Mon, June 22", st:"up", m:[
+    {t:"1:00 PM", g:"J", h:["ARG","Argentina"], a:["AUT","Austria"]},
+    {t:"5:00 PM", g:"I", h:["FRA","France"], a:["IRQ","Iraq"]},
+    {t:"8:00 PM", g:"I", h:["NOR","Norway"], a:["SEN","Senegal"]},
+    {t:"11:00 PM", g:"J", h:["JOR","Jordan"], a:["ALG","Algeria"]},
+  ]},
+  {date:"Tue, June 23", st:"up", m:[
+    {t:"1:00 PM", g:"K", h:["POR","Portugal"], a:["UZB","Uzbekistan"]},
+    {t:"4:00 PM", g:"L", h:["ENG","England"], a:["GHA","Ghana"]},
+    {t:"7:00 PM", g:"L", h:["PAN","Panama"], a:["CRO","Croatia"]},
+    {t:"10:00 PM", g:"K", h:["COL","Colombia"], a:["COD","DR Congo"]},
+  ]},
+  {date:"Wed, June 24", st:"up", m:[
+    {t:"3:00 PM", g:"B", h:["SUI","Switzerland"], a:["CAN","Canada"]},
+    {t:"3:00 PM", g:"B", h:["BIH","Bosnia & Herzegovina"], a:["QAT","Qatar"]},
+    {t:"6:00 PM", g:"C", h:["SCO","Scotland"], a:["BRA","Brazil"]},
+    {t:"6:00 PM", g:"C", h:["MAR","Morocco"], a:["HAI","Haiti"]},
+    {t:"9:00 PM", g:"A", h:["CZE","Czechia"], a:["MEX","Mexico"]},
+    {t:"9:00 PM", g:"A", h:["RSA","South Africa"], a:["KOR","South Korea"]},
+  ]},
+  {date:"Thu, June 25", st:"up", m:[
+    {t:"4:00 PM", g:"E", h:["ECU","Ecuador"], a:["GER","Germany"]},
+    {t:"4:00 PM", g:"E", h:["CUW","Curaçao"], a:["CIV","Ivory Coast"]},
+    {t:"7:00 PM", g:"F", h:["JPN","Japan"], a:["SWE","Sweden"]},
+    {t:"7:00 PM", g:"F", h:["TUN","Tunisia"], a:["NED","Netherlands"]},
+    {t:"10:00 PM", g:"D", h:["TUR","Türkiye"], a:["USA","United States"]},
+    {t:"10:00 PM", g:"D", h:["PAR","Paraguay"], a:["AUS","Australia"]},
+  ]},
+  {date:"Fri, June 26", st:"up", m:[
+    {t:"3:00 PM", g:"I", h:["NOR","Norway"], a:["FRA","France"]},
+    {t:"3:00 PM", g:"I", h:["SEN","Senegal"], a:["IRQ","Iraq"]},
+    {t:"8:00 PM", g:"H", h:["CPV","Cape Verde"], a:["KSA","Saudi Arabia"]},
+    {t:"8:00 PM", g:"H", h:["URU","Uruguay"], a:["ESP","Spain"]},
+    {t:"11:00 PM", g:"G", h:["EGY","Egypt"], a:["IRN","Iran"]},
+    {t:"11:00 PM", g:"G", h:["NZL","New Zealand"], a:["BEL","Belgium"]},
+  ]},
+  {date:"Sat, June 27", st:"up", m:[
+    {t:"5:00 PM", g:"L", h:["PAN","Panama"], a:["ENG","England"]},
+    {t:"5:00 PM", g:"L", h:["CRO","Croatia"], a:["GHA","Ghana"]},
+    {t:"7:30 PM", g:"K", h:["COL","Colombia"], a:["POR","Portugal"]},
+    {t:"7:30 PM", g:"K", h:["COD","DR Congo"], a:["UZB","Uzbekistan"]},
+    {t:"10:00 PM", g:"J", h:["ALG","Algeria"], a:["AUT","Austria"]},
+    {t:"10:00 PM", g:"J", h:["JOR","Jordan"], a:["ARG","Argentina"]},
+  ]},
+];
+
+const KNOCKOUTS = [
+  {date:"Round of 32 · June 28 – July 3", st:"up", lines:[
+    "Sun Jun 28 — 3:00 PM · Runners-up A vs Runners-up B",
+    "Mon Jun 29 — 1:00 PM · Winners C vs Runners-up F",
+    "Mon Jun 29 — 4:30 PM · Winners E vs Best 3rd",
+    "Mon Jun 29 — 9:00 PM · Winners F vs Runners-up C",
+    "Tue Jun 30 — 1:00 PM · Runners-up E vs Runners-up I",
+    "Tue Jun 30 — 5:00 PM · Winners I vs Best 3rd",
+    "Tue Jun 30 — 9:00 PM · Winners A vs Best 3rd",
+    "Wed Jul 1 — 12:00 PM · Winners L vs Best 3rd",
+    "Wed Jul 1 — 4:00 PM · Winners G vs Best 3rd",
+    "Wed Jul 1 — 8:00 PM · Winners D vs Best 3rd",
+    "Thu Jul 2 — 3:00 PM · Winners H vs Runners-up J",
+    "Thu Jul 2 — 7:00 PM · Runners-up K vs Runners-up L",
+    "Thu Jul 2 — 11:00 PM · Winners B vs Best 3rd",
+    "Fri Jul 3 — 2:00 PM · Runners-up D vs Runners-up G",
+    "Fri Jul 3 — 6:00 PM · Winners J vs Runners-up H",
+    "Fri Jul 3 — 9:30 PM · Winners K vs Best 3rd",
+  ]},
+  {date:"Round of 16 · July 4 – July 7", st:"up", lines:[
+    "Sat Jul 4 — 1:00 PM & 5:00 PM",
+    "Sun Jul 5 — 4:00 PM & 8:00 PM",
+    "Mon Jul 6 — 3:00 PM & 8:00 PM",
+    "Tue Jul 7 — 12:00 PM & 4:00 PM",
+  ]},
+  {date:"Quarterfinals · July 9 – July 11", st:"up", lines:[
+    "Thu Jul 9 — 4:00 PM",
+    "Fri Jul 10 — 3:00 PM",
+    "Sat Jul 11 — 5:00 PM & 9:00 PM",
+  ]},
+  {date:"Semifinals · July 14 & July 15", st:"up", lines:[
+    "Tue Jul 14 — 3:00 PM",
+    "Wed Jul 15 — 3:00 PM",
+  ]},
+  {date:"Third-Place Match · July 18", st:"up", lines:[
+    "Sat Jul 18 — 5:00 PM",
+  ]},
+  {date:"🏆 Final · July 19 — New York / New Jersey", st:"up", lines:[
+    "Sun Jul 19 — 3:00 PM ET · MetLife Stadium",
+  ]},
+];
+
+function tagFor(st){
+  if(st==="today") return '<span class="daytag tag-today">Today</span>';
+  if(st==="done")  return '<span class="daytag tag-done">Full time</span>';
+  return '<span class="daytag tag-up">Upcoming</span>';
+}
+function matchRow(mt, dayStatus){
+  const done = Array.isArray(mt.s);
+  const cls = dayStatus==="today" ? "match today" : "match";
+  let score;
+  if(done){
+    const [hs,as]=mt.s;
+    const hCls = hs>as?'w':(hs<as?'':'d');
+    const aCls = as>hs?'w':(as<hs?'':'d');
+    score = `<div class="score"><span class="${hCls}">${hs}</span> <span class="d">–</span> <span class="${aCls}">${as}</span></div>`;
+  } else {
+    score = `<div class="slot"><span class="time">${mt.t}</span><span class="grp">Grp ${mt.g}</span></div>`;
+  }
+  const hw = done && mt.s[0]>mt.s[1] ? 'team winner':'team';
+  const aw = done && mt.s[1]>mt.s[0] ? 'team winner':'team';
+  const left = done
+    ? `<div class="slot"><span class="time">FT</span><span class="grp">Grp ${mt.g}</span></div>`
+    : '';
+  return `<div class="${cls}">
+    ${left}
+    <div class="teams">
+      <div class="${hw}"><span class="code">${mt.h[0]}</span><span class="tname">${mt.h[1]}</span></div>
+      <div class="${aw}"><span class="code">${mt.a[0]}</span><span class="tname">${mt.a[1]}</span></div>
+    </div>
+    ${score}
+  </div>`;
+}
+function renderGroup(){
+  document.getElementById("group-stage").innerHTML = GROUP_STAGE.map(d=>`
+    <div class="day ${d.st==='today'?'today':''}">
+      <div class="dayhead"><span class="daydate">${d.date}</span>${tagFor(d.st)}</div>
+      ${d.m.map(mt=>matchRow(mt,d.st)).join("")}
+    </div>`).join("");
+}
+function renderKO(){
+  document.getElementById("knockouts").innerHTML = KNOCKOUTS.map(k=>`
+    <div class="day">
+      <div class="dayhead"><span class="daydate">${k.date}</span>${tagFor(k.st)}</div>
+      ${k.lines.map(l=>`<div class="ko-note">${l}</div>`).join("")}
+    </div>`).join("");
+}
+renderGroup();
+renderKO();
+</script>
+</body>
+</html>
