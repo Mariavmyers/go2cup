@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hot Takes — Daily World Cup 2026 Commentary & Predictions | GO2CUP</title>
-<meta name="description" content="Maria's daily World Cup 2026 hot takes: game-by-game commentary, predictions, and speculation on every match, every day — from a lifelong soccer voice at GO2CUP.">
+<meta name="description" content="Maria's daily World Cup 2026 hot takes: data-backed game-by-game commentary, predictions, and a running hit/miss record on every match.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -31,18 +31,19 @@
   .eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--flame);font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;}
   h1.title{font-family:'Bebas Neue',sans-serif;font-size:clamp(54px,11vw,104px);line-height:0.86;letter-spacing:1px;}
   h1.title .fire{background:linear-gradient(180deg,var(--gold),var(--flame),var(--red));-webkit-background-clip:text;background-clip:text;color:transparent;}
-  .hero .dek{font-size:18px;color:var(--text);max-width:680px;margin-top:14px;}
+  .hero .dek{font-size:18px;color:var(--text);max-width:700px;margin-top:14px;}
   .hero .sub{margin-top:10px;color:var(--muted);font-size:15px;}
   .hero .sig{font-family:'Oswald',sans-serif;letter-spacing:0.5px;color:var(--gold);}
-  .updated{display:inline-block;margin-top:16px;font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:20px;padding:5px 14px;}
-  .updated .dot{color:var(--green);}
+  .recordbar{display:inline-flex;align-items:center;gap:14px;margin-top:18px;font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;border:1px solid var(--line);border-radius:20px;padding:8px 16px;}
+  .recordbar b{font-size:15px;}
+  .recordbar .h{color:var(--green);}.recordbar .c{color:var(--gold);}.recordbar .m{color:#ff8a82;}
+  .recordbar .sep{color:#3a4f42;}
 
   section{padding:36px 0;}
   .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;}
   .sec-head h2{font-family:'Bebas Neue',sans-serif;font-size:34px;letter-spacing:1px;}
   .sec-head .when{font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);}
 
-  /* Prediction marquee cards */
   .pred-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:14px;}
   .pred{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;position:relative;overflow:hidden;}
   .pred::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--flame));}
@@ -58,16 +59,15 @@
   .badge.lean{background:rgba(245,197,24,0.15);color:var(--gold);border:1px solid rgba(245,197,24,0.4);}
   .badge.coinflip{background:rgba(47,128,255,0.15);color:#8ab4ff;border:1px solid rgba(47,128,255,0.4);}
 
-  /* Signup */
   .signup{background:linear-gradient(135deg,#1a0f08,#0c1f14);border:1px solid rgba(255,122,24,0.3);border-radius:18px;padding:26px;}
   .signup h2{font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:1px;margin-bottom:6px;}
   .signup p{color:var(--muted);max-width:560px;margin-bottom:16px;}
-  .form-frame{background:#fff;border-radius:12px;overflow:hidden;min-height:520px;}
-  .form-frame iframe{width:100%;height:760px;border:0;display:block;}
-  .form-fallback{margin-top:12px;font-size:13px;color:var(--muted);}
-  .form-fallback a{color:var(--gold);text-decoration:underline;}
+  .perks{list-style:none;margin:4px 0 20px;display:grid;gap:9px;}
+  .perks li{font-size:15px;color:#dbe6dd;}
+  .signup-btn{display:inline-block;background:linear-gradient(90deg,var(--flame),var(--red));color:#fff;font-family:'Oswald',sans-serif;font-size:16px;letter-spacing:1px;text-transform:uppercase;font-weight:600;padding:15px 32px;border-radius:11px;box-shadow:0 8px 22px rgba(255,67,56,0.28);transition:transform .15s;}
+  .signup-btn:hover{transform:translateY(-2px);}
+  .signup-note{margin-top:13px;font-size:13px;color:var(--muted);}
 
-  /* Takes feed */
   .day-head{display:flex;align-items:center;gap:10px;margin:30px 0 14px;}
   .day-head .pill{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;padding:5px 12px;border-radius:6px;}
   .day-head .pill.today{background:var(--blue);color:#fff;}
@@ -81,6 +81,9 @@
   .take .match .vs{color:#5f7e6e;font-weight:400;}
   .take .grp{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);}
   .take .body{font-size:15.5px;color:#dbe6dd;margin-bottom:12px;}
+  .take .stats{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;}
+  .take .stat{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:0.5px;color:#bcd0c2;background:var(--bg2);border:1px solid var(--line);border-radius:7px;padding:5px 10px;}
+  .take .stat b{color:var(--gold);font-weight:600;}
   .take .pred-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:0.5px;}
   .take .pred-row .k{color:var(--muted);text-transform:uppercase;font-size:11px;letter-spacing:1px;}
   .take .pred-row .my{color:var(--gold);font-weight:600;font-size:16px;}
@@ -121,76 +124,58 @@
   <section class="hero">
     <div class="eyebrow">🔥 Daily World Cup Commentary</div>
     <h1 class="title">HOT <span class="fire">TAKES</span></h1>
-    <p class="dek">My game-by-game read on World Cup 2026 — predictions, speculation, and what I'm actually watching for. Every match. Every day.</p>
+    <p class="dek">My data-backed read on World Cup 2026 — every match, every day. Form, history, and the eye test, then a call I'm willing to be graded on.</p>
     <p class="sub">Called straight, no fence-sitting. <span class="sig">— Maria, GO2CUP</span></p>
-    <span class="updated"><span class="dot">●</span> Updated daily through July 19</span>
+    <div class="recordbar" id="recordbar"></div>
   </section>
 
-  <!-- TODAY'S PREDICTIONS -->
   <section>
     <div class="sec-head"><h2>Today's Predictions</h2><span class="when">Sun, June 14</span></div>
     <div class="pred-grid">
-
       <div class="pred">
         <div class="ko">1:00 PM ET · Houston · Group E</div>
-        <div class="teams">
-          <span class="t"><img src="https://flagcdn.com/32x24/de.png" alt="Germany">Germany</span>
-          <span class="t"><img src="https://flagcdn.com/32x24/cw.png" alt="Curaçao">Curaçao</span>
-        </div>
+        <div class="teams"><span class="t"><img src="https://flagcdn.com/32x24/de.png" alt="Germany">Germany</span><span class="t"><img src="https://flagcdn.com/32x24/cw.png" alt="Curaçao">Curaçao</span></div>
         <div class="scoreline"><span class="lbl">My call</span><span class="sc">3–0</span></div>
         <span class="badge lock">🔒 Lock</span>
       </div>
-
       <div class="pred">
         <div class="ko">4:00 PM ET · Arlington · Group F</div>
-        <div class="teams">
-          <span class="t"><img src="https://flagcdn.com/32x24/nl.png" alt="Netherlands">Netherlands</span>
-          <span class="t"><img src="https://flagcdn.com/32x24/jp.png" alt="Japan">Japan</span>
-        </div>
+        <div class="teams"><span class="t"><img src="https://flagcdn.com/32x24/nl.png" alt="Netherlands">Netherlands</span><span class="t"><img src="https://flagcdn.com/32x24/jp.png" alt="Japan">Japan</span></div>
         <div class="scoreline"><span class="lbl">My call</span><span class="sc">2–1</span></div>
         <span class="badge lean">📈 Lean</span>
       </div>
-
       <div class="pred">
         <div class="ko">7:00 PM ET · Philadelphia · Group E</div>
-        <div class="teams">
-          <span class="t"><img src="https://flagcdn.com/32x24/ci.png" alt="Ivory Coast">Ivory Coast</span>
-          <span class="t"><img src="https://flagcdn.com/32x24/ec.png" alt="Ecuador">Ecuador</span>
-        </div>
+        <div class="teams"><span class="t"><img src="https://flagcdn.com/32x24/ci.png" alt="Ivory Coast">Ivory Coast</span><span class="t"><img src="https://flagcdn.com/32x24/ec.png" alt="Ecuador">Ecuador</span></div>
         <div class="scoreline"><span class="lbl">My call</span><span class="sc">1–1</span></div>
         <span class="badge coinflip">🪙 Coin flip</span>
       </div>
-
       <div class="pred">
         <div class="ko">10:00 PM ET · Monterrey · Group F</div>
-        <div class="teams">
-          <span class="t"><img src="https://flagcdn.com/32x24/se.png" alt="Sweden">Sweden</span>
-          <span class="t"><img src="https://flagcdn.com/32x24/tn.png" alt="Tunisia">Tunisia</span>
-        </div>
+        <div class="teams"><span class="t"><img src="https://flagcdn.com/32x24/se.png" alt="Sweden">Sweden</span><span class="t"><img src="https://flagcdn.com/32x24/tn.png" alt="Tunisia">Tunisia</span></div>
         <div class="scoreline"><span class="lbl">My call</span><span class="sc">2–1</span></div>
         <span class="badge lean">📈 Lean</span>
       </div>
-
     </div>
   </section>
 
-  <!-- SIGNUP -->
   <section>
     <div class="signup">
       <h2>Get My Hot Takes In Your Inbox</h2>
-      <p>Love the takes? I send my predictions and game-by-game commentary straight to your inbox every World Cup morning. Free — drop your email below.</p>
-      <div class="form-frame">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeiVoHx28R79f3_G2lAAByBP23AroECJ8HpFqskUl0VRipiMg/viewform?embedded=true" title="Hot Takes signup">Loading…</iframe>
-      </div>
-      <p class="form-fallback">Form not loading? <a href="https://docs.google.com/forms/d/e/1FAIpQLSeiVoHx28R79f3_G2lAAByBP23AroECJ8HpFqskUl0VRipiMg/viewform?usp=header" target="_blank" rel="noopener">Open it in a new tab →</a></p>
+      <p>Daily World Cup commentary, tactical breakdowns, and my predictions — sent every tournament morning. Free.</p>
+      <ul class="perks">
+        <li>✅ Game-by-game hot takes &amp; scoreline calls</li>
+        <li>✅ Pre-match tactical breakdowns</li>
+        <li>✅ Knockout-stage predictions &amp; upset alerts</li>
+      </ul>
+      <a class="signup-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeiVoHx28R79f3_G2lAAByBP23AroECJ8HpFqskUl0VRipiMg/viewform?usp=header" target="_blank" rel="noopener">Sign Up Free →</a>
+      <p class="signup-note">Takes 30 seconds · Unsubscribe anytime</p>
     </div>
   </section>
 
-  <!-- THE TAKES FEED -->
   <section>
     <div class="sec-head"><h2>The Takes</h2><span class="when">Game by game</span></div>
     <div id="takesFeed"></div>
-
     <div class="cta-strip">
       <span>Headed to one of these matches? Sort your stay and getting around before prices climb.</span>
       <a class="btn g" href="where-to-stay.html">Plan Your Trip →</a>
@@ -208,80 +193,120 @@
 </footer>
 
 <script>
-  // Add a new object to the TOP of this array each day to post a take.
-  // confidence: "lock" | "lean" | "coinflip"  ·  status: "upcoming" | "final"
-  // verdict (only when final): "hit" | "close" | "miss"
+  // ADD a new object to the TOP of this array each day.
+  // confidence (upcoming): "lock" | "lean" | "coinflip"
+  // status: "upcoming" | "final"  ·  verdict (final only): "hit" | "close" | "miss"
+  // stats: short data/history chips that back the take.
   const hotTakes = [
-    {
-      date: "June 14, 2026", dayType: "today", group: "Group E",
+    { date:"June 14, 2026", dayType:"today", group:"Group E",
       home:"Germany", homeFlag:"de", away:"Curaçao", awayFlag:"cw",
       prediction:"3–0", confidence:"lock", status:"upcoming",
-      take:"The fairytale is real and I love it, but the scoreboard doesn't do fairytales. Curaçao will defend with everything and pack the box; Germany have too many gears. I expect a frustrating first 30 for the Germans, then the floodgates. Watch for Germany to win the second balls and bury it from range."
-    },
-    {
-      date: "June 14, 2026", dayType: "today", group: "Group F",
+      stats:["4× World Cup winners (GER)","Smallest nation ever at a WC (CUR)","Debut tournament for Curaçao"],
+      take:"Curaçao are the smallest nation ever to reach a World Cup — an island of ~150,000 people against four-time champions. I adore the story, but the gap is enormous. Expect a packed low block and Germany needing patience to crack it, then pulling away once the first goal drops. My watch: how fast Germany switch the ball side to side to drag that block apart." },
+
+    { date:"June 14, 2026", dayType:"today", group:"Group F",
       home:"Netherlands", homeFlag:"nl", away:"Japan", awayFlag:"jp",
       prediction:"2–1", confidence:"lean", status:"upcoming",
-      take:"My favorite watch of the day. Japan are quick, fearless, and press in packs — they will hurt the Dutch in transition. But Netherlands have the individual class to settle it. I think Japan score, and I think the Dutch still find the win. Don't blink during the middle 20 minutes."
-    },
-    {
-      date: "June 14, 2026", dayType: "today", group: "Group E",
+      stats:["Japan beat GER & ESP at 2022 WC","Dutch unbeaten in last WC group stage","Both pressing sides"],
+      take:"Best watch of the day. Japan's high, coordinated press and transition speed have buried bigger names — they beat Germany and Spain in 2022. The Dutch carry more individual quality up top, but sloppy build-up gets punished here. I lean Oranje on class, and I still expect Japan to score." },
+
+    { date:"June 14, 2026", dayType:"today", group:"Group E",
       home:"Ivory Coast", homeFlag:"ci", away:"Ecuador", awayFlag:"ec",
       prediction:"1–1", confidence:"coinflip", status:"upcoming",
-      take:"Two physical, well-drilled sides that both defend like it's personal. Whoever scores first sits back. I genuinely can't split them — give me a cagey draw and a set-piece deciding whether it's 1–1 or 1–0. Low-event, high-tension."
-    },
-    {
-      date: "June 14, 2026", dayType: "today", group: "Group F",
+      stats:["Ecuador: one of CONMEBOL's meanest defenses","Ivory Coast: power & pace everywhere","Likely low-scoring"],
+      take:"Two physical, defensively disciplined sides that both defend like it's personal. Ecuador's young core was among the stingiest in qualifying; Ivory Coast have power in every line. Whoever scores first sits deep and dares the other to break them down. I genuinely can't split them — a set piece decides it." },
+
+    { date:"June 14, 2026", dayType:"today", group:"Group F",
       home:"Sweden", homeFlag:"se", away:"Tunisia", awayFlag:"tn",
       prediction:"2–1", confidence:"lean", status:"upcoming",
-      take:"Late night in Monterrey. Tunisia are organized and nasty to break down, but Sweden carry more in the final third. I lean Sweden, though Tunisia nicking a point would not shock me one bit. Heat and altitude make the last 15 a slog — fitness wins it."
-    },
-    {
-      date: "June 13, 2026", dayType: "past", group: "Group C",
-      home:"Haiti", homeFlag:"ht", away:"Scotland", awayFlag:"gb-sct",
-      prediction:"0–1", confidence:"lean", status:"final", result:"0–1", verdict:"hit",
-      take:"Called the Tartan Army getting their moment. Scotland's first World Cup in 28 years and they managed it like grown-ups — McGinn's goal, then game management. Haiti competed and will trouble someone in this group, just not on the night."
-    },
-    {
-      date: "June 13, 2026", dayType: "past", group: "Group D",
-      home:"Australia", homeFlag:"au", away:"Türkiye", awayFlag:"tr",
-      prediction:"2–1", confidence:"coinflip", status:"final", result:"2–0", verdict:"close",
-      take:"I flagged the upset and the Socceroos delivered — just cleaner than I expected. The story is the keeper: Patrick Beach, eight saves, completely unbothered. Türkiye dominated the ball and got punished on the counter. Australia level with the USA on top of Group D now. Big statement."
-    },
-    {
-      date: "June 13, 2026", dayType: "past", group: "Group B",
+      stats:["Late kickoff, Monterrey heat","Tunisia: hard to break down","Sweden: bigger goal threat"],
+      take:"Late one in Monterrey, and the heat matters. Tunisia are organized and horrible to break down; Sweden carry the bigger threat with their forward line. I lean Sweden, but Tunisia stealing a point wouldn't shock me. Watch the legs in the last 15 — a fresh sub wins this." },
+
+    { date:"June 13, 2026", dayType:"past", group:"Group B",
       home:"Qatar", homeFlag:"qa", away:"Switzerland", awayFlag:"ch",
       prediction:"0–2", confidence:"lean", status:"final", result:"1–1", verdict:"miss",
-      take:"Hands up — I had Switzerland cruising and Qatar grabbed history instead. Embolo's penalty looked routine, then Qatar refused to die and headed one in at the death for their first-ever men's World Cup point. That's why we watch. Group B is now wide open."
-    }
+      stats:["First penalty of the tournament","Qatar's 1st-ever men's WC point","Equalizer in the 95'"],
+      take:"Hands up — I had Switzerland controlling this and cruising. Embolo's penalty, the first of the tournament, looked like the script. Then Qatar refused to die: Khoukhi's header in the 95th minute earned the Asian side their first-ever men's World Cup point. Data said Swiss control; Qatar found heart. Group B is wide open now." },
+
+    { date:"June 13, 2026", dayType:"past", group:"Group C",
+      home:"Brazil", homeFlag:"br", away:"Morocco", awayFlag:"ma",
+      prediction:"2–1", confidence:"lean", status:"final", result:"1–1", verdict:"miss",
+      stats:["Morocco: 2022 semifinalists","Neymar out (calf)","Brazil unbeaten in 21 WC openers"],
+      take:"I had Brazil 2–1. Wrong. Morocco are no friendly opener — 2022 semifinalists — and Saibari's goal had them deserving the lead. Ancelotti's debut was rescued by a flash of Vinícius Júnior, and with Neymar injured, Brazil looked like a work in progress. They stretched their unbeaten World Cup opener run to 21, but this was a warning, not a statement." },
+
+    { date:"June 13, 2026", dayType:"past", group:"Group C",
+      home:"Haiti", homeFlag:"ht", away:"Scotland", awayFlag:"gb-sct",
+      prediction:"0–1", confidence:"lean", status:"final", result:"0–1", verdict:"hit",
+      stats:["Scotland's 1st WC in 28 years","McGinn 28'","Scotland top Group C"],
+      take:"Called the Tartan Army's moment and Scotland delivered. First World Cup in 28 years and they handled it like grown-ups — McGinn's goal, then ruthless game management and zero panic. Haiti competed and have the athleticism to trouble someone in this group, just not on this night. Clean call." },
+
+    { date:"June 13, 2026", dayType:"past", group:"Group D",
+      home:"Australia", homeFlag:"au", away:"Türkiye", awayFlag:"tr",
+      prediction:"2–1", confidence:"coinflip", status:"final", result:"2–0", verdict:"close",
+      stats:["GK Patrick Beach: 8 saves","Irankunda: youngest-ever Aussie WC scorer","AUS level with USA atop Group D"],
+      take:"Flagged the upset, just didn't expect it this clean. The story is 22-year-old keeper Patrick Beach — eight saves, ice in his veins — picked ahead of veteran Maty Ryan and vindicated completely. Türkiye dominated the ball and got carved on the counter. Socceroos are level with the USA at the top of Group D." },
+
+    { date:"June 12, 2026", dayType:"past", group:"Group D",
+      home:"United States", homeFlag:"us", away:"Paraguay", awayFlag:"py",
+      prediction:"3–1", confidence:"lean", status:"final", result:"4–1", verdict:"close",
+      stats:["Balogun brace","Biggest output of Pochettino era","OG inside 7 minutes"],
+      take:"Knew the USMNT would handle Paraguay at home, underestimated how emphatic. A Bobadilla own goal inside seven minutes settled the nerves, then Folarin Balogun's brace took over — the biggest single-game output of the Pochettino era. Reyna's late one was gravy. Right read, wrong margin: I had three, they got four. Statement opener for the co-hosts." },
+
+    { date:"June 12, 2026", dayType:"past", group:"Group B",
+      home:"Canada", homeFlag:"ca", away:"Bosnia & Herzegovina", awayFlag:"ba",
+      prediction:"2–0", confidence:"lean", status:"final", result:"1–1", verdict:"miss",
+      stats:["Lukić 21' (BIH)","Larin 78' (CAN)","Co-hosts drop 2 points"],
+      take:"Too confident on the co-hosts. Lukić put Bosnia ahead and Canada looked nervy on the big stage until Larin bailed them out late. I expected a comfortable home win; instead it's a dropped two points that could matter in a tight group. Canada have the talent — they didn't have the composure here." },
+
+    { date:"June 11, 2026", dayType:"past", group:"Group A",
+      home:"Mexico", homeFlag:"mx", away:"South Africa", awayFlag:"za",
+      prediction:"2–0", confidence:"lock", status:"final", result:"2–0", verdict:"hit",
+      stats:["Played at Estadio Azteca","3 red cards — WC opener record","Quiñones 9', Jiménez"],
+      take:"The Azteca is a fortress and I trusted it. Quiñones struck early, Jiménez added the cushion, and El Tri controlled a chaotic opener that somehow produced three red cards — a World Cup-opener record. South Africa fought but couldn't cope with the altitude and the noise. Nailed the scoreline." },
+
+    { date:"June 11, 2026", dayType:"past", group:"Group A",
+      home:"South Korea", homeFlag:"kr", away:"Czechia", awayFlag:"cz",
+      prediction:"2–1", confidence:"lean", status:"final", result:"2–1", verdict:"hit",
+      stats:["Korea came from behind","Oh Hyeon-gyu 80' winner","Son captained, ran the show"],
+      take:"Backed Korea's legs and depth to come from behind, and they did. Krejci put Czechia ahead, but Hwang In-beom levelled and Oh Hyeon-gyu won it late. Son Heung-min didn't score but ran the show as captain. Korea's energy in the final 25 minutes was the difference — exactly the script I expected." }
   ];
 
   function flag(code){ return '<img src="https://flagcdn.com/32x24/'+code+'.png" alt="">'; }
 
   function render(){
+    // running record
+    let h=0,c=0,m=0;
+    hotTakes.forEach(t=>{ if(t.status==='final'){ if(t.verdict==='hit')h++; else if(t.verdict==='close')c++; else m++; }});
+    document.getElementById('recordbar').innerHTML =
+      '<span>Track record</span><span class="h"><b>'+h+'</b> Hit</span><span class="sep">·</span><span class="c"><b>'+c+'</b> Close</span><span class="sep">·</span><span class="m"><b>'+m+'</b> Miss</span>';
+
     const feed = document.getElementById('takesFeed');
-    let html = '', currentDate = null;
-    hotTakes.forEach(t => {
-      if(t.date !== currentDate){
-        currentDate = t.date;
-        const pillClass = t.dayType === 'today' ? 'today' : 'past';
-        const label = t.dayType === 'today' ? 'Today · ' + t.date : t.date;
+    let html='', currentDate=null;
+    hotTakes.forEach(t=>{
+      if(t.date!==currentDate){
+        currentDate=t.date;
+        const pillClass = t.dayType==='today' ? 'today':'past';
+        const label = t.dayType==='today' ? 'Today · '+t.date : t.date;
         html += '<div class="day-head"><span class="pill '+pillClass+'">'+label+'</span><span class="line"></span></div>';
       }
-      let predRow = '<div class="pred-row"><span class="k">My call</span><span class="my">'+t.prediction+'</span>';
-      if(t.status === 'final'){
+      let chips='';
+      if(t.stats){ chips = '<div class="stats">'+t.stats.map(s=>'<span class="stat">'+s+'</span>').join('')+'</div>'; }
+
+      let predRow='<div class="pred-row"><span class="k">My call</span><span class="my">'+t.prediction+'</span>';
+      if(t.status==='final'){
         predRow += '<span class="k">Result</span><span class="res">'+t.result+'</span>';
-        const vtxt = t.verdict === 'hit' ? '✓ Called it' : (t.verdict === 'close' ? '≈ Close' : '✗ Missed');
+        const vtxt = t.verdict==='hit' ? '✓ Called it' : (t.verdict==='close' ? '≈ Close' : '✗ Missed');
         predRow += '<span class="verdict '+t.verdict+'">'+vtxt+'</span>';
       } else {
-        const c = t.confidence;
-        const ctxt = c === 'lock' ? '🔒 Lock' : (c === 'lean' ? '📈 Lean' : '🪙 Coin flip');
-        predRow += '<span class="verdict '+(c==='lock'?'miss':c==='lean'?'close':'')+'" style="background:rgba(255,255,255,0.06);color:var(--muted);">'+ctxt+'</span>';
+        const cc=t.confidence;
+        const ctxt = cc==='lock' ? '🔒 Lock' : (cc==='lean' ? '📈 Lean' : '🪙 Coin flip');
+        predRow += '<span class="verdict" style="background:rgba(255,255,255,0.06);color:var(--muted);">'+ctxt+'</span>';
       }
       predRow += '</div>';
 
       html += '<div class="take">'
         + '<div class="top"><div class="match">'+flag(t.homeFlag)+t.home+'<span class="vs">vs</span>'+t.away+flag(t.awayFlag)+'</div><span class="grp">'+t.group+'</span></div>'
+        + chips
         + '<div class="body">'+t.take+'</div>'
         + predRow
         + '</div>';
