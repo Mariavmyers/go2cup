@@ -217,7 +217,7 @@ position: relative;
 overflow: hidden;
 min-height: auto;
 display: grid;
-grid-template-columns: 3fr 2fr;
+grid-template-columns: 1fr;
 align-items: stretch;
 }
 @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } }
@@ -1555,65 +1555,45 @@ font-size: 10px;
     <!-- Scoreboard -->
     <div style="background:rgba(4,14,8,0.92);border:1px solid rgba(47,128,255,0.22);border-radius:10px;overflow:hidden;margin-bottom:1.5rem;font-family:'Barlow Condensed',sans-serif;">
 
-      <!-- TODAY -->
-      <div style="background:rgba(47,128,255,0.13);border-bottom:1px solid rgba(47,128,255,0.28);padding:6px 14px;">
-        <span style="font-size:10px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:#5ba8ff;">● Today · Sun, June 14</span>
+      <!-- SUN JUNE 14 FT -->
+      <div style="background:rgba(47,128,255,0.07);border-bottom:1px solid rgba(47,128,255,0.12);padding:4px 14px;">
+        <span style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#5ba8ff;">Sun, June 14 · FT</span>
       </div>
-      <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <span style="flex:0 0 auto;background:rgba(47,128,255,0.2);color:#7ec0ff;font-size:10px;font-weight:700;letter-spacing:0.06em;padding:2px 8px;border-radius:3px;white-space:nowrap;">1:00 PM</span>
-        <div style="flex:1;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:700;color:#fff;min-width:0;">
-          <img src="https://flagcdn.com/32x24/de.png" width="16" alt="Germany" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-          <span>Germany</span>
-          <span style="color:rgba(255,255,255,0.3);font-weight:400;font-size:11px;padding:0 2px;">vs</span>
-          <img src="https://flagcdn.com/32x24/cw.png" width="16" alt="Curaçao" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-          <span>Curaçao</span>
-        </div>
-        <div style="flex:0 0 auto;text-align:right;line-height:1.35;">
-          <div style="font-size:10px;color:rgba(255,255,255,0.4);white-space:nowrap;">NRG · Houston</div>
-          <div style="font-size:9px;color:rgba(255,255,255,0.25);white-space:nowrap;">17:00 UTC</div>
-        </div>
+      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
+        <img src="https://flagcdn.com/32x24/de.png" width="16" alt="Germany" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
+        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Germany</span>
+        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">7</span>
+        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
+        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">1</span>
+        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Curaçao</span>
+        <img src="https://flagcdn.com/32x24/cw.png" width="16" alt="Curaçao" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
       </div>
-      <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <span style="flex:0 0 auto;background:rgba(47,128,255,0.2);color:#7ec0ff;font-size:10px;font-weight:700;letter-spacing:0.06em;padding:2px 8px;border-radius:3px;white-space:nowrap;">4:00 PM</span>
-        <div style="flex:1;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:700;color:#fff;min-width:0;">
-          <img src="https://flagcdn.com/32x24/nl.png" width="16" alt="Netherlands" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-          <span>Netherlands</span>
-          <span style="color:rgba(255,255,255,0.3);font-weight:400;font-size:11px;padding:0 2px;">vs</span>
-          <img src="https://flagcdn.com/32x24/jp.png" width="16" alt="Japan" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-          <span>Japan</span>
-        </div>
-        <div style="flex:0 0 auto;text-align:right;line-height:1.35;">
-          <div style="font-size:10px;color:rgba(255,255,255,0.4);white-space:nowrap;">AT&amp;T · Arlington</div>
-          <div style="font-size:9px;color:rgba(255,255,255,0.25);white-space:nowrap;">20:00 UTC</div>
-        </div>
+      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
+        <img src="https://flagcdn.com/32x24/nl.png" width="16" alt="Netherlands" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
+        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Netherlands</span>
+        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">2</span>
+        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
+        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">2</span>
+        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Japan</span>
+        <img src="https://flagcdn.com/32x24/jp.png" width="16" alt="Japan" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
       </div>
-      <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <span style="flex:0 0 auto;background:rgba(47,128,255,0.2);color:#7ec0ff;font-size:10px;font-weight:700;letter-spacing:0.06em;padding:2px 8px;border-radius:3px;white-space:nowrap;">7:00 PM</span>
-        <div style="flex:1;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:700;color:#fff;min-width:0;">
-          <img src="https://flagcdn.com/32x24/ci.png" width="16" alt="Ivory Coast" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-          <span>Ivory Coast</span>
-          <span style="color:rgba(255,255,255,0.3);font-weight:400;font-size:11px;padding:0 2px;">vs</span>
-          <img src="https://flagcdn.com/32x24/ec.png" width="16" alt="Ecuador" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-          <span>Ecuador</span>
-        </div>
-        <div style="flex:0 0 auto;text-align:right;line-height:1.35;">
-          <div style="font-size:10px;color:rgba(255,255,255,0.4);white-space:nowrap;">Lincoln Fin · Philly</div>
-          <div style="font-size:9px;color:rgba(255,255,255,0.25);white-space:nowrap;">23:00 UTC</div>
-        </div>
+      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
+        <img src="https://flagcdn.com/32x24/ci.png" width="16" alt="Ivory Coast" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
+        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Ivory Coast</span>
+        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">1</span>
+        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
+        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">0</span>
+        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Ecuador</span>
+        <img src="https://flagcdn.com/32x24/ec.png" width="16" alt="Ecuador" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
       </div>
-      <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <span style="flex:0 0 auto;background:rgba(47,128,255,0.2);color:#7ec0ff;font-size:10px;font-weight:700;letter-spacing:0.06em;padding:2px 8px;border-radius:3px;white-space:nowrap;">10:00 PM</span>
-        <div style="flex:1;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:700;color:#fff;min-width:0;">
-          <img src="https://flagcdn.com/32x24/se.png" width="16" alt="Sweden" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-          <span>Sweden</span>
-          <span style="color:rgba(255,255,255,0.3);font-weight:400;font-size:11px;padding:0 2px;">vs</span>
-          <img src="https://flagcdn.com/32x24/tn.png" width="16" alt="Tunisia" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-          <span>Tunisia</span>
-        </div>
-        <div style="flex:0 0 auto;text-align:right;line-height:1.35;">
-          <div style="font-size:10px;color:rgba(255,255,255,0.4);white-space:nowrap;">Estadio · Monterrey</div>
-          <div style="font-size:9px;color:rgba(255,255,255,0.25);white-space:nowrap;">02:00 UTC +1</div>
-        </div>
+      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;">
+        <img src="https://flagcdn.com/32x24/se.png" width="16" alt="Sweden" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
+        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Sweden</span>
+        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">5</span>
+        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
+        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">1</span>
+        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Tunisia</span>
+        <img src="https://flagcdn.com/32x24/tn.png" width="16" alt="Tunisia" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
       </div>
 
       <!-- SAT JUNE 13 -->
@@ -1708,43 +1688,59 @@ font-size: 10px;
       <a href="hot-takes.html" class="btn-green">✉ Get the highlights &amp; my hot takes</a>
     </div>
   </div>
-  <div class="hero-right" style="align-items:flex-start;">
-    <aside class="wc-trip">
-      <span class="eb">⚽ Plan your World Cup trip</span>
-      <span class="sub">Everything for the journey — booked in a tap.</span>
+</section>
 
-      <a class="trip-btn" href="/where-to-stay.html" style="--ac:#2f80ff">
-        <span class="ic">🏨</span>
-        <span class="tx"><b>Find Hotels</b><i>Stays near every host city</i></span>
-        <span class="ar">→</span>
-      </a>
+<!-- TODAY'S GAMES BAND -->
+<section style="background:#fff3d6;border-top:3px solid #f5b942;border-bottom:1px solid #e8c96a;padding:2.5rem clamp(1.5rem,5vw,4rem);">
+  <div style="max-width:1040px;margin:0 auto;">
+    <div style="font-family:'Anton',sans-serif;font-size:clamp(1.6rem,3.5vw,2.4rem);letter-spacing:0.04em;color:#1d2433;line-height:1;margin-bottom:0.4rem;">TODAY'S GAMES</div>
+    <div style="font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#8a6800;margin-bottom:1.5rem;">Monday, June 15 · all times ET</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-bottom:1.5rem;">
 
-      <a class="trip-btn" href="https://aviasales.tpk.lu/gsLDMhOV" target="_blank" rel="sponsored noopener" style="--ac:#21c25a">
-        <span class="ic">✈️</span>
-        <span class="tx"><b>Find Flights</b><i>Compare every airline</i></span>
-        <span class="ar">→</span>
-      </a>
+      <div style="background:#fff;border:1.5px solid #f5b942;border-radius:10px;overflow:hidden;">
+        <div style="background:#f5b942;padding:4px 12px;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#1d2433;">12:00 PM ET</div>
+        <div style="padding:12px 14px;">
+          <div style="display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#1d2433;margin-bottom:5px;"><img src="https://flagcdn.com/32x24/es.png" width="20" alt="Spain" style="border-radius:2px;vertical-align:middle;margin:0 5px;">Spain</div>
+          <div style="font-size:11px;font-weight:800;letter-spacing:0.05em;color:#f5b942;text-align:center;margin:2px 0;">VS</div>
+          <div style="display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#1d2433;margin-bottom:8px;"><img src="https://flagcdn.com/32x24/cv.png" width="20" alt="Cape Verde" style="border-radius:2px;vertical-align:middle;margin:0 5px;">Cape Verde</div>
+          <div style="font-size:11.5px;color:#7a6200;">Atlanta</div>
+        </div>
+      </div>
 
-      <a class="trip-btn" href="https://kiwitaxi.tpk.lu/BqfvRurI" target="_blank" rel="sponsored noopener" style="--ac:#ffd84d">
-        <span class="ic">🚕</span>
-        <span class="tx"><b>Airport Transfers</b><i>Door-to-door rides</i></span>
-        <span class="ar">→</span>
-      </a>
+      <div style="background:#fff;border:1.5px solid #f5b942;border-radius:10px;overflow:hidden;">
+        <div style="background:#f5b942;padding:4px 12px;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#1d2433;">3:00 PM ET</div>
+        <div style="padding:12px 14px;">
+          <div style="display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#1d2433;margin-bottom:5px;"><img src="https://flagcdn.com/32x24/be.png" width="20" alt="Belgium" style="border-radius:2px;vertical-align:middle;margin:0 5px;">Belgium</div>
+          <div style="font-size:11px;font-weight:800;letter-spacing:0.05em;color:#f5b942;text-align:center;margin:2px 0;">VS</div>
+          <div style="display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#1d2433;margin-bottom:8px;"><img src="https://flagcdn.com/32x24/eg.png" width="20" alt="Egypt" style="border-radius:2px;vertical-align:middle;margin:0 5px;">Egypt</div>
+          <div style="font-size:11.5px;color:#7a6200;">Seattle</div>
+        </div>
+      </div>
 
-      <a class="trip-btn" href="https://tiqets.tpk.lu/finZfjdm" target="_blank" rel="sponsored noopener" style="--ac:#ff4338">
-        <span class="ic">🎟️</span>
-        <span class="tx"><b>Tickets &amp; Attractions</b><i>Skip-the-line in host cities</i></span>
-        <span class="ar">→</span>
-      </a>
+      <div style="background:#fff;border:1.5px solid #f5b942;border-radius:10px;overflow:hidden;">
+        <div style="background:#f5b942;padding:4px 12px;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#1d2433;">6:00 PM ET</div>
+        <div style="padding:12px 14px;">
+          <div style="display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#1d2433;margin-bottom:5px;"><img src="https://flagcdn.com/32x24/sa.png" width="20" alt="Saudi Arabia" style="border-radius:2px;vertical-align:middle;margin:0 5px;">Saudi Arabia</div>
+          <div style="font-size:11px;font-weight:800;letter-spacing:0.05em;color:#f5b942;text-align:center;margin:2px 0;">VS</div>
+          <div style="display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#1d2433;margin-bottom:8px;"><img src="https://flagcdn.com/32x24/uy.png" width="20" alt="Uruguay" style="border-radius:2px;vertical-align:middle;margin:0 5px;">Uruguay</div>
+          <div style="font-size:11.5px;color:#7a6200;">Miami</div>
+        </div>
+      </div>
 
-      <a class="trip-btn" href="https://yesim.tpk.lu/C1Ccs6ol" target="_blank" rel="sponsored noopener" style="--ac:#27c4d6">
-        <span class="ic">📱</span>
-        <span class="tx"><b>eSIM Data</b><i>Stay connected abroad</i></span>
-        <span class="ar">→</span>
-      </a>
+      <div style="background:#fff;border:1.5px solid #f5b942;border-radius:10px;overflow:hidden;">
+        <div style="background:#f5b942;padding:4px 12px;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#1d2433;">9:00 PM ET</div>
+        <div style="padding:12px 14px;">
+          <div style="display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#1d2433;margin-bottom:5px;"><img src="https://flagcdn.com/32x24/ir.png" width="20" alt="Iran" style="border-radius:2px;vertical-align:middle;margin:0 5px;">Iran</div>
+          <div style="font-size:11px;font-weight:800;letter-spacing:0.05em;color:#f5b942;text-align:center;margin:2px 0;">VS</div>
+          <div style="display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#1d2433;margin-bottom:8px;"><img src="https://flagcdn.com/32x24/nz.png" width="20" alt="New Zealand" style="border-radius:2px;vertical-align:middle;margin:0 5px;">New Zealand</div>
+          <div style="font-size:11.5px;color:#7a6200;">Los Angeles</div>
+        </div>
+      </div>
 
-      <div class="disc">We may earn a commission from these partner links.</div>
-    </aside>
+    </div>
+    <div style="text-align:center;">
+      <a href="hot-takes.html" style="display:inline-block;background:#ffb000;color:#1d2433;font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;padding:13px 32px;border-radius:6px;text-decoration:none;">Get My Hot Takes →</a>
+    </div>
   </div>
 </section>
 
@@ -1759,9 +1755,49 @@ font-size: 10px;
     <a class="sched" href="https://sportdgx.com/wc2026-matches-calendar.html">Full schedule →</a>
   </div>
   <div style="margin-top:1.75rem;">
-    <div style="font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#ff4338;margin-bottom:0.65rem;">● First phase · Group stage</div>
-    <div style="font-family:'Anton',sans-serif;font-size:clamp(1.8rem,4vw,3rem);letter-spacing:0.02em;color:var(--ink);line-height:1;margin-bottom:0.7rem;">THE GROUP STAGE</div>
-    <p style="font-size:14px;color:var(--ink-soft);line-height:1.7;max-width:680px;margin-bottom:2rem;">The tournament opens with the group stage. 48 teams are split into 12 groups of four, and every team plays three matches. The top two from each group, plus the eight best third-place finishers, advance to the new Round of 32.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:2rem;align-items:flex-start;margin-bottom:2rem;">
+      <div style="flex:1;min-width:280px;">
+        <div style="font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#ff4338;margin-bottom:0.65rem;">● First phase · Group stage</div>
+        <div style="font-family:'Anton',sans-serif;font-size:clamp(1.8rem,4vw,3rem);letter-spacing:0.02em;color:var(--ink);line-height:1;margin-bottom:0.7rem;">THE GROUP STAGE</div>
+        <p style="font-size:14px;color:var(--ink-soft);line-height:1.7;max-width:680px;">The tournament opens with the group stage. 48 teams are split into 12 groups of four, and every team plays three matches. The top two from each group, plus the eight best third-place finishers, advance to the new Round of 32.</p>
+      </div>
+      <aside class="wc-trip" style="flex-shrink:0;">
+        <span class="eb">⚽ Plan your World Cup trip</span>
+        <span class="sub">Everything for the journey — booked in a tap.</span>
+
+        <a class="trip-btn" href="/where-to-stay.html" style="--ac:#2f80ff">
+          <span class="ic">🏨</span>
+          <span class="tx"><b>Find Hotels</b><i>Stays near every host city</i></span>
+          <span class="ar">→</span>
+        </a>
+
+        <a class="trip-btn" href="https://aviasales.tpk.lu/gsLDMhOV" target="_blank" rel="sponsored noopener" style="--ac:#21c25a">
+          <span class="ic">✈️</span>
+          <span class="tx"><b>Find Flights</b><i>Compare every airline</i></span>
+          <span class="ar">→</span>
+        </a>
+
+        <a class="trip-btn" href="https://kiwitaxi.tpk.lu/BqfvRurI" target="_blank" rel="sponsored noopener" style="--ac:#ffd84d">
+          <span class="ic">🚕</span>
+          <span class="tx"><b>Airport Transfers</b><i>Door-to-door rides</i></span>
+          <span class="ar">→</span>
+        </a>
+
+        <a class="trip-btn" href="https://tiqets.tpk.lu/finZfjdm" target="_blank" rel="sponsored noopener" style="--ac:#ff4338">
+          <span class="ic">🎟️</span>
+          <span class="tx"><b>Tickets &amp; Attractions</b><i>Skip-the-line in host cities</i></span>
+          <span class="ar">→</span>
+        </a>
+
+        <a class="trip-btn" href="https://yesim.tpk.lu/C1Ccs6ol" target="_blank" rel="sponsored noopener" style="--ac:#27c4d6">
+          <span class="ic">📱</span>
+          <span class="tx"><b>eSIM Data</b><i>Stay connected abroad</i></span>
+          <span class="ar">→</span>
+        </a>
+
+        <div class="disc">We may earn a commission from these partner links.</div>
+      </aside>
+    </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.1rem;">
 
       <div style="border:1.5px solid #e2e8f0;border-radius:9px;padding:1rem 1.1rem;background:#fff;">
