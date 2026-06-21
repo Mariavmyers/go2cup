@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1">
@@ -40,7 +40,7 @@
 <meta name="keywords" content="SportDGX, World Cup 2026, Soccer 2026, NFL, Formula One, Kansas City sports, host cities, fan guide, fan travel, sports news, tickets, travel planning">
 <meta name='impact-site-verification' value='23a14fd3-68e7-4c9e-b621-d0eaf5555686'>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&family=Space+Mono:wght@400;700&family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
 --pitch: #00a651;
@@ -222,6 +222,7 @@ text-decoration: none;
 transition: all 0.2s;
 }
 .nav-cta:hover { background: var(--fire-dark); }
+.nav-live-dot { display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--fire); animation:pulse 1.6s infinite; vertical-align:middle; margin-right:4px; flex-shrink:0; }
 @media (max-width: 768px) { .nav-links { display: none; } }
 /* ── HERO ── */
 .hero {
@@ -1477,6 +1478,68 @@ font-size: 10px;
 .wc-matches .kc .t{font-size:15px;font-weight:800;}
 .wc-matches .kc .d{font-size:13px;color:var(--ink-soft);margin-top:2px;}
 @media(max-width:560px){.wc-matches h2{font-size:24px;}}
+
+/* ── PITCH HERO (scoped) ── */
+.g2c-pitch{
+  --g2c-blue:#2f80ff;--g2c-green:#21c25a;--g2c-red:#ff4338;--g2c-gold:#f5c518;
+  --g2c-bg:#07180e;--g2c-ink:#ffffff;--g2c-muted:#d8ffe8;
+  --g2c-line:rgba(255,255,255,.85);
+  position:relative;overflow:hidden;color:var(--g2c-ink);
+  padding:clamp(30px,4vw,58px) clamp(16px,4vw,46px) clamp(38px,5vw,70px);
+  background:repeating-linear-gradient(90deg,#1f9d54 0 6.66%,#178a47 6.66% 13.33%);
+}
+.g2c-pitch .overlay{position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(ellipse at 50% 44%,rgba(3,16,9,.62),rgba(3,16,9,.18) 58%,transparent 78%);}
+.g2c-pitch .markings{position:absolute;inset:clamp(14px,2vw,26px);z-index:1;pointer-events:none;
+  border:3px solid var(--g2c-line);border-radius:6px;}
+.g2c-pitch .markings::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:3px;
+  transform:translateX(-50%);background:var(--g2c-line);}
+.g2c-pitch .markings::after{content:"";position:absolute;left:50%;top:50%;
+  transform:translate(-50%,-50%);width:clamp(110px,17vw,210px);aspect-ratio:1;
+  border:3px solid var(--g2c-line);border-radius:50%;}
+.g2c-pitch .spot{position:absolute;left:50%;top:50%;width:9px;height:9px;
+  border-radius:50%;background:var(--g2c-line);transform:translate(-50%,-50%);}
+.g2c-pitch .pen{position:absolute;top:50%;transform:translateY(-50%);
+  width:clamp(64px,10vw,130px);height:54%;border:3px solid var(--g2c-line);}
+.g2c-pitch .pen.l{left:-3px;border-left:none;}
+.g2c-pitch .pen.r{right:-3px;border-right:none;}
+.g2c-pitch .pitch-wrap{position:relative;z-index:2;max-width:1100px;margin:0 auto;text-align:center;}
+.g2c-pitch .eyebrow{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.3em;
+  text-transform:uppercase;font-size:.74rem;color:var(--g2c-gold);
+  margin:0 0 12px;text-shadow:0 2px 8px rgba(0,0,0,.6);}
+.g2c-pitch .headline{font-family:'Bebas Neue',sans-serif;font-weight:400;line-height:.9;
+  font-size:clamp(2.8rem,8vw,5.8rem);letter-spacing:.01em;margin:0 0 14px;
+  text-transform:uppercase;text-shadow:0 4px 22px rgba(0,0,0,.65),0 1px 2px rgba(0,0,0,.7);}
+.g2c-pitch .headline .w{color:#ffffff;}
+.g2c-pitch .headline .g{color:#5cff97;}
+.g2c-pitch .headline .y{color:var(--g2c-gold);}
+.g2c-pitch .subhead{font-family:'Oswald',sans-serif;font-weight:500;letter-spacing:.16em;
+  text-transform:uppercase;font-size:clamp(.82rem,1.6vw,1rem);
+  color:var(--g2c-muted);margin:0 0 26px;text-shadow:0 2px 8px rgba(0,0,0,.7);}
+.g2c-pitch .lineup{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;
+  max-width:760px;margin:0 auto 26px;}
+.g2c-pitch .city{font-family:'Oswald',sans-serif;font-weight:600;font-size:.82rem;
+  letter-spacing:.03em;text-decoration:none;color:var(--g2c-ink);
+  background:rgba(4,18,10,.78);border:1px solid rgba(255,255,255,.34);
+  padding:8px 13px;border-radius:999px;
+  transition:transform .15s ease,border-color .15s ease,background .15s ease;}
+.g2c-pitch .city:hover{transform:translateY(-3px);border-color:var(--g2c-gold);
+  background:rgba(33,194,90,.4);}
+.g2c-pitch .city:focus-visible{outline:3px solid var(--g2c-gold);outline-offset:2px;}
+.g2c-pitch .cta{display:inline-flex;align-items:center;gap:8px;
+  font-family:'Oswald',sans-serif;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;font-size:.95rem;text-decoration:none;
+  color:var(--g2c-bg);background:var(--g2c-gold);
+  padding:14px 28px;border-radius:10px;box-shadow:0 12px 28px -10px rgba(0,0,0,.6);
+  transition:filter .15s ease,transform .15s ease;}
+.g2c-pitch .cta:hover{filter:brightness(1.06);transform:translateY(-2px);}
+.g2c-pitch .cta:focus-visible{outline:3px solid #fff;outline-offset:3px;}
+.g2c-pitch .cta span{transition:transform .15s ease;}
+.g2c-pitch .cta:hover span{transform:translateX(3px);}
+@media(prefers-reduced-motion:reduce){
+  .g2c-pitch .city,.g2c-pitch .cta,.g2c-pitch .cta span{transition:none;}
+  .g2c-pitch .city:hover,.g2c-pitch .cta:hover{transform:none;}
+}
 </style>
 </head>
 <body>
@@ -1539,13 +1602,14 @@ font-size: 10px;
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="host-cities.html">🏆 Host Cities</a></li>
-    <li><a href="where-to-stay.html">🏨 Where to Stay</a></li>
-    <li><a href="sports-news.html">📰 Sports News</a></li>
-    <li><a href="hot-takes.html">🔥 Hot Takes</a></li>
-    <li><a href="first-match-mexico.html">⚽ First Match</a></li>
-    <li><a href="blog.html">✍️ Blog</a></li>
-    <li><a href="maria-myers.html">👩‍💼 Hire Maria</a></li>
+    <li><a href="host-cities.html">Host Cities</a></li>
+    <li><a href="where-to-stay.html">Where to Stay</a></li>
+    <li><a href="sports-news.html">Sports News</a></li>
+    <li><a href="scoreboard.html">Scoreboard</a></li>
+    <li><a href="live-matches.html"><span class="nav-live-dot"></span>Live Matches</a></li>
+    <li><a href="hot-takes.html">Hot Takes</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="grand-final.html" style="color:var(--sun);font-weight:800;"><span class="nav-live-dot"></span>GRAND FINAL</a></li>
   </ul>
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJIRLo6dBkPh57cKbVFnU1lz7dgutqzAHO2WsXiT2DDOp43g/viewform?usp=header" class="nav-cta" target="_blank" rel="noopener">GET YOUR COUNTRY HOPPER GUIDE →</a>
 </nav>
@@ -1557,318 +1621,46 @@ font-size: 10px;
 </a>
 <!-- ── END STREAMING PROMO BAR ── -->
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-pitch-lines"></div>
-  <div class="hero-left fade-in" style="padding-top:1.5rem;justify-content:flex-start;">
-    <div class="hero-eyebrow" style="margin-bottom:0.5rem;">🏆 THE WORLD CUP IS LIVE — GROUP STAGE</div>
-    <h1 style="font-size:clamp(40px,6vw,64px);line-height:1.05;margin-bottom:0.35rem;">PLAN YOUR <span class="accent">WORLD CUP</span> <span class="fire-accent">JOURNEY.</span></h1>
-    <div class="hero-tagline" style="margin-bottom:1rem;">USA · México · Canadá · Host Cities · Hotels · Fan Intel</div>
-
-    <!-- Scoreboard -->
-    <div style="background:rgba(4,14,8,0.92);border:1px solid rgba(47,128,255,0.22);border-radius:10px;overflow:hidden;margin-bottom:1.5rem;font-family:'Barlow Condensed',sans-serif;">
-
-      <!-- SAT JUNE 20 FT -->
-      <div style="background:rgba(47,128,255,0.07);border-bottom:1px solid rgba(47,128,255,0.12);padding:4px 14px;">
-        <span style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#5ba8ff;">Sat, June 20 · FT</span>
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <img src="https://flagcdn.com/32x24/nl.png" width="16" alt="Netherlands" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Netherlands</span>
-        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">5</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Sweden</span>
-        <img src="https://flagcdn.com/32x24/se.png" width="16" alt="Sweden" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <img src="https://flagcdn.com/32x24/de.png" width="16" alt="Germany" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Germany</span>
-        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">2</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Ivory Coast</span>
-        <img src="https://flagcdn.com/32x24/ci.png" width="16" alt="Ivory Coast" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;">
-        <img src="https://flagcdn.com/32x24/ec.png" width="16" alt="Ecuador" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Ecuador</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">0</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">0</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Curaçao</span>
-        <img src="https://flagcdn.com/32x24/cw.png" width="16" alt="Curaçao" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-
-      <!-- FRI JUNE 19 FT -->
-      <div style="background:rgba(33,194,90,0.07);border-top:1px solid rgba(33,194,90,0.22);border-bottom:1px solid rgba(33,194,90,0.12);padding:4px 14px;">
-        <span style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#21c25a;">Fri, June 19 · FT</span>
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <img src="https://flagcdn.com/32x24/us.png" width="16" alt="USA" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">USA</span>
-        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">2</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">0</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Australia</span>
-        <img src="https://flagcdn.com/32x24/au.png" width="16" alt="Australia" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <img src="https://flagcdn.com/32x24/br.png" width="16" alt="Brazil" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Brazil</span>
-        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">3</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">0</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Haiti</span>
-        <img src="https://flagcdn.com/32x24/ht.png" width="16" alt="Haiti" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <img src="https://flagcdn.com/32x24/ma.png" width="16" alt="Morocco" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Morocco</span>
-        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">0</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Scotland</span>
-        <img src="https://flagcdn.com/32x24/gb-sct.png" width="16" alt="Scotland" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;">
-        <img src="https://flagcdn.com/32x24/py.png" width="16" alt="Paraguay" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Paraguay</span>
-        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">0</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Türkiye</span>
-        <img src="https://flagcdn.com/32x24/tr.png" width="16" alt="Türkiye" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-
-      <!-- THU JUNE 18 FT -->
-      <div style="background:rgba(245,197,24,0.07);border-top:1px solid rgba(245,197,24,0.22);border-bottom:1px solid rgba(245,197,24,0.12);padding:4px 14px;">
-        <span style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#c8971a;">Thu, June 18 · FT</span>
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <img src="https://flagcdn.com/32x24/ca.png" width="16" alt="Canada" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Canada</span>
-        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">6</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">0</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Qatar</span>
-        <img src="https://flagcdn.com/32x24/qa.png" width="16" alt="Qatar" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <img src="https://flagcdn.com/32x24/ch.png" width="16" alt="Switzerland" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Switzerland</span>
-        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">4</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Bosnia &amp; Herz.</span>
-        <img src="https://flagcdn.com/32x24/ba.png" width="16" alt="Bosnia &amp; Herz." style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <img src="https://flagcdn.com/32x24/mx.png" width="16" alt="Mexico" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Mexico</span>
-        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">0</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">South Korea</span>
-        <img src="https://flagcdn.com/32x24/kr.png" width="16" alt="South Korea" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;">
-        <img src="https://flagcdn.com/32x24/cz.png" width="16" alt="Czechia" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Czechia</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">South Africa</span>
-        <img src="https://flagcdn.com/32x24/za.png" width="16" alt="South Africa" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-
-      <!-- SUN JUNE 14 FT -->
-      <div style="background:rgba(47,128,255,0.07);border-top:1px solid rgba(47,128,255,0.22);border-bottom:1px solid rgba(47,128,255,0.12);padding:4px 14px;">
-        <span style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#5ba8ff;">Sun, June 14 · FT</span>
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <img src="https://flagcdn.com/32x24/de.png" width="16" alt="Germany" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Germany</span>
-        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">7</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Curaçao</span>
-        <img src="https://flagcdn.com/32x24/cw.png" width="16" alt="Curaçao" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <img src="https://flagcdn.com/32x24/nl.png" width="16" alt="Netherlands" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Netherlands</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">2</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">2</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Japan</span>
-        <img src="https://flagcdn.com/32x24/jp.png" width="16" alt="Japan" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <img src="https://flagcdn.com/32x24/ci.png" width="16" alt="Ivory Coast" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Ivory Coast</span>
-        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">0</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Ecuador</span>
-        <img src="https://flagcdn.com/32x24/ec.png" width="16" alt="Ecuador" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;">
-        <img src="https://flagcdn.com/32x24/se.png" width="16" alt="Sweden" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Sweden</span>
-        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">5</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Tunisia</span>
-        <img src="https://flagcdn.com/32x24/tn.png" width="16" alt="Tunisia" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-
-      <!-- SAT JUNE 13 -->
-      <div style="background:rgba(33,194,90,0.07);border-top:1px solid rgba(33,194,90,0.22);border-bottom:1px solid rgba(33,194,90,0.12);padding:4px 14px;">
-        <span style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#21c25a;">Sat, June 13 · FT</span>
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <img src="https://flagcdn.com/32x24/qa.png" width="16" alt="Qatar" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Qatar</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Switzerland</span>
-        <img src="https://flagcdn.com/32x24/ch.png" width="16" alt="Switzerland" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <img src="https://flagcdn.com/32x24/br.png" width="16" alt="Brazil" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Brazil</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Morocco</span>
-        <img src="https://flagcdn.com/32x24/ma.png" width="16" alt="Morocco" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <img src="https://flagcdn.com/32x24/ht.png" width="16" alt="Haiti" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Haiti</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">0</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Scotland</span>
-        <img src="https://flagcdn.com/32x24/gb-sct.png" width="16" alt="Scotland" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;">
-        <img src="https://flagcdn.com/32x24/au.png" width="16" alt="Australia" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Australia</span>
-        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">2</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">0</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Türkiye</span>
-        <img src="https://flagcdn.com/32x24/tr.png" width="16" alt="Türkiye" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-
-      <!-- FRI JUNE 12 -->
-      <div style="background:rgba(245,197,24,0.07);border-top:1px solid rgba(245,197,24,0.22);border-bottom:1px solid rgba(245,197,24,0.12);padding:4px 14px;">
-        <span style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#c8971a;">Fri, June 12 · FT</span>
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <img src="https://flagcdn.com/32x24/us.png" width="16" alt="USA" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">United States</span>
-        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">4</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Paraguay</span>
-        <img src="https://flagcdn.com/32x24/py.png" width="16" alt="Paraguay" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;">
-        <img src="https://flagcdn.com/32x24/ca.png" width="16" alt="Canada" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Canada</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.6);font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Bosnia &amp; Herz.</span>
-        <img src="https://flagcdn.com/32x24/ba.png" width="16" alt="Bosnia" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-
-      <!-- THU JUNE 11 -->
-      <div style="background:rgba(255,67,56,0.07);border-top:1px solid rgba(255,67,56,0.22);border-bottom:1px solid rgba(255,67,56,0.12);padding:4px 14px;">
-        <span style="font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#ff6b5b;">Thu, June 11 · FT</span>
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,0.05);">
-        <img src="https://flagcdn.com/32x24/mx.png" width="16" alt="Mexico" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">Mexico</span>
-        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">2</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">0</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">South Africa</span>
-        <img src="https://flagcdn.com/32x24/za.png" width="16" alt="South Africa" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:9px 14px;">
-        <img src="https://flagcdn.com/32x24/kr.png" width="16" alt="South Korea" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;">South Korea</span>
-        <span style="font-size:26px;font-weight:800;color:#21c25a;font-family:'Anton',sans-serif;">2</span>
-        <span style="font-size:12px;color:rgba(255,255,255,0.25);padding:0 3px;">–</span>
-        <span style="font-size:26px;font-weight:800;color:rgba(255,255,255,0.5);font-family:'Anton',sans-serif;">1</span>
-        <span style="font-size:15px;font-weight:700;color:#fff;flex:1;text-align:right;">Czechia</span>
-        <img src="https://flagcdn.com/32x24/cz.png" width="16" alt="Czechia" style="border-radius:2px;vertical-align:middle;flex-shrink:0;">
-      </div>
-
-    </div>
-    <div class="hero-actions">
-      <a href="hot-takes.html" class="btn-green">✉ Get the highlights &amp; my hot takes</a>
-    </div>
+<!-- PITCH HERO -->
+<section class="g2c-pitch" aria-label="Explore host cities">
+  <div class="overlay"></div>
+  <div class="markings">
+    <span class="spot"></span>
+    <span class="pen l"></span>
+    <span class="pen r"></span>
+  </div>
+  <div class="pitch-wrap">
+    <p class="eyebrow">GO2CUP &middot; USA &middot; M&eacute;xico &middot; Canad&aacute;</p>
+    <h1 class="headline">
+      <span class="w">Explore the Best of</span><br>
+      <span class="g">Every Host City</span><span class="y">.</span>
+    </h1>
+    <p class="subhead">16 Host Cities &middot; Sights &middot; Eats &middot; Things to Do</p>
+    <nav class="lineup" aria-label="Host cities">
+      <a class="city" href="/host-cities/atlanta.html">Atlanta</a>
+      <a class="city" href="/host-cities/boston-foxborough.html">Boston</a>
+      <a class="city" href="/host-cities/dallas.html">Dallas</a>
+      <a class="city" href="/host-cities/houston.html">Houston</a>
+      <a class="city" href="/host-cities/kansas-city.html">Kansas City</a>
+      <a class="city" href="/host-cities/los-angeles.html">Los Angeles</a>
+      <a class="city" href="/host-cities/miami.html">Miami</a>
+      <a class="city" href="/host-cities/new-york-new-jersey.html">New York / NJ</a>
+      <a class="city" href="/host-cities/philadelphia.html">Philadelphia</a>
+      <a class="city" href="/host-cities/san-francisco-bay-area.html">SF Bay Area</a>
+      <a class="city" href="/host-cities/seattle.html">Seattle</a>
+      <a class="city" href="/host-cities/toronto.html">Toronto</a>
+      <a class="city" href="/host-cities/vancouver.html">Vancouver</a>
+      <a class="city" href="/host-cities/guadalajara.html">Guadalajara</a>
+      <a class="city" href="/host-cities/mexico-city.html">Mexico City</a>
+      <a class="city" href="/host-cities/monterrey.html">Monterrey</a>
+    </nav>
+    <a class="cta" href="/host-cities.html">Start exploring <span>&rarr;</span></a>
   </div>
 </section>
 
-<!-- TODAY'S GAMES BAND -->
-<section style="background:#fff3d6;border-top:3px solid #f5b942;border-bottom:1px solid #e8c96a;padding:2.5rem clamp(1.5rem,5vw,4rem);">
-  <div style="max-width:1040px;margin:0 auto;">
-    <div style="font-family:'Anton',sans-serif;font-size:clamp(1.6rem,3.5vw,2.4rem);letter-spacing:0.04em;color:#1d2433;line-height:1;margin-bottom:0.4rem;">TODAY'S GAMES</div>
-    <div style="font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#8a6800;margin-bottom:1.5rem;">Monday, June 15 · all times ET</div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-bottom:1.5rem;">
-
-      <div style="background:#fff;border:1.5px solid #f5b942;border-radius:10px;overflow:hidden;">
-        <div style="background:#f5b942;padding:4px 12px;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#1d2433;">12:00 PM ET</div>
-        <div style="padding:12px 14px;">
-          <div style="display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#1d2433;margin-bottom:5px;"><img src="https://flagcdn.com/32x24/es.png" width="20" alt="Spain" style="border-radius:2px;vertical-align:middle;margin:0 5px;">Spain</div>
-          <div style="font-size:11px;font-weight:800;letter-spacing:0.05em;color:#f5b942;text-align:center;margin:2px 0;">VS</div>
-          <div style="display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#1d2433;margin-bottom:8px;"><img src="https://flagcdn.com/32x24/cv.png" width="20" alt="Cape Verde" style="border-radius:2px;vertical-align:middle;margin:0 5px;">Cape Verde</div>
-          <div style="font-size:11.5px;color:#7a6200;">Atlanta</div>
-        </div>
-      </div>
-
-      <div style="background:#fff;border:1.5px solid #f5b942;border-radius:10px;overflow:hidden;">
-        <div style="background:#f5b942;padding:4px 12px;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#1d2433;">3:00 PM ET</div>
-        <div style="padding:12px 14px;">
-          <div style="display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#1d2433;margin-bottom:5px;"><img src="https://flagcdn.com/32x24/be.png" width="20" alt="Belgium" style="border-radius:2px;vertical-align:middle;margin:0 5px;">Belgium</div>
-          <div style="font-size:11px;font-weight:800;letter-spacing:0.05em;color:#f5b942;text-align:center;margin:2px 0;">VS</div>
-          <div style="display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#1d2433;margin-bottom:8px;"><img src="https://flagcdn.com/32x24/eg.png" width="20" alt="Egypt" style="border-radius:2px;vertical-align:middle;margin:0 5px;">Egypt</div>
-          <div style="font-size:11.5px;color:#7a6200;">Seattle</div>
-        </div>
-      </div>
-
-      <div style="background:#fff;border:1.5px solid #f5b942;border-radius:10px;overflow:hidden;">
-        <div style="background:#f5b942;padding:4px 12px;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#1d2433;">6:00 PM ET</div>
-        <div style="padding:12px 14px;">
-          <div style="display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#1d2433;margin-bottom:5px;"><img src="https://flagcdn.com/32x24/sa.png" width="20" alt="Saudi Arabia" style="border-radius:2px;vertical-align:middle;margin:0 5px;">Saudi Arabia</div>
-          <div style="font-size:11px;font-weight:800;letter-spacing:0.05em;color:#f5b942;text-align:center;margin:2px 0;">VS</div>
-          <div style="display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#1d2433;margin-bottom:8px;"><img src="https://flagcdn.com/32x24/uy.png" width="20" alt="Uruguay" style="border-radius:2px;vertical-align:middle;margin:0 5px;">Uruguay</div>
-          <div style="font-size:11.5px;color:#7a6200;">Miami</div>
-        </div>
-      </div>
-
-      <div style="background:#fff;border:1.5px solid #f5b942;border-radius:10px;overflow:hidden;">
-        <div style="background:#f5b942;padding:4px 12px;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#1d2433;">9:00 PM ET</div>
-        <div style="padding:12px 14px;">
-          <div style="display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#1d2433;margin-bottom:5px;"><img src="https://flagcdn.com/32x24/ir.png" width="20" alt="Iran" style="border-radius:2px;vertical-align:middle;margin:0 5px;">Iran</div>
-          <div style="font-size:11px;font-weight:800;letter-spacing:0.05em;color:#f5b942;text-align:center;margin:2px 0;">VS</div>
-          <div style="display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#1d2433;margin-bottom:8px;"><img src="https://flagcdn.com/32x24/nz.png" width="20" alt="New Zealand" style="border-radius:2px;vertical-align:middle;margin:0 5px;">New Zealand</div>
-          <div style="font-size:11.5px;color:#7a6200;">Los Angeles</div>
-        </div>
-      </div>
-
-    </div>
-    <div style="text-align:center;">
-      <a href="hot-takes.html" style="display:inline-block;background:#ffb000;color:#1d2433;font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;padding:13px 32px;border-radius:6px;text-decoration:none;">Get My Hot Takes →</a>
-    </div>
-  </div>
+<!-- MERCH / AMAZON ADS GO HERE -->
+<section style="background:var(--off-white);padding:2rem clamp(1.5rem,5vw,4rem);border-top:1px solid var(--border);">
+  <div style="max-width:1040px;margin:0 auto;min-height:60px;"></div>
 </section>
 
 <!-- MATCHES BOARD -->
@@ -2635,6 +2427,8 @@ The terms World Cup®, FIFA®, and FIFA World Cup™ are registered trademarks o
     <a href="host-cities.html">Host Cities</a>
     <span class="link-sep">|</span>
     <a href="maria-myers.html">About</a>
+    <span class="link-sep">|</span>
+    <a href="maria-myers.html">Hire Maria</a>
     <span class="link-sep">|</span>
     <a href="disclaimer%20&%20disclosure/affiliate.html">Affiliate Disclosure</a>
     <span class="link-sep">|</span>
