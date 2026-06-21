@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GO2CUP — Explore the Best of Every Host City</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --go-blue:#2f80ff; --green:#21c25a; --red:#ff4338; --gold:#f5c518;
+    --bg:#07180e; --ink:#ffffff; --muted:#d8ffe8;
+    --line:rgba(255,255,255,.85);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);font-family:'Inter',system-ui,sans-serif}
+
+  .pitch-hero{
+    position:relative;overflow:hidden;color:var(--ink);
+    padding:clamp(30px,4vw,58px) clamp(16px,4vw,46px) clamp(38px,5vw,70px);
+    /* brighter mowing stripes */
+    background:repeating-linear-gradient(90deg,#1f9d54 0 6.66%, #178a47 6.66% 13.33%);
+  }
+  /* dark vignette so text stays readable on the bright grass */
+  .overlay{position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:radial-gradient(ellipse at 50% 44%, rgba(3,16,9,.62), rgba(3,16,9,.18) 58%, transparent 78%);}
+
+  /* field markings */
+  .markings{position:absolute;inset:clamp(14px,2vw,26px);z-index:1;pointer-events:none;
+    border:3px solid var(--line);border-radius:6px;}
+  .markings::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:3px;transform:translateX(-50%);
+    background:var(--line);} /* halfway line */
+  .markings::after{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+    width:clamp(110px,17vw,210px);aspect-ratio:1;border:3px solid var(--line);border-radius:50%;} /* center circle */
+  .spot{position:absolute;left:50%;top:50%;width:9px;height:9px;border-radius:50%;background:var(--line);
+    transform:translate(-50%,-50%);} 
+  .pen{position:absolute;top:50%;transform:translateY(-50%);width:clamp(64px,10vw,130px);height:54%;
+       border:3px solid var(--line);}
+  .pen.l{left:-3px;border-left:none}
+  .pen.r{right:-3px;border-right:none}
+
+  .pitch-wrap{position:relative;z-index:2;max-width:1100px;margin:0 auto;text-align:center}
+
+  .eyebrow{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.3em;text-transform:uppercase;
+    font-size:.74rem;color:var(--gold);margin:0 0 12px;text-shadow:0 2px 8px rgba(0,0,0,.6);}
+  .headline{font-family:'Bebas Neue',sans-serif;font-weight:400;line-height:.9;
+    font-size:clamp(2.8rem,8vw,5.8rem);letter-spacing:.01em;margin:0 0 14px;text-transform:uppercase;
+    text-shadow:0 4px 22px rgba(0,0,0,.65), 0 1px 2px rgba(0,0,0,.7);}
+  .headline .w{color:#ffffff}
+  .headline .g{color:#5cff97}
+  .headline .y{color:var(--gold)}
+  .subhead{font-family:'Oswald',sans-serif;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
+    font-size:clamp(.82rem,1.6vw,1rem);color:var(--muted);margin:0 0 26px;text-shadow:0 2px 8px rgba(0,0,0,.7);}
+
+  .lineup{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;max-width:760px;margin:0 auto 26px}
+  .city{font-family:'Oswald',sans-serif;font-weight:600;font-size:.82rem;letter-spacing:.03em;
+    text-decoration:none;color:var(--ink);
+    background:rgba(4,18,10,.78);border:1px solid rgba(255,255,255,.34);
+    padding:8px 13px;border-radius:999px;
+    transition:transform .15s ease, border-color .15s ease, background .15s ease;}
+  .city:hover{transform:translateY(-3px);border-color:var(--gold);background:rgba(33,194,90,.4)}
+  .city:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+  .cta{display:inline-flex;align-items:center;gap:8px;
+    font-family:'Oswald',sans-serif;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+    font-size:.95rem;text-decoration:none;color:var(--bg);background:var(--gold);
+    padding:14px 28px;border-radius:10px;box-shadow:0 12px 28px -10px rgba(0,0,0,.6);
+    transition:filter .15s ease, transform .15s ease;}
+  .cta:hover{filter:brightness(1.06);transform:translateY(-2px)}
+  .cta:focus-visible{outline:3px solid #fff;outline-offset:3px}
+  .cta span{transition:transform .15s ease}
+  .cta:hover span{transform:translateX(3px)}
+
+  @media (prefers-reduced-motion:reduce){
+    .city,.cta,.cta span{transition:none}
+    .city:hover,.cta:hover{transform:none}
+  }
+</style>
+</head>
+<body>
+<section class="pitch-hero" aria-label="Explore host cities">
+  <div class="overlay"></div>
+  <div class="markings">
+    <span class="spot"></span>
+    <span class="pen l"></span>
+    <span class="pen r"></span>
+  </div>
+  <div class="pitch-wrap">
+    <p class="eyebrow">🏆 GO2CUP · USA · México · Canadá</p>
+    <h1 class="headline">
+      <span class="w">Explore the Best of</span><br>
+      <span class="g">Every Host City</span><span class="y">.</span>
+    </h1>
+    <p class="subhead">16 Host Cities · Zoos · Sights · Eats · Things to Do</p>
+
+    <nav class="lineup" aria-label="Host cities">
+      <a class="city" href="/host-cities.html">Atlanta</a>
+      <a class="city" href="/host-cities.html">Boston</a>
+      <a class="city" href="/host-cities.html">Dallas</a>
+      <a class="city" href="/host-cities.html">Houston</a>
+      <a class="city" href="/host-cities.html">Kansas City</a>
+      <a class="city" href="/host-cities.html">Los Angeles</a>
+      <a class="city" href="/host-cities.html">Miami</a>
+      <a class="city" href="/host-cities.html">New York / NJ</a>
+      <a class="city" href="/host-cities.html">Philadelphia</a>
+      <a class="city" href="/host-cities.html">SF Bay Area</a>
+      <a class="city" href="/host-cities.html">Seattle</a>
+      <a class="city" href="/host-cities.html">Toronto</a>
+      <a class="city" href="/host-cities.html">Vancouver</a>
+      <a class="city" href="/host-cities.html">Guadalajara</a>
+      <a class="city" href="/host-cities.html">Mexico City</a>
+      <a class="city" href="/host-cities.html">Monterrey</a>
+    </nav>
+
+    <a class="cta" href="/host-cities.html">Start exploring <span>&rarr;</span></a>
+  </div>
+</section>
+</body>
+</html>
