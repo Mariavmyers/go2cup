@@ -134,11 +134,11 @@ body {
 /* HERO */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 65vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 3rem 6vw 5rem;
+  justify-content: center;
+  padding: 2rem 6vw 2rem;
   overflow: hidden;
   background: var(--atl-night);
 }
@@ -603,6 +603,37 @@ p { font-size: 1.05rem; color: var(--cream-dim); margin-bottom: 1.4rem; max-widt
   cursor: default;
   pointer-events: none;
 }
+/* BADGES BAND */
+.badges-band {
+  background: var(--magnolia);
+  padding: 2.5rem 6vw;
+}
+.badges-band .inner {
+  max-width: 900px; margin: 0 auto;
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: 0.75rem; justify-content: center;
+}
+.badge-dark {
+  background: rgba(6,8,10,0.07);
+  border: 1px solid rgba(6,8,10,0.18);
+  padding: 0.45rem 1.1rem; border-radius: 2px;
+  font-size: 0.75rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: #2a1505;
+  font-family: 'Barlow', sans-serif; font-weight: 500;
+}
+.band-btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.55rem 1.4rem; border-radius: 2px;
+  font-family: 'Barlow', sans-serif; font-size: 0.75rem;
+  font-weight: 600; letter-spacing: 0.12em;
+  text-transform: uppercase; text-decoration: none;
+  transition: all 0.2s; cursor: pointer;
+}
+.band-btn-store { background: #2D5A27; color: #fff; border: 1px solid #2D5A27; }
+.band-btn-store:hover { background: #1e3d1a; border-color: #1e3d1a; }
+.band-btn-tickets { background: var(--georgia-red); color: #fff; border: 1px solid var(--georgia-red); }
+.band-btn-tickets:hover { background: var(--deep-red); border-color: var(--deep-red); }
+
 .city-nav-current em {
   font-style: normal;
   font-size: 0.7em;
@@ -666,13 +697,28 @@ p { font-size: 1.05rem; color: var(--cream-dim); margin-bottom: 1.4rem; max-widt
     <span class="accent-sub">The ATL</span>
   </h1>
   <p class="hero-sub">Born from red Georgia clay, shaped by the civil rights movement and raised on soul food and hip-hop. The city too busy to hate is ready to host the world — and it has a stadium worthy of the occasion.</p>
-  <div class="hero-badges">
-    <span class="badge-pill">🏟️ Mercedes-Benz Stadium</span>
-    <span class="badge-pill gold">🍑 Semifinal Host</span>
-    <span class="badge-pill green">✊ Birthplace of MLK</span>
-    <span class="badge-pill peach">🎵 Hip-Hop Capital South</span>
-    <span class="badge-pill">🥤 Home of Coca-Cola</span>
+</section>
+
+<div class="divider"></div>
+
+<!-- EXPLORE & BOOK ATLANTA — affiliate hub (Tiqets=tickets, Klook=tours, Kiwitaxi=transfer) -->
+<section class="booking-hub" id="book-atlanta">
+  <div class="section-label">Between the Matches</div>
+  <h2 class="booking-hub-title">Explore &amp; Book Atlanta</h2>
+  <p class="booking-hub-sub">From whale sharks at the Georgia Aquarium to a 100-flavour tasting room at the World of Coca-Cola, Atlanta rewards the fan who explores between matches. Book ahead, skip the line, and spend more time in the city and less time queuing. Here are the best ways to experience the ATL during World Cup 2026.</p>
+  <div class="booking-grid">
+    <a href="https://tiqets.tpk.lu/1ELjVySc" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-fish"></i>Georgia Aquarium</a>
+    <a href="https://klook.tpk.lu/E0PfhhVD" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-bottle-water"></i>World of Coca-Cola</a>
+    <a href="https://tiqets.tpk.lu/WLBQdk01" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-paw"></i>Zoo Atlanta</a>
+    <a href="https://tiqets.tpk.lu/jUhqBaQB" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-utensils"></i>BeltLine &amp; Ponce City Eats</a>
+    <a href="https://klook.tpk.lu/OTlkjTWw" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-map-location-dot"></i>Tours &amp; Experiences</a>
+    <a href="https://klook.tpk.lu/1EIH52Aw" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-landmark"></i>Historical &amp; Civil Rights Sites</a>
+    <a href="https://klook.tpk.lu/hFN9BhKq" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-car"></i>Rent a Car</a>
+    <a href="https://kiwitaxi.tpk.lu/miwyNXEP" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-taxi"></i>Airport Transfer</a>
+    <a href="https://klook.tpk.lu/uJtvOpBU" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-hotel"></i>Atlanta Hotels</a>
+    <a href="https://tiqets.tpk.lu/NXbxVKQw" target="_blank" rel="sponsored noopener" class="booking-btn vip"><i class="fa-solid fa-ticket"></i>Atlanta City Pass — Hand-Picked Attractions, One Price</a>
   </div>
+  <p style="font-size:0.72rem;color:var(--cream-dim);opacity:0.7;margin-top:1.5rem;max-width:680px;">Some links above are affiliate links. If you book through them, GO2CUP may earn a small commission at no extra cost to you — it helps keep these guides free.</p>
 </section>
 
 <div class="divider"></div>
@@ -833,24 +879,16 @@ p { font-size: 1.05rem; color: var(--cream-dim); margin-bottom: 1.4rem; max-widt
 
 <div class="divider"></div>
 
-<!-- EXPLORE & BOOK ATLANTA — affiliate hub (Tiqets=tickets, Klook=tours, Kiwitaxi=transfer) -->
-<section class="booking-hub" id="book-atlanta">
-  <div class="section-label">Between the Matches</div>
-  <h2 class="booking-hub-title">Explore &amp; Book Atlanta</h2>
-  <p class="booking-hub-sub">From whale sharks at the Georgia Aquarium to a 100-flavour tasting room at the World of Coca-Cola, Atlanta rewards the fan who explores between matches. Book ahead, skip the line, and spend more time in the city and less time queuing. Here are the best ways to experience the ATL during World Cup 2026.</p>
-  <div class="booking-grid">
-    <a href="https://tiqets.tpk.lu/1ELjVySc" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-fish"></i>Georgia Aquarium</a>
-    <a href="https://klook.tpk.lu/E0PfhhVD" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-bottle-water"></i>World of Coca-Cola</a>
-    <a href="https://tiqets.tpk.lu/WLBQdk01" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-paw"></i>Zoo Atlanta</a>
-    <a href="https://tiqets.tpk.lu/jUhqBaQB" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-utensils"></i>BeltLine &amp; Ponce City Eats</a>
-    <a href="https://klook.tpk.lu/OTlkjTWw" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-map-location-dot"></i>Tours &amp; Experiences</a>
-    <a href="https://klook.tpk.lu/1EIH52Aw" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-landmark"></i>Historical &amp; Civil Rights Sites</a>
-    <a href="https://klook.tpk.lu/hFN9BhKq" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-car"></i>Rent a Car</a>
-    <a href="https://kiwitaxi.tpk.lu/miwyNXEP" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-taxi"></i>Airport Transfer</a>
-    <a href="https://klook.tpk.lu/uJtvOpBU" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-hotel"></i>Atlanta Hotels</a>
-    <a href="https://tiqets.tpk.lu/NXbxVKQw" target="_blank" rel="sponsored noopener" class="booking-btn vip"><i class="fa-solid fa-ticket"></i>Atlanta City Pass — Hand-Picked Attractions, One Price</a>
+<!-- BADGES BAND -->
+<section class="badges-band">
+  <div class="inner">
+    <span class="badge-dark">🏟️ Mercedes-Benz Stadium</span>
+    <span class="badge-dark">🍑 Semifinal Host</span>
+    <span class="badge-dark">✊ Birthplace of MLK</span>
+    <span class="badge-dark">🎵 Hip-Hop Capital South</span>
+    <a href="#" class="band-btn band-btn-store"><i class="fa-solid fa-store"></i> GO2CUP Store</a>
+    <a href="#" class="band-btn band-btn-tickets"><i class="fa-solid fa-ticket"></i> Semifinal Tickets</a>
   </div>
-  <p style="font-size:0.72rem;color:var(--cream-dim);opacity:0.7;margin-top:1.5rem;max-width:680px;">Some links above are affiliate links. If you book through them, GO2CUP may earn a small commission at no extra cost to you — it helps keep these guides free.</p>
 </section>
 
 <div class="divider"></div>
