@@ -144,11 +144,11 @@ body {
 /* HERO */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 65vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 3rem 6vw 5rem;
+  justify-content: center;
+  padding: 2rem 6vw 2rem;
   overflow: hidden;
   background: var(--ocean-dark);
 }
@@ -594,6 +594,45 @@ p { font-size: 1.05rem; color: var(--ocean-dim); margin-bottom: 1.4rem; max-widt
 .go2cup-about-maria { margin: 0; font-size: 0.85rem; }
 .go2cup-about-maria a { color: rgba(255, 255, 255, 0.9); font-weight: 600; text-decoration: none; }
 .go2cup-about-maria a:hover { text-decoration: underline; }
+/* GO CITY full-width gold button */
+.booking-btn.gocity {
+  background: rgba(245,197,24,0.1);
+  border-color: rgba(245,197,24,0.35);
+  color: #f5c518;
+  grid-column: 1 / -1; flex-direction: row;
+  justify-content: center; gap: 1rem; padding: 1.3rem;
+}
+.booking-btn.gocity:hover { background: rgba(245,197,24,0.22); border-color: #f5c518; color: #f5c518; }
+.booking-btn.gocity i { color: #f5c518; font-size: 1.5rem; }
+
+/* BADGES BAND */
+.badges-band { background: #F0EBE0; padding: 2.5rem 6vw; }
+.badges-band .inner {
+  max-width: 900px; margin: 0 auto;
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: 0.75rem; justify-content: center;
+}
+.badge-dark {
+  background: rgba(6,8,10,0.07);
+  border: 1px solid rgba(6,8,10,0.18);
+  padding: 0.45rem 1.1rem; border-radius: 2px;
+  font-size: 0.75rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: #2a1505;
+  font-family: 'Barlow', sans-serif; font-weight: 500;
+}
+.band-btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.55rem 1.4rem; border-radius: 2px;
+  font-family: 'Barlow', sans-serif; font-size: 0.75rem;
+  font-weight: 600; letter-spacing: 0.12em;
+  text-transform: uppercase; text-decoration: none;
+  transition: all 0.2s; cursor: pointer;
+}
+.band-btn-store { background: var(--palm-green); color: #fff; border: 1px solid var(--palm-green); }
+.band-btn-store:hover { background: #123f2a; border-color: #123f2a; }
+.band-btn-tickets { background: var(--deco-pink); color: #fff; border: 1px solid var(--deco-pink); }
+.band-btn-tickets:hover { background: #b83070; border-color: #b83070; }
+
 .city-nav-current {
   opacity: 0.85;
   cursor: default;
@@ -654,19 +693,34 @@ p { font-size: 1.05rem; color: var(--ocean-dim); margin-bottom: 1.4rem; max-widt
   <div class="hero-deco"></div>
   <div class="hero-bg-text">MIA</div>
 
-  <div class="hero-eyebrow">The Magic City · 2026 World Cup · South Florida</div>
+  <div class="hero-eyebrow">2026 World Cup · Third-Place Match Host · Hard Rock Stadium · Florida</div>
   <h1 class="hero-title">
     Mi<span class="accent">ami</span>
     <span class="accent-pink">Magic City · Florida</span>
   </h1>
-  <p class="hero-sub">Ocean Drive at midnight. Cuban coffee at dawn. Calle Ocho in full voice. The most Latin city in the United States hosts the World Cup with a cultural energy and an ocean breeze that no other host city can match.</p>
-  <div class="hero-badges">
-    <span class="badge-pill">🏟️ Hard Rock Stadium</span>
-    <span class="badge-pill pink">🌺 South Beach Art Deco</span>
-    <span class="badge-pill gold">🎺 Little Havana</span>
-    <span class="badge-pill">🎨 Wynwood Walls</span>
-    <span class="badge-pill pink">☕ Cafecito Culture</span>
+  <p class="hero-sub">Ocean Drive at midnight. Cuban coffee at dawn. Calle Ocho in full voice. The most Latin city in the United States hosts the World Cup — and the tournament's closing chapter, the Third-Place Match on July 18 — with a bilingual energy, Magic City heat and an ocean breeze that no other host city can match.</p>
+</section>
+
+<div class="divider"></div>
+
+<!-- EXPLORE & BOOK MIAMI — affiliate hub (Tiqets=attractions, Klook=tours, Kiwitaxi=transfer, GoCity=pass) -->
+<section class="booking-hub" id="book-miami">
+  <div class="section-label">Between the Matches</div>
+  <h2 class="booking-hub-title">Explore &amp; Book Miami</h2>
+  <p class="booking-hub-sub">From the Everglades to Ocean Drive, Miami rewards the fan who explores between matches. Book ahead, skip the line and spend more time in the Magic City. Here are the best ways to experience Miami during World Cup 2026.</p>
+  <div class="booking-grid">
+    <a href="https://tiqets.tpk.lu/XEGeynTA" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-water"></i>Vizcaya Museum &amp; Gardens</a>
+    <a href="https://tiqets.tpk.lu/3gxdYA6h" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-flask"></i>Frost Science Museum</a>
+    <a href="https://tiqets.tpk.lu/SbhlN2ym" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-spray-can-sparkles"></i>Wynwood Walls</a>
+    <a href="https://klook.tpk.lu/qHaRBSME" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-fan"></i>Everglades Airboat Tour</a>
+    <a href="https://klook.tpk.lu/t7B79pUN" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-ship"></i>Biscayne Bay Cruise</a>
+    <a href="https://klook.tpk.lu/QdJdMdZD" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-utensils"></i>Little Havana Food &amp; Culture Tour</a>
+    <a href="https://klook.tpk.lu/oWdiga1g" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-car"></i>Rent a Car</a>
+    <a href="https://klook.tpk.lu/TeWK7pVR" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-hotel"></i>Miami Hotels</a>
+    <a href="https://kiwitaxi.tpk.lu/KOJNQ5NT" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-taxi"></i>Airport Transfer</a>
+    <a href="https://gocity.tpk.lu/pdGE8fJ7" target="_blank" rel="sponsored noopener" class="booking-btn gocity"><i class="fa-solid fa-ticket"></i>Miami Pass — Go City · Top Attractions, One Price</a>
   </div>
+  <p style="font-size:0.72rem;color:var(--ocean-dim);opacity:0.7;margin-top:1.5rem;max-width:680px;">Some links above are affiliate links. If you book through them, GO2CUP may earn a small commission at no extra cost to you — it helps keep these guides free.</p>
 </section>
 
 <div class="divider"></div>
@@ -824,6 +878,23 @@ p { font-size: 1.05rem; color: var(--ocean-dim); margin-bottom: 1.4rem; max-widt
 
 <div class="divider"></div>
 
+<!-- BADGES BAND -->
+<section class="badges-band">
+  <div class="inner">
+    <span class="badge-dark">🏖️ Magic City</span>
+    <span class="badge-dark">🌎 Latin Capital of the U.S.</span>
+    <span class="badge-dark">🗣️ Bilingual EN/ES</span>
+    <span class="badge-dark">🏛️ Art Deco</span>
+    <span class="badge-dark">🌊 Beaches</span>
+    <span class="badge-dark">🎺 Little Havana</span>
+    <span class="badge-dark">🎨 Wynwood Arts</span>
+    <a href="#" class="band-btn band-btn-store"><i class="fa-solid fa-store"></i> GO2CUP Store</a>
+    <a href="#" class="band-btn band-btn-tickets"><i class="fa-solid fa-ticket"></i> Third-Place Match · July 18 Tickets</a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <!-- PRACTICAL INFO -->
 <section>
   <div class="container">
@@ -933,7 +1004,7 @@ p { font-size: 1.05rem; color: var(--ocean-dim); margin-bottom: 1.4rem; max-widt
     </nav>
     <div class="g2c-ft-signups">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJIRLo6dBkPh57cKbVFnU1lz7dgutqzAHO2WsXiT2DDOp43g/viewform" target="_blank" rel="noopener">Country Hopper Newsletter</a>
-      <a href="https://docs.google.com/forms/d/1KPC8ZSMGdq0QHnAf79OEP1uomLNDC4P0k0VyD9T2hPw/edit" target="_blank" rel="noopener">Mexico Opening Day</a>
+      <a href="https://docs.google.com/forms/d/1KPC8ZSMGdq0QHnAf79OEP1uomLNDC4P0k0VyD9T2hPw/edit" target="_blank" rel="noopener">The Final · New York · July 19</a>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform" target="_blank" rel="noopener">Daily 2026 World Cup News</a>
     </div>
     <p class="g2c-ft-disc">GO2CUP is an independent fan guide operated by MainEntry LLC and is not affiliated with FIFA.</p>
