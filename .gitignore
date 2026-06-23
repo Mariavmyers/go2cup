@@ -137,3 +137,15 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Private / local-only files — do not publish
+*.pdf
+*.eml
+*.mp4
+*.mov
+*.avi
+FAVCOMM.png
+WEBSITE CHECK.UP.txt
+
+# Local tooling
+.claude/
