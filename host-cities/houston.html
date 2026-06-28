@@ -140,11 +140,11 @@ body {
 /* HERO */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 65vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 3rem 6vw 5rem;
+  justify-content: center;
+  padding: 2rem 6vw 2rem;
   overflow: hidden;
   background: var(--space-dark);
 }
@@ -358,7 +358,7 @@ p { font-size: 1.05rem; color: var(--star-dim); margin-bottom: 1.4rem; max-width
 
 /* STATS */
 .stats-grid {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 1px; background: rgba(11,61,145,0.15); margin: 2.5rem 0;
 }
 .stat-item { background: var(--deep-space); padding: 2rem 1.5rem; text-align: center; transition: background 0.3s; }
@@ -434,6 +434,20 @@ p { font-size: 1.05rem; color: var(--star-dim); margin-bottom: 1.4rem; max-width
 }
 .booking-btn.vip:hover { background: rgba(232,80,32,0.18); border-color: var(--launch-orange); color: #F08060; }
 .booking-btn.vip i { color: #F08060; }
+.booking-btn.gocity {
+  grid-column: 1 / -1; flex-direction: row; justify-content: center; gap: 1rem; padding: 1.3rem;
+  background: rgba(240,168,32,0.12); border: 1px solid rgba(240,168,32,0.5); color: var(--texas-gold); font-weight: 700;
+}
+.booking-btn.gocity:hover { background: rgba(240,168,32,0.22); border-color: var(--texas-gold); color: var(--texas-gold); }
+.booking-btn.gocity i { color: var(--texas-gold); font-size: 1.5rem; }
+.badges-band { background: #F0EBE0; padding: 2.5rem 6vw; }
+.badges-band .inner { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; justify-content: center; }
+.badge-dark { background: rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.14); color: #15202b; padding: 0.5rem 1rem; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.02em; }
+.band-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.4rem; font-weight: 700; text-decoration: none; font-size: 0.85rem; letter-spacing: 0.03em; transition: background 0.2s, border-color 0.2s; }
+.band-btn-store { background: var(--houston-teal); color: #fff; border: 1px solid var(--houston-teal); }
+.band-btn-store:hover { background: #06493d; border-color: #06493d; }
+.band-btn-tickets { background: var(--launch-orange); color: #fff; border: 1px solid var(--launch-orange); }
+.band-btn-tickets:hover { background: #c33d12; border-color: #c33d12; }
 
 .booking-placeholder {
   background: rgba(255,255,255,0.02);
@@ -645,19 +659,34 @@ p { font-size: 1.05rem; color: var(--star-dim); margin-bottom: 1.4rem; max-width
   <div class="hero-skyline"></div>
   <div class="hero-bg-text">HOU</div>
 
-  <div class="hero-eyebrow">Energy Capital of the World · 2026 World Cup · Texas</div>
+  <div class="hero-eyebrow">July 4 Round of 16 Host · 2026 World Cup · NRG Stadium · Texas</div>
   <h1 class="hero-title">
     Hous<span class="accent">ton</span>
     <span class="accent-blue">Texas · Mission Control</span>
   </h1>
   <p class="hero-sub">The city that guided humans to the Moon. The most ethnically diverse major city in the United States. The place where the fajita was invented, 145 languages are spoken and the World Cup finds its most gloriously international host.</p>
-  <div class="hero-badges">
-    <span class="badge-pill">🏟️ NRG Stadium</span>
-    <span class="badge-pill gold">🚀 NASA Johnson Space Center</span>
-    <span class="badge-pill orange">🌮 Fajita Invented Here</span>
-    <span class="badge-pill">🌍 Most Diverse US City</span>
-    <span class="badge-pill gold">⚡ Energy Capital of Earth</span>
+</section>
+
+<div class="divider"></div>
+
+<!-- EXPLORE & BOOK HOUSTON — affiliate hub (Tiqets=tickets, Klook=tours+car, Klook=transfer, Tiqets hand-pick=pass) -->
+<section class="booking-hub" id="book-houston">
+  <div class="section-label">Between the Matches</div>
+  <h2 class="booking-hub-title">Explore &amp; Book Houston</h2>
+  <p class="booking-hub-sub">From Space Center Houston to the Galleria and one of the best food scenes on Earth, Space City rewards the fan who explores between matches. Book ahead, skip the line and spend more time in Houston during World Cup 2026.</p>
+  <div class="booking-grid">
+    <a href="https://tiqets.tpk.lu/ZDmhPkec" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-rocket"></i>Space Center Houston (NASA)</a>
+    <a href="https://tiqets.tpk.lu/6OtGt7F3" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-bag-shopping"></i>The Galleria</a>
+    <a href="https://tiqets.tpk.lu/GqVNuxl7" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-water"></i>Buffalo Bayou</a>
+    <a href="https://klook.tpk.lu/zW5NL6bh" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-user-astronaut"></i>NASA Space Center Tour</a>
+    <a href="https://klook.tpk.lu/2kICfW92" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-dna"></i>Museum of Natural Science</a>
+    <a href="https://klook.tpk.lu/K8SDMrgF" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-fish"></i>Downtown Aquarium</a>
+    <a href="https://klook.tpk.lu/xLBrVjjE" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-utensils"></i>Houston Food Tour</a>
+    <a href="https://klook.tpk.lu/HaLzarRX" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-car"></i>Rent a Car</a>
+    <a href="https://klook.tpk.lu/yKupaFUC" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-taxi"></i>Airport Transfer</a>
+    <a href="https://tiqets.tpk.lu/bZ1l3iyz" target="_blank" rel="sponsored noopener" class="booking-btn gocity"><i class="fa-solid fa-ticket"></i>Hand-Picked Houston Pass — Top Attractions, One Price</a>
   </div>
+  <p style="font-size:0.72rem;color:var(--star-dim);opacity:0.7;margin-top:1.5rem;max-width:680px;">Some links above are affiliate links. If you book through them, GO2CUP may earn a small commission at no extra cost to you — it helps keep these guides free.</p>
 </section>
 
 <div class="divider"></div>
@@ -666,12 +695,12 @@ p { font-size: 1.05rem; color: var(--star-dim); margin-bottom: 1.4rem; max-width
 <section>
   <div class="container">
     <div class="section-label">The Venue</div>
-    <h2>NRG Stadium — Climate-Controlled World Cup Football</h2>
+    <h2>NRG Stadium — Climate-Controlled World Cup Soccer</h2>
 
     <div class="stadium-card">
       <div class="stadium-name">NRG Stadium</div>
       <div class="stadium-sub">Houston, Texas · Home of the Houston Texans · 2026 World Cup Host Venue</div>
-      <p class="stadium-desc">NRG Stadium is home of the Houston Texans and one of the most technically sophisticated venues in American sport — featuring a retractable roof that makes it the only fully climate-controlled stadium among the US World Cup hosts. In Houston's June and July heat and humidity, this matters enormously. Fans will watch World Cup football in comfort regardless of whatever Texas weather decides to do outside. Capacity: 72,220 with the roof closed.</p>
+      <p class="stadium-desc">NRG Stadium is home of the Houston Texans and one of the most technically sophisticated venues in American sport — featuring a retractable roof that makes it the only fully climate-controlled stadium among the US World Cup hosts. In Houston's June and July heat and humidity, this matters enormously. Fans will watch World Cup soccer in comfort regardless of whatever Texas weather decides to do outside. Capacity: 72,220 with the roof closed.</p>
     </div>
 
     <p>Houston is the most underestimated city in America. The fourth-largest city in the United States — larger than Philadelphia, San Francisco and Boston — Houston is also, by multiple academic measures, the most ethnically diverse major city in the country. No single ethnic group forms a majority. Over 145 languages are spoken in the Houston Independent School District alone. The city has the largest Vietnamese community outside Vietnam, a vast Mexican and Central American population and significant communities from Nigeria, India, China, Pakistan, El Salvador and dozens of other nations.</p>
@@ -815,6 +844,23 @@ p { font-size: 1.05rem; color: var(--star-dim); margin-bottom: 1.4rem; max-width
 
 <div class="divider"></div>
 
+<!-- BADGES BAND -->
+<section class="badges-band">
+  <div class="inner">
+    <span class="badge-dark">🚀 Space City</span>
+    <span class="badge-dark">🌍 Most Diverse US City</span>
+    <span class="badge-dark">🗣️ 145 Languages</span>
+    <span class="badge-dark">🌮 Fajita Invented Here</span>
+    <span class="badge-dark">⚡ Energy Capital</span>
+    <span class="badge-dark">🏟️ NRG Stadium</span>
+    <span class="badge-dark">❄️ Climate-Controlled Roof</span>
+    <a href="#" class="band-btn band-btn-store"><i class="fa-solid fa-store"></i> GO2CUP Store</a>
+    <a href="#" class="band-btn band-btn-tickets"><i class="fa-solid fa-ticket"></i> Round of 16 · July 4 Tickets</a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <!-- PRACTICAL INFO -->
 <section>
   <div class="container">
@@ -925,14 +971,14 @@ p { font-size: 1.05rem; color: var(--star-dim); margin-bottom: 1.4rem; max-width
     </nav>
     <div class="g2c-ft-signups">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJIRLo6dBkPh57cKbVFnU1lz7dgutqzAHO2WsXiT2DDOp43g/viewform" target="_blank" rel="noopener">Country Hopper Newsletter</a>
-      <a href="https://docs.google.com/forms/d/1KPC8ZSMGdq0QHnAf79OEP1uomLNDC4P0k0VyD9T2hPw/edit" target="_blank" rel="noopener">Mexico Opening Day</a>
+      <a href="https://docs.google.com/forms/d/1KPC8ZSMGdq0QHnAf79OEP1uomLNDC4P0k0VyD9T2hPw/edit" target="_blank" rel="noopener">The Final · New York · July 19</a>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform" target="_blank" rel="noopener">Daily 2026 World Cup News</a>
     </div>
     <p class="g2c-ft-disc">GO2CUP is an independent fan guide operated by MainEntry LLC and is not affiliated with FIFA.</p>
     <p class="g2c-ft-tm">GO2CUP is an independent fan travel guide operated by MainEntry LLC.
 The terms World Cup&reg;, FIFA&reg;, and FIFA World Cup&trade; are registered trademarks
 of FIFA. GO2CUP is not affiliated with, licensed by, sponsored by, endorsed
-by, or officially connected to FIFA, any national football federation,
+by, or officially connected to FIFA, any national soccer federation,
 host cities, stadiums, governments, official sponsors, travel providers,
 or ticketing entities. Affiliate links are disclosed. Always verify schedules,
 prices, and travel requirements with official sources before booking.</p>
