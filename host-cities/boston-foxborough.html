@@ -139,11 +139,11 @@ body {
 /* HERO */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 65vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 3rem 6vw 5rem;
+  justify-content: center;
+  padding: 2rem 6vw 2rem;
   overflow: hidden;
   background: var(--boston-night);
 }
@@ -348,7 +348,7 @@ p { font-size: 1.05rem; color: var(--parchment-dim); margin-bottom: 1.4rem; max-
 
 /* STATS */
 .stats-grid {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 1px; background: rgba(163,22,33,0.1); margin: 2.5rem 0;
 }
 .stat-item { background: var(--brick-deep); padding: 2rem 1.5rem; text-align: center; transition: background 0.3s; }
@@ -582,6 +582,22 @@ p { font-size: 1.05rem; color: var(--parchment-dim); margin-bottom: 1.4rem; max-
   text-transform: uppercase;
   opacity: 0.75;
 }
+
+/* gold Go City pass + cream badges band (Boston palette) */
+.booking-btn.gocity {
+  grid-column: 1 / -1; flex-direction: row; justify-content: center; gap: 1rem; padding: 1.3rem;
+  background: rgba(200,150,12,0.12); border: 1px solid rgba(200,150,12,0.55); color: var(--gold-light); font-weight: 700;
+}
+.booking-btn.gocity:hover { background: rgba(200,150,12,0.22); border-color: var(--colonial-gold); color: var(--gold-light); }
+.booking-btn.gocity i { color: var(--colonial-gold); font-size: 1.5rem; }
+.badges-band { background: var(--parchment); padding: 2.5rem 6vw; }
+.badges-band .inner { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; justify-content: center; }
+.badge-dark { background: rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.15); color: #1a1410; padding: 0.5rem 1rem; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.02em; }
+.band-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.4rem; font-weight: 700; text-decoration: none; font-size: 0.85rem; letter-spacing: 0.03em; transition: background 0.2s, border-color 0.2s; }
+.band-btn-store { background: var(--celtics-green); color: #fff; border: 1px solid var(--celtics-green); }
+.band-btn-store:hover { background: #005f28; border-color: #005f28; }
+.band-btn-tickets { background: var(--crimson); color: #fff; border: 1px solid var(--crimson); }
+.band-btn-tickets:hover { background: #7d101b; border-color: #7d101b; }
 </style>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -635,19 +651,36 @@ p { font-size: 1.05rem; color: var(--parchment-dim); margin-bottom: 1.4rem; max-
   <div class="hero-skyline"></div>
   <div class="hero-bg-text">BOS</div>
 
-  <div class="hero-eyebrow">Cradle of Liberty · 2026 World Cup · Massachusetts</div>
+  <div class="hero-eyebrow">Quarter-Final Host · 2026 World Cup · Gillette Stadium · Massachusetts</div>
   <h1 class="hero-title">
     Bos<span class="accent">ton</span>
     <span class="accent-gold">Massachusetts</span>
   </h1>
   <p class="hero-sub">The city where American independence was born, where championships are expected, where clam chowder is a birthright and where the World Cup arrives in a place that has been defining what it means to fight for something for 250 years.</p>
-  <div class="hero-badges">
-    <span class="badge-pill">🏟️ Gillette Stadium</span>
-    <span class="badge-pill gold">🗽 Cradle of Liberty</span>
-    <span class="badge-pill blue">🎓 Harvard &amp; MIT</span>
-    <span class="badge-pill">⚾ Red Sox Nation</span>
-    <span class="badge-pill gold">🦞 Lobster Roll Capital</span>
+</section>
+
+<div class="divider"></div>
+
+<!-- EXPLORE & BOOK BOSTON — affiliate hub -->
+<section class="booking-hub" id="book-boston">
+  <div class="section-label">Between the Matches</div>
+  <h2 class="booking-hub-title">Explore &amp; Book Boston</h2>
+  <p class="booking-hub-sub">From the Freedom Trail to Fenway Park and a Salem witch-history day trip, Boston rewards the fan who explores between matches. Book ahead, skip the line and make the most of New England during World Cup 2026.</p>
+  <div class="booking-grid">
+    <a href="https://tiqets.tpk.lu/72m9g6yD" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-palette"></i>Museum of Fine Arts</a>
+    <a href="https://tiqets.tpk.lu/FVsi9tiP" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-binoculars"></i>View Boston (Prudential)</a>
+    <a href="https://tiqets.tpk.lu/EcuD7TK1" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-ship"></i>Boston Tea Party Ships</a>
+    <a href="https://tiqets.tpk.lu/cPtfpZ8g" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-flag-usa"></i>Freedom Trail Walking Tour</a>
+    <a href="https://klook.tpk.lu/QS6pAIj5" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-fish"></i>New England Aquarium</a>
+    <a href="https://klook.tpk.lu/xBTI0oKC" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-water"></i>Harbor &amp; Whale Watching Cruise</a>
+    <a href="https://tiqets.tpk.lu/CqMQv1lZ" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-baseball"></i>Fenway Park Tour</a>
+    <a href="https://klook.tpk.lu/y6aYiKw9" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-hat-wizard"></i>Salem Day Trip</a>
+    <a href="https://klook.tpk.lu/UzNGpcfV" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-car"></i>Rent a Car</a>
+    <a href="https://klook.tpk.lu/clHqZEgi" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-hotel"></i>Boston Hotels</a>
+    <a href="https://kiwitaxi.tpk.lu/aUFc47eQ" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-taxi"></i>Airport Transfer (Logan → Foxborough)</a>
+    <a href="https://gocity.tpk.lu/R2Q5MjH2" target="_blank" rel="sponsored noopener" class="booking-btn gocity"><i class="fa-solid fa-ticket"></i>Go City Boston Pass — Freedom Trail + 45 More, One Price</a>
   </div>
+  <p style="font-size:0.72rem;color:var(--parchment-dim);opacity:0.8;margin-top:1.5rem;max-width:680px;">Some links above are affiliate links. If you book through them, GO2CUP may earn a small commission at no extra cost to you — it helps keep these guides free.</p>
 </section>
 
 <div class="divider"></div>
@@ -804,6 +837,23 @@ p { font-size: 1.05rem; color: var(--parchment-dim); margin-bottom: 1.4rem; max-
 
 <div class="divider"></div>
 
+<!-- BADGES BAND -->
+<section class="badges-band">
+  <div class="inner">
+    <span class="badge-dark">🗽 Cradle of Liberty</span>
+    <span class="badge-dark">🎓 Harvard &amp; MIT</span>
+    <span class="badge-dark">⚾ Red Sox Nation</span>
+    <span class="badge-dark">🦞 Lobster Roll Capital</span>
+    <span class="badge-dark">🏟️ Gillette Stadium</span>
+    <span class="badge-dark">☘️ Celtics Green</span>
+    <span class="badge-dark">🚢 Boston Harbor</span>
+    <a href="#" class="band-btn band-btn-store"><i class="fa-solid fa-store"></i> GO2CUP Store</a>
+    <a href="#" class="band-btn band-btn-tickets"><i class="fa-solid fa-ticket"></i> Quarter-Final · July 9 Tickets</a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <!-- PRACTICAL INFO -->
 <section>
   <div class="container">
@@ -914,14 +964,14 @@ p { font-size: 1.05rem; color: var(--parchment-dim); margin-bottom: 1.4rem; max-
     </nav>
     <div class="g2c-ft-signups">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJIRLo6dBkPh57cKbVFnU1lz7dgutqzAHO2WsXiT2DDOp43g/viewform" target="_blank" rel="noopener">Country Hopper Newsletter</a>
-      <a href="https://docs.google.com/forms/d/1KPC8ZSMGdq0QHnAf79OEP1uomLNDC4P0k0VyD9T2hPw/edit" target="_blank" rel="noopener">Mexico Opening Day</a>
+      <a href="https://docs.google.com/forms/d/1KPC8ZSMGdq0QHnAf79OEP1uomLNDC4P0k0VyD9T2hPw/edit" target="_blank" rel="noopener">The Final · New York · July 19</a>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScIKypiZUbbeyil5dGbeyANDTq2Hgj1TjUykwyOfeZLr0qDlw/viewform" target="_blank" rel="noopener">Daily 2026 World Cup News</a>
     </div>
     <p class="g2c-ft-disc">GO2CUP is an independent fan guide operated by MainEntry LLC and is not affiliated with FIFA.</p>
     <p class="g2c-ft-tm">GO2CUP is an independent fan travel guide operated by MainEntry LLC.
 The terms World Cup&reg;, FIFA&reg;, and FIFA World Cup&trade; are registered trademarks
 of FIFA. GO2CUP is not affiliated with, licensed by, sponsored by, endorsed
-by, or officially connected to FIFA, any national football federation,
+by, or officially connected to FIFA, any national soccer federation,
 host cities, stadiums, governments, official sponsors, travel providers,
 or ticketing entities. Affiliate links are disclosed. Always verify schedules,
 prices, and travel requirements with official sources before booking.</p>

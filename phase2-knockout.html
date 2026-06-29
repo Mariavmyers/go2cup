@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GO2CUP — Round of 32: Second Phase Begins Today</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* ===== GO2CUP — PHASE 2 / ROUND OF 32 SECTION =====
+     All classes prefixed .p2- so nothing collides with your existing index CSS.
+     Static HTML only — no JavaScript — so it can never blank out. Fully crawlable. */
+  .p2-section{
+    --p2-ink:#0a1623;--p2-soft:#475569;--p2-line:#e6e9ef;
+    --p2-paper:#ffffff;--p2-wash:#f6f7f9;
+    --p2-blue:#2f80ff;--p2-green:#21c25a;--p2-gold:#f5c518;--p2-red:#ff4338;
+    --p2-green-wash:#eafaf0;
+    background:var(--p2-paper);color:var(--p2-ink);
+    font-family:'Inter',system-ui,sans-serif;
+    padding:clamp(3rem,6vw,6rem) clamp(1rem,4vw,3rem);
+  }
+  .p2-wrap{max-width:1180px;margin:0 auto;}
+
+  /* ---- Header ---- */
+  .p2-eyebrow{
+    font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.26em;
+    text-transform:uppercase;font-size:.72rem;color:var(--p2-red);
+    margin:0 0 .9rem;display:flex;align-items:center;gap:.7rem;
+  }
+  .p2-eyebrow::before{content:"";width:34px;height:2px;background:var(--p2-red);display:inline-block;}
+  .p2-pulse{width:9px;height:9px;border-radius:50%;background:var(--p2-red);display:inline-block;animation:p2pulse 1.4s ease-in-out infinite;}
+  @keyframes p2pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.8)}}
+  .p2-title{
+    font-family:'Bebas Neue',sans-serif;font-size:clamp(2.8rem,7vw,5.4rem);
+    line-height:.9;letter-spacing:.01em;margin:0;text-transform:uppercase;
+  }
+  .p2-title span{color:var(--p2-green);}
+  .p2-lede{
+    font-size:clamp(1rem,1.6vw,1.18rem);color:var(--p2-soft);
+    max-width:60ch;margin:1.2rem 0 0;line-height:1.6;font-weight:500;
+  }
+
+  /* ---- Slim affiliate strip (REVENUE — kept from the old gray panel) ---- */
+  .p2-aff{
+    margin:2rem 0 0;padding:1rem 1.1rem;border:1px solid var(--p2-line);
+    border-radius:14px;background:var(--p2-wash);
+    display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;
+  }
+  .p2-aff-lbl{
+    font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.12em;font-size:.72rem;color:var(--p2-soft);margin-right:.4rem;
+  }
+  .p2-aff a{
+    display:inline-flex;align-items:center;gap:.4rem;text-decoration:none;
+    font-family:'Oswald',sans-serif;font-weight:600;font-size:.84rem;letter-spacing:.02em;
+    color:var(--p2-ink);background:var(--p2-paper);border:1px solid var(--p2-line);
+    border-radius:10px;padding:.5rem .85rem;transition:border-color .15s,transform .15s;
+  }
+  .p2-aff a:hover{border-color:var(--p2-blue);transform:translateY(-1px);}
+  .p2-aff-note{width:100%;font-size:.72rem;color:#94a3b8;margin:.3rem 0 0;}
+
+  /* ---- Schedule ---- */
+  .p2-sched{margin:3.2rem 0 0;}
+  .p2-sched-h{
+    font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.1em;font-size:1.05rem;color:var(--p2-ink);margin:0 0 1.4rem;
+    display:flex;align-items:center;gap:.65rem;
+  }
+  .p2-sched-h::before{content:"";width:26px;height:3px;background:var(--p2-green);}
+  .p2-day{margin-bottom:1.6rem;}
+  .p2-day-h{
+    font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;
+    letter-spacing:.08em;font-size:.82rem;color:var(--p2-soft);margin:0 0 .6rem;
+    padding-bottom:.5rem;border-bottom:1px solid var(--p2-line);
+    display:flex;align-items:center;gap:.6rem;
+  }
+  .p2-today{
+    font-family:'Oswald',sans-serif;font-weight:700;font-size:.62rem;letter-spacing:.14em;
+    text-transform:uppercase;color:#fff;background:var(--p2-red);border-radius:6px;
+    padding:.2rem .5rem;
+  }
+  .p2-match{
+    border:1px solid var(--p2-line);border-radius:12px;
+    padding:.9rem 1.1rem;margin-bottom:.6rem;background:var(--p2-paper);
+    transition:border-color .15s ease, box-shadow .15s ease;
+  }
+  .p2-match:hover{border-color:#cdd4e0;box-shadow:0 2px 14px rgba(10,22,35,.05);}
+  .p2-match-row{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1rem;}
+  .p2-side{display:flex;align-items:center;gap:.6rem;}
+  .p2-home{justify-content:flex-end;}
+  .p2-away{justify-content:flex-start;}
+  .p2-team{font-family:'Oswald',sans-serif;font-weight:600;font-size:1.02rem;white-space:nowrap;}
+  .p2-flag{width:28px;height:21px;border-radius:3px;flex:0 0 auto;object-fit:cover;box-shadow:0 0 0 1px rgba(10,22,35,.08);}
+  .p2-time{
+    font-family:'Bebas Neue',sans-serif;font-size:1.55rem;line-height:1;
+    color:var(--p2-ink);letter-spacing:.03em;padding:0 .25rem;white-space:nowrap;
+  }
+  .p2-venue{text-align:center;margin:.55rem 0 0;font-size:.74rem;color:#94a3b8;}
+  .p2-venue b{color:var(--p2-green);font-weight:600;}
+
+  /* ---- Knockout note ---- */
+  .p2-note{
+    margin:1.6rem 0 0;padding:1.1rem 1.2rem;border-left:4px solid var(--p2-gold);
+    background:#fffaf0;border-radius:0 10px 10px 0;font-size:.9rem;color:var(--p2-soft);line-height:1.6;
+  }
+
+  /* ---- Host-city promo cards ---- */
+  .p2-promo{margin:3.6rem 0 0;}
+  .p2-promo-h{
+    font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.1em;font-size:1.05rem;color:var(--p2-ink);margin:0 0 .4rem;
+    display:flex;align-items:center;gap:.65rem;
+  }
+  .p2-promo-h::before{content:"";width:26px;height:3px;background:var(--p2-blue);}
+  .p2-promo-sub{font-size:.92rem;color:var(--p2-soft);margin:0 0 1.4rem;max-width:60ch;}
+  .p2-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:.9rem;}
+  .p2-card{
+    display:flex;flex-direction:column;justify-content:space-between;gap:.5rem;
+    text-decoration:none;border:1px solid var(--p2-line);border-radius:14px;
+    padding:1.05rem 1.1rem;background:var(--p2-paper);min-height:104px;
+    transition:border-color .15s,box-shadow .15s,transform .15s;
+  }
+  .p2-card:hover{border-color:var(--p2-blue);box-shadow:0 6px 22px rgba(47,128,255,.12);transform:translateY(-2px);}
+  /* Live affiliate cards (Dallas, Atlanta) — gold accent so paying links stand out */
+  .p2-card-live{border-color:var(--p2-gold);background:linear-gradient(180deg,#fffdf5 0%,#ffffff 60%);}
+  .p2-card-live:hover{border-color:var(--p2-gold);box-shadow:0 6px 22px rgba(245,197,24,.22);}
+  .p2-card-live .p2-card-cta{color:#b8860b;}
+  .p2-card-live .p2-card-city::after{content:"★";font-size:.7em;color:var(--p2-gold);margin-left:.4rem;vertical-align:super;}
+  .p2-card-city{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;line-height:1;color:var(--p2-ink);letter-spacing:.02em;}
+  .p2-card-venue{font-size:.78rem;color:var(--p2-soft);font-weight:500;}
+  .p2-card-cta{
+    font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.1em;font-size:.66rem;color:var(--p2-blue);
+    display:inline-flex;align-items:center;gap:.35rem;
+  }
+
+  @media (max-width:480px){
+    .p2-team{font-size:.84rem;white-space:normal;}
+    .p2-flag{width:24px;height:18px;}
+    .p2-time{font-size:1.3rem;}
+    .p2-match-row{gap:.5rem;}
+  }
+</style>
+</head>
+<body style="margin:0;background:#0a1623;">
+
+<!-- ============================================================
+     PHASE 2 / ROUND OF 32 SECTION
+     This whole block replaces the old "THE GROUP STAGE" intro +
+     the group-standings area on index.html.
+     Static HTML — no script — so it cannot blank out.
+     ============================================================ -->
+<section class="p2-section">
+  <div class="p2-wrap">
+
+    <!-- ===== HEADER ===== -->
+    <p class="p2-eyebrow"><span class="p2-pulse"></span>Second Phase Begins Today · Knockout Stage</p>
+    <h2 class="p2-title">The knockout<br>begins <span>today.</span></h2>
+    <p class="p2-lede">The group stage is done — 48 nations are now 32. From here it is single-elimination: win and you advance, lose and you go home. Every match below is a Round of 32 fixture, and the winners move on to the Round of 16 starting July 4.</p>
+
+    <!-- ===== SLIM AFFILIATE STRIP (REVENUE — replaces the gray panel) ===== -->
+    <div class="p2-aff">
+      <span class="p2-aff-lbl">Plan your trip:</span>
+      <a href="where-to-stay.html">🏨 Hotels</a>
+      <a href="https://aviasales.tpk.lu/gsLDMhOV" target="_blank" rel="sponsored noopener">✈️ Flights</a>
+      <a href="https://kiwitaxi.tpk.lu/BqfvRurI" target="_blank" rel="sponsored noopener">🚕 Airport Transfers</a>
+      <a href="https://tiqets.tpk.lu/finZfjdm" target="_blank" rel="sponsored noopener">🎟️ Tickets &amp; Attractions</a>
+      <a href="https://yesim.tpk.lu/C1Ccs6ol" target="_blank" rel="sponsored noopener">📱 eSIM Data</a>
+      <p class="p2-aff-note">We may earn a commission from these partner links.</p>
+    </div>
+
+    <!-- ===== ROUND OF 32 SCHEDULE (crawlable) ===== -->
+    <div class="p2-sched">
+      <h3 class="p2-sched-h">FIFA World Cup 2026 · Round of 32 Schedule</h3>
+
+      <!-- SUNDAY JUNE 28 -->
+      <div class="p2-day">
+        <p class="p2-day-h">Sunday, June 28 <span class="p2-today">Today</span></p>
+        <div class="p2-match"><div class="p2-match-row">
+          <div class="p2-side p2-home"><span class="p2-team">South Africa</span><img class="p2-flag" loading="lazy" alt="South Africa" src="https://flagcdn.com/w40/za.png" srcset="https://flagcdn.com/w80/za.png 2x"></div>
+          <div class="p2-time">3:00 PM ET</div>
+          <div class="p2-side p2-away"><img class="p2-flag" loading="lazy" alt="Canada" src="https://flagcdn.com/w40/ca.png" srcset="https://flagcdn.com/w80/ca.png 2x"><span class="p2-team">Canada</span></div>
+        </div><p class="p2-venue"><b>Round of 32</b> · Los Angeles Stadium, Inglewood CA</p></div>
+      </div>
+
+      <!-- MONDAY JUNE 29 -->
+      <div class="p2-day">
+        <p class="p2-day-h">Monday, June 29</p>
+        <div class="p2-match"><div class="p2-match-row">
+          <div class="p2-side p2-home"><span class="p2-team">Brazil</span><img class="p2-flag" loading="lazy" alt="Brazil" src="https://flagcdn.com/w40/br.png" srcset="https://flagcdn.com/w80/br.png 2x"></div>
+          <div class="p2-time">1:00 PM ET</div>
+          <div class="p2-side p2-away"><img class="p2-flag" loading="lazy" alt="Japan" src="https://flagcdn.com/w40/jp.png" srcset="https://flagcdn.com/w80/jp.png 2x"><span class="p2-team">Japan</span></div>
+        </div><p class="p2-venue"><b>Round of 32</b> · Houston Stadium, Houston TX</p></div>
+        <div class="p2-match"><div class="p2-match-row">
+          <div class="p2-side p2-home"><span class="p2-team">Germany</span><img class="p2-flag" loading="lazy" alt="Germany" src="https://flagcdn.com/w40/de.png" srcset="https://flagcdn.com/w80/de.png 2x"></div>
+          <div class="p2-time">4:30 PM ET</div>
+          <div class="p2-side p2-away"><img class="p2-flag" loading="lazy" alt="Paraguay" src="https://flagcdn.com/w40/py.png" srcset="https://flagcdn.com/w80/py.png 2x"><span class="p2-team">Paraguay</span></div>
+        </div><p class="p2-venue"><b>Round of 32</b> · Boston Stadium, Foxborough MA</p></div>
+        <div class="p2-match"><div class="p2-match-row">
+          <div class="p2-side p2-home"><span class="p2-team">Netherlands</span><img class="p2-flag" loading="lazy" alt="Netherlands" src="https://flagcdn.com/w40/nl.png" srcset="https://flagcdn.com/w80/nl.png 2x"></div>
+          <div class="p2-time">9:00 PM ET</div>
+          <div class="p2-side p2-away"><img class="p2-flag" loading="lazy" alt="Morocco" src="https://flagcdn.com/w40/ma.png" srcset="https://flagcdn.com/w80/ma.png 2x"><span class="p2-team">Morocco</span></div>
+        </div><p class="p2-venue"><b>Round of 32</b> · Monterrey Stadium, Monterrey MX</p></div>
+      </div>
+
+      <!-- TUESDAY JUNE 30 -->
+      <div class="p2-day">
+        <p class="p2-day-h">Tuesday, June 30</p>
+        <div class="p2-match"><div class="p2-match-row">
+          <div class="p2-side p2-home"><span class="p2-team">Ivory Coast</span><img class="p2-flag" loading="lazy" alt="Ivory Coast" src="https://flagcdn.com/w40/ci.png" srcset="https://flagcdn.com/w80/ci.png 2x"></div>
+          <div class="p2-time">1:00 PM ET</div>
+          <div class="p2-side p2-away"><img class="p2-flag" loading="lazy" alt="Norway" src="https://flagcdn.com/w40/no.png" srcset="https://flagcdn.com/w80/no.png 2x"><span class="p2-team">Norway</span></div>
+        </div><p class="p2-venue"><b>Round of 32</b> · Dallas Stadium, Arlington TX</p></div>
+        <div class="p2-match"><div class="p2-match-row">
+          <div class="p2-side p2-home"><span class="p2-team">France</span><img class="p2-flag" loading="lazy" alt="France" src="https://flagcdn.com/w40/fr.png" srcset="https://flagcdn.com/w80/fr.png 2x"></div>
+          <div class="p2-time">5:00 PM ET</div>
+          <div class="p2-side p2-away"><img class="p2-flag" loading="lazy" alt="Sweden" src="https://flagcdn.com/w40/se.png" srcset="https://flagcdn.com/w80/se.png 2x"><span class="p2-team">Sweden</span></div>
+        </div><p class="p2-venue"><b>Round of 32</b> · New York/New Jersey Stadium, East Rutherford NJ</p></div>
+        <div class="p2-match"><div class="p2-match-row">
+          <div class="p2-side p2-home"><span class="p2-team">Mexico</span><img class="p2-flag" loading="lazy" alt="Mexico" src="https://flagcdn.com/w40/mx.png" srcset="https://flagcdn.com/w80/mx.png 2x"></div>
+          <div class="p2-time">9:00 PM ET</div>
+          <div class="p2-side p2-away"><img class="p2-flag" loading="lazy" alt="Ecuador" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x"><span class="p2-team">Ecuador</span></div>
+        </div><p class="p2-venue"><b>Round of 32</b> · Mexico City Stadium, Mexico City MX</p></div>
+      </div>
+
+      <!-- WEDNESDAY JULY 1 -->
+      <div class="p2-day">
+        <p class="p2-day-h">Wednesday, July 1</p>
+        <div class="p2-match"><div class="p2-match-row">
+          <div class="p2-side p2-home"><span class="p2-team">England</span><img class="p2-flag" loading="lazy" alt="England" src="https://flagcdn.com/w40/gb-eng.png" srcset="https://flagcdn.com/w80/gb-eng.png 2x"></div>
+          <div class="p2-time">12:00 PM ET</div>
+          <div class="p2-side p2-away"><img class="p2-flag" loading="lazy" alt="DR Congo" src="https://flagcdn.com/w40/cd.png" srcset="https://flagcdn.com/w80/cd.png 2x"><span class="p2-team">DR Congo</span></div>
+        </div><p class="p2-venue"><b>Round of 32</b> · Atlanta Stadium, Atlanta GA</p></div>
+        <div class="p2-match"><div class="p2-match-row">
+          <div class="p2-side p2-home"><span class="p2-team">Belgium</span><img class="p2-flag" loading="lazy" alt="Belgium" src="https://flagcdn.com/w40/be.png" srcset="https://flagcdn.com/w80/be.png 2x"></div>
+          <div class="p2-time">4:00 PM ET</div>
+          <div class="p2-side p2-away"><img class="p2-flag" loading="lazy" alt="Senegal" src="https://flagcdn.com/w40/sn.png" srcset="https://flagcdn.com/w80/sn.png 2x"><span class="p2-team">Senegal</span></div>
+        </div><p class="p2-venue"><b>Round of 32</b> · Seattle Stadium, Seattle WA</p></div>
+        <div class="p2-match"><div class="p2-match-row">
+          <div class="p2-side p2-home"><span class="p2-team">United States</span><img class="p2-flag" loading="lazy" alt="United States" src="https://flagcdn.com/w40/us.png" srcset="https://flagcdn.com/w80/us.png 2x"></div>
+          <div class="p2-time">8:00 PM ET</div>
+          <div class="p2-side p2-away"><img class="p2-flag" loading="lazy" alt="Bosnia and Herzegovina" src="https://flagcdn.com/w40/ba.png" srcset="https://flagcdn.com/w80/ba.png 2x"><span class="p2-team">Bosnia &amp; Herzegovina</span></div>
+        </div><p class="p2-venue"><b>Round of 32</b> · San Francisco Bay Area Stadium, Santa Clara CA</p></div>
+      </div>
+
+      <!-- THURSDAY JULY 2 -->
+      <div class="p2-day">
+        <p class="p2-day-h">Thursday, July 2</p>
+        <div class="p2-match"><div class="p2-match-row">
+          <div class="p2-side p2-home"><span class="p2-team">Spain</span><img class="p2-flag" loading="lazy" alt="Spain" src="https://flagcdn.com/w40/es.png" srcset="https://flagcdn.com/w80/es.png 2x"></div>
+          <div class="p2-time">3:00 PM ET</div>
+          <div class="p2-side p2-away"><img class="p2-flag" loading="lazy" alt="Austria" src="https://flagcdn.com/w40/at.png" srcset="https://flagcdn.com/w80/at.png 2x"><span class="p2-team">Austria</span></div>
+        </div><p class="p2-venue"><b>Round of 32</b> · Los Angeles Stadium, Inglewood CA</p></div>
+        <div class="p2-match"><div class="p2-match-row">
+          <div class="p2-side p2-home"><span class="p2-team">Portugal</span><img class="p2-flag" loading="lazy" alt="Portugal" src="https://flagcdn.com/w40/pt.png" srcset="https://flagcdn.com/w80/pt.png 2x"></div>
+          <div class="p2-time">7:00 PM ET</div>
+          <div class="p2-side p2-away"><img class="p2-flag" loading="lazy" alt="Croatia" src="https://flagcdn.com/w40/hr.png" srcset="https://flagcdn.com/w80/hr.png 2x"><span class="p2-team">Croatia</span></div>
+        </div><p class="p2-venue"><b>Round of 32</b> · Toronto Stadium, Toronto CA</p></div>
+        <div class="p2-match"><div class="p2-match-row">
+          <div class="p2-side p2-home"><span class="p2-team">Switzerland</span><img class="p2-flag" loading="lazy" alt="Switzerland" src="https://flagcdn.com/w40/ch.png" srcset="https://flagcdn.com/w80/ch.png 2x"></div>
+          <div class="p2-time">11:00 PM ET</div>
+          <div class="p2-side p2-away"><img class="p2-flag" loading="lazy" alt="Algeria" src="https://flagcdn.com/w40/dz.png" srcset="https://flagcdn.com/w80/dz.png 2x"><span class="p2-team">Algeria</span></div>
+        </div><p class="p2-venue"><b>Round of 32</b> · BC Place, Vancouver CA</p></div>
+      </div>
+
+      <!-- FRIDAY JULY 3 -->
+      <div class="p2-day">
+        <p class="p2-day-h">Friday, July 3</p>
+        <div class="p2-match"><div class="p2-match-row">
+          <div class="p2-side p2-home"><span class="p2-team">Egypt</span><img class="p2-flag" loading="lazy" alt="Egypt" src="https://flagcdn.com/w40/eg.png" srcset="https://flagcdn.com/w80/eg.png 2x"></div>
+          <div class="p2-time">2:00 PM ET</div>
+          <div class="p2-side p2-away"><img class="p2-flag" loading="lazy" alt="Australia" src="https://flagcdn.com/w40/au.png" srcset="https://flagcdn.com/w80/au.png 2x"><span class="p2-team">Australia</span></div>
+        </div><p class="p2-venue"><b>Round of 32</b> · Dallas Stadium, Arlington TX</p></div>
+        <div class="p2-match"><div class="p2-match-row">
+          <div class="p2-side p2-home"><span class="p2-team">Argentina</span><img class="p2-flag" loading="lazy" alt="Argentina" src="https://flagcdn.com/w40/ar.png" srcset="https://flagcdn.com/w80/ar.png 2x"></div>
+          <div class="p2-time">6:00 PM ET</div>
+          <div class="p2-side p2-away"><img class="p2-flag" loading="lazy" alt="Cape Verde" src="https://flagcdn.com/w40/cv.png" srcset="https://flagcdn.com/w80/cv.png 2x"><span class="p2-team">Cape Verde</span></div>
+        </div><p class="p2-venue"><b>Round of 32</b> · Miami Stadium, Miami Gardens FL</p></div>
+        <div class="p2-match"><div class="p2-match-row">
+          <div class="p2-side p2-home"><span class="p2-team">Colombia</span><img class="p2-flag" loading="lazy" alt="Colombia" src="https://flagcdn.com/w40/co.png" srcset="https://flagcdn.com/w80/co.png 2x"></div>
+          <div class="p2-time">9:30 PM ET</div>
+          <div class="p2-side p2-away"><img class="p2-flag" loading="lazy" alt="Ghana" src="https://flagcdn.com/w40/gh.png" srcset="https://flagcdn.com/w80/gh.png 2x"><span class="p2-team">Ghana</span></div>
+        </div><p class="p2-venue"><b>Round of 32</b> · Kansas City Stadium, Kansas City MO</p></div>
+      </div>
+
+      <p class="p2-note"><strong>How the knockout works:</strong> this is single-elimination — groups no longer matter. There are no draws. Any match level after 90 minutes goes to extra time, and if still tied, a penalty shootout decides who advances. Winners move on to the Round of 16, which begins July 4. All times Eastern (ET) — confirm your local kickoff before traveling. Source: FIFA.</p>
+    </div>
+
+    <!-- ===== HOST-CITY PROMO CARDS ===== -->
+    <!-- =========================================================
+         HOST-CITY CARDS — your attraction / CityPass promo slots.
+
+         LIVE NOW (real Tiqets affiliate links, marker 736515):
+           • Dallas  → Reunion Tower + CityPASS
+           • Atlanta → Six Flags + CityPASS
+         These two have the gold star and "Get tickets" button.
+
+         TO FILL IN (the other 12 cities):
+         When you have a city's CityPass / attraction link, find that
+         city's card below and do 2 things:
+           1. Replace the href="host-cities/..." with your promo link
+           2. Add  target="_blank" rel="sponsored noopener"  inside the <a tag
+              and change class="p2-card" to class="p2-card p2-card-live"
+              (that turns on the gold star + "Get tickets" styling)
+         Until then each card safely points to its host-city page.
+         ========================================================= -->
+    <div class="p2-promo">
+      <h3 class="p2-promo-h">Where to go in each host city</h3>
+      <p class="p2-promo-sub">Hand-picked things to do, see, and book in every Round of 32 host city — tap a city to explore. Promoted partner experiences added live.</p>
+      <div class="p2-grid">
+
+        <!-- LOS ANGELES — paste CityPass/attraction link in href below -->
+        <a class="p2-card" href="host-cities/los-angeles.html">
+          <span class="p2-card-city">Los Angeles</span>
+          <span class="p2-card-venue">Inglewood · Los Angeles Stadium</span>
+          <span class="p2-card-cta">Explore →</span>
+        </a>
+
+        <!-- HOUSTON — paste CityPass/attraction link in href below -->
+        <a class="p2-card" href="host-cities/houston.html">
+          <span class="p2-card-city">Houston</span>
+          <span class="p2-card-venue">Houston · Houston Stadium</span>
+          <span class="p2-card-cta">Explore →</span>
+        </a>
+
+        <!-- BOSTON — paste CityPass/attraction link in href below -->
+        <a class="p2-card" href="host-cities/boston-foxborough.html">
+          <span class="p2-card-city">Boston</span>
+          <span class="p2-card-venue">Foxborough · Boston Stadium</span>
+          <span class="p2-card-cta">Explore →</span>
+        </a>
+
+        <!-- MONTERREY — paste CityPass/attraction link in href below -->
+        <a class="p2-card" href="host-cities/monterrey.html">
+          <span class="p2-card-city">Monterrey</span>
+          <span class="p2-card-venue">Monterrey · Monterrey Stadium</span>
+          <span class="p2-card-cta">Explore →</span>
+        </a>
+
+        <!-- DALLAS — LIVE affiliate link (Tiqets CityPass, marker 736515) -->
+        <a class="p2-card p2-card-live" href="https://www.tiqets.com/en/dallas-citypass-r-reunion-tower-entry-self-guided-tour-b50813/?partner=travelpayouts.com&amp;tq_campaign=b615ae402e5149d7916bab4a9-736515&amp;tq_click_id=b615ae402e5149d7916bab4a9-736515" target="_blank" rel="sponsored noopener">
+          <span class="p2-card-city">Dallas</span>
+          <span class="p2-card-venue">Arlington · Reunion Tower + CityPASS</span>
+          <span class="p2-card-cta">Get tickets →</span>
+        </a>
+
+        <!-- NEW YORK / NEW JERSEY — paste CityPass/attraction link in href below -->
+        <a class="p2-card" href="host-cities/new-york-new-jersey.html">
+          <span class="p2-card-city">New York / NJ</span>
+          <span class="p2-card-venue">East Rutherford · NY/NJ Stadium</span>
+          <span class="p2-card-cta">Explore →</span>
+        </a>
+
+        <!-- MEXICO CITY — paste CityPass/attraction link in href below -->
+        <a class="p2-card" href="host-cities/mexico-city.html">
+          <span class="p2-card-city">Mexico City</span>
+          <span class="p2-card-venue">Mexico City · Mexico City Stadium</span>
+          <span class="p2-card-cta">Explore →</span>
+        </a>
+
+        <!-- ATLANTA — LIVE affiliate link (Tiqets CityPass, marker 736515) -->
+        <a class="p2-card p2-card-live" href="https://www.tiqets.com/en/atlanta-citypass-r-six-flags-over-georgia-one-day-ticket-b293512/?partner=travelpayouts.com&amp;tq_campaign=c49ed0979c9f4efebf0b47367-736515&amp;tq_click_id=c49ed0979c9f4efebf0b47367-736515" target="_blank" rel="sponsored noopener">
+          <span class="p2-card-city">Atlanta</span>
+          <span class="p2-card-venue">Atlanta · Six Flags + CityPASS</span>
+          <span class="p2-card-cta">Get tickets →</span>
+        </a>
+
+        <!-- SEATTLE — paste CityPass/attraction link in href below -->
+        <a class="p2-card" href="host-cities/seattle.html">
+          <span class="p2-card-city">Seattle</span>
+          <span class="p2-card-venue">Seattle · Seattle Stadium</span>
+          <span class="p2-card-cta">Explore →</span>
+        </a>
+
+        <!-- SAN FRANCISCO BAY AREA — paste CityPass/attraction link in href below -->
+        <a class="p2-card" href="host-cities/san-francisco-bay-area.html">
+          <span class="p2-card-city">SF Bay Area</span>
+          <span class="p2-card-venue">Santa Clara · Bay Area Stadium</span>
+          <span class="p2-card-cta">Explore →</span>
+        </a>
+
+        <!-- TORONTO — paste CityPass/attraction link in href below -->
+        <a class="p2-card" href="host-cities/toronto.html">
+          <span class="p2-card-city">Toronto</span>
+          <span class="p2-card-venue">Toronto · Toronto Stadium</span>
+          <span class="p2-card-cta">Explore →</span>
+        </a>
+
+        <!-- VANCOUVER — paste CityPass/attraction link in href below -->
+        <a class="p2-card" href="host-cities/vancouver.html">
+          <span class="p2-card-city">Vancouver</span>
+          <span class="p2-card-venue">Vancouver · BC Place</span>
+          <span class="p2-card-cta">Explore →</span>
+        </a>
+
+        <!-- MIAMI — paste CityPass/attraction link in href below -->
+        <a class="p2-card" href="host-cities/miami.html">
+          <span class="p2-card-city">Miami</span>
+          <span class="p2-card-venue">Miami Gardens · Miami Stadium</span>
+          <span class="p2-card-cta">Explore →</span>
+        </a>
+
+        <!-- KANSAS CITY — paste CityPass/attraction link in href below -->
+        <a class="p2-card" href="host-cities/kansas-city.html">
+          <span class="p2-card-city">Kansas City</span>
+          <span class="p2-card-venue">Kansas City · Kansas City Stadium</span>
+          <span class="p2-card-cta">Explore →</span>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
