@@ -173,17 +173,11 @@ body {
 
 /* ── CITY LIST POP-OUT ── */
 .city-list-container {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0;
-}
-.hub-card.active .city-list-container {
   max-height: 600px;
+  overflow-y: auto;
   opacity: 1;
   margin-top: 15px;
   margin-bottom: 20px;
-  overflow-y: auto;
 }
 .city-link {
   display: flex;
@@ -315,7 +309,7 @@ body {
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-stretch mb-24">
 
     <!-- ═══ USA CARD ═══ -->
-    <div class="hub-card active cursor-pointer" onclick="this.classList.toggle('active')">
+    <div class="hub-card">
       <div class="flag-banner">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png" alt="United States — World Cup 2026">
         <div class="flag-gradient"></div>
@@ -326,7 +320,7 @@ body {
           <span class="condensed text-white/40 font-bold text-xs uppercase">11 Host Cities</span>
           <span class="match-badge">78 Matches</span>
         </div>
-        <p class="condensed text-gold text-[10px] tracking-widest uppercase mb-4 animate-pulse">Host Cities</p>
+        <p class="condensed text-gold text-[10px] tracking-widest uppercase mb-4 animate-pulse">CLICK A CITY TO EXPLORE ↓</p>
         <div class="city-list-container space-y-1 text-sm condensed text-white/80 custom-scrollbar pr-2">
           <a href="host-cities/new-york-new-jersey.html" class="city-link">
             <span class="text-white">New York / New Jersey</span><span class="text-gold font-bold text-[10px]">THE FINAL</span>
@@ -367,7 +361,7 @@ body {
     </div>
 
     <!-- ═══ MEXICO CARD ═══ -->
-    <div class="hub-card active cursor-pointer" onclick="this.classList.toggle('active')">
+    <div class="hub-card">
       <div class="flag-banner">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1280px-Flag_of_Mexico.svg.png" alt="Mexico — World Cup 2026">
         <div class="flag-gradient"></div>
@@ -378,7 +372,7 @@ body {
           <span class="condensed text-white/40 font-bold text-xs uppercase">3 Host Cities</span>
           <span class="match-badge">13 Matches</span>
         </div>
-        <p class="condensed text-gold text-[10px] tracking-widest uppercase mb-4 animate-pulse">Host Cities</p>
+        <p class="condensed text-gold text-[10px] tracking-widest uppercase mb-4 animate-pulse">CLICK A CITY TO EXPLORE ↓</p>
         <div class="city-list-container space-y-4 text-sm condensed text-white/80">
           <a href="host-cities/mexico-city.html" class="city-link">
             <span class="text-white">Mexico City</span><span class="text-gold font-bold text-[10px]">OPENER</span>
@@ -395,7 +389,7 @@ body {
     </div>
 
     <!-- ═══ CANADA CARD ═══ -->
-    <div class="hub-card active cursor-pointer" onclick="this.classList.toggle('active')">
+    <div class="hub-card">
       <div class="flag-banner">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1280px-Flag_of_Canada_%28Pantone%29.svg.png" alt="Canada — World Cup 2026">
         <div class="flag-gradient"></div>
@@ -406,7 +400,7 @@ body {
           <span class="condensed text-white/40 font-bold text-xs uppercase">2 Host Cities</span>
           <span class="match-badge">13 Matches</span>
         </div>
-        <p class="condensed text-gold text-[10px] tracking-widest uppercase mb-4 animate-pulse">Host Cities</p>
+        <p class="condensed text-gold text-[10px] tracking-widest uppercase mb-4 animate-pulse">CLICK A CITY TO EXPLORE ↓</p>
         <div class="city-list-container space-y-4 text-sm condensed text-white/80">
           <a href="host-cities/toronto.html" class="city-link">
             <span class="text-white">Toronto</span><span class="text-white/40 text-[10px] uppercase">BMO Field</span>
