@@ -1658,6 +1658,10 @@ font-size: 10px;
     .r32-fx-time{font-size:1.35rem;}
     .r32-match-row{gap:.5rem;}
   }
+.hub-card .city-list-container { display:none; }
+.hub-card.expanded .city-list-container { display:block; }
+.hub-card .explore-hint { display:none; }
+.hub-card.expanded .explore-hint { display:block; }
 </style>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -1753,7 +1757,7 @@ font-size: 10px;
       <h1 class="bebas text-5xl md:text-9xl tracking-tighter italic leading-none mb-4" style="color:white;">
         THE WORLD IS WATCHING — <span style="color:var(--gold)">WORLD CUP FINAL WEEKEND</span>
       </h1>
-      <p class="condensed tracking-[0.4em] uppercase" style="font-size:1.5rem;color:white;-webkit-text-stroke:1.5px var(--fire);text-shadow:0 0 8px rgba(245,51,63,0.6);">ENJOY THE CUP OUTSIDE OF THE STADIUMS</p>
+      <p class="condensed tracking-[0.4em] uppercase" style="font-size:1.5rem;color:#ffffff;text-shadow:0 0 10px rgba(255,255,255,0.25);">ENJOY THE CUP OUTSIDE OF THE STADIUMS</p>
     </div>
   </div>
 
@@ -1849,7 +1853,7 @@ font-size: 10px;
             <span class="condensed text-white/40 font-bold text-xs uppercase">11 Host Cities</span>
             <span class="match-badge">78 Matches</span>
           </div>
-          <p class="condensed text-gold text-[10px] tracking-widest uppercase mb-4 animate-pulse">CLICK A CITY TO EXPLORE ↓</p>
+          <p class="explore-hint condensed text-gold text-[10px] tracking-widest uppercase mb-4 animate-pulse">CLICK A CITY TO EXPLORE ↓</p>
           <div class="city-list-container space-y-1 text-sm condensed text-white/80 custom-scrollbar pr-2">
             <a href="host-cities/new-york-new-jersey.html" class="city-link">
               <span class="text-white">New York / New Jersey</span><span class="text-gold font-bold text-[10px]">THE FINAL</span>
@@ -1885,7 +1889,7 @@ font-size: 10px;
               <span class="text-white">Boston</span><span class="text-white/40 text-[10px] uppercase">Gillette Stadium</span>
             </a>
           </div>
-          <button class="btn-gold w-full py-5 rounded-2xl text-center text-sm tracking-widest mt-auto">EXPLORE HOST CITIES</button>
+          <button onclick="this.closest('.hub-card').classList.toggle('expanded'); this.textContent = this.closest('.hub-card').classList.contains('expanded') ? 'HIDE HOST CITIES' : 'EXPLORE HOST CITIES';" class="btn-gold w-full py-5 rounded-2xl text-center text-sm tracking-widest mt-auto">EXPLORE HOST CITIES</button>
         </div>
       </div>
 
@@ -1901,7 +1905,7 @@ font-size: 10px;
             <span class="condensed text-white/40 font-bold text-xs uppercase">3 Host Cities</span>
             <span class="match-badge">13 Matches</span>
           </div>
-          <p class="condensed text-gold text-[10px] tracking-widest uppercase mb-4 animate-pulse">CLICK A CITY TO EXPLORE ↓</p>
+          <p class="explore-hint condensed text-gold text-[10px] tracking-widest uppercase mb-4 animate-pulse">CLICK A CITY TO EXPLORE ↓</p>
           <div class="city-list-container space-y-4 text-sm condensed text-white/80">
             <a href="host-cities/mexico-city.html" class="city-link">
               <span class="text-white">Mexico City</span><span class="text-gold font-bold text-[10px]">OPENER</span>
@@ -1913,7 +1917,7 @@ font-size: 10px;
               <span class="text-white">Monterrey</span><span class="text-white/40 text-[10px] uppercase">Estadio BBVA</span>
             </a>
           </div>
-          <button class="btn-gold w-full py-5 rounded-2xl text-center text-sm tracking-widest mt-auto">EXPLORE HOST CITIES</button>
+          <button onclick="this.closest('.hub-card').classList.toggle('expanded'); this.textContent = this.closest('.hub-card').classList.contains('expanded') ? 'HIDE HOST CITIES' : 'EXPLORE HOST CITIES';" class="btn-gold w-full py-5 rounded-2xl text-center text-sm tracking-widest mt-auto">EXPLORE HOST CITIES</button>
         </div>
       </div>
 
@@ -1929,7 +1933,7 @@ font-size: 10px;
             <span class="condensed text-white/40 font-bold text-xs uppercase">2 Host Cities</span>
             <span class="match-badge">13 Matches</span>
           </div>
-          <p class="condensed text-gold text-[10px] tracking-widest uppercase mb-4 animate-pulse">CLICK A CITY TO EXPLORE ↓</p>
+          <p class="explore-hint condensed text-gold text-[10px] tracking-widest uppercase mb-4 animate-pulse">CLICK A CITY TO EXPLORE ↓</p>
           <div class="city-list-container space-y-4 text-sm condensed text-white/80">
             <a href="host-cities/toronto.html" class="city-link">
               <span class="text-white">Toronto</span><span class="text-white/40 text-[10px] uppercase">BMO Field</span>
@@ -1938,7 +1942,7 @@ font-size: 10px;
               <span class="text-white">Vancouver</span><span class="text-white/40 text-[10px] uppercase">BC Place</span>
             </a>
           </div>
-          <button class="btn-gold w-full py-5 rounded-2xl text-center text-sm tracking-widest mt-auto">EXPLORE HOST CITIES</button>
+          <button onclick="this.closest('.hub-card').classList.toggle('expanded'); this.textContent = this.closest('.hub-card').classList.contains('expanded') ? 'HIDE HOST CITIES' : 'EXPLORE HOST CITIES';" class="btn-gold w-full py-5 rounded-2xl text-center text-sm tracking-widest mt-auto">EXPLORE HOST CITIES</button>
         </div>
       </div>
 
