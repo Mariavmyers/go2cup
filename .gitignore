@@ -146,6 +146,7 @@ vite.config.ts.timestamp-*
 *.avi
 FAVCOMM.png
 WEBSITE CHECK.UP.txt
+Claude non stop questions.txt
 
 # Local tooling
 .claude/
