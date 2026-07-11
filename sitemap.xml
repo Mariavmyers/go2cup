@@ -11,19 +11,19 @@
 
   <!-- High-priority pages -->
   <url>
-    <loc>https://sportdgx.com/sports-news.html</loc>
+    <loc>https://sportdgx.com/sports-news</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/where-to-stay.html</loc>
+    <loc>https://sportdgx.com/where-to-stay</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/worldcup-story.html</loc>
+    <loc>https://sportdgx.com/worldcup-story</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -31,7 +31,7 @@
 
   <!-- Host Cities hub -->
   <url>
-    <loc>https://sportdgx.com/host-cities.html</loc>
+    <loc>https://sportdgx.com/host-cities</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -39,97 +39,97 @@
 
   <!-- Host Cities individual pages -->
   <url>
-    <loc>https://sportdgx.com/host-cities/atlanta.html</loc>
+    <loc>https://sportdgx.com/host-cities/atlanta</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/host-cities/boston-foxborough.html</loc>
+    <loc>https://sportdgx.com/host-cities/boston-foxborough</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/host-cities/dallas.html</loc>
+    <loc>https://sportdgx.com/host-cities/dallas</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/host-cities/guadalajara.html</loc>
+    <loc>https://sportdgx.com/host-cities/guadalajara</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/host-cities/houston.html</loc>
+    <loc>https://sportdgx.com/host-cities/houston</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/host-cities/kansas-city.html</loc>
+    <loc>https://sportdgx.com/host-cities/kansas-city</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/host-cities/los-angeles.html</loc>
+    <loc>https://sportdgx.com/host-cities/los-angeles</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/host-cities/mexico-city.html</loc>
+    <loc>https://sportdgx.com/host-cities/mexico-city</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/host-cities/miami.html</loc>
+    <loc>https://sportdgx.com/host-cities/miami</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/host-cities/monterrey.html</loc>
+    <loc>https://sportdgx.com/host-cities/monterrey</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/host-cities/new-york-new-jersey.html</loc>
+    <loc>https://sportdgx.com/host-cities/new-york-new-jersey</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/host-cities/philadelphia.html</loc>
+    <loc>https://sportdgx.com/host-cities/philadelphia</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/host-cities/san-francisco-bay-area.html</loc>
+    <loc>https://sportdgx.com/host-cities/san-francisco-bay-area</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/host-cities/seattle.html</loc>
+    <loc>https://sportdgx.com/host-cities/seattle</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/host-cities/toronto.html</loc>
+    <loc>https://sportdgx.com/host-cities/toronto</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/host-cities/vancouver.html</loc>
+    <loc>https://sportdgx.com/host-cities/vancouver</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -137,151 +137,151 @@
 
   <!-- Articles -->
   <url>
-    <loc>https://sportdgx.com/articles/48-team-world-cup-explained.html</loc>
+    <loc>https://sportdgx.com/articles/48-team-world-cup-explained</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/argentina-fans-kansas-city.html</loc>
+    <loc>https://sportdgx.com/articles/argentina-fans-kansas-city</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/argentina-world-cup-2026-gossip.html</loc>
+    <loc>https://sportdgx.com/articles/argentina-world-cup-2026-gossip</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/best-hotels-estadio-azteca.html</loc>
+    <loc>https://sportdgx.com/articles/best-hotels-estadio-azteca</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/best-neighborhoods-mexico-city.html</loc>
+    <loc>https://sportdgx.com/articles/best-neighborhoods-mexico-city</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/colombia-vs-ghana-kansas-city.html</loc>
+    <loc>https://sportdgx.com/articles/colombia-vs-ghana-kansas-city</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/colombia-vs-ghana-kansas-city-es.html</loc>
+    <loc>https://sportdgx.com/articles/colombia-vs-ghana-kansas-city-es</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/dallas-fan-guide.html</loc>
+    <loc>https://sportdgx.com/articles/dallas-fan-guide</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/flights-to-world-cup.html</loc>
+    <loc>https://sportdgx.com/articles/flights-to-world-cup</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/houston-fan-guide.html</loc>
+    <loc>https://sportdgx.com/articles/houston-fan-guide</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/how-to-get-world-cup-tickets.html</loc>
+    <loc>https://sportdgx.com/articles/how-to-get-world-cup-tickets</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/kansas-city-fan-guide.html</loc>
+    <loc>https://sportdgx.com/articles/kansas-city-fan-guide</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/kansas-city-matchday-tips.html</loc>
+    <loc>https://sportdgx.com/articles/kansas-city-matchday-tips</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/los-angeles-fan-guide.html</loc>
+    <loc>https://sportdgx.com/articles/los-angeles-fan-guide</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/mexico-city-fan-guide.html</loc>
+    <loc>https://sportdgx.com/articles/mexico-city-fan-guide</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/miami-fan-guide.html</loc>
+    <loc>https://sportdgx.com/articles/miami-fan-guide</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/multi-city-world-cup-trip.html</loc>
+    <loc>https://sportdgx.com/articles/multi-city-world-cup-trip</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/new-york-new-jersey-fan-guide.html</loc>
+    <loc>https://sportdgx.com/articles/new-york-new-jersey-fan-guide</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/safety-tips-mexico.html</loc>
+    <loc>https://sportdgx.com/articles/safety-tips-mexico</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/seattle-fan-guide.html</loc>
+    <loc>https://sportdgx.com/articles/seattle-fan-guide</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/toronto-fan-guide.html</loc>
+    <loc>https://sportdgx.com/articles/toronto-fan-guide</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/what-to-pack-world-cup.html</loc>
+    <loc>https://sportdgx.com/articles/what-to-pack-world-cup</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/world-cup-budget-guide.html</loc>
+    <loc>https://sportdgx.com/articles/world-cup-budget-guide</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/world-cup-match-schedule.html</loc>
+    <loc>https://sportdgx.com/articles/world-cup-match-schedule</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/articles/world-cup-opening-ceremony.html</loc>
+    <loc>https://sportdgx.com/articles/world-cup-opening-ceremony</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -289,13 +289,13 @@
 
   <!-- Blog -->
   <url>
-    <loc>https://sportdgx.com/blog.html</loc>
+    <loc>https://sportdgx.com/blog</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/blog/historic-firsts.html</loc>
+    <loc>https://sportdgx.com/blog/historic-firsts</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -303,175 +303,163 @@
 
   <!-- Root content pages -->
   <url>
-    <loc>https://sportdgx.com/article-1.html</loc>
+    <loc>https://sportdgx.com/article-1</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/article-2.html</loc>
+    <loc>https://sportdgx.com/article-2</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/article-3.html</loc>
+    <loc>https://sportdgx.com/article-3</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/boston-foxborough.html</loc>
+    <loc>https://sportdgx.com/boston-foxborough</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/budget-calculator.html</loc>
+    <loc>https://sportdgx.com/budget-calculator</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/dallas.html</loc>
+    <loc>https://sportdgx.com/dallas</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/emergency.html</loc>
+    <loc>https://sportdgx.com/emergency</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/fbo-vip.html</loc>
+    <loc>https://sportdgx.com/fbo-vip</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/first-match-mexico.html</loc>
+    <loc>https://sportdgx.com/first-match-mexico</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/go2cup-emergency-directory-cleaned.html</loc>
+    <loc>https://sportdgx.com/go2cup-emergency-directory-cleaned</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/high-net-worth%20fans.html</loc>
+    <loc>https://sportdgx.com/high-net-worth%20fans</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/hopper-guide.html</loc>
+    <loc>https://sportdgx.com/hopper-guide</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/insider.html</loc>
+    <loc>https://sportdgx.com/interpreter-support</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/interpreter-support.html</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sportdgx.com/legal-hub.html</loc>
+    <loc>https://sportdgx.com/legal-hub</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/maria-myers.html</loc>
+    <loc>https://sportdgx.com/maria-myers</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/maria-myers-es.html</loc>
+    <loc>https://sportdgx.com/maria-myers-es</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/maria-myers-it.html</loc>
+    <loc>https://sportdgx.com/maria-myers-it</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/maria-myers-pt.html</loc>
+    <loc>https://sportdgx.com/maria-myers-pt</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/mexico-first-match.html</loc>
+    <loc>https://sportdgx.com/mexico-first-match</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/mexico-trip-guide.html</loc>
+    <loc>https://sportdgx.com/mexico-trip-guide</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/newsletter-Farol.html</loc>
+    <loc>https://sportdgx.com/newsletter-Farol</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/partner-resources.html</loc>
+    <loc>https://sportdgx.com/seattle</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/seattle.html</loc>
+    <loc>https://sportdgx.com/streaming</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/streaming.html</loc>
+    <loc>https://sportdgx.com/the-48-team-format</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/the-48-team-format.html</loc>
+    <loc>https://sportdgx.com/toronto</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/toronto.html</loc>
+    <loc>https://sportdgx.com/community</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/community.html</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sportdgx.com/contact.html</loc>
+    <loc>https://sportdgx.com/contact</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -479,61 +467,61 @@
 
   <!-- Legal pages (root) -->
   <url>
-    <loc>https://sportdgx.com/accessibility.html</loc>
+    <loc>https://sportdgx.com/accessibility</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/affiliate.html</loc>
+    <loc>https://sportdgx.com/affiliate</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/cookies.html</loc>
+    <loc>https://sportdgx.com/cookies</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/disclaimers.html</loc>
+    <loc>https://sportdgx.com/disclaimers</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/disclosure.html</loc>
+    <loc>https://sportdgx.com/disclosure</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/dmca.html</loc>
+    <loc>https://sportdgx.com/dmca</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/privacy.html</loc>
+    <loc>https://sportdgx.com/privacy</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/sponsored.html</loc>
+    <loc>https://sportdgx.com/sponsored</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/terms.html</loc>
+    <loc>https://sportdgx.com/terms</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/user-content.html</loc>
+    <loc>https://sportdgx.com/user-content</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
