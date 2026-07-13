@@ -410,6 +410,24 @@ padding: 5rem 6vw;
 }
 .booking-hub-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2rem, 4vw, 3.2rem); color: var(--snow-white); margin-bottom: 0.5rem; letter-spacing: 0.03em; }
 .booking-hub-sub { font-size: 0.9rem; color: var(--smoke); margin-bottom: 2.5rem; max-width: 620px; }
+
+/* STAY22 DATED HOTEL MAP */
+.stay22-block { margin-bottom: 2.5rem; }
+.stay22-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+  color: #2f80ff;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.4rem;
+}
+.stay22-note { font-size: 0.78rem; color: var(--smoke); margin-bottom: 1rem; max-width: 620px; }
+.stay22-map {
+  border: 1px solid rgba(47,128,255,0.35);
+  border-radius: 3px;
+  overflow: hidden;
+  line-height: 0;
+}
+.stay22-map iframe { display: block; width: 100%; border: 0; }
 .booking-grid {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
@@ -655,6 +673,14 @@ section { padding: 3.5rem 5vw; }
   <div class="section-label">Between the Matches</div>
   <h2 class="booking-hub-title">Explore &amp; Book New York</h2>
   <p class="booking-hub-sub">From the top of the Empire State Building to a Statue of Liberty cruise, a Broadway show and the lights of Times Square — New York is the greatest city on Earth to explore between matches. Book ahead, skip the line, and live it up before the Final at MetLife.</p>
+  <div class="stay22-block">
+    <h3 class="stay22-title">Final Weekend Hotels &mdash; Jul 17&ndash;20 &middot; MetLife Stadium Area</h3>
+    <p class="stay22-note">Map is pre-set to 17&ndash;20 July 2026 around MetLife Stadium. Adjust dates after searching.</p>
+    <div class="stay22-map">
+      <iframe id="stay22-widget" width="100%" height="428" src="https://stay22.com/embed/6a54efb5c5daf8e546413ee9?checkin=2026-07-17&amp;checkout=2026-07-20" frameborder="0" loading="lazy" title="Hotel map &ndash; MetLife Stadium area, 17&ndash;20 July 2026"></iframe>
+    </div>
+  </div>
+
   <div class="booking-grid">
     <a href="https://tiqets.tpk.lu/qBeN02dB?marker=736515.worldcup26" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-building"></i>Empire State Building</a>
     <a href="https://tiqets.tpk.lu/zyQPc8bP?marker=736515.worldcup26" target="_blank" rel="sponsored noopener" class="booking-btn"><i class="fa-solid fa-binoculars"></i>Top of the Rock / SUMMIT</a>
