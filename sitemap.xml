@@ -321,19 +321,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/boston-foxborough</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://sportdgx.com/budget-calculator</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sportdgx.com/dallas</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -429,12 +417,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sportdgx.com/seattle</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://sportdgx.com/streaming</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -442,12 +424,6 @@
   </url>
   <url>
     <loc>https://sportdgx.com/the-48-team-format</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sportdgx.com/toronto</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
