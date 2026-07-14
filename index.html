@@ -1833,6 +1833,31 @@ font-size: 10px;
 </a>
 <!-- ── END STREAMING PROMO BAR ── -->
 
+<!-- ── SEMIFINAL MATCHDAY STRIP ── -->
+<style>
+  .sf-strip{background:#07131f;border-top:3px solid #f5c518;border-bottom:3px solid #f5c518;padding:16px 24px;text-align:center;}
+  .sf-line{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:14px;font-family:'Bebas Neue',Arial,sans-serif;line-height:1;}
+  .sf-live{color:#f5c518;font-size:clamp(1.1rem,2.4vw,1.5rem);letter-spacing:.12em;display:inline-flex;align-items:center;gap:7px;animation:sfpulse 1.6s ease-in-out infinite;}
+  .sf-match{display:inline-flex;align-items:center;gap:10px;color:#fff;font-size:clamp(1.6rem,4.2vw,2.6rem);letter-spacing:.04em;}
+  .sf-flag{border-radius:2px;display:block;}
+  .sf-meta{color:#2f80ff;font-size:clamp(1rem,2.2vw,1.35rem);letter-spacing:.08em;}
+  .sf-sub{margin-top:9px;font-family:'Barlow Condensed',Arial,sans-serif;font-size:.9rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;}
+  .sf-sub a{color:#f5c518;text-decoration:none;border-bottom:1px solid rgba(245,197,24,.45);}
+  .sf-sub a:hover{opacity:.85;}
+  @keyframes sfpulse{0%,100%{opacity:1}50%{opacity:.55}}
+  @media (max-width:640px){.sf-line{flex-direction:column;gap:9px;}}
+</style>
+<section class="sf-strip" aria-label="Semifinal today">
+  <div class="sf-line">
+    <span class="sf-live"><span class="nav-live-dot"></span>&#9889; Semifinal Today</span>
+    <span class="sf-match"><img src="https://flagcdn.com/w40/fr.png" srcset="https://flagcdn.com/w80/fr.png 2x" width="34" height="26" alt="France flag" class="sf-flag">France vs Spain<img src="https://flagcdn.com/w40/es.png" srcset="https://flagcdn.com/w80/es.png 2x" width="34" height="26" alt="Spain flag" class="sf-flag"></span>
+    <span class="sf-meta">3:00 PM ET · Dallas Stadium</span>
+  </div>
+  <p class="sf-sub"><a href="/articles/new-york-new-jersey-fan-guide.html">Winner advances to the Final · MetLife Stadium · July 19</a></p>
+</section>
+<!-- ── END SEMIFINAL MATCHDAY STRIP ── -->
+
+
 <!-- HOST CITIES HERO + CARDS -->
 <div style="background:#020617;">
   <style>
