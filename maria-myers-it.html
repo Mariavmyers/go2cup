@@ -437,10 +437,30 @@
         <div class="form-card">
           <h3>Invia un Messaggio</h3>
           <p style="font-size:15px; color:var(--text-mid); margin-bottom:24px; line-height:1.65;">Usa il modulo per contattarmi. Rispondo personalmente in Italiano, English o Português.</p>
-          <a href="YOUR_GOOGLE_FORM_URL" target="_blank" rel="noopener" class="gform-btn">📝 Apri il Modulo di Contatto →</a>
-          <!-- REPLACE "YOUR_GOOGLE_FORM_URL" with your actual Google Form link -->
-          <div style="margin-top:18px;padding:15px 20px;background:rgba(120,80,200,0.07);border:1.5px solid rgba(120,80,200,0.28);border-radius:10px;text-align:center;font-size:14px;color:#4a306e;line-height:1.65;">
-          </div>
+          <style>
+            .mmf-form{display:flex;flex-direction:column;gap:14px;font-family:'DM Sans',sans-serif;}
+            .mmf-form label{font-size:.78rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin-bottom:6px;display:block;}
+            .mmf-form input,.mmf-form textarea{width:100%;padding:12px 14px;border:1px solid rgba(0,0,0,.18);border-radius:8px;font:inherit;font-family:'DM Sans',sans-serif;background:#fff;}
+            .mmf-form input:focus,.mmf-form textarea:focus{outline:none;border-color:var(--green);}
+            .mmf-form textarea{min-height:130px;resize:vertical;}
+            .mmf-btn{margin-top:4px;width:100%;padding:13px 28px;border:0;border-radius:8px;background:var(--green);color:#fff;font-family:'DM Sans',sans-serif;font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-size:.85rem;cursor:pointer;transition:opacity .15s ease;}
+            .mmf-btn:hover{opacity:.88;}
+          </style>
+          <form class="mmf-form" action="https://formspree.io/f/mgogvkqw" method="POST">
+            <div>
+              <label for="mmf-name">Nome</label>
+              <input id="mmf-name" type="text" name="name" required>
+            </div>
+            <div>
+              <label for="mmf-email">Email</label>
+              <input id="mmf-email" type="email" name="email" required>
+            </div>
+            <div>
+              <label for="mmf-message">Messaggio</label>
+              <textarea id="mmf-message" name="message" required></textarea>
+            </div>
+            <button class="mmf-btn" type="submit">Invia</button>
+          </form>
           <p class="f-note">Il tuo messaggio va direttamente a MainEntry LLC. Rispondo personalmente in Italiano, English o Português.</p>
           <p class="f-privacy">Compilando il modulo, accetti che MainEntry LLC possa utilizzare il tuo nome, email, azienda, lingua preferita e messaggio per rispondere alla tua richiesta. Questo modulo non garantisce risposta, risultato, partnership, sponsorizzazione o decisioni di terzi.</p>
         </div>
@@ -455,35 +475,6 @@
   </div>
 </div>
 
-<style>
-  .mmf-wrap{max-width:640px;margin:0 auto;padding:56px 20px 64px;}
-  .mmf-wrap h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.4vw,2.2rem);margin:0 0 22px;text-align:center;}
-  .mmf-form{display:flex;flex-direction:column;gap:14px;font-family:'DM Sans',sans-serif;}
-  .mmf-form label{font-size:.82rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px;display:block;}
-  .mmf-form input,.mmf-form textarea{width:100%;padding:12px 14px;border:1px solid rgba(0,0,0,.18);border-radius:8px;font:inherit;font-family:'DM Sans',sans-serif;background:#fff;}
-  .mmf-form input:focus,.mmf-form textarea:focus{outline:none;border-color:var(--green);}
-  .mmf-form textarea{min-height:140px;resize:vertical;}
-  .mmf-btn{margin-top:6px;padding:13px 28px;border:0;border-radius:8px;background:var(--green);color:#fff;font-family:'DM Sans',sans-serif;font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-size:.85rem;cursor:pointer;transition:opacity .15s ease;}
-  .mmf-btn:hover{opacity:.88;}
-</style>
-<section class="mmf-wrap">
-  <h2>Invia un messaggio</h2>
-  <form class="mmf-form" action="https://formspree.io/f/mgogvkqw" method="POST">
-    <div>
-      <label for="mmf-name">Nome</label>
-      <input id="mmf-name" type="text" name="name" required>
-    </div>
-    <div>
-      <label for="mmf-email">Email</label>
-      <input id="mmf-email" type="email" name="email" required>
-    </div>
-    <div>
-      <label for="mmf-message">Messaggio</label>
-      <textarea id="mmf-message" name="message" required></textarea>
-    </div>
-    <button class="mmf-btn" type="submit">Invia</button>
-  </form>
-</section>
 
 <footer>
   <div class="container">

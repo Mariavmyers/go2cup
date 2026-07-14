@@ -720,35 +720,30 @@
           <div id="formWrap">
             <h3>Send a Message</h3>
             <div id="fErr" class="f-err">Please fill in all required fields correctly.</div>
-<style>
-  .mmf-wrap{max-width:640px;margin:0 auto;padding:56px 20px 64px;}
-  .mmf-wrap h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.4vw,2.2rem);margin:0 0 22px;text-align:center;}
-  .mmf-form{display:flex;flex-direction:column;gap:14px;font-family:'DM Sans',sans-serif;}
-  .mmf-form label{font-size:.82rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px;display:block;}
-  .mmf-form input,.mmf-form textarea{width:100%;padding:12px 14px;border:1px solid rgba(0,0,0,.18);border-radius:8px;font:inherit;font-family:'DM Sans',sans-serif;background:#fff;}
-  .mmf-form input:focus,.mmf-form textarea:focus{outline:none;border-color:var(--rose-gold);}
-  .mmf-form textarea{min-height:140px;resize:vertical;}
-  .mmf-btn{margin-top:6px;padding:13px 28px;border:0;border-radius:8px;background:var(--rose-gold);color:#fff;font-family:'DM Sans',sans-serif;font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-size:.85rem;cursor:pointer;transition:opacity .15s ease;}
-  .mmf-btn:hover{opacity:.88;}
-</style>
-<section class="mmf-wrap">
-  <h2>Send a Message</h2>
-  <form class="mmf-form" action="https://formspree.io/f/mgogvkqw" method="POST">
-    <div>
-      <label for="mmf-name">Name</label>
-      <input id="mmf-name" type="text" name="name" required>
-    </div>
-    <div>
-      <label for="mmf-email">Email</label>
-      <input id="mmf-email" type="email" name="email" required>
-    </div>
-    <div>
-      <label for="mmf-message">Message</label>
-      <textarea id="mmf-message" name="message" required></textarea>
-    </div>
-    <button class="mmf-btn" type="submit">Send</button>
-  </form>
-</section>
+            <style>
+              .mmf-form{display:flex;flex-direction:column;gap:14px;font-family:'DM Sans',sans-serif;}
+              .mmf-form label{font-size:.78rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin-bottom:6px;display:block;}
+              .mmf-form input,.mmf-form textarea{width:100%;padding:12px 14px;border:1px solid rgba(0,0,0,.18);border-radius:8px;font:inherit;font-family:'DM Sans',sans-serif;background:#fff;}
+              .mmf-form input:focus,.mmf-form textarea:focus{outline:none;border-color:var(--rose-gold);}
+              .mmf-form textarea{min-height:130px;resize:vertical;}
+              .mmf-btn{margin-top:4px;width:100%;padding:13px 28px;border:0;border-radius:8px;background:var(--rose-gold);color:#fff;font-family:'DM Sans',sans-serif;font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-size:.85rem;cursor:pointer;transition:opacity .15s ease;}
+              .mmf-btn:hover{opacity:.88;}
+            </style>
+            <form class="mmf-form" action="https://formspree.io/f/mgogvkqw" method="POST">
+              <div>
+                <label for="mmf-name">Name</label>
+                <input id="mmf-name" type="text" name="name" required>
+              </div>
+              <div>
+                <label for="mmf-email">Email</label>
+                <input id="mmf-email" type="email" name="email" required>
+              </div>
+              <div>
+                <label for="mmf-message">Message</label>
+                <textarea id="mmf-message" name="message" required></textarea>
+              </div>
+              <button class="mmf-btn" type="submit">Send</button>
+            </form>
           </div>
           <div class="f-success" id="fSuccess">
             <div class="suc-icon">✓</div>
