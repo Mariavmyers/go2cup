@@ -48,6 +48,9 @@ header{border-bottom:1px solid #15381f;background:#0a2413}
 .section-title{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1px;margin:30px 0 14px;display:flex;align-items:center;gap:10px;color:#f5c518}
 .dot{width:11px;height:11px;border-radius:50%;display:inline-block}
 
+/* final weekend block stacks on narrow screens */
+@media (max-width:720px){#fw-grid{grid-template-columns:1fr !important}}
+
 /* phase intro blurb */
 .intro{max-width:900px;margin:18px auto 4px;color:#eef4ef;font-size:14.5px;line-height:1.75;font-weight:400}
 
@@ -141,9 +144,151 @@ footer a{color:#9fb8aa;text-decoration:underline}
 
   <!-- COLOMBIA vs GHANA MATCHDAY CROSS-LINK -->
   <div style="background:linear-gradient(135deg,#07180e,#0a2413);border:2px solid #f5c518;border-radius:12px;padding:14px 18px;text-align:center;margin:0 0 18px;">
-<section style="background:linear-gradient(135deg,#1a1206,#2a1d08);border:1px solid #f5c518;border-radius:14px;padding:28px 22px;margin:22px 0;">
+<!-- STAGE-BLOCK:FW -->
+<section style="position:relative;overflow:hidden;background:linear-gradient(135deg,#0d2b17,#04150b);border:2px solid #f5c518;border-radius:14px;padding:28px 22px;margin:22px 0;box-shadow:0 0 34px rgba(245,197,24,.22);">
   <div style="text-align:center;margin-bottom:20px;">
-    <div style="font-family:'Bebas Neue',Arial,sans-serif;font-size:2rem;letter-spacing:2px;color:#f5c518;line-height:1;">ROUND OF 32 · RESULTS</div>
+    <div style="font-family:'Bebas Neue',Arial,sans-serif;font-size:2.4rem;letter-spacing:3px;color:#f5c518;line-height:1;text-shadow:0 0 20px rgba(245,197,24,.5);">&#127942; FINAL WEEKEND</div>
+    <div style="font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;color:#e6cf7a;margin-top:6px;">July 18–19 · two matches · two days · one trophy</div>
+  </div>
+  <div id="fw-grid" style="display:grid;grid-template-columns:1fr 1.25fr;gap:14px;">
+
+    <!-- 3rd place -->
+    <div style="background:linear-gradient(160deg,#2a120f,#0b0605);border:2px solid rgba(255,67,56,.55);border-radius:12px;padding:18px 16px;text-align:center;">
+      <div style="font-family:'Bebas Neue',Arial,sans-serif;font-size:1rem;letter-spacing:2px;color:#ff8078;">3RD PLACE MATCH</div>
+      <div style="display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;font-family:'Bebas Neue',Arial,sans-serif;font-size:1.5rem;color:#fff;margin:10px 0 8px;line-height:1;">
+        <img src="https://flagcdn.com/w80/gb-eng.png" srcset="https://flagcdn.com/w160/gb-eng.png 2x" alt="England flag" style="width:40px;border-radius:3px;">
+        England vs France
+        <img src="https://flagcdn.com/w80/fr.png" srcset="https://flagcdn.com/w160/fr.png 2x" alt="France flag" style="width:40px;border-radius:3px;">
+      </div>
+      <div style="font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:#cdd3db;">Battle for Bronze · Hard Rock Stadium, Miami</div>
+      <div style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#ff8078;margin-top:6px;font-weight:700;"><time datetime="2026-07-18T17:00:00-04:00">Sat, July 18 · 5:00 PM ET</time></div>
+    </div>
+
+    <!-- the final -->
+    <div style="background:linear-gradient(160deg,#123a1f,#04150b);border:3px solid #f5c518;border-radius:12px;padding:22px 16px;text-align:center;box-shadow:inset 0 0 60px rgba(0,0,0,.5),0 0 24px rgba(245,197,24,.32);">
+      <div style="font-family:'Bebas Neue',Arial,sans-serif;font-size:1.3rem;letter-spacing:4px;color:#f5c518;text-shadow:0 0 16px rgba(245,197,24,.55);">&#127942; WORLD CUP FINAL</div>
+      <div style="display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px;font-family:'Bebas Neue',Arial,sans-serif;font-size:2.1rem;color:#fff;margin:12px 0 8px;line-height:1;">
+        <img src="https://flagcdn.com/w80/ar.png" srcset="https://flagcdn.com/w160/ar.png 2x" alt="Argentina flag" style="width:54px;border-radius:3px;">
+        Argentina vs Spain
+        <img src="https://flagcdn.com/w80/es.png" srcset="https://flagcdn.com/w160/es.png 2x" alt="Spain flag" style="width:54px;border-radius:3px;">
+      </div>
+      <div style="font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:#cdd3db;">The Final · MetLife Stadium, NY/NJ</div>
+      <div style="font-size:0.9rem;letter-spacing:0.1em;text-transform:uppercase;color:#f5c518;margin-top:6px;font-weight:700;"><time datetime="2026-07-19T15:00:00-04:00">Sun, July 19 · 3:00 PM ET</time></div>
+    </div>
+
+  </div>
+  <div style="text-align:center;margin-top:16px;font-family:'Barlow Condensed',Arial,sans-serif;font-size:0.85rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;">
+    <a href="/host-cities/new-york-new-jersey.html" style="color:#f5c518;text-decoration:none;border-bottom:1px solid rgba(245,197,24,.45);">Final Weekend HQ · NY / NJ host city guide →</a>
+  </div>
+</section>
+
+<!-- STAGE-BLOCK:SF -->
+<section style="background:linear-gradient(135deg,#04160c,#082b16);border:1px solid #21c25a;border-radius:14px;padding:28px 22px;margin:22px 0;">
+  <div style="text-align:center;margin-bottom:20px;">
+    <div style="font-family:'Bebas Neue',Arial,sans-serif;font-size:2rem;letter-spacing:2px;color:#21c25a;line-height:1;">SEMIFINALS · RESULTS</div>
+    <div style="font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;color:#7fd3a0;margin-top:6px;">July 14–15 · complete · the final is set</div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;">
+
+    <div style="background:rgba(255,255,255,0.04);border:1px solid #14512c;border-radius:10px;padding:12px 14px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/fr.png" style="width:24px;border-radius:2px;">France</span><b style="color:#cdd3db;font-size:1.1rem;">0</b></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/es.png" style="width:24px;border-radius:2px;">Spain</span><b style="color:#21c25a;font-size:1.1rem;">2</b></div>
+      <div style="text-align:center;font-size:0.7rem;color:#7fd3a0;margin-top:6px;">Tue Jul 14 · AT&amp;T Stadium, Arlington</div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.04);border:1px solid #14512c;border-radius:10px;padding:12px 14px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/gb-eng.png" style="width:24px;border-radius:2px;">England</span><b style="color:#cdd3db;font-size:1.1rem;">1</b></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/ar.png" style="width:24px;border-radius:2px;">Argentina</span><b style="color:#21c25a;font-size:1.1rem;">2</b></div>
+      <div style="text-align:center;font-size:0.7rem;color:#7fd3a0;margin-top:6px;">Wed Jul 15 · Mercedes-Benz Stadium, Atlanta</div>
+    </div>
+
+  </div>
+</section>
+<!-- STAGE-BLOCK:QF -->
+<section style="background:linear-gradient(135deg,#061426,#0a2038);border:1px solid #2f80ff;border-radius:14px;padding:28px 22px;margin:22px 0;">
+  <div style="text-align:center;margin-bottom:20px;">
+    <div style="font-family:'Bebas Neue',Arial,sans-serif;font-size:2rem;letter-spacing:2px;color:#2f80ff;line-height:1;">QUARTERFINALS · RESULTS</div>
+    <div style="font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;color:#8fb3e0;margin-top:6px;">July 9–11 · four semifinalists decided</div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;">
+
+    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/fr.png" style="width:24px;border-radius:2px;">France</span><b style="color:#21c25a;font-size:1.1rem;">2</b></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/ma.png" style="width:24px;border-radius:2px;">Morocco</span><b style="color:#cdd3db;font-size:1.1rem;">0</b></div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/es.png" style="width:24px;border-radius:2px;">Spain</span><b style="color:#21c25a;font-size:1.1rem;">2</b></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/be.png" style="width:24px;border-radius:2px;">Belgium</span><b style="color:#cdd3db;font-size:1.1rem;">1</b></div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/no.png" style="width:24px;border-radius:2px;">Norway</span><b style="color:#cdd3db;font-size:1.1rem;">1</b></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/gb-eng.png" style="width:24px;border-radius:2px;">England</span><b style="color:#21c25a;font-size:1.1rem;">2</b></div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/ar.png" style="width:24px;border-radius:2px;">Argentina</span><b style="color:#21c25a;font-size:1.1rem;">3</b></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/ch.png" style="width:24px;border-radius:2px;">Switzerland</span><b style="color:#cdd3db;font-size:1.1rem;">1</b></div>
+    </div>
+
+  </div>
+</section>
+<!-- STAGE-BLOCK:R16 -->
+<section style="background:linear-gradient(135deg,#061426,#0a2038);border:1px solid #1f4f8f;border-radius:14px;padding:28px 22px;margin:22px 0;">
+  <div style="text-align:center;margin-bottom:20px;">
+    <div style="font-family:'Bebas Neue',Arial,sans-serif;font-size:2rem;letter-spacing:2px;color:#6fa8ff;line-height:1;">ROUND OF 16 · RESULTS</div>
+    <div style="font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;color:#8fb3e0;margin-top:6px;">July 4–7 · eight quarterfinalists decided</div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;">
+
+    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/ca.png" style="width:24px;border-radius:2px;">Canada</span><b style="color:#cdd3db;font-size:1.1rem;">0</b></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/ma.png" style="width:24px;border-radius:2px;">Morocco</span><b style="color:#21c25a;font-size:1.1rem;">3</b></div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/py.png" style="width:24px;border-radius:2px;">Paraguay</span><b style="color:#cdd3db;font-size:1.1rem;">0</b></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/fr.png" style="width:24px;border-radius:2px;">France</span><b style="color:#21c25a;font-size:1.1rem;">1</b></div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/br.png" style="width:24px;border-radius:2px;">Brazil</span><b style="color:#cdd3db;font-size:1.1rem;">1</b></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/no.png" style="width:24px;border-radius:2px;">Norway</span><b style="color:#21c25a;font-size:1.1rem;">2</b></div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/mx.png" style="width:24px;border-radius:2px;">Mexico</span><b style="color:#cdd3db;font-size:1.1rem;">2</b></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/gb-eng.png" style="width:24px;border-radius:2px;">England</span><b style="color:#21c25a;font-size:1.1rem;">3</b></div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/pt.png" style="width:24px;border-radius:2px;">Portugal</span><b style="color:#cdd3db;font-size:1.1rem;">0</b></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/es.png" style="width:24px;border-radius:2px;">Spain</span><b style="color:#21c25a;font-size:1.1rem;">1</b></div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/us.png" style="width:24px;border-radius:2px;">USA</span><b style="color:#cdd3db;font-size:1.1rem;">1</b></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/be.png" style="width:24px;border-radius:2px;">Belgium</span><b style="color:#21c25a;font-size:1.1rem;">4</b></div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/ar.png" style="width:24px;border-radius:2px;">Argentina</span><b style="color:#21c25a;font-size:1.1rem;">3</b></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/eg.png" style="width:24px;border-radius:2px;">Egypt</span><b style="color:#cdd3db;font-size:1.1rem;">2</b></div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/ch.png" style="width:24px;border-radius:2px;">Switzerland</span><b style="color:#cdd3db;font-size:1.1rem;">0</b></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/co.png" style="width:24px;border-radius:2px;">Colombia</span><b style="color:#cdd3db;font-size:1.1rem;">0</b></div>
+      <div style="text-align:center;font-size:0.7rem;color:#8fb3e0;margin-top:6px;">Switzerland advance on penalties</div>
+    </div>
+
+  </div>
+</section>
+<!-- STAGE-BLOCK:R32 -->
+<section style="background:linear-gradient(135deg,#1a1206,#2a1d08);border:1px solid #8a6f1f;border-radius:14px;padding:28px 22px;margin:22px 0;">
+  <div style="text-align:center;margin-bottom:20px;">
+    <div style="font-family:'Bebas Neue',Arial,sans-serif;font-size:2rem;letter-spacing:2px;color:#c9a227;line-height:1;">ROUND OF 32 · RESULTS</div>
     <div style="font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;color:#cbb26a;margin-top:6px;">Phase 2 complete · knockout scores</div>
   </div>
   <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;">
@@ -213,115 +358,16 @@ footer a{color:#9fb8aa;text-decoration:underline}
   </div>
 </section>
 
-<section style="background:linear-gradient(135deg,#061426,#0a2038);border:1px solid #2f80ff;border-radius:14px;padding:28px 22px;margin:22px 0;">
-  <div style="text-align:center;margin-bottom:20px;">
-    <div style="font-family:'Bebas Neue',Arial,sans-serif;font-size:2rem;letter-spacing:2px;color:#2f80ff;line-height:1;">ROUND OF 16 · RESULTS</div>
-    <div style="font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;color:#8fb3e0;margin-top:6px;">July 4–7 · eight quarterfinalists decided</div>
-  </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;">
 
-    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/ca.png" style="width:24px;border-radius:2px;">Canada</span><b style="color:#cdd3db;font-size:1.1rem;">0</b></div>
-      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/ma.png" style="width:24px;border-radius:2px;">Morocco</span><b style="color:#21c25a;font-size:1.1rem;">3</b></div>
-    </div>
 
-    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/py.png" style="width:24px;border-radius:2px;">Paraguay</span><b style="color:#cdd3db;font-size:1.1rem;">0</b></div>
-      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/fr.png" style="width:24px;border-radius:2px;">France</span><b style="color:#21c25a;font-size:1.1rem;">1</b></div>
-    </div>
 
-    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/br.png" style="width:24px;border-radius:2px;">Brazil</span><b style="color:#cdd3db;font-size:1.1rem;">1</b></div>
-      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/no.png" style="width:24px;border-radius:2px;">Norway</span><b style="color:#21c25a;font-size:1.1rem;">2</b></div>
-    </div>
 
-    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/mx.png" style="width:24px;border-radius:2px;">Mexico</span><b style="color:#cdd3db;font-size:1.1rem;">2</b></div>
-      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/gb-eng.png" style="width:24px;border-radius:2px;">England</span><b style="color:#21c25a;font-size:1.1rem;">3</b></div>
-    </div>
-
-    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/pt.png" style="width:24px;border-radius:2px;">Portugal</span><b style="color:#cdd3db;font-size:1.1rem;">0</b></div>
-      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/es.png" style="width:24px;border-radius:2px;">Spain</span><b style="color:#21c25a;font-size:1.1rem;">1</b></div>
-    </div>
-
-    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/us.png" style="width:24px;border-radius:2px;">USA</span><b style="color:#cdd3db;font-size:1.1rem;">1</b></div>
-      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/be.png" style="width:24px;border-radius:2px;">Belgium</span><b style="color:#21c25a;font-size:1.1rem;">4</b></div>
-    </div>
-
-    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/ar.png" style="width:24px;border-radius:2px;">Argentina</span><b style="color:#21c25a;font-size:1.1rem;">3</b></div>
-      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/eg.png" style="width:24px;border-radius:2px;">Egypt</span><b style="color:#cdd3db;font-size:1.1rem;">2</b></div>
-    </div>
-
-    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/ch.png" style="width:24px;border-radius:2px;">Switzerland</span><b style="color:#cdd3db;font-size:1.1rem;">0</b></div>
-      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/co.png" style="width:24px;border-radius:2px;">Colombia</span><b style="color:#cdd3db;font-size:1.1rem;">0</b></div>
-      <div style="text-align:center;font-size:0.7rem;color:#8fb3e0;margin-top:6px;">Switzerland advance on penalties</div>
-    </div>
 
   </div>
-</section>
 
-<section style="background:linear-gradient(135deg,#061426,#0a2038);border:1px solid #2f80ff;border-radius:14px;padding:28px 22px;margin:22px 0;">
-  <div style="text-align:center;margin-bottom:20px;">
-    <div style="font-family:'Bebas Neue',Arial,sans-serif;font-size:2rem;letter-spacing:2px;color:#2f80ff;line-height:1;">QUARTERFINALS · RESULTS</div>
-    <div style="font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;color:#8fb3e0;margin-top:6px;">July 9–11 · four semifinalists decided</div>
-  </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;">
 
-    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/fr.png" style="width:24px;border-radius:2px;">France</span><b style="color:#21c25a;font-size:1.1rem;">2</b></div>
-      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/ma.png" style="width:24px;border-radius:2px;">Morocco</span><b style="color:#cdd3db;font-size:1.1rem;">0</b></div>
-    </div>
 
-    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/es.png" style="width:24px;border-radius:2px;">Spain</span><b style="color:#21c25a;font-size:1.1rem;">2</b></div>
-      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/be.png" style="width:24px;border-radius:2px;">Belgium</span><b style="color:#cdd3db;font-size:1.1rem;">1</b></div>
-    </div>
-
-    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/no.png" style="width:24px;border-radius:2px;">Norway</span><b style="color:#cdd3db;font-size:1.1rem;">1</b></div>
-      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/gb-eng.png" style="width:24px;border-radius:2px;">England</span><b style="color:#21c25a;font-size:1.1rem;">2</b></div>
-    </div>
-
-    <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/ar.png" style="width:24px;border-radius:2px;">Argentina</span><b style="color:#21c25a;font-size:1.1rem;">3</b></div>
-      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/ch.png" style="width:24px;border-radius:2px;">Switzerland</span><b style="color:#cdd3db;font-size:1.1rem;">1</b></div>
-    </div>
-
-  </div>
-</section>
-  </div>
-
-  <!-- TODAY -->
-  <div class="today">
-    <h2>Semifinals · July 14–15</h2>
-    <div class="sub">Four teams left · France vs Spain, then England vs Argentina</div>
-    <div class="fgrid">
-      <div class="fix">
-        <div class="t">Tue Jul 14 · 3:00 PM ET</div>
-        <div class="m">
-          <span class="side"><img class="flag" src="https://flagcdn.com/w40/fr.png" alt="France"><span class="nm">France</span></span>
-          <span class="vs">vs</span>
-          <span class="side r"><span class="nm">Spain</span><img class="flag" src="https://flagcdn.com/w40/es.png" alt="Spain"></span>
-        </div>
-        <div class="meta">Semifinal · AT&amp;T Stadium, Arlington (Dallas)</div>
-      </div>
-      <div class="fix">
-        <div class="t">Wed Jul 15 · 3:00 PM ET</div>
-        <div class="m">
-          <span class="side"><img class="flag" src="https://flagcdn.com/w40/gb-eng.png" alt="England"><span class="nm">England</span></span>
-          <span class="vs">vs</span>
-          <span class="side r"><span class="nm">Argentina</span><img class="flag" src="https://flagcdn.com/w40/ar.png" alt="Argentina"></span>
-        </div>
-        <div class="meta">Semifinal · Mercedes-Benz Stadium, Atlanta</div>
-      </div>
-    </div>
-  </div>
-
-  <p class="intro">The quarterfinals are complete and four teams remain. France beat Morocco 2–0 in Foxborough, Spain beat Belgium 2–1 at SoFi Stadium, England beat Norway 2–1 in Miami, and Argentina beat Switzerland 3–1 in Kansas City. The semifinals are set: France vs Spain at AT&amp;T Stadium in Dallas on July 14, and England vs Argentina at Mercedes-Benz Stadium in Atlanta on July 15, both at 3:00 PM ET. The third place match is at Hard Rock Stadium in Miami on July 18 at 5:00 PM ET, and the final is at MetLife Stadium on July 19 at 3:00 PM ET. The group standings below remain the reference for how every surviving team got here.</p>
+  <p class="intro">The semifinals are complete and the final is set. Spain beat France 2–0 at AT&amp;T Stadium in Dallas on July 14, and Argentina beat England 2–1 at Mercedes-Benz Stadium in Atlanta on July 15. That sends Argentina and Spain to the final at MetLife Stadium on Sunday, July 19 at 3:00 PM ET, and drops England and France into the third place match at Hard Rock Stadium in Miami on Saturday, July 18 at 5:00 PM ET. Results below run newest first, from Final Weekend back through the Round of 32. The group standings remain the reference for how every surviving team got here.</p>
 
   <!-- FINAL GROUP STANDINGS -->
   <section class="standings">

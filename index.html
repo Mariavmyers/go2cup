@@ -1789,17 +1789,17 @@ font-size: 10px;
 <!-- TICKER -->
 <div class="ticker-wrap" aria-label="Live updates">
   <div class="ticker-track">
-    <span class="fire">⚽ JUNE 11, 2026 — OPENING CEREMONY · ESTADIO AZTECA · MEXICO CITY</span>
-    <span>&#x1F1F2;&#x1F1FD; MEXICO VS SOUTH AFRICA &#x1F1FF;&#x1F1E6; · 3:00 PM ET · GROUP A OPENER</span>
-    <span class="fire">🏆 JULY 19, 2026 — THE FINAL · METLIFE STADIUM · NEW YORK</span>
+    <span class="fire">🏆 JULY 19, 2026 — THE FINAL · ARGENTINA VS SPAIN · METLIFE STADIUM · 3:00 PM ET</span>
+    <span>&#x1F3F4;&#xE0067;&#xE0062;&#xE0065;&#xE006E;&#xE0067;&#xE007F; ENGLAND VS FRANCE &#x1F1EB;&#x1F1F7; · 3RD PLACE · SAT JULY 18 · HARD ROCK STADIUM · 5:00 PM ET</span>
+    <span class="fire">⚡ FINAL WEEKEND — TWO MATCHES · TWO DAYS · ONE TROPHY</span>
     <span>🌎 48 NATIONS · 16 HOST CITIES · 3 COUNTRIES · 104 MATCHES</span>
-    <span class="fire">🎵 ROBBIE WILLIAMS &amp; NICOLE SCHERZINGER PERFORM AT OPENING CEREMONY</span>
+    <span class="fire">🇪🇸 SPAIN BEAT FRANCE 2–0 · 🇦🇷 ARGENTINA BEAT ENGLAND 2–1 — SEMIFINALS COMPLETE</span>
     <span>✈ PARTNER RESOURCE SPOTS OPEN — LOCAL BUSINESSES: REQUEST VISIBILITY</span>
-    <span class="fire">⚽ JUNE 11, 2026 — OPENING CEREMONY · ESTADIO AZTECA · MEXICO CITY</span>
-    <span>&#x1F1F2;&#x1F1FD; MEXICO VS SOUTH AFRICA &#x1F1FF;&#x1F1E6; · 3:00 PM ET · GROUP A OPENER</span>
-    <span class="fire">🏆 JULY 19, 2026 — THE FINAL · METLIFE STADIUM · NEW YORK</span>
+    <span class="fire">🏆 JULY 19, 2026 — THE FINAL · ARGENTINA VS SPAIN · METLIFE STADIUM · 3:00 PM ET</span>
+    <span>&#x1F3F4;&#xE0067;&#xE0062;&#xE0065;&#xE006E;&#xE0067;&#xE007F; ENGLAND VS FRANCE &#x1F1EB;&#x1F1F7; · 3RD PLACE · SAT JULY 18 · HARD ROCK STADIUM · 5:00 PM ET</span>
+    <span class="fire">⚡ FINAL WEEKEND — TWO MATCHES · TWO DAYS · ONE TROPHY</span>
     <span>🌎 48 NATIONS · 16 HOST CITIES · 3 COUNTRIES · 104 MATCHES</span>
-    <span class="fire">🎵 ROBBIE WILLIAMS &amp; NICOLE SCHERZINGER PERFORM AT OPENING CEREMONY</span>
+    <span class="fire">🇪🇸 SPAIN BEAT FRANCE 2–0 · 🇦🇷 ARGENTINA BEAT ENGLAND 2–1 — SEMIFINALS COMPLETE</span>
     <span>✈ PARTNER RESOURCE SPOTS OPEN — LOCAL BUSINESSES: REQUEST VISIBILITY</span>
   </div>
 </div>
@@ -1833,29 +1833,52 @@ font-size: 10px;
 </a>
 <!-- ── END STREAMING PROMO BAR ── -->
 
-<!-- ── SEMIFINAL MATCHDAY STRIP ── -->
+<!-- ── FINAL WEEKEND MATCHDAY STRIP ── -->
 <style>
-  .sf-strip{background:#07131f;border-top:3px solid #f5c518;border-bottom:3px solid #f5c518;padding:16px 24px;text-align:center;}
-  .sf-line{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:14px;font-family:'Bebas Neue',Arial,sans-serif;line-height:1;}
-  .sf-live{color:#f5c518;font-size:clamp(1.1rem,2.4vw,1.5rem);letter-spacing:.12em;display:inline-flex;align-items:center;gap:7px;animation:sfpulse 1.6s ease-in-out infinite;}
-  .sf-match{display:inline-flex;align-items:center;gap:10px;color:#fff;font-size:clamp(1.6rem,4.2vw,2.6rem);letter-spacing:.04em;}
-  .sf-flag{border-radius:2px;display:block;}
-  .sf-meta{color:#2f80ff;font-size:clamp(1rem,2.2vw,1.35rem);letter-spacing:.08em;}
-  .sf-sub{margin-top:9px;font-family:'Barlow Condensed',Arial,sans-serif;font-size:.9rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;}
-  .sf-sub a{color:#f5c518;text-decoration:none;border-bottom:1px solid rgba(245,197,24,.45);}
-  .sf-sub a:hover{opacity:.85;}
-  @keyframes sfpulse{0%,100%{opacity:1}50%{opacity:.55}}
-  @media (max-width:640px){.sf-line{flex-direction:column;gap:9px;}}
+  .fw-strip{position:relative;overflow:hidden;background:linear-gradient(115deg,#04101d 0%,#07131f 30%,#062017 70%,#04140d 100%);border-top:3px solid #f5c518;border-bottom:3px solid #f5c518;padding:18px 24px;text-align:center;}
+  .fw-strip::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 35%,rgba(245,197,24,.13) 50%,transparent 65%);animation:fwsweep 6s linear infinite;pointer-events:none;}
+  .fw-inner{position:relative;z-index:1;}
+  .fw-line{display:flex;align-items:stretch;justify-content:center;flex-wrap:wrap;gap:12px;font-family:'Bebas Neue',Arial,sans-serif;line-height:1;}
+  .fw-live{display:inline-flex;align-items:center;gap:8px;color:#f5c518;font-size:clamp(1.1rem,2.4vw,1.5rem);letter-spacing:.12em;animation:fwpulse 1.6s ease-in-out infinite;align-self:center;}
+  .fw-tie{display:inline-flex;align-items:center;gap:10px;padding:9px 16px;border-radius:10px;border:2px solid;background:rgba(0,0,0,.34);}
+  .fw-tie-bronze{border-color:rgba(255,67,56,.5);}
+  .fw-tie-final{border-color:#f5c518;box-shadow:0 0 18px rgba(245,197,24,.3);background:rgba(245,197,24,.08);}
+  .fw-day{font-family:'Barlow Condensed',Arial,sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:3px 8px;border-radius:5px;}
+  .fw-tie-bronze .fw-day{background:rgba(255,67,56,.16);color:#ff8078;}
+  .fw-tie-final .fw-day{background:#f5c518;color:#0a2413;}
+  .fw-teams{display:inline-flex;align-items:center;gap:8px;color:#fff;font-size:clamp(1.1rem,2.6vw,1.7rem);letter-spacing:.04em;}
+  .fw-tie-final .fw-teams{font-size:clamp(1.25rem,3vw,2rem);}
+  .fw-flag{border-radius:2px;display:block;}
+  .fw-tag{font-family:'Barlow Condensed',Arial,sans-serif;font-weight:700;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;}
+  .fw-tie-bronze .fw-tag{color:#2f80ff;}
+  .fw-tie-final .fw-tag{color:#f5c518;}
+  .fw-sub{margin-top:11px;font-family:'Barlow Condensed',Arial,sans-serif;font-size:.9rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;}
+  .fw-sub a{color:#f5c518;text-decoration:none;border-bottom:1px solid rgba(245,197,24,.45);}
+  .fw-sub a:hover{opacity:.85;}
+  @keyframes fwpulse{0%,100%{opacity:1}50%{opacity:.55}}
+  @keyframes fwsweep{0%{transform:translateX(-60%)}100%{transform:translateX(60%)}}
+  @media (prefers-reduced-motion:reduce){.fw-strip::before,.fw-live{animation:none;}}
+  @media (max-width:760px){.fw-line{flex-direction:column;align-items:stretch;gap:9px;}.fw-tie{justify-content:center;}}
 </style>
-<section class="sf-strip" aria-label="Semifinal today">
-  <div class="sf-line">
-    <span class="sf-live"><span class="nav-live-dot"></span>&#9889; Semifinal Today</span>
-    <span class="sf-match"><img src="https://flagcdn.com/w40/fr.png" srcset="https://flagcdn.com/w80/fr.png 2x" width="34" height="26" alt="France flag" class="sf-flag">France vs Spain<img src="https://flagcdn.com/w40/es.png" srcset="https://flagcdn.com/w80/es.png 2x" width="34" height="26" alt="Spain flag" class="sf-flag"></span>
-    <span class="sf-meta">3:00 PM ET · AT&amp;T Stadium</span>
+<section class="fw-strip" aria-label="World Cup final weekend fixtures">
+  <div class="fw-inner">
+    <div class="fw-line">
+      <span class="fw-live"><span class="nav-live-dot"></span>&#9889; Final Weekend</span>
+      <span class="fw-tie fw-tie-bronze">
+        <span class="fw-day">Sat 18</span>
+        <span class="fw-teams"><img src="https://flagcdn.com/w40/gb-eng.png" srcset="https://flagcdn.com/w80/gb-eng.png 2x" width="30" height="23" alt="England flag" class="fw-flag">England vs France<img src="https://flagcdn.com/w40/fr.png" srcset="https://flagcdn.com/w80/fr.png 2x" width="30" height="23" alt="France flag" class="fw-flag"></span>
+        <span class="fw-tag">Bronze · 5:00 PM ET</span>
+      </span>
+      <span class="fw-tie fw-tie-final">
+        <span class="fw-day">Sun 19</span>
+        <span class="fw-teams"><img src="https://flagcdn.com/w40/ar.png" srcset="https://flagcdn.com/w80/ar.png 2x" width="30" height="23" alt="Argentina flag" class="fw-flag">Argentina vs Spain<img src="https://flagcdn.com/w40/es.png" srcset="https://flagcdn.com/w80/es.png 2x" width="30" height="23" alt="Spain flag" class="fw-flag"></span>
+        <span class="fw-tag">&#127942; The Final · 3:00 PM ET</span>
+      </span>
+    </div>
+    <p class="fw-sub"><a href="/articles/new-york-new-jersey-fan-guide.html">Two matches · Two days · One trophy · MetLife Stadium · July 19</a></p>
   </div>
-  <p class="sf-sub"><a href="/articles/new-york-new-jersey-fan-guide.html">Winner advances to the Final · MetLife Stadium · July 19</a></p>
 </section>
-<!-- ── END SEMIFINAL MATCHDAY STRIP ── -->
+<!-- ── END FINAL WEEKEND MATCHDAY STRIP ── -->
 
 
 <!-- HOST CITIES HERO + CARDS -->
@@ -1886,15 +1909,41 @@ font-size: 10px;
     .match-weekend{width:100%;background:linear-gradient(135deg,#07180e 0%,#0a2413 100%);border-top:3px solid #f5c518;border-bottom:3px solid #f5c518;padding:clamp(1.75rem,4vw,3rem) clamp(1.25rem,5vw,3rem);margin-top:80px;}
     .match-weekend-inner{max-width:1040px;margin:0 auto;}
     .mw-heading{font-family:'Bebas Neue',sans-serif;letter-spacing:3px;text-align:center;color:#f5c518;font-size:clamp(1.1rem,2.8vw,1.6rem);margin:0 0 1.5rem;}
-    .mw-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
-    @media (max-width:760px){.mw-grid{grid-template-columns:1fr;}.match-weekend{margin-top:48px;}.mw-card{min-height:360px;}}
+    .mw-grid{display:grid;grid-template-columns:1fr 1.24fr;gap:20px;align-items:stretch;}
+    @media (max-width:760px){.mw-grid{grid-template-columns:1fr;}.match-weekend{margin-top:48px;}.mw-card{min-height:360px;}.mw-card-final{min-height:420px;}}
     .mw-card{position:relative;overflow:hidden;background:linear-gradient(160deg,#0b2a17 0%,#07180e 45%,#03100a 100%);border:3px solid #f5c518;border-radius:16px;padding:clamp(1.75rem,3.5vw,2.5rem);min-height:420px;display:flex;flex-direction:column;justify-content:center;text-align:center;color:#fff;box-shadow:inset 0 0 70px rgba(0,0,0,.6),0 0 24px rgba(245,197,24,.18);}
     .mw-card::before,.mw-card::after{content:"";position:absolute;width:38px;height:38px;pointer-events:none;}
     .mw-card::before{top:14px;left:14px;border-top:3px solid #f5c518;border-left:3px solid #f5c518;border-top-left-radius:6px;}
     .mw-card::after{bottom:14px;right:14px;border-bottom:3px solid #f5c518;border-right:3px solid #f5c518;border-bottom-right-radius:6px;}
     .mw-card .mw-kicker{font-family:'Bebas Neue',sans-serif;letter-spacing:2px;font-size:1rem;color:#f5c518;margin:0 0 6px;}
-    .mw-card .mw-fixture{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.9rem,4.6vw,2.7rem);letter-spacing:1px;line-height:1.05;margin:0 0 4px;}
+    .mw-card .mw-fixture{font-family:'Barlow Condensed',sans-serif;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:.95rem;color:rgba(255,255,255,.78);line-height:1.25;margin:0 0 4px;}
     .mw-card .mw-when{font-family:'Barlow Condensed',sans-serif;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.82);font-size:.95rem;margin:0 0 16px;}
+
+    /* team line with flags */
+    .mw-teams{display:flex;align-items:center;justify-content:center;flex-wrap:nowrap;gap:10px;font-family:'Bebas Neue',sans-serif;line-height:1;margin:0 0 10px;}
+    .mw-teams img{border-radius:3px;display:block;flex:0 0 auto;box-shadow:0 2px 10px rgba(0,0,0,.55);}
+    .mw-vs{letter-spacing:1px;white-space:nowrap;}
+    @media (max-width:420px){.mw-teams{flex-wrap:wrap;}}
+
+    /* 3rd place — bronze/red accent, deliberately the quieter card */
+    .mw-card-bronze{border-color:rgba(255,67,56,.55);box-shadow:inset 0 0 70px rgba(0,0,0,.66),0 0 16px rgba(255,67,56,.12);background:linear-gradient(160deg,#2a120f 0%,#150a09 45%,#0b0605 100%);}
+    .mw-card-bronze::before{border-top-color:#ff4338;border-left-color:#ff4338;}
+    .mw-card-bronze::after{border-bottom-color:#ff4338;border-right-color:#ff4338;}
+    .mw-card-bronze .mw-kicker{color:#ff8078;}
+    .mw-card-bronze .mw-teams{font-size:clamp(1.25rem,2.6vw,1.75rem);}
+    .mw-card-bronze .mw-links a{background:#ff4338;color:#fff;padding:9px 13px;font-size:.78rem;}
+    .mw-card-bronze .mw-links a.alt{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.22);}
+
+    /* the final — dominant: bigger type, gold glow, animated sheen */
+    .mw-card-final{border-width:4px;min-height:480px;background:linear-gradient(160deg,#123a1f 0%,#0a2413 45%,#04150b 100%);box-shadow:inset 0 0 80px rgba(0,0,0,.55),0 0 46px rgba(245,197,24,.4);}
+    .mw-card-final::after{content:"";position:absolute;inset:0;width:auto;height:auto;background:linear-gradient(100deg,transparent 38%,rgba(245,197,24,.12) 50%,transparent 62%);animation:mwsheen 7s linear infinite;border:0;}
+    .mw-card-final > *{position:relative;z-index:1;}
+    .mw-card-final .mw-kicker{font-size:1.35rem;letter-spacing:4px;color:#f5c518;text-shadow:0 0 18px rgba(245,197,24,.55);}
+    .mw-card-final .mw-teams{font-size:clamp(1.5rem,3.1vw,2.3rem);}
+    .mw-card-final .mw-when time{color:#f5c518;font-weight:700;}
+    .mw-card-final .mw-links a{font-size:.88rem;padding:11px 19px;}
+    @keyframes mwsheen{0%{transform:translateX(-55%)}100%{transform:translateX(55%)}}
+    @media (prefers-reduced-motion:reduce){.mw-card-final::after{animation:none;}}
     .mw-card .mw-when time{color:#fff;}
     .mw-links{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;}
     .mw-links a{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.82rem;text-decoration:none;color:#0a2413;background:#f5c518;padding:9px 16px;border-radius:8px;transition:transform .15s ease,opacity .15s ease;}
@@ -1907,8 +1956,13 @@ font-size: 10px;
       <div class="mw-grid">
 
         <!-- 3rd place match -->
-        <div class="mw-card">
+        <div class="mw-card mw-card-bronze">
           <p class="mw-kicker">3RD PLACE MATCH</p>
+          <p class="mw-teams">
+            <img src="https://flagcdn.com/w80/gb-eng.png" srcset="https://flagcdn.com/w160/gb-eng.png 2x" width="42" height="32" alt="England flag">
+            <span class="mw-vs">England vs France</span>
+            <img src="https://flagcdn.com/w80/fr.png" srcset="https://flagcdn.com/w160/fr.png 2x" width="42" height="32" alt="France flag">
+          </p>
           <p class="mw-fixture">Battle for Bronze · Hard Rock Stadium, Miami</p>
           <p class="mw-when"><time datetime="2026-07-18T17:00:00-04:00">Sat, July 18 · 5:00 PM ET</time></p>
           <div class="mw-links">
@@ -1920,8 +1974,13 @@ font-size: 10px;
         </div>
 
         <!-- world cup final -->
-        <div class="mw-card">
-          <p class="mw-kicker">WORLD CUP FINAL</p>
+        <div class="mw-card mw-card-final">
+          <p class="mw-kicker">&#127942; WORLD CUP FINAL</p>
+          <p class="mw-teams">
+            <img src="https://flagcdn.com/w80/ar.png" srcset="https://flagcdn.com/w160/ar.png 2x" width="52" height="39" alt="Argentina flag">
+            <span class="mw-vs">Argentina vs Spain</span>
+            <img src="https://flagcdn.com/w80/es.png" srcset="https://flagcdn.com/w160/es.png 2x" width="52" height="39" alt="Spain flag">
+          </p>
           <p class="mw-fixture">The Final · MetLife Stadium, NY/NJ</p>
           <p class="mw-when"><time datetime="2026-07-19T15:00:00-04:00">Sun, July 19 · 3:00 PM ET</time></p>
           <div class="mw-links">
@@ -1939,7 +1998,7 @@ font-size: 10px;
   {
     "@context":"https://schema.org",
     "@type":"SportsEvent",
-    "name":"FIFA World Cup 2026 Third Place Match",
+    "name":"England vs France — FIFA World Cup 2026 Third Place Match",
     "startDate":"2026-07-18T17:00:00-04:00",
     "eventStatus":"https://schema.org/EventScheduled",
     "sport":"Soccer",
@@ -1951,7 +2010,7 @@ font-size: 10px;
   {
     "@context":"https://schema.org",
     "@type":"SportsEvent",
-    "name":"FIFA World Cup 2026 Final",
+    "name":"Argentina vs Spain — FIFA World Cup 2026 Final",
     "startDate":"2026-07-19T15:00:00-04:00",
     "eventStatus":"https://schema.org/EventScheduled",
     "sport":"Soccer",
@@ -2287,22 +2346,22 @@ font-size: 10px;
     <div class="mc-grid">
 
       <article class="mc-card mc-sf">
-        <p class="mc-round">Semifinal · <time datetime="2026-07-14T15:00:00-04:00">Tue Jul 14 · 3:00 PM ET</time></p>
+        <p class="mc-round">Semifinal · <time datetime="2026-07-14T15:00:00-04:00">Tue Jul 14 · 3:00 PM ET</time><span class="mc-tag mc-tag-ft">Final</span></p>
         <h3 class="mc-teams">
-          <span class="mc-team"><img src="https://flagcdn.com/w40/fr.png" srcset="https://flagcdn.com/w80/fr.png 2x" width="28" height="21" alt="France flag" loading="lazy">France</span>
+          <span class="mc-team"><img src="https://flagcdn.com/w40/fr.png" srcset="https://flagcdn.com/w80/fr.png 2x" width="28" height="21" alt="France flag" loading="lazy">France<b class="mc-score">0</b></span>
           <span class="mc-v">vs</span>
-          <span class="mc-team"><img src="https://flagcdn.com/w40/es.png" srcset="https://flagcdn.com/w80/es.png 2x" width="28" height="21" alt="Spain flag" loading="lazy">Spain</span>
+          <span class="mc-team"><img src="https://flagcdn.com/w40/es.png" srcset="https://flagcdn.com/w80/es.png 2x" width="28" height="21" alt="Spain flag" loading="lazy">Spain<b class="mc-score win">2</b></span>
         </h3>
         <p class="mc-city">Arlington · AT&amp;T Stadium</p>
         <a class="mc-btn" href="host-cities/dallas.html?marker=736515.worldcup26">Explore Host City →</a>
       </article>
 
       <article class="mc-card mc-sf">
-        <p class="mc-round">Semifinal · <time datetime="2026-07-15T15:00:00-04:00">Wed Jul 15 · 3:00 PM ET</time></p>
+        <p class="mc-round">Semifinal · <time datetime="2026-07-15T15:00:00-04:00">Wed Jul 15 · 3:00 PM ET</time><span class="mc-tag mc-tag-ft">Final</span></p>
         <h3 class="mc-teams">
-          <span class="mc-team"><img src="https://flagcdn.com/w40/gb-eng.png" srcset="https://flagcdn.com/w80/gb-eng.png 2x" width="28" height="21" alt="England flag" loading="lazy">England</span>
+          <span class="mc-team"><img src="https://flagcdn.com/w40/gb-eng.png" srcset="https://flagcdn.com/w80/gb-eng.png 2x" width="28" height="21" alt="England flag" loading="lazy">England<b class="mc-score">1</b></span>
           <span class="mc-v">vs</span>
-          <span class="mc-team"><img src="https://flagcdn.com/w40/ar.png" srcset="https://flagcdn.com/w80/ar.png 2x" width="28" height="21" alt="Argentina flag" loading="lazy">Argentina</span>
+          <span class="mc-team"><img src="https://flagcdn.com/w40/ar.png" srcset="https://flagcdn.com/w80/ar.png 2x" width="28" height="21" alt="Argentina flag" loading="lazy">Argentina<b class="mc-score win">2</b></span>
         </h3>
         <p class="mc-city">Atlanta · Mercedes-Benz Stadium</p>
         <a class="mc-btn" href="host-cities/atlanta.html?marker=736515.worldcup26">Explore Host City →</a>
@@ -2311,9 +2370,9 @@ font-size: 10px;
       <article class="mc-card mc-3p">
         <p class="mc-round">3rd Place · <time datetime="2026-07-18T17:00:00-04:00">Sat Jul 18 · 5:00 PM ET</time></p>
         <h3 class="mc-teams">
-          <span class="mc-tbd">Loser SF1</span>
+          <span class="mc-team"><img src="https://flagcdn.com/w40/gb-eng.png" srcset="https://flagcdn.com/w80/gb-eng.png 2x" width="28" height="21" alt="England flag" loading="lazy">England</span>
           <span class="mc-v">vs</span>
-          <span class="mc-tbd">Loser SF2</span>
+          <span class="mc-team"><img src="https://flagcdn.com/w40/fr.png" srcset="https://flagcdn.com/w80/fr.png 2x" width="28" height="21" alt="France flag" loading="lazy">France</span>
         </h3>
         <p class="mc-city">Miami · Hard Rock Stadium</p>
         <a class="mc-btn" href="host-cities/miami.html?marker=736515.worldcup26">Explore Host City →</a>
@@ -2322,9 +2381,9 @@ font-size: 10px;
       <article class="mc-card mc-final">
         <p class="mc-round">The Final · <time datetime="2026-07-19T15:00:00-04:00">Sun Jul 19 · 3:00 PM ET</time></p>
         <h3 class="mc-teams">
-          <span class="mc-tbd">Winner SF1</span>
+          <span class="mc-team"><img src="https://flagcdn.com/w40/ar.png" srcset="https://flagcdn.com/w80/ar.png 2x" width="28" height="21" alt="Argentina flag" loading="lazy">Argentina</span>
           <span class="mc-v">vs</span>
-          <span class="mc-tbd">Winner SF2</span>
+          <span class="mc-team"><img src="https://flagcdn.com/w40/es.png" srcset="https://flagcdn.com/w80/es.png 2x" width="28" height="21" alt="Spain flag" loading="lazy">Spain</span>
         </h3>
         <p class="mc-city">New York / New Jersey · MetLife Stadium</p>
         <a class="mc-btn" href="host-cities/new-york-new-jersey.html?marker=736515.worldcup26">Explore Host City →</a>
@@ -2353,10 +2412,10 @@ font-size: 10px;
       {"@type":"ListItem","position":12,"item":{"@type":"SportsEvent","name":"Spain 2–1 Belgium — Final Score","startDate":"2026-07-10T15:00:00-04:00","sport":"Soccer","location":{"@type":"Place","name":"SoFi Stadium","address":{"@type":"PostalAddress","addressLocality":"Inglewood","addressRegion":"CA","addressCountry":"US"}},"url":"https://sportdgx.com/host-cities/los-angeles?marker=736515.worldcup26"}},
       {"@type":"ListItem","position":13,"item":{"@type":"SportsEvent","name":"Norway 1–2 England — Final Score","startDate":"2026-07-11T17:00:00-04:00","sport":"Soccer","location":{"@type":"Place","name":"Hard Rock Stadium","address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"}},"url":"https://sportdgx.com/host-cities/miami?marker=736515.worldcup26"}},
       {"@type":"ListItem","position":14,"item":{"@type":"SportsEvent","name":"Argentina 3–1 Switzerland — Final Score","startDate":"2026-07-11T21:00:00-04:00","sport":"Soccer","location":{"@type":"Place","name":"Arrowhead Stadium","address":{"@type":"PostalAddress","addressLocality":"Kansas City","addressRegion":"MO","addressCountry":"US"}},"url":"https://sportdgx.com/host-cities/kansas-city?marker=736515.worldcup26"}},
-      {"@type":"ListItem","position":15,"item":{"@type":"SportsEvent","name":"France vs Spain — World Cup 2026 Semifinal","startDate":"2026-07-14T15:00:00-04:00","sport":"Soccer","eventStatus":"https://schema.org/EventScheduled","location":{"@type":"Place","name":"AT&T Stadium","address":{"@type":"PostalAddress","addressLocality":"Arlington","addressRegion":"TX","addressCountry":"US"}},"url":"https://sportdgx.com/host-cities/dallas?marker=736515.worldcup26"}},
-      {"@type":"ListItem","position":16,"item":{"@type":"SportsEvent","name":"England vs Argentina — World Cup 2026 Semifinal","startDate":"2026-07-15T15:00:00-04:00","sport":"Soccer","eventStatus":"https://schema.org/EventScheduled","location":{"@type":"Place","name":"Mercedes-Benz Stadium","address":{"@type":"PostalAddress","addressLocality":"Atlanta","addressRegion":"GA","addressCountry":"US"}},"url":"https://sportdgx.com/host-cities/atlanta?marker=736515.worldcup26"}},
-      {"@type":"ListItem","position":17,"item":{"@type":"SportsEvent","name":"World Cup 2026 Third Place Match","startDate":"2026-07-18T17:00:00-04:00","sport":"Soccer","eventStatus":"https://schema.org/EventScheduled","location":{"@type":"Place","name":"Hard Rock Stadium","address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"}},"url":"https://sportdgx.com/host-cities/miami?marker=736515.worldcup26"}},
-      {"@type":"ListItem","position":18,"item":{"@type":"SportsEvent","name":"FIFA World Cup 2026 Final","startDate":"2026-07-19T15:00:00-04:00","sport":"Soccer","eventStatus":"https://schema.org/EventScheduled","location":{"@type":"Place","name":"MetLife Stadium","address":{"@type":"PostalAddress","addressLocality":"East Rutherford","addressRegion":"NJ","addressCountry":"US"}},"url":"https://sportdgx.com/host-cities/new-york-new-jersey?marker=736515.worldcup26"}}
+      {"@type":"ListItem","position":15,"item":{"@type":"SportsEvent","name":"France 0–2 Spain — World Cup 2026 Semifinal Final Score","startDate":"2026-07-14T15:00:00-04:00","sport":"Soccer","eventStatus":"https://schema.org/EventScheduled","location":{"@type":"Place","name":"AT&T Stadium","address":{"@type":"PostalAddress","addressLocality":"Arlington","addressRegion":"TX","addressCountry":"US"}},"url":"https://sportdgx.com/host-cities/dallas?marker=736515.worldcup26"}},
+      {"@type":"ListItem","position":16,"item":{"@type":"SportsEvent","name":"England 1–2 Argentina — World Cup 2026 Semifinal Final Score","startDate":"2026-07-15T15:00:00-04:00","sport":"Soccer","eventStatus":"https://schema.org/EventScheduled","location":{"@type":"Place","name":"Mercedes-Benz Stadium","address":{"@type":"PostalAddress","addressLocality":"Atlanta","addressRegion":"GA","addressCountry":"US"}},"url":"https://sportdgx.com/host-cities/atlanta?marker=736515.worldcup26"}},
+      {"@type":"ListItem","position":17,"item":{"@type":"SportsEvent","name":"England vs France — World Cup 2026 Third Place Match","startDate":"2026-07-18T17:00:00-04:00","sport":"Soccer","eventStatus":"https://schema.org/EventScheduled","location":{"@type":"Place","name":"Hard Rock Stadium","address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"}},"url":"https://sportdgx.com/host-cities/miami?marker=736515.worldcup26"}},
+      {"@type":"ListItem","position":18,"item":{"@type":"SportsEvent","name":"Argentina vs Spain — FIFA World Cup 2026 Final","startDate":"2026-07-19T15:00:00-04:00","sport":"Soccer","eventStatus":"https://schema.org/EventScheduled","location":{"@type":"Place","name":"MetLife Stadium","address":{"@type":"PostalAddress","addressLocality":"East Rutherford","addressRegion":"NJ","addressCountry":"US"}},"url":"https://sportdgx.com/host-cities/new-york-new-jersey?marker=736515.worldcup26"}}
     ]
   }
   </script>
