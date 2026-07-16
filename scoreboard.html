@@ -58,7 +58,7 @@ header{border-bottom:1px solid #15381f;background:#0a2413}
 .today{background:#10240f;border:1px solid #5a4406;border-left:5px solid #f5c518;border-radius:14px;padding:18px}
 .today h2{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:1px;color:#f5c518}
 .today .sub{font-size:12px;color:#caa94f;margin:2px 0 14px}
-.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:12px}
 .fix{background:#0a1c0c;border:1px solid #2c3a16;border-radius:11px;padding:13px 14px}
 .fix .t{font-family:'Oswald',sans-serif;font-weight:600;color:#ffd34d;font-size:14px;letter-spacing:.5px}
 .fix .m{display:flex;align-items:center;gap:8px;margin:9px 0 3px}
@@ -73,7 +73,7 @@ img.flag{width:26px;height:19px;border-radius:2px;object-fit:cover;flex:none;bor
 .day{margin:22px 0 10px;display:flex;align-items:center;gap:10px}
 .day .lbl{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:1px;text-transform:uppercase;font-size:14px}
 .day .ft{font-size:11px;color:#6f9684;border:1px solid #224030;border-radius:20px;padding:1px 9px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(215px,100%),1fr));gap:10px}
 .match{background:#1c3327;border:1px solid rgba(255,255,255,0.08);border-radius:11px;padding:11px 13px;box-shadow:0 2px 10px rgba(0,0,0,0.35)}
 .row{display:flex;align-items:center;gap:8px;margin:5px 0}
 .row .nm{font-size:13.5px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#f5f5f5}
@@ -84,7 +84,7 @@ img.flag{width:26px;height:19px;border-radius:2px;object-fit:cover;flex:none;bor
 .standings{margin:8px 0 6px}
 .standings-head{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1px;color:#f5c518;margin-bottom:3px}
 .standings-key{font-size:12.5px;color:#9fb8aa;margin-bottom:16px}
-.standings-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.standings-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:14px}
 .group{background:#1c3327;border:1px solid rgba(255,255,255,0.08);border-radius:11px;box-shadow:0 2px 10px rgba(0,0,0,0.35);padding:14px 16px 8px}
 .group-title{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:1px;color:#f5c518;margin-bottom:6px}
 .stable{width:100%;border-collapse:collapse}
@@ -99,6 +99,18 @@ img.flag{width:26px;height:19px;border-radius:2px;object-fit:cover;flex:none;bor
 .row-adv td{background:rgba(33,194,90,0.10)}
 .row-q td{background:rgba(245,197,24,0.10)}
 .qtag{display:inline-block;margin-left:6px;font-size:9px;font-weight:700;letter-spacing:.4px;color:#0c1a10;background:#f5c518;border-radius:3px;padding:1px 5px;vertical-align:middle}
+
+/* narrow phones: standings tables have a wide intrinsic min (8 columns +
+   flag cells), so tighten them rather than let them push the page sideways */
+@media (max-width:380px){
+  .group{padding:12px 10px 6px}
+  .stable th{font-size:9px;padding:5px 2px}
+  .stable td{font-size:11.5px;padding:6px 2px}
+  .stable th.tcol,.stable td.tcol{padding-left:3px}
+  .tcell{gap:4px}
+  .tcell .nm{font-size:11px}
+  .qtag{margin-left:3px;font-size:8px;padding:1px 3px;letter-spacing:0}
+}
 
 footer{border-top:1px solid #15381f;margin-top:40px;padding:22px 0 34px;color:#6f9684;font-size:12px;text-align:center}
 footer a{color:#9fb8aa;text-decoration:underline}
@@ -188,7 +200,7 @@ footer a{color:#9fb8aa;text-decoration:underline}
     <div style="font-family:'Bebas Neue',Arial,sans-serif;font-size:2rem;letter-spacing:2px;color:#21c25a;line-height:1;">SEMIFINALS · RESULTS</div>
     <div style="font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;color:#7fd3a0;margin-top:6px;">July 14–15 · complete · the final is set</div>
   </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;max-width:820px;margin:0 auto;">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:14px;max-width:820px;margin:0 auto;">
 
     <div style="background:rgba(255,255,255,0.04);border:1px solid #14512c;border-radius:10px;padding:12px 14px;">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/fr.png" style="width:24px;border-radius:2px;">France</span><b style="color:#cdd3db;font-size:1.1rem;">0</b></div>
@@ -210,7 +222,7 @@ footer a{color:#9fb8aa;text-decoration:underline}
     <div style="font-family:'Bebas Neue',Arial,sans-serif;font-size:2rem;letter-spacing:2px;color:#2f80ff;line-height:1;">QUARTERFINALS · RESULTS</div>
     <div style="font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;color:#8fb3e0;margin-top:6px;">July 9–11 · four semifinalists decided</div>
   </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:14px;">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(225px,100%),1fr));gap:14px;">
 
     <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/fr.png" style="width:24px;border-radius:2px;">France</span><b style="color:#21c25a;font-size:1.1rem;">2</b></div>
@@ -240,7 +252,7 @@ footer a{color:#9fb8aa;text-decoration:underline}
     <div style="font-family:'Bebas Neue',Arial,sans-serif;font-size:2rem;letter-spacing:2px;color:#6fa8ff;line-height:1;">ROUND OF 16 · RESULTS</div>
     <div style="font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;color:#8fb3e0;margin-top:6px;">July 4–7 · eight quarterfinalists decided</div>
   </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:14px;">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(225px,100%),1fr));gap:14px;">
 
     <div style="background:rgba(255,255,255,0.04);border:1px solid #1d3a5c;border-radius:10px;padding:12px 14px;">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#cdd3db;"><img src="https://flagcdn.com/w40/ca.png" style="width:24px;border-radius:2px;">Canada</span><b style="color:#cdd3db;font-size:1.1rem;">0</b></div>
@@ -291,7 +303,7 @@ footer a{color:#9fb8aa;text-decoration:underline}
     <div style="font-family:'Bebas Neue',Arial,sans-serif;font-size:2rem;letter-spacing:2px;color:#c9a227;line-height:1;">ROUND OF 32 · RESULTS</div>
     <div style="font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;color:#cbb26a;margin-top:6px;">Phase 2 complete · knockout scores</div>
   </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:14px;">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(225px,100%),1fr));gap:14px;">
 
     <div style="background:rgba(255,255,255,0.04);border:1px solid #3a2f10;border-radius:10px;padding:12px 14px;">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;"><span style="display:flex;align-items:center;gap:8px;color:#fff;font-weight:600;"><img src="https://flagcdn.com/w40/be.png" style="width:24px;border-radius:2px;">Belgium</span><b style="color:#f5c518;font-size:1.1rem;">3</b></div>
