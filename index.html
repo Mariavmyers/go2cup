@@ -1786,24 +1786,6 @@ font-size: 10px;
   </div>
 </div>
 
-<!-- TICKER -->
-<div class="ticker-wrap" aria-label="Live updates">
-  <div class="ticker-track">
-    <span class="fire">🏆 JULY 19, 2026 — THE FINAL · ARGENTINA VS SPAIN · METLIFE STADIUM · 3:00 PM ET</span>
-    <span>&#x1F3F4;&#xE0067;&#xE0062;&#xE0065;&#xE006E;&#xE0067;&#xE007F; ENGLAND VS FRANCE &#x1F1EB;&#x1F1F7; · 3RD PLACE · SAT JULY 18 · HARD ROCK STADIUM · 5:00 PM ET</span>
-    <span class="fire">⚡ FINAL WEEKEND — TWO MATCHES · TWO DAYS · ONE TROPHY</span>
-    <span>🌎 48 NATIONS · 16 HOST CITIES · 3 COUNTRIES · 104 MATCHES</span>
-    <span class="fire">🇪🇸 SPAIN BEAT FRANCE 2–0 · 🇦🇷 ARGENTINA BEAT ENGLAND 2–1 — SEMIFINALS COMPLETE</span>
-    <span>✈ PARTNER RESOURCE SPOTS OPEN — LOCAL BUSINESSES: REQUEST VISIBILITY</span>
-    <span class="fire">🏆 JULY 19, 2026 — THE FINAL · ARGENTINA VS SPAIN · METLIFE STADIUM · 3:00 PM ET</span>
-    <span>&#x1F3F4;&#xE0067;&#xE0062;&#xE0065;&#xE006E;&#xE0067;&#xE007F; ENGLAND VS FRANCE &#x1F1EB;&#x1F1F7; · 3RD PLACE · SAT JULY 18 · HARD ROCK STADIUM · 5:00 PM ET</span>
-    <span class="fire">⚡ FINAL WEEKEND — TWO MATCHES · TWO DAYS · ONE TROPHY</span>
-    <span>🌎 48 NATIONS · 16 HOST CITIES · 3 COUNTRIES · 104 MATCHES</span>
-    <span class="fire">🇪🇸 SPAIN BEAT FRANCE 2–0 · 🇦🇷 ARGENTINA BEAT ENGLAND 2–1 — SEMIFINALS COMPLETE</span>
-    <span>✈ PARTNER RESOURCE SPOTS OPEN — LOCAL BUSINESSES: REQUEST VISIBILITY</span>
-  </div>
-</div>
-
 <!-- NAV -->
 <nav>
   <a href="/" class="nav-logo">
@@ -1833,52 +1815,31 @@ font-size: 10px;
 </a>
 <!-- ── END STREAMING PROMO BAR ── -->
 
-<!-- ── FINAL WEEKEND MATCHDAY STRIP ── -->
+<!-- ── GRAND FINAL BAR ── -->
 <style>
-  .fw-strip{position:relative;overflow:hidden;background:linear-gradient(115deg,#04101d 0%,#07131f 30%,#062017 70%,#04140d 100%);border-top:3px solid #f5c518;border-bottom:3px solid #f5c518;padding:18px 24px;text-align:center;}
-  .fw-strip::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 35%,rgba(245,197,24,.13) 50%,transparent 65%);animation:fwsweep 6s linear infinite;pointer-events:none;}
-  .fw-inner{position:relative;z-index:1;}
-  .fw-line{display:flex;align-items:stretch;justify-content:center;flex-wrap:wrap;gap:12px;font-family:'Bebas Neue',Arial,sans-serif;line-height:1;}
-  .fw-live{display:inline-flex;align-items:center;gap:8px;color:#f5c518;font-size:clamp(1.1rem,2.4vw,1.5rem);letter-spacing:.12em;animation:fwpulse 1.6s ease-in-out infinite;align-self:center;}
-  .fw-tie{display:inline-flex;align-items:center;gap:10px;padding:9px 16px;border-radius:10px;border:2px solid;background:rgba(0,0,0,.34);}
-  .fw-tie-bronze{border-color:rgba(255,67,56,.5);}
-  .fw-tie-final{border-color:#f5c518;box-shadow:0 0 18px rgba(245,197,24,.3);background:rgba(245,197,24,.08);}
-  .fw-day{font-family:'Barlow Condensed',Arial,sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:3px 8px;border-radius:5px;}
-  .fw-tie-bronze .fw-day{background:rgba(255,67,56,.16);color:#ff8078;}
-  .fw-tie-final .fw-day{background:#f5c518;color:#0a2413;}
-  .fw-teams{display:inline-flex;align-items:center;gap:8px;color:#fff;font-size:clamp(1.1rem,2.6vw,1.7rem);letter-spacing:.04em;}
-  .fw-tie-final .fw-teams{font-size:clamp(1.25rem,3vw,2rem);}
-  .fw-flag{border-radius:2px;display:block;}
-  .fw-tag{font-family:'Barlow Condensed',Arial,sans-serif;font-weight:700;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;}
-  .fw-tie-bronze .fw-tag{color:#2f80ff;}
-  .fw-tie-final .fw-tag{color:#f5c518;}
-  .fw-sub{margin-top:11px;font-family:'Barlow Condensed',Arial,sans-serif;font-size:.9rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;}
-  .fw-sub a{color:#f5c518;text-decoration:none;border-bottom:1px solid rgba(245,197,24,.45);}
-  .fw-sub a:hover{opacity:.85;}
-  @keyframes fwpulse{0%,100%{opacity:1}50%{opacity:.55}}
-  @keyframes fwsweep{0%{transform:translateX(-60%)}100%{transform:translateX(60%)}}
-  @media (prefers-reduced-motion:reduce){.fw-strip::before,.fw-live{animation:none;}}
-  @media (max-width:760px){.fw-line{flex-direction:column;align-items:stretch;gap:9px;}.fw-tie{justify-content:center;}}
+  .gf-bar{display:block;text-decoration:none;background:linear-gradient(90deg,#04140d 0%,#07180e 50%,#04140d 100%);border-top:3px solid #f5c518;border-bottom:3px solid #f5c518;padding:11px 20px 13px;text-align:center;animation:gfflash 1.8s ease-in-out infinite;}
+  .gf-title{font-family:'Bebas Neue',Arial,sans-serif;font-size:clamp(2rem,5.5vw,3.3rem);letter-spacing:.09em;line-height:1;margin:0;color:#f5c518;animation:gfglow 1.8s ease-in-out infinite;}
+  .gf-sub{font-family:'Barlow Condensed',Arial,sans-serif;font-weight:700;font-size:clamp(.72rem,1.5vw,.9rem);letter-spacing:.16em;text-transform:uppercase;color:#fff;margin:5px 0 0;}
+  .gf-bar:hover .gf-sub{color:#f5c518;}
+  @keyframes gfglow{
+    0%,100%{color:#f5c518;text-shadow:0 0 10px rgba(245,197,24,.5),0 0 26px rgba(245,197,24,.25);}
+    50%{color:#ff9d1c;text-shadow:0 0 20px rgba(255,140,20,.95),0 0 46px rgba(255,110,10,.6);}
+  }
+  @keyframes gfflash{
+    0%,100%{border-color:#f5c518;box-shadow:inset 0 0 40px rgba(245,197,24,.10);}
+    50%{border-color:#ff9d1c;box-shadow:inset 0 0 62px rgba(255,140,20,.28);}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .gf-bar,.gf-title{animation:none;}
+    .gf-bar{border-color:#f5c518;box-shadow:inset 0 0 40px rgba(245,197,24,.10);}
+    .gf-title{color:#f5c518;text-shadow:0 0 12px rgba(245,197,24,.5);}
+  }
 </style>
-<section class="fw-strip" aria-label="World Cup final weekend fixtures">
-  <div class="fw-inner">
-    <div class="fw-line">
-      <span class="fw-live"><span class="nav-live-dot"></span>&#9889; Final Weekend</span>
-      <span class="fw-tie fw-tie-bronze">
-        <span class="fw-day">Sat 18</span>
-        <span class="fw-teams"><img src="https://flagcdn.com/w40/gb-eng.png" srcset="https://flagcdn.com/w80/gb-eng.png 2x" width="30" height="23" alt="England flag" class="fw-flag">England vs France<img src="https://flagcdn.com/w40/fr.png" srcset="https://flagcdn.com/w80/fr.png 2x" width="30" height="23" alt="France flag" class="fw-flag"></span>
-        <span class="fw-tag">Bronze · 5:00 PM ET</span>
-      </span>
-      <span class="fw-tie fw-tie-final">
-        <span class="fw-day">Sun 19</span>
-        <span class="fw-teams"><img src="https://flagcdn.com/w40/ar.png" srcset="https://flagcdn.com/w80/ar.png 2x" width="30" height="23" alt="Argentina flag" class="fw-flag">Argentina vs Spain<img src="https://flagcdn.com/w40/es.png" srcset="https://flagcdn.com/w80/es.png 2x" width="30" height="23" alt="Spain flag" class="fw-flag"></span>
-        <span class="fw-tag">&#127942; The Final · 3:00 PM ET</span>
-      </span>
-    </div>
-    <p class="fw-sub"><a href="/articles/new-york-new-jersey-fan-guide.html">Two matches · Two days · One trophy · MetLife Stadium · July 19</a></p>
-  </div>
-</section>
-<!-- ── END FINAL WEEKEND MATCHDAY STRIP ── -->
+<a class="gf-bar" href="host-cities/new-york-new-jersey.html" aria-label="Grand Final — Argentina vs Spain, Sunday July 19, 3:00 PM ET — Final Weekend HQ">
+  <p class="gf-title">GRAND FINAL</p>
+  <p class="gf-sub">Argentina vs Spain · Sun July 19 · 3:00 PM ET</p>
+</a>
+<!-- ── END GRAND FINAL BAR ── -->
 
 
 <!-- HOST CITIES HERO + CARDS -->
