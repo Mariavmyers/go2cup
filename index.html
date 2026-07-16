@@ -577,7 +577,7 @@ line-height: 1.6;
 }
 .categories-grid {
 display: grid;
-grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
 gap: 2px;
 background: var(--border);
 border: 2px solid var(--border);
@@ -821,7 +821,7 @@ transition: all 0.2s;
 .filter-btn.active, .filter-btn:hover { background: var(--pitch); color: white; border-color: var(--pitch); }
 .cities-grid {
 display: grid;
-grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
 gap: 1.5rem;
 }
 .city-card {
@@ -1463,7 +1463,7 @@ font-size: 10px;
 .wc-matches .result .ln{font-size:18px;font-weight:800;}
 .wc-matches .result .sub{font-size:13px;color:var(--ink-soft);}
 .wc-matches .day{font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin:24px 0 12px;padding-bottom:7px;border-bottom:2px solid var(--line);}
-.wc-matches .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;}
+.wc-matches .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:12px;}
 .wc-matches .m{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:14px 16px;}
 .wc-matches .grp{font-size:10.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);}
 .wc-matches .tm{display:flex;align-items:center;gap:9px;font-size:16px;font-weight:700;margin-top:7px;}
@@ -1613,7 +1613,7 @@ font-size: 10px;
   }
   .r32-fx-meta{text-align:center;margin:.6rem 0 0;font-size:.72rem;color:#94a3b8;}
   .r32-fx-meta b{color:var(--r32-green);font-weight:600;}
-  .r32-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:clamp(1rem,2vw,1.6rem);}
+  .r32-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(360px,100%),1fr));gap:clamp(1rem,2vw,1.6rem);}
   .r32-card{border:1px solid var(--r32-line);border-radius:16px;overflow:hidden;background:var(--r32-paper);}
   .r32-card-head{display:flex;align-items:center;gap:.75rem;padding:1rem 1.1rem;border-bottom:1px solid var(--r32-line);}
   .r32-badge{
@@ -2106,7 +2106,7 @@ font-size: 10px;
     .mc-rowhead{font-family:'Bebas Neue',sans-serif;letter-spacing:2px;font-size:clamp(1.5rem,3.4vw,2.2rem);color:#111418;line-height:1;margin:0 0 1.5rem;display:flex;align-items:center;gap:14px;}
     .mc-rowhead::after{content:'';flex:1;height:3px;background:linear-gradient(90deg,#2f80ff,#21c25a,#ff4338,#f5c518);opacity:.45;}
     .mc-rowhead-2{margin-top:3rem;}
-    .mc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;}
+    .mc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:18px;}
     .mc-card{position:relative;background:#fff;border:1px solid var(--border);border-radius:14px;padding:1.5rem 1.5rem 1.25rem;display:flex;flex-direction:column;gap:.85rem;overflow:hidden;transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease;}
     .mc-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--mc-ac,#2f80ff);}
     .mc-card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(0,0,0,.1);border-color:var(--mc-ac,#2f80ff);}
@@ -2787,7 +2787,7 @@ font-size: 10px;
       <p style="font-size:16px; color:#8c95a4; max-width:540px; margin:0 auto 28px;">Travel guides, match intel, city breakdowns, and everything you need for World Cup 2026.</p>
       <a href="blog.html" style="display:inline-block; background:#d9a441; color:#111; font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; padding:12px 28px; border-radius:3px; text-decoration:none;">View All Articles →</a>
     </div>
-    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:20px;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr)); gap:20px;">
       <a href="articles/argentina-fans-kansas-city.html" style="display:block; background:#0e1218; border:1px solid #222834; border-radius:10px; padding:24px; text-decoration:none; transition:.15s;" onmouseover="this.style.borderColor='#d9a441'" onmouseout="this.style.borderColor='#222834'">
         <div style="font-size:10px; font-weight:800; letter-spacing:.18em; text-transform:uppercase; color:#e2404d; margin-bottom:10px;">June 4, 2026 · New</div>
         <div style="font-size:17px; font-weight:800; color:#f3f5f8; line-height:1.3; margin-bottom:10px;">Argentine Fans in Kansas City: How to Make the Most of Your World Cup Trip</div>
