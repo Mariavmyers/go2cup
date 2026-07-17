@@ -22,12 +22,12 @@
   <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SportDGX News | World Cup 2026 Fan Updates</title>
-  <meta name="description" content="SportDGX News - daily World Cup 2026, NFL, and Formula 1 fan-travel news, host-city updates, watch parties, tickets, and stadium planning.">
+  <meta name="description" content="SportDGX News - daily World Cup 2026 fan-travel news, host-city updates, watch parties, tickets, and stadium planning.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="SportDGX News">
   <meta property="og:title" content="SportDGX News - World Cup 2026 Fan Travel News">
-  <meta property="og:description" content="Daily World Cup 2026, NFL, and F1 fan-travel news, host-city updates, watch parties, tickets, and stadium planning.">
+  <meta property="og:description" content="Daily World Cup 2026 fan-travel news, host-city updates, watch parties, tickets, and stadium planning.">
   <meta property="og:url" content="https://sportdgx.com/sports-news">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://sportdgx.com/sports-news">
@@ -152,8 +152,9 @@
 .g2pub__launch-nav a:hover { color:#fff; }
 
 .g2pub__main { width:100%; max-width:1240px; margin:0 auto; padding:36px 40px 56px; }
-.g2pub__grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:28px; align-items:start; }
-.g2pub__col { display:flex; flex-direction:column; gap:18px; }
+.g2pub__grid { display:grid; grid-template-columns:1fr; gap:28px; align-items:start; }
+.g2pub__col { display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:18px; }
+.g2pub__col-header { grid-column:1 / -1; }
 .g2pub__col-header { display:flex; align-items:center; gap:9px; padding-bottom:13px; border-bottom:2px solid var(--border); margin-bottom:2px; }
 .col-wc .g2pub__col-header { border-color:var(--wc); }
 .col-nfl .g2pub__col-header { border-color:var(--nfl); }
@@ -278,10 +279,6 @@
   text-decoration:underline;
 }
 
-@media (max-width:960px) {
-  .g2pub__grid { grid-template-columns:1fr 1fr; gap:22px; }
-  .col-f1 { grid-column:1 / -1; max-width:460px; }
-}
 @media (max-width:600px) {
   .g2pub__mast { padding:0 20px; flex-direction:column; align-items:flex-start; }
   .g2pub__mast-left { padding:16px 0 8px; }
@@ -320,8 +317,6 @@
 
   <nav class="g2pub__subnav" aria-label="Sport sections">
     <a class="nav-wc" href="#g2pub-col-wc">&#9917; World Cup</a>
-    <a class="nav-nfl" href="#g2pub-col-nfl">&#127944; NFL</a>
-    <a class="nav-f1" href="#g2pub-col-f1">&#127950; Formula One</a>
   </nav>
 
   <!-- ── STREAMING PROMO BLOCK ── -->
@@ -334,10 +329,10 @@
 
   <section class="g2pub__cta">
     <h2>Get the SportDGX Sports News Briefing</h2>
-    <p>Follow soccer, World Cup 2026, NFL, and Formula One through the SportDGX Angle: major events, teams, athletes, fan culture, media narratives, business signals, controversies, partnerships, and emerging opportunities in global sports.</p>
+    <p>Follow soccer and World Cup 2026 through the SportDGX Angle: major events, teams, athletes, fan culture, media narratives, business signals, controversies, partnerships, and emerging opportunities in global sports.</p>
     <a href="https://forms.gle/3sus8VcWdGcSYu2E7" target="_blank" rel="noopener" class="g2pub__cta-btn">Send Me the Sports News Briefing</a>
 
-    <p class="g2pub__cta-disclaimer">SportDGX News is independent. It is not affiliated with FIFA, NFL, Formula One, teams, leagues, drivers, athletes, event organizers, broadcasters, or official sponsors.</p>
+    <p class="g2pub__cta-disclaimer">SportDGX News is independent. It is not affiliated with FIFA, teams, leagues, athletes, event organizers, broadcasters, or official sponsors.</p>
   </section>
 
   <main class="g2pub__main">
@@ -369,9 +364,7 @@ prices, and travel requirements with official sources before booking.
 <script>
 (function () {
   var COLS = [
-    { key:'worldcup', id:'g2pub-col-wc', css:'col-wc', emoji:'&#9917;', badge:'World Cup', name:'World Cup &amp; Soccer' },
-    { key:'nfl', id:'g2pub-col-nfl', css:'col-nfl', emoji:'&#127944;', badge:'NFL', name:'NFL' },
-    { key:'f1', id:'g2pub-col-f1', css:'col-f1', emoji:'&#127937;', badge:'Formula One', name:'Formula One' }
+    { key:'worldcup', id:'g2pub-col-wc', css:'col-wc', emoji:'&#9917;', badge:'World Cup', name:'World Cup &amp; Soccer' }
   ];
 
   var MAX_AGE_DAYS = 9999;
@@ -981,20 +974,6 @@ prices, and travel requirements with official sources before booking.
     tags: ["World Cup 2026", "Toronto", "Fan Festival", "Weather"]
   },
   {
-    sport: "nfl",
-    category: "Chiefs Minicamp",
-    publishedDate: "2026-06-11",
-    title: "Chiefs wrap mandatory minicamp before turning toward training camp",
-    summary: "Kansas City wrapped up mandatory minicamp at the team facility, closing the offseason program before training camp begins next month.",
-    go2cupAngle: "For Kansas City sports readers, the minicamp close shifts the Chiefs calendar from offseason evaluation to training-camp storylines, roster battles, travel planning, and preseason demand.",
-    fanTravelImpact: "Chiefs fans planning camp visits, preseason trips, or early-season travel should now watch training camp dates, roster updates, and ticket movement.",
-    sourceName: "Kansas City Chiefs",
-    sourceUrl: "https://www.chiefs.com/news/chiefs-wrap-up-mandatory-minicamp-at-the-team-facility",
-    imageUrl: "TODO_IMAGE_URL",
-    imageAlt: "Kansas City Chiefs practice field",
-    tags: ["Chiefs", "NFL", "Minicamp", "Training Camp"]
-  },
-  {
     sport: "worldcup",
     category: "Kansas City Travel",
     publishedDate: "2026-06-10",
@@ -1077,34 +1056,6 @@ prices, and travel requirements with official sources before booking.
     imageUrl: "TODO_IMAGE_URL",
     imageAlt: "World Cup stadium parking and fan arrivals",
     tags: ["World Cup 2026", "Parking", "Host Cities", "Stadium Rules", "Fan Travel"]
-  },
-  {
-    sport: "nfl",
-    category: "Chiefs / Minicamp",
-    publishedDate: "2026-06-10",
-    title: "Chiefs minicamp keeps Kansas City sports attention high during World Cup week",
-    summary: "Kansas City Chiefs minicamp coverage is tracking roster movement, rookie development, Patrick Mahomes' recovery work, and the return of cornerback L'Jarius Sneed as the team moves through its June offseason program.",
-    go2cupAngle: "Kansas City has two major sports attention streams right now: Chiefs offseason news and World Cup host-city planning. SportDGX can connect both because local fan demand, stadium-area awareness, media attention, and travel behavior all overlap in the same market.",
-    fanTravelImpact: "Chiefs fans planning training camp visits or early-season travel should watch roster movement, ticket demand, media attention, and Kansas City event traffic as the World Cup reshapes local sports planning.",
-    sourceName: "Arrowhead Pride",
-    sourceUrl: "https://www.arrowheadpride.com/kansas-city-chiefs-news/203630/chiefs-news-6-10-rookie-tackle-impressing-at-minicamp",
-    imageUrl: "TODO_IMAGE_URL",
-    imageAlt: "Kansas City Chiefs football practice field",
-    tags: ["NFL", "Chiefs", "Kansas City", "Minicamp", "Roster"]
-  },
-  {
-    sport: "f1",
-    category: "Race Weekend / Fan Travel",
-    publishedDate: "2026-06-10",
-    title: "Canadian Grand Prix remains a North American F1 travel marker",
-    summary: "Formula 1's official Canadian Grand Prix page keeps Montreal race information, circuit details, highlights, and weekend coverage in one place for fans following the North American F1 calendar.",
-    go2cupAngle: "Montreal is useful for SportDGX because F1 weekends show how global sports events become multi-day travel products. The same planning logic applies to World Cup host cities: schedules, local transit, hospitality, city movement, and fan behavior matter before the main event starts.",
-    fanTravelImpact: "Fans traveling to F1 races should monitor official circuit guidance, local transit, weather, hotel zones, road closures, and session timing before finalizing plans.",
-    sourceName: "Formula 1",
-    sourceUrl: "https://www.formula1.com/en/racing/2026/canada",
-    imageUrl: "TODO_IMAGE_URL",
-    imageAlt: "Formula One cars racing in Montreal",
-    tags: ["Formula One", "Canadian Grand Prix", "Montreal", "Fan Travel", "Race Weekend"]
   },
   {
     sport: "worldcup",
@@ -1317,49 +1268,6 @@ prices, and travel requirements with official sources before booking.
     tags: ["World Cup 2026", "Travel Rules", "Visas", "Security"]
   },
   {
-    sport: "nfl",
-    category: "Chiefs / Roster",
-    publishedDate: "2026-06-08",
-    title: "L'Jarius Sneed set for Chiefs return",
-    summary: "Multiple reports say veteran cornerback L'Jarius Sneed is returning to Kansas City after previously winning two Super Bowls with the Chiefs.",
-    go2cupAngle: "A familiar defensive name returning to Kansas City gives Chiefs fans an immediate offseason storyline and strengthens local sports attention before training camp.",
-    fanTravelImpact: "Chiefs fans planning training camp visits or early-season travel should watch roster moves because veteran additions can shift fan interest, ticket demand and media attention around key games.",
-    sourceName: "NBC Sports",
-    sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/chiefs-to-sign-ljarius-sneed",
-    imageUrl: "TODO_IMAGE_URL",
-    imageAlt: "Kansas City Chiefs defensive back on game day",
-    tags: ["Chiefs", "NFL", "L'Jarius Sneed", "Roster"]
-  },
-  {
-    sport: "nfl",
-    category: "Chiefs / Minicamp",
-    publishedDate: "2026-06-08",
-    title: "Chiefs mandatory minicamp window puts Kansas City back in offseason spotlight",
-    summary: "The Chiefs' 2026 offseason calendar lists mandatory minicamp for June 9-11, following organized team activities in late May and early June.",
-    go2cupAngle: "Minicamp creates a clean editorial bridge between offseason roster moves and training camp. For SportDGX News, Chiefs coverage keeps the Kansas City sports audience active between World Cup updates.",
-    fanTravelImpact: "Fans should watch official Chiefs channels for training camp schedule announcements, public practice access, St. Joseph travel details, parking rules and player availability updates.",
-    sourceName: "ESPN",
-    sourceUrl: "https://www.espn.com/nfl/story/_/id/48387060/nfl-offseason-2026-every-32-team-otas-minicamp-key-dates",
-    imageUrl: "TODO_IMAGE_URL",
-    imageAlt: "Kansas City Chiefs offseason practice field",
-    tags: ["Chiefs", "Minicamp", "NFL", "Kansas City"]
-  },
-
-  {
-    sport: "f1",
-    category: "Calendar / Tickets",
-    publishedDate: "2026-06-08",
-    title: "Grand Prix du Canada keeps ticket and event information active after race weekend",
-    summary: "The official Grand Prix du Canada site continues to point fans toward event information, partner updates and 2026 ticket resources for the Montreal Formula One weekend.",
-    go2cupAngle: "F1 ticket and event pages are useful examples for SportDGX News because they show how major-event organizers keep fans inside an information funnel before, during and after race weekends.",
-    fanTravelImpact: "Fans planning future Montreal race travel should use official event channels for ticket notices, access maps, accessibility information, partner updates and local arrival guidance.",
-    sourceName: "Grand Prix du Canada",
-    sourceUrl: "https://gpcanada.ca/en/",
-    imageUrl: "TODO_IMAGE_URL",
-    imageAlt: "Canadian Grand Prix grandstand",
-    tags: ["Formula One", "Tickets", "Montreal", "Event Planning"]
-  },
-  {
     sport: "worldcup",
     category: "Tickets / Fan Access",
     publishedDate: "2026-05-22",
@@ -1414,62 +1322,6 @@ prices, and travel requirements with official sources before booking.
     imageUrl: "TODO_IMAGE_URL",
     imageAlt: "Egypt football supporters",
     tags: ["Egypt", "Mohamed Salah", "World Cup 2026", "Squad News"]
-  },
-  {
-    sport: "nfl",
-    category: "Stadium / Business",
-    publishedDate: "2026-05-22",
-    title: "Chicago Bears say city stadium options are exhausted",
-    summary: "The Chicago Bears said there is no viable stadium site remaining inside Chicago and that the team is now considering Arlington Heights and Hammond as the only remaining options.",
-    go2cupAngle: "This is major-event infrastructure politics in real time. Stadium location decisions shape transportation, fan spending, local business winners, public funding debates, and long-term event-hosting power.",
-    fanTravelImpact: "Bears fans should watch this closely because a future move would change game-day routes, hotel zones, tailgate patterns, and regional travel behavior.",
-    sourceName: "NFL.com",
-    sourceUrl: "https://www.nfl.com/news/bears-reiterate-chicago-stadium-options-have-been-exhausted",
-    imageUrl: "TODO_IMAGE_URL",
-    imageAlt: "NFL stadium exterior",
-    tags: ["NFL", "Chicago Bears", "Stadium", "Sports Business"]
-  },
-  {
-    sport: "nfl",
-    category: "Team Business",
-    publishedDate: "2026-05-22",
-    title: "Matthew Stafford and Rams agree to one-year extension",
-    summary: "The Rams and quarterback Matthew Stafford agreed to a one-year extension reportedly worth $55 million, keeping the veteran quarterback central to Los Angeles' short-term plans.",
-    go2cupAngle: "Quarterback stability is a business signal. It affects ticket demand, prime-time interest, sponsor confidence, fantasy attention, and local media gravity around a franchise.",
-    fanTravelImpact: "Rams fans traveling for key games should expect stronger demand around high-profile matchups if Stafford remains the face of the team.",
-    sourceName: "NFL.com",
-    sourceUrl: "https://www.nfl.com/news/report-rams-qb-matthew-stafford-agree-to-one-year-55-million-contract-extension",
-    imageUrl: "TODO_IMAGE_URL",
-    imageAlt: "Los Angeles Rams football field",
-    tags: ["NFL", "Los Angeles Rams", "Matthew Stafford", "Contracts"]
-  },
-  {
-    sport: "f1",
-    category: "Race Weekend",
-    publishedDate: "2026-05-22",
-    title: "Formula One Canadian Grand Prix weekend becomes the next global sports focus",
-    summary: "The Canadian Grand Prix weekend is drawing attention as fans look for how to watch practice, sprint qualifying, race coverage, and Montreal weekend updates.",
-    go2cupAngle: "F1 weekends are a useful model for GO2CUP because they show how global sports audiences need one clear hub for schedule, broadcast, travel, and city-context information.",
-    fanTravelImpact: "Fans attending or following major event weekends should check broadcast timing, local transport, weather, and city-center crowd patterns before making plans.",
-    sourceName: "Yahoo Sports",
-    sourceUrl: "https://uk.sports.yahoo.com/news/f1-canadian-grand-prix-2026-how-to-watch-the-next-formula-1-race-tv-channel-time-and-more-101200322.html",
-    imageUrl: "TODO_IMAGE_URL",
-    imageAlt: "Formula One race weekend in Canada",
-    tags: ["Formula One", "Canadian Grand Prix", "Race Weekend", "Broadcast"]
-  },
-  {
-    sport: "f1",
-    category: "Calendar / Format",
-    publishedDate: "2026-05-22",
-    title: "F1 sprint calendar keeps expanding the race-weekend playbook",
-    summary: "Formula One's sprint format adds more high-stakes sessions across selected race weekends, creating more content, more fan movement, and more commercial inventory around each event.",
-    go2cupAngle: "Sprint weekends show how sports are turning single events into multi-day experience platforms. That same logic applies to World Cup host cities, where match days create surrounding travel, sponsor, fan-zone, and hospitality opportunities.",
-    fanTravelImpact: "Fans planning around sprint weekends need to think beyond race day because meaningful sessions can affect hotel nights, arrival timing, and ticket value.",
-    sourceName: "Red Bull",
-    sourceUrl: "https://www.redbull.com/int-en/f1-sprint-format-everything-you-need-to-know",
-    imageUrl: "TODO_IMAGE_URL",
-    imageAlt: "Formula One sprint race weekend",
-    tags: ["Formula One", "Sprint", "Calendar", "Fan Experience"]
   }
 ];
 
