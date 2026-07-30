@@ -110,6 +110,20 @@
   .footmeta a{color:var(--muted)}
   .disclaimer{margin-top:10px;font-size:.78rem;color:#6f8678;font-style:italic}
 
+  /* OPINION CARD — clearly marked editorial, distinct from news reports */
+  .opinion-card{position:relative;background:linear-gradient(160deg,#1a1206,#0c1711 60%);border:2px solid var(--gold);border-radius:16px;padding:30px 32px;margin:26px 0 6px;box-shadow:0 0 34px rgba(245,197,24,.14)}
+  @media(max-width:640px){.opinion-card{padding:24px 20px}}
+  .opinion-card .op-flags{display:flex;gap:8px;margin-bottom:16px}
+  .opinion-card .op-flags img{width:34px;height:26px;border-radius:3px;object-fit:cover;border:1px solid rgba(0,0,0,.4)}
+  .opinion-card .op-label{display:inline-block;font-family:'Oswald',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#0c1a10;background:var(--gold);border-radius:20px;padding:5px 14px;margin-bottom:18px}
+  .opinion-card h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.7rem,4.4vw,2.6rem);line-height:1.06;letter-spacing:.4px;color:#fff;margin-bottom:18px}
+  .opinion-card p{font-size:1rem;line-height:1.75;color:#dfe9e1;margin-bottom:15px}
+  .opinion-card p b{color:#fff}
+  .opinion-card a{color:var(--gold);text-decoration:underline;text-decoration-color:rgba(245,197,24,.45)}
+  .opinion-card a:hover{color:#fff}
+  .opinion-card .op-kicker{font-family:'Oswald',sans-serif;font-size:1.05rem;font-weight:500;color:var(--gold);border-left:3px solid var(--gold);padding-left:16px;margin:22px 0 4px;line-height:1.6}
+  .opinion-card .op-foot{margin-top:22px;padding-top:16px;border-top:1px solid rgba(245,197,24,.25);font-size:.82rem;color:var(--muted);line-height:1.7}
+
   :focus-visible{outline:2px solid var(--green);outline-offset:3px;border-radius:4px}
   @media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
 </style>
@@ -145,18 +159,45 @@
   <div class="wrap">
     <p class="eyebrow">🔥 World Cup 2026 · Team-by-team</p>
     <h1>The <span class="g">Good</span>, The <span class="b">Bad</span> &amp; The <span class="u">Ugly</span></h1>
-    <p class="sub">Every team, called straight. No bias, no fence-sitting — just the eye test backed by results, and honest takes on who can really win this thing.</p>
+    <p class="sub">Every team, called straight. No bias, no fence-sitting — just the eye test backed by results, and honest takes written before anyone knew how it ended.</p>
     <p class="byline">A lifetime watching the game, written plainly. — <b>Maria, GO2CUP</b></p>
     <br>
-    <span class="updated">Updated · July 4, 2026 · Round of 32</span>
+    <span class="updated">Opinion archive · Tier list frozen July 4, 2026 · Latest take July 23, 2026</span>
   </div>
 </header>
 
 <div class="wrap">
   <div class="verdict">
-    <h2>Who wins it? Here's my honest read.</h2>
-    <p>After the Round of 32, I'm changing my pick: <b>France</b> lift this trophy. They're not the flashiest, but they're quietly the deepest — they beat Paraguay when they had to and they don't beat themselves. That's the profile that survives knockout football. <b>Spain</b> look ruthless and <b>Brazil</b>'s attack is humming, but the real story of this round was the scares: <b>Argentina</b> got made to sweat like a pig by <b>Cape Verde</b>, and <b>Morocco</b> dumped co-host <b>Canada</b> 3–0 to prove last cycle was no fluke. Wide open at the top — but France is the one I'd trust to be standing on July 19.</p>
+    <h2>Who won it? And how wrong was I?</h2>
+    <p>Wrong, is the answer. After the Round of 32 I picked <b>France</b> — deepest squad, doesn't beat itself, the profile that survives knockout soccer. France finished fourth after losing a 6–4 bronze final to <b>England</b>. The team I called ruthless but didn't back, <b>Spain</b>, went through the entire tournament unbeaten and won it 1–0 over <b>Argentina</b> in extra time. The tier list below is preserved as it stood on July 4, 2026, mid-Round of 32 — wrong calls and all. That's the deal with takes: you print them before you know. Full results are on the <a href="scoreboard.html" style="color:var(--gold);text-decoration:underline;">scoreboard</a>.</p>
   </div>
+</div>
+
+<div class="wrap">
+  <article class="opinion-card" id="sportsmanship">
+    <div class="op-flags">
+      <img src="https://flagcdn.com/48x36/es.png" alt="Spain flag" loading="lazy">
+      <img src="https://flagcdn.com/48x36/ar.png" alt="Argentina flag" loading="lazy">
+    </div>
+    <div class="op-label">🔥 Hot Take · Opinion · Not a news report</div>
+    <h2>The guard of honor told you everything. So did the refusal to form one.</h2>
+
+    <p>Let me be clear about what this is before I say a word: this is <b>my opinion</b>, on the opinion page. The factual record of what happened after the final whistle at MetLife — who did what, and what is still disputed — is <a href="articles/world-cup-2026-aftermath.html#ugly-end">reported straight over on the news side</a>, without any of the following attitude in it.</p>
+
+    <p>Now. Losing a World Cup final in extra time, down to ten men, after your goalkeeper made eleven saves to keep you in it — that is a genuinely brutal way to have your heart taken out. I'm not going to pretend otherwise, and anyone dunking on Argentina without acknowledging it is being cheap. <b>Emiliano Martínez was the best player on that field</b> and he ended the night with a runner-up medal. That's the sport at its cruelest.</p>
+
+    <p>But heartbreak explains the tears. It doesn't explain a hand on a throat.</p>
+
+    <p>Shoving an opponent by the neck and putting another one on the ground after the whistle isn't passion, it isn't "emotion," and it isn't the kind of thing that gets excused by the scoreline. Losing badly is allowed. Losing like that is a choice, and it's the one part of the night that I don't think has a defense.</p>
+
+    <p>The turned backs during the trophy lift are a different question and I'm going to be honest that I don't know the answer. Some reporting says those players were facing their own supporters out of grief, not staging a snub, and I'm not prepared to call that a lie just because the picture looks bad. Motive is genuinely unsettled. What isn't unsettled: <b>Spain formed a guard of honor for Argentina, and Argentina didn't form one back.</b> One of those is a decision you can make while devastated. The other apparently wasn't.</p>
+
+    <p>And credit where it's due, because that's the whole point of this page. Spain's guard of honor was class — from a squad that had every excuse to be busy celebrating. <b>Messi and Lamine Yamal embracing</b> in the middle of all that noise was the best image of the night that didn't involve a trophy. And Yamal kneeling in prayer while grown men shoved each other around him is going to outlive every argument about this final.</p>
+
+    <p class="op-kicker">Spain won a World Cup. They also won the ten minutes after it. Both of those are worth saying out loud.</p>
+
+    <div class="op-foot">Opinion by <b>Maria, GO2CUP</b> · Posted July 23, 2026 · This is editorial commentary, not reporting. For the factual record see <a href="articles/world-cup-2026-aftermath.html">the aftermath archive</a>.</div>
+  </article>
 </div>
 
 <section class="t-contenders">
