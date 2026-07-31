@@ -1069,36 +1069,29 @@ to { opacity: 1; transform: translateY(0); }
     <span class="match-flag">&#127487;&#127462;</span>
   </div>
 
-  <!-- LIVE COUNTDOWN -->
+  <!-- FINAL SCORE (replaced the pre-match countdown once the match was played) -->
   <div class="countdown-section">
-    <div class="countdown-label">Time Until Kickoff</div>
+    <div class="countdown-label">Opening Match &middot; Full Time</div>
     <div class="countdown-grid">
       <div class="countdown-unit">
-        <span class="countdown-num" id="cd-days">--</span>
-        <span class="countdown-unit-label">Days</span>
+        <img src="https://flagcdn.com/w80/mx.png" srcset="https://flagcdn.com/w160/mx.png 2x" alt="Mexico flag" style="width:54px;border-radius:3px;display:block;margin:0 auto 6px;">
+        <span class="countdown-num">2</span>
+        <span class="countdown-unit-label">Mexico</span>
       </div>
       <span class="countdown-sep">:</span>
       <div class="countdown-unit">
-        <span class="countdown-num" id="cd-hours">--</span>
-        <span class="countdown-unit-label">Hours</span>
-      </div>
-      <span class="countdown-sep">:</span>
-      <div class="countdown-unit">
-        <span class="countdown-num" id="cd-mins">--</span>
-        <span class="countdown-unit-label">Minutes</span>
-      </div>
-      <span class="countdown-sep">:</span>
-      <div class="countdown-unit">
-        <span class="countdown-num" id="cd-secs">--</span>
-        <span class="countdown-unit-label">Seconds</span>
+        <img src="https://flagcdn.com/w80/za.png" srcset="https://flagcdn.com/w160/za.png 2x" alt="South Africa flag" style="width:54px;border-radius:3px;display:block;margin:0 auto 6px;">
+        <span class="countdown-num">0</span>
+        <span class="countdown-unit-label">South Africa</span>
       </div>
     </div>
+    <p style="text-align:center;margin-top:14px;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;opacity:.8;">June 11, 2026 &middot; Estadio Azteca &middot; a record three red cards</p>
   </div>
 
   <!-- HERO AFFILIATE CTAs -->
   <div class="subscribe-section">
-    <div class="subscribe-headline">Ready to Be There?</div>
-    <p class="subscribe-sub">Secure your seat, lock in your hotel, and book your Mexico City experiences before Opening Weekend inventory runs out.</p>
+    <div class="subscribe-headline">Planning the Next One?</div>
+    <p class="subscribe-sub">The 2026 tournament is done, but Mexico City is not. Our hotel and experience guides stay online for anyone heading there now.</p>
     <div style="display:flex;flex-direction:column;gap:0.75rem;margin-bottom:1.2rem;">
       <a href="https://collect.fifa.com/" target="_blank" rel="noopener sponsored" style="display:block;background:linear-gradient(135deg,var(--fire-red),var(--fire-orange));color:white;font-family:'Barlow',sans-serif;font-size:0.88rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;padding:1rem 2rem;border-radius:3px;text-decoration:none;text-align:center;">FIND OPENING MATCH TICKETS</a>
       <a href="https://klook.tpk.lu/GrhNTkaL?marker=736515.worldcup26" target="_blank" rel="noopener sponsored" style="display:block;background:#00a651;color:white;font-family:'Barlow',sans-serif;font-size:0.88rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;padding:1rem 2rem;border-radius:3px;text-decoration:none;text-align:center;">SEARCH HOTELS IN MEXICO CITY</a>
@@ -1408,30 +1401,7 @@ prices, and travel requirements with official sources before booking.
   </div>
 </footer>
 
-<!-- COUNTDOWN SCRIPT -->
-<script>
-function updateCountdown() {
-  var target = new Date('2026-06-11T19:00:00Z');
-  var now = new Date();
-  var diff = target - now;
-  if (diff <= 0) {
-    document.getElementById('cd-days').textContent = '00';
-    document.getElementById('cd-hours').textContent = '00';
-    document.getElementById('cd-mins').textContent = '00';
-    document.getElementById('cd-secs').textContent = '00';
-    return;
-  }
-  var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  var secs = Math.floor((diff % (1000 * 60)) / 1000);
-  document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
-  document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
-  document.getElementById('cd-mins').textContent = String(mins).padStart(2, '0');
-  document.getElementById('cd-secs').textContent = String(secs).padStart(2, '0');
-}
-updateCountdown();
-setInterval(updateCountdown, 1000);
-</script>
+<!-- COUNTDOWN SCRIPT — retired. The opening match was played June 11, 2026;
+     the block above now carries the final score instead of a live timer. -->
 </body>
 </html>

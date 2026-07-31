@@ -11,7 +11,7 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>World Cup 2026 — Full Calendar | GO2CUP</title>
+<title>World Cup 2026 — Full Match Calendar Archive | GO2CUP</title>
 <link rel="canonical" href="https://sportdgx.com/wc2026-matches-calendar">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="GO2CUP">
@@ -150,20 +150,19 @@
 </div>
 
 <a class="stream" href="https://sportdgx.com/streaming.html">
-  <span>▶ Watch World Cup 2026 live — FuboTV · Hulu · Sling · DirecTV · YouTube TV</span>
-  <span style="color:var(--go-blue);font-weight:700">Stream now →</span>
+  <span>▶ Where World Cup 2026 aired — FuboTV · Hulu · Sling · DirecTV · YouTube TV</span>
+  <span style="color:var(--go-blue);font-weight:700">Replays &amp; guide →</span>
 </a>
 
 <section class="hero">
-  <div class="eyebrow"><span class="bar"></span>🏆 The World Cup is live — full calendar</div>
+  <div class="eyebrow"><span class="bar"></span>🏆 World Cup 2026 archive — full calendar</div>
   <h1><span class="b">WORLD CUP</span> <span class="g">2026</span><br><span class="y">EVERY MATCH.</span></h1>
   <div class="sub">104 games · 16 cities · 3 nations · all kickoffs in ET (US Eastern)</div>
 </section>
 
 <div class="legend">
   <div><span class="dot" style="background:var(--green)"></span> Result in</div>
-  <div><span class="dot" style="background:var(--go-blue)"></span> Today</div>
-  <div><span class="dot" style="background:#5f7468"></span> Upcoming</div>
+  <div><span class="dot" style="background:#5f7468"></span> Played</div>
 </div>
 
 <div class="wrap">
@@ -353,9 +352,10 @@ const KNOCKOUTS = [
 ];
 
 function tagFor(st){
-  if(st==="today") return '<span class="daytag tag-today">Today</span>';
-  if(st==="done")  return '<span class="daytag tag-done">Full time</span>';
-  return '<span class="daytag tag-up">Upcoming</span>';
+  /* Tournament complete - no day is upcoming. Days carrying scores show
+     "Full time"; days without a score listed here simply show "Played". */
+  if(st==="done") return '<span class="daytag tag-done">Full time</span>';
+  return '<span class="daytag tag-up">Played</span>';
 }
 function matchRow(mt, dayStatus){
   const done = Array.isArray(mt.s);
