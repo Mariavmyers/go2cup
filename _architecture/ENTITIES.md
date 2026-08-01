@@ -127,7 +127,7 @@ Applied to: TicketProvider, TravelProvider, MerchandiseProvider.
 | Enum | Values |
 |---|---|
 | `status` | `active` · `inactive` · `deprecated` · `draft` |
-| `pageStatus` | `none` · `planned` · `draft` · `published` · `archived` · `redirected` |
+| `pageStatus` | `database-only` · `draft` · `basic-profile` · `active-hub` · `archived` · `redirected` |
 | `verificationStatus` | `verified` · `partially_verified` · `unverified` · `historical` · `archived` · `disputed` |
 | `regionType` | `geographic` · `sports_governance` · `commercial_market` |
 | `adminLevel` | `state` · `province` · `territory` · `region` · `department` · `prefecture` · `county` · `other` |
@@ -147,7 +147,18 @@ Applied to: TicketProvider, TravelProvider, MerchandiseProvider.
 | `sourceType` | `official_site` · `governing_body` · `press_release` · `news_article` · `wire_service` · `broadcast` · `book` · `dataset` · `direct_communication` |
 | `authorityLevel` | `official` · `primary` · `secondary` · `aggregator` · `community` |
 
-**`pageStatus: redirected`** exists to model pages that still resolve but point elsewhere — the condition found on eight stale root-level city duplicates during repository inspection.
+**`pageStatus` governs indexability, not merely whether a page exists.** Full rules in [DATA-PUBLISHING-POLICY.md](DATA-PUBLISHING-POLICY.md) §3.
+
+| Value | Public? | Indexable? | Meaning |
+|---|---|---|---|
+| `database-only` | No | No | Record exists; no public page |
+| `draft` | No | No | Page exists but is unfinished |
+| `basic-profile` | Yes | **No — `noindex` by default** | Thin page below the indexation threshold |
+| `active-hub` | Yes | Yes | Meets the indexation threshold |
+| `archived` | Yes | Yes | Kept live and indexable, no longer updated |
+| `redirected` | Yes | n/a | Resolves but points elsewhere |
+
+**`pageStatus: redirected`** models pages that still resolve but point elsewhere — the condition found on eight stale root-level city duplicates during repository inspection.
 
 **`ticketStatus` is independent of `eventStatus`** and must never be inferred from it. A completed event may still be `resale_only`; a scheduled event may be `not_on_sale` for months.
 
@@ -184,7 +195,7 @@ Applied to: TicketProvider, TravelProvider, MerchandiseProvider.
   "name": "Example Governance Region",
   "regionType": "sports_governance",
   "status": "active",
-  "pageStatus": "none",
+  "pageStatus": "database-only",
   "lastUpdated": "2026-01-01T00:00:00Z",
   "verificationStatus": "unverified"
 }
@@ -221,7 +232,7 @@ Applied to: TicketProvider, TravelProvider, MerchandiseProvider.
   "isTerritory": false,
   "regionIds": ["region:example-geographic", "region:example-governance-body"],
   "status": "active",
-  "pageStatus": "planned",
+  "pageStatus": "database-only",
   "lastUpdated": "2026-01-01T00:00:00Z",
   "verificationStatus": "unverified"
 }
@@ -257,7 +268,7 @@ Applied to: TicketProvider, TravelProvider, MerchandiseProvider.
   "countryOrTerritoryId": "country:example-country",
   "adminLevel": "state",
   "status": "active",
-  "pageStatus": "none",
+  "pageStatus": "database-only",
   "lastUpdated": "2026-01-01T00:00:00Z",
   "verificationStatus": "unverified"
 }
@@ -293,7 +304,7 @@ Applied to: TicketProvider, TravelProvider, MerchandiseProvider.
   "countryOrTerritoryId": "country:example-country",
   "administrativeRegionId": "adminregion:example-state",
   "status": "active",
-  "pageStatus": "planned",
+  "pageStatus": "database-only",
   "monetizationEnabled": true,
   "lastUpdated": "2026-01-01T00:00:00Z",
   "verificationStatus": "unverified"
@@ -348,7 +359,7 @@ Applied to: TicketProvider, TravelProvider, MerchandiseProvider.
   "nameHistory": [],
   "schemaOrgType": "StadiumOrArena",
   "status": "active",
-  "pageStatus": "planned",
+  "pageStatus": "database-only",
   "lastUpdated": "2026-01-01T00:00:00Z",
   "verificationStatus": "unverified",
   "notes": "officialName and capacity intentionally null pending an official source."
@@ -381,7 +392,7 @@ Applied to: TicketProvider, TravelProvider, MerchandiseProvider.
   "slug": "example-sport",
   "name": "Example Sport",
   "status": "active",
-  "pageStatus": "planned",
+  "pageStatus": "database-only",
   "lastUpdated": "2026-01-01T00:00:00Z",
   "verificationStatus": "unverified"
 }
@@ -423,7 +434,7 @@ Applied to: TicketProvider, TravelProvider, MerchandiseProvider.
   "governanceRegionIds": ["region:example-governance-body"],
   "geographicRegionIds": ["region:example-geographic"],
   "status": "active",
-  "pageStatus": "planned",
+  "pageStatus": "database-only",
   "lastUpdated": "2026-01-01T00:00:00Z",
   "verificationStatus": "unverified"
 }
@@ -461,7 +472,7 @@ Applied to: TicketProvider, TravelProvider, MerchandiseProvider.
   "label": "0000",
   "isCurrent": false,
   "status": "active",
-  "pageStatus": "none",
+  "pageStatus": "database-only",
   "lastUpdated": "2026-01-01T00:00:00Z",
   "verificationStatus": "unverified"
 }
@@ -521,7 +532,7 @@ Applied to: TicketProvider, TravelProvider, MerchandiseProvider.
   "isNeutralSite": false,
   "participants": [],
   "status": "active",
-  "pageStatus": "none",
+  "pageStatus": "database-only",
   "lastUpdated": "2026-01-01T00:00:00Z",
   "verificationStatus": "unverified",
   "notes": "startsAt intentionally absent pending an official source."
@@ -574,7 +585,7 @@ Applied to: TicketProvider, TravelProvider, MerchandiseProvider.
   "cityId": "city:example-city",
   "competitionIds": ["competition:example-competition"],
   "status": "active",
-  "pageStatus": "planned",
+  "pageStatus": "database-only",
   "lastUpdated": "2026-01-01T00:00:00Z",
   "verificationStatus": "unverified"
 }
@@ -970,7 +981,10 @@ Declared in `entities.js` as `GLOBAL_RULES`. No validator is implemented yet.
 | `poly-ref-paired` | error | Polymorphic type and id supplied together; type is in `allowedTypes` |
 | `required-present` | error | Every required field is present and non-empty |
 | `enum-valid` | error | Every enum value is a member of the referenced set |
-| `page-status-valid` | error | `pageStatus` valid; `published` requires a resolvable page path |
+| `page-status-valid` | error | `pageStatus` valid; `basic-profile`, `active-hub`, `archived` and `redirected` each require a resolvable page path |
+| `indexation-threshold` | error | `active-hub` requires the indexable-page minimums in DATA-PUBLISHING-POLICY.md; `basic-profile` is noindex by default |
+| `source-provenance` | error | Every changing factual record carries ≥1 SourceRecord with publisher, sourceType, accessedAt and authorityLevel |
+| `licensing-resolved` | error | No record with unresolved licensing may reach `basic-profile`, `active-hub` or `archived` |
 | `verification-valid` | error | `verificationStatus` is a member of the enum |
 | `provider-class-valid` | error | Provider `classification` is valid and was set explicitly |
 | `placement-resolves` | error | Every placement resolves to a target and exactly one commercial source |
@@ -978,7 +992,7 @@ Declared in `entities.js` as `GLOBAL_RULES`. No validator is implemented yet.
 | `disclosure-present` | error | `requiresDisclosure: true` implies a non-empty `disclosureLabel` |
 | `no-monetized-optout` | error | No placement targets an entity whose `monetizationEnabled` is `false` |
 | `gated-field-sourced` | error | A populated gated field has a SourceRecord at or above `minAuthorityForGated` |
-| `no-orphans` | warn | Records reachable from nothing and carrying `pageStatus: none` are reported |
+| `no-orphans` | warn | Records reachable from nothing and carrying `pageStatus: database-only` are reported |
 | `date-order` | error | Paired date/datetime fields are chronological |
 | `entity-constraints` | error | Every rule in an entity descriptor's `constraints` array holds |
 

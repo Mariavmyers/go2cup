@@ -58,9 +58,22 @@ export const ENUMS = Object.freeze({
   /** Lifecycle of the record itself. */
   status: Object.freeze(['active', 'inactive', 'deprecated', 'draft']),
 
-  /** Whether a public page exists for this entity. */
+  /**
+   * Publication state of the entity's public page.
+   *
+   * Governs indexability, not merely existence — see
+   * _architecture/DATA-PUBLISHING-POLICY.md.
+   *
+   *   database-only  record exists, no public page. NOT public.
+   *   draft          page exists but is unfinished. NOT public.
+   *   basic-profile  thin page, public but noindex by default.
+   *   active-hub     meets the indexation threshold; indexable.
+   *   archived       kept live and indexable, no longer updated.
+   *   redirected     resolves but points elsewhere.
+   */
   pageStatus: Object.freeze([
-    'none', 'planned', 'draft', 'published', 'archived', 'redirected',
+    'database-only', 'draft', 'basic-profile', 'active-hub',
+    'archived', 'redirected',
   ]),
 
   /** How well sourced the record's factual claims are. */
@@ -990,7 +1003,10 @@ export const GLOBAL_RULES = Object.freeze([
   Object.freeze({ id: 'poly-ref-paired',      severity: 'error', description: 'Polymorphic type and id fields are supplied together and the type is in allowedTypes.' }),
   Object.freeze({ id: 'required-present',     severity: 'error', description: 'Every field marked required is present and non-empty.' }),
   Object.freeze({ id: 'enum-valid',           severity: 'error', description: 'Every enum value is a member of the referenced ENUMS set.' }),
-  Object.freeze({ id: 'page-status-valid',    severity: 'error', description: 'pageStatus is a member of ENUMS.pageStatus; published requires a resolvable page path.' }),
+  Object.freeze({ id: 'page-status-valid',    severity: 'error', description: 'pageStatus is a member of ENUMS.pageStatus; basic-profile, active-hub, archived and redirected each require a resolvable page path.' }),
+  Object.freeze({ id: 'indexation-threshold', severity: 'error', description: 'pageStatus active-hub requires the indexable-page minimums in DATA-PUBLISHING-POLICY.md; basic-profile is noindex by default.' }),
+  Object.freeze({ id: 'source-provenance',    severity: 'error', description: 'Every changing factual record carries at least one SourceRecord, and every SourceRecord carries publisher, sourceType, accessedAt and authorityLevel.' }),
+  Object.freeze({ id: 'licensing-resolved',   severity: 'error', description: 'No record whose licensing status is unresolved may reach pageStatus basic-profile, active-hub or archived.' }),
   Object.freeze({ id: 'verification-valid',   severity: 'error', description: 'verificationStatus is a member of ENUMS.verificationStatus.' }),
   Object.freeze({ id: 'provider-class-valid', severity: 'error', description: 'Provider classification is a member of ENUMS.providerClassification and was set explicitly.' }),
   Object.freeze({ id: 'placement-resolves',   severity: 'error', description: 'Every CommercialPlacement resolves to a target and to exactly one commercial source.' }),
@@ -998,7 +1014,7 @@ export const GLOBAL_RULES = Object.freeze([
   Object.freeze({ id: 'disclosure-present',   severity: 'error', description: 'requiresDisclosure true implies a non-empty disclosureLabel.' }),
   Object.freeze({ id: 'no-monetized-optout',  severity: 'error', description: 'No CommercialPlacement targets an entity whose monetizationEnabled is false.' }),
   Object.freeze({ id: 'gated-field-sourced',  severity: 'error', description: 'A verification-gated field carrying a value has a SourceRecord at or above minAuthorityForGated.' }),
-  Object.freeze({ id: 'no-orphans',           severity: 'warn',  description: 'Records reachable from no other record and carrying pageStatus none are reported.' }),
+  Object.freeze({ id: 'no-orphans',           severity: 'warn',  description: 'Records reachable from no other record and carrying pageStatus database-only are reported.' }),
   Object.freeze({ id: 'date-order',           severity: 'error', description: 'Paired date and datetime fields are in chronological order.' }),
   Object.freeze({ id: 'entity-constraints',   severity: 'error', description: 'Every rule listed in an entity descriptor constraints array holds.' }),
 ]);
