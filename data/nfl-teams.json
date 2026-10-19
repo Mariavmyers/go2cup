@@ -1,5 +1,6 @@
 {
  "season": 2026,
+ "pageStatus": "draft",
  "teams": [
   {
    "abbr": "ARI",
@@ -8,12 +9,18 @@
    "fullName": "Arizona Cardinals",
    "conference": "NFC",
    "division": "NFC West",
-   "color": "#a40227",
-   "alt": "#ffffff",
    "stadium": "State Farm Stadium",
    "city": "Glendale",
    "state": "AZ",
-   "hostCity": null
+   "hostCity": null,
+   "id": "team:nfl-ari",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "ATL",
@@ -22,12 +29,18 @@
    "fullName": "Atlanta Falcons",
    "conference": "NFC",
    "division": "NFC South",
-   "color": "#a71930",
-   "alt": "#000000",
    "stadium": "Mercedes-Benz Stadium",
    "city": "Atlanta",
    "state": "GA",
-   "hostCity": "host-cities/atlanta.html"
+   "hostCity": "host-cities/atlanta.html",
+   "id": "team:nfl-atl",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "BAL",
@@ -36,12 +49,18 @@
    "fullName": "Baltimore Ravens",
    "conference": "AFC",
    "division": "AFC North",
-   "color": "#29126f",
-   "alt": "#000000",
    "stadium": "M&T Bank Stadium",
    "city": "Baltimore",
    "state": "MD",
-   "hostCity": null
+   "hostCity": null,
+   "id": "team:nfl-bal",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "BUF",
@@ -50,12 +69,18 @@
    "fullName": "Buffalo Bills",
    "conference": "AFC",
    "division": "AFC East",
-   "color": "#00338d",
-   "alt": "#d50a0a",
    "stadium": "Highmark Stadium",
    "city": "Orchard Park",
    "state": "NY",
-   "hostCity": null
+   "hostCity": null,
+   "id": "team:nfl-buf",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "CAR",
@@ -64,12 +89,18 @@
    "fullName": "Carolina Panthers",
    "conference": "NFC",
    "division": "NFC South",
-   "color": "#0085ca",
-   "alt": "#000000",
    "stadium": "Bank of America Stadium",
    "city": "Charlotte",
    "state": "NC",
-   "hostCity": null
+   "hostCity": null,
+   "id": "team:nfl-car",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "CHI",
@@ -78,12 +109,18 @@
    "fullName": "Chicago Bears",
    "conference": "NFC",
    "division": "NFC North",
-   "color": "#0b1c3a",
-   "alt": "#e64100",
    "stadium": "Soldier Field",
    "city": "Chicago",
    "state": "IL",
-   "hostCity": null
+   "hostCity": null,
+   "id": "team:nfl-chi",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "CIN",
@@ -92,12 +129,18 @@
    "fullName": "Cincinnati Bengals",
    "conference": "AFC",
    "division": "AFC North",
-   "color": "#fb4f14",
-   "alt": "#000000",
    "stadium": "Paycor Stadium",
    "city": "Cincinnati",
    "state": "OH",
-   "hostCity": null
+   "hostCity": null,
+   "id": "team:nfl-cin",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "CLE",
@@ -106,12 +149,18 @@
    "fullName": "Cleveland Browns",
    "conference": "AFC",
    "division": "AFC North",
-   "color": "#472a08",
-   "alt": "#ff3c00",
    "stadium": "Huntington Bank Field",
    "city": "Cleveland",
    "state": "OH",
-   "hostCity": null
+   "hostCity": null,
+   "id": "team:nfl-cle",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "DAL",
@@ -120,12 +169,18 @@
    "fullName": "Dallas Cowboys",
    "conference": "NFC",
    "division": "NFC East",
-   "color": "#002a5c",
-   "alt": "#b0b7bc",
    "stadium": "AT&T Stadium",
    "city": "Arlington",
    "state": "TX",
-   "hostCity": "host-cities/dallas.html"
+   "hostCity": "host-cities/dallas.html",
+   "id": "team:nfl-dal",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "DEN",
@@ -134,12 +189,18 @@
    "fullName": "Denver Broncos",
    "conference": "AFC",
    "division": "AFC West",
-   "color": "#0a2343",
-   "alt": "#fc4c02",
    "stadium": "Empower Field at Mile High",
    "city": "Denver",
    "state": "CO",
-   "hostCity": null
+   "hostCity": null,
+   "id": "team:nfl-den",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "DET",
@@ -148,12 +209,18 @@
    "fullName": "Detroit Lions",
    "conference": "NFC",
    "division": "NFC North",
-   "color": "#0076b6",
-   "alt": "#bbbbbb",
    "stadium": "Ford Field",
    "city": "Detroit",
    "state": "MI",
-   "hostCity": null
+   "hostCity": null,
+   "id": "team:nfl-det",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "GB",
@@ -162,12 +229,18 @@
    "fullName": "Green Bay Packers",
    "conference": "NFC",
    "division": "NFC North",
-   "color": "#204e32",
-   "alt": "#ffb612",
    "stadium": "Lambeau Field",
    "city": "Green Bay",
    "state": "WI",
-   "hostCity": null
+   "hostCity": null,
+   "id": "team:nfl-gb",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "HOU",
@@ -176,12 +249,18 @@
    "fullName": "Houston Texans",
    "conference": "AFC",
    "division": "AFC South",
-   "color": "#021018",
-   "alt": "#eb0028",
    "stadium": "Reliant Stadium",
    "city": "Houston",
    "state": "TX",
-   "hostCity": "host-cities/houston.html"
+   "hostCity": "host-cities/houston.html",
+   "id": "team:nfl-hou",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "IND",
@@ -190,12 +269,18 @@
    "fullName": "Indianapolis Colts",
    "conference": "AFC",
    "division": "AFC South",
-   "color": "#003b75",
-   "alt": "#ffffff",
    "stadium": "Lucas Oil Stadium",
    "city": "Indianapolis",
    "state": "IN",
-   "hostCity": null
+   "hostCity": null,
+   "id": "team:nfl-ind",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "JAX",
@@ -204,12 +289,18 @@
    "fullName": "Jacksonville Jaguars",
    "conference": "AFC",
    "division": "AFC South",
-   "color": "#007487",
-   "alt": "#d7a22a",
    "stadium": "EverBank Stadium",
    "city": "Jacksonville",
    "state": "FL",
-   "hostCity": null
+   "hostCity": null,
+   "id": "team:nfl-jax",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "KC",
@@ -218,12 +309,18 @@
    "fullName": "Kansas City Chiefs",
    "conference": "AFC",
    "division": "AFC West",
-   "color": "#e31837",
-   "alt": "#ffb612",
    "stadium": "Arrowhead Stadium",
    "city": "Kansas City",
    "state": "MO",
-   "hostCity": "host-cities/kansas-city.html"
+   "hostCity": "host-cities/kansas-city.html",
+   "id": "team:nfl-kc",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "LV",
@@ -232,12 +329,18 @@
    "fullName": "Las Vegas Raiders",
    "conference": "AFC",
    "division": "AFC West",
-   "color": "#000000",
-   "alt": "#a5acaf",
    "stadium": "Allegiant Stadium",
    "city": "Las Vegas",
    "state": "NV",
-   "hostCity": null
+   "hostCity": null,
+   "id": "team:nfl-lv",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "LAC",
@@ -246,12 +349,18 @@
    "fullName": "Los Angeles Chargers",
    "conference": "AFC",
    "division": "AFC West",
-   "color": "#0080c6",
-   "alt": "#ffc20e",
    "stadium": "SoFi Stadium",
    "city": "Inglewood",
    "state": "CA",
-   "hostCity": "host-cities/los-angeles.html"
+   "hostCity": "host-cities/los-angeles.html",
+   "id": "team:nfl-lac",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "LAR",
@@ -260,12 +369,18 @@
    "fullName": "Los Angeles Rams",
    "conference": "NFC",
    "division": "NFC West",
-   "color": "#003594",
-   "alt": "#ffd100",
    "stadium": "SoFi Stadium",
    "city": "Inglewood",
    "state": "CA",
-   "hostCity": "host-cities/los-angeles.html"
+   "hostCity": "host-cities/los-angeles.html",
+   "id": "team:nfl-lar",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "MIA",
@@ -274,12 +389,18 @@
    "fullName": "Miami Dolphins",
    "conference": "AFC",
    "division": "AFC East",
-   "color": "#008e97",
-   "alt": "#fc4c02",
    "stadium": "Hard Rock Stadium",
    "city": "Miami Gardens",
    "state": "FL",
-   "hostCity": "host-cities/miami.html"
+   "hostCity": "host-cities/miami.html",
+   "id": "team:nfl-mia",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "MIN",
@@ -288,12 +409,18 @@
    "fullName": "Minnesota Vikings",
    "conference": "NFC",
    "division": "NFC North",
-   "color": "#4f2683",
-   "alt": "#ffc62f",
    "stadium": "U.S. Bank Stadium",
    "city": "Minneapolis",
    "state": "MN",
-   "hostCity": null
+   "hostCity": null,
+   "id": "team:nfl-min",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "NE",
@@ -302,12 +429,18 @@
    "fullName": "New England Patriots",
    "conference": "AFC",
    "division": "AFC East",
-   "color": "#002a5c",
-   "alt": "#c60c30",
    "stadium": "Gillette Stadium",
    "city": "Foxborough",
    "state": "MA",
-   "hostCity": "host-cities/boston-foxborough.html"
+   "hostCity": "host-cities/boston-foxborough.html",
+   "id": "team:nfl-ne",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "NO",
@@ -316,12 +449,18 @@
    "fullName": "New Orleans Saints",
    "conference": "NFC",
    "division": "NFC South",
-   "color": "#d3bc8d",
-   "alt": "#000000",
    "stadium": "Caesars Superdome",
    "city": "New Orleans",
    "state": "LA",
-   "hostCity": null
+   "hostCity": null,
+   "id": "team:nfl-no",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "NYG",
@@ -330,12 +469,18 @@
    "fullName": "New York Giants",
    "conference": "NFC",
    "division": "NFC East",
-   "color": "#003c7f",
-   "alt": "#c9243f",
    "stadium": "MetLife Stadium",
    "city": "East Rutherford",
    "state": "NJ",
-   "hostCity": "host-cities/new-york-new-jersey.html"
+   "hostCity": "host-cities/new-york-new-jersey.html",
+   "id": "team:nfl-nyg",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "NYJ",
@@ -344,12 +489,18 @@
    "fullName": "New York Jets",
    "conference": "AFC",
    "division": "AFC East",
-   "color": "#115740",
-   "alt": "#ffffff",
    "stadium": "MetLife Stadium",
    "city": "East Rutherford",
    "state": "NJ",
-   "hostCity": "host-cities/new-york-new-jersey.html"
+   "hostCity": "host-cities/new-york-new-jersey.html",
+   "id": "team:nfl-nyj",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "PHI",
@@ -358,12 +509,18 @@
    "fullName": "Philadelphia Eagles",
    "conference": "NFC",
    "division": "NFC East",
-   "color": "#06424d",
-   "alt": "#000000",
    "stadium": "Lincoln Financial Field",
    "city": "Philadelphia",
    "state": "PA",
-   "hostCity": "host-cities/philadelphia.html"
+   "hostCity": "host-cities/philadelphia.html",
+   "id": "team:nfl-phi",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "PIT",
@@ -372,12 +529,18 @@
    "fullName": "Pittsburgh Steelers",
    "conference": "AFC",
    "division": "AFC North",
-   "color": "#000000",
-   "alt": "#ffb612",
    "stadium": "Acrisure Stadium",
    "city": "Pittsburgh",
    "state": "PA",
-   "hostCity": null
+   "hostCity": null,
+   "id": "team:nfl-pit",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "SF",
@@ -386,12 +549,18 @@
    "fullName": "San Francisco 49ers",
    "conference": "NFC",
    "division": "NFC West",
-   "color": "#aa0000",
-   "alt": "#b3995d",
    "stadium": "Levi's Stadium",
    "city": "Santa Clara",
    "state": "CA",
-   "hostCity": "host-cities/san-francisco-bay-area.html"
+   "hostCity": "host-cities/san-francisco-bay-area.html",
+   "id": "team:nfl-sf",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "SEA",
@@ -400,12 +569,18 @@
    "fullName": "Seattle Seahawks",
    "conference": "NFC",
    "division": "NFC West",
-   "color": "#002a5c",
-   "alt": "#69be28",
    "stadium": "Lumen Field",
    "city": "Seattle",
    "state": "WA",
-   "hostCity": "host-cities/seattle.html"
+   "hostCity": "host-cities/seattle.html",
+   "id": "team:nfl-sea",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "TB",
@@ -414,12 +589,18 @@
    "fullName": "Tampa Bay Buccaneers",
    "conference": "NFC",
    "division": "NFC South",
-   "color": "#bd1c36",
-   "alt": "#3e3a35",
    "stadium": "Raymond James Stadium",
    "city": "Tampa",
    "state": "FL",
-   "hostCity": null
+   "hostCity": null,
+   "id": "team:nfl-tb",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "TEN",
@@ -428,12 +609,18 @@
    "fullName": "Tennessee Titans",
    "conference": "AFC",
    "division": "AFC South",
-   "color": "#4495d2",
-   "alt": "#001532",
    "stadium": "Nissan Stadium",
    "city": "Nashville",
    "state": "TN",
-   "hostCity": null
+   "hostCity": null,
+   "id": "team:nfl-ten",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   },
   {
    "abbr": "WSH",
@@ -442,12 +629,18 @@
    "fullName": "Washington Commanders",
    "conference": "NFC",
    "division": "NFC East",
-   "color": "#5a1414",
-   "alt": "#ffb612",
    "stadium": "Northwest Stadium",
    "city": "Landover",
    "state": "MD",
-   "hostCity": null
+   "hostCity": null,
+   "id": "team:nfl-wsh",
+   "sourceRecordIds": [
+    "source:espn-nfl-scoreboard-2026"
+   ],
+   "verificationStatus": "unverified",
+   "lastUpdated": "2026-10-19T18:00:00Z",
+   "pageStatus": "draft",
+   "notes": "Stadium name taken from the venue listed for this team's home games in the source feed. Venue names are naming-rights sensitive and are not yet confirmed against an official source (ENTITIES.md venue gating, POLICY 6.5)."
   }
  ]
 }
