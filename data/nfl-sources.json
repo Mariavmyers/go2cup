@@ -1,0 +1,24 @@
+{
+ "sources": [
+  {
+   "id": "source:espn-nfl-scoreboard-2026",
+   "sourceType": "dataset",
+   "publisher": "ESPN",
+   "title": "NFL scoreboard data, 2026 regular season, weeks 1–8",
+   "url": "https://www.espn.com/nfl/scoreboard",
+   "accessedAt": "2026-10-19T18:00:00Z",
+   "authorityLevel": "aggregator",
+   "notes": "Read from ESPN's public scoreboard JSON feed (site.api.espn.com), which is undocumented. Used offline only; the page does not call it. LICENSING UNRESOLVED: no right to commercially republish this schedule/score compilation has been established. Hold the page at draft until resolved (DATA-PUBLISHING-POLICY.md 2.3)."
+  },
+  {
+   "id": "source:champsorchumps-nfl-2026",
+   "sourceType": "dataset",
+   "publisher": "Champs or Chumps",
+   "title": "2026 NFL weekly scores and results",
+   "url": "https://champsorchumps.us/scores/nfl/2026/week-1",
+   "accessedAt": "2026-10-19T18:00:00Z",
+   "authorityLevel": "community",
+   "notes": "Used only to cross-check final scores for weeks 1–5 (78 games, 0 mismatches). Licensing not reviewed."
+  }
+ ]
+}
