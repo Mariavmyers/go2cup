@@ -1,0 +1,5174 @@
+{
+ "season": 2026,
+ "updated": "2026-10-20",
+ "sources": [
+  {
+   "id": "source:nfl-club-site-ari",
+   "sourceType": "official_site",
+   "publisher": "Arizona Cardinals",
+   "title": "Arizona Cardinals 2026 schedule (official club site)",
+   "url": "https://www.azcardinals.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-atl",
+   "sourceType": "official_site",
+   "publisher": "Atlanta Falcons",
+   "title": "Atlanta Falcons 2026 schedule (official club site)",
+   "url": "https://www.atlantafalcons.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-bal",
+   "sourceType": "official_site",
+   "publisher": "Baltimore Ravens",
+   "title": "Baltimore Ravens 2026 schedule (official club site)",
+   "url": "https://www.baltimoreravens.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-buf",
+   "sourceType": "official_site",
+   "publisher": "Buffalo Bills",
+   "title": "Buffalo Bills 2026 schedule (official club site)",
+   "url": "https://www.buffalobills.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-car",
+   "sourceType": "official_site",
+   "publisher": "Carolina Panthers",
+   "title": "Carolina Panthers 2026 schedule (official club site)",
+   "url": "https://www.panthers.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-chi",
+   "sourceType": "official_site",
+   "publisher": "Chicago Bears",
+   "title": "Chicago Bears 2026 schedule (official club site)",
+   "url": "https://www.chicagobears.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-cin",
+   "sourceType": "official_site",
+   "publisher": "Cincinnati Bengals",
+   "title": "Cincinnati Bengals 2026 schedule (official club site)",
+   "url": "https://www.bengals.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-cle",
+   "sourceType": "official_site",
+   "publisher": "Cleveland Browns",
+   "title": "Cleveland Browns 2026 schedule (official club site)",
+   "url": "https://www.clevelandbrowns.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-dal",
+   "sourceType": "official_site",
+   "publisher": "Dallas Cowboys",
+   "title": "Dallas Cowboys 2026 schedule (official club site)",
+   "url": "https://www.dallascowboys.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-den",
+   "sourceType": "official_site",
+   "publisher": "Denver Broncos",
+   "title": "Denver Broncos 2026 schedule (official club site)",
+   "url": "https://www.denverbroncos.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-det",
+   "sourceType": "official_site",
+   "publisher": "Detroit Lions",
+   "title": "Detroit Lions 2026 schedule (official club site)",
+   "url": "https://www.detroitlions.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-gb",
+   "sourceType": "official_site",
+   "publisher": "Green Bay Packers",
+   "title": "Green Bay Packers 2026 schedule (official club site)",
+   "url": "https://www.packers.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-hou",
+   "sourceType": "official_site",
+   "publisher": "Houston Texans",
+   "title": "Houston Texans 2026 schedule (official club site)",
+   "url": "https://www.houstontexans.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-ind",
+   "sourceType": "official_site",
+   "publisher": "Indianapolis Colts",
+   "title": "Indianapolis Colts 2026 schedule (official club site)",
+   "url": "https://www.colts.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-jax",
+   "sourceType": "official_site",
+   "publisher": "Jacksonville Jaguars",
+   "title": "Jacksonville Jaguars 2026 schedule (official club site)",
+   "url": "https://www.jaguars.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-kc",
+   "sourceType": "official_site",
+   "publisher": "Kansas City Chiefs",
+   "title": "Kansas City Chiefs 2026 schedule (official club site)",
+   "url": "https://www.chiefs.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-lv",
+   "sourceType": "official_site",
+   "publisher": "Las Vegas Raiders",
+   "title": "Las Vegas Raiders 2026 schedule (official club site)",
+   "url": "https://www.raiders.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-lac",
+   "sourceType": "official_site",
+   "publisher": "Los Angeles Chargers",
+   "title": "Los Angeles Chargers 2026 schedule (official club site)",
+   "url": "https://www.chargers.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-lar",
+   "sourceType": "official_site",
+   "publisher": "Los Angeles Rams",
+   "title": "Los Angeles Rams 2026 schedule (official club site)",
+   "url": "https://www.therams.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-mia",
+   "sourceType": "official_site",
+   "publisher": "Miami Dolphins",
+   "title": "Miami Dolphins 2026 schedule (official club site)",
+   "url": "https://www.miamidolphins.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-min",
+   "sourceType": "official_site",
+   "publisher": "Minnesota Vikings",
+   "title": "Minnesota Vikings 2026 schedule (official club site)",
+   "url": "https://www.vikings.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-ne",
+   "sourceType": "official_site",
+   "publisher": "New England Patriots",
+   "title": "New England Patriots 2026 schedule (official club site)",
+   "url": "https://www.patriots.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-no",
+   "sourceType": "official_site",
+   "publisher": "New Orleans Saints",
+   "title": "New Orleans Saints 2026 schedule (official club site)",
+   "url": "https://www.neworleanssaints.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-nyg",
+   "sourceType": "official_site",
+   "publisher": "New York Giants",
+   "title": "New York Giants 2026 schedule (official club site)",
+   "url": "https://www.giants.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-nyj",
+   "sourceType": "official_site",
+   "publisher": "New York Jets",
+   "title": "New York Jets 2026 schedule (official club site)",
+   "url": "https://www.newyorkjets.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-phi",
+   "sourceType": "official_site",
+   "publisher": "Philadelphia Eagles",
+   "title": "Philadelphia Eagles 2026 schedule (official club site)",
+   "url": "https://www.philadelphiaeagles.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-pit",
+   "sourceType": "official_site",
+   "publisher": "Pittsburgh Steelers",
+   "title": "Pittsburgh Steelers 2026 schedule (official club site)",
+   "url": "https://www.steelers.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-sf",
+   "sourceType": "official_site",
+   "publisher": "San Francisco 49ers",
+   "title": "San Francisco 49ers 2026 schedule (official club site)",
+   "url": "https://www.49ers.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-sea",
+   "sourceType": "official_site",
+   "publisher": "Seattle Seahawks",
+   "title": "Seattle Seahawks 2026 schedule (official club site)",
+   "url": "https://www.seahawks.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-tb",
+   "sourceType": "official_site",
+   "publisher": "Tampa Bay Buccaneers",
+   "title": "Tampa Bay Buccaneers 2026 schedule (official club site)",
+   "url": "https://www.buccaneers.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-ten",
+   "sourceType": "official_site",
+   "publisher": "Tennessee Titans",
+   "title": "Tennessee Titans 2026 schedule (official club site)",
+   "url": "https://www.tennesseetitans.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  },
+  {
+   "id": "source:nfl-club-site-wsh",
+   "sourceType": "official_site",
+   "publisher": "Washington Commanders",
+   "title": "Washington Commanders 2026 schedule (official club site)",
+   "url": "https://www.commanders.com/schedule/",
+   "accessedAt": "2026-10-20T23:30:00Z",
+   "authorityLevel": "official",
+   "notes": "Official club schedule page."
+  }
+ ],
+ "games": [
+  {
+   "id": "event:nfl-2026-49ers-at-rams-w1",
+   "week": 1,
+   "away": "SF",
+   "home": "LAR",
+   "kickoff": "2026-09-11T00:35:00Z",
+   "kickoffTBD": false,
+   "venue": "Melbourne Cricket Ground",
+   "city": "East Melbourne",
+   "country": "Australia",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lar",
+    "source:nfl-club-site-sf"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bears-at-panthers-w1",
+   "week": 1,
+   "away": "CHI",
+   "home": "CAR",
+   "kickoff": "2026-09-13T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Bank of America Stadium",
+   "city": "Charlotte",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-chi"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-bills-at-texans-w1",
+   "week": 1,
+   "away": "BUF",
+   "home": "HOU",
+   "kickoff": "2026-09-13T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Reliant Stadium",
+   "city": "Houston",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-buf"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-broncos-at-chiefs-w1",
+   "week": 1,
+   "away": "DEN",
+   "home": "KC",
+   "kickoff": "2026-09-15T00:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Arrowhead Stadium",
+   "city": "Kansas City",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-den",
+    "source:nfl-club-site-kc"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-browns-at-jaguars-w1",
+   "week": 1,
+   "away": "CLE",
+   "home": "JAX",
+   "kickoff": "2026-09-13T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "EverBank Stadium",
+   "city": "Jacksonville",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cle",
+    "source:nfl-club-site-jax"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-buccaneers-at-bengals-w1",
+   "week": 1,
+   "away": "TB",
+   "home": "CIN",
+   "kickoff": "2026-09-13T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Paycor Stadium",
+   "city": "Cincinnati",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cin",
+    "source:nfl-club-site-tb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-cardinals-at-chargers-w1",
+   "week": 1,
+   "away": "ARI",
+   "home": "LAC",
+   "kickoff": "2026-09-13T20:25:00Z",
+   "kickoffTBD": false,
+   "venue": "SoFi Stadium",
+   "city": "Inglewood",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ari",
+    "source:nfl-club-site-lac"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-commanders-at-eagles-w1",
+   "week": 1,
+   "away": "WSH",
+   "home": "PHI",
+   "kickoff": "2026-09-13T20:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Lincoln Financial Field",
+   "city": "Philadelphia",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-phi",
+    "source:nfl-club-site-wsh"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-cowboys-at-giants-w1",
+   "week": 1,
+   "away": "DAL",
+   "home": "NYG",
+   "kickoff": "2026-09-14T00:20:00Z",
+   "kickoffTBD": false,
+   "venue": "MetLife Stadium",
+   "city": "East Rutherford",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-dal",
+    "source:nfl-club-site-nyg"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-dolphins-at-raiders-w1",
+   "week": 1,
+   "away": "MIA",
+   "home": "LV",
+   "kickoff": "2026-09-13T20:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Allegiant Stadium",
+   "city": "Paradise",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lv"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-falcons-at-steelers-w1",
+   "week": 1,
+   "away": "ATL",
+   "home": "PIT",
+   "kickoff": "2026-09-13T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Acrisure Stadium",
+   "city": "Pittsburgh",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-atl",
+    "source:nfl-club-site-pit"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-jets-at-titans-w1",
+   "week": 1,
+   "away": "NYJ",
+   "home": "TEN",
+   "kickoff": "2026-09-13T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Nissan Stadium",
+   "city": "Nashville",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-nyj",
+    "source:nfl-club-site-ten"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-packers-at-vikings-w1",
+   "week": 1,
+   "away": "GB",
+   "home": "MIN",
+   "kickoff": "2026-09-13T20:25:00Z",
+   "kickoffTBD": false,
+   "venue": "U.S. Bank Stadium",
+   "city": "Minneapolis",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-gb",
+    "source:nfl-club-site-min"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-patriots-at-seahawks-w1",
+   "week": 1,
+   "away": "NE",
+   "home": "SEA",
+   "kickoff": "2026-09-10T00:20:00Z",
+   "kickoffTBD": false,
+   "venue": "Lumen Field",
+   "city": "Seattle",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ne",
+    "source:nfl-club-site-sea"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-ravens-at-colts-w1",
+   "week": 1,
+   "away": "BAL",
+   "home": "IND",
+   "kickoff": "2026-09-13T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Lucas Oil Stadium",
+   "city": "Indianapolis",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-bal",
+    "source:nfl-club-site-ind"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-saints-at-lions-w1",
+   "week": 1,
+   "away": "NO",
+   "home": "DET",
+   "kickoff": "2026-09-13T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Ford Field",
+   "city": "Detroit",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-det",
+    "source:nfl-club-site-no"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bengals-at-texans-w2",
+   "week": 2,
+   "away": "CIN",
+   "home": "HOU",
+   "kickoff": "2026-09-20T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Reliant Stadium",
+   "city": "Houston",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cin"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-browns-at-buccaneers-w2",
+   "week": 2,
+   "away": "CLE",
+   "home": "TB",
+   "kickoff": "2026-09-20T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Raymond James Stadium",
+   "city": "Tampa",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cle",
+    "source:nfl-club-site-tb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-colts-at-chiefs-w2",
+   "week": 2,
+   "away": "IND",
+   "home": "KC",
+   "kickoff": "2026-09-21T00:20:00Z",
+   "kickoffTBD": false,
+   "venue": "Arrowhead Stadium",
+   "city": "Kansas City",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ind",
+    "source:nfl-club-site-kc"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-commanders-at-cowboys-w2",
+   "week": 2,
+   "away": "WSH",
+   "home": "DAL",
+   "kickoff": "2026-09-20T20:25:00Z",
+   "kickoffTBD": false,
+   "venue": "AT&T Stadium",
+   "city": "Arlington",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-dal",
+    "source:nfl-club-site-wsh"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-dolphins-at-49ers-w2",
+   "week": 2,
+   "away": "MIA",
+   "home": "SF",
+   "kickoff": "2026-09-20T20:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Levi's Stadium",
+   "city": "Santa Clara",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-sf"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-eagles-at-titans-w2",
+   "week": 2,
+   "away": "PHI",
+   "home": "TEN",
+   "kickoff": "2026-09-20T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Nissan Stadium",
+   "city": "Nashville",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-phi",
+    "source:nfl-club-site-ten"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-giants-at-rams-w2",
+   "week": 2,
+   "away": "NYG",
+   "home": "LAR",
+   "kickoff": "2026-09-22T00:15:00Z",
+   "kickoffTBD": false,
+   "venue": "SoFi Stadium",
+   "city": "Inglewood",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lar",
+    "source:nfl-club-site-nyg"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-jaguars-at-broncos-w2",
+   "week": 2,
+   "away": "JAX",
+   "home": "DEN",
+   "kickoff": "2026-09-20T20:05:00Z",
+   "kickoffTBD": false,
+   "venue": "Empower Field at Mile High",
+   "city": "Denver",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-den",
+    "source:nfl-club-site-jax"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-lions-at-bills-w2",
+   "week": 2,
+   "away": "DET",
+   "home": "BUF",
+   "kickoff": "2026-09-18T00:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Highmark Stadium",
+   "city": "Orchard Park",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-buf",
+    "source:nfl-club-site-det"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-packers-at-jets-w2",
+   "week": 2,
+   "away": "GB",
+   "home": "NYJ",
+   "kickoff": "2026-09-20T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "MetLife Stadium",
+   "city": "East Rutherford",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-gb",
+    "source:nfl-club-site-nyj"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-panthers-at-falcons-w2",
+   "week": 2,
+   "away": "CAR",
+   "home": "ATL",
+   "kickoff": "2026-09-20T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Mercedes-Benz Stadium",
+   "city": "Atlanta",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-atl"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-raiders-at-chargers-w2",
+   "week": 2,
+   "away": "LV",
+   "home": "LAC",
+   "kickoff": "2026-09-20T20:05:00Z",
+   "kickoffTBD": false,
+   "venue": "SoFi Stadium",
+   "city": "Inglewood",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lac",
+    "source:nfl-club-site-lv"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-saints-at-ravens-w2",
+   "week": 2,
+   "away": "NO",
+   "home": "BAL",
+   "kickoff": "2026-09-20T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "M&T Bank Stadium",
+   "city": "Baltimore",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-bal",
+    "source:nfl-club-site-no"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-seahawks-at-cardinals-w2",
+   "week": 2,
+   "away": "SEA",
+   "home": "ARI",
+   "kickoff": "2026-09-20T20:25:00Z",
+   "kickoffTBD": false,
+   "venue": "State Farm Stadium",
+   "city": "Glendale",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ari",
+    "source:nfl-club-site-sea"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-steelers-at-patriots-w2",
+   "week": 2,
+   "away": "PIT",
+   "home": "NE",
+   "kickoff": "2026-09-20T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Gillette Stadium",
+   "city": "Foxborough",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ne",
+    "source:nfl-club-site-pit"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-vikings-at-bears-w2",
+   "week": 2,
+   "away": "MIN",
+   "home": "CHI",
+   "kickoff": "2026-09-20T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Soldier Field",
+   "city": "Chicago",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-chi",
+    "source:nfl-club-site-min"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bengals-at-steelers-w3",
+   "week": 3,
+   "away": "CIN",
+   "home": "PIT",
+   "kickoff": "2026-09-27T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Acrisure Stadium",
+   "city": "Pittsburgh",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cin",
+    "source:nfl-club-site-pit"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-cardinals-at-49ers-w3",
+   "week": 3,
+   "away": "ARI",
+   "home": "SF",
+   "kickoff": "2026-09-27T20:05:00Z",
+   "kickoffTBD": false,
+   "venue": "Levi's Stadium",
+   "city": "Santa Clara",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ari",
+    "source:nfl-club-site-sf"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-chargers-at-bills-w3",
+   "week": 3,
+   "away": "LAC",
+   "home": "BUF",
+   "kickoff": "2026-09-27T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Highmark Stadium",
+   "city": "Orchard Park",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-buf",
+    "source:nfl-club-site-lac"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-chiefs-at-dolphins-w3",
+   "week": 3,
+   "away": "KC",
+   "home": "MIA",
+   "kickoff": "2026-09-27T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Hard Rock Stadium",
+   "city": "Opa Locka",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-kc"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-eagles-at-bears-w3",
+   "week": 3,
+   "away": "PHI",
+   "home": "CHI",
+   "kickoff": "2026-09-29T00:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Soldier Field",
+   "city": "Chicago",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-chi",
+    "source:nfl-club-site-phi"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-falcons-at-packers-w3",
+   "week": 3,
+   "away": "ATL",
+   "home": "GB",
+   "kickoff": "2026-09-25T00:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Lambeau Field",
+   "city": "Green Bay",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-atl",
+    "source:nfl-club-site-gb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-jets-at-lions-w3",
+   "week": 3,
+   "away": "NYJ",
+   "home": "DET",
+   "kickoff": "2026-09-27T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Ford Field",
+   "city": "Detroit",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-det",
+    "source:nfl-club-site-nyj"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-panthers-at-browns-w3",
+   "week": 3,
+   "away": "CAR",
+   "home": "CLE",
+   "kickoff": "2026-09-27T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Huntington Bank Field",
+   "city": "Cleveland",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cle"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-patriots-at-jaguars-w3",
+   "week": 3,
+   "away": "NE",
+   "home": "JAX",
+   "kickoff": "2026-09-27T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "EverBank Stadium",
+   "city": "Jacksonville",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-jax",
+    "source:nfl-club-site-ne"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-raiders-at-saints-w3",
+   "week": 3,
+   "away": "LV",
+   "home": "NO",
+   "kickoff": "2026-09-27T20:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Caesars Superdome",
+   "city": "New Orleans",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lv",
+    "source:nfl-club-site-no"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-rams-at-broncos-w3",
+   "week": 3,
+   "away": "LAR",
+   "home": "DEN",
+   "kickoff": "2026-09-28T00:20:00Z",
+   "kickoffTBD": false,
+   "venue": "Empower Field at Mile High",
+   "city": "Denver",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-den",
+    "source:nfl-club-site-lar"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-ravens-at-cowboys-w3",
+   "week": 3,
+   "away": "BAL",
+   "home": "DAL",
+   "kickoff": "2026-09-27T20:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Maracana Stadium",
+   "city": "Rio de Janeiro",
+   "country": "Brazil",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-bal",
+    "source:nfl-club-site-dal"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-seahawks-at-commanders-w3",
+   "week": 3,
+   "away": "SEA",
+   "home": "WSH",
+   "kickoff": "2026-09-27T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Northwest Stadium",
+   "city": "Landover",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-sea",
+    "source:nfl-club-site-wsh"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-texans-at-colts-w3",
+   "week": 3,
+   "away": "HOU",
+   "home": "IND",
+   "kickoff": "2026-09-27T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Lucas Oil Stadium",
+   "city": "Indianapolis",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ind"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-titans-at-giants-w3",
+   "week": 3,
+   "away": "TEN",
+   "home": "NYG",
+   "kickoff": "2026-09-27T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "MetLife Stadium",
+   "city": "East Rutherford",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-nyg",
+    "source:nfl-club-site-ten"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-vikings-at-buccaneers-w3",
+   "week": 3,
+   "away": "MIN",
+   "home": "TB",
+   "kickoff": "2026-09-27T20:05:00Z",
+   "kickoffTBD": false,
+   "venue": "Raymond James Stadium",
+   "city": "Tampa",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-min",
+    "source:nfl-club-site-tb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-broncos-at-49ers-w4",
+   "week": 4,
+   "away": "DEN",
+   "home": "SF",
+   "kickoff": "2026-10-04T20:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Levi's Stadium",
+   "city": "Santa Clara",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-den",
+    "source:nfl-club-site-sf"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-cardinals-at-giants-w4",
+   "week": 4,
+   "away": "ARI",
+   "home": "NYG",
+   "kickoff": "2026-10-04T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "MetLife Stadium",
+   "city": "East Rutherford",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ari",
+    "source:nfl-club-site-nyg"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-chargers-at-seahawks-w4",
+   "week": 4,
+   "away": "LAC",
+   "home": "SEA",
+   "kickoff": "2026-10-04T20:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Lumen Field",
+   "city": "Seattle",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lac",
+    "source:nfl-club-site-sea"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-chiefs-at-raiders-w4",
+   "week": 4,
+   "away": "KC",
+   "home": "LV",
+   "kickoff": "2026-10-04T20:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Allegiant Stadium",
+   "city": "Paradise",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-kc",
+    "source:nfl-club-site-lv"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-colts-at-commanders-w4",
+   "week": 4,
+   "away": "IND",
+   "home": "WSH",
+   "kickoff": "2026-10-04T13:30:00Z",
+   "kickoffTBD": false,
+   "venue": "Tottenham Hotspur Stadium",
+   "city": "London",
+   "country": "England",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ind",
+    "source:nfl-club-site-wsh"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-cowboys-at-texans-w4",
+   "week": 4,
+   "away": "DAL",
+   "home": "HOU",
+   "kickoff": "2026-10-04T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Reliant Stadium",
+   "city": "Houston",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-dal"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-dolphins-at-vikings-w4",
+   "week": 4,
+   "away": "MIA",
+   "home": "MIN",
+   "kickoff": "2026-10-04T20:05:00Z",
+   "kickoffTBD": false,
+   "venue": "U.S. Bank Stadium",
+   "city": "Minneapolis",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-min"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-falcons-at-saints-w4",
+   "week": 4,
+   "away": "ATL",
+   "home": "NO",
+   "kickoff": "2026-10-06T00:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Caesars Superdome",
+   "city": "New Orleans",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-atl",
+    "source:nfl-club-site-no"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-jaguars-at-bengals-w4",
+   "week": 4,
+   "away": "JAX",
+   "home": "CIN",
+   "kickoff": "2026-10-04T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Paycor Stadium",
+   "city": "Cincinnati",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cin",
+    "source:nfl-club-site-jax"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-jets-at-bears-w4",
+   "week": 4,
+   "away": "NYJ",
+   "home": "CHI",
+   "kickoff": "2026-10-04T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Soldier Field",
+   "city": "Chicago",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-chi",
+    "source:nfl-club-site-nyj"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-lions-at-panthers-w4",
+   "week": 4,
+   "away": "DET",
+   "home": "CAR",
+   "kickoff": "2026-10-05T00:20:00Z",
+   "kickoffTBD": false,
+   "venue": "Bank of America Stadium",
+   "city": "Charlotte",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-det"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-packers-at-buccaneers-w4",
+   "week": 4,
+   "away": "GB",
+   "home": "TB",
+   "kickoff": "2026-10-04T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Raymond James Stadium",
+   "city": "Tampa",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-gb",
+    "source:nfl-club-site-tb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-patriots-at-bills-w4",
+   "week": 4,
+   "away": "NE",
+   "home": "BUF",
+   "kickoff": "2026-10-04T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Highmark Stadium",
+   "city": "Orchard Park",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-buf",
+    "source:nfl-club-site-ne"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-rams-at-eagles-w4",
+   "week": 4,
+   "away": "LAR",
+   "home": "PHI",
+   "kickoff": "2026-10-04T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Lincoln Financial Field",
+   "city": "Philadelphia",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lar",
+    "source:nfl-club-site-phi"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-steelers-at-browns-w4",
+   "week": 4,
+   "away": "PIT",
+   "home": "CLE",
+   "kickoff": "2026-10-02T00:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Huntington Bank Field",
+   "city": "Cleveland",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cle",
+    "source:nfl-club-site-pit"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-titans-at-ravens-w4",
+   "week": 4,
+   "away": "TEN",
+   "home": "BAL",
+   "kickoff": "2026-10-04T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "M&T Bank Stadium",
+   "city": "Baltimore",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-bal",
+    "source:nfl-club-site-ten"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-49ers-at-seahawks-w5",
+   "week": 5,
+   "away": "SF",
+   "home": "SEA",
+   "kickoff": "2026-10-11T20:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Lumen Field",
+   "city": "Seattle",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-sea",
+    "source:nfl-club-site-sf"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bears-at-packers-w5",
+   "week": 5,
+   "away": "CHI",
+   "home": "GB",
+   "kickoff": "2026-10-11T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Lambeau Field",
+   "city": "Green Bay",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-chi",
+    "source:nfl-club-site-gb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bengals-at-dolphins-w5",
+   "week": 5,
+   "away": "CIN",
+   "home": "MIA",
+   "kickoff": "2026-10-11T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Hard Rock Stadium",
+   "city": "Opa Locka",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cin"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-bills-at-rams-w5",
+   "week": 5,
+   "away": "BUF",
+   "home": "LAR",
+   "kickoff": "2026-10-13T00:15:00Z",
+   "kickoffTBD": false,
+   "venue": "SoFi Stadium",
+   "city": "Inglewood",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-buf",
+    "source:nfl-club-site-lar"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-broncos-at-chargers-w5",
+   "week": 5,
+   "away": "DEN",
+   "home": "LAC",
+   "kickoff": "2026-10-11T20:05:00Z",
+   "kickoffTBD": false,
+   "venue": "SoFi Stadium",
+   "city": "Inglewood",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-den",
+    "source:nfl-club-site-lac"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-browns-at-jets-w5",
+   "week": 5,
+   "away": "CLE",
+   "home": "NYJ",
+   "kickoff": "2026-10-11T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "MetLife Stadium",
+   "city": "East Rutherford",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cle",
+    "source:nfl-club-site-nyj"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-buccaneers-at-cowboys-w5",
+   "week": 5,
+   "away": "TB",
+   "home": "DAL",
+   "kickoff": "2026-10-09T00:15:00Z",
+   "kickoffTBD": false,
+   "venue": "AT&T Stadium",
+   "city": "Arlington",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-dal",
+    "source:nfl-club-site-tb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-colts-at-steelers-w5",
+   "week": 5,
+   "away": "IND",
+   "home": "PIT",
+   "kickoff": "2026-10-11T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Acrisure Stadium",
+   "city": "Pittsburgh",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ind",
+    "source:nfl-club-site-pit"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-eagles-at-jaguars-w5",
+   "week": 5,
+   "away": "PHI",
+   "home": "JAX",
+   "kickoff": "2026-10-11T13:30:00Z",
+   "kickoffTBD": false,
+   "venue": "Tottenham Hotspur Stadium",
+   "city": "London",
+   "country": "England",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-jax",
+    "source:nfl-club-site-phi"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-giants-at-commanders-w5",
+   "week": 5,
+   "away": "NYG",
+   "home": "WSH",
+   "kickoff": "2026-10-11T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Northwest Stadium",
+   "city": "Landover",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-nyg",
+    "source:nfl-club-site-wsh"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-lions-at-cardinals-w5",
+   "week": 5,
+   "away": "DET",
+   "home": "ARI",
+   "kickoff": "2026-10-11T20:25:00Z",
+   "kickoffTBD": false,
+   "venue": "State Farm Stadium",
+   "city": "Glendale",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ari",
+    "source:nfl-club-site-det"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-raiders-at-patriots-w5",
+   "week": 5,
+   "away": "LV",
+   "home": "NE",
+   "kickoff": "2026-10-11T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Gillette Stadium",
+   "city": "Foxborough",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lv",
+    "source:nfl-club-site-ne"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-ravens-at-falcons-w5",
+   "week": 5,
+   "away": "BAL",
+   "home": "ATL",
+   "kickoff": "2026-10-12T00:20:00Z",
+   "kickoffTBD": false,
+   "venue": "Mercedes-Benz Stadium",
+   "city": "Atlanta",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-atl",
+    "source:nfl-club-site-bal"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-texans-at-titans-w5",
+   "week": 5,
+   "away": "HOU",
+   "home": "TEN",
+   "kickoff": "2026-10-11T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Nissan Stadium",
+   "city": "Nashville",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ten"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-vikings-at-saints-w5",
+   "week": 5,
+   "away": "MIN",
+   "home": "NO",
+   "kickoff": "2026-10-11T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Caesars Superdome",
+   "city": "New Orleans",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-min",
+    "source:nfl-club-site-no"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bears-at-falcons-w6",
+   "week": 6,
+   "away": "CHI",
+   "home": "ATL",
+   "kickoff": "2026-10-18T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Mercedes-Benz Stadium",
+   "city": "Atlanta",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-atl",
+    "source:nfl-club-site-chi"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bills-at-raiders-w6",
+   "week": 6,
+   "away": "BUF",
+   "home": "LV",
+   "kickoff": "2026-10-18T20:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Allegiant Stadium",
+   "city": "Paradise",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-buf",
+    "source:nfl-club-site-lv"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-cardinals-at-rams-w6",
+   "week": 6,
+   "away": "ARI",
+   "home": "LAR",
+   "kickoff": "2026-10-18T20:05:00Z",
+   "kickoffTBD": false,
+   "venue": "SoFi Stadium",
+   "city": "Inglewood",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ari",
+    "source:nfl-club-site-lar"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-chargers-at-chiefs-w6",
+   "week": 6,
+   "away": "LAC",
+   "home": "KC",
+   "kickoff": "2026-10-18T20:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Arrowhead Stadium",
+   "city": "Kansas City",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-kc",
+    "source:nfl-club-site-lac"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-commanders-at-49ers-w6",
+   "week": 6,
+   "away": "WSH",
+   "home": "SF",
+   "kickoff": "2026-10-20T00:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Levi's Stadium",
+   "city": "Santa Clara",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-sf",
+    "source:nfl-club-site-wsh"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-cowboys-at-packers-w6",
+   "week": 6,
+   "away": "DAL",
+   "home": "GB",
+   "kickoff": "2026-10-19T00:20:00Z",
+   "kickoffTBD": false,
+   "venue": "Lambeau Field",
+   "city": "Green Bay",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-dal",
+    "source:nfl-club-site-gb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-jets-at-patriots-w6",
+   "week": 6,
+   "away": "NYJ",
+   "home": "NE",
+   "kickoff": "2026-10-18T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Gillette Stadium",
+   "city": "Foxborough",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ne",
+    "source:nfl-club-site-nyj"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-panthers-at-eagles-w6",
+   "week": 6,
+   "away": "CAR",
+   "home": "PHI",
+   "kickoff": "2026-10-18T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Lincoln Financial Field",
+   "city": "Philadelphia",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-phi"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-ravens-at-browns-w6",
+   "week": 6,
+   "away": "BAL",
+   "home": "CLE",
+   "kickoff": "2026-10-18T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Huntington Bank Field",
+   "city": "Cleveland",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-bal",
+    "source:nfl-club-site-cle"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-saints-at-giants-w6",
+   "week": 6,
+   "away": "NO",
+   "home": "NYG",
+   "kickoff": "2026-10-18T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "MetLife Stadium",
+   "city": "East Rutherford",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-no",
+    "source:nfl-club-site-nyg"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-seahawks-at-broncos-w6",
+   "week": 6,
+   "away": "SEA",
+   "home": "DEN",
+   "kickoff": "2026-10-16T00:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Empower Field at Mile High",
+   "city": "Denver",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-den",
+    "source:nfl-club-site-sea"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-steelers-at-buccaneers-w6",
+   "week": 6,
+   "away": "PIT",
+   "home": "TB",
+   "kickoff": "2026-10-18T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Raymond James Stadium",
+   "city": "Tampa",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-pit",
+    "source:nfl-club-site-tb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-texans-at-jaguars-w6",
+   "week": 6,
+   "away": "HOU",
+   "home": "JAX",
+   "kickoff": "2026-10-18T13:30:00Z",
+   "kickoffTBD": false,
+   "venue": "Wembley Stadium",
+   "city": "London",
+   "country": "England",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-jax"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-titans-at-colts-w6",
+   "week": 6,
+   "away": "TEN",
+   "home": "IND",
+   "kickoff": "2026-10-18T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Lucas Oil Stadium",
+   "city": "Indianapolis",
+   "country": "USA",
+   "tv": "",
+   "played": true,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ind",
+    "source:nfl-club-site-ten"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-49ers-at-falcons-w7",
+   "week": 7,
+   "away": "SF",
+   "home": "ATL",
+   "kickoff": "2026-10-25T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Mercedes-Benz Stadium",
+   "city": "Atlanta",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-atl",
+    "source:nfl-club-site-sf"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bengals-at-ravens-w7",
+   "week": 7,
+   "away": "CIN",
+   "home": "BAL",
+   "kickoff": "2026-10-25T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "M&T Bank Stadium",
+   "city": "Baltimore",
+   "country": "USA",
+   "tv": "CBS • PARAMOUNT+",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-bal",
+    "source:nfl-club-site-cin"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-broncos-at-cardinals-w7",
+   "week": 7,
+   "away": "DEN",
+   "home": "ARI",
+   "kickoff": "2026-10-25T20:05:00Z",
+   "kickoffTBD": false,
+   "venue": "State Farm Stadium",
+   "city": "Glendale",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ari",
+    "source:nfl-club-site-den"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-browns-at-titans-w7",
+   "week": 7,
+   "away": "CLE",
+   "home": "TEN",
+   "kickoff": "2026-10-25T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Nissan Stadium",
+   "city": "Nashville",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cle",
+    "source:nfl-club-site-ten"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-buccaneers-at-panthers-w7",
+   "week": 7,
+   "away": "TB",
+   "home": "CAR",
+   "kickoff": "2026-10-25T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Bank of America Stadium",
+   "city": "Charlotte",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-tb"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-chiefs-at-seahawks-w7",
+   "week": 7,
+   "away": "KC",
+   "home": "SEA",
+   "kickoff": "2026-10-26T00:20:00Z",
+   "kickoffTBD": false,
+   "venue": "Lumen Field",
+   "city": "Seattle",
+   "country": "USA",
+   "tv": "NBC",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-kc",
+    "source:nfl-club-site-sea"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-colts-at-vikings-w7",
+   "week": 7,
+   "away": "IND",
+   "home": "MIN",
+   "kickoff": "2026-10-25T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "U.S. Bank Stadium",
+   "city": "Minneapolis",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ind",
+    "source:nfl-club-site-min"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-cowboys-at-eagles-w7",
+   "week": 7,
+   "away": "DAL",
+   "home": "PHI",
+   "kickoff": "2026-10-27T00:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Lincoln Financial Field",
+   "city": "Philadelphia",
+   "country": "USA",
+   "tv": "ESPN • ABC • NFL Network",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-dal",
+    "source:nfl-club-site-phi"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-dolphins-at-jets-w7",
+   "week": 7,
+   "away": "MIA",
+   "home": "NYJ",
+   "kickoff": "2026-10-25T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "MetLife Stadium",
+   "city": "East Rutherford",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-nyj"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-giants-at-texans-w7",
+   "week": 7,
+   "away": "NYG",
+   "home": "HOU",
+   "kickoff": "2026-10-25T17:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Reliant Stadium",
+   "city": "Houston",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-nyg"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-packers-at-lions-w7",
+   "week": 7,
+   "away": "GB",
+   "home": "DET",
+   "kickoff": "2026-10-25T20:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Ford Field",
+   "city": "Detroit",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-det",
+    "source:nfl-club-site-gb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-patriots-at-bears-w7",
+   "week": 7,
+   "away": "NE",
+   "home": "CHI",
+   "kickoff": "2026-10-23T00:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Soldier Field",
+   "city": "Chicago",
+   "country": "USA",
+   "tv": "Prime Video • FOX32 Chicago",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-chi",
+    "source:nfl-club-site-ne"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-rams-at-raiders-w7",
+   "week": 7,
+   "away": "LAR",
+   "home": "LV",
+   "kickoff": "2026-10-25T20:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Allegiant Stadium",
+   "city": "Paradise",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lar",
+    "source:nfl-club-site-lv"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-steelers-at-saints-w7",
+   "week": 7,
+   "away": "PIT",
+   "home": "NO",
+   "kickoff": "2026-10-25T13:30:00Z",
+   "kickoffTBD": false,
+   "venue": "Stade de France",
+   "city": "Saint-Denis",
+   "country": "France",
+   "tv": "NFLN/WDSU",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-no",
+    "source:nfl-club-site-pit"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bears-at-seahawks-w8",
+   "week": 8,
+   "away": "CHI",
+   "home": "SEA",
+   "kickoff": "2026-11-03T01:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Lumen Field",
+   "city": "Seattle",
+   "country": "USA",
+   "tv": "ESPN",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-chi",
+    "source:nfl-club-site-sea"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-browns-at-steelers-w8",
+   "week": 8,
+   "away": "CLE",
+   "home": "PIT",
+   "kickoff": "2026-11-01T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Acrisure Stadium",
+   "city": "Pittsburgh",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cle",
+    "source:nfl-club-site-pit"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-cardinals-at-cowboys-w8",
+   "week": 8,
+   "away": "ARI",
+   "home": "DAL",
+   "kickoff": "2026-11-01T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "AT&T Stadium",
+   "city": "Arlington",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ari",
+    "source:nfl-club-site-dal"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-chargers-at-rams-w8",
+   "week": 8,
+   "away": "LAC",
+   "home": "LAR",
+   "kickoff": "2026-11-01T21:05:00Z",
+   "kickoffTBD": false,
+   "venue": "SoFi Stadium",
+   "city": "Inglewood",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lac",
+    "source:nfl-club-site-lar"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-chiefs-at-broncos-w8",
+   "week": 8,
+   "away": "KC",
+   "home": "DEN",
+   "kickoff": "2026-11-01T21:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Empower Field at Mile High",
+   "city": "Denver",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-den",
+    "source:nfl-club-site-kc"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-colts-at-jaguars-w8",
+   "week": 8,
+   "away": "IND",
+   "home": "JAX",
+   "kickoff": "2026-11-01T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "EverBank Stadium",
+   "city": "Jacksonville",
+   "country": "USA",
+   "tv": "CBS47 • PARAMOUNT+",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ind",
+    "source:nfl-club-site-jax"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-eagles-at-commanders-w8",
+   "week": 8,
+   "away": "PHI",
+   "home": "WSH",
+   "kickoff": "2026-11-02T01:20:00Z",
+   "kickoffTBD": false,
+   "venue": "Northwest Stadium",
+   "city": "Landover",
+   "country": "USA",
+   "tv": "NBC",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-phi",
+    "source:nfl-club-site-wsh"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-falcons-at-buccaneers-w8",
+   "week": 8,
+   "away": "ATL",
+   "home": "TB",
+   "kickoff": "2026-11-01T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Raymond James Stadium",
+   "city": "Tampa",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-atl",
+    "source:nfl-club-site-tb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-panthers-at-packers-w8",
+   "week": 8,
+   "away": "CAR",
+   "home": "GB",
+   "kickoff": "2026-10-30T00:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Lambeau Field",
+   "city": "Green Bay",
+   "country": "USA",
+   "tv": "PRIME VIDEO",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-gb"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-patriots-at-dolphins-w8",
+   "week": 8,
+   "away": "NE",
+   "home": "MIA",
+   "kickoff": "2026-11-01T21:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Hard Rock Stadium",
+   "city": "Opa Locka",
+   "country": "USA",
+   "tv": "CBS / WBZ",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ne"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-raiders-at-jets-w8",
+   "week": 8,
+   "away": "LV",
+   "home": "NYJ",
+   "kickoff": "2026-11-01T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "MetLife Stadium",
+   "city": "East Rutherford",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lv",
+    "source:nfl-club-site-nyj"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-ravens-at-bills-w8",
+   "week": 8,
+   "away": "BAL",
+   "home": "BUF",
+   "kickoff": "2026-11-01T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Highmark Stadium",
+   "city": "Orchard Park",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-bal",
+    "source:nfl-club-site-buf"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-titans-at-bengals-w8",
+   "week": 8,
+   "away": "TEN",
+   "home": "CIN",
+   "kickoff": "2026-11-01T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Paycor Stadium",
+   "city": "Cincinnati",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cin",
+    "source:nfl-club-site-ten"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-vikings-at-lions-w8",
+   "week": 8,
+   "away": "MIN",
+   "home": "DET",
+   "kickoff": "2026-11-01T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Ford Field",
+   "city": "Detroit",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-det",
+    "source:nfl-club-site-min"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bengals-at-falcons-w9",
+   "week": 9,
+   "away": "CIN",
+   "home": "ATL",
+   "kickoff": "2026-11-08T14:30:00Z",
+   "kickoffTBD": false,
+   "venue": "Bernabeu",
+   "city": "Madrid",
+   "country": "Spain",
+   "tv": "NFLN",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-atl",
+    "source:nfl-club-site-cin"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bills-at-vikings-w9",
+   "week": 9,
+   "away": "BUF",
+   "home": "MIN",
+   "kickoff": "2026-11-10T01:15:00Z",
+   "kickoffTBD": false,
+   "venue": "U.S. Bank Stadium",
+   "city": "Minneapolis",
+   "country": "USA",
+   "tv": "ESPN",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-buf",
+    "source:nfl-club-site-min"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-broncos-at-panthers-w9",
+   "week": 9,
+   "away": "DEN",
+   "home": "CAR",
+   "kickoff": "2026-11-08T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Bank of America Stadium",
+   "city": "Charlotte",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-den"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-browns-at-saints-w9",
+   "week": 9,
+   "away": "CLE",
+   "home": "NO",
+   "kickoff": "2026-11-08T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Caesars Superdome",
+   "city": "New Orleans",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cle",
+    "source:nfl-club-site-no"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-buccaneers-at-bears-w9",
+   "week": 9,
+   "away": "TB",
+   "home": "CHI",
+   "kickoff": "2026-11-09T01:20:00Z",
+   "kickoffTBD": false,
+   "venue": "Soldier Field",
+   "city": "Chicago",
+   "country": "USA",
+   "tv": "NBC • UNIVERSO",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-chi",
+    "source:nfl-club-site-tb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-cardinals-at-seahawks-w9",
+   "week": 9,
+   "away": "ARI",
+   "home": "SEA",
+   "kickoff": "2026-11-08T21:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Lumen Field",
+   "city": "Seattle",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ari",
+    "source:nfl-club-site-sea"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-cowboys-at-colts-w9",
+   "week": 9,
+   "away": "DAL",
+   "home": "IND",
+   "kickoff": "2026-11-08T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Lucas Oil Stadium",
+   "city": "Indianapolis",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-dal",
+    "source:nfl-club-site-ind"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-giants-at-eagles-w9",
+   "week": 9,
+   "away": "NYG",
+   "home": "PHI",
+   "kickoff": "2026-11-08T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Lincoln Financial Field",
+   "city": "Philadelphia",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-nyg",
+    "source:nfl-club-site-phi"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-jaguars-at-ravens-w9",
+   "week": 9,
+   "away": "JAX",
+   "home": "BAL",
+   "kickoff": "2026-11-06T01:15:00Z",
+   "kickoffTBD": false,
+   "venue": "M&T Bank Stadium",
+   "city": "Baltimore",
+   "country": "USA",
+   "tv": "PRIME VIDEO",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-bal",
+    "source:nfl-club-site-jax"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-jets-at-chiefs-w9",
+   "week": 9,
+   "away": "NYJ",
+   "home": "KC",
+   "kickoff": "2026-11-08T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Arrowhead Stadium",
+   "city": "Kansas City",
+   "country": "USA",
+   "tv": "CBS | Paramount+",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-kc",
+    "source:nfl-club-site-nyj"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-lions-at-dolphins-w9",
+   "week": 9,
+   "away": "DET",
+   "home": "MIA",
+   "kickoff": "2026-11-08T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Hard Rock Stadium",
+   "city": "Opa Locka",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-det"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-packers-at-patriots-w9",
+   "week": 9,
+   "away": "GB",
+   "home": "NE",
+   "kickoff": "2026-11-08T21:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Gillette Stadium",
+   "city": "Foxborough",
+   "country": "USA",
+   "tv": "FOX / WFXT",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-gb",
+    "source:nfl-club-site-ne"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-raiders-at-49ers-w9",
+   "week": 9,
+   "away": "LV",
+   "home": "SF",
+   "kickoff": "2026-11-08T21:05:00Z",
+   "kickoffTBD": false,
+   "venue": "Levi's Stadium",
+   "city": "Santa Clara",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lv",
+    "source:nfl-club-site-sf"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-rams-at-commanders-w9",
+   "week": 9,
+   "away": "LAR",
+   "home": "WSH",
+   "kickoff": "2026-11-08T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Northwest Stadium",
+   "city": "Landover",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lar",
+    "source:nfl-club-site-wsh"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-texans-at-chargers-w9",
+   "week": 9,
+   "away": "HOU",
+   "home": "LAC",
+   "kickoff": "2026-11-08T21:05:00Z",
+   "kickoffTBD": false,
+   "venue": "SoFi Stadium",
+   "city": "Inglewood",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lac"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-49ers-at-cowboys-w10",
+   "week": 10,
+   "away": "SF",
+   "home": "DAL",
+   "kickoff": "2026-11-15T21:25:00Z",
+   "kickoffTBD": false,
+   "venue": "AT&T Stadium",
+   "city": "Arlington",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-dal",
+    "source:nfl-club-site-sf"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bills-at-jets-w10",
+   "week": 10,
+   "away": "BUF",
+   "home": "NYJ",
+   "kickoff": "2026-11-15T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "MetLife Stadium",
+   "city": "East Rutherford",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-buf",
+    "source:nfl-club-site-nyj"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-chargers-at-ravens-w10",
+   "week": 10,
+   "away": "LAC",
+   "home": "BAL",
+   "kickoff": "2026-11-17T01:15:00Z",
+   "kickoffTBD": false,
+   "venue": "M&T Bank Stadium",
+   "city": "Baltimore",
+   "country": "USA",
+   "tv": "ESPN",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-bal",
+    "source:nfl-club-site-lac"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-chiefs-at-falcons-w10",
+   "week": 10,
+   "away": "KC",
+   "home": "ATL",
+   "kickoff": "2026-11-15T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Mercedes-Benz Stadium",
+   "city": "Atlanta",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-atl",
+    "source:nfl-club-site-kc"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-commanders-at-giants-w10",
+   "week": 10,
+   "away": "WSH",
+   "home": "NYG",
+   "kickoff": "2026-11-13T01:15:00Z",
+   "kickoffTBD": false,
+   "venue": "MetLife Stadium",
+   "city": "East Rutherford",
+   "country": "USA",
+   "tv": "PRIME",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-nyg",
+    "source:nfl-club-site-wsh"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-dolphins-at-colts-w10",
+   "week": 10,
+   "away": "MIA",
+   "home": "IND",
+   "kickoff": "2026-11-15T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Lucas Oil Stadium",
+   "city": "Indianapolis",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ind"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-jaguars-at-titans-w10",
+   "week": 10,
+   "away": "JAX",
+   "home": "TEN",
+   "kickoff": "2026-11-15T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Nissan Stadium",
+   "city": "Nashville",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-jax",
+    "source:nfl-club-site-ten"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-panthers-at-saints-w10",
+   "week": 10,
+   "away": "CAR",
+   "home": "NO",
+   "kickoff": "2026-11-15T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Caesars Superdome",
+   "city": "New Orleans",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-no"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-patriots-at-lions-w10",
+   "week": 10,
+   "away": "NE",
+   "home": "DET",
+   "kickoff": "2026-11-15T14:30:00Z",
+   "kickoffTBD": false,
+   "venue": "FC Bayern Munich Stadium",
+   "city": "Munich",
+   "country": "Germany",
+   "tv": "FOX • FOX DEPORTES",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-det",
+    "source:nfl-club-site-ne"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-rams-at-cardinals-w10",
+   "week": 10,
+   "away": "LAR",
+   "home": "ARI",
+   "kickoff": "2026-11-15T21:05:00Z",
+   "kickoffTBD": false,
+   "venue": "State Farm Stadium",
+   "city": "Glendale",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ari",
+    "source:nfl-club-site-lar"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-seahawks-at-raiders-w10",
+   "week": 10,
+   "away": "SEA",
+   "home": "LV",
+   "kickoff": "2026-11-15T21:05:00Z",
+   "kickoffTBD": false,
+   "venue": "Allegiant Stadium",
+   "city": "Paradise",
+   "country": "USA",
+   "tv": "CBS • Paramount+",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lv",
+    "source:nfl-club-site-sea"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-steelers-at-bengals-w10",
+   "week": 10,
+   "away": "PIT",
+   "home": "CIN",
+   "kickoff": "2026-11-16T01:20:00Z",
+   "kickoffTBD": false,
+   "venue": "Paycor Stadium",
+   "city": "Cincinnati",
+   "country": "USA",
+   "tv": "NBC",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cin",
+    "source:nfl-club-site-pit"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-texans-at-browns-w10",
+   "week": 10,
+   "away": "HOU",
+   "home": "CLE",
+   "kickoff": "2026-11-15T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Huntington Bank Field",
+   "city": "Cleveland",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cle"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-vikings-at-packers-w10",
+   "week": 10,
+   "away": "MIN",
+   "home": "GB",
+   "kickoff": "2026-11-15T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Lambeau Field",
+   "city": "Green Bay",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-gb",
+    "source:nfl-club-site-min"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bengals-at-commanders-w11",
+   "week": 11,
+   "away": "CIN",
+   "home": "WSH",
+   "kickoff": "2026-11-24T01:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Northwest Stadium",
+   "city": "Landover",
+   "country": "USA",
+   "tv": "ESPN",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cin",
+    "source:nfl-club-site-wsh"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-buccaneers-at-lions-w11",
+   "week": 11,
+   "away": "TB",
+   "home": "DET",
+   "kickoff": "2026-11-22T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Ford Field",
+   "city": "Detroit",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-det",
+    "source:nfl-club-site-tb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-cardinals-at-chiefs-w11",
+   "week": 11,
+   "away": "ARI",
+   "home": "KC",
+   "kickoff": "2026-11-22T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Arrowhead Stadium",
+   "city": "Kansas City",
+   "country": "USA",
+   "tv": "CBS | Paramount+",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ari",
+    "source:nfl-club-site-kc"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-colts-at-texans-w11",
+   "week": 11,
+   "away": "IND",
+   "home": "HOU",
+   "kickoff": "2026-11-20T01:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Reliant Stadium",
+   "city": "Houston",
+   "country": "USA",
+   "tv": "Prime Video",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ind"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-dolphins-at-bills-w11",
+   "week": 11,
+   "away": "MIA",
+   "home": "BUF",
+   "kickoff": "2026-11-22T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Highmark Stadium",
+   "city": "Orchard Park",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-buf"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-jaguars-at-giants-w11",
+   "week": 11,
+   "away": "JAX",
+   "home": "NYG",
+   "kickoff": "2026-11-22T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "MetLife Stadium",
+   "city": "East Rutherford",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-jax",
+    "source:nfl-club-site-nyg"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-jets-at-chargers-w11",
+   "week": 11,
+   "away": "NYJ",
+   "home": "LAC",
+   "kickoff": "2026-11-22T21:05:00Z",
+   "kickoffTBD": false,
+   "venue": "SoFi Stadium",
+   "city": "Inglewood",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lac",
+    "source:nfl-club-site-nyj"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-raiders-at-broncos-w11",
+   "week": 11,
+   "away": "LV",
+   "home": "DEN",
+   "kickoff": "2026-11-22T21:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Empower Field at Mile High",
+   "city": "Denver",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-den",
+    "source:nfl-club-site-lv"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-ravens-at-panthers-w11",
+   "week": 11,
+   "away": "BAL",
+   "home": "CAR",
+   "kickoff": "2026-11-22T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Bank of America Stadium",
+   "city": "Charlotte",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-bal"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-saints-at-bears-w11",
+   "week": 11,
+   "away": "NO",
+   "home": "CHI",
+   "kickoff": "2026-11-22T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Soldier Field",
+   "city": "Chicago",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-chi",
+    "source:nfl-club-site-no"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-steelers-at-eagles-w11",
+   "week": 11,
+   "away": "PIT",
+   "home": "PHI",
+   "kickoff": "2026-11-22T21:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Lincoln Financial Field",
+   "city": "Philadelphia",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-phi",
+    "source:nfl-club-site-pit"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-titans-at-cowboys-w11",
+   "week": 11,
+   "away": "TEN",
+   "home": "DAL",
+   "kickoff": "2026-11-22T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "AT&T Stadium",
+   "city": "Arlington",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-dal",
+    "source:nfl-club-site-ten"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-vikings-at-49ers-w11",
+   "week": 11,
+   "away": "MIN",
+   "home": "SF",
+   "kickoff": "2026-11-23T01:20:00Z",
+   "kickoffTBD": false,
+   "venue": "Estadio Banorte",
+   "city": "Mexico City",
+   "country": "Mexico",
+   "tv": "NBC",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-min",
+    "source:nfl-club-site-sf"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bears-at-lions-w12",
+   "week": 12,
+   "away": "CHI",
+   "home": "DET",
+   "kickoff": "2026-11-26T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Ford Field",
+   "city": "Detroit",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-chi",
+    "source:nfl-club-site-det"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-broncos-at-steelers-w12",
+   "week": 12,
+   "away": "DEN",
+   "home": "PIT",
+   "kickoff": "2026-11-27T20:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Acrisure Stadium",
+   "city": "Pittsburgh",
+   "country": "USA",
+   "tv": "Prime Video",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-den",
+    "source:nfl-club-site-pit"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-chiefs-at-bills-w12",
+   "week": 12,
+   "away": "KC",
+   "home": "BUF",
+   "kickoff": "2026-11-27T01:20:00Z",
+   "kickoffTBD": false,
+   "venue": "Highmark Stadium",
+   "city": "Orchard Park",
+   "country": "USA",
+   "tv": "NBC • UNIVERSO",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-buf",
+    "source:nfl-club-site-kc"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-commanders-at-cardinals-w12",
+   "week": 12,
+   "away": "WSH",
+   "home": "ARI",
+   "kickoff": "2026-11-29T21:25:00Z",
+   "kickoffTBD": false,
+   "venue": "State Farm Stadium",
+   "city": "Glendale",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ari",
+    "source:nfl-club-site-wsh"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-eagles-at-cowboys-w12",
+   "week": 12,
+   "away": "PHI",
+   "home": "DAL",
+   "kickoff": "2026-11-26T21:30:00Z",
+   "kickoffTBD": false,
+   "venue": "AT&T Stadium",
+   "city": "Arlington",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-dal",
+    "source:nfl-club-site-phi"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-falcons-at-vikings-w12",
+   "week": 12,
+   "away": "ATL",
+   "home": "MIN",
+   "kickoff": "2026-11-29T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "U.S. Bank Stadium",
+   "city": "Minneapolis",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-atl",
+    "source:nfl-club-site-min"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-giants-at-colts-w12",
+   "week": 12,
+   "away": "NYG",
+   "home": "IND",
+   "kickoff": "2026-11-29T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Lucas Oil Stadium",
+   "city": "Indianapolis",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ind",
+    "source:nfl-club-site-nyg"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-jets-at-dolphins-w12",
+   "week": 12,
+   "away": "NYJ",
+   "home": "MIA",
+   "kickoff": "2026-11-29T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Hard Rock Stadium",
+   "city": "Opa Locka",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-nyj"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-packers-at-rams-w12",
+   "week": 12,
+   "away": "GB",
+   "home": "LAR",
+   "kickoff": "2026-11-26T01:00:00Z",
+   "kickoffTBD": false,
+   "venue": "SoFi Stadium",
+   "city": "Inglewood",
+   "country": "USA",
+   "tv": "Netflix",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-gb",
+    "source:nfl-club-site-lar"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-panthers-at-buccaneers-w12",
+   "week": 12,
+   "away": "CAR",
+   "home": "TB",
+   "kickoff": "2026-12-01T01:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Raymond James Stadium",
+   "city": "Tampa",
+   "country": "USA",
+   "tv": "ESPN",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-tb"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-patriots-at-chargers-w12",
+   "week": 12,
+   "away": "NE",
+   "home": "LAC",
+   "kickoff": "2026-11-30T01:20:00Z",
+   "kickoffTBD": false,
+   "venue": "SoFi Stadium",
+   "city": "Inglewood",
+   "country": "USA",
+   "tv": "NBC • UNIVERSO",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lac",
+    "source:nfl-club-site-ne"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-raiders-at-browns-w12",
+   "week": 12,
+   "away": "LV",
+   "home": "CLE",
+   "kickoff": "2026-11-29T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Huntington Bank Field",
+   "city": "Cleveland",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cle",
+    "source:nfl-club-site-lv"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-ravens-at-texans-w12",
+   "week": 12,
+   "away": "BAL",
+   "home": "HOU",
+   "kickoff": "2026-11-29T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Reliant Stadium",
+   "city": "Houston",
+   "country": "USA",
+   "tv": "CBS • PARAMOUNT+",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-bal"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-saints-at-bengals-w12",
+   "week": 12,
+   "away": "NO",
+   "home": "CIN",
+   "kickoff": "2026-11-29T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Paycor Stadium",
+   "city": "Cincinnati",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cin",
+    "source:nfl-club-site-no"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-seahawks-at-49ers-w12",
+   "week": 12,
+   "away": "SEA",
+   "home": "SF",
+   "kickoff": "2026-11-29T21:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Levi's Stadium",
+   "city": "Santa Clara",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-sea",
+    "source:nfl-club-site-sf"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-titans-at-jaguars-w12",
+   "week": 12,
+   "away": "TEN",
+   "home": "JAX",
+   "kickoff": "2026-11-29T21:05:00Z",
+   "kickoffTBD": false,
+   "venue": "EverBank Stadium",
+   "city": "Jacksonville",
+   "country": "USA",
+   "tv": "CBS47 • PARAMOUNT+",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-jax",
+    "source:nfl-club-site-ten"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-49ers-at-giants-w13",
+   "week": 13,
+   "away": "SF",
+   "home": "NYG",
+   "kickoff": "2026-12-06T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "MetLife Stadium",
+   "city": "East Rutherford",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-nyg",
+    "source:nfl-club-site-sf"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bengals-at-browns-w13",
+   "week": 13,
+   "away": "CIN",
+   "home": "CLE",
+   "kickoff": "2026-12-06T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Huntington Bank Field",
+   "city": "Cleveland",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cin",
+    "source:nfl-club-site-cle"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bills-at-patriots-w13",
+   "week": 13,
+   "away": "BUF",
+   "home": "NE",
+   "kickoff": "2026-12-06T21:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Gillette Stadium",
+   "city": "Foxborough",
+   "country": "USA",
+   "tv": "CBS / WBZ",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-buf",
+    "source:nfl-club-site-ne"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-chargers-at-buccaneers-w13",
+   "week": 13,
+   "away": "LAC",
+   "home": "TB",
+   "kickoff": "2026-12-06T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Raymond James Stadium",
+   "city": "Tampa",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lac",
+    "source:nfl-club-site-tb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-chiefs-at-rams-w13",
+   "week": 13,
+   "away": "KC",
+   "home": "LAR",
+   "kickoff": "2026-12-04T01:15:00Z",
+   "kickoffTBD": false,
+   "venue": "SoFi Stadium",
+   "city": "Inglewood",
+   "country": "USA",
+   "tv": "Prime Video",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-kc",
+    "source:nfl-club-site-lar"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-commanders-at-titans-w13",
+   "week": 13,
+   "away": "WSH",
+   "home": "TEN",
+   "kickoff": "2026-12-06T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Nissan Stadium",
+   "city": "Nashville",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ten",
+    "source:nfl-club-site-wsh"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-cowboys-at-seahawks-w13",
+   "week": 13,
+   "away": "DAL",
+   "home": "SEA",
+   "kickoff": "2026-12-08T01:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Lumen Field",
+   "city": "Seattle",
+   "country": "USA",
+   "tv": "ESPN",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-dal",
+    "source:nfl-club-site-sea"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-dolphins-at-broncos-w13",
+   "week": 13,
+   "away": "MIA",
+   "home": "DEN",
+   "kickoff": "2026-12-06T21:05:00Z",
+   "kickoffTBD": false,
+   "venue": "Empower Field at Mile High",
+   "city": "Denver",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-den"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-eagles-at-cardinals-w13",
+   "week": 13,
+   "away": "PHI",
+   "home": "ARI",
+   "kickoff": "2026-12-06T21:05:00Z",
+   "kickoffTBD": false,
+   "venue": "State Farm Stadium",
+   "city": "Glendale",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ari",
+    "source:nfl-club-site-phi"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-jaguars-at-bears-w13",
+   "week": 13,
+   "away": "JAX",
+   "home": "CHI",
+   "kickoff": "2026-12-06T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Soldier Field",
+   "city": "Chicago",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-chi",
+    "source:nfl-club-site-jax"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-lions-at-falcons-w13",
+   "week": 13,
+   "away": "DET",
+   "home": "ATL",
+   "kickoff": "2026-12-06T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Mercedes-Benz Stadium",
+   "city": "Atlanta",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-atl",
+    "source:nfl-club-site-det"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-packers-at-saints-w13",
+   "week": 13,
+   "away": "GB",
+   "home": "NO",
+   "kickoff": "2026-12-06T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Caesars Superdome",
+   "city": "New Orleans",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-gb",
+    "source:nfl-club-site-no"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-panthers-at-vikings-w13",
+   "week": 13,
+   "away": "CAR",
+   "home": "MIN",
+   "kickoff": "2026-12-06T21:25:00Z",
+   "kickoffTBD": false,
+   "venue": "U.S. Bank Stadium",
+   "city": "Minneapolis",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-min"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-texans-at-steelers-w13",
+   "week": 13,
+   "away": "HOU",
+   "home": "PIT",
+   "kickoff": "2026-12-07T01:20:00Z",
+   "kickoffTBD": false,
+   "venue": "Acrisure Stadium",
+   "city": "Pittsburgh",
+   "country": "USA",
+   "tv": "NBC",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-pit"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-bears-at-dolphins-w14",
+   "week": 14,
+   "away": "CHI",
+   "home": "MIA",
+   "kickoff": "2026-12-13T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Hard Rock Stadium",
+   "city": "Opa Locka",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-chi"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-bills-at-packers-w14",
+   "week": 14,
+   "away": "BUF",
+   "home": "GB",
+   "kickoff": "2026-12-14T01:20:00Z",
+   "kickoffTBD": false,
+   "venue": "Lambeau Field",
+   "city": "Green Bay",
+   "country": "USA",
+   "tv": "NBC",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-buf",
+    "source:nfl-club-site-gb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-broncos-at-jets-w14",
+   "week": 14,
+   "away": "DEN",
+   "home": "NYJ",
+   "kickoff": "2026-12-13T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "MetLife Stadium",
+   "city": "East Rutherford",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-den",
+    "source:nfl-club-site-nyj"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-buccaneers-at-ravens-w14",
+   "week": 14,
+   "away": "TB",
+   "home": "BAL",
+   "kickoff": "2026-12-13T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "M&T Bank Stadium",
+   "city": "Baltimore",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-bal",
+    "source:nfl-club-site-tb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-chargers-at-raiders-w14",
+   "week": 14,
+   "away": "LAC",
+   "home": "LV",
+   "kickoff": "2026-12-13T21:05:00Z",
+   "kickoffTBD": false,
+   "venue": "Allegiant Stadium",
+   "city": "Paradise",
+   "country": "USA",
+   "tv": "CBS • Paramount+",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lac",
+    "source:nfl-club-site-lv"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-chiefs-at-bengals-w14",
+   "week": 14,
+   "away": "KC",
+   "home": "CIN",
+   "kickoff": "2026-12-13T21:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Paycor Stadium",
+   "city": "Cincinnati",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cin",
+    "source:nfl-club-site-kc"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-colts-at-eagles-w14",
+   "week": 14,
+   "away": "IND",
+   "home": "PHI",
+   "kickoff": "2026-12-13T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Lincoln Financial Field",
+   "city": "Philadelphia",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ind",
+    "source:nfl-club-site-phi"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-falcons-at-browns-w14",
+   "week": 14,
+   "away": "ATL",
+   "home": "CLE",
+   "kickoff": "2026-12-13T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Huntington Bank Field",
+   "city": "Cleveland",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-atl",
+    "source:nfl-club-site-cle"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-giants-at-seahawks-w14",
+   "week": 14,
+   "away": "NYG",
+   "home": "SEA",
+   "kickoff": "2026-12-13T21:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Lumen Field",
+   "city": "Seattle",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-nyg",
+    "source:nfl-club-site-sea"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-rams-at-49ers-w14",
+   "week": 14,
+   "away": "LAR",
+   "home": "SF",
+   "kickoff": "2026-12-13T21:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Levi's Stadium",
+   "city": "Santa Clara",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lar",
+    "source:nfl-club-site-sf"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-saints-at-panthers-w14",
+   "week": 14,
+   "away": "NO",
+   "home": "CAR",
+   "kickoff": "2026-12-13T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Bank of America Stadium",
+   "city": "Charlotte",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-no"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-steelers-at-jaguars-w14",
+   "week": 14,
+   "away": "PIT",
+   "home": "JAX",
+   "kickoff": "2026-12-15T01:15:00Z",
+   "kickoffTBD": false,
+   "venue": "EverBank Stadium",
+   "city": "Jacksonville",
+   "country": "USA",
+   "tv": "CBS47 • ESPN • PARAMOUNT+",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-jax",
+    "source:nfl-club-site-pit"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-texans-at-commanders-w14",
+   "week": 14,
+   "away": "HOU",
+   "home": "WSH",
+   "kickoff": "2026-12-13T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Northwest Stadium",
+   "city": "Landover",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-wsh"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-titans-at-lions-w14",
+   "week": 14,
+   "away": "TEN",
+   "home": "DET",
+   "kickoff": "2026-12-13T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Ford Field",
+   "city": "Detroit",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-det",
+    "source:nfl-club-site-ten"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-vikings-at-patriots-w14",
+   "week": 14,
+   "away": "MIN",
+   "home": "NE",
+   "kickoff": "2026-12-11T01:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Gillette Stadium",
+   "city": "Foxborough",
+   "country": "USA",
+   "tv": "PRIME VIDEO / WCVB & WMUR",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-min",
+    "source:nfl-club-site-ne"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-49ers-at-chargers-w15",
+   "week": 15,
+   "away": "SF",
+   "home": "LAC",
+   "kickoff": "2026-12-18T01:15:00Z",
+   "kickoffTBD": false,
+   "venue": "SoFi Stadium",
+   "city": "Inglewood",
+   "country": "USA",
+   "tv": "Prime Video",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lac",
+    "source:nfl-club-site-sf"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bears-at-bills-w15",
+   "week": 15,
+   "away": "CHI",
+   "home": "BUF",
+   "kickoff": "2026-12-20T01:20:00Z",
+   "kickoffTBD": false,
+   "venue": "Highmark Stadium",
+   "city": "Orchard Park",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-buf",
+    "source:nfl-club-site-chi"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bengals-at-panthers-w15",
+   "week": 15,
+   "away": "CIN",
+   "home": "CAR",
+   "kickoff": "2026-12-20T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Bank of America Stadium",
+   "city": "Charlotte",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cin"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-broncos-at-raiders-w15",
+   "week": 15,
+   "away": "DEN",
+   "home": "LV",
+   "kickoff": "2026-12-20T21:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Allegiant Stadium",
+   "city": "Paradise",
+   "country": "USA",
+   "tv": "CBS • Paramount+",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-den",
+    "source:nfl-club-site-lv"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-browns-at-giants-w15",
+   "week": 15,
+   "away": "CLE",
+   "home": "NYG",
+   "kickoff": "2026-12-20T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "MetLife Stadium",
+   "city": "East Rutherford",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cle",
+    "source:nfl-club-site-nyg"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-colts-at-titans-w15",
+   "week": 15,
+   "away": "IND",
+   "home": "TEN",
+   "kickoff": "2026-12-20T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Nissan Stadium",
+   "city": "Nashville",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ind",
+    "source:nfl-club-site-ten"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-cowboys-at-rams-w15",
+   "week": 15,
+   "away": "DAL",
+   "home": "LAR",
+   "kickoff": "2026-12-20T21:25:00Z",
+   "kickoffTBD": false,
+   "venue": "SoFi Stadium",
+   "city": "Inglewood",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-dal",
+    "source:nfl-club-site-lar"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-dolphins-at-packers-w15",
+   "week": 15,
+   "away": "MIA",
+   "home": "GB",
+   "kickoff": "2026-12-20T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Lambeau Field",
+   "city": "Green Bay",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-gb"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-falcons-at-commanders-w15",
+   "week": 15,
+   "away": "ATL",
+   "home": "WSH",
+   "kickoff": "2026-12-20T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Northwest Stadium",
+   "city": "Landover",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-atl",
+    "source:nfl-club-site-wsh"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-jaguars-at-texans-w15",
+   "week": 15,
+   "away": "JAX",
+   "home": "HOU",
+   "kickoff": "2026-12-20T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Reliant Stadium",
+   "city": "Houston",
+   "country": "USA",
+   "tv": "CBS47 • PARAMOUNT+",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-jax"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-jets-at-cardinals-w15",
+   "week": 15,
+   "away": "NYJ",
+   "home": "ARI",
+   "kickoff": "2026-12-20T21:05:00Z",
+   "kickoffTBD": false,
+   "venue": "State Farm Stadium",
+   "city": "Glendale",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ari",
+    "source:nfl-club-site-nyj"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-lions-at-vikings-w15",
+   "week": 15,
+   "away": "DET",
+   "home": "MIN",
+   "kickoff": "2026-12-21T01:20:00Z",
+   "kickoffTBD": false,
+   "venue": "U.S. Bank Stadium",
+   "city": "Minneapolis",
+   "country": "USA",
+   "tv": "NBC",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-det",
+    "source:nfl-club-site-min"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-patriots-at-chiefs-w15",
+   "week": 15,
+   "away": "NE",
+   "home": "KC",
+   "kickoff": "2026-12-22T01:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Arrowhead Stadium",
+   "city": "Kansas City",
+   "country": "USA",
+   "tv": "MNF ON ESPN/ABC",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-kc",
+    "source:nfl-club-site-ne"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-ravens-at-steelers-w15",
+   "week": 15,
+   "away": "BAL",
+   "home": "PIT",
+   "kickoff": "2026-12-20T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Acrisure Stadium",
+   "city": "Pittsburgh",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-bal",
+    "source:nfl-club-site-pit"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-saints-at-buccaneers-w15",
+   "week": 15,
+   "away": "NO",
+   "home": "TB",
+   "kickoff": "2026-12-20T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Raymond James Stadium",
+   "city": "Tampa",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-no",
+    "source:nfl-club-site-tb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-seahawks-at-eagles-w15",
+   "week": 15,
+   "away": "SEA",
+   "home": "PHI",
+   "kickoff": "2026-12-19T22:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Lincoln Financial Field",
+   "city": "Philadelphia",
+   "country": "USA",
+   "tv": "FOX • FOX DEPORTES",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-phi",
+    "source:nfl-club-site-sea"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-49ers-at-chiefs-w16",
+   "week": 16,
+   "away": "SF",
+   "home": "KC",
+   "kickoff": "2026-12-27T21:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Arrowhead Stadium",
+   "city": "Kansas City",
+   "country": "USA",
+   "tv": "CBS | Paramount+",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-kc",
+    "source:nfl-club-site-sf"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bengals-at-colts-w16",
+   "week": 16,
+   "away": "CIN",
+   "home": "IND",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "Lucas Oil Stadium",
+   "city": "Indianapolis",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cin",
+    "source:nfl-club-site-ind"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bills-at-broncos-w16",
+   "week": 16,
+   "away": "BUF",
+   "home": "DEN",
+   "kickoff": "2026-12-25T21:30:00Z",
+   "kickoffTBD": false,
+   "venue": "Empower Field at Mile High",
+   "city": "Denver",
+   "country": "USA",
+   "tv": "Netflix",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-buf",
+    "source:nfl-club-site-den"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-browns-at-ravens-w16",
+   "week": 16,
+   "away": "CLE",
+   "home": "BAL",
+   "kickoff": "2026-12-27T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "M&T Bank Stadium",
+   "city": "Baltimore",
+   "country": "USA",
+   "tv": "CBS • PARAMOUNT+",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-bal",
+    "source:nfl-club-site-cle"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-buccaneers-at-falcons-w16",
+   "week": 16,
+   "away": "TB",
+   "home": "ATL",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "Mercedes-Benz Stadium",
+   "city": "Atlanta",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-atl",
+    "source:nfl-club-site-tb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-cardinals-at-saints-w16",
+   "week": 16,
+   "away": "ARI",
+   "home": "NO",
+   "kickoff": "2026-12-27T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Caesars Superdome",
+   "city": "New Orleans",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ari",
+    "source:nfl-club-site-no"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-chargers-at-dolphins-w16",
+   "week": 16,
+   "away": "LAC",
+   "home": "MIA",
+   "kickoff": "2026-12-27T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Hard Rock Stadium",
+   "city": "Opa Locka",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lac"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-commanders-at-vikings-w16",
+   "week": 16,
+   "away": "WSH",
+   "home": "MIN",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "U.S. Bank Stadium",
+   "city": "Minneapolis",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-min",
+    "source:nfl-club-site-wsh"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-giants-at-lions-w16",
+   "week": 16,
+   "away": "NYG",
+   "home": "DET",
+   "kickoff": "2026-12-29T01:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Ford Field",
+   "city": "Detroit",
+   "country": "USA",
+   "tv": "ESPN • ESPN DEPORTES",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-det",
+    "source:nfl-club-site-nyg"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-jaguars-at-cowboys-w16",
+   "week": 16,
+   "away": "JAX",
+   "home": "DAL",
+   "kickoff": "2026-12-28T01:20:00Z",
+   "kickoffTBD": false,
+   "venue": "AT&T Stadium",
+   "city": "Arlington",
+   "country": "USA",
+   "tv": "NBC",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-dal",
+    "source:nfl-club-site-jax"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-packers-at-bears-w16",
+   "week": 16,
+   "away": "GB",
+   "home": "CHI",
+   "kickoff": "2026-12-25T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Soldier Field",
+   "city": "Chicago",
+   "country": "USA",
+   "tv": "NETFLIX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-chi",
+    "source:nfl-club-site-gb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-panthers-at-steelers-w16",
+   "week": 16,
+   "away": "CAR",
+   "home": "PIT",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "Acrisure Stadium",
+   "city": "Pittsburgh",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-pit"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-patriots-at-jets-w16",
+   "week": 16,
+   "away": "NE",
+   "home": "NYJ",
+   "kickoff": "2026-12-27T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "MetLife Stadium",
+   "city": "East Rutherford",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ne",
+    "source:nfl-club-site-nyj"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-rams-at-seahawks-w16",
+   "week": 16,
+   "away": "LAR",
+   "home": "SEA",
+   "kickoff": "2026-12-26T01:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Lumen Field",
+   "city": "Seattle",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lar",
+    "source:nfl-club-site-sea"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-texans-at-eagles-w16",
+   "week": 16,
+   "away": "HOU",
+   "home": "PHI",
+   "kickoff": "2026-12-25T01:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Lincoln Financial Field",
+   "city": "Philadelphia",
+   "country": "USA",
+   "tv": "Prime Video",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-phi"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-titans-at-raiders-w16",
+   "week": 16,
+   "away": "TEN",
+   "home": "LV",
+   "kickoff": "2026-12-27T21:05:00Z",
+   "kickoffTBD": false,
+   "venue": "Allegiant Stadium",
+   "city": "Paradise",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lv",
+    "source:nfl-club-site-ten"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bills-at-dolphins-w17",
+   "week": 17,
+   "away": "BUF",
+   "home": "MIA",
+   "kickoff": "2027-01-03T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Hard Rock Stadium",
+   "city": "Opa Locka",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-buf"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-broncos-at-patriots-w17",
+   "week": 17,
+   "away": "DEN",
+   "home": "NE",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "Gillette Stadium",
+   "city": "Foxborough",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-den",
+    "source:nfl-club-site-ne"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-chiefs-at-chargers-w17",
+   "week": 17,
+   "away": "KC",
+   "home": "LAC",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "SoFi Stadium",
+   "city": "Inglewood",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-kc",
+    "source:nfl-club-site-lac"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-colts-at-browns-w17",
+   "week": 17,
+   "away": "IND",
+   "home": "CLE",
+   "kickoff": "2027-01-03T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Huntington Bank Field",
+   "city": "Cleveland",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cle",
+    "source:nfl-club-site-ind"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-commanders-at-jaguars-w17",
+   "week": 17,
+   "away": "WSH",
+   "home": "JAX",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "EverBank Stadium",
+   "city": "Jacksonville",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-jax",
+    "source:nfl-club-site-wsh"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-eagles-at-49ers-w17",
+   "week": 17,
+   "away": "PHI",
+   "home": "SF",
+   "kickoff": "2027-01-04T01:20:00Z",
+   "kickoffTBD": false,
+   "venue": "Levi's Stadium",
+   "city": "Santa Clara",
+   "country": "USA",
+   "tv": "NBC",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-phi",
+    "source:nfl-club-site-sf"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-giants-at-cowboys-w17",
+   "week": 17,
+   "away": "NYG",
+   "home": "DAL",
+   "kickoff": "2027-01-03T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "AT&T Stadium",
+   "city": "Arlington",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-dal",
+    "source:nfl-club-site-nyg"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-lions-at-bears-w17",
+   "week": 17,
+   "away": "DET",
+   "home": "CHI",
+   "kickoff": "2027-01-03T21:25:00Z",
+   "kickoffTBD": false,
+   "venue": "Soldier Field",
+   "city": "Chicago",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-chi",
+    "source:nfl-club-site-det"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-raiders-at-cardinals-w17",
+   "week": 17,
+   "away": "LV",
+   "home": "ARI",
+   "kickoff": "2027-01-03T21:05:00Z",
+   "kickoffTBD": false,
+   "venue": "State Farm Stadium",
+   "city": "Glendale",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ari",
+    "source:nfl-club-site-lv"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-rams-at-buccaneers-w17",
+   "week": 17,
+   "away": "LAR",
+   "home": "TB",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "Raymond James Stadium",
+   "city": "Tampa",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lar",
+    "source:nfl-club-site-tb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-ravens-at-bengals-w17",
+   "week": 17,
+   "away": "BAL",
+   "home": "CIN",
+   "kickoff": "2027-01-01T01:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Paycor Stadium",
+   "city": "Cincinnati",
+   "country": "USA",
+   "tv": "PRIME VIDEO",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-bal",
+    "source:nfl-club-site-cin"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-saints-at-falcons-w17",
+   "week": 17,
+   "away": "NO",
+   "home": "ATL",
+   "kickoff": "2027-01-03T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Mercedes-Benz Stadium",
+   "city": "Atlanta",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-atl",
+    "source:nfl-club-site-no"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-seahawks-at-panthers-w17",
+   "week": 17,
+   "away": "SEA",
+   "home": "CAR",
+   "kickoff": "2027-01-03T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Bank of America Stadium",
+   "city": "Charlotte",
+   "country": "USA",
+   "tv": "FOX",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-sea"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-steelers-at-titans-w17",
+   "week": 17,
+   "away": "PIT",
+   "home": "TEN",
+   "kickoff": "2027-01-03T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "Nissan Stadium",
+   "city": "Nashville",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-pit",
+    "source:nfl-club-site-ten"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-texans-at-packers-w17",
+   "week": 17,
+   "away": "HOU",
+   "home": "GB",
+   "kickoff": "2027-01-05T01:15:00Z",
+   "kickoffTBD": false,
+   "venue": "Lambeau Field",
+   "city": "Green Bay",
+   "country": "USA",
+   "tv": "ESPN",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-gb"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-vikings-at-jets-w17",
+   "week": 17,
+   "away": "MIN",
+   "home": "NYJ",
+   "kickoff": "2027-01-03T18:00:00Z",
+   "kickoffTBD": false,
+   "venue": "MetLife Stadium",
+   "city": "East Rutherford",
+   "country": "USA",
+   "tv": "CBS",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-min",
+    "source:nfl-club-site-nyj"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-49ers-at-cardinals-w18",
+   "week": 18,
+   "away": "SF",
+   "home": "ARI",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "State Farm Stadium",
+   "city": "Glendale",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ari",
+    "source:nfl-club-site-sf"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-bears-at-vikings-w18",
+   "week": 18,
+   "away": "CHI",
+   "home": "MIN",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "U.S. Bank Stadium",
+   "city": "Minneapolis",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-chi",
+    "source:nfl-club-site-min"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-browns-at-bengals-w18",
+   "week": 18,
+   "away": "CLE",
+   "home": "CIN",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "Paycor Stadium",
+   "city": "Cincinnati",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-cin",
+    "source:nfl-club-site-cle"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-buccaneers-at-saints-w18",
+   "week": 18,
+   "away": "TB",
+   "home": "NO",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "Caesars Superdome",
+   "city": "New Orleans",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-no",
+    "source:nfl-club-site-tb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-chargers-at-broncos-w18",
+   "week": 18,
+   "away": "LAC",
+   "home": "DEN",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "Empower Field at Mile High",
+   "city": "Denver",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-den",
+    "source:nfl-club-site-lac"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-cowboys-at-commanders-w18",
+   "week": 18,
+   "away": "DAL",
+   "home": "WSH",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "Northwest Stadium",
+   "city": "Landover",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-dal",
+    "source:nfl-club-site-wsh"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-dolphins-at-patriots-w18",
+   "week": 18,
+   "away": "MIA",
+   "home": "NE",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "Gillette Stadium",
+   "city": "Foxborough",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ne"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-eagles-at-giants-w18",
+   "week": 18,
+   "away": "PHI",
+   "home": "NYG",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "MetLife Stadium",
+   "city": "East Rutherford",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-nyg",
+    "source:nfl-club-site-phi"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-falcons-at-panthers-w18",
+   "week": 18,
+   "away": "ATL",
+   "home": "CAR",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "Bank of America Stadium",
+   "city": "Charlotte",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-atl"
+   ],
+   "verificationStatus": "partially_verified"
+  },
+  {
+   "id": "event:nfl-2026-jaguars-at-colts-w18",
+   "week": 18,
+   "away": "JAX",
+   "home": "IND",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "Lucas Oil Stadium",
+   "city": "Indianapolis",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ind",
+    "source:nfl-club-site-jax"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-jets-at-bills-w18",
+   "week": 18,
+   "away": "NYJ",
+   "home": "BUF",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "Highmark Stadium",
+   "city": "Orchard Park",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-buf",
+    "source:nfl-club-site-nyj"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-lions-at-packers-w18",
+   "week": 18,
+   "away": "DET",
+   "home": "GB",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "Lambeau Field",
+   "city": "Green Bay",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-det",
+    "source:nfl-club-site-gb"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-raiders-at-chiefs-w18",
+   "week": 18,
+   "away": "LV",
+   "home": "KC",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "Arrowhead Stadium",
+   "city": "Kansas City",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-kc",
+    "source:nfl-club-site-lv"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-seahawks-at-rams-w18",
+   "week": 18,
+   "away": "SEA",
+   "home": "LAR",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "SoFi Stadium",
+   "city": "Inglewood",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-lar",
+    "source:nfl-club-site-sea"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-steelers-at-ravens-w18",
+   "week": 18,
+   "away": "PIT",
+   "home": "BAL",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "M&T Bank Stadium",
+   "city": "Baltimore",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-bal",
+    "source:nfl-club-site-pit"
+   ],
+   "verificationStatus": "verified"
+  },
+  {
+   "id": "event:nfl-2026-titans-at-texans-w18",
+   "week": 18,
+   "away": "TEN",
+   "home": "HOU",
+   "kickoff": null,
+   "kickoffTBD": true,
+   "venue": "Reliant Stadium",
+   "city": "Houston",
+   "country": "USA",
+   "tv": "",
+   "played": false,
+   "sourceRecordIds": [
+    "source:nfl-club-site-ten"
+   ],
+   "verificationStatus": "partially_verified"
+  }
+ ],
+ "notes": "Remaining games: listed by both clubs = verified (times matched); listed by one club only = partially_verified. Weeks 17-18 TBD per clubs."
+}

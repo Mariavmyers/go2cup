@@ -1794,6 +1794,7 @@ f();setInterval(f,30000);})();
   </a>
   <ul class="nav-links">
     <li><a href="brazil-2027.html" style="color:var(--pitch-dark);font-weight:800;">Brazil 2027</a></li>
+      <li><a href="/nfl.html">NFL</a></li>
     <li><a href="where-to-stay.html">Travel Resources</a></li>
     <li><a href="sports-news.html">Sports News</a></li>
     <li><a href="scoreboard.html">Scoreboard</a></li>
@@ -2038,6 +2039,8 @@ f();setInterval(f,30000);})();
     .promo-board{position:relative;overflow:hidden;background:#0e1420;border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:2.25rem 2rem 2.25rem 2.4rem;min-height:150px;display:flex;flex-direction:column;justify-content:center;gap:1rem;}
     .promo-board::before{content:'';position:absolute;top:0;left:0;bottom:0;width:5px;background:var(--promo-ac,#2f80ff);}
     .promo-nfl{--promo-ac:#2f80ff;}
+    a.promo-board{color:inherit;transition:border-color .2s,transform .2s;}
+    a.promo-board:hover,a.promo-board:focus-visible{border-color:var(--promo-ac,#2f80ff);transform:translateY(-2px);}
     .promo-wwc{--promo-ac:#21c25a;}
     .promo-tag{align-self:flex-start;font-family:'Barlow',sans-serif;font-weight:700;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--promo-ac,#2f80ff);background:rgba(255,255,255,.06);border:1px solid var(--promo-ac,#2f80ff);padding:5px 12px;border-radius:100px;}
     .promo-title{font-family:'Bebas Neue',sans-serif;letter-spacing:1px;font-size:clamp(1.4rem,3vw,2rem);line-height:1.05;color:#fff;margin:0;}
@@ -2047,7 +2050,7 @@ f();setInterval(f,30000);})();
   <!-- PART A — SPONSOR BILLBOARDS -->
   <div class="ad-wrap">
     <h2 class="ad-h">Advertise With <span>GO2CUP</span></h2>
-    <p class="ad-sub">Open sponsor inventory — reach World Cup Final fans</p>
+    <p class="ad-sub">Open sponsor inventory — reach NFL and soccer fans</p>
     <div class="ad-slots">
       <a class="ad-slot" id="sponsor-1" href="https://docs.google.com/forms/d/e/1FAIpQLSd3_Nd1UgH81RW4oYpZX6zMwCj9ZWApRaVUzShIc4UISRw2hQ/viewform?usp=header" target="_blank" rel="noopener">
         <h3 class="ad-slot-title">Available — Your Business Here</h3>
@@ -2066,17 +2069,18 @@ f();setInterval(f,30000);})();
 
   <!-- PART B — FULL-WIDTH ADVERTISING STRIP -->
   <div class="ad-strip">
-    <h3 class="ad-strip-h">Advertise With <span>GO2CUP</span> — Reach World Cup Final Fans</h3>
+    <h3 class="ad-strip-h">Advertise With <span>GO2CUP</span> — Reach NFL and Soccer Fans</h3>
     <a class="ad-strip-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSd3_Nd1UgH81RW4oYpZX6zMwCj9ZWApRaVUzShIc4UISRw2hQ/viewform?usp=header" target="_blank" rel="noopener">Book Your Spot</a>
   </div>
 
   <!-- PART C — COMING SOON TEASERS -->
   <div class="ad-wrap">
     <div class="promo-boards">
-      <div class="promo-board promo-nfl">
-        <span class="promo-tag">Coming Soon</span>
-        <h3 class="promo-title">NFL Season Starts September 9 — Stay Tuned</h3>
-      </div>
+      <a class="promo-board promo-nfl" href="/nfl.html" style="text-decoration:none;">
+        <span class="promo-tag">Live Now</span>
+        <h3 class="promo-title">NFL 2026 Season Hub — Chiefs Schedule, All 32 Teams &amp; Super Bowl Travel</h3>
+        <span class="promo-tag" style="align-self:flex-start;">Open the NFL hub &rarr;</span>
+      </a>
       <div class="promo-board promo-wwc">
         <span class="promo-tag">Coming Soon</span>
         <h3 class="promo-title">FIFA Women's World Cup · Brazil 2027 — Stay Tuned</h3>
