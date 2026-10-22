@@ -414,6 +414,14 @@ footer{border-top:1px solid var(--line);background:var(--turf);padding:22px 0;fo
 footer a{color:#cfe8da}
 @media(max-width:760px){.two{grid-template-columns:1fr}.next{min-width:0;width:100%}h2{font-size:34px}}
 
+.sportbar{border-bottom:1px solid rgba(255,255,255,.08);background:rgba(0,0,0,.25)}
+.sportbar .in{max-width:1100px;margin:0 auto;padding:0 18px;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.sportbar .in::-webkit-scrollbar{display:none}
+.sportbar a{flex:none;display:flex;align-items:center;gap:7px;padding:11px 12px 9px;font-family:'Oswald',sans-serif;font-size:14px;letter-spacing:.6px;text-transform:uppercase;color:#b9c7c0;text-decoration:none;border-bottom:3px solid transparent}
+.sportbar a i{width:9px;height:9px;border-radius:50%;background:var(--sc);box-shadow:0 0 10px var(--sc)}
+.sportbar a:hover{color:#fff}
+.sportbar a[aria-current=page]{color:#fff;border-bottom-color:var(--sc)}
+
 </style>
 </head>
 <body>
@@ -431,7 +439,7 @@ footer a{color:#cfe8da}
     </div>
   </nav>
 </header>
-
+<nav class="sportbar" aria-label="Sports"><div class="in"><a href="/nfl.html" style="--sc:#21c25a" aria-current="page"><i></i>NFL</a><a href="/nba.html" style="--sc:#ff7a1a"><i></i>NBA</a><a href="/soccer.html" style="--sc:#2fe0c8"><i></i>Soccer</a><a href="/ufc.html" style="--sc:#ff3b3b"><i></i>UFC</a><a href="/boxing.html" style="--sc:#f5b041"><i></i>Boxing</a><a href="/tennis.html" style="--sc:#d7f53a"><i></i>Tennis</a><a href="/racing.html" style="--sc:#ffb020"><i></i>F1</a></div></nav>
 <section class="hero" aria-labelledby="hero-h">
   <div class="wrap">
     <h1 id="hero-h">NFL 2026 Season Hub</h1>

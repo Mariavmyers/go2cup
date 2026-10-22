@@ -1,0 +1,86 @@
+{
+ "slug": "racing",
+ "sport": "Formula 1",
+ "title": "Formula 1: The Final Six",
+ "tagline": "Austin, Mexico City, São Paulo, Las Vegas, Qatar and Abu Dhabi decide the 2026 championship.",
+ "theme": {
+  "bg": "#0a0d12",
+  "bg2": "#0f141c",
+  "panel": "#131a24",
+  "line": "#253142",
+  "accent": "#ffb020",
+  "soft": "#ffe0a3",
+  "pattern": "checker"
+ },
+ "sections": [
+  {
+   "h": "Remaining 2026 races",
+   "intro": "Race weekends from Formula1.com. Max Verstappen won the last race, in Singapore.",
+   "items": [
+    {
+     "date": "2026-10-23",
+     "end": "2026-10-25",
+     "title": "Round 18: United States Grand Prix",
+     "place": "Austin, TX",
+     "hotels": "Circuit of the Americas, Austin, TX",
+     "big": true
+    },
+    {
+     "date": "2026-10-30",
+     "end": "2026-11-01",
+     "title": "Round 19: Mexico City Grand Prix",
+     "place": "Mexico City, Mexico",
+     "hotels": "Autodromo Hermanos Rodriguez, Mexico City"
+    },
+    {
+     "date": "2026-11-06",
+     "end": "2026-11-08",
+     "title": "Round 20: São Paulo Grand Prix",
+     "place": "São Paulo, Brazil",
+     "hotels": "Interlagos, Sao Paulo, Brazil"
+    },
+    {
+     "date": "2026-11-19",
+     "end": "2026-11-21",
+     "title": "Round 21: Las Vegas Grand Prix",
+     "place": "Las Vegas, NV",
+     "hotels": "Las Vegas Strip, NV",
+     "big": true
+    },
+    {
+     "date": "2026-11-27",
+     "end": "2026-11-29",
+     "title": "Round 22: Qatar Grand Prix",
+     "place": "Lusail, Qatar",
+     "hotels": "Lusail, Qatar"
+    },
+    {
+     "date": "2026-12-04",
+     "end": "2026-12-06",
+     "title": "Round 23: Abu Dhabi Grand Prix",
+     "sub": "Season finale",
+     "place": "Yas Island, Abu Dhabi",
+     "hotels": "Yas Island, Abu Dhabi"
+    }
+   ]
+  }
+ ],
+ "kc": "Austin and Las Vegas are the two races closest to Kansas City.",
+ "travel": [
+  [
+   "Hotels near Circuit of the Americas",
+   "Circuit of the Americas, Austin, TX"
+  ],
+  [
+   "Hotels on the Las Vegas Strip",
+   "Las Vegas Strip, NV"
+  ]
+ ],
+ "sources": [
+  [
+   "Formula1.com: 2026 F1 schedule",
+   "https://www.formula1.com/en/racing/2026"
+  ]
+ ],
+ "accessed": "2026-10-22T05:30:00Z"
+}

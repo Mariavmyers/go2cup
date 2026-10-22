@@ -14,6 +14,9 @@ from datetime import datetime
 from html import escape
 from urllib.parse import quote
 from zoneinfo import ZoneInfo
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from sports_nav import SWITCH_CSS, sport_bar  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CT = ZoneInfo("America/Chicago")  # Kansas City is our home market, so times are Central
@@ -264,7 +267,7 @@ ld = {
     ],
 }
 
-css = open(os.path.join(ROOT, "_tools", "nfl.css"), encoding="utf-8").read()
+css = open(os.path.join(ROOT, "_tools", "nfl.css"), encoding="utf-8").read() + SWITCH_CSS
 updated = datetime.fromisoformat(DATA["updated"]).strftime("%B ") + str(int(DATA["updated"][8:])) + ", " + DATA["updated"][:4]
 
 page = """<!doctype html>
@@ -321,7 +324,7 @@ __CSS__
     </div>
   </nav>
 </header>
-
+__BAR__
 <section class="hero" aria-labelledby="hero-h">
   <div class="wrap">
     <h1 id="hero-h">NFL 2026 Season Hub</h1>
@@ -351,7 +354,7 @@ __ADVERTISE__
 """
 for k, v in {"__LD__": json.dumps(ld, indent=1, ensure_ascii=False), "__CSS__": css, "__CHIEFS__": chiefs_section,
              "__TEAMS__": teams_section, "__TRAVEL__": travel_section, "__ADVERTISE__": advertise_section,
-             "__UPDATED__": updated}.items():
+             "__UPDATED__": updated, "__BAR__": sport_bar("nfl.html")}.items():
     page = page.replace(k, v)
 open(os.path.join(ROOT, "nfl.html"), "w", encoding="utf-8").write(page)
 print("wrote nfl.html: %d remaining games, %d teams, %d Chiefs events in JSON-LD" % (len(REMAINING), len(TEAMS), len(events)))

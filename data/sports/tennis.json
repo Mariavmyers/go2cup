@@ -1,0 +1,84 @@
+{
+ "slug": "tennis",
+ "sport": "Tennis",
+ "title": "Tennis: The Season Finale",
+ "tagline": "Paris, the WTA Finals in Indian Wells and the ATP Finals in Turin close out the 2026 tour.",
+ "theme": {
+  "bg": "#0d0b22",
+  "bg2": "#120f2e",
+  "panel": "#17143a",
+  "line": "#2c2766",
+  "accent": "#d7f53a",
+  "soft": "#ecfaa6",
+  "pattern": "tcourt"
+ },
+ "sections": [
+  {
+   "h": "Rest of the 2026 season",
+   "intro": "The last big events of the year, with dates from the official event and tour websites.",
+   "items": [
+    {
+     "date": "2026-10-31",
+     "end": "2026-11-08",
+     "title": "Rolex Paris Masters",
+     "sub": "ATP Masters 1000",
+     "place": "Paris La Défense Arena, Paris",
+     "venue": "Paris La Défense Arena",
+     "city": "Nanterre",
+     "country": "France",
+     "hotels": "Paris La Défense Arena, Nanterre"
+    },
+    {
+     "date": "2026-11-08",
+     "end": "2026-11-15",
+     "title": "WTA Finals",
+     "sub": "The top eight women of the season",
+     "place": "Indian Wells Tennis Garden, Indian Wells, CA",
+     "venue": "Indian Wells Tennis Garden",
+     "city": "Indian Wells",
+     "country": "USA",
+     "hotels": "Indian Wells Tennis Garden, Indian Wells, CA",
+     "big": true
+    },
+    {
+     "date": "2026-11-15",
+     "end": "2026-11-22",
+     "title": "Nitto ATP Finals",
+     "sub": "The top eight men of the season",
+     "place": "Inalpi Arena, Turin, Italy",
+     "venue": "Inalpi Arena",
+     "city": "Turin",
+     "country": "Italy",
+     "hotels": "Inalpi Arena, Turin, Italy",
+     "big": true
+    }
+   ]
+  }
+ ],
+ "kc": "The WTA Finals in Indian Wells, California, is the closest of the season's big finales to Kansas City.",
+ "travel": [
+  [
+   "Hotels near Indian Wells Tennis Garden",
+   "Indian Wells Tennis Garden, Indian Wells, CA"
+  ],
+  [
+   "Hotels near Inalpi Arena, Turin",
+   "Inalpi Arena, Turin, Italy"
+  ]
+ ],
+ "sources": [
+  [
+   "Paris La Défense: Rolex Paris Masters 2026",
+   "https://www.parisladefense.com/en/news/events/rolex-paris-masters-back-october-31-november-8-2026"
+  ],
+  [
+   "WTA: WTA Finals 2026",
+   "https://www.wtatennis.com/tournaments/808/wta-finals/2026"
+  ],
+  [
+   "Nitto ATP Finals: Event overview",
+   "https://www.nittoatpfinals.com/en/event/overview"
+  ]
+ ],
+ "accessed": "2026-10-22T05:30:00Z"
+}

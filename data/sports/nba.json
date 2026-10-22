@@ -1,0 +1,164 @@
+{
+ "slug": "nba",
+ "sport": "NBA",
+ "title": "NBA 2026–27 Season Hub",
+ "tagline": "The NBA Cup, Christmas Day, the games abroad and the road to the playoffs, with every key date from NBA.com.",
+ "theme": {
+  "bg": "#0b1020",
+  "bg2": "#0f1730",
+  "panel": "#121a33",
+  "line": "#22305a",
+  "accent": "#ff7a1a",
+  "soft": "#ffc79e",
+  "pattern": "court"
+ },
+ "sections": [
+  {
+   "h": "Emirates NBA Cup 2026",
+   "intro": "Group Play runs on Cup Nights from October 30 to November 27. The knockout rounds finish with the championship in Indianapolis.",
+   "items": [
+    {
+     "date": "2026-10-30",
+     "title": "Cup Night 1: Group Play tips off",
+     "sub": "10 games, including Knicks at 76ers and Lakers at Warriors on Prime Video"
+    },
+    {
+     "date": "2026-11-06",
+     "title": "Cup Night 2",
+     "sub": "9 games, including 76ers at Cavaliers and Trail Blazers at Lakers on Prime Video"
+    },
+    {
+     "date": "2026-11-13",
+     "title": "Cup Night 3",
+     "sub": "9 games, including Knicks at Pacers and Warriors at Spurs on Prime Video"
+    },
+    {
+     "date": "2026-11-20",
+     "title": "Cup Night 4",
+     "sub": "Group Play continues; more Cup Nights on Nov. 24, 25 and 27"
+    },
+    {
+     "date": "2026-11-27",
+     "title": "Group Play ends",
+     "sub": "Group winners and wild cards move on"
+    },
+    {
+     "date": "2026-12-04",
+     "end": "2026-12-05",
+     "title": "Knockout Rounds: Quarterfinals"
+    },
+    {
+     "date": "2026-12-08",
+     "end": "2026-12-09",
+     "title": "Knockout Rounds: Semifinals"
+    },
+    {
+     "date": "2026-12-11",
+     "title": "NBA Cup Championship",
+     "place": "Hinkle Fieldhouse, Indianapolis, IN",
+     "venue": "Hinkle Fieldhouse",
+     "city": "Indianapolis",
+     "country": "USA",
+     "hotels": "Hinkle Fieldhouse, Indianapolis, IN"
+    }
+   ]
+  },
+  {
+   "h": "Games abroad",
+   "intro": "The NBA is playing regular-season games in Mexico City, Paris and Manchester this season.",
+   "items": [
+    {
+     "date": "2026-11-07",
+     "title": "NBA Mexico City Game: Denver Nuggets vs. Indiana Pacers",
+     "place": "Arena CDMX, Mexico City",
+     "venue": "Arena CDMX",
+     "city": "Mexico City",
+     "country": "Mexico",
+     "hotels": "Arena CDMX, Mexico City"
+    },
+    {
+     "date": "2027-01-14",
+     "title": "NBA Paris Game: San Antonio Spurs vs. New Orleans Pelicans",
+     "sub": "2 p.m. ET, Prime Video",
+     "place": "Accor Arena, Paris",
+     "venue": "Accor Arena",
+     "city": "Paris",
+     "country": "France",
+     "hotels": "Accor Arena, Paris"
+    },
+    {
+     "date": "2027-01-17",
+     "title": "NBA Manchester Game: San Antonio Spurs vs. New Orleans Pelicans",
+     "sub": "10:30 a.m. ET, Prime Video",
+     "place": "Co-op Live, Manchester",
+     "venue": "Co-op Live",
+     "city": "Manchester",
+     "country": "England",
+     "hotels": "Co-op Live, Manchester"
+    }
+   ]
+  },
+  {
+   "h": "Big days on the calendar",
+   "items": [
+    {
+     "date": "2026-12-25",
+     "title": "NBA on Christmas Day",
+     "sub": "Spurs vs. Knicks (12 p.m. ET) · Heat vs. Celtics (2:30) · 76ers vs. Lakers (5) · Thunder vs. Timberwolves (8) · Nuggets vs. Warriors (10:30), all on ABC/ESPN"
+    },
+    {
+     "date": "2027-01-18",
+     "title": "NBA on MLK Day",
+     "sub": "Pistons vs. Cavaliers · 76ers vs. Hawks · Timberwolves vs. Knicks · Rockets vs. Grizzlies on NBC/Peacock"
+    },
+    {
+     "date": "2027-02-11",
+     "title": "Trade deadline"
+    },
+    {
+     "date": "2027-02-19",
+     "end": "2027-02-21",
+     "title": "NBA All-Star 2027",
+     "place": "Phoenix, AZ",
+     "hotels": "Phoenix, AZ"
+    },
+    {
+     "date": "2027-04-11",
+     "title": "Regular season ends",
+     "sub": "All 30 teams play"
+    },
+    {
+     "date": "2027-04-13",
+     "end": "2027-04-16",
+     "title": "Play-In Tournament"
+    },
+    {
+     "date": "2027-04-17",
+     "title": "NBA Playoffs begin"
+    }
+   ]
+  }
+ ],
+ "kc": "There's no NBA team in Kansas City. The closest trips are Oklahoma City (Thunder), Denver (Nuggets) and Memphis (Grizzlies).",
+ "travel": [
+  [
+   "Hotels near the NBA Cup final",
+   "Hinkle Fieldhouse, Indianapolis, IN"
+  ],
+  [
+   "Hotels for All-Star 2027",
+   "Phoenix, AZ"
+  ]
+ ],
+ "sources": [
+  [
+   "NBA.com: Key dates for the 2026–27 season",
+   "https://www.nba.com/news/key-dates"
+  ],
+  [
+   "NBA.com: Emirates NBA Cup key dates and schedule",
+   "https://www.nba.com/news/emirates-nba-cup-key-dates-schedule"
+  ]
+ ],
+ "accessed": "2026-10-22T05:30:00Z"
+}

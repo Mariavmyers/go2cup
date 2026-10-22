@@ -1,0 +1,105 @@
+{
+ "slug": "boxing",
+ "sport": "Boxing",
+ "title": "Boxing Fight Calendar",
+ "tagline": "The biggest title fights left in 2026, from Canelo's return in Riyadh to Fury vs. Joshua in Cardiff.",
+ "theme": {
+  "bg": "#150b05",
+  "bg2": "#1d1007",
+  "panel": "#25140a",
+  "line": "#47290f",
+  "accent": "#f5b041",
+  "soft": "#fbdca3",
+  "pattern": "ring"
+ },
+ "sections": [
+  {
+   "h": "Upcoming fights",
+   "intro": "Boxing has no single league schedule, so this list follows CBS Sports' fight calendar. Cards change often, so check the promoter before you travel.",
+   "items": [
+    {
+     "date": "2026-10-24",
+     "title": "Dalton Smith (c) vs. Alberto Puello",
+     "sub": "WBC junior welterweight title · DAZN",
+     "place": "Sheffield, England",
+     "hotels": "Sheffield, England"
+    },
+    {
+     "date": "2026-10-24",
+     "title": "Emanuel Navarrete (c) vs. O'Shaquie Foster (c)",
+     "sub": "Unified junior lightweight title · DAZN",
+     "place": "San Antonio, TX",
+     "hotels": "San Antonio, TX"
+    },
+    {
+     "date": "2026-10-31",
+     "title": "Christian Mbilli (c) vs. Saul \"Canelo\" Alvarez",
+     "sub": "WBC super middleweight title · DAZN",
+     "place": "Riyadh, Saudi Arabia",
+     "hotels": "Riyadh, Saudi Arabia",
+     "big": true
+    },
+    {
+     "date": "2026-11-07",
+     "title": "Chris Billam-Smith vs. Cheavon Clarke",
+     "sub": "Cruiserweights · Paramount+",
+     "place": "London, England",
+     "hotels": "London, England"
+    },
+    {
+     "date": "2026-11-14",
+     "title": "Diego Pacheco vs. Darius Fulghum",
+     "sub": "Super middleweights · TNT",
+     "place": "Carson, CA",
+     "hotels": "Carson, CA"
+    },
+    {
+     "date": "2026-11-28",
+     "title": "Agit Kabayel (c) vs. Nelson Hysa",
+     "sub": "WBC heavyweight title · DAZN",
+     "place": "Düsseldorf, Germany",
+     "hotels": "Düsseldorf, Germany"
+    },
+    {
+     "date": "2026-12-11",
+     "title": "Tyson Fury vs. Anthony Joshua",
+     "sub": "Heavyweights · Netflix",
+     "place": "Cardiff, Wales",
+     "hotels": "Cardiff, Wales",
+     "big": true
+    },
+    {
+     "date": "2026-12-12",
+     "title": "Dmitry Bivol (c) vs. Callum Smith",
+     "sub": "Unified light heavyweight title",
+     "place": "Yekaterinburg, Russia"
+    },
+    {
+     "date": "2026-12-19",
+     "title": "Anthony Cacace (c) vs. Nick Ball",
+     "sub": "WBA junior lightweight title · DAZN",
+     "place": "Belfast, Northern Ireland",
+     "hotels": "Belfast, Northern Ireland"
+    }
+   ]
+  }
+ ],
+ "kc": "",
+ "travel": [
+  [
+   "Hotels in Cardiff for Fury vs. Joshua",
+   "Cardiff, Wales"
+  ],
+  [
+   "Hotels in Riyadh for Canelo",
+   "Riyadh, Saudi Arabia"
+  ]
+ ],
+ "sources": [
+  [
+   "CBS Sports: Boxing schedule for 2026 (updated Oct. 20, 2026)",
+   "https://www.cbssports.com/boxing/news/boxing-schedule-for-2026-dates-canelo-alvarez-next-fight-tyson-fury-vs-anthony-joshua/"
+  ]
+ ],
+ "accessed": "2026-10-22T05:30:00Z"
+}

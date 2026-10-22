@@ -1,0 +1,142 @@
+{
+ "slug": "soccer",
+ "sport": "Soccer",
+ "title": "Soccer Hub: MLS, NWSL & Beyond",
+ "tagline": "The KC Current's run to the NWSL playoffs, the MLS Cup Playoffs, and the road to the Women's World Cup in Brazil.",
+ "theme": {
+  "bg": "#041618",
+  "bg2": "#06201f",
+  "panel": "#0a2729",
+  "line": "#16413f",
+  "accent": "#2fe0c8",
+  "soft": "#a6f3e8",
+  "pattern": "pitch"
+ },
+ "sections": [
+  {
+   "h": "Kansas City Current",
+   "intro": "KC's NWSL team plays at CPKC Stadium on the riverfront. Times are Central, from kansascitycurrent.com.",
+   "items": [
+    {
+     "date": "2026-10-25",
+     "time": "4:00 PM CT",
+     "title": "KC Current vs. Washington Spirit",
+     "sub": "Fan Appreciation Day · ESPN",
+     "place": "CPKC Stadium, Kansas City, MO",
+     "venue": "CPKC Stadium",
+     "city": "Kansas City",
+     "country": "USA",
+     "start": "2026-10-25T21:00:00Z",
+     "hotels": "CPKC Stadium, Kansas City, MO",
+     "kc": true
+    },
+    {
+     "date": "2026-11-01",
+     "time": "4:00 PM CT",
+     "title": "KC Current at Racing Louisville FC",
+     "sub": "Final regular-season match · ESPN",
+     "place": "Lynn Family Stadium, Louisville, KY",
+     "venue": "Lynn Family Stadium",
+     "city": "Louisville",
+     "country": "USA",
+     "start": "2026-11-01T21:00:00Z",
+     "kc": true
+    },
+    {
+     "date": "2026-11-06",
+     "end": "2026-11-08",
+     "title": "NWSL Playoffs: Quarterfinals",
+     "sub": "Opponents and venues set after the regular season"
+    },
+    {
+     "date": "2026-11-13",
+     "end": "2026-11-15",
+     "title": "NWSL Playoffs: Semifinals"
+    },
+    {
+     "date": "2026-11-21",
+     "time": "7:00 PM CT",
+     "title": "NWSL Championship",
+     "sub": "CBS, Paramount+",
+     "place": "Audi Field, Washington, D.C.",
+     "venue": "Audi Field",
+     "city": "Washington",
+     "country": "USA",
+     "start": "2026-11-22T01:00:00Z",
+     "hotels": "Audi Field, Washington, DC"
+    }
+   ]
+  },
+  {
+   "h": "MLS Cup Playoffs 2026",
+   "intro": "The top nine teams in each conference qualify. Every playoff match streams on Apple TV.",
+   "items": [
+    {
+     "date": "2026-11-07",
+     "title": "Decision Day",
+     "sub": "All 30 clubs play: East at 4 p.m. ET, West at 7 p.m. ET"
+    },
+    {
+     "date": "2026-11-18",
+     "title": "Wild Card matches",
+     "sub": "No. 8 vs. No. 9 in each conference"
+    },
+    {
+     "date": "2026-11-20",
+     "end": "2026-12-02",
+     "title": "Round One best-of-3 series"
+    },
+    {
+     "date": "2026-12-05",
+     "end": "2026-12-06",
+     "title": "Conference Semifinals"
+    },
+    {
+     "date": "2026-12-11",
+     "end": "2026-12-12",
+     "title": "Conference Finals"
+    },
+    {
+     "date": "2026-12-18",
+     "title": "MLS Cup 2026",
+     "sub": "Hosted by the finalist with the better regular-season record"
+    }
+   ]
+  },
+  {
+   "h": "Next summer: Women's World Cup",
+   "items": [
+    {
+     "date": "2027-06-24",
+     "end": "2027-07-25",
+     "title": "FIFA Women's World Cup · Brazil 2027",
+     "sub": "Our full fan guide covers host cities, travel and official tickets",
+     "link": "brazil-2027.html",
+     "linktext": "Brazil 2027 guide"
+    }
+   ]
+  }
+ ],
+ "kc": "Kansas City is a soccer town: the KC Current at CPKC Stadium, Sporting KC in MLS, and World Cup 2026 matches at Arrowhead.",
+ "travel": [
+  [
+   "Hotels near CPKC Stadium",
+   "CPKC Stadium, Kansas City, MO"
+  ],
+  [
+   "Hotels near Audi Field (NWSL final)",
+   "Audi Field, Washington, DC"
+  ]
+ ],
+ "sources": [
+  [
+   "kansascitycurrent.com: 2026 schedule",
+   "https://www.kansascitycurrent.com/schedule"
+  ],
+  [
+   "MLSsoccer.com: MLS Cup Playoffs key dates",
+   "https://www.mlssoccer.com/news/audi-2026-mls-cup-playoffs-key-dates-schedule-information"
+  ]
+ ],
+ "accessed": "2026-10-22T05:30:00Z"
+}
