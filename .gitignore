@@ -150,3 +150,7 @@ Claude non stop questions.txt
 
 # Local tooling
 .claude/
+
+# Approved downloadable guides (served on sportdgx.com)
+!/guides/*.pdf
+!/GO2CUP Fan Country Hopper Guide.pdf
