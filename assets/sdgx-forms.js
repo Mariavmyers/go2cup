@@ -141,6 +141,17 @@
     return f;
   }
 
+  // What to tell the person after a successful submission. For guides, Make reports whether the
+  // download link was emailed ("sent"), failed, or is handled by hand (empty), and we say only that.
+  function doneText(kind, reply, email) {
+    if (kind === 'guide') {
+      var st = (reply && reply.guide_status) || '';
+      if (st === 'sent') return 'Done! We\'ve emailed the download link to ' + email + '. If it isn\'t in your inbox in a few minutes, check spam or promotions.';
+      if (st === 'failed') return 'Your request was received, but the email didn\'t go out automatically. We\'ll send the guide to ' + email + ' by hand.';
+    }
+    return COPY[kind].done;
+  }
+
   function fail(msg, html) { msg.className = 'msg err'; msg.innerHTML = html; }
 
   function send(f, kind, source, guide) {
@@ -148,6 +159,7 @@
     if (f._busy || f._done) return;                               // duplicate clicks / Enter presses
     if (!f.checkValidity()) { f.reportValidity(); return; }
     var data = new URLSearchParams(new FormData(f));
+    if (data.get('email')) data.set('email', data.get('email').trim().toLowerCase());   // one key per address for duplicate checks
     if (data.get('website')) return;                               // bot filled the hidden field: send nothing, claim nothing
     if (Date.now() - f._shownAt < MIN_MS) { fail(msg, 'Please take a second to check your details, then press the button again.'); f._shownAt = 0; return; }
     data.delete('website');
@@ -175,14 +187,15 @@
       .then(function (res) {
         return res.text().then(function (t) {
           if (!res.ok) throw new Error('HTTP ' + res.status);
-          var ok = /^\s*accepted\s*$/i.test(t);
-          if (!ok) { try { ok = JSON.parse(t).ok === true; } catch (e) { ok = false; } }
-          if (!ok) throw new Error('unexpected reply');
+          var j = null;
+          try { j = JSON.parse(t); } catch (e) { j = null; }
+          if (!j || j.ok !== true) throw new Error('unexpected reply');   // only the scenario's own reply counts as success
+          return j;
         });
       })
-      .then(function () {
+      .then(function (j) {
         clearTimeout(timer); f._busy = false; f._done = true;
-        msg.className = 'msg ok'; msg.textContent = COPY[kind].done;
+        msg.className = 'msg ok'; msg.textContent = doneText(kind, j, data.get('email'));
         [].forEach.call(f.querySelectorAll('input,select,textarea,button:not(.x)'), function (el) { el.disabled = true; });
         try { sessionStorage.setItem(key, '1'); } catch (e) {}
         try { if (window.gtag) gtag('event', kind === 'inquiry' ? 'generate_lead' : 'sign_up', { method: 'sdgx_form', form_kind: kind, form_source: source || '' }); } catch (e) {}
