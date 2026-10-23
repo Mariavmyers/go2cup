@@ -19,7 +19,7 @@ from sports_nav import SWITCH_CSS, sport_bar  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FLIGHTS = "https://aviasales.tpk.lu/gsLDMhOV?marker=736515.worldcup26"
-ADVERTISE = "/advertise.html"
+ADVERTISE = "/advertise.html#inquiry"
 MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 PATTERNS = {
@@ -256,7 +256,7 @@ def build(path):
 <section class="block advertise" aria-labelledby="adv-h">
   <h2 id="adv-h">Advertise on our %(sport)s page</h2>
   <p>Reach fans planning game days and trips, with Kansas City fans first.</p>
-  <a class="btn solid" href="%(adv)s" data-sdgx-form="advertise" data-source="sport page">Book your spot</a>
+  <a class="btn solid" href="%(adv)s" data-sdgx-form="inquiry" data-source="sport page">Book your spot</a>
 </section>
 <p class="fine">Dates checked %(acc)s. Sources: %(sources)s. Events can move; confirm with the organizer before you travel.</p>
 </main>

@@ -55,7 +55,7 @@ CHIEFS_RESULTS = [
     (5, "", "Bye week", ""), (6, "vs", "Los Angeles Chargers", "W 22–6"),
 ]
 FLIGHTS = "https://aviasales.tpk.lu/gsLDMhOV?marker=736515.worldcup26"
-ADVERTISE = "/advertise.html"
+ADVERTISE = "/advertise.html#inquiry"
 
 
 def e(s):
@@ -235,7 +235,7 @@ advertise_section = """
 <section class="block advertise" id="advertise" aria-labelledby="adv-h">
   <h2 id="adv-h">Advertise on our NFL page</h2>
   <p>Put your business in front of NFL and soccer fans planning game days and road trips, with Kansas City fans first.</p>
-  <a class="btn solid" href="%s" data-sdgx-form="advertise" data-source="nfl page">Book your spot</a>
+  <a class="btn solid" href="%s" data-sdgx-form="inquiry" data-source="nfl page">Book your spot</a>
 </section>
 """ % e(ADVERTISE)
 

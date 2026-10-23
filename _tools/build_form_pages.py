@@ -10,6 +10,9 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from sports_nav import SWITCH_CSS, sport_bar  # noqa: E402
+from form_markup import static_form  # noqa: E402
+
+HOOK_TOKEN = "__SDGX_FORMS_HOOK__"
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -127,9 +130,7 @@ INSIDER = """
       </ul>
     </div>
     <div class="formbox" id="join">
-      <div data-sdgx-inline="newsletter" data-source="insider page">
-        <p class="fine">Loading the sign-up form... If it doesn't appear, email <a href="mailto:hello@mainentry.net?subject=Weekend%20Game%20Plan">hello@mainentry.net</a> with the subject "Weekend Game Plan".</p>
-      </div>
+      <div data-sdgx-inline="newsletter" data-source="insider page">__STATIC_NEWSLETTER__</div>
     </div>
   </div>
 </section>
@@ -156,19 +157,18 @@ ADVERTISE = """
         <li><span class="n">2</span><div><b>Sport page feature</b>A featured card on our NFL, NBA, soccer, UFC, boxing, tennis or F1 pages.</div></li>
         <li><span class="n">3</span><div><b>Weekend Game Plan mention</b>A spot in our weekly SportDGX Insider email.</div></li>
         <li><span class="n">4</span><div><b>Game-day sponsorship</b>"Presented by" on a team's schedule or a big event page.</div></li>
+        <li><span class="n">5</span><div><b>Partnerships and consulting</b>Brand partnerships, co-marketing, and fan-travel or multilingual consulting.</div></li>
       </ul>
     </div>
     <div class="formbox" id="inquiry">
-      <div data-sdgx-inline="advertise" data-source="advertise page">
-        <p class="fine">Loading the inquiry form... If it doesn't appear, email <a href="mailto:hello@mainentry.net?subject=Advertising%20inquiry">hello@mainentry.net</a>.</p>
-      </div>
+      <div data-sdgx-inline="inquiry" data-source="advertise page">__STATIC_INQUIRY__</div>
     </div>
   </div>
 </section>
 <main class="wrap">
   <h2>How it works</h2>
   <div class="grid">
-    <div class="card"><span class="tag">Step 1</span><h3>Tell us about your business</h3><p>Use the form above. We reply within 2 business days.</p></div>
+    <div class="card"><span class="tag">Step 1</span><h3>Tell us about your business</h3><p>Use the form above, or email <a href="mailto:contact@sportdgx.com">contact@sportdgx.com</a>.</p></div>
     <div class="card"><span class="tag">Step 2</span><h3>Pick a placement</h3><p>We suggest the pages and cities that fit your customers, with simple monthly pricing.</p></div>
     <div class="card"><span class="tag">Step 3</span><h3>Go live</h3><p>Your placement is clearly labeled as sponsored, as the FTC requires.</p></div>
   </div>
@@ -176,16 +176,33 @@ ADVERTISE = """
 </main>
 """
 
+
+THANKS = """
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap" style="display:block;max-width:760px">
+    <p class="kicker">SportDGX</p>
+    <h1 id="h1">Thanks, it <span>reached us</span></h1>
+    <p class="lead">Your form was received. If you signed up for the Weekend Game Plan, it goes to the address you entered and you can unsubscribe at any time. If you asked for a guide or sent an inquiry, we'll reply by email.</p>
+    <p class="lead"><a href="/">Back to SportDGX</a> · <a href="/sports-news.html">Latest news</a> · <a href="/host-cities.html">City guides</a></p>
+  </div>
+</section>
+"""
+
 PAGES = [
     ("insider", "SportDGX Insider: The Weekend Game Plan | Free Weekly Sports Email",
      "Free weekly email: the big games this week, the cheapest seats we can find, and a hotel deal near the stadium.", INSIDER),
     ("advertise", "Advertise with SportDGX | Reach Sports Fans Before Game Day",
      "Advertise your business to fans planning game days and sports trips: city pages, sport pages and the Weekend Game Plan email.", ADVERTISE),
+    ("thanks", "Thanks | SportDGX", "Your form reached SportDGX.", THANKS),
 ]
 
 for slug, title, desc, body in PAGES:
+    body = (body.replace("__STATIC_NEWSLETTER__", static_form("newsletter", "", "insider page", HOOK_TOKEN))
+                .replace("__STATIC_INQUIRY__", static_form("inquiry", "", "advertise page", HOOK_TOKEN)))
     html = HEAD % {"title": title, "desc": desc, "slug": slug, "switch": SWITCH_CSS, "bar": sport_bar(""),
                    "cur_ins": ' aria-current="page"' if slug == "insider" else "",
                    "cur_adv": ' aria-current="page"' if slug == "advertise" else ""} + body + FOOT
+    if slug == "thanks":
+        html = html.replace('<meta name="theme-color"', '<meta name="robots" content="noindex">\n<meta name="theme-color"')
     open(os.path.join(ROOT, slug + ".html"), "w", encoding="utf-8").write(html)
     print("wrote", slug + ".html")
