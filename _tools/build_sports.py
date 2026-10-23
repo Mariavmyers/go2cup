@@ -19,7 +19,7 @@ from sports_nav import SWITCH_CSS, sport_bar  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FLIGHTS = "https://aviasales.tpk.lu/gsLDMhOV?marker=736515.worldcup26"
-ADVERTISE = "https://docs.google.com/forms/d/e/1FAIpQLSd3_Nd1UgH81RW4oYpZX6zMwCj9ZWApRaVUzShIc4UISRw2hQ/viewform?usp=header"
+ADVERTISE = "/advertise.html#inquiry"
 MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 PATTERNS = {
@@ -256,7 +256,7 @@ def build(path):
 <section class="block advertise" aria-labelledby="adv-h">
   <h2 id="adv-h">Advertise on our %(sport)s page</h2>
   <p>Reach fans planning game days and trips, with Kansas City fans first.</p>
-  <a class="btn solid" href="%(adv)s" target="_blank" rel="noopener">Book your spot</a>
+  <a class="btn solid" href="%(adv)s" data-sdgx-form="inquiry" data-source="sport page">Book your spot</a>
 </section>
 <p class="fine">Dates checked %(acc)s. Sources: %(sources)s. Events can move; confirm with the organizer before you travel.</p>
 </main>
@@ -266,6 +266,7 @@ def build(path):
     GO2CUP may earn a commission from affiliate links. <a href="/disclosure.html">Disclosure</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/">Home</a>
   </div>
 </footer>
+<script src="/assets/sdgx-forms.js" defer></script>
 </body>
 </html>
 """ % {
