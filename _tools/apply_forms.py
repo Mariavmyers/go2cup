@@ -42,8 +42,7 @@ FALLBACK = {  # where each link goes without JavaScript (each has a plain HTML f
     "Mexico Trip Guide": "/mexico-trip-guide.html#get-guide",
 }
 # pages that get the in-page guide form, replacing the named button
-GUIDE_PAGES = {"hopper-guide.html": ("Country Hopper Guide", "GET MY FREE GUIDE"),
-               "mexico-trip-guide.html": ("Mexico Trip Guide", "Send My Guide")}
+GUIDE_PAGES = {}  # World Cup 2026 guide offers were retired on 2026-10-23 (see _tools/wc2026_archive.py)
 SCRIPT = '<script src="/assets/sdgx-forms.js" defer></script>'
 FORM_URL = r'https?://(?:docs\.google\.com/forms/d/(?:e/)?([A-Za-z0-9_-]+)[^"\']*|forms\.gle/([A-Za-z0-9]+)[^"\']*)'
 A_TAG = re.compile(r'<a\b([^>]*?)href=(["\'])' + FORM_URL + r'\2([^>]*)>(.*?)</a>', re.S | re.I)

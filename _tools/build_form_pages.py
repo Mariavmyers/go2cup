@@ -182,7 +182,7 @@ THANKS = """
   <div class="wrap" style="display:block;max-width:760px">
     <p class="kicker">SportDGX</p>
     <h1 id="h1">Thanks, it <span>reached us</span></h1>
-    <p class="lead">Your form was received. If you signed up for the Weekend Game Plan, it goes to the address you entered and you can unsubscribe at any time. If you asked for a guide or sent an inquiry, we'll reply by email.</p>
+    <p class="lead">Your form was received. If you signed up for the Weekend Game Plan, it goes to the address you entered and you can unsubscribe at any time. If you sent an inquiry, we'll reply by email.</p>
     <p class="lead"><a href="/">Back to SportDGX</a> · <a href="/sports-news.html">Latest news</a> · <a href="/host-cities.html">City guides</a></p>
   </div>
 </section>
@@ -196,13 +196,14 @@ PAGES = [
     ("thanks", "Thanks | SportDGX", "Your form reached SportDGX.", THANKS),
 ]
 
-for slug, title, desc, body in PAGES:
-    body = (body.replace("__STATIC_NEWSLETTER__", static_form("newsletter", "", "insider page", HOOK_TOKEN))
-                .replace("__STATIC_INQUIRY__", static_form("inquiry", "", "advertise page", HOOK_TOKEN)))
-    html = HEAD % {"title": title, "desc": desc, "slug": slug, "switch": SWITCH_CSS, "bar": sport_bar(""),
-                   "cur_ins": ' aria-current="page"' if slug == "insider" else "",
-                   "cur_adv": ' aria-current="page"' if slug == "advertise" else ""} + body + FOOT
-    if slug == "thanks":
-        html = html.replace('<meta name="theme-color"', '<meta name="robots" content="noindex">\n<meta name="theme-color"')
-    open(os.path.join(ROOT, slug + ".html"), "w", encoding="utf-8").write(html)
-    print("wrote", slug + ".html")
+if __name__ == "__main__":
+    for slug, title, desc, body in PAGES:
+        body = (body.replace("__STATIC_NEWSLETTER__", static_form("newsletter", "", "insider page", HOOK_TOKEN))
+                    .replace("__STATIC_INQUIRY__", static_form("inquiry", "", "advertise page", HOOK_TOKEN)))
+        html = HEAD % {"title": title, "desc": desc, "slug": slug, "switch": SWITCH_CSS, "bar": sport_bar(""),
+                       "cur_ins": ' aria-current="page"' if slug == "insider" else "",
+                       "cur_adv": ' aria-current="page"' if slug == "advertise" else ""} + body + FOOT
+        if slug == "thanks":
+            html = html.replace('<meta name="theme-color"', '<meta name="robots" content="noindex">\n<meta name="theme-color"')
+        open(os.path.join(ROOT, slug + ".html"), "w", encoding="utf-8").write(html)
+        print("wrote", slug + ".html")
