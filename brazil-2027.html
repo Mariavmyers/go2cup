@@ -180,6 +180,7 @@ footer .fl a:hover{color:var(--gold)}
   .alert a.btn{margin-left:0}
   .meta,.acts{grid-template-columns:1fr 1fr}
 }
+.hotel-pick{margin:14px 0;padding:14px;border:1px solid rgba(245,197,24,.45);border-radius:12px}.hotel-pick b{color:#f5c518}.hotel-pick p{margin:8px 0 12px}.hotel-pick a{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;background:#f5c518;color:#07180e;font-weight:700}
 </style>
 </head>
 <body>
@@ -194,7 +195,7 @@ footer .fl a:hover{color:var(--gold)}
       <li><a href="/">Home</a></li>
       <li><a href="brazil-2027.html" class="on">Brazil 2027</a></li>
       <li><a href="/nfl.html">NFL</a></li>
-      <li><a href="/">World Cup 2026</a></li>
+      <li><a href="world-cup-2026.html">World Cup 2026 archive</a></li>
       <li><a href="sports-news.html">Sports News</a></li>
       <li><a href="where-to-stay.html">Travel</a></li>
     </ul>
@@ -249,8 +250,10 @@ footer .fl a:hover{color:var(--gold)}
   <div class="wrap">
     <div class="sec-k">8 host cities · 64 matches</div>
     <h2 class="sec bebas">Where the women play</h2>
-    <p class="sec-lede">Every host city stages at least seven matches and at least one knockout game. The team-by-team fixtures fill in after qualifying and the draw. Book a refundable room now — prices climb once the draw is made.</p>
+    <p class="sec-lede">Every host city stages at least seven matches and at least one knockout game. The team-by-team fixtures fill in after qualifying and the draw. Compare total prices and cancellation terms for your dates before booking.</p>
+    <p class="sec-lede">Some links below are affiliate links. We may earn a commission if you book, at no extra cost to you. Hotel starting points are selected for their location and trip style, not verified lowest prices. They are not FIFA accommodation partners. Live prices, availability, taxes, cancellation terms and transfer coverage must be checked with the provider. Links may show alternative properties if your selection is unavailable.</p>
     <div class="cities" id="city-grid"></div>
+    <details><summary>How to compare your Brazil trip</summary><p>Choose your confirmed match city first. Compare the suggested hotel with other rooms for your exact dates, including taxes and cancellation terms. Search flights using the airport codes on the city card; check baggage and connections. Price the airport transfer for your party size and choose an eSIM only after checking phone compatibility. These are separate bookings, not a package or a promised combined saving.</p></details>
   </div>
 </section>
 
@@ -314,8 +317,10 @@ footer .fl a:hover{color:var(--gold)}
      tours   = Tiqets / Klook / GetYourGuide / Viator link for this city
      esim    = Airalo / Yesim Brazil eSIM link (same for every city)
    ========================================================================== */
-var FLIGHTS = 'https://aviasales.tpk.lu/gsLDMhOV?marker=736515.worldcup26';
-var ESIM = '';
+var FLIGHTS = "https://tp.media/r?campaign_id=100&marker=736515&p=4114&sub_id=brazil2027_flights&trs=536726&u=https%3A%2F%2Faviasales.com";
+var ESIM = "https://tp.media/r?campaign_id=224&marker=736515&p=5998&sub_id=brazil2027_esim&trs=536726&u=https%3A%2F%2Fyesim.app%2Fcountry%2Fbrazil%2F";
+var TRANSFERS = "https://tp.media/r?campaign_id=1&marker=736515&p=647&sub_id=brazil2027_transfers&trs=536726&u=https%3A%2F%2Fkiwitaxi.com%2Fen%2Fbrazil";
+var HOTEL_PICKS = [["Windsor Copa","Copacabana base for beach time between matches. Plan a separate journey to Maracanã.","https://windsorhoteis.com/hotel/windsor-copa/"],["ibis São Paulo Paulista","Paulista Avenue base for exploring the city. Match-day travel to Itaquera is a separate journey.","https://all.accor.com/a/pt-br/destination/place/hotels-paulista-avenue-ci980.html"],["Quality Hotel Pampulha & Convention Center","Pampulha option for fans prioritizing the Mineirão area.","https://www.letsatlantica.com.br/hotel/quality-hotel-pampulha-convention-center"],["Praiano Hotel","Meireles waterfront base. Arrange transport to Arena Castelão separately.","https://praianohotel.com.br/"],["Meliá Brasil 21","Central Brasília hotel option in the Brasil 21 complex. Check the match-day route before booking.","https://www.booking.com/hotel/br/melia-brasil-21.html"],["Intercity Praia de Belas","Praia de Belas base; the hotel identifies Beira-Rio among its nearby points of interest.","https://www.intercityhoteis.com.br/en/hotel-porto-alegre/hotel-intercity-praia-de-belas"],["Park Hotel Recife","Boa Viagem base near the airport. Arena Pernambuco is outside central Recife; allow for the transfer.","https://park.com.br/o-hotel/"],["Hotel da Bahia by Wish","Campo Grande hotel option for a city stay. Check your route to Arena Fonte Nova.","https://www.grupowish.com/en/hotel-da-bahia-by-wish"]];
 var CITIES = [
   { id:'rio-de-janeiro', name:'Rio de Janeiro', stadium:'Estádio do Maracanã', cap:'≈ 74,000', role:'Opener · QF · Semi · Final', top:true,
     airport:'GIG · SDU', weather:'Mild, 64–77°F', c1:'#c9a84c', c2:'#1a3a6b',
@@ -358,15 +363,20 @@ var CITIES = [
                : '<span class="soon">'+esc(label)+' · soon</span>';
   }
   var out='';
-  CITIES.forEach(function(c){
+  CITIES.forEach(function(c, index){
+    var pick = HOTEL_PICKS[index];
+    var hotelURL = 'https://www.stay22.com/allez/roam?aid=1607597&campaign=brazil2027_' + c.id + '&address=' + encodeURIComponent(c.name + ', Brazil') + '&hotelname=' + encodeURIComponent(pick[0]);
+    if (c.id === 'rio-de-janeiro') c.tours = "https://tp.media/r?campaign_id=137&marker=736515&p=4110&sub_id=brazil2027_rio_tour&trs=536726&u=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F86842-christ-the-redeemer-and-sugarloaf-mountain-day-tour-in-rio%2F";
     out += '<article class="city" id="'+c.id+'" style="--c1:'+c.c1+';--c2:'+c.c2+'">'
       + '<div class="city-top"><span class="role'+(c.top?' top':'')+'">'+esc(c.role)+'</span>'
       + '<h3>'+esc(c.name)+'</h3><div class="stad">'+esc(c.stadium)+' · '+esc(c.cap)+'</div></div>'
       + '<div class="city-body"><p>'+esc(c.blurb)+'</p>'
       + '<div class="meta"><div><b>Airport</b><span>'+esc(c.airport)+'</span></div><div><b>July weather</b><span>'+esc(c.weather)+'</span></div></div>'
+      + '<div class="hotel-pick"><b>Hotel starting point: '+esc(pick[0])+'</b><p>'+esc(pick[1])+'</p>'+link(hotelURL,'Check this hotel','p')+'</div>'
       + '<div class="acts">'
-      +   link(c.hotels,'Hotels','p') + link(FLIGHTS,'Flights','s')
-      +   link(c.tours,'Things to do','s') + link(ESIM,'eSIM','s')
+      +   link(c.hotels,'Compare city hotels','s') + link(FLIGHTS,'Search flights','s')
+      +   (c.tours ? link(c.tours,'Christ + Sugarloaf tour','s') : '') + link(ESIM,'Brazil eSIM','s')
+      +   link(TRANSFERS,'Check airport transfers','s')
       + '</div>'
       + '<div class="acts" style="grid-template-columns:1fr;margin-top:0"><a class="s" href="https://www.fifa.com/tickets" target="_blank" rel="noopener">Official tickets · FIFA.com</a></div>'
       + '</div></article>';
