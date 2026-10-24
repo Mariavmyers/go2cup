@@ -1,6 +1,6 @@
 # GO2CUP — Project Rules for Claude Code
 
-GO2CUP (sportdgx.com) is a static HTML World Cup 2026 fan-travel hub by
+GO2CUP (sportdgx.com) is a static HTML sports-news and fan-travel website by
 MainEntry LLC, hosted on GitHub Pages.
 
 ## Always follow these rules
@@ -37,3 +37,10 @@ MainEntry LLC, hosted on GitHub Pages.
 ### Workflow
 - Propose the plan before large changes.
 - Build reusable templates I can clone across the 16 host cities.
+
+## World Cup 2026 — permanent editorial rule
+- World Cup 2026 ended in July 2026. Keep coverage historical and clearly archived.
+- Do not promote or recreate 2026 USA/Canada/Mexico travel guides, downloads, trip-planning offers, guide-request forms, or automated guide delivery.
+- Country Hopper and Mexico Trip Guide offers are retired. Old offer URLs must show retirement notices or an appropriate historical destination.
+- Preserve current sports coverage, useful current city content, newsletter consent, business inquiries, and genuine customer records.
+- Customer business decisions take priority over generic optimization suggestions. Ask before repurposing historical material as a new active offer.
