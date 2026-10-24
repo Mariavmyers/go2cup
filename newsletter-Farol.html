@@ -21,19 +21,20 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Farol — Welcome Post · Go2Cup</title>
+<title>The Farol: Welcome Post (World Cup 2026 Archive) | GO2CUP</title>
+<meta name="description" content="The Farol&#x27;s welcome post from the run-up to World Cup 2026, kept in the GO2CUP archive.">
 <link rel="canonical" href="https://sportdgx.com/newsletter-Farol">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="GO2CUP">
-<meta property="og:title" content="The Farol — Welcome Post · Go2Cup">
-<meta property="og:description" content="The Farol — Welcome Post · Go2Cup">
+<meta property="og:title" content="The Farol: Welcome Post (World Cup 2026 Archive) | GO2CUP">
+<meta property="og:description" content="The Farol&#x27;s welcome post from the run-up to World Cup 2026, kept in the GO2CUP archive.">
 <meta property="og:url" content="https://sportdgx.com/newsletter-Farol">
 <meta property="og:image" content="https://sportdgx.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The Farol — Welcome Post · Go2Cup">
-<meta name="twitter:description" content="The Farol — Welcome Post · Go2Cup">
+<meta name="twitter:title" content="The Farol: Welcome Post (World Cup 2026 Archive) | GO2CUP">
+<meta name="twitter:description" content="The Farol&#x27;s welcome post from the run-up to World Cup 2026, kept in the GO2CUP archive.">
 <meta name="twitter:image" content="https://sportdgx.com/og-image.png">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 <style>
@@ -533,6 +534,7 @@
 </script>
 </head>
 <body>
+<!-- WC2026-ARCHIVE:START --><div class="wc26-archive-note" role="note" style="background:#0a2413;border-bottom:2px solid #f5c518;color:#e8f2ec;font:15px/1.5 Inter,system-ui,sans-serif;padding:10px 18px;text-align:center;position:relative;z-index:50"><strong style="font-family:Oswald,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#f5c518">World Cup 2026 archive</strong> &middot; The tournament was played June 11 &ndash; July 19, 2026, and Spain won the final. This page is kept for the record as first published; its dates, offers and travel advice are no longer active. <a href="/world-cup-2026.html" style="color:#f5c518;font-weight:700;white-space:nowrap">Browse the archive &rarr;</a></div><!-- WC2026-ARCHIVE:END -->
 
 <!-- ═══════════════════════════════════════
      HERO
@@ -571,27 +573,7 @@
     <span class="lang-pill active">FR · Français</span>
   </div>
 
-  <div class="countdown-bar" id="countdown">
-    <div class="countdown-unit">
-      <span class="countdown-num" id="cd-days">62</span>
-      <span class="countdown-label">DAYS</span>
-    </div>
-    <span class="countdown-sep">:</span>
-    <div class="countdown-unit">
-      <span class="countdown-num" id="cd-hours">00</span>
-      <span class="countdown-label">HRS</span>
-    </div>
-    <span class="countdown-sep">:</span>
-    <div class="countdown-unit">
-      <span class="countdown-num" id="cd-mins">00</span>
-      <span class="countdown-label">MIN</span>
-    </div>
-    <span class="countdown-sep">:</span>
-    <div class="countdown-unit">
-      <span class="countdown-num" id="cd-secs">00</span>
-      <span class="countdown-label">SEC</span>
-    </div>
-  </div>
+  <div class="countdown-bar" id="countdown"><span style="font-family:Bebas Neue,sans-serif;font-size:18px;letter-spacing:2px;color:#f5c518;">WORLD CUP 2026 IS HISTORY &middot; SPAIN WON THE FINAL</span></div>
 
 </section>
 
@@ -866,28 +848,7 @@ prices, and travel requirements with official sources before booking.
 </div>
 
 
-<script>
-  // Live countdown to June 11, 2026 Opening Ceremony
-  function updateCountdown() {
-    const target = new Date('2026-06-11T20:00:00Z');
-    const now = new Date();
-    const diff = target - now;
-    if (diff <= 0) {
-      document.getElementById('countdown').innerHTML = '<span style="font-family:Bebas Neue,sans-serif;font-size:18px;letter-spacing:2px;color:#f5c518;">THE WORLD CUP HAS BEGUN</span>';
-      return;
-    }
-    const days = Math.floor(diff / 86400000);
-    const hours = Math.floor((diff % 86400000) / 3600000);
-    const mins = Math.floor((diff % 3600000) / 60000);
-    const secs = Math.floor((diff % 60000) / 1000);
-    document.getElementById('cd-days').textContent = String(days).padStart(2,'0');
-    document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
-    document.getElementById('cd-mins').textContent = String(mins).padStart(2,'0');
-    document.getElementById('cd-secs').textContent = String(secs).padStart(2,'0');
-  }
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
-</script>
+
 
 </body>
 </html>
