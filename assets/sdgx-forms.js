@@ -124,8 +124,7 @@
   function build(kind, source, guide) {
     if (kind === 'guide') {
       var notice = document.createElement('div');
-      notice.className = 'sdgx-f';
-      notice.innerHTML = '<h3>World Cup 2026 guides are retired</h3><p>These travel offers have ended. <a href="/world-cup-2026.html">Read the historical archive</a>.</p>';
+      notice.hidden = true;
       return notice;
     }
     var c = COPY[kind];
