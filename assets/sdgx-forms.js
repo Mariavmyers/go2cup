@@ -122,6 +122,12 @@
   }
 
   function build(kind, source, guide) {
+    if (kind === 'guide') {
+      var notice = document.createElement('div');
+      notice.className = 'sdgx-f';
+      notice.innerHTML = '<h3>World Cup 2026 guides are retired</h3><p>These travel offers have ended. <a href="/world-cup-2026.html">Read the historical archive</a>.</p>';
+      return notice;
+    }
     var c = COPY[kind];
     var f = document.createElement('form');
     f.className = 'sdgx-f';
@@ -155,6 +161,7 @@
   function fail(msg, html) { msg.className = 'msg err'; msg.innerHTML = html; }
 
   function send(f, kind, source, guide) {
+    if (kind === 'guide') { window.location.href = '/world-cup-2026.html'; return; }
     var msg = f.querySelector('.msg'), btn = f.querySelector('button[type=submit]');
     if (f._busy || f._done) return;                               // duplicate clicks / Enter presses
     if (!f.checkValidity()) { f.reportValidity(); return; }
@@ -207,6 +214,7 @@
   }
 
   function openModal(kind, source, guide) {
+    if (kind === 'guide') { window.location.href = '/world-cup-2026.html'; return; }
     var ov = document.createElement('div');
     ov.className = 'sdgx-ov'; ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-modal', 'true');
     var f = build(kind, source, guide);
