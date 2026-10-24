@@ -365,7 +365,7 @@ var CITIES = [
   var out='';
   CITIES.forEach(function(c, index){
     var pick = HOTEL_PICKS[index];
-    var hotelURL = 'https://www.stay22.com/allez/roam?aid=1607597&campaign=brazil2027_' + c.id + '&address=' + encodeURIComponent(c.name + ', Brazil') + '&hotelname=' + encodeURIComponent(pick[0]);
+    var hotelURL = 'https://www.stay22.com/allez/roam?aid=sportdgx&campaign=brazil2027_' + c.id + '&address=' + encodeURIComponent(c.name + ', Brazil') + '&hotelname=' + encodeURIComponent(pick[0]);
     if (c.id === 'rio-de-janeiro') c.tours = "https://tp.media/r?campaign_id=137&marker=736515&p=4110&sub_id=brazil2027_rio_tour&trs=536726&u=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F86842-christ-the-redeemer-and-sugarloaf-mountain-day-tour-in-rio%2F";
     out += '<article class="city" id="'+c.id+'" style="--c1:'+c.c1+';--c2:'+c.c2+'">'
       + '<div class="city-top"><span class="role'+(c.top?' top':'')+'">'+esc(c.role)+'</span>'
