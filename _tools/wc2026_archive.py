@@ -447,7 +447,7 @@ def hub():
   <div class="wrap" style="display:block;max-width:900px">
     <p class="kicker">Archive &middot; June 11 &ndash; July 19, 2026</p>
     <h1 id="h1">World Cup 2026 <span>Archive</span></h1>
-    <p class="lead">The first 48-team World Cup was played across the United States, Mexico and Canada. %s. This page collects GO2CUP's coverage for the record. The travel offers and guide downloads we ran before and during the tournament have been retired.</p>
+    <p class="lead">The first 48-team World Cup was played across the United States, Mexico and Canada. %s. This page collects GO2CUP's coverage for the record.</p>
   </div>
 </section>
 <main class="wrap">
@@ -477,7 +477,7 @@ def not_found():
   <div class="wrap" style="display:block;max-width:760px">
     <p class="kicker">404</p>
     <h1 id="h1">Page <span>not found</span></h1>
-    <p class="lead">This page or file isn't here. If you were looking for a World Cup 2026 guide or download, those offers ended with the tournament and have been retired. Our coverage is in the <a href="/world-cup-2026.html">World Cup 2026 archive</a>.</p>
+    <p class="lead">This page or file isn't here. Visit the home page for current coverage or browse the <a href="/world-cup-2026.html">World Cup 2026 archive</a>.</p>
     <p class="lead"><a href="/">SportDGX home</a> &middot; <a href="/sports-news.html">Latest news</a> &middot; <a href="/brazil-2027.html">Brazil 2027</a></p>
   </div>
 </section>
@@ -490,6 +490,10 @@ def main():
     changed = []
     for p in sorted(pages):
         r = rel(p)
+        if r in ['hopper-guide.html','mexico-trip-guide.html','articles/multi-city-world-cup-trip.html']:
+            os.remove(p)
+            changed.append(r)
+            continue
         if r in RETIRED:
             new = retired_page(r, *RETIRED[r])
         elif r in ("world-cup-2026.html", "404.html"):
