@@ -184,14 +184,14 @@ def build_post(p, hk):
 def build_hub(posts, hk):
     cards = "".join('<a class="card" href="/articles/%s"><span class="tag">%s · %s</span><h3>%s</h3><p>%s</p></a>' % (
         p["slug"], escape(p["sport"]), nice_date(p["date"]), escape(p["title"]), escape(p["description"])) for p in posts)
-    body = ('%s<section class="hero"><div class="wrap"><p class="kicker">New every day · English &amp; Español</p>'
+    body = ('%s<section class="hero"><div class="wrap"><p class="kicker">New every day</p>'
             '<h1>SportDGX <span style="color:#21c25a">Daily</span></h1><p class="lead">The games of the moment, explained simply: '
             'where to watch, when they play, how to get there. NFL, soccer, Liga MX and the road to the FIFA Women\'s World Cup Brazil 2027.</p>'
             '</div></section><main class="wrap"><div class="grid">%s</div><div class="join" data-sdgx-inline="newsletter" data-source="daily hub">%s</div></main>%s'
             '<script src="/assets/sdgx-forms.js" defer></script>') % (header("/daily"), cards, static_form("newsletter", "", "daily hub", hk), FOOTER)
     open(os.path.join(ROOT, "daily.html"), "w", encoding="utf-8").write(
         page("en", "SportDGX Daily: Where to Watch, Schedules & Fan Guides | SportDGX",
-             "A new sports guide every day: NFL, Liga MX, soccer and the 2027 Women's World Cup in Brazil. Where to watch, dates and fan travel, in English and Spanish.",
+             "A new sports guide every day: NFL, Liga MX, soccer and the 2027 Women's World Cup in Brazil. Where to watch, dates and fan travel, for US fans.",
              SITE + "/daily", body, og_type="website"))
 
 
@@ -236,7 +236,7 @@ def build_home_block(posts, hk):
   <div class="sd-in">
     <div>
       <h2 id="sd-h">SportDGX <span>Daily</span> Blog</h2>
-      <p class="sd-lead">A new guide every day: where to watch, dates, tickets and fan travel. English &amp; Español.</p>
+      <p class="sd-lead">A new guide every day: where to watch, dates, tickets and fan travel.</p>
       <div class="sd-list">%s</div>
       <a class="sd-all" href="/daily">See all posts &rarr;</a>
     </div>
