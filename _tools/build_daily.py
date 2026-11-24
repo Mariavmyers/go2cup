@@ -80,7 +80,8 @@ table.t{width:100%;border-collapse:collapse;margin:10px 0 18px;font-size:15px}
 table.t th{background:#0a2413;color:#f5c518;font-family:Oswald,sans-serif;letter-spacing:.06em;text-transform:uppercase;font-size:13px;text-align:left;padding:10px}
 table.t td{border-top:1px solid rgba(255,255,255,.08);padding:10px;vertical-align:top;color:#dbe6dd}
 .lang-split{border:0;border-top:2px solid rgba(245,197,24,.5);margin:40px 0 10px}
-.join{margin:34px 0}
+.join{margin:40px 0 10px;border-top:2px solid rgba(245,197,24,.5);padding-top:20px}
+.more{margin-top:34px}
 .faq details{background:#0a2413;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:12px 16px;margin:8px 0}
 .faq summary{cursor:pointer;font-weight:600;color:#fff}
 .sources{font-size:14px;color:#9fb3a6;border-top:1px solid rgba(255,255,255,.08);margin-top:30px;padding-top:14px}
@@ -137,6 +138,7 @@ def page(lang, title, desc, canonical, body_html, extra_head="", og_type="articl
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#07180e">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="SportDGX Daily" href="/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>%s</style>
@@ -148,6 +150,9 @@ def page(lang, title, desc, canonical, body_html, extra_head="", og_type="articl
 </html>
 """ % (lang, HEAD_SCRIPTS, escape(title), escape(desc), canonical, og_type, escape(title), escape(desc), canonical, SITE,
        CSS, extra_head, body_html)
+
+
+ALL_POSTS = []
 
 
 def build_post(p, hk):
@@ -168,14 +173,22 @@ def build_post(p, hk):
     if p.get("sources"):
         src = '<div class="sources"><b>Sources:</b> %s</div>' % " · ".join(
             '<a href="%s" rel="nofollow noopener" target="_blank">%s</a>' % (escape(s["url"]), escape(s["name"])) for s in p["sources"])
-    join = '<div class="join" data-sdgx-inline="newsletter" data-source="daily %s">%s</div>' % (
+    join = ('<section class="join"><h2>Never miss the next game</h2><p>Join SportDGX Insider: one free email before every weekend with the big games, '
+            'where to watch, the cheapest seats we can find and a hotel near the stadium.</p>'
+            '<div data-sdgx-inline="newsletter" data-source="daily %s">%s</div></section>') % (
         escape(p["slug"]), static_form("newsletter", "", "daily " + p["slug"], hk))
+    more = [q for q in ALL_POSTS if q["slug"] != p["slug"]][:4]
+    related = ""
+    if more:
+        related = '<section class="more"><h2>Keep reading</h2><div class="grid">%s</div><p><a href="/daily">All SportDGX Daily articles &rarr;</a></p></section>' % "".join(
+            '<a class="card" href="/articles/%s"><span class="tag">%s · %s</span><h3>%s</h3></a>' % (
+                q["slug"], escape(q["sport"]), nice_date(q["date"]), escape(q["title"])) for q in more)
     extra = '<script type="application/ld+json">%s</script>' % json.dumps(ld, ensure_ascii=False)
     body = ('%s<section class="hero"><div class="wrap"><p class="kicker">%s</p><h1>%s</h1><p class="lead">%s</p>'
-            '<p class="meta">SportDGX Daily · %s</p></div></section>'
-            '<main class="wrap">%s%s%s%s</main>%s<script src="/assets/sdgx-forms.js" defer></script>') % (
-        header("/daily"), escape(p["kicker"]), escape(p["title"]), escape(p["dek"]), nice_date(p["date"]),
-        p["body"], join, faq_html, src, FOOTER)
+            '<p class="meta">By SportDGX · %s · %s min read</p></div></section>'
+            '<main class="wrap">%s%s%s%s%s</main>%s<script src="/assets/sdgx-forms.js" defer></script>') % (
+        header("/daily"), escape(p["kicker"]), escape(p["title"]), escape(p["dek"]), nice_date(p["date"]), max(1, round(len(re.sub("<[^>]+>", " ", p["body"]).split()) / 230)),
+        p["body"], faq_html, src, related, join, FOOTER)
     out = os.path.join(ROOT, "articles", p["slug"] + ".html")
     open(out, "w", encoding="utf-8").write(page(p["lang"], p["title"] + " | SportDGX", p["description"], url, body, extra))
     return url
@@ -248,6 +261,27 @@ def build_home_block(posts, hk):
     open(path, "w", encoding="utf-8").write(t[:s] + block + t[e:])
 
 
+def build_feeds(posts):
+    from email.utils import format_datetime
+    from datetime import datetime, timezone
+    items = "".join(
+        "<item><title>%s</title><link>%s/articles/%s</link><guid>%s/articles/%s</guid><pubDate>%s</pubDate><description>%s</description></item>" % (
+            escape(p["title"]), SITE, p["slug"], SITE, p["slug"],
+            format_datetime(datetime.strptime(p["date"], "%Y-%m-%d").replace(hour=11, tzinfo=timezone.utc)), escape(p["description"]))
+        for p in posts[:50])
+    open(os.path.join(ROOT, "feed.xml"), "w", encoding="utf-8").write(
+        '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>SportDGX Daily</title><link>%s/daily</link>'
+        '<description>A new sports guide every day for US fans: NFL, Liga MX, soccer and the 2027 Women\'s World Cup.</description>'
+        '<language>en-us</language>%s</channel></rss>\n' % (SITE, items))
+    lines = ["# SportDGX", "", "> Independent sports and fan-travel site by MainEntry LLC (Kansas City). "
+             "New daily articles for US fans: where to watch, schedules, tickets, stadiums and travel. Not affiliated with any league or team.", "",
+             "## SportDGX Daily articles", ""]
+    lines += ["- [%s](%s/articles/%s): %s" % (p["title"], SITE, p["slug"], p["description"]) for p in posts]
+    lines += ["", "## Hubs", "", "- [SportDGX Daily](%s/daily)" % SITE, "- [NFL hub](%s/nfl.html)" % SITE,
+              "- [Women's World Cup 2027 Brazil guide](%s/brazil-2027.html)" % SITE, "- [SportDGX Insider newsletter](%s/insider)" % SITE, ""]
+    open(os.path.join(ROOT, "llms.txt"), "w", encoding="utf-8").write("\n".join(lines))
+
+
 def update_sitemap(urls, remove=()):
     path = os.path.join(ROOT, "sitemap.xml")
     t = open(path, encoding="utf-8").read()
@@ -266,6 +300,7 @@ def main():
     hk = hook()
     posts = [json.load(open(f, encoding="utf-8")) for f in glob.glob(os.path.join(ROOT, "data", "daily", "*.json"))]
     posts.sort(key=lambda p: (p["date"], p["slug"]), reverse=True)
+    ALL_POSTS[:] = posts
     urls, old = [], []
     for p in posts:
         urls.append((build_post(p, hk), p["date"]))
@@ -274,6 +309,7 @@ def main():
             old.append("%s/articles/%s" % (SITE, o))
     build_hub(posts, hk)
     build_home_block(posts, hk)
+    build_feeds(posts)
     urls.insert(0, (SITE + "/daily", posts[0]["date"] if posts else "2026-11-24"))
     update_sitemap(urls, old)
     print("Built %d posts + daily.html" % len(posts))
