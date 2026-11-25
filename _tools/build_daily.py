@@ -105,14 +105,14 @@ def nice_date(iso):
 
 
 def header(current):
-    links = [("/", "Home"), ("/daily", "Daily"), ("/sports-news.html", "News"), ("/brazil-2027.html", "Brazil 2027"),
-             ("/insider.html", "Insider"), ("/advertise.html", "Advertise")]
+    links = [("/", "Home"), ("/daily", "SportDGX Insider"), ("/sports-news.html", "News"), ("/brazil-2027.html", "Brazil 2027"),
+             ("/insider.html", "Weekend Game Plan"), ("/advertise.html", "Advertise")]
     menu = "".join('<a href="%s"%s>%s</a>' % (h, ' aria-current="page"' if h == current else "", t) for h, t in links)
     return ('<header><nav class="nav" aria-label="Site"><a href="/" class="logo">Sport<span class="g">DGX</span></a>'
             '<div class="menu">%s</div></nav></header>%s' % (menu, sport_bar("")))
 
 
-FOOTER = ('<footer><div class="wrap"><p><a href="/daily">SportDGX Daily</a> · <a href="/insider.html">Insider newsletter</a> · '
+FOOTER = ('<footer><div class="wrap"><p><a href="/daily">SportDGX Insider</a> · <a href="/insider.html">Weekend Game Plan newsletter</a> · '
           '<a href="/advertise.html">Advertise / partner</a> · <a href="/privacy.html">Privacy</a> · <a href="/disclaimers.html">Disclaimer &amp; Disclosure</a></p>'
           '<p>SportDGX is an independent sports and fan-travel site operated by MainEntry LLC. Not affiliated with any league, team, venue, broadcaster or ticket seller. '
           'Some links may be affiliate links.</p><p>&copy; 2026 SportDGX · MainEntry LLC</p></div></footer>')
@@ -138,7 +138,7 @@ def page(lang, title, desc, canonical, body_html, extra_head="", og_type="articl
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#07180e">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="alternate" type="application/rss+xml" title="SportDGX Daily" href="/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="SportDGX Insider" href="/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>%s</style>
@@ -180,12 +180,12 @@ def build_post(p, hk):
     more = [q for q in ALL_POSTS if q["slug"] != p["slug"]][:4]
     related = ""
     if more:
-        related = '<section class="more"><h2>Keep reading</h2><div class="grid">%s</div><p><a href="/daily">All SportDGX Daily articles &rarr;</a></p></section>' % "".join(
+        related = '<section class="more"><h2>Keep reading</h2><div class="grid">%s</div><p><a href="/daily">All SportDGX Insider articles &rarr;</a></p></section>' % "".join(
             '<a class="card" href="/articles/%s"><span class="tag">%s · %s</span><h3>%s</h3></a>' % (
                 q["slug"], escape(q["sport"]), nice_date(q["date"]), escape(q["title"])) for q in more)
     extra = '<script type="application/ld+json">%s</script>' % json.dumps(ld, ensure_ascii=False)
     body = ('%s<section class="hero"><div class="wrap"><p class="kicker">%s</p><h1>%s</h1><p class="lead">%s</p>'
-            '<p class="meta">By SportDGX · %s · %s min read</p></div></section>'
+            '<p class="meta">SportDGX Insider · %s · %s min read</p></div></section>'
             '<main class="wrap">%s%s%s%s%s</main>%s<script src="/assets/sdgx-forms.js" defer></script>') % (
         header("/daily"), escape(p["kicker"]), escape(p["title"]), escape(p["dek"]), nice_date(p["date"]), max(1, round(len(re.sub("<[^>]+>", " ", p["body"]).split()) / 230)),
         p["body"], faq_html, src, related, join, FOOTER)
@@ -198,12 +198,12 @@ def build_hub(posts, hk):
     cards = "".join('<a class="card" href="/articles/%s"><span class="tag">%s · %s</span><h3>%s</h3><p>%s</p></a>' % (
         p["slug"], escape(p["sport"]), nice_date(p["date"]), escape(p["title"]), escape(p["description"])) for p in posts)
     body = ('%s<section class="hero"><div class="wrap"><p class="kicker">New every day</p>'
-            '<h1>SportDGX <span style="color:#21c25a">Daily</span></h1><p class="lead">The games of the moment, explained simply: '
+            '<h1>SportDGX <span style="color:#21c25a">Insider</span></h1><p class="lead">The games of the moment, explained simply: '
             'where to watch, when they play, how to get there. NFL, soccer, Liga MX and the road to the FIFA Women\'s World Cup Brazil 2027.</p>'
             '</div></section><main class="wrap"><div class="grid">%s</div><div class="join" data-sdgx-inline="newsletter" data-source="daily hub">%s</div></main>%s'
             '<script src="/assets/sdgx-forms.js" defer></script>') % (header("/daily"), cards, static_form("newsletter", "", "daily hub", hk), FOOTER)
     open(os.path.join(ROOT, "daily.html"), "w", encoding="utf-8").write(
-        page("en", "SportDGX Daily: Where to Watch, Schedules & Fan Guides | SportDGX",
+        page("en", "SportDGX Insider: Sports Guides, Explainers & Fan Travel | SportDGX",
              "A new sports guide every day: NFL, Liga MX, soccer and the 2027 Women's World Cup in Brazil. Where to watch, dates and fan travel, for US fans.",
              SITE + "/daily", body, og_type="website"))
 
@@ -270,14 +270,14 @@ def build_feeds(posts):
             format_datetime(datetime.strptime(p["date"], "%Y-%m-%d").replace(hour=11, tzinfo=timezone.utc)), escape(p["description"]))
         for p in posts[:50])
     open(os.path.join(ROOT, "feed.xml"), "w", encoding="utf-8").write(
-        '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>SportDGX Daily</title><link>%s/daily</link>'
+        '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>SportDGX Insider</title><link>%s/daily</link>'
         '<description>A new sports guide every day for US fans: NFL, Liga MX, soccer and the 2027 Women\'s World Cup.</description>'
         '<language>en-us</language>%s</channel></rss>\n' % (SITE, items))
     lines = ["# SportDGX", "", "> Independent sports and fan-travel site by MainEntry LLC (Kansas City). "
              "New daily articles for US fans: where to watch, schedules, tickets, stadiums and travel. Not affiliated with any league or team.", "",
-             "## SportDGX Daily articles", ""]
+             "## SportDGX Insider articles", ""]
     lines += ["- [%s](%s/articles/%s): %s" % (p["title"], SITE, p["slug"], p["description"]) for p in posts]
-    lines += ["", "## Hubs", "", "- [SportDGX Daily](%s/daily)" % SITE, "- [NFL hub](%s/nfl.html)" % SITE,
+    lines += ["", "## Hubs", "", "- [SportDGX Insider articles](%s/daily)" % SITE, "- [NFL hub](%s/nfl.html)" % SITE,
               "- [Women's World Cup 2027 Brazil guide](%s/brazil-2027.html)" % SITE, "- [SportDGX Insider newsletter](%s/insider)" % SITE, ""]
     open(os.path.join(ROOT, "llms.txt"), "w", encoding="utf-8").write("\n".join(lines))
 
@@ -308,7 +308,6 @@ def main():
             build_redirect(o, p["slug"])
             old.append("%s/articles/%s" % (SITE, o))
     build_hub(posts, hk)
-    build_home_block(posts, hk)
     build_feeds(posts)
     urls.insert(0, (SITE + "/daily", posts[0]["date"] if posts else "2026-11-24"))
     update_sitemap(urls, old)
